@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg">@*android:color/background_dark</color>
+    <color name="advanced_btn_text_color">@*android:color/accent_material_dark</color>
+    <color name="colorPrimaryDark">@*android:color/accent_material_dark</color>
+    <color name="common_text_color">#ffffffff</color>
+    <color name="common_text_focused_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="common_text_pressed_color">@*android:color/accent_material_dark</color>
+    <color name="common_text_selected_color">@*android:color/accent_material_dark</color>
+    <color name="effect_btn_divider">@*android:color/dim_foreground_light</color>
+    <color name="eq_bottom_text_color">#ccffffff</color>
+    <color name="eq_level_bold_line_color">@*android:color/button_material_dark</color>
+    <color name="eq_level_line_color">@*android:color/button_material_dark</color>
+    <color name="eq_level_line_text_color">#ccffffff</color>
+    <color name="font_accessiblity_dual_color">#ffeca638</color>
+    <color name="global_btn_bottom_text_colors">@*android:color/holo_orange_light</color>
+    <color name="global_btn_top_text_colors">#ffffffff</color>
+    <color name="knob_btn_bottom_text_color">@*android:color/holo_orange_light</color>
+    <color name="knob_btn_shape_big_oval_color">#B9EAFAFF</color>
+    <color name="knob_btn_shape_line_oval_color">@*android:color/holo_orange_light</color>
+    <color name="knob_btn_shape_oval_color_disabled">@*android:color/button_material_dark</color>
+    <color name="knob_btn_shape_small_oval_color">#B9EAFAFF</color>
+    <color name="listview_bottom_text_color">@*android:color/holo_orange_light</color>
+    <color name="listview_preset_text_color">#ffffffff</color>
+    <color name="seekbar_progress_bg">@*android:color/lighter_gray</color>
+    <color name="seekbar_progress_primary">@*android:color/accent_material_dark</color>
+    <color name="seekbar_progress_secondary">@*android:color/control_checkable_material</color>
+    <color name="soundalive_bg">@*android:color/transparent</color>
+    <color name="soundalive_system_bg">@*android:color/secondary_text_default_material_light</color>
+    <color name="ssw_seekbar_bg_color">@*android:color/transparent</color>
+    <color name="tw_progress_color_control_activated">@*android:color/accent_material_dark</color>
+    <color name="tw_progress_color_control_normal">#ffc9c9c9</color>
+    <color name="tw_progress_color_control_secondary">@*android:color/control_checkable_material</color>
+    <color name="tw_secondary_color">@*android:color/holo_orange_light</color>
+</resources>

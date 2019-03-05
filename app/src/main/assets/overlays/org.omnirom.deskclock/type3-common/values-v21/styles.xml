@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+		<item name="android:background">@*android:color/background_device_default_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@*android:color/background_dark</item>
+        <item name="android:colorPrimaryDark">#00000000</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+		<item name="android:background">@*android:color/background_device_default_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@*android:color/background_dark</item>
+        <item name="android:colorPrimaryDark">#00000000</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Widget.Design.FloatingActionButton" parent="@android:style/Widget">
+        <item name="backgroundTint">@*android:color/accent_material_dark</item>
+		<item name="android:backgroundTint">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" />
+	
+    <style name="TimePickerTheme" parent="@*android:style/Theme.Material.Dialog">
+        <item name="android:textColorPrimaryInverse">@*android:color/accent_material_dark</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:timePickerStyle">@*org.omnirom.deskclock:style/TimePickerStyle</item>
+    </style>
+    <style name="DeskClockParentTheme" parent="@*android:style/Theme.Material">
+        <item name="android:buttonStyle">?android:borderlessButtonStyle</item>
+        <item name="android:popupMenuStyle">?android:actionOverflowMenuStyle</item>
+        <item name="android:colorControlNormal">#ffffffff</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimary">@*android:color/holo_primary_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/holo_primary_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="TimerAlertFullScreenTheme" parent="@*android:style/Theme.Material.Wallpaper.NoTitleBar">
+        <item name="android:statusBarColor">@*android:color/holo_primary_dark</item>
+    </style>
+    <style name="ScreensaverActivityTheme" parent="@*android:style/Theme.DeviceDefault">
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+    <style name="TimePickerStyle" parent="@*android:style/Widget.Material.TimePicker">
+        <item name="android:headerBackground">@*android:color/transparent</item>
+        <item name="android:headerTimeTextAppearance">@*org.omnirom.deskclock:style/TimeLabelTextAppearance</item>
+        <item name="android:headerAmPmTextAppearance">@*org.omnirom.deskclock:style/AmPmTextAppearance</item>
+        <item name="android:numbersTextColor">@*android:color/white</item>
+        <item name="android:numbersBackgroundColor">@*android:color/transparent</item>
+        <item name="android:amPmTextColor">@*android:color/white</item>
+    </style>
+    <style name="CitiesTheme" parent="@*android:style/Theme.DeviceDefault">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Material.PopupMenu</item>
+        <item name="android:dialogTheme">@*android:style/Theme.Material.Dialog</item>
+        <item name="android:alertDialogTheme">@*android:style/Theme.Material.Dialog</item>
+        <item name="android:colorPrimary">@*android:color/background_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/background_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:actionBarPopupTheme">@android:style/Widget.Material.PopupMenu</item>
+    </style>
+    <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:dialogTheme">@*android:style/Theme.Material.Dialog</item>
+        <item name="android:alertDialogTheme">@*android:style/Theme.Material.Dialog</item>
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:detailsElementBackground">@null</item>
+        <item name="*org.omnirom.deskclock:windowActionBar">true</item>
+        <item name="*org.omnirom.deskclock:windowNoTitle">false</item>
+    </style>
+	
+</resources>

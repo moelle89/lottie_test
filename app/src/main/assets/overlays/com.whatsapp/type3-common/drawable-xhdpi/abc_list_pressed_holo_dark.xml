@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:tint="#17B3D1E3" >
+            <gradient
+                android:startColor="#B1000000"
+                android:endColor="#53000000"
+                android:angle="90" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" android:tint="@*android:color/holo_orange_light">
+			 <gradient android:startColor="@*android:color/facelock_spotlight_mask" android:endColor="#A4000000" android:angle="90.0" android:type="linear" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" android:tint="@*android:color/button_material_dark">
+			<gradient android:endColor="@*android:color/facelock_spotlight_mask"  android:startColor="@*android:color/transparent" android:angle="45.0" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:endColor="#17B3D1E3" android:startColor="#0BA6CDE4" android:angle="-90.0" />
+        </shape>
+    </item>
+    <item android:gravity="top" android:height="1.2dip">
+		<shape android:shape="rectangle" android:tint="@*android:color/holo_orange_light">
+			<gradient android:endColor="#59000000"  android:startColor="#15000000" android:angle="45.0" />
+        </shape>
+    </item>
+</layer-list>

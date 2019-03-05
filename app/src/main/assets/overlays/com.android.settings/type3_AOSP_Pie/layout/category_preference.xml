@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@*com.android.settings:id/icon_frame" android:background="@*com.android.settings:drawable/action_bar_dropshadow" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="100.0dip" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:playcommon="http://schemas.android.com/apk/res-auto">
+		<View android:id="@*com.android.vending:id/play_search_overlay" android:backgroundTint="@null" android:background="@*com.android.vending:color/play_search_overlay_color" android:alpha="0.92" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <com.google.android.play.layout.CardLinearLayout android:orientation="vertical" android:id="@*com.android.vending:id/play_search_container" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.android.vending:style/PlayCardViewGroup">
+        <include android:id="@*com.android.vending:id/play_search_plate" android:layout_width="fill_parent" android:backgroundTint="@null" android:layout_height="wrap_content" layout="@*com.android.vending:layout/play_search_plate" />
+        <include android:id="@*com.android.vending:id/play_search_suggestions_list" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.android.vending:layout/play_search_suggestions_list" />
+    </com.google.android.play.layout.CardLinearLayout>
+</merge>

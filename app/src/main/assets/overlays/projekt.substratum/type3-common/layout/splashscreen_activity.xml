@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:tag="layout/splashscreen_activity_0" android:background="@*projekt.substratum:drawable/preference_list_divider_material" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<ImageView android:id="@*projekt.substratum:id/splashscreen_image" android:layout_width="@*projekt.substratum:dimen/app_splash_icon_width" android:layout_height="@*projekt.substratum:dimen/app_splash_icon_height" android:src="@*projekt.substratum:drawable/substratum_icon" android:contentDescription="@*projekt.substratum:string/app_name" />-->
+    <ProgressBar android:layout_gravity="center"
+        android:layout_width="@*projekt.substratum:dimen/app_splash_icon_width"
+        android:layout_height="@*projekt.substratum:dimen/app_splash_icon_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@*projekt.substratum:style/Widget.AppCompat.ProgressBar" />
+    <com.jaredrummler.android.widget.AnimatedSvgView android:layout_gravity="center" android:id="@*projekt.substratum:id/animated_svg_view" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginBottom="40.0dip" app:animatedSvgFillColors="@*projekt.substratum:array/substratum_glyph_colors" app:animatedSvgFillStart="1200" app:animatedSvgFillTime="1000" app:animatedSvgGlyphStrings="@*projekt.substratum:array/substratum_glyph_strings" app:animatedSvgTraceTime="2000" app:animatedSvgTraceTimePerGlyph="1000" />
+    <ProgressBar android:id="@*projekt.substratum:id/progress_bar_loader" android:padding="15.0dip" android:visibility="invisible" android:layout_width="@*projekt.substratum:dimen/app_splash_icon_width" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:indeterminate="true" android:indeterminateTint="@*projekt.substratum:color/splashscreen_progress" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

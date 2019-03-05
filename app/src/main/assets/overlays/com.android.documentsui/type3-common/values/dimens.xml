@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_fab_elevation">0.0dip</dimen>
+    <dimen name="design_navigation_elevation">5.0dip</dimen>
+    <dimen name="design_snackbar_elevation">0.0dip</dimen>	
+    <dimen name="design_appbar_elevation">0.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">0.0dip</dimen>
+    <dimen name="dir_elevation">8.0dip</dimen>
+    <dimen name="abc_action_bar_elevation_material">4.0dip</dimen>
+    <dimen name="drag_shadow_size">40.0dip</dimen>
+    <dimen name="grid_item_elevation">0.0dip</dimen>
+    <dimen name="drag_shadow_width">40.0dip</dimen>
+    <dimen name="drag_shadow_height">12.0dip</dimen>
+    <dimen name="abc_control_corner_material">8.0dip</dimen>
+    <dimen name="drag_shadow_radius">8.0dip</dimen>
+    <dimen name="tooltip_corner_radius">8.0dip</dimen>
+</resources>

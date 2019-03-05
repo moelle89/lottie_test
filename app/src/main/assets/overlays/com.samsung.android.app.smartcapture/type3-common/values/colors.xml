@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_menu_background">#f30d0d0d</color>
+    <color name="bottom_menu_background_stroke">#19000000</color>
+    <color name="toolbar_item_disabled_text_color">#aeffffff</color>
+    <color name="toolbar_item_enabled_text_color">#c8ffffff</color>
+    <color name="dim_tint_color">#647fb5e6</color>
+	<color name="normal_tint_color">#ffffffff</color>
+	<color name="ripple_color">#28ffffff</color>
+    <color name="screen_write_toolbar_item_disabled_text_color">#47ffffff</color>
+    <color name="screen_write_toolbar_item_enabled_text_color">#ffffffff</color>
+    <color name="smart_select_preview_extract_button_image_color">#d9ffffff</color>
+    <color name="smart_select_preview_extract_button_text_color">#b3ffffff</color>
+    <color name="smart_select_preview_extract_button_text_shadow_color">#80ffffff</color>
+    <color name="smart_select_menu_text_color">#ffffffff</color>
+    <color name="smart_select_menu_text_color_dim">#66ffffff</color>
+    <color name="smart_select_menu_text_color_normal">#b3ffffff</color>
+    <color name="smart_select_ripple_color">#28ffffff</color>
+    <color name="bottom_toolbar_item_disabled_text_color">#66ffffff</color>
+    <color name="bottom_toolbar_item_enabled_text_color">#b3ffffff</color>
+</resources>

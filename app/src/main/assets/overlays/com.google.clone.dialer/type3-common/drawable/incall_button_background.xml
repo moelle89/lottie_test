@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_checked="true" android:drawable="@*com.google.clone.dialer:drawable/incall_button_background_checked" />
+            <item android:drawable="@*com.google.clone.dialer:drawable/incall_button_background_unchecked" />
+        </selector>
+    </item>
+    <item>
+        <ripple android:color="@*android:color/holo_button_pressed">
+            <item android:gravity="center" android:id="@*android:id/mask">
+                <shape android:shape="oval">
+                    <solid android:color="@*android:color/holo_primary_dark" />
+					<stroke android:width="4.0dip" android:color="#ff404a52" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

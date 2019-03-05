@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+	<shape android:shape="rectangle">
+		<gradient
+				android:startColor="@*android:color/secondary_text_leanback_light"
+				android:centerColor="@*android:color/background_dark"
+				android:endColor="@*android:color/secondary_text_default_material_light"
+				android:angle="270" />
+		</shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:centerX="0.5"
+                android:centerY="-0.4"
+                android:gradientRadius="100%p"
+                android:endColor="@null"
+                android:centerColor="@*android:color/timepicker_default_background_material"
+                android:startColor="@*android:color/facelock_spotlight_mask"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeDark" parent="@*org.swiftapps.swiftbackup:style/Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@*org.swiftapps.swiftbackup:color/bgdk</item>
+        <item name="android:popupMenuStyle">@*org.swiftapps.swiftbackup:style/PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@*org.swiftapps.swiftbackup:style/Title</item>
+        <item name="android:textAppearanceSmallPopupMenu">@*org.swiftapps.swiftbackup:style/Subtitle</item>
+        <item name="android:textAppearanceListItem">@*org.swiftapps.swiftbackup:style/Title.Large</item>
+        <item name="android:textAppearanceListItemSecondary">@*org.swiftapps.swiftbackup:style/Subtitle.Large</item>
+        <item name="android:navigationBarColor">@*org.swiftapps.swiftbackup:color/bottom_bar_bg_dk</item>
+        <item name="android:timePickerStyle">@*org.swiftapps.swiftbackup:style/TimePickerDark</item>
+        <item name="android:colorEdgeEffect">@*org.swiftapps.swiftbackup:color/color_edge_effect_dk</item>
+        <item name="android:colorBackgroundFloating">@*org.swiftapps.swiftbackup:color/cardbgdk</item>
+        <item name="*org.swiftapps.swiftbackup:bottomBarBackgroundColor">@*org.swiftapps.swiftbackup:color/bottom_bar_bg_dk</item>
+        <item name="*org.swiftapps.swiftbackup:bottomBarHeight">?android:actionBarSize</item>
+        <item name="*org.swiftapps.swiftbackup:buttonBackgroundTint">@*org.swiftapps.swiftbackup:color/acnt</item>
+        <item name="*org.swiftapps.swiftbackup:cardBackgroundColor">@*org.swiftapps.swiftbackup:color/cardbgdk</item>
+        <item name="*org.swiftapps.swiftbackup:cardBackgroundColorInverse">@*org.swiftapps.swiftbackup:color/wht</item>
+        <item name="*org.swiftapps.swiftbackup:cardStyle">@*org.swiftapps.swiftbackup:style/CardStyle</item>
+        <item name="*org.swiftapps.swiftbackup:cardStyleNoMargin">@*org.swiftapps.swiftbackup:style/CardStyle.NoMargins</item>
+        <item name="*org.swiftapps.swiftbackup:cardStyleNormal">@*org.swiftapps.swiftbackup:style/CardStyle</item>
+        <item name="*org.swiftapps.swiftbackup:cardSubtitleColor">@*org.swiftapps.swiftbackup:color/wht70</item>
+        <item name="*org.swiftapps.swiftbackup:cardTitleColor">@*org.swiftapps.swiftbackup:color/wht90</item>
+        <item name="*org.swiftapps.swiftbackup:colorAccent">@*org.swiftapps.swiftbackup:color/acnt</item>
+        <item name="*org.swiftapps.swiftbackup:colorPrimary">@*org.swiftapps.swiftbackup:color/prim</item>
+        <item name="*org.swiftapps.swiftbackup:colorPrimaryDark">@*org.swiftapps.swiftbackup:color/primdark</item>
+        <item name="*org.swiftapps.swiftbackup:dialogBackground">@*org.swiftapps.swiftbackup:color/cardbgdk</item>
+        <item name="*org.swiftapps.swiftbackup:dividerColor">@*org.swiftapps.swiftbackup:color/dividerdk</item>
+        <item name="*org.swiftapps.swiftbackup:dropdownLineColor">@*org.swiftapps.swiftbackup:color/wht40</item>
+        <item name="*org.swiftapps.swiftbackup:fabButtonBackgroundColor">@*org.swiftapps.swiftbackup:color/acnt</item>
+        <item name="*org.swiftapps.swiftbackup:fabMenuBackgroundColor">?android:colorBackground</item>
+        <item name="*org.swiftapps.swiftbackup:fab_shadowColor">@*org.swiftapps.swiftbackup:color/blk30</item>
+        <item name="*org.swiftapps.swiftbackup:fastScrollThumbColor">@*org.swiftapps.swiftbackup:color/wht20</item>
+        <item name="*org.swiftapps.swiftbackup:mPopupTheme">@*org.swiftapps.swiftbackup:style/AppTheme.PopupOverlay.Dark</item>
+        <item name="*org.swiftapps.swiftbackup:mTabIndicatorColor">@*org.swiftapps.swiftbackup:color/tab_indicator_dk</item>
+        <item name="*org.swiftapps.swiftbackup:toolbarColor">@*org.swiftapps.swiftbackup:color/prim</item>
+        <item name="*org.swiftapps.swiftbackup:toolbarShadowColor">@*org.swiftapps.swiftbackup:color/blk50</item>
+    </style>
+    <style name="IntroTheme" parent="@*org.swiftapps.swiftbackup:style/AppThemeDark">
+        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:windowBackground">@*org.swiftapps.swiftbackup:drawable/splash_icon</item>
+        <item name="android:windowAnimationStyle">@*org.swiftapps.swiftbackup:style/FadeActivityAnimations</item>
+        <item name="android:statusBarColor">@*android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:navigationBarColor">@*android:color/black</item>
+    </style>
+</resources>

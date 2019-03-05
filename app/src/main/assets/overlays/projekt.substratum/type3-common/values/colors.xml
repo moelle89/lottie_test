@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_grey_850">@*android:color/timepicker_default_background_material</color>
+    <color name="material_grey_900">@*android:color/transparent</color>
+    <color name="restore_button_text_color">@android:color/white</color>
+    <color name="backup_button_text_color">@android:color/white</color>
+    <color name="about_libraries_window_background_dark">@*android:color/transparent</color>	
+    <color name="bottom_sheet_dialog_background_night">@*android:color/background_device_default_dark</color>	
+    <color name="bottom_sheet_dialog_text">@android:color/white</color>	
+	<color name="window_bg">@*android:color/background_device_default_dark</color>
+	<color name="badgeBackgroundColor">@*android:color/highlighted_text_holo_dark</color>
+	<color name="splashscreen_background">@*android:color/background_dark</color>
+
+	<color name="showcase_activity_text">@android:color/white</color>
+    <color name="accent">@*android:color/accent_material_dark</color>
+    <color name="fab_background_color">@*android:color/accent_material_dark</color>
+    <color name="settings_title_color">@*android:color/accent_material_dark</color>
+    <color name="theme_accent">@*android:color/accent_material_dark</color>
+	<color name="colorAccent">@*android:color/accent_material_dark</color>
+    <color name="material_drawer_header_background">#17B3D1E3</color>
+    <color name="material_drawer_background">@*android:color/facelock_spotlight_mask</color>
+    <color name="material_drawer_dark_background">@*android:color/facelock_spotlight_mask</color>
+
+    <color name="bottombar_bar_background">@*android:color/transparent</color>
+    <color name="bb_darkBackgroundColor">@*android:color/transparent</color>  
+    <color name="bb_inActiveBottomBarItemColor">#ff758696</color>
+    <color name="bb_tabletRightBorderDark">@*android:color/button_material_dark</color>
+	
+    <color name="material_grey_100">@*android:color/transparent</color>
+    <color name="md_grey_100">@*android:color/transparent</color>
+
+	<color name="colorPrimary">@*android:color/transparent</color>
+    <color name="colorPrimaryDark">@*android:color/transparent</color>
+    <color name="colorPrimaryLight">@*android:color/transparent</color>
+    <color name="cropper_bg_glass">@*android:color/transparent</color>
+    <color name="material_drawer_primary">@*android:color/transparent</color>
+    <color name="material_drawer_primary_dark">@*android:color/transparent</color>
+    <color name="md_dark_statusbar">#09bad3e0</color>
+    <color name="md_light_statusbar">#09bad3e0</color>
+    <color name="ripple_material_dark">@*android:color/holo_button_pressed</color>    
+	<color name="colorRipple">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+	<color name="background_dim_overlay">#56000000</color>
+    <color name="design_bottom_navigation_shadow_color">@*android:color/white</color>
+    <color name="floatui_dialog_background">@*android:color/dim_foreground_light</color>
+    <color name="floatui_dialog_button_color">@android:color/white</color>
+    <color name="floatui_dialog_checkmark_color">@*android:color/accent_material_dark</color>
+    <color name="floatui_dialog_header_background">@*android:color/button_material_dark</color>
+    <color name="floatui_dialog_row_color">#ffccd2df</color>
+    <color name="floatui_dialog_title_color">@android:color/white</color>
+    <color name="floatui_handle_color">#ff859cbb</color>
+    <color name="floatui_paint_color">#00000000</color>
+    <color name="sounds_unchecked">#ff2b3238</color>
+    <color name="bootanimation_unchecked">#ff2b3238</color>
+    <color name="font_unchecked">#ff2b3238</color>
+
+    <color name="fab_menu_divider">@*android:color/dim_foreground_light</color>
+    <color name="fab_menu_icon_color">#ffffffff</color>
+    <color name="fab_menu_text_color">#ffffffff</color>
+    <color name="fab_speed_dial_icon">#ffffffff</color>
+
+    <color name="main_screen_card_theme_author">#ffffffff</color>
+    <color name="main_screen_card_theme_title">#ffffffff</color>
+
+    <color name="primary">@*android:color/transparent</color>
+    <color name="primary_dark">@*android:color/transparent</color>
+	
+    <color name="backup_button">@*android:color/user_icon_default_white</color>
+    <color name="priorities_switchbar">@*android:color/user_icon_default_white</color>
+    <color name="restore_button">@*android:color/user_icon_default_white</color>
+
+    <color name="about_libraries_dividerDark_openSource">@*android:color/dim_foreground_light</color>
+    <color name="about_libraries_dividerDark_openSource_dark">@*android:color/dim_foreground_light</color>
+    <color name="about_libraries_dividerLight_openSource">@*android:color/dim_foreground_light</color>
+    <color name="about_libraries_dividerLight_openSource_dark">@*android:color/dim_foreground_light</color>
+    <color name="about_libraries_divider_description">@*android:color/dim_foreground_light</color>
+	
+    <color name="about_libraries_text_description">#ffccd2df</color>
+    <color name="about_libraries_text_openSource">#ffccd2df</color>
+    <color name="about_libraries_text_openSource_dark">#ffccd2df</color>
+    <color name="about_libraries_title_description">#ffffffff</color>
+    <color name="about_libraries_title_openSource">#ffffffff</color>
+    <color name="about_libraries_title_openSource_dark">#ffffffff</color>
+	
+    <color name="primary_dark_material_light">@*android:color/accent_material_dark</color>	
+    <color name="material_drawer_header_selection_text">@*android:color/accent_material_dark</color>
+    <color name="material_drawer_hint_icon">#ffffffff</color>
+    <color name="material_drawer_hint_text">#ffffffff</color>
+    <color name="material_drawer_icon_color">#ffc1cddc</color>
+    <color name="material_drawer_primary_icon">#ffffffff</color>
+    <color name="material_drawer_primary_text">#ffffffff</color>
+    <color name="material_drawer_secondary_text">#ffc1cddc</color>
+
+    <color name="slide_1">@*android:color/transparent</color>
+    <color name="slide_2">@*android:color/transparent</color>
+    <color name="slide_3">@*android:color/transparent</color>
+    <color name="slide_4">@*android:color/transparent</color>
+    <color name="slide_5">@*android:color/transparent</color>
+    <color name="slide_6">@*android:color/transparent</color>
+    <color name="theme_information_card_title">@*android:color/accent_material_dark</color>
+    <color name="material_drawer_selected_text">#ffffffff</color>
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="divider_color_theme_dark">#04B3D1E3</color>
+    <color name="divider_color_theme_light">#04B3D1E3</color>
+    <color name="md_dark_dividers">#04B3D1E3</color>
+    <color name="md_light_dividers">#04B3D1E3</color>
+    <color name="sounds_placeholder_tint">@*android:color/transparent</color> 
+	<color name="bootanimation_placeholder_tint">@*android:color/transparent</color> 
+	<color name="theme_information_card_divider">#0cb3d1e3</color>
+    <color name="main_screen_card_background">#0cb3d1e3</color><!---->    
+	<color name="theme_card_background">#0cb3d1e3</color><!---->
+    <color name="theme_information_card_background">#0cb3d1e3</color><!---->
+    <color name="theme_information_card_subtext">#B18DA0B3</color>
+    <color name="theme_information_card_text">#ffffffff</color>
+    <color name="overlay_not_installed_list_entry">#ffffffff</color>
+	<color name="overlay_installed_list_entry">#ff16e35f</color>
+    <color name="material_drawer_selected">@*android:color/holo_button_pressed</color>
+	<color name="sounds_window_background">@*android:color/transparent</color>
+    <color name="font_window_background">@*android:color/transparent</color>
+    <color name="bootanimation_window_background">@*android:color/transparent</color>	
+    <color name="navigationBarColor">@*android:color/transparent</color>
+    <color name="wallpaper_bg_background">@*android:color/transparent</color>
+    <color name="design_snackbar_background_color">@*android:color/timepicker_default_background_material</color>    
+	<color name="theme_information_background">@*android:color/transparent</color><!-- info page top row -->
+    <color name="md_light_cards">@*android:color/dim_foreground_light</color>
+	<color name="md_dark_cards">@*android:color/dim_foreground_light</color>
+    <color name="cardview_light_background">@*android:color/dim_foreground_light</color>
+    <color name="about_libraries_accent">@*android:color/accent_material_dark</color>
+    <color name="about_libraries_card">@*android:color/dim_foreground_light</color>    
+	<color name="bottom_sheet_dialog_background">@*android:color/background_device_default_dark</color>
+    <color name="about_libraries_card_dark">@*android:color/dim_foreground_light</color>
+    <color name="background_floating_material_light">@*android:color/dim_foreground_light</color>    
+	<color name="background_floating_material_dark">@*android:color/dim_foreground_light</color>
+    <color name="background_material_light">#0cb3d1e3</color><!---->
+    <color name="default_background_color">#0cb3d1e3</color>
+    <color name="app_shortcut_icon_background_color">@*android:color/accent_material_dark</color>	
+    <color name="fab_menu_background_card">@*android:color/button_material_dark</color>
+    <color name="compile_dialog_wave_color">@*android:color/accent_material_dark</color>	
+	<color name="notification_material_background_media_default_color">@*android:color/background_dark</color>
+    <color name="md_grey_800">@*android:color/transparent</color>
+    <color name="material_grey_800">@*android:color/transparent</color>
+    <color name="cardview_dark_background">#0cb3d1e3</color>
+    <color name="lunchbar_background">@*android:color/legacy_primary</color>
+    <color name="lunchbar_text">@android:color/white</color>	
+	
+	<color name="tab_defaults_icon_tint">#ff758696</color>
+	<color name="wel_button_background_theme_light">#33ffffff</color>
+    <color name="wel_button_bar_background_dark">#33ffffff</color>
+    <color name="wel_button_bar_background_light">#14ffffff</color>
+    <color name="wel_default_background_color">#ff1e88e5</color>
+    <color name="wel_divider_color_theme_dark">#33ffffff</color>
+    <color name="wel_divider_color_theme_light">#22000000</color>
+    <color name="wel_indicator_color_primary_theme_dark">#99ffffff</color>
+    <color name="wel_indicator_color_primary_theme_light">#99000000</color>
+    <color name="wel_indicator_color_secondary_theme_dark">#22ffffff</color>
+    <color name="wel_indicator_color_secondary_theme_light">#22ffffff</color>
+</resources>

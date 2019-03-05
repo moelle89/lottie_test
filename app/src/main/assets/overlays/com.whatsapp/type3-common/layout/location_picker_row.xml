@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@*com.whatsapp:dimen/location_picker_row_height">
+
+    <FrameLayout
+        android:layout_width="@*com.whatsapp:dimen/location_picker_row_height"
+        android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@*com.whatsapp:id/location_icon"
+            android:layout_width="@*com.whatsapp:dimen/location_picker_icon_size"
+            android:layout_height="@*com.whatsapp:dimen/location_picker_icon_size"
+            android:layout_gravity="center"
+            android:background="@*com.whatsapp:drawable/place_icon_background"
+            android:padding="3.0dip"
+            android:tint="@android:color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="@*com.whatsapp:dimen/location_picker_row_height"
+        android:paddingRight="8.0dip">
+
+        <TextView
+            android:id="@*com.whatsapp:id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmallInverse"
+            android:textColor="@android:color/white"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@*com.whatsapp:id/location_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#aaffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</FrameLayout>

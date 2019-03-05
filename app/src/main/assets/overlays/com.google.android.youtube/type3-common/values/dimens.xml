@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_elevation_material">0.5dip</dimen>
+    <dimen name="tool_bar_elevation">0.5dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="design_appbar_elevation">0.0dip</dimen>
+    <dimen name="design_bottom_navigation_elevation">0.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">0.0dip</dimen>
+    <dimen name="design_fab_elevation">0.0dip</dimen>
+    <dimen name="appbar_layout_elevation">0.0dip</dimen>
+    <dimen name="section_list_drawer_elevation">0.0dip</dimen>
+    <dimen name="mealbar_elevation">0.0dip</dimen>
+    <dimen name="design_snackbar_elevation">0.0dip</dimen>
+    <dimen name="design_navigation_elevation">0.0dip</dimen>
+    <dimen name="overlay_play_pause_replay_button_size">64.0dip</dimen>
+    <dimen name="spotlight_story_play_button_bg_height">64.0dip</dimen>
+    <dimen name="spotlight_story_play_button_bg_width">64.0dip</dimen>
+	<dimen name="medium_icon_container_40dp">40.0dip</dimen>
+	<dimen name="medium_icon_24dp">20.0dip</dimen>
+	<dimen name="search_bar_inset_start">4.0dip</dimen>
+	<!--<dimen name="design_fab_image_size">56.0dip</dimen>
+	<dimen name="design_fab_size_mini">58.0dip</dimen>
+    <dimen name="design_fab_size_normal">62.0dip</dimen>
+	
+    <dimen name="quantum_fab_diameter_default">62.0dip</dimen>
+    <dimen name="quantum_fab_diameter_mini">58.0dip</dimen>
+    <dimen name="quantum_fab_edge_margin">1.0dip</dimen>
+    <dimen name="quantum_fab_padding_default">1.0dip</dimen>
+    <dimen name="quantum_fab_padding_mini">1.0dip</dimen>-->
+	
+    <dimen name="floaty_bar_gradient_size">70.0dip</dimen>
+    <dimen name="floaty_bar_height">58.0dip</dimen>
+    <dimen name="floaty_bar_max_width">420.0dip</dimen>
+    <dimen name="floaty_bar_shadow_size">6.5dip</dimen>
+    <dimen name="floaty_bar_start_bottom_padding">9.0dip</dimen>
+    <dimen name="floaty_bar_start_end_padding">12.0dip</dimen>
+	<dimen name="floaty_inline_time_bar_size">2.0dip</dimen>
+</resources>
+

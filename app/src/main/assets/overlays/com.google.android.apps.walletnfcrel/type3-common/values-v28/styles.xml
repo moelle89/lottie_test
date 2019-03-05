@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@*com.google.android.apps.walletnfcrel:style/Base.V28.Theme.AppCompat" >
+		<item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@*com.google.android.apps.walletnfcrel:style/Base.V28.Theme.AppCompat" >
+		<item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat" parent="@*com.google.android.apps.walletnfcrel:style/Base.V26.Theme.AppCompat">
+        <item name="*com.google.android.apps.walletnfcrel:dialogCornerRadius">?android:dialogCornerRadius</item>
+		<item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light" parent="@*com.google.android.apps.walletnfcrel:style/Base.V26.Theme.AppCompat">
+        <item name="*com.google.android.apps.walletnfcrel:dialogCornerRadius">?android:dialogCornerRadius</item>
+		<item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

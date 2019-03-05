@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">@*android:color/accent_material_dark</color>
+    <color name="primary">@*android:color/user_icon_default_white</color>
+    <color name="primary_dark">@*android:color/user_icon_default_white</color>
+    <color name="pressed_adaway">@*android:color/highlighted_text_dark</color>
+    <color name="abs__background_holo_dark">@*android:color/background_dark</color>
+    <color name="abs__background_holo_light">@*android:color/dim_foreground_light</color>
+</resources>

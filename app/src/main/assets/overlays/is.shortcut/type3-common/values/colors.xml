@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="settings_activity_background">@*android:color/background_dark</color>
+    <color name="evie_theme_navy_blue">@*android:color/holo_primary_dark</color>
+    <color name="evie_theme_navy_blue_dark">@*android:color/holo_primary_dark</color>
+    <color name="text_color_dark_theme">#ffffffff</color>
+    <color name="text_color_light_theme">#ffffffff</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_text_disabled_material_light">#4dffffff</color>
+    <color name="quantum_panel_text_color">#ff666666</color>
+    <color name="quantum_panel_text_shadow_color">#ffc4c4c4</color>
+    <color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#b3ffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#36ffffff</color>
+    <color name="black_overlay">@*android:color/shadow</color>
+    <color name="blur_darken_opaque_wallpaper">#0cb3d1e3</color>
+    <color name="subtext_color">@*android:color/material_blue_grey_700</color>
+    <color name="subtext_color_light_theme">@*android:color/material_blue_grey_700</color>
+    <color name="evie_universal_green">@*android:color/holo_blue_bright</color>
+    <color name="widgets_cell_color">@*android:color/shadow</color>
+    <color name="widgets_cell_divider_color">#50ffffff</color>
+    <color name="checkbox_tint">@*android:color/accent_material_dark</color>
+</resources>

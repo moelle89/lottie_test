@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+	    <item name="android:divider">@null</item>
+    </style>
+    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionBarStyle">@*com.samsung.android.app.aodservice:style/AppActionBar</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:statusBarColor">@*android:color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+	    <item name="android:divider">@null</item>
+    </style>
+    <style name="ClockStyleSettingsTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:statusBarColor">@*android:color/background_dark</item>
+        <item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.samsung.android.app.aodservice:colorPrimary">@*android:color/accent_material_dark</item>
+	    <item name="android:divider">@null</item>
+    </style>
+</resources>

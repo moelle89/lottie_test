@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_color_values">
+        <item>lollipop</item>
+    </string-array>
+    <string-array name="background_color_entries">
+        <item>@*com.moblynx.clockl:string/color_lollipop</item>
+    </string-array>
+</resources>

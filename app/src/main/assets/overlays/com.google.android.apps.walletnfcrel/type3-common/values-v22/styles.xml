@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@*com.google.android.apps.walletnfcrel:style/Base.V22.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@*com.google.android.apps.walletnfcrel:style/Base.V22.Theme.AppCompat" />
+</resources>

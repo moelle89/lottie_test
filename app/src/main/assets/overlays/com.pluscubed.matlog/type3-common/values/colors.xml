@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="main_background_dark">@*android:color/background_dark</color>
+        <color name="material_grey_850">@*android:color/background_dark</color> 
+        <color name="material_grey_800">@*android:color/dim_foreground_light</color>
+		<color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
+</resources>

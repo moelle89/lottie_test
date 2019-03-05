@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- fw notification title tinting fix -->
+	<color name="legacy_light_primary_dark">@*android:color/notification_material_background_color</color>
+
+    <!-- Notification | Text -->
+    <color name="notification_primary_text_color_light">#ff000000</color><!-- Title -->
+    <color name="notification_secondary_text_color_light">@*android:color/facelock_spotlight_mask</color><!-- Subtitle -->
+    <color name="notification_default_color">@*android:color/accent_material_dark</color><!-- App Icon & Name -->    
+    
+	<!-- Notification | Background -->
+	<color name="notification_progress_background_color">@*android:color/holo_button_pressed</color>
+	<!-- Action 1 | Button Bar Background -->
+    <color name="notification_action_list">#f3f4f5</color>         
+	<color name="notification_action_list_dark">#ffffff</color>
+	<!-- black-white-bridge of systemUI for notifications -->
+    <color name="dim_foreground_inverse_disabled_holo_light">#E3FDFEFF</color> 
+	<!-- cant be transparent -->
+	<color name="notification_material_background_color">#ffffff</color>
+    
+	
+	<!-- hardcoded notifications fix 
+    <style name="Widget.Material.Notification.MessagingName" parent="@*android:style/Widget.Material.TextView">
+        <item name="*android:textAppearance">@*android:style/TextAppearance.Material.Notification.Title</item>
+        <item name="*android:ellipsize">end</item>
+        <item name="*android:layout_width">wrap_content</item>
+        <item name="*android:layout_height">wrap_content</item>
+        <item name="*android:shadowColor">@*android:color/transparent</item>
+        <item name="*android:shadowRadius">0.0</item>
+    </style>
+    <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.Notification.Text">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@*android:color/transparent</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="Widget.Material.Notification.Text" parent="@*android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
+        <item name="android:lineHeight">20.0sp</item>
+    </style>-->	
+</resources> 

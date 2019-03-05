@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/holo_button_pressed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="4.0dip" android:bottom="4.0dip">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@*android:color/user_icon_default_white" />
+            <stroke android:width="2.0dip" android:color="@*android:color/accent_material_dark" />
+            <corners android:radius="30.0dip" />
+        </shape>
+    </item>
+</ripple>

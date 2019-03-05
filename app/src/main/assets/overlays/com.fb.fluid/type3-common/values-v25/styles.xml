@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material.NoActionBar" >
+        <item name="android:colorControlActivated">#FF044FE9</item>
+		<item name="android:colorEdgeEffect">#4F044FE9</item>
+		<item name="android:colorControlHighlight">#4F044FE9</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Platform.V25.AppCompat" parent="@android:style/Theme.Material.NoActionBar" >
+        <item name="android:colorControlActivated">#FF044FE9</item>
+		<item name="android:colorEdgeEffect">#4F044FE9</item>
+		<item name="android:colorControlHighlight">#4F044FE9</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+	<style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material.Light.NoActionBar" >
+        <item name="android:colorControlActivated">#FF044FE9</item>
+		<item name="android:colorEdgeEffect">#4F044FE9</item>
+		<item name="android:colorControlHighlight">#4F044FE9</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Platform.V25.AppCompat.Light" parent="@android:style/Theme.Material.Light.NoActionBar" >
+        <item name="android:colorControlActivated">#FF044FE9</item>
+		<item name="android:colorEdgeEffect">#4F044FE9</item>
+		<item name="android:colorControlHighlight">#4F044FE9</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+</resources>

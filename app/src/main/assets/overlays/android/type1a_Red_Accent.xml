@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="accent_material_dark">#FFFF232D</color><!-- common_color -->
+    <color name="highlighted_text_holo_dark">#ffff6e6e</color><!-- statusbar_accent_icon_tint -->
+    <color name="holo_blue_bright">#ffff4545</color><!-- settings_icon_tint -->
+	<color name="accessibility_focus_highlight">#BEFF232D</color><!-- common_color_alpha -->
+	<color name="highlighted_text_dark">#78FF232D</color><!-- common_color_alpha2 -->
+	<color name="holo_button_pressed">#3DFF232D</color><!-- ripple_dark -->
+	<color name="control_checkable_material">#FFF64C4C</color><!-- theme_color_light -->
+    <color name="suggestion_highlight_text">#ffaa2424</color><!-- theme_color_dark -->
+	<color name="holo_orange_light">#ff7f7b7b</color> <!-- controlnormal_light -->
+	<color name="secondary_text_default_material_dark">#ffaabfca</color> <!-- secondary_text_material_dark -->
+
+	<!-- dualtone accent -->
+	<color name="holo_blue_light">#7BFF9D</color>	
+	<color name="holo_blue_dark">#33B254</color>
+	
+	<!-- Google Accent Color Bridge -->	
+	 
+	<color name="Red_700">#fff62b48</color><!-- Google Red / Default Accent Color -->
+	<color name="Red_800">#ffff6679</color><!-- Google Red / Default common_color_alpha -->
+	<color name="holo_orange_dark">@*android:color/highlighted_text_dark</color><!-- Google / Default highlighted_text_dark -->
+	<color name="holo_purple">@*android:color/highlighted_text_holo_dark</color><!-- Google Red / Default highlighted_text_holo_dark -->
+	<color name="holo_control_activated">@*android:color/control_checkable_material</color><!-- Google Blue / Default Actionbar Color -->
+	<color name="Blue_700">@*android:color/accent_material_dark</color><!-- Google Blue / Default Accent Color -->
+	<color name="holo_primary">@*android:color/suggestion_highlight_text</color><!-- Google / Default suggestion_highlight_text - Keyboard BG -->
+</resources>

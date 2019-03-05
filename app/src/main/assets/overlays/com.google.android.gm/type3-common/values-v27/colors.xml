@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigation_bar_divider_color">@*android:color/user_icon_default_white</color>
+    <color name="navigation_bar_divider_opaque_color">@*android:color/dim_foreground_light</color>
+    <color name="navigation_bar_opaque_color">@*android:color/background_dark</color>
+</resources>

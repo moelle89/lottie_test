@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="placeholder">#4285f4</color>
+    <color name="dark_mode_icon_color_dual_tone_background">@*android:color/suggestion_highlight_text</color>
+    <color name="dark_mode_icon_color_single_tone">@*com.android.systemui:color/dark_mode_icon_color_dual_tone_fill</color>
+    <color name="dark_mode_icon_color_dual_tone_fill">@*android:color/accent_material_dark</color><!-- dark icon color on light bg -->
+	
+	<color name="light_mode_icon_color_dual_tone_background">@*android:color/holo_button_pressed</color><!-- background icon color - on light and dark bg  -->	
+	<color name="light_mode_icon_color_single_tone">@*android:color/highlighted_text_holo_dark</color><!-- light icon color on dark bg -->
+    <color name="light_mode_icon_color_dual_tone_fill">@*com.android.systemui:color/light_mode_icon_color_single_tone</color>
+</resources>

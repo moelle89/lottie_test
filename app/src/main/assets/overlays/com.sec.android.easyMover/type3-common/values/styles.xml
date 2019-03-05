@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WinsetBottomBar" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:background">@*com.sec.android.easyMover:drawable/selector_list</item>
+		<item name="android:backgroundTint">@*android:color/dim_foreground_light</item>
+    </style>
+    <style name="SmartSwitchActionBarTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:buttonStyle">@*com.sec.android.easyMover:style/raisedButtonStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@*com.sec.android.easyMover:style/dropDownListViewStyle</item>
+        <item name="android:textViewStyle">@*com.sec.android.easyMover:style/textViewStyle</item>
+        <item name="android:windowDisablePreview">true</item>
+		<item name="*com.sec.android.easyMover:isLightTheme">false</item>
+        <item name="android:actionBarStyle">@*com.sec.android.easyMover:style/actionBarStyle</item>
+        <item name="android:actionDropDownStyle">@android:style/Widget.DeviceDefault.ListView.DropDown</item>
+        <item name="android:actionButtonStyle">@*com.sec.android.easyMover:style/actionButtonStyle</item>
+        <item name="android:actionBarTabStyle">@*com.sec.android.easyMover:style/actionBarTabStyle</item>
+        <item name="android:actionBarTabBarStyle">@*com.sec.android.easyMover:style/actionBarTabBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@*com.sec.android.easyMover:style/actionBarTabTextStyle</item>
+        <item name="android:popupMenuStyle">@*com.sec.android.easyMover:style/popupMenuStyle</item>
+        <item name="android:actionMenuTextAppearance">@*com.sec.android.easyMover:style/actionMenuTextAppearance</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.easyMover:color/color_background</item>
+        <item name="android:textCursorDrawable">@*com.sec.android.easyMover:drawable/edit_text_cursor</item>
+        <item name="android:listPreferredItemHeightSmall">54.0dip</item>
+        <item name="android:actionBarWidgetTheme">@*com.sec.android.easyMover:style/actionBarWidgetTheme</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:actionBarItemBackground">@*com.sec.android.easyMover:drawable/selector_actionbar_item</item>
+    </style>
+</resources>

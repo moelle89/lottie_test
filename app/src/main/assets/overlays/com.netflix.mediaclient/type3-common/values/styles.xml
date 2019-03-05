@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Styled.ActionBar" parent="@android:style/Widget.ActionBar">
+		<item name="android:icon">@android:color/transparent</item>
+		<item name="android:background">@*android:color/dim_foreground_light</item>			
+		<item name="android:backgroundTint">@*android:color/dim_foreground_light</item>		
+		<item name="android:padding">0.0dip</item>
+		<item name="android:displayOptions">showHome|useLogo</item>
+		<item name="android:actionMenuTextAppearance">@*com.netflix.mediaclient:style/Widget.Styled.ActionBar.MenuTextStyle</item>
+    </style>
+    <!--<style name="Widget.Design.BottomNavigationView" parent="">
+        <item name="*com.netflix.mediaclient:elevation">@*com.netflix.mediaclient:dimen/design_bottom_navigation_elevation</item>
+        <item name="*com.netflix.mediaclient:itemBackground">@*com.netflix.mediaclient:drawable/action_bar_bg</item>
+		<item name="android:background">@*com.netflix.mediaclient:drawable/action_bar_bg</item>
+		<item name="android:backgroundTint">@null</item>
+    </style>-->
+    <style name="Theme.NetflixDefault" parent="@*com.netflix.mediaclient:style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@*com.netflix.mediaclient:color/primary_text_color</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>        
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+        <item name="android:progressBarStyle">@*com.netflix.mediaclient:style/Netflix.ProgressBar</item>
+        <item name="android:actionBarStyle">@*com.netflix.mediaclient:style/Widget.Styled.ActionBar</item>
+        <item name="android:splitMotionEvents">false</item>
+		<item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
+        <item name="*com.netflix.mediaclient:toolbarBackground">@*com.netflix.mediaclient:drawable/action_bar_bg</item>
+        <item name="*com.netflix.mediaclient:colorPrimary">@*android:color/background_dark</item>
+        <item name="*com.netflix.mediaclient:colorPrimaryDark">@*android:color/facelock_spotlight_mask</item>
+        <item name="*com.netflix.mediaclient:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Theme.Netflix.Default.LightActionBar" parent="@*com.netflix.mediaclient:style/Theme.Netflix.Default">
+        <item name="android:actionMenuTextAppearance">@*com.netflix.mediaclient:style/LightActionBarTextAppearance</item>
+        <item name="android:actionMenuTextColor">@*android:color/white</item>
+        <item name="*com.netflix.mediaclient:actionMenuTextColor">@*android:color/white</item>
+        <item name="*com.netflix.mediaclient:toolbarBackground">@*android:color/dim_foreground_light</item>
+    </style>
+	<!--<style name="WidgetryTheme.Netflix.Default" parent="@*com.netflix.mediaclient:style/Theme.AppCompat.NoActionBar">
+		<item name="android:textColorPrimary">@*com.netflix.mediaclient:color/primary_text_color</item>
+		<item name="android:textColorSecondary">@*com.netflix.mediaclient:color/secondary_text_color</item>
+		<item name="android:textColorTertiary">@*com.netflix.mediaclient:color/tertiary_text_color</item>
+		<item name="android:statusBarColor">@*com.netflix.mediaclient:color/almost_black</item>
+		<item name="android:navigationBarColor">@*com.netflix.mediaclient:color/bottom_nav_bar_color</item>
+		<item name="android:colorEdgeEffect">@*com.netflix.mediaclient:color/app_color_edge_effect</item>
+		<item name="*com.netflix.mediaclient:aroRibbonCategoryTextColor">@*com.netflix.mediaclient:color/white</item> 
+		<item name="*com.netflix.mediaclient:aroRibbonSubCategoryTextColor">@*com.netflix.mediaclient:color/translucent_white_70</item> 
+		<item name="*com.netflix.mediaclient:buttonTabBackground">@*com.netflix.mediaclient:color/black</item> 
+		<item name="*com.netflix.mediaclient:colorAccent">@*com.netflix.mediaclient:color/app_color_accent</item> 
+		<item name="*com.netflix.mediaclient:colorPrimary">@*com.netflix.mediaclient:color/app_color_primary</item> 
+		<item name="*com.netflix.mediaclient:colorPrimaryDark">@*android:color/background_dark</item> 
+		<item name="*com.netflix.mediaclient:primaryButtonStyle">@*com.netflix.mediaclient:style/NetflixButton.Primary</item> 
+		<item name="*com.netflix.mediaclient:primarySmallButtonStyle">@*com.netflix.mediaclient:style/NetflixButton.Primary.Small</item> 
+		<item name="*com.netflix.mediaclient:sampleAppTabTextColor">@*com.netflix.mediaclient:style/TabTextAppearance</item> 
+		<item name="*com.netflix.mediaclient:secondaryButtonStyle">@*com.netflix.mediaclient:style/NetflixButton.Secondary</item> 
+		<item name="*com.netflix.mediaclient:secondarySmallButtonStyle">@*com.netflix.mediaclient:style/NetflixButton.Secondary.Small</item> 
+		<item name="*com.netflix.mediaclient:toolbarBackground">@*com.netflix.mediaclient:drawable/action_bar_bg</item>
+	</style>-->
+    <style name="Theme.Netflix.Default.Search.FullScreen" parent="@*com.netflix.mediaclient:style/Theme.Netflix.Default.FullScreen">
+        <item name="*com.netflix.mediaclient:relatedResultsTextBackground">@*com.netflix.mediaclient:drawable/item_border_right</item>
+        <item name="*com.netflix.mediaclient:relatedResultsTextColor">@*android:color/accent_material_dark</item>
+        <item name="*com.netflix.mediaclient:relatedResultsTitleTextColor">@*android:color/accent_material_dark</item>
+        <item name="*com.netflix.mediaclient:searchProgressBarBackgroundColor">@*android:color/transparent</item>
+        <item name="*com.netflix.mediaclient:searchProgressBarBackgroundColor_ab8274">@*android:color/transparent</item>
+        <item name="*com.netflix.mediaclient:searchTermHighlightTextColor">@*android:color/accent_material_dark</item>
+        <item name="*com.netflix.mediaclient:searchViewBackgroundColor">@*android:color/transparent</item>
+        <item name="*com.netflix.mediaclient:toolbarStyle">@*com.netflix.mediaclient:style/Widget.Toolbar.NoStartInset</item>
+    </style>
+</resources>

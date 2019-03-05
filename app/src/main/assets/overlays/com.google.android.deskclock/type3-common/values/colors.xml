@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accent -->
+    <color name="google_dark_blue600">@*android:color/accent_material_dark</color>
+    <color name="google_dark_blue500">@*android:color/accent_material_dark</color>
+    <!-- Primary & Background -->
+    <color name="grey_900">@*android:color/background_dark</color>    
+	<color name="google_grey900">@*android:color/background_dark</color>
+    <color name="grey_850">@*android:color/background_dark</color>                        
+    <color name="material_grey_800">@*android:color/dim_foreground_light</color>               
+    <!-- Snackbar -->
+    <color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
+    <!-- Divider -->
+    <color name="hairline">@*android:color/transparent</color>
+	
+    <color name="switch_thumb_normal_material_dark">#ffffff</color>
+    <color name="switch_thumb_normal_material_light">#ffffff</color>
+</resources>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchHeaderInnerView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/search_header_inner_view</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@*com.google.android.inputmethod.latin:drawable/search_box_divider</item>
+        <item name="android:showDividers">middle</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="Header">
+        <item name="android:tag">.keyboard-header-area</item>
+        <item name="android:background">@*android:color/timepicker_default_background_material</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/keyboard_header_height</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="HeaderInner">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/header_area</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="HeaderInner.SearchBar" parent="@*com.google.android.inputmethod.latin:style/HeaderInner">
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/header_bar_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/header_bar_horizontal_margin</item>
+        <item name="*com.google.android.inputmethod.latin:cardCornerRadius">@*com.google.android.inputmethod.latin:dimen/header_corner_radius</item>
+        <item name="*com.google.android.inputmethod.latin:cardElevation">@*com.google.android.inputmethod.latin:dimen/header_elevation</item>
+        <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">true</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="HeaderInner.SearchBar.Large" parent="@*com.google.android.inputmethod.latin:style/HeaderInner.SearchBar">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="HeaderInner.SearchBar.Small" parent="@*com.google.android.inputmethod.latin:style/HeaderInner.SearchBar">
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+	
+    <style name="SearchCandidateListHolder">
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/search_candidate_list_holder</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@*com.google.android.inputmethod.latin:drawable/search_candidate_divider</item>
+        <item name="android:showDividers">middle</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="SearchHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="SearchHeader.NonPrime" parent="@*com.google.android.inputmethod.latin:style/SearchHeader">
+        <item name="android:tag">.keyboard-search-header-area.keyboard-body-area</item>
+        <item name="android:background">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="SearchHeader.Prime" parent="@*com.google.android.inputmethod.latin:style/SearchHeader">
+        <item name="android:tag">.keyboard-header-area</item>
+        <item name="android:background">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="SearchResultQueryTextView">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+	
+
+	<style name="BaseTheme" parent="@android:style/Theme.Material.Panel" >
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="SquarePopupContent">
+        <item name="android:tag">.popup-item</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_popup_label_pressed_material_dark_theme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MaterialPopupContent" parent="@*com.google.android.inputmethod.latin:style/MaterialPopupView">
+        <item name="android:tag">.popup</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_popup_material_dark_theme</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_margin">10.0dip</item>
+    </style>
+    <style name="MaterialRectangularPopupContentOuter">
+        <item name="android:tag">.popup.for-popup-content-outer</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_popup_rectangular_inset_material_dark_theme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:layout_margin">@*com.google.android.inputmethod.latin:dimen/material_popup_bubble_margin</item>
+    </style>
+	
+	    <style name="MaterialPopupLabel" parent="@*com.google.android.inputmethod.latin:style/Label">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/text_size_huge</item>
+        <item name="android:textColor">#ffffffff</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:tag">.label.for-popup-item</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/material_popup_content_height</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="MaterialRectangularPopupContentInner">
+        <item name="android:orientation">vertical</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:tag">.popup.for-popup-content-inner</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SquarePopupImage" parent="@*com.google.android.inputmethod.latin:style/PopupImage">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*android:color/accent_material_dark</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+    </style>
+<!-- -->
+    <style name="PopupImage">
+        <item name="android:gravity">center</item>
+        <item name="android:tag">.icon.for-popup-item</item>
+        <item name="android:scrollbars">none</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/popup_content_height</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:minWidth">@*com.google.android.inputmethod.latin:dimen/popup_bubble_width</item>
+    </style>
+    <style name="PopupLabel" parent="@*com.google.android.inputmethod.latin:style/Label">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/text_size_huge</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:tag">.label.for-popup-item</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+    </style>
+
+
+
+    <style name="SmallPopupLabel" parent="@*com.google.android.inputmethod.latin:style/PopupLabel">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:minWidth">32.0dip</item>
+    </style>
+    <style name="SmallSquarePopupLabel" parent="@*com.google.android.inputmethod.latin:style/Label">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:tag">.label.for-popup-item</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="SmallSquarePopupView">
+        <item name="android:gravity">center|top</item>
+        <item name="android:orientation">vertical</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/popup_bubble</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SquarePopupLabel" parent="@*com.google.android.inputmethod.latin:style/PopupLabel">
+        <item name="android:background">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+    </style>
+    <style name="ActionPopupImage">
+        <item name="android:gravity">center</item>
+        <item name="android:tag">.popup-item.for-action-popup</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/ic_key_ime_action_back_material_dark_theme_selector</item>
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+<!-- -->
+	
+    <style name="MaterialRectangularPopupContent">
+        <item name="android:layout_gravity">top</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:tag">.popup</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_popup_rectangular_inset_material_dark_theme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10.0dip</item>
+    </style>
+	
+	<style name="MaterialPopupView">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">36.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="BasicPopupView">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/popup_bubble</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">36.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="MaterialRectangularPopupHandle">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:tag">.popup</item>
+        <item name="android:background">@android:color/black</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@*com.google.android.inputmethod.latin:dimen/material_popup_bubble_width</item>
+    </style>
+	<!--<style name="Body">
+        <item name="android:tag">.keyboard-body-area</item>
+        <item name="android:background">#ff000000</item>
+		<item name="android:backgroundTint">#ff000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">?*com.google.android.inputmethod.latin:KeyboardBodyHeight</item>
+    </style>-->
+    <style name="AppThemeSelector" parent="@*android:style/Theme.Material" />
+    <style name="FeaturePageAutoDictionaryRemoveDescription">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FeaturePageAutoDictionaryWordUnderLine">
+        <item name="android:background">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+    <style name="Label" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:tag">.label</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Label.Small.Grey" parent="@*com.google.android.inputmethod.latin:style/Label.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LabelSecondary.Sub.Black" parent="@*com.google.android.inputmethod.latin:style/LabelSecondary.Sub">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="LabelSecondary.Sub.Candidate" parent="@*com.google.android.inputmethod.latin:style/LabelSecondary.Sub">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LabelSecondary.Sub.Grey" parent="@*com.google.android.inputmethod.latin:style/LabelSecondary.Sub">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LabelSecondary.Top" parent="@*com.google.android.inputmethod.latin:style/LabelSecondary">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:paddingTop">1.0dip</item>
+    </style>
+
+    <style name="SettingsTheme" parent="@*android:style/Theme.Material" >
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="android:divider">@*android:color/transparent</item>		
+		<item name="android:dividerHorizontal">@*android:color/transparent</item>
+		<item name="android:listDivider">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>		
+    <style name="TipsDetail">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textColor">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TipsPageHeaderTitle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TipsTitle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material" />
+    <style name="platformActivityTheme" parent="@*android:style/Theme.Material" />
+    <style name="platformSettingsTheme" parent="@*android:style/Theme.Material" >
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="android:divider">@*android:color/transparent</item>		
+		<item name="android:dividerHorizontal">@*android:color/transparent</item>
+		<item name="android:listDivider">@*android:color/transparent</item>		
+    </style>	
+
+    <style name="TranslateQueryEditor">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/translate_board_editbox_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_translate_editbox_corners</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:hint">@*com.google.android.inputmethod.latin:string/translate_query_editbox_hint</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">200</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:paddingStart">10.0dip</item>
+    </style>
+    <style name="TranslateNetworkStatus">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/translate_board_editbox_font_size</item>
+        <item name="android:textColor">@*com.google.android.inputmethod.latin:color/translate_board_text_idle_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:text">@*com.google.android.inputmethod.latin:string/translate_network_status_message</item>
+        <item name="android:paddingStart">10.0dip</item>
+    </style>
+    <style name="CardViewerQueryText">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/card_viewer_query_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="GBoardEditText">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionSearch</item>
+    </style>
+    <style name="ThemeDetailsKeyBorderSwitch">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:id">@*com.google.android.inputmethod.latin:id/theme_details_switch_key_border</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:text">@*com.google.android.inputmethod.latin:string/theme_details_button_title_key_border</item>
+        <item name="android:switchPadding">12.0dip</item>
+    </style>
+	
+    <style name="ThemeDetailsApplyButtonHolder">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:paddingLeft">60.0dip</item>
+        <item name="android:paddingTop">24.0dip</item>
+        <item name="android:paddingRight">60.0dip</item>
+        <item name="android:paddingBottom">48.0dip</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ThemeDetailsPreviewHolder">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/ic_bar_unlock_material_dark_theme</item>
+        <item name="android:paddingLeft">36.0dip</item>
+        <item name="android:paddingTop">24.0dip</item>
+        <item name="android:paddingRight">36.0dip</item>
+        <item name="android:paddingBottom">24.0dip</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ThemeDetailsSwitchHolder">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

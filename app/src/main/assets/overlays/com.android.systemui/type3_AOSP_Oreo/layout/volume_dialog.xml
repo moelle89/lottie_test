@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:backgroundTint="@null" android:theme="@*com.android.systemui:style/qs_theme" android:id="@*com.android.systemui:id/volume_dialog" android:background="@*com.android.systemui:drawable/volume_dialog_background" android:layout_marginTop="8.0dip" android:paddingTop="@*com.android.systemui:dimen/volume_dialog_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@*com.android.systemui:dimen/volume_dialog_margin_bottom" android:translationZ="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:backgroundTint="@null" android:orientation="vertical" android:id="@*com.android.systemui:id/volume_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:backgroundTint="@null" android:orientation="vertical" android:id="@*com.android.systemui:id/volume_dialog_rows" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@*com.android.systemui:dimen/volume_button_size" />
+        <include layout="@*com.android.systemui:layout/volume_zen_footer" />
+        <include layout="@*com.android.systemui:layout/tuner_zen_mode_panel" />
+    </LinearLayout>
+    <LinearLayout android:backgroundTint="@null" android:orientation="vertical" android:id="@*com.android.systemui:id/volume_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginEnd="@*com.android.systemui:dimen/volume_expander_margin_end" android:layout_alignParentEnd="true">
+        <TextView android:textAppearance="@*com.android.systemui:style/TextAppearance.Volume.Header" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.android.keyguard.AlphaOptimizedImageButton android:backgroundTint="@null" android:id="@*com.android.systemui:id/volume_expand_button" android:background="@*com.android.systemui:drawable/ripple_drawable" android:clickable="true" android:layout_width="@*com.android.systemui:dimen/volume_button_size" android:layout_height="@*com.android.systemui:dimen/volume_button_size" android:src="@*com.android.systemui:drawable/ic_volume_collapse_animation" android:soundEffectsEnabled="false" style="@*com.android.systemui:style/VolumeButtons"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</RelativeLayout>

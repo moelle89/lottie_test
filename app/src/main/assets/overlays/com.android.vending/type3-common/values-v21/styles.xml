@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@android:style/TextAppearance.Material.Small.Inverse">
+        <item name="*com.android.vending:layout_behavior">com.google.android.finsky.dialogbuilderlayout.FixedBottomSheetBehavior</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@android:style/Widget">
+        <item name="android:background">#C8FFFFFF</item>        
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:elevation">@*com.android.vending:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.android.vending:behavior_hideable">true</item>
+        <item name="*com.android.vending:behavior_peekHeight">auto</item>
+        <item name="*com.android.vending:behavior_skipCollapsed">false</item>
+    </style>
+    <style name="PlayDrawerSelectedText" parent="@*com.android.vending:style/PlayDrawerBaseText">
+		<item name="android:backgroundTint">#17B3D1E3</item>		
+		<item name="android:background">@*android:color/background_dark</item>
+    </style>
+    <style name="PopupRedirectActivityThemeBottomSheet" parent="@*com.android.vending:style/PopupRedirectActivityTheme.BottomSheet">
+		<item name="android:backgroundTint">@null</item>
+        <item name="*com.android.vending:colorPrimary">@*android:color/dim_foreground_light</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="PlayDrawerProfileNameText" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="PlayDrawerProfileEmailText" parent="@*com.android.vending:style/PlayPlainText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+
+    <style name="HighlightBannerOverlayTitle" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_cluster_header_title_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@*com.android.vending:color/highlight_banner_overlay_title_shadow</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">5.0</item>
+    </style>
+    <style name="HighlightBannerOverlaySubtitle" parent="@*com.android.vending:style/PlayPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_cluster_header_subtitle_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingBottom">@*com.android.vending:dimen/highlight_banner_vpadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@*com.android.vending:color/highlight_banner_overlay_title_shadow</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+</resources>

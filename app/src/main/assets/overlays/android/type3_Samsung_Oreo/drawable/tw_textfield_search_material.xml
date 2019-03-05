@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+		<shape android:shape="rectangle" android:tint="@*android:color/holo_light_control_normal" >
+			<gradient android:startColor="#2c000000" android:endColor="#07000000" android:angle="90.0" />
+			<corners android:radius="24.0dip" />
+		</shape>
+	</item>
+</layer-list>

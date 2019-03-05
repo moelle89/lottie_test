@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_app_title_text_mmapp">@*android:color/accent_material_dark</color>
+    <color name="action_bar_drawer_back_icon_mmapp">@*android:color/accent_material_dark</color>
+    <color name="action_bar_menu_text_mmapp">@*android:color/accent_material_dark</color>
+    <color name="action_bar_search_icon_winset">@*android:color/control_checkable_material</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+
+    <color name="full_player_synced_lyric_icon_text">@*android:color/highlighted_text_holo_dark</color>
+    <color name="bottom_dialog_go_to_color">@*android:color/accent_material_dark</color>
+    <color name="lock_player_nowplaying_button_selected_color">@*android:color/highlighted_text_holo_dark</color>
+    <color name="milk_popup_button_color">@*android:color/control_checkable_material</color>
+    <color name="milk_popup_button_color_dim">@*android:color/highlighted_text_dark</color>
+    <color name="sesl_loading_progress_color2">@*android:color/holo_blue_light</color>
+  
+    <color name="sesl_seekbar_control_color_secondary">@*android:color/highlighted_text_holo_dark</color>
+    <color name="tab_heart_kt">@*android:color/highlighted_text_holo_dark</color>
+    <color name="spinner_dropdown_item_text_selected">@*android:color/accent_material_dark</color>
+    <color name="short_cut_icon_background">@*android:color/accent_material_dark</color>
+    <color name="tw__blue_default">@*android:color/accent_material_dark</color>
+    <color name="tw__tweet_action_color">@*android:color/accent_material_dark</color>
+    <color name="tw__composer_blue">@*android:color/accent_material_dark</color>
+    <color name="tw__composer_blue_text">@*android:color/accent_material_dark</color>
+    <color name="tw__blue_pressed">@*android:color/suggestion_highlight_text</color>
+    <color name="tw_index_scroll_index_text_color_pressed_2nd_act">@*android:color/highlighted_text_dark</color>
+
+    <color name="quick_panel_artist">@*android:color/holo_orange_light</color>
+    <color name="quick_panel_artist_black_theme">@*android:color/notification_secondary_text_color_light</color>
+    <color name="quick_panel_brand">@*android:color/accent_material_dark</color>
+    <color name="quick_panel_icon_black_theme">@*android:color/notification_primary_text_color_light</color>
+    <color name="quick_panel_title">@*android:color/notification_primary_text_color_light</color>
+    <color name="quick_panel_title_black_theme">@*android:color/notification_primary_text_color_light</color>
+    <color name="full_player_nowplaying_background">@*android:color/timepicker_default_background_material</color>
+    <color name="full_player_volume_panel_background">@*android:color/timepicker_default_background_material</color>
+    <color name="mini_player_background_theme">@*android:color/dim_foreground_light</color>
+	
+    <color name="full_player_seekbar_background_theme">@*android:color/user_icon_default_white</color>
+    <color name="full_player_seekbar_progress_theme">@*android:color/holo_orange_light</color>
+    <color name="full_player_seekbar_secondary_progress_theme">@*android:color/dim_foreground_light</color>
+    <color name="full_player_seekbar_stroke_theme">#00f5f5f5</color>
+	
+    <color name="full_player_volume_bar_background_theme">@*android:color/user_icon_default_white</color>
+    <color name="full_player_volume_bar_stroke">#00f5f5f5</color>
+    <color name="list_item_thumbnail_stroke">#00f5f5f5</color>
+
+	<color name="cardview_light_background">@*android:color/background_dark</color>
+    <color name="blur_alpha_mask">@*android:color/background_dark</color>
+    <color name="blur_alpha_mask_playing">@*android:color/facelock_spotlight_mask</color>
+    <color name="colorAccent">@*android:color/accent_material_dark</color>
+    <color name="colorPrimary">@*android:color/accent_material_dark</color>
+    <color name="colorPrimaryDark">@*android:color/accent_material_dark</color>
+    <color name="color_primary_mmapp">@*android:color/accent_material_dark</color>
+    <color name="sesl_thumb_control_color_activated">@*android:color/accent_material_dark</color>
+    <color name="sesl_tab_text_color_selected">@*android:color/accent_material_dark</color>
+    <color name="sesl_tab_indicator_color_selected">@*android:color/accent_material_dark</color>
+    <color name="sesl_seekbar_control_color_activated">@*android:color/accent_material_dark</color>
+    <color name="tab_selected_text_color">@*android:color/accent_material_dark</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_pressed">@*android:color/accent_material_dark</color>
+    <color name="tw_index_scroll_index_text_color_pressed">@*android:color/accent_material_dark</color>
+    <color name="tab_heart">@*android:color/accent_material_dark</color>
+    <color name="tab_selected_color">@*android:color/accent_material_dark</color>
+    <color name="tw_seekbar_bubble_text_color">@*android:color/accent_material_dark</color>
+    <color name="widget_list_item_playing">@*android:color/accent_material_dark</color>
+    <color name="widget_list_item_playing_dark">@*android:color/accent_material_dark</color>
+    <color name="widget_list_item_playing_dark_dim">@*android:color/accent_material_dark</color>
+    <color name="widget_list_item_playing_dim">@*android:color/accent_material_dark</color>
+    <color name="about_description_link_text">@*android:color/accent_material_dark</color>
+    <color name="about_update_button_background">@*android:color/accent_material_dark</color>
+    <color name="app_update_ticket_update_text">@*android:color/accent_material_dark</color>
+    <color name="card_view_item_thumbnail_focus">@*android:color/accent_material_dark</color>
+    <color name="change_player_selected_device">@*android:color/accent_material_dark</color>
+    <color name="exomedia_leanback_progress_horizontal_progress_placeholder">@*android:color/accent_material_dark</color>
+    <color name="hun_brand_name">@*android:color/accent_material_dark</color>
+    <color name="index_scroll_selected_text">@*android:color/accent_material_dark</color>
+    <color name="list_item_matched_text_winset">@*android:color/accent_material_dark</color>
+    <color name="list_item_playing">@*android:color/accent_material_dark</color>
+    <color name="list_item_track_sound_quality_background">@*android:color/accent_material_dark</color>
+    <color name="milk_list_selected_color">@*android:color/accent_material_dark</color>
+    <color name="milk_local_only_dialog_color">@*android:color/accent_material_dark</color>
+    <color name="milk_no_network_link_color">@*android:color/accent_material_dark</color>
+    <color name="milk_popup_button_default_color">@*android:color/accent_material_dark</color>
+    <color name="milk_radio_spinner_dropdown_text_select_color">@*android:color/accent_material_dark</color>
+    <color name="milk_reset_dialog_select_color">@*android:color/accent_material_dark</color>
+    <color name="milk_store_notice_link_text_color">@*android:color/accent_material_dark</color>
+    <color name="sesl_action_bar_text_color_menu">@*android:color/accent_material_dark</color>
+    <color name="sesl_control_activated_color_light">@*android:color/accent_material_dark</color>
+    <color name="sesl_date_picker_saturday_text_color_light">@*android:color/accent_material_dark</color>
+    <color name="sesl_popup_menu_item_text_color_checked">@*android:color/accent_material_dark</color>
+    <color name="sesl_primary_color_light">@*android:color/accent_material_dark</color>
+    <color name="sesl_primary_dark_color_light">@*android:color/accent_material_dark</color>
+    <color name="sesl_progress_control_color_activated">@*android:color/accent_material_dark</color>	
+	
+	<color name="tw_index_scroll_index_divider_color">@*android:color/transparent</color>	
+    <color name="tw_index_scroll_index_divider_color_dimmed">@*android:color/transparent</color>	
+    <color name="sesl_list_divider_color">@*android:color/transparent</color>	
+    <color name="list_item_album_track_header_divider">@*android:color/transparent</color>	
+    <color name="index_scroll_divider">@*android:color/transparent</color>	
+    <color name="divider_action_bar">@*android:color/transparent</color>	
+    <color name="divider_dialog_sub_header_winset">@*android:color/transparent</color>	
+    <color name="divider_list_blur">@*android:color/transparent</color>	
+    <color name="divider_list_winset">@*android:color/transparent</color>	
+    <color name="divider_tab">@*android:color/transparent</color>	
+    <color name="tw_index_scroll_index_divider_color_light">@*android:color/transparent</color>	
+    <color name="tw_index_scroll_index_divider_color_light_dimmed">@*android:color/transparent</color>	
+	
+	
+    <color name="cover_clear_queue_divider">@*android:color/transparent</color>	
+    <color name="widget_list_divider">@*android:color/transparent</color>	
+    <color name="widget_list_divider_dark">@*android:color/transparent</color>	
+    <color name="tw_index_scroll_bg_tint_color">@*android:color/transparent</color>	
+    <color name="sub_header_divider_kt">@*android:color/transparent</color>	
+    <color name="sesl_preference_switch_divider_color_light">@*android:color/transparent</color>	
+    <color name="sesl_preference_empty_section_divider_color_light">@*android:color/transparent</color>	
+    <color name="sesl_color_picker_used_color_group_divider_color">@*android:color/transparent</color>	
+    <color name="radio_dial_setting_dialog_divider">@*android:color/transparent</color>	
+    <color name="milk_tab_divider_color">@*android:color/transparent</color>	
+    <color name="milk_store_common_track_detail_popup_divider">@*android:color/transparent</color>	
+    <color name="milk_store_common_track_list_divider">@*android:color/transparent</color>	
+    <color name="milk_store_artist_detail_item_divider_color">@*android:color/transparent</color>	
+    <color name="milk_library_top_divider_blur">@*android:color/transparent</color>	
+    <color name="milk_common_lyric_popup_divider">@*android:color/transparent</color>	
+    <color name="list_item_heart_divider_background_kt">@*android:color/transparent</color>	
+
+    <color name="heart_spotify_no_item_divider_kt">@*android:color/transparent</color>	
+    <color name="flat_button_layout_divider_color_kt">@*android:color/transparent</color>	
+</resources>

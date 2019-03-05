@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing PushBullet's Styles-->
+
+<resources>
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.PopupMenu" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="Base.Widget.AppCompat.Light.PopupMenu.Overflow" parent="@*com.pushbullet.android:style/Base.Widget.AppCompat.Light.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4.0dip</item>
+        <item name="android:overlapAnchor">true</item>
+		<item name="android:backgroundTint">@null</item>
+	</style>
+	<style name="Base.Widget.AppCompat.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:backgroundTint">@null</item>
+    </style>
+	<style name="Platform.Widget.AppCompat.Spinner" parent="@android:style/Widget.Spinner" >
+	    <item name="android:tint">#ffffff</item>
+		<item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="ChatBubbleText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorLink">#ffffffff</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ToolbarThemeOverlay">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="*com.pushbullet.android:colorControlNormal">#ffffffff</item>
+        <item name="*com.pushbullet.android:colorControlHighlight">#33ffffff</item>
+    </style>
+	
+
+</resources>

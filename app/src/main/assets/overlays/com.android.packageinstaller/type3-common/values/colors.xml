@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark_material_dark">@android:color/transparent</color>
+    <color name="primary_dark_material_light">@android:color/transparent</color>
+    <color name="primary_material_dark">@android:color/transparent</color>
+    <color name="primary_material_light">@android:color/transparent</color>
+    <color name="bigIconColor">@null</color>
+    <color name="grant_permissions_app_color">@*android:color/accent_material_dark</color>
+    <color name="grant_permissions_progress_color">@*android:color/accent_material_dark</color>
+    <color name="header_background_color">@android:color/transparent</color>
+	<color name="switchbar_background_color">@*android:color/background_dark</color>
+	<color name="material_grey_300">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_100">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_50">@*android:color/dim_foreground_light</color>
+    <color name="background_floating_material_light">@*android:color/dim_foreground_light</color>
+</resources>

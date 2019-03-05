@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:tag="layout/view_set_up_share_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@*com.apple.android.music:dimen/default_padding" android:paddingRight="@*com.apple.android.music:dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.apple.android.storeui.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.apple.android.music:string/set_up_sharing_title" style="@*com.apple.android.music:style/Roboto" />
+        <ImageView android:layout_gravity="center|right" android:tag="binding_1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@*com.apple.android.music:drawable/actionitem_social_close" android:scaleType="center" />
+    </FrameLayout>
+    <com.apple.android.storeui.views.CustomTextView android:textSize="14.0sp" android:textColor="@*com.apple.android.music:color/gray_text" android:paddingLeft="@*com.apple.android.music:dimen/default_padding" android:paddingRight="@*com.apple.android.music:dimen/default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.apple.android.music:string/set_up_sharing_subtitle" style="@*com.apple.android.music:style/Roboto" />
+    <View android:id="@*com.apple.android.music:id/divider" android:background="@*com.apple.android.music:color/system_light_gray_2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@*com.apple.android.music:dimen/line_divider_stroke" android:layout_marginTop="@*com.apple.android.music:dimen/default_padding" />
+</LinearLayout>

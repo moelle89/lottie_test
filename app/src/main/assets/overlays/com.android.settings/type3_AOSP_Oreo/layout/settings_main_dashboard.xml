@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.android.settings">
+    <FrameLayout android:id="@*com.android.settings:id/search_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<View android:layout_width="match_parent" android:background="@*android:drawable/status_bar_closed_default_background" android:layout_height="54.0dip" android:layout_marginTop="24dp" />
+         <View android:background="@*com.android.settings:drawable/abc_textfield_search_default_mtrl_alpha" android:backgroundTint="@*android:color/holo_light_control_normal"  android:layout_width="fill_parent" android:layout_height="52.0dip" android:alpha="1.0" />
+		<android.support.v7.widget.CardView android:id="@*com.android.settings:id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:backgroundTint="#00000000" android:layout_margin="@*com.android.settings:dimen/search_bar_margin" app:cardBackgroundColor="#00000000" app:cardCornerRadius="18.0dip" app:cardElevation="0.0dip">
+            <Toolbar android:theme="?android:actionBarTheme" android:id="@*com.android.settings:id/search_action_bar" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@*com.android.settings:dimen/search_bar_height" android:title="@*com.android.settings:string/search_menu" android:titleTextAppearance="@*com.android.settings:style/TextAppearance.SearchBar" android:navigationIcon="@*com.android.settings:drawable/ic_search_24dp" android:navigationContentDescription="@*com.android.settings:string/search_menu" android:contentInsetStartWithNavigation="64.0dip" />
+        </android.support.v7.widget.CardView>
+		<ImageView
+			android:maxHeight="130dip" 
+			android:adjustViewBounds="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="centerCrop"
+			android:src="@*com.android.settings:drawable/fallback_home_unprovisioned_background" />
+    </FrameLayout>
+    <FrameLayout android:id="@*com.android.settings:id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

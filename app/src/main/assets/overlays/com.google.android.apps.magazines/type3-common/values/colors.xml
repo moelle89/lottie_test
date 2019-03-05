@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="google_dark_blue500">@*android:color/accent_material_dark</color>
+    <color name="google_dark_blue600">@*android:color/accent_material_dark</color>
+    <color name="google_dark_blue700">@*android:color/accent_material_dark</color>
+    <color name="google_dark_blue800">@*android:color/accent_material_dark</color>
+    <color name="google_dark_blue900">@*android:color/accent_material_dark</color>
+    <color name="quantum_googblueA200">@*android:color/accent_material_dark</color>
+    <color name="google_blue500">@*android:color/accent_material_dark</color>
+    <color name="google_blue600">@*android:color/accent_material_dark</color>
+    <color name="google_blue700">@*android:color/accent_material_dark</color>
+    <color name="google_blue800">@*android:color/accent_material_dark</color>
+    <color name="google_blue900">@*android:color/accent_material_dark</color>
+
+    <color name="app_color_material">@*android:color/accent_material_dark</color>    
+	<color name="app_color_material_night">@*android:color/accent_material_dark</color>
+    <color name="app_color_material_dark">@*android:color/accent_material_dark</color>
+    <color name="app_color_material_light">@*android:color/accent_material_dark</color>
+
+    <color name="quantum_googblue500">@*android:color/accent_material_dark</color>
+    <color name="quantum_googblue600">@*android:color/accent_material_dark</color>
+    <color name="quantum_googblue800">@*android:color/accent_material_dark</color>
+	
+    <color name="toolbar_controls_color">@*com.google.android.apps.magazines:color/gm_grey_600</color>
+    <color name="gm_grey_600">@*android:color/secondary_text_default_material_dark</color>
+
+    <color name="text_color_primary">@android:color/white</color>
+    <color name="text_color_secondary">@*android:color/lighter_gray</color>
+    <color name="text_color_sub_headline">@*android:color/holo_orange_light</color>
+	
+    <color name="play_fg_primary">@android:color/white</color>
+    <color name="play_fg_secondary">@*android:color/lighter_gray</color>
+    <color name="play_fg_tertiary">@*android:color/holo_orange_light</color>
+
+	<color name="google_opensearchbar_background_color">@*android:color/accent_material_dark</color>
+	
+    <color name="gm_grey_800">@*android:color/button_material_dark</color>
+    <color name="text_color_tertiary">@*android:color/holo_orange_light</color>
+    <color name="gm_grey_500">@*android:color/holo_orange_light</color>
+    <color name="thirty_percent_black">#4cffffff</color>
+    <color name="toolbar_background_color">@*android:color/background_dark</color>
+    <color name="home_background">@*com.google.android.apps.magazines:color/white</color>
+	<color name="bottom_bar_background_color">@*android:color/transparent</color>	
+    <color name="card_divider">@*com.google.android.apps.magazines:color/gm_grey_100</color>    
+	<color name="card_divider_night">@*com.google.android.apps.magazines:color/gm_grey_100</color>
+    <color name="gm_grey_100">@*android:color/dim_foreground_light</color>
+    <color name="image_not_available">@*android:color/dim_foreground_light</color>
+    <color name="image_not_available_dark">@*android:color/dim_foreground_light</color>
+	
+    <color name="card_divider_dark">@*com.google.android.apps.magazines:color/gm_grey_300</color>
+    <color name="gm_grey_300">@*android:color/background_dark</color>
+    <color name="play_avatar_outline">#33ffffff</color>	
+    <color name="play_reason_separator">@*android:color/dim_foreground_light</color>
+    <color name="sendkit_ui_divider_color">@*android:color/dim_foreground_light</color>
+	<color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
+    <color name="my_mag_archive_divider">@*android:color/background_dark</color>
+
+    <color name="white">@*android:color/background_dark</color>
+    <color name="status_bar_color_dark">@*android:color/background_dark</color>
+    <color name="status_bar_color_grey">@*android:color/background_dark</color>
+    <color name="status_bar_color_light">@*android:color/background_dark</color>
+
+    <color name="ripple_light">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#33ffffff</color>
+    <color name="play_ripple_light">#33ffffff</color>
+    <color name="gm_grey_900">@*android:color/background_dark</color>
+	<color name="google_grey900">@*android:color/background_dark</color>
+	<color name="media_background">@*android:color/timepicker_default_background_material</color>
+    <color name="card_background">@*android:color/timepicker_default_background_material</color>
+	
+    <color name="placeholder_view_bg">@*android:color/user_icon_default_white</color>
+    <color name="placeholder_view_bg_dark">@*android:color/user_icon_default_white</color>
+</resources>

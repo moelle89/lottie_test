@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="downloading_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="notification_tray_download_queue_color">@*android:color/accent_material_dark</color>
+    <color name="notification_tray_subtitle_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="notification_tray_title_color">@*android:color/accent_material_dark</color>
+</resources>

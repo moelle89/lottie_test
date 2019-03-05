@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CardView" parent="@*com.netflix.mediaclient:style/Base.CardView">
+        <item name="*com.netflix.mediaclient:cardBackgroundColor">@*android:color/transparent</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.Light.StatusBar" parent="@*com.netflix.mediaclient:style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@*android:color/facelock_spotlight_mask</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Signup.Native" parent="@*com.netflix.mediaclient:style/Theme.Netflix.Light">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:windowBackground">@*android:color/facelock_spotlight_mask</item>
+        <item name="android:progressBarStyle">@*com.netflix.mediaclient:style/Netflix.ProgressBar</item>
+        <item name="android:actionBarStyle">@*com.netflix.mediaclient:style/Signup.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">@*com.netflix.mediaclient:style/LightActionBarTextAppearance</item>
+        <item name="android:statusBarColor">@*android:color/facelock_spotlight_mask</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.netflix.mediaclient:actionMenuTextColor">@*android:color/white</item>
+        <item name="*com.netflix.mediaclient:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.netflix.mediaclient:colorPrimary">@*android:color/facelock_spotlight_mask</item>
+        <item name="*com.netflix.mediaclient:colorPrimaryDark">@*android:color/facelock_spotlight_mask</item>
+        <item name="*com.netflix.mediaclient:netflixTextViewStyle">@*com.netflix.mediaclient:style/NetflixSignUpTextViewStyle</item>
+        <item name="*com.netflix.mediaclient:signupWarningViewStyle">@*com.netflix.mediaclient:style/SignupWarningContainer</item>
+        <item name="*com.netflix.mediaclient:toolbarBackground">@*android:color/transparent</item>
+        <item name="*com.netflix.mediaclient:windowActionBar">false</item>
+        <item name="*com.netflix.mediaclient:windowNoTitle">true</item>
+    </style>
+</resources>

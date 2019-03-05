@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="system_bar_background_opaque">@*android:color/background_dark</color>		
+    <color name="status_bar_background_opaque">@*android:color/holo_primary_dark</color>	
+	<color name="status_bar_background_semi_transparent">@*android:color/timepicker_default_background_material</color>
+	<color name="status_bar_background_transparent">@android:color/transparent</color>	
+	<color name="navigation_bar_background_opaque">@*android:color/background_dark</color>
+	<color name="navigation_bar_background_semi_transparent">@*android:color/background_dark</color>
+	<color name="navigation_bar_background_transparent">@android:color/transparent</color>
+
+	<color name="qs_detail_transition">#09b3d1e3</color>
+    <color name="qs_edit_item_decoration_bg">@*android:color/legacy_primary</color>
+    <color name="qs_edit_overflow_bg">@*android:color/user_icon_7</color>
+	
+    <color name="system_accent_color">@*android:color/accent_material_dark</color>
+    <color name="system_primary_color">@*android:color/legacy_primary</color>
+    <color name="system_secondary_color">@*android:color/legacy_primary</color>    
+    <color name="primary_material_dark">@*android:color/transparent</color>
+    <color name="primary_material_light">@*android:color/transparent</color>
+    <color name="primary_dark_material_dark">@*android:color/transparent</color>
+    <color name="primary_dark_material_light">@*android:color/transparent</color>
+
+    <color name="pie_select">@*android:color/holo_blue_bright</color>
+    <color name="chevron">@*android:color/holo_blue_bright</color>
+	<color name="volume_slider_inactive">@*android:color/material_blue_grey_700</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+	<color name="material_deep_teal_500">@*android:color/holo_blue_bright</color>
+
+    <color name="data_usage_graph_track">@*android:color/button_material_dark</color>
+    <color name="data_usage_graph_warning">@*android:color/accent_material_dark</color>
+    <color name="data_usage_primary">@*android:color/accent_material_dark</color>
+    <color name="data_usage_secondary">@*android:color/material_blue_grey_700</color>
+    <color name="fab_ripple">#14ffffff</color>
+    <color name="ripple_material_dark">@*android:color/accent_material_dark</color>
+    <color name="ripple_material_light">@*android:color/accent_material_dark</color>
+    <color name="fab_shape">@*android:color/accent_material_dark</color>
+    <color name="material_blue_grey_800">@*android:color/accent_material_dark</color>
+    <color name="material_blue_grey_900">@*android:color/accent_material_dark</color>
+    <color name="material_blue_grey_950">@*android:color/transparent</color>
+    <color name="navbar_tuner_background_color">@*android:color/legacy_primary</color>
+    <color name="navbar_tuner_text_color">@*android:color/accent_material_dark</color>
+	
+    <color name="qs_detail_button">@*android:color/accent_material_dark</color>
+    <color name="qs_detail_progress_track">#80ffffff</color>
+    <color name="qs_edit_button_text_color">@*android:color/material_blue_grey_700</color>
+    <color name="qs_text">#ffffff</color>
+    <color name="qs_tile_divider">#00000000</color>
+    <!--<color name="qs_tile_text">#ffffff</color>-->
+	
+    <color name="screen_pinning_nav_icon_highlight_outer">@*android:color/material_blue_grey_700</color>
+    <color name="screen_pinning_request_bg">@*android:color/accent_material_dark</color>
+    <color name="segmented_button_selected">@*android:color/accent_material_dark</color>
+    <color name="segmented_button_unselected">@*android:color/material_blue_grey_700</color>
+    <color name="segmented_buttons_background">@*android:color/legacy_primary</color>
+    <color name="switch_accent_color">@*android:color/accent_material_dark</color>
+    <color name="switch_bar_background">@*android:color/material_grey_800</color>
+    <color name="system_warning_color">@*android:color/accent_material_dark</color>
+	
+    <color name="usage_graph_dots">@*android:color/material_blue_grey_700</color>
+    <color name="volume_icon_color">#ffffffff</color>
+    <color name="volume_settings_icon_color">@*android:color/material_blue_grey_700</color>
+    <color name="zen_introduction_message_background">@*android:color/highlighted_text_dark</color>
+  
+    <color name="lb_basic_card_bg_color">@*android:color/background_dark</color>
+    <color name="lb_default_brand_color_dark">@*android:color/background_dark</color>
+    <color name="recents_tv_card_background_color">@*android:color/background_dark</color>
+	<color name="lb_basic_card_info_bg_color">@*android:color/legacy_primary</color>
+	<color name="lb_default_brand_color">@*android:color/legacy_primary</color>
+	<color name="lb_media_background_color">@*android:color/legacy_primary</color>
+    <color name="design_default_color_primary">@*android:color/accent_material_dark</color>
+    <color name="design_default_color_primary_dark">@*android:color/accent_material_dark</color>
+		
+    <color name="smartbar_editor_popup_background">@*android:color/legacy_primary</color>
+    <color name="smartbar_editor_popup_text">#ffffff</color>
+    <color name="smartbar_editor_popup_horiz_separator">@*android:color/legacy_primary</color>
+	
+    <color name="keyguard_affordance">@*android:color/accent_material_dark</color>
+    <color name="keyguard_default_primary_text_color">#ffffffff</color>
+    <color name="keyguard_default_secondary_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="keyguard_default_icon_color">@*android:color/accent_material_dark</color>
+    <color name="clock_gray">@*android:color/secondary_text_default_material_dark</color>
+    <color name="omni_jaws_detailed_temperature_color">#ECD8EFF9</color>
+	
+
+    <color name="screenshot_flash_color">@*android:color/accent_material_dark</color>
+    <color name="screenshot_background_color">@*android:color/dim_foreground_light</color>
+	<!-- tiles n stuff -->
+	<color name="qs_batterymeter_frame_color">@*android:color/holo_blue_bright</color>
+    <color name="qs_battery_graph_text_color">@*android:color/material_blue_grey_700</color>
+    <color name="qs_edit_toolbar_text_color">#ffffffff</color>
+    <color name="qs_battery_text_color">@*android:color/accent_material_dark</color>
+
+    <color name="config_pulseFillColor">@*android:color/accessibility_focus_highlight</color>
+    <color name="qs_subhead">#00000000</color>
+    <color name="qs_detail_button_white">#b3ffffff</color>
+    <color name="qs_tile_tint_unavailable">#40ffffff</color>    
+	<color name="qs_tile_disabled_color">#3EB3D1E3</color>
+    <color name="qs_tile_tint_inactive">#3EB3D1E3</color>
+    <color name="qs_tile_tint_active">@*com.android.systemui:color/abc_search_url_text_selected</color>
+    <color name="external_qs_tile_tint_color">@*com.android.systemui:color/abc_search_url_text_selected</color>
+
+</resources>

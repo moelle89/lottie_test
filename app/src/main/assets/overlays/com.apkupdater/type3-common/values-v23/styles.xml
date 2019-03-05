@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CardView" parent="@*com.apkupdater:style/Base.CardView">
+        <item name="*com.apkupdater:cardBackgroundColor">@*android:color/transparent</item>        
+		<item name="android:backgroundTint">@*android:color/dim_foreground_light</item>
+    </style>
+</resources>

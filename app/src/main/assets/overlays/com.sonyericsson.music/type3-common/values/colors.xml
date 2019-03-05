@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Walkmann's Colors-->
+<resources>
+	<color name="cardview_dark_background">@*android:color/dim_foreground_light</color>
+    <color name="landingpage_card_background_color_inverse">@*android:color/background_dark</color>
+	<color name="music_background_color_inverse">@*android:color/background_dark</color> 
+	<color name="navigation_drawer_background_inverse">@*android:color/background_dark</color>
+	<color name="miniplayer_bg_inverse">@android:color/black</color> 
+	<color name="material_grey_850">@*android:color/background_dark</color> 
+
+    <color name="material_grey_600">@*android:color/primary_material_dark</color>
+    <color name="material_grey_800">@*android:color/primary_material_dark</color> 
+    <color name="material_grey_900">@*android:color/background_dark</color>   
+    <color name="list_divider_index_color_inverse">@*android:color/background_dark</color> 
+    <color name="button_material_dark">@*android:color/accent_material_dark</color>
+    <color name="button_material_light">@*android:color/accent_material_dark</color>  
+    <color name="list_divider_color_inverse">#0CFFFFFF</color> 
+    <color name="design_snackbar_background_color">@*android:color/control_checkable_material</color>
+	<color name="music_landingpage_background_color_inverse">@*android:color/background_dark</color>   
+	<color name="background_color_inverse">@*android:color/background_dark</color>
+    <color name="promotion_backplate_normal">@*android:color/accent_material_dark</color>
+	<color name="listitem_selected_holo_color">#FF8C8CFF</color>
+	<color name="material_accent">#ff8C8CFF</color>
+	<color name="navigation_drawer_pressed_background_inverse">#d2903cf1</color>
+    <color name="navigation_drawer_selected_background_inverse">#304a6c77</color>
+    <color name="material_accent_dark">#FF8C8CFF</color>
+    <color name="material_accent_inverse">#FF8C8CFF</color>
+	<color name="material_primary">@*android:color/holo_primary_dark</color> 
+    <color name="material_primary_dark">@*android:color/holo_primary_dark</color> 
+    <color name="mini_player_progress_bg">#ff101c29</color>
+    <color name="mini_player_progress_fill">@*android:color/accent_material_dark</color>
+    <color name="tab_indicator">@*android:color/button_material_dark</color>
+	
+    <color name="dark_theme_default_window_background_color">@*android:color/background_dark</color>
+    <color name="dark_theme_folder_color">@*android:color/holo_orange_light</color>
+    <color name="dark_theme_list_divider_color">@*android:color/dim_foreground_light</color>
+    <color name="dark_theme_list_headings_color">@*android:color/accent_material_dark</color>
+    <color name="dark_theme_material_accent_color">@*android:color/accent_material_dark</color>
+    <color name="dark_theme_material_control_activated_color">@*android:color/accent_material_dark</color>
+    <color name="dark_theme_material_control_highlight_color">@*android:color/accent_material_dark</color>
+    <color name="dark_theme_material_control_normal_color">@*android:color/lighter_gray</color>
+    <color name="dark_theme_material_primary_color">@*android:color/timepicker_default_background_material</color>
+    <color name="dark_theme_material_primary_color_dark">@*android:color/timepicker_default_background_material</color>
+    <color name="dark_theme_material_primary_color_light">@*android:color/background_dark</color>
+    <color name="dark_theme_mini_player_bg">@*android:color/timepicker_default_background_material</color>
+    <color name="dark_theme_mini_player_progress_bg">#26ffffff</color>
+    <color name="dark_theme_moving_background">@*android:color/background_dark</color>
+    <color name="dark_theme_navigation_drawer_overlay">@*android:color/facelock_spotlight_mask</color>
+    <color name="dark_theme_navigation_drawer_pressed_background">#4dffffff</color>
+    <color name="dark_theme_navigation_drawer_selected_background">#304a6c77</color>
+</resources>

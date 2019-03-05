@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@*android:color/background_dark" />
+        </shape>
+    </item>
+    <item>
+        <shape android:dither="true" android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerY="0.4"
+                android:gradientRadius="50%p"
+                android:startColor="@*android:color/button_material_dark"
+                android:endColor="@android:color/transparent" />
+        </shape>
+    </item>
+    <item
+        android:bottom="200dip">
+        <shape android:dither="true" android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerY="0.5"
+                android:gradientRadius="15%p"
+                android:startColor="#17ffffff"
+                android:centerColor="#9dffffff"
+                android:endColor="#00033bff" />
+        </shape></item>
+    <item  android:bottom="200dip">
+        <bitmap android:gravity="center" android:src="@*com.google.android.apps.youtube.music:drawable/record" />
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@*com.google.android.apps.youtube.music:drawable/notification_bg_low_pressed" />
+    </item>
+</layer-list>

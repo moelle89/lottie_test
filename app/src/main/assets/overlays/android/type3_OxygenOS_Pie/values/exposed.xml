@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="power_menu_power_off">@*android:color/lighter_gray</color>
+    <color name="power_menu_restart">@*android:color/lighter_gray</color>
+    <color name="power_menu_restart_advanced">@*android:color/lighter_gray</color>
+    <color name="power_menu_hot_reboot">@*android:color/lighter_gray</color>
+    <color name="power_menu_advanced_bootloader">@*android:color/lighter_gray</color>
+    <color name="power_menu_advanced_recovery">@*android:color/lighter_gray</color>
+    <color name="power_menu_advanced_system_restart_ui">@*android:color/lighter_gray</color>
+    <color name="power_menu_screenshot">@*android:color/lighter_gray</color>
+    <color name="power_menu_airplane">@*android:color/lighter_gray</color>
+    <color name="power_menu_lock">@*android:color/lighter_gray</color>
+    <color name="power_menu_screenrecord">@*android:color/lighter_gray</color>
+    <color name="power_menu_settings">@*android:color/lighter_gray</color>
+    <color name="power_menu_torch">@*android:color/lighter_gray</color>
+	
+    <!-- Generic colors -->
+    <color name="generic_theme_primary">@*android:color/background_dark</color>
+    <color name="generic_theme_primary_dark">@*android:color/background_dark</color>
+    <color name="generic_theme_accent">@*android:color/accent_material_dark</color>
+   <!-- Two target preference vertical divider color -->
+    <color name="list_divider_dark">#00000000</color>
+	
+    <color name="notification_ripple_untinted_color">@*android:color/holo_button_pressed</color>
+    <color name="notification_ripple_color_low_priority">@*android:color/holo_button_pressed</color>
+    <color name="notification_ripple_tinted_color">@*android:color/holo_button_pressed</color>
+    <color name="notification_gear_color">@*android:color/holo_light_control_activated</color>
+    <color name="notification_snooze_text">@*android:color/notification_primary_text_color_light</color>	
+</resources>

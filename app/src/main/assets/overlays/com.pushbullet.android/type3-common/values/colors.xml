@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing PushBullet's Colors-->
+
+<resources>
+    <color name="cardview_dark_background">@*android:color/dim_foreground_light</color>
+    <color name="background_material_dark">@*android:color/dim_foreground_light</color>
+    <color name="black54">#ffffffff</color>
+    <color name="material_grey_50">@*android:color/background_dark</color>
+    <color name="cardview_light_background">@*android:color/background_dark</color>
+    <color name="background_floating_material_light">@*android:color/dim_foreground_light</color>
+    <color name="background_material_light">@*android:color/dim_foreground_light</color>
+    <color name="black">#ff000000</color>
+    <color name="black10">#1a0D1A24</color>
+    <color name="black15">#260D1A24</color>
+    <color name="black20">#330D1A24</color>
+    <color name="black60">#990D1A24</color>
+    <color name="secondary_text_default_material_dark">#B3C7FFFF</color>
+    <color name="gray1">@*android:color/dim_foreground_light</color>
+    <color name="gray2">#ffffffff</color>
+    <color name="gray4">#ffffffff</color>
+	<color name="indigo">@*android:color/dim_foreground_light</color>
+    <color name="gray3">#36434d</color>
+    <color name="material_grey_800">#a7cea3</color>
+    <color name="white">#ff000000</color>
+    <color name="white40">#4dffffff</color>
+    <color name="white60">#99ffffff</color>
+    <color name="white65">#a6ffffff</color>
+    <color name="white90">#ff000000</color>
+	<color name="dark_green">#4bb368</color>
+    <color name="mid_green">#4bb368</color>    	
+	<color name="darkgreen">#4bb368</color>
+    <color name="midgreen">#4bb368</color>    
+	<color name="midgreen20">#4bb368</color>
+    <color name="teal">#4bb368</color>
+    <color name="material_deep_teal_500">#4bb368</color>
+    <color name="accent_material_light">#4bb368</color>
+    <color name="app_accent">#4bb368</color>
+    <color name="ripple_material_dark">#1FFFFFFF</color>
+    <color name="ripple_material_light">#1FFFFFFF</color>
+</resources>

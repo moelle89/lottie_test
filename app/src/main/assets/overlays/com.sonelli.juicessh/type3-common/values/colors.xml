@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="accent_bold">@*android:color/accent_material_dark</color>
+    <color name="accent_darker">@*android:color/white</color>
+    <color name="text_heading">@*android:color/accent_material_dark</color>
+    <color name="text_item_subtitle">@*android:color/secondary_text_default_material_dark</color>
+    <color name="text_item_title">@*android:color/white</color>
+    <color name="text_normal">@*android:color/lighter_gray</color>
+    <color name="icon_item">@*android:color/lighter_gray</color>
+    <color name="juicessh_yellow">@*android:color/accent_material_dark</color>
+    <color name="primary_darker">@*android:color/timepicker_default_background_material</color>
+    <color name="primary_lighter">@*android:color/timepicker_default_background_material</color>
+    <color name="primary_bold">@*android:color/accent_material_dark</color>
+    <color name="primary_bold_transparent">@*android:color/highlighted_text_dark</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!-- power dialog bg -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="5.5dip" android:color="@*android:color/secondary_text_default_material_light" />
+            <solid android:color="@*android:color/secondary_text_default_material_light" />
+            <corners android:radius="20.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" android:tint="@*android:color/timepicker_default_background_material">
+            <gradient
+                android:type="linear"
+                android:startColor="#8b000000"
+                android:endColor="#40000000"
+                android:angle="90" />
+            <corners android:radius="20.0dip" />
+        </shape>
+    </item>
+    <item android:top="1.0dip" android:left="1.0dip" android:right="1.0dip" android:bottom="2.0dip">
+        <shape android:shape="rectangle" android:tint="@*android:color/accent_material_dark">
+            <stroke android:width="1.8dip" android:color="#ffffffff" />
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="20.0dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chooser_grid_bg">@*android:color/background_device_default_dark</color>
+	<color name="exposed_notification_big_pic_bg">#cc000000</color>
+    <color name="exposed_resolver_list_bg">@*android:color/background_device_default_dark</color>
+	<color name="chooser_service_row_background_color">@*android:color/background_device_default_dark</color>
+
+    <color name="exposed_bg_light">@*android:color/dim_foreground_light</color>
+    <color name="datepicker_default_header_selector_background_holo_dark">@*android:color/dim_foreground_light</color>
+    <color name="datepicker_default_header_selector_background_material_dark">@*android:color/dim_foreground_light</color>
+<!---->
+	<color name="primary_text_leanback_dark">#ffffffff</color>
+    <color name="button_material_light">#ffe4ebed</color>
+    <color name="navigation_bar_icon_color">@*android:color/background_dark</color>
+    <color name="navigation_bar_theme_background_color">@*android:color/background_dark</color>
+    <color name="light_navigation_bar_icon_color">@*android:color/background_dark</color>
+    <color name="dark_navigation_bar_white_icon_color">@*android:color/background_dark</color>
+    <color name="dark_navigation_bar_icon_color">@*android:color/background_dark</color>
+    <color name="navigation_bar_icon_color_top_bound">@*android:color/background_dark</color>
+    <color name="navigation_bar_icon_color_low_bound">@*android:color/background_dark</color>
+	
+    <!-- Accent -->
+<!-- primary material / devicedefault -->
+    <color name="background_floating_device_default_dark">@*android:color/dim_foreground_light</color>
+    <color name="background_floating_device_default_light">@*android:color/dim_foreground_light</color>
+    <color name="material_blue_grey_800">@*android:color/accent_material_dark</color>
+	<color name="material_blue_grey_900">@*android:color/accent_material_dark</color>
+    <color name="primary_dark_material_light">@android:color/black</color>
+    <color name="primary_dark_material_settings_light">@android:color/black</color>
+    <color name="primary_device_default_dark">@*android:color/legacy_primary</color>
+    <color name="primary_device_default_light">@*android:color/legacy_primary</color>
+    <color name="primary_device_default_settings">@*android:color/legacy_primary</color>
+    <color name="primary_device_default_settings_light">@*android:color/legacy_primary</color>
+    <color name="primary_material_light">@android:color/black</color>
+    <color name="primary_material_settings_light">@android:color/black</color>
+
+    <color name="accent_device_default_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_device_default_light">@*android:color/accent_material_dark</color>
+    <color name="accent_material_50">@*android:color/accent_material_dark</color>
+    <color name="accent_material_700">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+
+    <color name="notification_title_color">#ffffffff</color>    
+	<color name="primary_text_light">#ffffffff</color>
+    <color name="volume_slider_thumb_inactive">#ffffffff</color>
+
+
+<!-- DD_kt imports -->
+    <color name="holo_control_normal">@*android:color/button_material_dark</color>
+    <color name="background_material_dark">@*android:color/background_dark</color>         
+	<color name="system_bar_background_semi_transparent">#00000000</color>
+	<color name="input_method_navigation_guard">@*android:color/background_dark</color>
+    <color name="battery_saver_mode_color">@*android:color/holo_button_pressed</color>
+    <color name="highlighted_text_light">@*android:color/accent_material_dark</color>	
+    <color name="perms_costs_money">@*android:color/accent_material_dark</color>
+    <color name="perms_dangerous_grp_color">@*android:color/accent_material_dark</color>
+    <color name="perms_dangerous_perm_color">@*android:color/accent_material_dark</color>
+    <color name="lockscreen_owner_info">@*android:color/accent_material_dark</color>
+
+    <color name="resolver_list_bg">@*android:color/background_device_default_dark</color>
+	<color name="exposed_bg_dark">@*android:color/legacy_primary</color>
+    
+    <color name="material_grey_850">@*android:color/background_dark</color>
+	<color name="material_blue_grey_200">@*android:color/accent_material_dark</color>
+    <color name="Blue_800">@*android:color/accent_material_dark</color>
+    <color name="Indigo_700">@*android:color/accent_material_dark</color>
+    <color name="Indigo_800">@*android:color/accent_material_dark</color>
+    <color name="Pink_700">#ff0046</color>
+    <color name="Pink_800">#ff0046</color>
+    <color name="Purple_700">@*android:color/accent_material_dark</color>
+    <color name="Purple_800">@*android:color/accent_material_dark</color>
+    <color name="Teal_700">@*android:color/accent_material_dark</color>
+    <color name="Teal_800">@*android:color/accent_material_dark</color>
+    <color name="material_deep_teal_100">@*android:color/accent_material_dark</color>
+    <color name="material_deep_teal_200">@*android:color/accent_material_dark</color>
+    <color name="material_deep_teal_300">@*android:color/accent_material_dark</color>    
+	<color name="material_deep_teal_500">@*android:color/accent_material_dark</color>
+
+    <color name="secondary_device_default_settings_light">@*android:color/shadow</color><!-- QuickSettings customizer bg (bottom) -->	
+    <color name="tertiary_device_default_settings">@*android:color/button_material_dark</color>
+
+    <color name="secondary_material_settings_light">@*android:color/button_material_dark</color>
+	<color name="secondary_device_default_settings">@*android:color/holo_primary_dark</color>
+    <color name="quaternary_device_default_settings">@*android:color/holo_orange_light</color>
+    <color name="primary_dark_device_default_dark">@*android:color/legacy_primary_dark</color>
+	<color name="secondary_material_settings">@*android:color/legacy_primary</color>	
+	<color name="tertiary_material_settings">@*android:color/background_dark</color>
+    <color name="primary_dark_device_default_settings">@*android:color/legacy_primary_dark</color>	
+	<color name="primary_material_settings">@*android:color/legacy_primary_dark</color>
+    <color name="primary_dark_material_settings">@*android:color/legacy_primary_dark</color>
+    <color name="primary_dark_material_light_light_status_bar">@*android:color/legacy_primary_dark</color>	
+    <color name="accent_device_default_700">@*android:color/accent_material_dark</color>
+    <color name="accent_device_default_50">#ffffff</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="36dp" android:viewportHeight="88.0"
+    android:viewportWidth="88.0" android:width="36dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@*android:color/button_material_dark" android:pathData="M78.4,26L78.4,26c-0.2,-2.5 -2.8,-4.6 -6.3,-5h-61.2c0,0 0,1.3 0,2v7.5c0,0.5 0,0.9 0.1,1.2L11,46v20.2c0,4.4 3.3,8 7.4,8h52.5c4.1,0 7.4,-3.7 7.4,-8L78.3,46v-14.8C78.4,29.4 78.4,27.6 78.4,26z"/>
+    <path android:fillColor="#1EFFFFFF" android:pathData="M78.4,26L78.4,26c-0.2,-2.5 -2.8,-4.6 -6.3,-5h-61.2c0,0 0,1.3 0,2v7.5c0,0.5 0,0.9 0.1,1.2L11,46v20.2c0,4.4 3.3,8 7.4,8h52.5c4.1,0 7.4,-3.7 7.4,-8L78.3,46v-14.8C78.4,29.4 78.4,27.6 78.4,26z"/>
+    <path android:fillColor="@*android:color/button_material_dark" android:pathData="M46.4,12.5l-35.5,0.1l0.1,8.4l43.6,0z"/>
+    <path
+        android:fillColor="@*android:color/lighter_gray"
+        android:fillAlpha="0.7"
+        android:strokeAlpha="0.7"
+        android:strokeWidth="1"
+        android:pathData="M62.7,46.4H26.4c-0.9,0-1.5,0.6-1.5,1.5c0,0.9,0.6,1.7,1.5,1.7h36.2c0.9,0,1.5-0.6,1.5-1.5
+C64.2,47.3,63.5,46.4,62.7,46.4z" />
+    <path
+        android:fillColor="@*android:color/lighter_gray"
+        android:pathData="M26.4,29.6h31.7c2.6,0,4.5,2.1,4.5,4.5s-2.1,4.5-4.5,4.5H26.4c-2.6,0-4.5-2.1-4.5-4.5S23.9,29.6,26.4,29.6z
+M58,57.7H26.4
+c-2.6,0-4.5,2.1-4.5,4.5s2.1,4.5,4.5,4.5h31.7c2.6,0,4.5-2.1,4.5-4.5S60.5,57.7,58,57.7z
+M58,63.7H26.4c-0.9,0-1.5-0.6-1.5-1.5
+c0-0.9,0.6-1.5,1.5-1.5h31.7c0.9,0,1.5,0.6,1.5,1.5C59.7,63,58.8,63.7,58,63.7z
+M62.7,43.4H26.4c-2.6,0-4.5,2.1-4.5,4.5
+s2.1,4.5,4.5,4.5h36.2c2.6,0,4.5-2.1,4.5-4.5S65,43.4,62.7,43.4z
+M62.7,49.6H26.4c-0.9,0-1.5-0.6-1.5-1.5c0-0.9,0.6-1.5,1.5-1.5
+h36.2c0.9,0,1.5,0.6,1.5,1.5C64.2,49,63.5,49.6,62.7,49.6z" />
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@*com.apkupdater:id/main_content" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@*com.apkupdater:id/toolbar" android:background="?android:colorPrimary" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:elevation="0.0dip" />
+        <FrameLayout android:id="@*com.apkupdater:id/container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@*com.apkupdater:id/update_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@*com.apkupdater:drawable/ic_update" app:layout_anchor="@*com.apkupdater:id/container" app:layout_anchorGravity="end|bottom|center" android:backgroundTint="@*android:color/accent_material_dark" app:backgroundTint="@*android:color/accent_material_dark" />
+</android.support.design.widget.CoordinatorLayout>

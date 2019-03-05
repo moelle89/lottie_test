@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Settings">
+		<item name="android:colorAccent">@*com.android.settings:color/icon_accent</item>
+		<item name="android:colorControlNormal">@*com.android.settings:color/icon_accent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+	</style>
+</resources>

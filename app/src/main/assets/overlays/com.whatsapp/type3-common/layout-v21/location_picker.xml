@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.EmojiPopupLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@*com.whatsapp:id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@*com.whatsapp:id/toolbar_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@*com.whatsapp:color/white"
+        android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
+
+        <include layout="@*com.whatsapp:layout/toolbar" />
+
+        <FrameLayout
+            android:id="@*com.whatsapp:id/search_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@*com.whatsapp:id/toolbar_holder"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@*com.whatsapp:id/map_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@*com.whatsapp:id/map_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@*com.whatsapp:id/full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10.0dip"
+                android:background="@*com.whatsapp:drawable/map_button_background"
+                android:contentDescription="@*com.whatsapp:string/hide_places_list"
+                android:scaleType="center"
+                android:src="@*com.whatsapp:drawable/btn_map_fullscreen_on" />
+
+            <ImageView
+                android:id="@*com.whatsapp:id/my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10.0dip"
+                android:background="@*com.whatsapp:drawable/map_button_background"
+                android:contentDescription="@*com.whatsapp:string/move_your_location"
+                android:scaleType="center"
+                android:src="@*com.whatsapp:drawable/btn_myl" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@*com.whatsapp:id/map_center_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <View
+                    android:id="@*com.whatsapp:id/map_center_anchor"
+                    android:layout_width="1.0px"
+                    android:layout_height="1.0px"
+                    android:layout_centerInParent="true" />
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/map_center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@*com.whatsapp:id/map_center_anchor"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@*com.whatsapp:id/map_center_pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:src="@*com.whatsapp:drawable/ic_live_location_shadow" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="7.0dip">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="12.0dip" />
+
+                        <LinearLayout
+                            android:id="@*com.whatsapp:id/map_center_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@*com.whatsapp:drawable/bubble_send_location"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@*com.whatsapp:style/MapBalloonTitle"
+                                android:text="@*com.whatsapp:string/send_this_location" />
+
+                            <TextView
+                                android:id="@*com.whatsapp:id/map_center_address"
+                                style="@*com.whatsapp:style/MapBalloonDetails" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@*com.whatsapp:id/map_center_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@*com.whatsapp:drawable/ic_map_pin" />
+
+                        <View
+                            android:id="@*com.whatsapp:id/map_center_filler"
+                            android:layout_width="fill_parent"
+                            android:layout_height="12.0dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <ProgressBar
+                    android:id="@*com.whatsapp:id/progressbar_map"
+                    style="?android:progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@*com.whatsapp:id/bottom_sheet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:animateLayoutChanges="true"
+            android:background="@*com.whatsapp:color/white"
+            android:clickable="true"
+            android:clipChildren="false">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:layout_marginTop="-8.0dip"
+                android:scaleType="fitXY"
+                android:src="@*com.whatsapp:drawable/shadow_send_location" />
+
+            <LinearLayout
+                android:id="@*com.whatsapp:id/picker_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/send_my_location_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+                    android:background="@*com.whatsapp:drawable/selector_orange_gradient">
+
+                    <FrameLayout
+                        android:layout_width="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:layout_gravity="left">
+
+                        <ImageView
+                            android:id="@*com.whatsapp:id/location_icon"
+                            android:layout_width="@*com.whatsapp:dimen/location_picker_icon_size"
+                            android:layout_height="@*com.whatsapp:dimen/location_picker_icon_size"
+                            android:layout_gravity="center"
+                            android:background="@*com.whatsapp:drawable/send_live_location_background"
+                            android:scaleType="center"
+                            android:src="@*com.whatsapp:drawable/btn_send_current_location" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:paddingLeft="@*com.whatsapp:dimen/location_picker_row_height">
+
+                        <TextView
+                            android:id="@*com.whatsapp:id/location_picker_current_location_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@*com.whatsapp:string/send_your_current_location"
+                            android:textAppearance="?android:textAppearanceSmallInverse"
+                            android:textColor="@android:color/white"
+                            android:textSize="17.0sp" />
+
+                        <TextView
+                            android:id="@*com.whatsapp:id/location_accuracy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="#aaffffff"
+                            android:textSize="14.0sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@*com.whatsapp:id/divider"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@*com.whatsapp:color/divider_gray" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/live_location_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+                    android:background="@*com.whatsapp:drawable/selector_orange_gradient"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:layout_gravity="left">
+
+                        <ImageView
+                            android:layout_width="@*com.whatsapp:dimen/location_picker_icon_size"
+                            android:layout_height="@*com.whatsapp:dimen/location_picker_icon_size"
+                            android:layout_gravity="center"
+                            android:background="@*com.whatsapp:drawable/send_live_location_background"
+                            android:scaleType="center"
+                            android:src="@*com.whatsapp:drawable/ic_live_location" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:paddingLeft="@*com.whatsapp:dimen/location_picker_row_height"
+                        android:singleLine="true"
+                        android:text="@*com.whatsapp:string/share_live_location"
+                        android:textAppearance="?android:textAppearanceSmallInverse"
+                        android:textColor="@android:color/white"
+                        android:textSize="17.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_gravity="bottom"
+                        android:background="@*com.whatsapp:color/divider_gray" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/places_holder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ListView
+                            android:id="@*com.whatsapp:id/places_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:dividerHeight="0.0dip"
+                            android:entries="@null"
+                            android:scrollbars="none" />
+
+                        <ProgressBar
+                            android:id="@*com.whatsapp:id/progressbar_small"
+                            style="?android:progressBarStyleLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@*com.whatsapp:id/places_list"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@*com.whatsapp:id/places_empty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@*com.whatsapp:id/places_list"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="@*com.whatsapp:string/no_places_found"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@*com.whatsapp:id/permissions_request"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:orientation="vertical"
+                        android:paddingLeft="@*com.whatsapp:dimen/horizontal_padding"
+                        android:paddingRight="@*com.whatsapp:dimen/horizontal_padding"
+                        android:paddingTop="45.0dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@*com.whatsapp:drawable/teal_circle"
+                            android:padding="28.0dip"
+                            android:src="@*com.whatsapp:drawable/permission_location" />
+
+                        <TextView
+                            style="@*com.whatsapp:style/Text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="36.0dip"
+                            android:paddingTop="45.0dip"
+                            android:text="@*com.whatsapp:string/permission_location_access_on_sending_location"
+                            android:textSize="14.0sp" />
+
+                        <Button
+                            android:id="@*com.whatsapp:id/button_open_permission_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20.0dip"
+                            android:background="@*com.whatsapp:drawable/btn_green"
+                            android:minHeight="36.0dip"
+                            android:minWidth="88.0dip"
+                            android:paddingLeft="20.0dip"
+                            android:paddingRight="20.0dip"
+                            android:text="@*com.whatsapp:string/permission_settings_open"
+                            android:textColor="@android:color/white"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@*com.whatsapp:id/permissions_request_minimized"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="vertical"
+                    android:paddingLeft="@*com.whatsapp:dimen/horizontal_padding"
+                    android:paddingRight="@*com.whatsapp:dimen/horizontal_padding">
+
+                    <TextView
+                        style="@*com.whatsapp:style/Text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="9.0dip"
+                        android:paddingTop="18.0dip"
+                        android:text="@*com.whatsapp:string/permission_location_access_on_sending_location_short"
+                        android:textSize="14.0sp" />
+
+                    <Button
+                        android:id="@*com.whatsapp:id/button_open_permission_settings_minimized"
+                        style="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:minHeight="36.0dip"
+                        android:minWidth="88.0dip"
+                        android:paddingLeft="20.0dip"
+                        android:paddingRight="20.0dip"
+                        android:text="@*com.whatsapp:string/permission_settings_open"
+                        android:textColor="@*com.whatsapp:color/accent"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@*com.whatsapp:id/live_location_sheet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@*com.whatsapp:color/white"
+            android:clickable="true"
+            android:clipChildren="false"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:layout_marginTop="-8.0dip"
+                android:scaleType="fitXY"
+                android:src="@*com.whatsapp:drawable/shadow_send_location" />
+
+            <RelativeLayout
+                android:id="@*com.whatsapp:id/live_location_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:clipToPadding="false"
+                android:paddingLeft="@*com.whatsapp:dimen/horizontal_padding"
+                android:paddingRight="@*com.whatsapp:dimen/horizontal_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@*com.whatsapp:id/set_duration"
+                    style="@*com.whatsapp:style/Text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left"
+                    android:paddingBottom="21.0dip"
+                    android:paddingTop="13.0dip"
+                    android:text="@*com.whatsapp:string/share_live_location"
+                    android:textSize="20.0sp" />
+
+                <RadioGroup
+                    android:id="@*com.whatsapp:id/duration"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@*com.whatsapp:id/set_duration"
+                    android:checkedButton="@*com.whatsapp:id/duration_60_min"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@*com.whatsapp:id/duration_15_min"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@*com.whatsapp:drawable/btn_live_location"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@*com.whatsapp:color/selector_live_location_duration"
+                        android:textSize="15.0sp" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="5.0dip"
+                        android:layout_height="fill_parent" />
+
+                    <RadioButton
+                        android:id="@*com.whatsapp:id/duration_60_min"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@*com.whatsapp:drawable/btn_live_location"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@*com.whatsapp:color/selector_live_location_duration"
+                        android:textSize="15.0sp" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="5.0dip"
+                        android:layout_height="fill_parent" />
+
+                    <RadioButton
+                        android:id="@*com.whatsapp:id/duration_480_min"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@*com.whatsapp:drawable/btn_live_location"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:textColor="@*com.whatsapp:color/selector_live_location_duration"
+                        android:textSize="15.0sp" />
+                </RadioGroup>
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/mention_attach"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@*com.whatsapp:id/comment_entry"
+                    android:layout_marginBottom="-21.0dip"
+                    android:layout_marginLeft="-16.0dip"
+                    android:layout_marginRight="-16.0dip" />
+
+                <FrameLayout
+                    android:id="@*com.whatsapp:id/comment_entry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@*com.whatsapp:id/duration"
+                    android:layout_marginLeft="-16.0dip"
+                    android:layout_marginRight="-16.0dip"
+                    android:layout_marginTop="14.0dip">
+
+                    <include layout="@*com.whatsapp:layout/live_location_comment_entry" />
+                </FrameLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</com.whatsapp.EmojiPopupLayout>

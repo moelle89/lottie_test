@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@*android:color/black" />
+        </shape>
+    </item>
+    <item android:drawable="@*com.chrome.beta:drawable/modern_toolbar_background" android:left="@*com.chrome.beta:dimen/search_toolbar_modern_bg_lateral_inset" android:top="@*com.chrome.beta:dimen/search_toolbar_modern_bg_top_bottom_inset" android:right="@*com.chrome.beta:dimen/search_toolbar_modern_bg_lateral_inset" android:bottom="@*com.chrome.beta:dimen/search_toolbar_modern_bg_top_bottom_inset" />
+</layer-list>

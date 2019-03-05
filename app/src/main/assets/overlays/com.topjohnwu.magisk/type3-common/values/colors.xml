@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="ic_launcher_background">@*android:color/accent_material_dark</color>
+    <color name="material_grey_900">@*android:color/transparent</color>
+    <color name="primary_material_dark">@*android:color/secondary_text_default_material_light</color>
+    <color name="dark_primary">@*android:color/transparent</color>
+    <color name="material_grey_850">@*android:color/transparent</color>
+    <color name="red500">#ffff1652</color>
+    <color name="green500">#ff17cf5c</color>
+    <color name="dark_primary_dark">@*android:color/dim_foreground_light</color>
+    <color name="grey500">@*android:color/dim_foreground_light</color>
+    <color name="material_deep_teal_200">@*android:color/accent_material_dark</color>    
+    <color name="material_deep_teal_500">@*android:color/accent_material_dark</color>
+    <color name="accent">@*android:color/accent_material_dark</color>
+    <color name="accentFallback">@*android:color/accent_material_dark</color>
+    <color name="dh_accent">@*android:color/accent_material_dark</color>
+    <color name="primary">@*android:color/dim_foreground_light</color>        
+	<color name="primary_dark">@*android:color/dim_foreground_light</color>    
+    <color name="primary_dark_material_dark">@*android:color/secondary_text_default_material_light</color>
+	<color name="dh_primary">@*android:color/dim_foreground_light</color>
+    <color name="dh_primary_dark">@*android:color/dim_foreground_light</color>
+    <color name="ripple_material_dark">@*android:color/accent_material_dark</color>
+    <color name="background_floating_material_dark">@*android:color/dim_foreground_light</color>
+    <color name="ripple_material_light">@*android:color/user_icon_default_gray</color>
+    <color name="button_material_dark">@*android:color/button_material_dark</color>	
+    <color name="cardview_dark_background">#00B3D1E3</color>
+    <color name="dh_divider">@*android:color/dim_foreground_light</color>
+    <color name="dh_icons">#ffe2edf3</color>
+    <color name="icon_grey">@*android:color/lighter_gray</color>
+    <color name="secondary_text_default_material_dark">#ffd6dee5</color>
+    <color name="cardview_shadow_end_color">#00000000</color>
+    <color name="cardview_shadow_start_color">#00000000</color>
+    <color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
+    <color name="card_background_color_dark">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_800">@*android:color/dim_foreground_light</color>    
+	<color name="flashing_background_color">@*android:color/secondary_text_default_material_light</color>
+</resources>

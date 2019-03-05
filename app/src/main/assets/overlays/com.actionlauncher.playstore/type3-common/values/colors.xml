@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="settings_color_primary">@*android:color/holo_primary_dark</color>
+    <color name="settings_color_primary_dark">@*android:color/holo_primary_dark</color>
+    <color name="accent">@*android:color/accent_material_dark</color>
+    <color name="settings_color_background">@*android:color/background_dark</color>
+    <color name="settings_divider">@*android:color/dim_foreground_light</color>
+    <color name="settings_group_title_color">@*android:color/lighter_gray</color>
+    <color name="settings_highlight">@*android:color/accent_material_dark</color>
+    <color name="settings_item_highlight_background_color">@*android:color/accent_material_dark</color>
+    <color name="settings_list_item_background">@*android:color/accessibility_focus_highlight</color>
+    <color name="settings_summary">@*android:color/secondary_text_default_material_dark</color>
+    <color name="settings_title">@*android:color/lighter_gray</color>
+	<color name="dock_drawer_peek_view_background_color">@*android:color/secondary_text_default_material_light</color>	
+    <color name="page_indicator">@*android:color/accessibility_focus_highlight</color>
+</resources>

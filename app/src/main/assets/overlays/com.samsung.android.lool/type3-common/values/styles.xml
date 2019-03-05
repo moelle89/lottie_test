@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+		<item name="android:homeAsUpIndicator">@*com.samsung.android.lool:drawable/abc_ic_ab_back_material</item>
+		<item name="android:windowBackground">@*com.samsung.android.lool:color/power_saving_mode_button_background_pressed_color</item>
+        <item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:colorControlHighlight">@*com.samsung.android.lool:color/ascentColor</item>
+		<item name="android:colorAccent">@*com.samsung.android.lool:color/ascentColor</item>
+        <item name="android:colorControlActivated">@*com.samsung.android.lool:color/ascentColor</item>
+		<item name="android:checkboxStyle">@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox</item>
+        <item name="android:radioButtonStyle">@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton</item>
+        <item name="android:actionBarStyle">@*com.samsung.android.lool:style/AppActionBar</item>
+        <item name="android:actionModeStyle">@*com.samsung.android.lool:style/AppActionBar</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:windowShowWallpaper">@*android:bool/target_honeycomb_needs_options_menu</item>
+    </style>
+    <style name="Theme.FullScreenPreviewBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:background">@null</item>
+        <item name="android:contentInsetStart">0.0dip</item>
+    </style>
+    <style name="ScoreboardShortcutImageViewStyle" parent="@*com.samsung.android.lool:style/AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@null</item>
+    </style>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+		<item name="android:windowShowWallpaper">@*android:bool/target_honeycomb_needs_options_menu</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+		<item name="android:windowBackground">@*com.samsung.android.lool:color/power_saving_mode_button_background_pressed_color</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+		<item name="android:windowShowWallpaper">@*android:bool/target_honeycomb_needs_options_menu</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+		<item name="android:windowBackground">@*com.samsung.android.lool:color/power_saving_mode_button_background_pressed_color</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Circular" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="colorAccent">@color/orange_background</item>
+        <item name="MaterialTapTargetPromptTheme">@style/MaterialTapTargetPromptTheme</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+    </style>
+
+    <style name="Circular.NoActionBar">
+        <item name="MaterialTapTargetPromptTheme">@style/MaterialTapTargetPromptTheme</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Circular.Fab">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/gradientbottom</item>
+    </style>
+
+    <style name="Circular.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="Circular.PopupOverlay" parent="ThemeOverlay.AppCompat" />
+
+</resources>

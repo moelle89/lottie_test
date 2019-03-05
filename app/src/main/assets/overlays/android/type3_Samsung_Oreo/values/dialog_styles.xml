@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="KeyboardShortcutsDialog" parent="@*android:style/Theme.DeviceDefault" />
+    <style name="Theme.DeviceDefault.Light.Voice" parent="@*android:style/Theme.Material.Voice">
+        <item name="android:colorPrimary">@*android:color/background_dark</item>
+        <item name="android:colorSecondary">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="BaseBrightnessDialogContainer">
+        <item name="android:background">@*android:drawable/dialog_background_material</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Theme.DeviceDefault.Settings.Dialog.NoActionBar" parent="@*android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+    <style name="ThemeOverlay.Material.Dialog" parent="@*android:style/ThemeOverlay.Material">
+        <item name="android:colorBackground">?android:colorBackgroundFloating</item>
+        <item name="android:windowBackground">@*android:drawable/dialog_background_material</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@*android:style/TextAppearance.DeviceDefault.DialogWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@*android:style/DialogWindowTitleBackground.Material</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.DeviceDefault.Dialog</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">@*android:bool/config_closeDialogWhenTouchOutside</item>
+        <item name="android:listPreferredItemPaddingLeft">@*android:dimen/tw_select_dialog_padding_start</item>
+        <item name="android:listPreferredItemPaddingRight">@*android:dimen/tw_select_dialog_padding_end</item>
+        <item name="android:listPreferredItemPaddingStart">@*android:dimen/tw_select_dialog_padding_start</item>
+        <item name="android:listPreferredItemPaddingEnd">@*android:dimen/tw_select_dialog_padding_end</item>
+        <item name="android:windowElevation">1.7dip</item>
+        <item name="*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
+        <item name="*android:windowFixedWidthMajor">@null</item>
+        <item name="*android:windowFixedHeightMinor">@null</item>
+        <item name="*android:windowFixedWidthMinor">@null</item>
+        <item name="*android:windowFixedHeightMajor">@null</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextAppearance.DeviceDefault.DialogWindowTitle" parent="@*android:style/TextAppearance.Material.DialogWindowTitle">
+        <item name="android:textSize">@*android:dimen/tw_dialog_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+    </style>
+	
+
+	<!-- <style name="Widget.Material.ListView.DropDown" parent="@*android:style/Widget.DeviceDefault.Light.ListView.DropDown" /> -->
+	<style name="Widget.Material.PopupMenu" parent="@*android:style/Widget.DeviceDefault.Light.PopupMenu" />
+	<style name="Widget.Material.ListPopupWindow" parent="@*android:style/Widget.DeviceDefault.Light.ListPopupWindow" />
+	<style name="Widget.Material.PopupWindow.ActionMode" parent="@*android:style/Widget.DeviceDefault.Light.PopupWindow.ActionMode" />
+	
+    <style name="Widget.Material.DropDownItem.Spinner" parent="@*android:style/Widget.Material.DropDownItem" >
+		<item name="android:textColor">@*android:color/tw_spinner_text_material_dark</item>
+		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
+        <item name="android:textSize">@*android:dimen/tw_menu_popup_text_size</item>
+        <item name="android:paddingTop">@*android:dimen/tw_popup_menu_item_top_padding</item>
+        <item name="android:paddingBottom">@*android:dimen/tw_popup_menu_item_bottom_padding</item>
+        <item name="android:minWidth">@*android:dimen/sem_dropdown_list_item_min_width</item>
+        <item name="android:minHeight">@*android:dimen/tw_popup_menu_item_min_height</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:paddingStart">@*android:dimen/tw_popup_menu_item_left_padding</item>
+        <item name="android:paddingEnd">@*android:dimen/tw_popup_menu_item_right_padding</item>
+    </style>
+    <style name="Widget.Material.Light.DropDownItem.Spinner" parent="@*android:style/Widget.Material.DropDownItem" >
+		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
+		<item name="android:textColor">@*android:color/tw_spinner_text_material_dark</item>
+        <item name="android:textSize">@*android:dimen/tw_menu_popup_text_size</item>
+        <item name="android:paddingTop">@*android:dimen/tw_popup_menu_item_top_padding</item>
+        <item name="android:paddingBottom">@*android:dimen/tw_popup_menu_item_bottom_padding</item>
+        <item name="android:minWidth">@*android:dimen/sem_dropdown_list_item_min_width</item>
+        <item name="android:minHeight">@*android:dimen/tw_popup_menu_item_min_height</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:paddingStart">@*android:dimen/tw_popup_menu_item_left_padding</item>
+        <item name="android:paddingEnd">@*android:dimen/tw_popup_menu_item_right_padding</item>
+    </style>
+    <style name="Widget.Material.Light.Spinner.DropDown" parent="@*android:style/Widget.Material.Light.Spinner">
+        <item name="android:background">@*android:drawable/tw_spinner_background_material</item>
+        <item name="android:popupBackground">@*android:drawable/tw_spinner_popup_background_material_dark</item>
+        <item name="android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.Spinner.DropDwon.ActionBar</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:popupElevation">1.7dip</item>
+        <item name="android:popupEnterTransition">@empty</item>
+        <item name="android:popupExitTransition">@empty</item>
+    </style>    
+	<style name="Widget.Material.Spinner.DropDown" parent="@*android:style/Widget.Material.Light.Spinner">
+        <item name="android:background">@*android:drawable/tw_spinner_background_material</item>
+        <item name="android:popupBackground">@*android:drawable/tw_spinner_popup_background_material</item>
+        <item name="android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.Spinner.DropDwon.ActionBar</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:popupElevation">@*android:dimen/sem_menu_popup_elevation</item>
+        <item name="android:popupEnterTransition">@empty</item>
+        <item name="android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Widget.Material.TextView.SpinnerItem" parent="@*android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@*android:dimen/tw_spinner_item_text_size</item>
+        <item name="android:textColor">@*android:color/tw_spinner_item_text_color_dark</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:paddingStart">@*android:dimen/tw_spinner_item_start_padding</item>
+        <item name="android:paddingEnd">@*android:dimen/tw_spinner_item_end_padding</item>
+    </style>
+	<style name="Animation.Material.Dialog" parent="@*android:style/Animation.DeviceDefault.Dialog" />
+    <style name="Animation.Material.Popup" parent="@*android:style/Animation.Material">
+        <item name="android:windowEnterAnimation">@*android:anim/sem_context_menu_popup_enter_material</item>
+        <item name="android:windowExitAnimation">@*android:anim/sem_context_menu_popup_exit_material</item>
+    </style>
+    <style name="Animation.PopupWindow.ActionMode" parent="@*android:style/Animation.PopupWindow">
+        <item name="android:windowEnterAnimation">@*android:anim/tw_dialog_enter_material</item>
+        <item name="android:windowExitAnimation">@*android:anim/tw_dialog_exit_material</item>
+    </style>    
+	<style name="Animation.Toast" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@*android:anim/sem_context_menu_popup_enter_material</item>
+        <item name="android:windowExitAnimation">@*android:anim/sem_context_menu_popup_exit_material</item>
+    </style>
+
+<!-- RESOLVER-->
+    <style name="Theme.DeviceDefault.Resolver" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*android:color/accent_material_dark</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:buttonBarStyle">@*android:style/DeviceDefault.ButtonBar.AlertDialog</item>
+        <item name="android:listPreferredItemPaddingStart">?*android:dialogPreferredPadding</item>
+        <item name="android:listPreferredItemPaddingEnd">?*android:dialogPreferredPadding</item>
+        <item name="android:colorControlActivated">@*android:color/holo_button_pressed</item>
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorSecondary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:buttonBarPositiveButtonStyle">@*android:style/Widget.DeviceDefault.Light.Resolver.Button.Positive</item>
+        <item name="*android:semResolverBackgroundColor">@*android:color/facelock_spotlight_mask</item>
+        <item name="*android:semResolverItemSubTextColor">@*android:color/sem_resolver_item_sub_text_color</item>
+        <item name="*android:semResolverItemTextColor">@*android:color/sem_resolver_item_text_color</item>
+        <item name="*android:semResolverTitleTextColor">@*android:color/sem_resolver_title_text_color</item>
+    </style>
+	<!-- resolver buttons -->
+    <style name="Widget.DeviceDefault.Light.Button.Dialog" parent="@*android:style/Widget.DeviceDefault.Button.Borderless.Small">
+        <item name="*android:textSize">@*android:dimen/tw_dialog_button_text_size</item>
+        <item name="*android:textStyle">bold</item>
+        <item name="*android:textColor">@*android:color/accent_material_dark</item>
+        <item name="*android:ellipsize">end</item>
+        <item name="*android:background">@*android:drawable/tw_dialog_btn_borderless_material</item>
+        <item name="*android:minWidth">@*android:dimen/tw_dialog_button_minWidth</item>
+        <item name="*android:minHeight">@*android:dimen/tw_dialog_button_minHeight</item>
+        <item name="*android:singleLine">true</item>
+        <item name="*android:textAllCaps">true</item>
+        <item name="*android:fontFamily">sec-roboto-condensed</item>
+        <item name="*android:paddingStart">@*android:dimen/tw_dialog_button_padding_horizontal</item>
+        <item name="*android:paddingEnd">@*android:dimen/tw_dialog_button_padding_horizontal</item>
+        <item name="*android:stateListAnimator">@*android:anim/tw_dialog_button_disabled_anim_material</item>
+    </style>	
+	<!-- -->
+	
+	<style name="Widget.DeviceDefault.Spinner.DropDown.ActionBar" parent="@*android:style/Widget.Material.Spinner.DropDown.ActionBar">
+        <item name="*android:background">@*android:drawable/tw_ab_spinner_background_material</item>
+        <item name="*android:popupBackground">@*android:drawable/tw_spinner_popup_background_material_dark</item>
+        <item name="*android:dropDownVerticalOffset">2.0dip</item>
+        <item name="*android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.Spinner.DropDwon.ActionBar</item>
+        <item name="*android:stateListAnimator">@null</item>
+        <item name="*android:popupElevation">@*android:dimen/sem_menu_popup_elevation</item>
+        <item name="*android:popupEnterTransition">@empty</item>
+        <item name="*android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Widget.DeviceDefault.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu">
+        <item name="*android:popupBackground">@*android:drawable/tw_popup_background_material_dark</item>
+        <item name="*android:dropDownHorizontalOffset">@*android:dimen/tw_menu_popup_horizontal_offset</item>
+        <item name="*android:dropDownVerticalOffset">2.0dip</item>
+        <item name="*android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.MenuPopup</item>
+        <item name="*android:overlapAnchor">true</item>
+        <item name="*android:popupElevation">@*android:dimen/sem_menu_popup_elevation</item>
+        <item name="*android:popupEnterTransition">@empty</item>
+        <item name="*android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.PopupMenu" parent="@*android:style/Widget.Material.Light.PopupMenu">
+        <item name="*android:popupBackground">@*android:drawable/tw_popup_background_material</item>
+        <item name="*android:dropDownHorizontalOffset">@*android:dimen/tw_menu_popup_horizontal_offset</item>
+        <item name="*android:dropDownVerticalOffset">2.0dip</item>
+        <item name="*android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.MenuPopup</item>
+        <item name="*android:overlapAnchor">true</item>
+        <item name="*android:popupElevation">@*android:dimen/sem_menu_popup_elevation</item>
+        <item name="*android:popupEnterTransition">@empty</item>
+        <item name="*android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Widget.DeviceDefault.Light.Spinner.DropDown.ActionBar" parent="@*android:style/Widget.Material.Light.Spinner.DropDown.ActionBar">
+        <item name="*android:background">@*android:drawable/tw_ab_spinner_background_material</item>
+        <item name="*android:popupBackground">@*android:drawable/tw_spinner_popup_background_material</item>
+        <item name="*android:dropDownVerticalOffset">2.0dip</item>
+        <item name="*android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.Spinner.DropDwon.ActionBar</item>
+        <item name="*android:stateListAnimator">@null</item>
+        <item name="*android:popupElevation">@*android:dimen/sem_menu_popup_elevation</item>
+        <item name="*android:popupEnterTransition">@empty</item>
+        <item name="*android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Theme.Material.Light.Dialog.NoActionBar" parent="@*android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>	
+	
+</resources>

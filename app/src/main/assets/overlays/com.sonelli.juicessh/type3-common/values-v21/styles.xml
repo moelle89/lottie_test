@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Theme.JuiceSSH.Material" parent="@*com.sonelli.juicessh:style/Theme.JuiceSSH">
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:statusBarColor">@*com.sonelli.juicessh:color/primary_darker</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+    </style>
+</resources>

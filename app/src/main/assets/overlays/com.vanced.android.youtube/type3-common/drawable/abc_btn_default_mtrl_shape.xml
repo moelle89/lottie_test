@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@*com.vanced.android.youtube:dimen/abc_button_inset_horizontal_material" android:insetRight="@*com.vanced.android.youtube:dimen/abc_button_inset_horizontal_material" android:insetTop="@*com.vanced.android.youtube:dimen/abc_button_inset_vertical_material" android:insetBottom="@*com.vanced.android.youtube:dimen/abc_button_inset_vertical_material"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="@*com.vanced.android.youtube:dimen/abc_control_corner_material" />
+        <solid android:color="#ff2b3238" />
+        <padding android:left="@*com.vanced.android.youtube:dimen/abc_button_padding_horizontal_material" android:top="@*com.vanced.android.youtube:dimen/abc_button_padding_vertical_material" android:right="@*com.vanced.android.youtube:dimen/abc_button_padding_horizontal_material" android:bottom="@*com.vanced.android.youtube:dimen/abc_button_padding_vertical_material" />
+    </shape>
+</inset>

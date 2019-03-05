@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@*com.apple.android.music:style/TextAppearance.Compat.Notification.Info">
+        <item name="android:textColor">@*android:color/notification_secondary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Media" parent="@*com.apple.android.music:style/TextAppearance.Compat.Notification">
+        <item name="android:textColor">@*android:color/notification_secondary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@*com.apple.android.music:style/TextAppearance.Compat.Notification.Time">
+        <item name="android:textColor">@*android:color/notification_secondary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@*com.apple.android.music:style/TextAppearance.Compat.Notification.Title">
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionContainer" parent="">
+        <item name="android:background">@*android:color/notification_material_background_color</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionText" parent="">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">@*com.apple.android.music:dimen/notification_action_text_size</item>
+        <item name="android:textColor">@*android:color/notification_secondary_text_color_light</item>
+    </style>
+</resources>

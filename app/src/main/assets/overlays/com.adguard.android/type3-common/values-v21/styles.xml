@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Widget.AppCompat.ListPopupWindow" parent="@android:style/Widget.Material.ListPopupWindow" >
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ListView" parent="@android:style/Widget.Material.ListView" >
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown" >
+		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+    </style>
+    <style name="AdguardActionBar.Material" parent="@*com.adguard.android:style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorForeground">@*android:color/white</item>
+        <item name="android:colorBackground">@*android:color/timepicker_default_background_material</item>        
+		<item name="android:backgroundTint">@*android:color/dim_foreground_light</item>
+        <item name="android:windowBackground">@*android:color/timepicker_default_background_material</item>
+        <item name="android:colorForegroundInverse">@*com.adguard.android:color/bright_foreground_material_dark</item>
+        <item name="android:colorControlNormal">@*android:color/lighter_gray</item>
+        <item name="android:colorControlHighlight">@*com.adguard.android:color/ripple_material_light</item>
+    </style>
+    <style name="AdguardMaterialThemeBase" parent="@*com.adguard.android:style/Theme.AppCompat.NoActionBar">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+		<item name="android:statusBarColor">@*android:color/dim_foreground_light</item>
+        <item name="android:colorBackground">@*com.adguard.android:color/white</item>
+        <item name="android:textColorPrimaryDisableOnly">@*com.adguard.android:color/text_disabled</item>
+        <item name="android:textColor">@*com.adguard.android:color/common_text_selector</item>
+        <item name="android:textColorHighlight">@*android:color/accent_material_dark</item>
+        <item name="android:textColorHint">@*android:color/holo_orange_light</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:editTextColor">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlNormal">@*android:color/lighter_gray</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="android:colorButtonNormal">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimary">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/dim_foreground_light</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:indeterminateTint">@*android:color/accent_material_dark</item>
+        <item name="android:indeterminateTintMode">src_in</item>
+        <item name="*com.adguard.android:chartLineColor">@*android:color/accent_material_dark</item>
+        <item name="*com.adguard.android:windowActionModeOverlay">true</item>
+        <item name="*com.adguard.android:actionModeBackground">@*android:color/accent_material_dark</item>
+        <item name="*com.adguard.android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.adguard.android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="*com.adguard.android:colorButtonNormal">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="AlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:textColor">@*com.adguard.android:color/common_text</item>
+        <item name="android:colorControlNormal">@*android:color/lighter_gray</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="android:colorButtonNormal">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.V21.AppCompat" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+		<item name="android:statusBarColor">@*android:color/user_icon_default_white</item>
+        <item name="android:textColorHintInverse">@*android:color/holo_orange_light</item>
+        <item name="android:textColorHint">@*android:color/holo_orange_light</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:buttonBarStyle">?*android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?*android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+		<item name="android:statusBarColor">@*android:color/user_icon_default_white</item>
+        <item name="android:textColorHintInverse">@*android:color/holo_orange_light</item>
+        <item name="android:textColorHint">@*android:color/holo_orange_light</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:buttonBarStyle">?*android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?*android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+</resources>

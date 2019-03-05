@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SnapchatTheme" parent="@*android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@*com.snapchat.android:drawable/splash_background</item>
+        <item name="android:dropDownSpinnerStyle">@*com.snapchat.android:style/SpinnerLightCustom</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="*com.snapchat.android:snapchatTimePickerStyle">@*com.snapchat.android:style/STPWidget.Holo.SnapchatTimePicker</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
+</resources>

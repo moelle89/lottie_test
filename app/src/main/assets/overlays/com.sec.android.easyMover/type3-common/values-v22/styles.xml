@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="SmartSwitchActionBarSplash" parent="@*com.sec.android.easyMover:style/SmartSwitchActionBarTheme">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:statusBarColor">@*com.sec.android.easyMover:color/color_winset_actionbar</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="SmartSwitchActionBarWinset" parent="@*com.sec.android.easyMover:style/SmartSwitchActionBarTheme">
+        <item name="android:actionBarStyle">@*com.sec.android.easyMover:style/actionBarStyleWinset</item>
+        <item name="android:actionMenuTextAppearance">@*com.sec.android.easyMover:style/actionMenuTextAppearanceWinset</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.easyMover:color/primary_dark_normal</item>
+        <item name="android:statusBarColor">@*com.sec.android.easyMover:color/color_winset_actionbar</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

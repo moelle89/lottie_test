@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/connect_content_type_h_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.apple.android.storeui.views.CustomTextView android:textColor="@*com.apple.android.music:color/system_gray" android:textColorLink="@android:color/white" android:autoLink="map|web" android:id="@*com.apple.android.music:id/msg_view" android:tag="binding_1" android:paddingBottom="@*com.apple.android.music:dimen/connect_item_view_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@*com.apple.android.music:dimen/default_padding" android:layout_marginRight="@*com.apple.android.music:dimen/default_padding" style="@*com.apple.android.music:style/Body" />
+</FrameLayout>

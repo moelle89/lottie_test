@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="MaterialTapTargetPromptTheme">@style/MaterialTapTargetPromptTheme</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.Splash" parent="android:Theme.Material.NoActionBar.Fullscreen" >
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+    <style name="CollapsingToolbarLayoutCollapsedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="ButtonCustom">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_default_mtrl_shape</item>
+        <item name="android:fontFamily">@font/samsungone800</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="android:Theme.DeviceDefault.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorSecondary">@color/textColor</item>
+    </style>
+
+    <!-- Styles used by most of the welcome screens -->
+    <style name="GeneralWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="welcomeNormalTextStyle">@style/MyLargeText</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!-- Headings -->
+        <item name="welcomeLargeTextStyle">@style/NavTitle</item>
+        <!-- Titles -->
+        <item name="welcomeTitleTextStyle">@style/MyTitel</item>
+    </style>
+
+    <style name="WelcomeScreenPageIndicator">
+        <item name="animation">fade</item>
+        <item name="currentPageColor">@color/fab</item>
+        <item name="indicatorColor">@color/inactive</item>
+    </style>
+    <style name="MyTitel" parent="@style/WelcomeScreenText.Title.Centered">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/samsungone800</item>
+    </style>
+    <style name="NavTitle" parent="@style/WelcomeScreenText.Title.Centered"><!-- slide titles -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_marginBottom">42dp</item>
+        <item name="android:fontFamily">@font/samsungone800</item>
+    </style>
+    <style name="MyLargeText" parent="@style/WelcomeScreenText.Large.Centered">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/samsungone400</item>
+    </style>
+
+    <!-- Styles for button bar activities -->
+
+    <!-- Styles to show action bar -->
+    <style name="ActionBarWelcomeScreenTheme" parent="WelcomeScreenTheme.SolidNavigation">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="ThemeOverlay"/>
+
+    <style name="MaterialTapTargetPromptTheme">
+        <item name="mttp_target">@id/fab</item>
+        <item name="mttp_backgroundColour">@color/colorAccentPromptBackground</item>
+        <item name="mttp_focalRadius">38dp</item>
+        <item name="mttp_textPadding">49dp</item>
+        <item name="mttp_focalToTextPadding">32dp</item>
+        <item name="mttp_focalColour">@color/buttonFocused</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_material_dark">#fff62b48</color><!-- common_color -->
+    <color name="highlighted_text_holo_dark">#ff788a</color><!-- statusbar_accent_icon_tint -->
+    <color name="holo_blue_bright">#ff3854</color><!-- settings_icon_tint -->
+    <color name="accessibility_focus_highlight">#BEf62b48</color><!-- common_color_alpha -->
+    <color name="highlighted_text_dark">#78f62b48</color><!-- common_color_alpha2 -->
+    <color name="holo_button_pressed">#3dff4761</color><!-- ripple_dark -->
+    <color name="control_checkable_material">#fc4258</color><!-- theme_color_light -->
+    <color name="suggestion_highlight_text">#d4304e</color><!-- theme_color_dark -->
+    <color name="holo_orange_light">#ff92a1b0</color> <!-- controlnormal_light -->
+    <color name="background_dark">#ff16171d</color><!-- app_background -->
+    <color name="timepsecondary_text_default_material_lighticker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
+    <color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->
+    <color name="facelock_spotlight_mask">#DC16171D</color><!-- settings background_alpha -->
+    <color name="background_floating_material_dark">@color/dim_foreground_light</color><!-- bg_tint_solid -->
+    <color name="dim_foreground_light">#ff1c1e27</color><!-- conversation_bg_color -->
+    <color name="user_icon_default_white">#0cb3d1e3</color><!-- pitchblack dim_foreground_light trans -->
+    <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
+    <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
+    <color name="shadow">#d41e212a</color><!-- theme_color_alpha -->
+    <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
+    <color name="holo_red_light">#ece2edf3</color><!-- settings titles -->
+    <color name="primary_material_dark">#ff1e212a</color><!-- theme_color -->
+    <color name="holo_red_dark">#ff191a21</color><!-- notifications_color -->
+    <color name="holo_light_control_normal">#DC000000</color><!-- search_impput_color -->
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:left="0.0dip" android:right="0.0dip" >
+	<shape android:shape="rectangle">
+		<corners android:radius="1dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+		<gradient
+				android:startColor="?*android:colorPrimary"
+				android:endColor="@*android:color/transparent"
+				android:angle="-90" />
+	</shape></item>
+	<item android:left="10.0dip" android:right="10.0dip" >
+		<shape android:shape="rectangle">
+			<corners android:radius="1dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="14dp" android:bottomRightRadius="14dp" />
+            <solid android:color="?*android:colorPrimary" />
+        </shape>
+    </item>
+    <item android:left="10.0dip" android:right="10.0dip" >
+		<shape android:shape="rectangle" android:tint="@*android:color/accent_material_dark">
+		<corners android:radius="1dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="14dp" android:bottomRightRadius="14dp" />
+		<gradient android:startColor="#b7b3fbff" android:centerColor="#59f0f0f0" android:endColor="@*android:color/transparent"
+        android:centerX="0.8"
+        android:centerY="1.8"
+        android:gradientRadius="160%p"
+        android:type="radial" />
+		</shape>
+	</item>    
+</layer-list>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.3"
+                android:centerY="0.9"
+                android:gradientRadius="180%p"
+                android:endColor="#fff62b48"
+                android:centerColor="#fff62b48"
+                android:startColor="#FF7688" />
+        </shape>
+    </item>
+    <item><vector
+        android:width="48dp"
+        android:height="48dp"
+        android:viewportWidth="48"
+        android:viewportHeight="48">
+
+        <path
+            android:fillColor="#C3000000"
+            android:fillAlpha="1.0"
+            android:strokeAlpha="1.0"
+            android:strokeWidth="1"
+            android:pathData="M24,3c11.6,0,21,9.4,21,21s-9.4,21-21,21S3,35.6,3,24S12.4,3,24,3z" />
+        <path
+            android:pathData="M33.6 14.6c-1.9 -2 -5.3 -2.1 -7.3 -0.2c-0.1 0 -0.1 0.1 -0.1 0.1l-12 12c-0.3 0.2 -0.4 0.6 -0.5 0.8L12.9 33c-0.1 0.5 0.1 0.9 0.4 1.3c0.3 0.4 0.7 0.6 1.2 0.7c0.1 0 0.2 0 0.2 0l0 0h0.1c0 0 0.1 0 0.2 0l5.7 -0.7c0.4 0 0.6 -0.2 0.9 -0.5l12 -12C35.6 19.9 35.6 16.6 33.6 14.6zM32 18.2L32 18.2c0 0.6 -0.2 1 -0.6 1.4l-3 -3c0.4 -0.4 0.9 -0.6 1.4 -0.6c0.6 0 1.1 0.2 1.6 0.6C31.8 17.1 32 17.6 32 18.2zM29.4 21.8l-9.6 9.6l-3.6 0.5l0.5 -3.5l9.7 -9.7L29.4 21.8z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M26 16.6L15.2 27.6 13.9 34.2 20 33.4 32.2 21.6Z"
+            android:fillColor="#FFFFFF"
+            android:fillAlpha="0.8" />
+    </vector></item>
+</layer-list>

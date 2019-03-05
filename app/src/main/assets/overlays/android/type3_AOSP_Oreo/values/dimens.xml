@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="seekbar_track_background_height_material">2.5dip</dimen>
+    <dimen name="seekbar_track_progress_height_material">3.5dip</dimen>
+    <dimen name="progress_bar_height_material">5.0dip</dimen>
+	<dimen name="action_bar_elevation_material">0.0dip</dimen>
+	<dimen name="control_corner_material">12.0dip</dimen>
+	<!--<dimen name="notification_min_content_height">45.0dip</dimen>
+    <dimen name="notification_min_height">82.0dip</dimen>
+    <dimen name="notification_action_list_height">34.0dip</dimen>-->
+	<item type="dimen" name="secondary_content_alpha_material_dark">0.85</item>
+    <item type="dimen" name="dialog_min_width_major">94.00001%</item>
+    <item type="dimen" name="dialog_min_width_minor">94.00001%</item>
+    <dimen name="config_prefDialogWidth">360.0dip</dimen>
+</resources>

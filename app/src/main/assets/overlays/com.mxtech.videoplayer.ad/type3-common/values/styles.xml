@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Dark" parent="@*com.mxtech.videoplayer.ad:style/DarkBase">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="*com.mxtech.videoplayer.ad:aboutPrimaryTextColor">?android:textColorPrimary</item>
+        <item name="*com.mxtech.videoplayer.ad:aboutSecondaryTextColor">#ffdddddd</item>
+        <item name="*com.mxtech.videoplayer.ad:aboutLineColor">@*android:color/dim_foreground_light</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarStyle">@*com.mxtech.videoplayer.ad:style/DarkActionBarStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarTheme">@*com.mxtech.videoplayer.ad:style/ActionBarTheme.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:actionModeStyle">@*com.mxtech.videoplayer.ad:style/DarkActionModeStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:actionModeBackground">@*android:color/holo_orange_light</item>
+        <item name="*com.mxtech.videoplayer.ad:textAppearanceSearchResultTitle">@*com.mxtech.videoplayer.ad:style/SearchView2ResultTitleTextAppearance</item>
+        <item name="*com.mxtech.videoplayer.ad:floatingButtonStyle">@*com.mxtech.videoplayer.ad:style/ListFloatingButton.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:listPrimaryTextAppearance">@*com.mxtech.videoplayer.ad:style/ModernText.Primary</item>
+        <item name="*com.mxtech.videoplayer.ad:listPrimaryLargeTextAppearance">@*com.mxtech.videoplayer.ad:style/ModernText.Primary.Large</item>
+        <item name="*com.mxtech.videoplayer.ad:listSecondaryTextAppearance">@*com.mxtech.videoplayer.ad:style/ModernText.Secondary</item>
+        <item name="*com.mxtech.videoplayer.ad:listSecondaryLargeTextAppearance">@*com.mxtech.videoplayer.ad:style/ModernText.Secondary.Large</item>
+        <item name="*com.mxtech.videoplayer.ad:listNormalTextAppearance">@*com.mxtech.videoplayer.ad:style/ModernText.Normal</item>
+        <item name="*com.mxtech.videoplayer.ad:listStatusBackground">@*com.mxtech.videoplayer.ad:color/list_status_background_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:listGroupStyle">@*com.mxtech.videoplayer.ad:style/ListGroup</item>
+        <item name="*com.mxtech.videoplayer.ad:listItemStyle">@*com.mxtech.videoplayer.ad:style/ListItem.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:checkMarkListItemStyle">@*com.mxtech.videoplayer.ad:style/CheckMarkListItem.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagAss">@*com.mxtech.videoplayer.ad:drawable/tag_ass_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagMpl">@*com.mxtech.videoplayer.ad:drawable/tag_mpl_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagNew">@*com.mxtech.videoplayer.ad:drawable/tag_new_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagPsb">@*com.mxtech.videoplayer.ad:drawable/tag_psb_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagSmi">@*com.mxtech.videoplayer.ad:drawable/tag_smi_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagSrt">@*com.mxtech.videoplayer.ad:drawable/tag_srt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagSsa">@*com.mxtech.videoplayer.ad:drawable/tag_ssa_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagSub">@*com.mxtech.videoplayer.ad:drawable/tag_sub_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagTxt">@*com.mxtech.videoplayer.ad:drawable/tag_txt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagVtt">@*com.mxtech.videoplayer.ad:drawable/tag_vtt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagPjs">@*com.mxtech.videoplayer.ad:drawable/tag_pjs_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundGeneral">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_general_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundDvd">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_dvd_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundDvb">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_dvb_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundTxt">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_txt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundXsub">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_xsub_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundSsa">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_ssa_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundPgs">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_pgs_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundTel">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_tel_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundSrt">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_srt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:tagInboundVtt">@*com.mxtech.videoplayer.ad:drawable/tag_inbound_vtt_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:listTitleNormalColor">?android:textColorPrimary</item>
+		<item name="*com.mxtech.videoplayer.ad:listTitleLastColor">@*android:color/accent_material_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:listTitleFinishColor">#ff888888</item>
+        <item name="*com.mxtech.videoplayer.ad:listThumbFrameType">masked</item>
+    </style>
+    <style name="FlatSeekBar"> 
+        <item name="android:background">@null</item>        
+		<item name="android:progressTint">@*android:color/accent_material_dark</item>		
+		<item name="android:tint">@*android:color/accent_material_dark</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:progressDrawable">@null</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="*com.mxtech.videoplayer.ad:progressBackgroundDrawable">@*com.mxtech.videoplayer.ad:drawable/flat_progress_background</item>
+        <item name="*com.mxtech.videoplayer.ad:progressProgressDrawable">@*com.mxtech.videoplayer.ad:drawable/flat_progress_progress</item>
+        <item name="*com.mxtech.videoplayer.ad:progressSecondaryProgressDrawable">@*com.mxtech.videoplayer.ad:drawable/flat_progress_secondary_progress</item>
+        <item name="*com.mxtech.videoplayer.ad:height_above">50.0dip</item>
+        <item name="*com.mxtech.videoplayer.ad:paddingTop_above">18.0dip</item>
+        <item name="*com.mxtech.videoplayer.ad:paddingBottom_above">18.0dip</item>
+        <item name="*com.mxtech.videoplayer.ad:height_below">34.0dip</item>
+        <item name="*com.mxtech.videoplayer.ad:paddingTop_below">10.0dip</item>
+        <item name="*com.mxtech.videoplayer.ad:paddingBottom_below">10.0dip</item>
+    </style>
+    <style name="DarkActionBarStyle" parent="@*com.mxtech.videoplayer.ad:style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@*android:color/background_dark</item>                
+        <item name="*com.mxtech.videoplayer.ad:displayOptions">homeAsUp|showTitle</item>
+        <item name="*com.mxtech.videoplayer.ad:titleTextStyle">@*com.mxtech.videoplayer.ad:style/TextAppearance.ActionBar.Title.White</item>
+        <item name="*com.mxtech.videoplayer.ad:titleTextAppearance">@*com.mxtech.videoplayer.ad:style/TextAppearance.ActionBar.Title.White</item>
+    </style>
+    <style name="BlackThemeBase" parent="@*com.mxtech.videoplayer.ad:style/Dark">
+        <item name="android:colorBackground">@*android:color/user_icon_default_gray</item>
+        <item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
+        <item name="android:dropDownListViewStyle">@*com.mxtech.videoplayer.ad:style/BlackListView.DropDown</item>
+        <item name="*com.mxtech.videoplayer.ad:actionOverflowMenuStyle">@*com.mxtech.videoplayer.ad:style/BlackPoupMenu.Overflow</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarStyle">@*com.mxtech.videoplayer.ad:style/DarkActionBarStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarTheme">@*com.mxtech.videoplayer.ad:style/ActionBarTheme.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:actionDropDownStyle">@*com.mxtech.videoplayer.ad:style/BlackSpinner.DropDown.ActionBar</item>
+        <item name="*com.mxtech.videoplayer.ad:popupMenuStyle">@*com.mxtech.videoplayer.ad:style/BlackPoupMenu</item>
+        <item name="*com.mxtech.videoplayer.ad:listPopupWindowStyle">@*com.mxtech.videoplayer.ad:style/BlackListPopupWindow</item>
+        <item name="*com.mxtech.videoplayer.ad:panelBackground">@*com.mxtech.videoplayer.ad:drawable/menu_hardkey_panel_black</item>
+        <item name="*com.mxtech.videoplayer.ad:panelMenuListTheme">@*com.mxtech.videoplayer.ad:style/BlackCompactMenu</item>
+        <item name="*com.mxtech.videoplayer.ad:colorPrimary">@*android:color/user_icon_default_gray</item>
+        <item name="*com.mxtech.videoplayer.ad:autoCompleteTextViewStyle">@*com.mxtech.videoplayer.ad:style/BlackAutoCompleteTextView</item>
+        <item name="*com.mxtech.videoplayer.ad:spinnerStyle">@*com.mxtech.videoplayer.ad:style/BlackSpinner</item>
+        <item name="*com.mxtech.videoplayer.ad:floatingButtonStyle">@*com.mxtech.videoplayer.ad:style/ListFloatingButton.Black</item>
+        <item name="*com.mxtech.videoplayer.ad:listStatusBackground">@*com.mxtech.videoplayer.ad:color/list_status_background_black</item>
+        <item name="*com.mxtech.videoplayer.ad:listGroupStyle">@*com.mxtech.videoplayer.ad:style/ListGroup</item>
+        <item name="*com.mxtech.videoplayer.ad:listItemStyle">@*com.mxtech.videoplayer.ad:style/ListItem.Black</item>
+        <item name="*com.mxtech.videoplayer.ad:checkMarkListItemStyle">@*com.mxtech.videoplayer.ad:style/CheckMarkListItem.Black</item>
+        <item name="*com.mxtech.videoplayer.ad:listThumbViewStyle">@*com.mxtech.videoplayer.ad:style/BlackThumbViewStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:listTitleLastColor">@*com.mxtech.videoplayer.ad:color/black_last_played</item>
+        <item name="*com.mxtech.videoplayer.ad:listThumbFrameType">solid</item>
+        <item name="*com.mxtech.videoplayer.ad:listThumbSoldFrame">@*com.mxtech.videoplayer.ad:drawable/thumb_solid_frame</item>
+		<item name="android:navigationBarColor">@*android:color/user_icon_default_gray</item>
+    </style>
+    <style name="Base.Playback.Dark" parent="@*com.mxtech.videoplayer.ad:style/Platform.Playback.Dark">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionBar">false</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionBarOverlay">true</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionModeOverlay">true</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarStyle">@*com.mxtech.videoplayer.ad:style/PlaybackActionBarStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarTheme">@*com.mxtech.videoplayer.ad:style/ActionBarTheme.Playback.Dark</item>
+        <item name="*com.mxtech.videoplayer.ad:panel_bottombar_background">@*android:color/background_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:toolbar_layout">@*com.mxtech.videoplayer.ad:layout/screen_toolbar</item>
+    </style>
+    <style name="Base.Playback.Light" parent="@*com.mxtech.videoplayer.ad:style/Platform.Playback.Light">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionBar">false</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionBarOverlay">true</item>
+        <item name="*com.mxtech.videoplayer.ad:windowActionModeOverlay">true</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarStyle">@*com.mxtech.videoplayer.ad:style/PlaybackActionBarStyle</item>
+        <item name="*com.mxtech.videoplayer.ad:actionBarTheme">@*com.mxtech.videoplayer.ad:style/ActionBarTheme.Playback.Light</item>
+        <item name="*com.mxtech.videoplayer.ad:panel_bottombar_background">@*android:color/background_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:toolbar_layout">@*com.mxtech.videoplayer.ad:layout/screen_toolbar</item>
+    </style>
+    <style name="Base.Preset" parent="">
+        <item name="*com.mxtech.videoplayer.ad:presetFrameColor">#21000000</item>
+        <item name="*com.mxtech.videoplayer.ad:presetProgressBarStyle">flat</item>
+        <item name="*com.mxtech.videoplayer.ad:presetProgressBarColor">@*android:color/accent_material_dark</item>
+        <item name="*com.mxtech.videoplayer.ad:presetProgressBarPlacement">aboveButtons</item>
+        <item name="*com.mxtech.videoplayer.ad:presetControlColorNormal">#ffffffff</item>
+        <item name="*com.mxtech.videoplayer.ad:presetControlColorHighlight">@*android:color/accent_material_dark</item>
+    </style>
+</resources>

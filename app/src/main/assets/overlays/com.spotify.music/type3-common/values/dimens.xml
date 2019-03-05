@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="placeholder_size">460.0dip</dimen>
+	<dimen name="design_bottom_navigation_shadow_height">0.0dip</dimen>
+	<dimen name="intercom_app_bar_shadow_height">0.0dip</dimen>
+	<dimen name="intercom_composer_shadow_height">0.0dip</dimen>
+	<dimen name="cardview_compat_inset_shadow">0.0dip</dimen>
+	<dimen name="design_bottom_sheet_modal_elevation">0.0dip</dimen>
+	<dimen name="design_navigation_elevation">0.0dip</dimen>
+	<dimen name="hairline">0px</dimen>
+	<item type="dimen" name="intercom_toolbar_image_background_alpha">0.20</item>
+    <item type="dimen" name="intercom_two_pane_conversation_percentage">0.85</item>
+    <dimen name="abc_progress_bar_height_material">8.0dip</dimen>
+    <dimen name="episode_progress_height">6.0dip</dimen>
+    <dimen name="abc_seekbar_track_background_height_material">6.0dip</dimen>
+    <dimen name="abc_seekbar_track_progress_height_material">6.0dip</dimen>
+    <dimen name="player_v2_progress_bar_height">10.0dip</dimen>
+	<dimen name="category_card_corner_radius">8.0dip</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="secondary_text_leanback_dark">@*android:color/secondary_text_default_material_dark</color>    
+    <color name="darker_gray">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_searchview_search_icon_color_material_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_searchview_text_material_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_searchview_result_title_text_color_material">@*android:color/secondary_text_default_material_dark</color>
+    <color name="hun_description_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="sem_resolver_item_sub_text_color_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="sem_resolver_item_text_color_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="sem_resolver_item_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="sem_resolver_item_sub_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="notification_info_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="notification_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_dialog_circle_progress_text_color_material_light">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_dialog_sub_text_color_material_light">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_global_action_statustext_textcolor">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_popup_text_color_normal_material">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_secondary_text_color_light">@*android:color/secondary_text_default_material_dark</color>
+    <color name="tw_check_off">@*android:color/secondary_text_default_material_dark</color>
+	<color name="foreground_material_dark">@*android:color/white</color>	
+</resources>

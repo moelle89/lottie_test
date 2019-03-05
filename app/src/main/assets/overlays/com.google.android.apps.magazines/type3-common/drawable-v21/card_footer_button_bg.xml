@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*com.google.android.apps.magazines:color/card_ripple_color_darken"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@*com.google.android.apps.magazines:dimen/card_footer_button_inset" android:top="@*com.google.android.apps.magazines:dimen/card_footer_button_inset" android:right="@*com.google.android.apps.magazines:dimen/card_footer_button_inset" android:bottom="@*com.google.android.apps.magazines:dimen/card_footer_button_inset">
+        <shape android:shape="oval">
+            <solid android:color="@*android:color/dim_foreground_light" />
+        </shape>
+    </item>
+</ripple>

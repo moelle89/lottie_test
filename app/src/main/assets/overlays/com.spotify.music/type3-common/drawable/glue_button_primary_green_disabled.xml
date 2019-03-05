@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@*android:color/holo_green_dark" android:endColor="@*android:color/control_checkable_material" />
+    <size android:height="@*com.spotify.music:dimen/glue_button_height" />
+    <corners android:radius="@*com.spotify.music:dimen/glue_button_corner_radius" />
+    <padding android:left="@*com.spotify.music:dimen/glue_button_padding" android:top="0.0dip" android:right="@*com.spotify.music:dimen/glue_button_padding" android:bottom="0.0dip" />
+</shape>

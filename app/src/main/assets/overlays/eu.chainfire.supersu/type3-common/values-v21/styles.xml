@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    <style name="Theme.SuperSU.Dialog.Prompt" parent="@android:style/Theme.Material.Dialog">
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+	</style>
+    <style name="Sherlock.__Theme.Material.Light" parent="@android:style/Theme.Material">
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+	</style>
+    <style name="Sherlock.__Theme.Material.Light.DarkActionBar" parent="@android:style/Theme.Material">
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+	</style>
+    <style name="Theme.SuperSU.Material.Light.DarkActionBar.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorPrimary">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/background_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
+    <style name="Theme.SuperSU.Material.Light.DarkActionBar.Dialog.Alert" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorPrimary">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/background_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_icon_size">26.0dip</dimen>
+    <dimen name="fab_labels_margin">8.0dip</dimen>
+    <dimen name="fab_plus_icon_size">56.0dip</dimen>
+    <dimen name="fab_plus_icon_stroke">2.0dip</dimen>
+    <dimen name="fab_size">56.0dip</dimen>
+    <dimen name="fab_size_mini">40.0dip</dimen>
+    <dimen name="fab_size_normal">56.0dip</dimen>
+    <dimen name="fab_stroke_width">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.5dip</dimen>
+    <dimen name="actionBarShadowSize">1.0dip</dimen>
+</resources>

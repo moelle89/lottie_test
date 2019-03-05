@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="32.0dip" android:width="32.0dip" />
+            <solid android:color="@*com.spotify.music:color/pasteTransparent" />
+        </shape>
+    </item>
+    <item android:left="11.0dip" android:top="11.0dip" android:right="11.0dip" android:bottom="11.0dip">
+        <shape android:shape="oval"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <size android:height="6.0dip" android:width="6.0dip" />
+            <stroke android:width="2.0dip" android:color="@*android:color/white" />
+            <solid android:color="#BEFFFFFF" />
+        </shape>
+    </item>
+</layer-list>

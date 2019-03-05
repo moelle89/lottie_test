@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Settings">
+	    <item name="android:statusBarColor">@*android:color/transparent</item>
+		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>		
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:windowBackground">@*android:color/secondary_text_default_material_light</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:homeAsUpIndicator">@*com.topjohnwu.magisk:drawable/abc_ic_ab_back_material</item>
+		<item name="android:listDivider">@*android:color/transparent</item>
+    </style>
+    <style name="Platform.V21.AppCompat" parent="@*android:style/Theme.DeviceDefault.Settings">
+        <item name="android:textColorHintInverse">@*android:color/accent_material_dark</item>
+        <item name="android:textColorHint">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+	    <item name="android:statusBarColor">@*android:color/transparent</item>
+		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>	
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:itemBackground">@*android:color/dim_foreground_light</item>		
+		<item name="android:homeAsUpIndicator">@*com.topjohnwu.magisk:drawable/abc_ic_ab_back_material</item>
+		<item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:listDivider">@*android:color/transparent</item>
+    </style>
+    <style name="SplashTheme" parent="@*com.topjohnwu.magisk:style/Theme.AppCompat.NoActionBar">
+		<item name="android:windowBackground">@*com.topjohnwu.magisk:drawable/ic_splash_activity</item>
+		<item name="android:statusBarColor">@*android:color/background_dark</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
+	<style name="Base.Widget.AppCompat.CompoundButton.Switch" parent="@*android:style/Widget.Material.CompoundButton.Switch">
+		<item name="android:track">@*com.topjohnwu.magisk:drawable/abc_switch_track_mtrl_alpha</item>				
+		<item name="android:thumb">@*com.topjohnwu.magisk:drawable/abc_switch_thumb_material</item>		
+	</style>
+	<style name="CardViewStyle.Dark" parent="@*com.topjohnwu.magisk:CardView">
+		<item name="*com.topjohnwu.magisk:cardBackgroundColor">@*android:color/transparent</item>
+    </style>
+    <style name="AppTheme.StatusBar" parent="@*com.topjohnwu.magisk:style/AppTheme">
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+    </style>
+    <style name="AppTheme.StatusBar.Dark" parent="@*com.topjohnwu.magisk:style/AppTheme.Dark">
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+    </style>
+</resources>

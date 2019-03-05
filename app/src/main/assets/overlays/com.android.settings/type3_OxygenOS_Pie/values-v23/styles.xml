@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SubSettingsDialogWhenLarge" parent="@*android:style/Theme.DeviceDefault.Settings.NoActionBar">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="*com.android.settings:onePlusPrimaryColor">@*android:color/accent_material_dark</item>
+        <item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+        <item name="*com.android.settings:preferenceBackgroundColor">@*com.android.settings:drawable/preference_background</item>
+    </style>
+    <style name="Widget.Design.CollapsingToolbar" parent="@android:style/Widget">
+        <item name="*com.android.settings:opExpandedTitleMarginStart">@*com.android.settings:dimen/oneplus_contorl_layout_margin_left2</item>
+        <item name="*com.android.settings:opExpandedTitleMarginEnd">@*com.android.settings:dimen/oneplus_contorl_layout_margin_right2</item>
+        <item name="*com.android.settings:opExpandedTitleMarginBottom">@*com.android.settings:dimen/oneplus_contorl_layout_margin_bottom2</item>
+        <item name="*com.android.settings:opStatusBarScrim">@*android:color/transparent</item>
+    </style>
+    <style name="Widget.Design.CoordinatorLayout" parent="@android:style/Widget">
+        <item name="*com.android.settings:opStatusBarBackground">@*android:color/transparent</item>
+    </style>
+    <style name="OPSettings.Theme.Dark" parent="@*com.android.settings:style/Oneplus.Theme.Material">
+        <item name="android:actionBarStyle">@*com.android.settings:style/OPSettingsActionBarStyle</item>
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.android.settings:onePlusActionbarTitleColor">@*com.android.settings:color/grey_100</item>
+        <item name="*com.android.settings:onePlusActionbarSubtitleColor">@*com.android.settings:color/grey_100</item>
+        <item name="*com.android.settings:onePlusActionbarIconColor">@*com.android.settings:color/grey_100</item>
+        <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*android:color/transparent</item>
+        <item name="*com.android.settings:onePlusActionbarLineColor">@*android:color/transparent</item>
+    </style>
+    <style name="CardView" parent="@*com.android.settings:style/Base.CardView">
+        <item name="*com.android.settings:cardBackgroundColor">@*android:color/transparent</item>
+    </style>
+    <style name="Widget.SwitchBar.Switch" parent="@*android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:minHeight">@*com.android.settings:dimen/min_tap_target_size</item>
+    </style>
+    <style name="ThemeOverlay.SwitchBar.Settings" parent="@*android:style/ThemeOverlay.Material.ActionBar">
+        <item name="android:textColorPrimary">@*android:color/accent_material_dark</item>
+        <item name="*com.android.settings:switchBarBackgroundActivatedColor">@*android:color/transparent</item>
+        <item name="*com.android.settings:switchBarBackgroundColor">@*android:color/transparent</item>
+        <item name="*com.android.settings:switchBarMarginEnd">@*com.android.settings:dimen/switchbar_subsettings_margin_end</item>
+        <item name="*com.android.settings:switchBarMarginStart">@*com.android.settings:dimen/switchbar_subsettings_margin_start</item>
+    </style>
+</resources>

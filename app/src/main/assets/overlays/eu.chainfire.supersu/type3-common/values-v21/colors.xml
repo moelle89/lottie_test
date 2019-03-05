@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    <color name="material_teal_500">@*android:color/accent_material_dark</color>
+    <color name="material_teal_900">@*android:color/accent_material_dark</color>
+    <color name="material_teal_950">@*android:color/background_dark</color>
+    <color name="material_white">@*android:color/background_dark</color>
+    <color name="material_black">@*android:color/background_dark</color>
+    <color name="holo_blue_bright">@*android:color/accent_material_dark</color>
+    <color name="holo_blue_dark">@*android:color/accent_material_dark</color>
+    <color name="holo_blue_light">@*android:color/accent_material_dark</color>
+    <color name="holo_green_dark">@*android:color/accent_material_dark</color>
+    <color name="holo_green_light">@*android:color/accent_material_dark</color>
+    <color name="holo_orange_dark">@*android:color/accent_material_dark</color>
+    <color name="holo_orange_light">@*android:color/accent_material_dark</color>
+    <color name="holo_purple">@*android:color/accent_material_dark</color>
+    <color name="holo_red_dark">@*android:color/accent_material_dark</color>
+    <color name="holo_red_light">@*android:color/accent_material_dark</color>
+    <color name="material_teal_100">@*android:color/accent_material_dark</color>
+    <color name="material_teal_200">@*android:color/accent_material_dark</color>
+    <color name="material_teal_300">@*android:color/accent_material_dark</color>
+    <color name="material_teal_400">@*android:color/accent_material_dark</color>
+    <color name="material_teal_50">@*android:color/accent_material_dark</color>
+    <color name="material_teal_600">@*android:color/accent_material_dark</color>
+    <color name="material_teal_700">@*android:color/accent_material_dark</color>
+    <color name="material_teal_800">@*android:color/accent_material_dark</color>
+</resources>

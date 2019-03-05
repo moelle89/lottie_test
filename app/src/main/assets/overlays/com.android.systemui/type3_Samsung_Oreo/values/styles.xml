@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    <style name="Base.Widget.AppCompat.PopupMenu" parent="@android:style/Widget.DeviceDefault.Light.PopupMenu">
+        <item name="android:popupBackground">@*com.android.systemui:drawable/abc_popup_background_mtrl_mult</item>
+		<item name="android:windowBackground">@*com.android.systemui:drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">8.0dip</item>
+        <item name="android:popupAnimationStyle">@*android:style/Animation.DeviceDefault.MenuPopup</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:popupElevation">2.0dip</item>
+        <item name="android:popupEnterTransition">@empty</item>
+        <item name="android:popupExitTransition">@empty</item>
+    </style>
+    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:windowBackground">@*com.android.systemui:drawable/abc_dialog_material_background</item>
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:itemBackground">@*android:color/background_dark</item>
+        <item name="android:colorBackgroundFloating">@*android:color/background_dark</item>
+    </style>
+	<style name="dialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog" >
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:windowBackground">@*com.android.systemui:drawable/abc_dialog_material_background</item>
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+	</style>
+    <style name="Theme.SystemUI.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" >
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:itemBackground">@*android:color/background_dark</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowBackground">@*com.android.systemui:drawable/abc_dialog_material_background</item>
+        <item name="android:colorBackgroundFloating">@*android:color/background_dark</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="systemui_theme" parent="@android:style/Theme.Material">
+		<item name="android:dialogTheme">@*com.android.systemui:style/Theme.SystemUI.Dialog</item>
+        <item name="android:alertDialogTheme">@*com.android.systemui:style/Theme.SystemUI.Dialog.Alert</item>
+        <item name="android:colorPrimary">@android:color/black</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="DotStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Widget.TextView.NumPadKey" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">32.5sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingBottom">-16.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="Widget.TextView.NumPadKey.Klondike" parent="@*com.android.systemui:style/Widget.TextView.NumPadKey">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@*android:color/accent_material_dark</item>
+        <item name="android:paddingBottom">0.0dip</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

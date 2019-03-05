@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+		<corners android:radius="18dp"/>
+    	<solid android:color="@*android:color/background_dark" />
+		<stroke android:color="@*android:color/user_icon_default_white" android:width="2.5dp"></stroke>
+		<padding android:left="8.0dip" android:top="8.0dip" android:right="8.0dip" android:bottom="8.0dip" />
+</shape>

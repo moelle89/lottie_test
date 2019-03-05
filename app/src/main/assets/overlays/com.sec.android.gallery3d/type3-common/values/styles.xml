@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.DeviceDefault" parent="@*android:style/Theme.DeviceDefault">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:tabWidgetStyle">@*com.sec.android.gallery3d:style/GalleryTabWidgetStyle</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionBarStyle">@*com.sec.android.gallery3d:style/GalleryActionBar</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.gallery3d:color/actionbar_menu_text_selector</item>
+        <item name="android:colorPrimary">@*com.sec.android.gallery3d:color/gallery_color_primary</item>
+		<item name="android:backgroundTint">@*android:color/legacy_primary</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>		
+		<item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="Theme.Gallery" parent="@*com.sec.android.gallery3d:style/Theme.DeviceDefault">
+        <item name="android:displayOptions">none</item>
+        <item name="android:actionModeCloseDrawable">@null</item>
+        <item name="android:actionModeCloseButtonStyle">@*com.sec.android.gallery3d:style/HideActionModeClose</item>
+        <item name="android:alertDialogTheme">@*com.sec.android.gallery3d:style/CustomAlertDialogTheme</item>
+        <item name="android:homeAsUpIndicator">@*com.sec.android.gallery3d:drawable/tw_ic_ab_back_material</item>
+        <item name="android:colorPrimaryDark">@*com.sec.android.gallery3d:color/gallery_color_primary_dark</item>
+        <item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
+		<item name="android:backgroundTint">@null</item>
+		<item name="android:windowBackground">@*android:color/legacy_primary</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowIsFloating">false</item>
+    </style>
+    <!--
+
+	<style name="Theme.DimBGTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="Theme.DimTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar.TranslucentDecor">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="Theme.Gallery360Viewer" parent="@*com.sec.android.gallery3d:style/Theme.Gallery">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionBarStyle">@*com.sec.android.gallery3d:style/Gallery360ViewerActionBar</item>
+        <item name="android:actionButtonStyle">@*com.sec.android.gallery3d:style/Gallery360ViewerActionButton</item>
+        <item name="android:actionOverflowButtonStyle">@*com.sec.android.gallery3d:style/Gallery360ViewerActionButtonOverflow</item>
+        <item name="android:homeAsUpIndicator">@android:color/white</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+    </style>-->
+   <!-- <style name="Theme.GalleryCrop" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:alertDialogTheme">@*com.sec.android.gallery3d:style/CustomAlertDialogTheme</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+    </style>
+	<style name="Theme.GalleryPhone" parent="@*com.sec.android.gallery3d:style/Theme.Gallery">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:actionModeCloseDrawable">@null</item>
+        <item name="android:actionModeCloseButtonStyle">@*com.sec.android.gallery3d:style/HideActionModeClose</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="Theme.GalleryPhonePicker" parent="@*com.sec.android.gallery3d:style/Theme.GalleryPhone" />
+    <style name="Theme.GalleryPhoneWithOutTitle" parent="@*com.sec.android.gallery3d:style/Theme.Gallery">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.gallery3d:color/actionbar_menu_text_selector</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+		<item name="android:windowShowWallpaper">true</item>
+    </style>-->
+    <style name="Theme.GalleryPhoneWithTitle" parent="@*com.sec.android.gallery3d:style/Theme.Gallery">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.gallery3d:color/actionbar_menu_text_selector</item>
+        <item name="android:statusBarColor">@*com.sec.android.gallery3d:color/gallery_status_bar_background_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:backgroundTint">@*android:color/legacy_primary</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="Theme.SettingPreference" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionBarStyle">@*com.sec.android.gallery3d:style/GalleryActionBar</item>
+        <item name="android:alertDialogTheme">@*com.sec.android.gallery3d:style/CustomAlertDialogTheme</item>
+        <item name="android:actionMenuTextColor">@*com.sec.android.gallery3d:color/actionbar_menu_text_selector</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="android:colorPrimary">@*com.sec.android.gallery3d:color/gallery_color_primary</item>
+		<item name="android:backgroundTint">@*android:color/legacy_primary</item>
+		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:windowIsFloating">false</item>
+    </style>
+</resources>

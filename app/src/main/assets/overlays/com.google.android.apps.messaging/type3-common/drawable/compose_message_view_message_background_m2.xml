@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="4.0dip" android:right="4.0dip">
+        <shape android:shape="rectangle">
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="@*com.google.android.apps.messaging:color/compose_pill_background_m2" />
+			 <stroke android:width="1dp" android:color="@*com.google.android.apps.messaging:color/compose_pill_stroke" />
+            <corners android:radius="24.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@*com.google.android.apps.messaging:drawable/pill_background_m2" />
+</layer-list>

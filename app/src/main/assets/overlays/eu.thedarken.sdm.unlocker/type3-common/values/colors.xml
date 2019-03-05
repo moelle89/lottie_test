@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_default">@*android:color/holo_blue_bright</color>
+    <color name="primary_statusbar">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_850">@*android:color/dim_foreground_light</color>
+    <color name="primary_default">@*android:color/dim_foreground_light</color>
+    <color name="cardview_dark_background">@*android:color/background_dark</color>
+    <color name="material_grey_800">@*android:color/background_dark</color>
+    <color name="primary_background">@*android:color/background_dark</color>
+</resources>

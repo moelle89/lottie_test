@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/holo_button_pressed"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+              <solid android:color="@*android:color/holo_primary_dark" />
+			  <size android:height="56.0dip" android:width="56.0dip" />
+			  <stroke android:width="4.0dip" android:color="@*android:color/control_checkable_material" />
+        </shape>
+    </item>
+</ripple>

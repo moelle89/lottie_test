@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing PushBullet's Dimensions-->
+
+<resources>
+    <dimen name="half_standard_padding">8.0dip</dimen>
+    <dimen name="design_navigation_elevation">4.0dip</dimen>
+    <dimen name="design_snackbar_elevation">0.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">4.0dip</dimen>
+    <dimen name="design_bottom_navigation_elevation">1.0dip</dimen>
+    <dimen name="design_appbar_elevation">0.0dip</dimen>
+    <dimen name="card_corner_radius">8.0dip</dimen>
+    <dimen name="card_elevation">0.0dip</dimen>
+    <dimen name="actionbar_elevation">0.0dip</dimen>
+    <dimen name="abc_action_bar_elevation_material">0.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">0.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="cardview_default_radius">8.0dip</dimen>
+    <dimen name="abc_control_corner_material">8.0dip</dimen>
+    <dimen name="md_action_corner_radius">8.0dip</dimen>
+    <dimen name="md_bg_corner_radius">8.0dip</dimen>
+</resources>

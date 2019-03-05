@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<style name="PlaySearchPlate">
+		<item name="android:backgroundTint">@null</item>	
+		<item name="android:background">@*com.android.vending:drawable/card_bg_play</item>
+		<item name="android:paddingLeft">0.0dip</item>
+		<item name="android:paddingRight">0.0dip</item>
+	</style>
+</resources>

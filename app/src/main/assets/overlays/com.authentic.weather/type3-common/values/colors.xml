@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_material_dark">#ff0101ff</color>
+    <color name="accent_material_light">#ff0101ff</color>
+    <color name="background_floating_material_dark">@*android:color/dim_foreground_light</color>
+    <color name="bg_circle">#ff0101ff</color>
+    <color name="bg_facebook">#ff0000d3</color>
+    <color name="bg_facebook_pressed">#ff1919fd</color>
+    <color name="bg_instagram">#ff0000d3</color>
+    <color name="bg_instagram_pressed">#ff1919fd</color>
+    <color name="bg_other">#ff0000d3</color>
+    <color name="bg_other_pressed">#ff1919fd</color>
+    <color name="bg_twitter">#ff0000d3</color>
+    <color name="bg_twitter_pressed">#ff1919fd</color>
+    <color name="sky_blue">#ff0000d3</color>
+    <color name="sky_blue_pressed">#ff1919fd</color>
+    <color name="text_highlighted">#ff2e2eff</color>
+    <color name="default_underline_indicator_selected_color">#ff2e2eff</color>
+    <color name="default_title_indicator_footer_color">#ff2e2eff</color>
+    <color name="default_line_indicator_selected_color">#ff2e2eff</color>
+    <color name="material_grey_800">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_850">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_900">@*android:color/background_dark</color>
+	<color name="bg_grey">@*android:color/background_dark</color>
+</resources>

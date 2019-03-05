@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="phonesky_apps_primary">#3ac965</color>	
+	<color name="phonesky_apps_primary_v3">#3ac965</color>
+    <color name="phonesky_books_primary_v3">#28b6fb</color>
+    <color name="phonesky_movies_primary_v3">#ff335b</color>
+    <color name="phonesky_music_primary_v3">#ff7d3d</color>
+
+    <color name="play_books_light">#28b6fb</color>
+    <color name="play_books_primary">#28b6fb</color>
+    <color name="play_books_primary_disabled">#28b6fb</color>
+    <color name="play_books_primary_hover">#28b6fb</color>
+    <color name="play_books_primary_pressed">#28b6fb</color>
+    <color name="play_books_secondary">#28b6fb</color>
+    <color name="play_books_snackbar_button">#28b6fb</color>
+	
+    <color name="play_movies_light">#ff335b</color>
+    <color name="play_movies_primary">#ff335b</color>
+    <color name="play_movies_primary_disabled">#ff335b</color>
+    <color name="play_movies_primary_hover">#ff335b</color>
+    <color name="play_movies_primary_pressed">#ff335b</color>
+    <color name="play_movies_secondary">#ff335b</color>
+    <color name="play_movies_snackbar_button">#ff335b</color>
+	
+    <color name="play_music_light">#ff7d3d</color>
+    <color name="play_music_primary">#ff7d3d</color>
+    <color name="play_music_primary_disabled">#ff7d3d</color>
+    <color name="play_music_primary_hover">#ff7d3d</color>
+    <color name="play_music_primary_pressed">#ff7d3d</color>
+    <color name="play_music_secondary">#ff7d3d</color>
+    <color name="play_music_snackbar_button">#ff7d3d</color>
+	
+    <color name="play_newsstand_light">#c846de</color>
+    <color name="play_newsstand_primary">#c846de</color>
+    <color name="play_newsstand_primary_disabled">#c846de</color>
+    <color name="play_newsstand_primary_hover">#c846de</color>
+    <color name="play_newsstand_primary_pressed">#c846de</color>
+    <color name="play_newsstand_secondary">#c846de</color>
+    <color name="play_newsstand_snackbar_button">#c846de</color>
+
+<!-- -->
+	<color name="play_white_half_transparent">#56d17b</color>
+	<color name="status_bar_overlay">#00000000</color>	
+    <!-- Primary Dark -->
+    <color name="status_bar_apps">#2ca14f</color>
+    <color name="status_bar_apps_ent">#2ca14f</color>		
+
+    <!-- COLORS VERSION 2-->
+    <color name="status_bar_apps_v2">#2ca14f</color>
+    <color name="play_developer_primary_v2">#2ca14f</color>
+    <color name="top_developer">#2ca14f</color>
+    <!-- Primary Dark -->
+    <color name="play_multi_primary_disabled">#2ca14f</color>
+   	<color name="status_bar_multi">#2ca14f</color>
+
+<!---->
+    <color name="play_multi_light">#2ca14f</color>
+    <!-- Primary Dark -->
+
+    <color name="play_apps_primary">#2ca14f</color>
+	
+    <color name="status_bar_books">@*android:color/background_dark</color>
+    <color name="status_bar_books_v2">@*android:color/background_dark</color>
+    <color name="status_bar_movies">@*android:color/background_dark</color>
+    <color name="status_bar_movies_v2">@*android:color/background_dark</color>
+    <color name="status_bar_music">@*android:color/background_dark</color>
+    <color name="status_bar_music_v2">@*android:color/background_dark</color>
+    <color name="status_bar_newsstand">@*android:color/background_dark</color>
+    <color name="status_bar_newsstand_v2">@*android:color/background_dark</color>
+    <color name="play_header_list_banner_background_color">@*android:color/background_dark</color>
+	
+    <color name="play_apps_light">#2ca14f</color>
+	<color name="play_apps_secondary">#2ca14f</color>
+	<color name="play_apps_secondary_v2">#2ca14f</color>
+	
+
+<!-- green 2ca14f -->
+    <color name="friend_review_card_read_full_review_color">#2ca14f</color>
+    <color name="play_multi_recents">#2ca14f</color>
+    <color name="play_developer_secondary_v2">#2ca14f</color>
+    <color name="testing_program_learn_more_button_text">#2ca14f</color>
+    <color name="testing_program_opt_in_button_bg">#2ca14f</color>
+    <color name="play_multi_secondary">#2ca14f</color>
+    <color name="jpkr_vertical_secondary">#2ca14f</color>
+    <color name="rating_box">#2ca14f</color>
+    <color name="play_apps_primary_v2">#2ca14f</color>
+    <color name="pe__dc_details_thumbnail_background_color">#2ca14f</color>
+    <color name="material_blue_grey_800">#2ca14f</color>
+    <color name="jpkr_mini_top_charts_tooltip_background">#2ca14f</color>
+    <color name="play_apps_primary_disabled">#2ca14f</color>
+    <color name="play_apps_recents">#2ca14f</color>
+    <color name="play_multi_primary">#2ca14f</color>
+    <color name="play_drawer_mini_profile_background">#2ca14f</color>
+	
+	<!-- -->
+
+    <color name="flat_card_cluster_header_title_text_color">#ffffff</color>
+	<color name="detailed_permissions_footer_bg">@*android:color/facelock_spotlight_mask</color>
+    <color name="play_highlight_blue_fill">@*android:color/facelock_spotlight_mask</color>
+    <color name="play_search_overlay_color">@*android:color/background_dark</color>
+    <color name="placeholder_color">#00000000</color>    
+    <color name="placeholder_grey">#00000000</color>
+
+    <color name="play_movies_primary_v2">#ffff335b</color>
+    <color name="play_music_primary_v2">#ffff7d3d</color>
+    <color name="pe__card_divider_color">#00bad3e0</color>
+    <color name="pe__dc_dock_divider_color">#09bad3e0</color>
+    <color name="play_cards_separator_color">#00bad3e0</color>
+    <color name="play_reason_separator">#09bad3e0</color>
+    <color name="play_translucent_separator_line">#09bad3e0</color>
+    <color name="account_separator">#09bad3e0</color>
+    <color name="play_fg_secondary_half_transparent">#70ffffff</color>
+    <color name="play_fg_tertiary">#ffccd2df</color>
+    <color name="material_grey_600">#ffccd2df</color>
+    <color name="grey">#ffccd2df</color>
+    <color name="play_flat_card_index_color">#ffbec8d1</color>
+	<color name="flat_overflow_menu_fill_color">#ffffff</color>
+    <color name="flat_overflow_menu_fill_color_dark">#ffffff</color>
+    <color name="flat_overflow_menu_fill_color_dark_theme">#ffffff</color>
+
+	<color name="jpkr_grey_secondary">#ffccd2df</color>
+    <color name="flat_card_cluster_header_title_text_color_black">#ffffff</color>
+    <color name="flat_card_cluster_header_title_text_color_dark_theme">#ffffffff</color>
+    <color name="flat_card_cluster_light_background">@*android:color/secondary_text_leanback_light</color>
+    <color name="flat_card_creator_avatar_background_color">@*android:color/background_dark</color>
+    <color name="flat_card_star_icon_color_dark_theme">#5ae07f</color>
+    <color name="flat_card_stroke_color">#17B3D1E3</color>
+    <color name="flat_card_subtitle_text_color">#5ae07f</color>
+    <color name="flat_card_subtitle_text_color_dark_theme">#5ae07f</color>
+    <color name="flat_card_title_text_color">#ffffffff</color>
+    <color name="flat_card_title_text_color_dark_theme">#ffffffff</color>
+
+    <color name="whatsnew_apps_v2">#17B3D1E3</color>
+    <color name="whatsnew_movies_v2">#17B3D1E3</color>
+
+    <color name="play_search_plate_navigation_button_color">#ffccd2df</color>
+    <color name="icon_color">#ffffff</color>
+	<color name="detailed_permissions_footer_text">#ffccd2df</color>
+    <color name="whatsnew_music_v2">#17B3D1E3</color>
+    <color name="play_drawer_separator">#09bad3e0</color>
+
+    <color name="review_acquisition_stars_border_color">#9CCCD2DF</color>
+
+    <color name="play_icon_selected">#ffffffff</color>
+    <color name="whatsnew_newsstand_v2">#17B3D1E3</color>
+    <color name="whatsnew_books_v2">#17B3D1E3</color>
+
+    <color name="play_fg_primary">#ffffffff</color>
+    <color name="material_grey_900">@*android:color/background_dark</color>
+	<color name="jpkr_grey_primary">#ffffffff</color>
+    <color name="play_uninstall_wizard_title_color">#ffffffff</color>
+    <color name="review_question_bg">#17B3D1E3</color>	
+
+    <color name="material_deep_teal_500">#5ae07f</color>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="light_half_transparent">#80eeeeee</color>
+    <color name="play_search_suggestion_divider_background">#09bad3e0</color>
+    <color name="play_icon_default">#ffffffff</color>
+    <color name="button_material_light">#ff2b3238</color>
+    <color name="play_dismissed_overlay">#B3000000</color>
+
+    <color name="play_white">@*android:color/white</color>
+    <color name="whatsnew_apps">@*android:color/transparent</color>
+
+    <color name="play_rated_overlay">#A5000000</color>
+    <color name="whatsnew_movies">@*android:color/transparent</color>
+    <color name="background_floating_material_light">@*android:color/background_dark</color>
+    <color name="play_search_plate_hint_text_color">#b3bdca</color>
+    <color name="whatsnew_newsstand">@*android:color/transparent</color>
+
+    <color name="whatsnew_apps_ent">@*android:color/transparent</color>
+    <color name="secondary_text_default_material_light">#8affffff</color>
+
+    <color name="reviews_filtering_color">#ffccd2df</color>
+
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="play_main_background">@*android:color/background_dark</color>
+    <color name="whatsnew_books">@*android:color/transparent</color>
+    <color name="play_fg_secondary">#ffccd2df</color>
+    <color name="background_material_light">@*android:color/dim_foreground_light</color>
+
+    <color name="whatsnew_music">@*android:color/transparent</color>
+    <color name="white">@*android:color/background_dark</color>
+
+    <color name="play_card_light_background">@*android:color/secondary_text_leanback_light</color>
+    <color name="play_header_list_banner_text_color">#ffffffff</color>
+	
+    <color name="entity_pivot_text_color">@*android:color/white</color>
+    <color name="game_loading_negative_button_text_color">@*android:color/white</color>
+    <color name="game_loading_positive_button_text_color">@*android:color/white</color>
+    <color name="game_loading_subtitle_color">@*android:color/white</color>
+    <color name="simple_alert_dialog_title_color">@*android:color/white</color>
+
+    <color name="details_review_source_text">@*android:color/white</color>
+    <color name="survey_prompt_subtitle_fg">#99ffffff</color>
+    <color name="survey_prompt_title_fg">@*android:color/white</color>
+    <color name="review_question_option_text">@*android:color/white</color>
+    <color name="play_onboard_simple_quiz_title_text_color">@*android:color/white</color>
+    <color name="play_header_list_tab_pressed_bg_color">@*android:color/ripple_material_dark</color>
+    <color name="play_header_list_tab_ripple_color">@*com.android.vending:color/ripple_material_dark</color>
+    <color name="play_header_list_tab_underline_color">#D0D0F2DB</color>
+    <color name="play_credit_primary">@*android:color/white</color>
+    <color name="play_banner_light_fg">@*android:color/white</color>
+    <color name="happiness_survey_prompt_button_text">@*android:color/white</color>
+    <color name="foreground_material_dark">@*android:color/white</color>
+    <color name="foreground_material_light">@*android:color/white</color>
+	
+
+    <color name="account_email_dark_text_color">#FFFFFF</color>                                     <!-- Email Settings - Title -->
+    <color name="account_email_light_text_color">#b3FFFFFF</color>                                  <!-- Email Settings - SubTitle -->
+    <color name="white_action_bar_icon_color">#FFF</color>
+    <color name="white_action_bar_dark_title_color">#FFF</color>                                    <!-- Toolbar -->
+    <color name="play_secondary_light">#b3FFFFFF</color>                                            <!-- Tab Inactive -->
+
+    <color name="material_grey_50">@*android:color/secondary_text_leanback_light</color>                             <!-- Drawer Background (item) -->
+
+    <color name="play_installed_apps_toggle_switch_track_off">#757575</color>                       <!-- Switch Track -->
+	<color name="bottom_sheet_light_text_color">@*android:color/white</color>
+    <color name="primary_text_disabled_material_light">#ffffffff</color>
+    <color name="secondary_text_disabled_material_light">#ffffffff</color>
+    <color name="play_ripple_light">#20ffffff</color>
+    <color name="ripple_material_light">#ff9e9e9e</color>
+</resources>

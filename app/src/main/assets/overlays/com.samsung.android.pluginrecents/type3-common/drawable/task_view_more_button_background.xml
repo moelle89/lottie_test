@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:type="radial"
+                android:centerY="0.0"
+                android:gradientRadius="100%p"
+                android:startColor="#ffffffff"
+                android:endColor="#00ffffff" />
+    <corners android:radius="@*com.samsung.android.pluginrecents:dimen/task_view_rounded_corners_radius" />
+</shape>

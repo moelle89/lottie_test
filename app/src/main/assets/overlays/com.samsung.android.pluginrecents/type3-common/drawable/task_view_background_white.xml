@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+		<shape android:shape="rectangle">
+			<corners android:radius="@*com.samsung.android.pluginrecents:dimen/task_view_rounded_corners_radius" />
+			 <gradient android:startColor="@android:color/background_dark" android:endColor="#EEFFFFFF" android:angle="90" />
+			<stroke android:width="6.0px" android:color="#ffffffff" />
+		</shape>
+	</item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@*com.samsung.android.pluginrecents:dimen/task_view_rounded_corners_radius" />
+            <gradient android:startColor="@android:color/transparent" android:centerColor="@*android:color/dim_foreground_light" android:endColor="@*android:color/timepicker_default_background_material" android:angle="-90" />
+        </shape>
+    </item>
+</layer-list>

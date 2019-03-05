@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color_undo_notification">#fff62b48</color>
+    <color name="text_color_undo_notification_description">#ffcddbe0</color>
+    <color name="bt_notification_undo_button_text">#fff62b48</color>
+    <color name="bt_notification_undo_description_text">#ffcddbe0</color>
+</resources>

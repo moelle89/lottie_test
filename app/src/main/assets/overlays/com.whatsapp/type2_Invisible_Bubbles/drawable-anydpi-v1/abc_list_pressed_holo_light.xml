@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <nine-patch android:tint="@*android:color/transparent" android:src="@*com.whatsapp:drawable/notification_bg_normal" />
+	</item>      
+	<item>
+    <nine-patch android:tint="@*android:color/transparent" android:src="@*com.whatsapp:drawable/notify_panel_notification_icon_bg" />
+	</item>    
+</layer-list>

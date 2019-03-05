@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+		<shape android:shape="rectangle" android:tint="@*com.android.vending:color/play_apps_primary_v2" >
+			<corners
+				android:radius="@*com.android.vending:dimen/play_action_button_corner" />
+			<solid
+				android:color="#2DFFFFFF" />
+			<stroke
+				android:width="2.5dp"
+				android:color="#20FFFFFF" />
+		</shape>
+	</item>
+</layer-list>

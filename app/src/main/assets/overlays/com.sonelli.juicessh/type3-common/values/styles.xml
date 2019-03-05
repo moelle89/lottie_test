@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="Theme.JuiceSSH" parent="@*com.sonelli.juicessh:style/Theme.AppCompat">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:windowBackground">@*com.sonelli.juicessh:drawable/splash_screen</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:itemTextAppearance">@*com.sonelli.juicessh:style/Theme.JuiceSSH.Material.MenuTextAppearance</item>
+        <item name="*com.sonelli.juicessh:actionOverflowButtonStyle">@*com.sonelli.juicessh:style/Theme.JuiceSSH.Material.Actionbar.Overflow</item>
+        <item name="*com.sonelli.juicessh:actionBarStyle">@*com.sonelli.juicessh:style/Theme.JuiceSSH.Material.Actionbar</item>
+        <item name="*com.sonelli.juicessh:actionBarWidgetTheme">@*com.sonelli.juicessh:style/Theme.JuiceSSH.Material.Actionbar.Widget</item>
+        <item name="*com.sonelli.juicessh:actionMenuTextColor">@*android:color/white</item>
+        <item name="*com.sonelli.juicessh:colorPrimary">@*android:color/holo_primary_dark</item>
+        <item name="*com.sonelli.juicessh:colorPrimaryDark">@*android:color/holo_primary_dark</item>
+        <item name="*com.sonelli.juicessh:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+</resources>

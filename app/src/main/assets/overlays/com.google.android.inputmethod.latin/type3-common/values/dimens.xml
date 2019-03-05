@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_elevation">0.0dip</dimen>
+    <dimen name="material_popup_bubble_elevation">0.0dip</dimen>
+	<dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="material_popup_corner_radius">6.0dip</dimen>
+    <dimen name="one_handed_keyboard_body_corner_radius">6.0dip</dimen>
+    <dimen name="softkey_bg_corner_radius">6.0dip</dimen>
+    <dimen name="tooltip_corner_radius">6.0dip</dimen>
+    <dimen name="abc_control_corner_material">6.0dip</dimen>
+    <dimen name="cardview_default_radius">6.0dip</dimen>
+</resources>

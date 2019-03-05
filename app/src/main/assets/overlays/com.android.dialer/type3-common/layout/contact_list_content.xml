@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@*com.android.dialer:id/pinned_header_list_layout" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@*com.android.dialer:layout/account_filter_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@*com.android.dialer:layout/contact_list_card" />
+        <view android:id="@android:id/list" android:paddingTop="3.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:fastScrollEnabled="true" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" class="com.android.contacts.common.list.PinnedHeaderListView" />
+        <ProgressBar android:layout_gravity="center" android:id="@*com.android.dialer:id/search_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M53.5,5H0v10h53.5c2.2,0,4-1.8,4-4V9C57.5,6.8,55.7,5,53.5,5z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M102.5,5h-37H49H12C9.8,5,8,6.8,8,9v2c0,2.2,1.8,4,4,4h37h16.5h37c2.2,0,4-1.8,4-4V9C106.5,6.8,104.7,5,102.5,5 z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M151.4,5h-47.1h-21H36.1C33.3,5,31,6.8,31,9v2c0,2.2,2.3,4,5.1,4h47.1h21h47.1c2.8,0,5.1-1.8,5.1-4V9 C156.5,6.8,154.2,5,151.4,5z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M169.5,5h-46.4h-20.7H56c-2.8,0-5,1.8-5,4v2c0,2.2,2.3,4,5,4h46.4h20.7h46.4c2.8,0,5-1.8,5-4V9 C174.5,6.8,172.2,5,169.5,5z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M229.9,5h-42.3h-18.8h-42.3c-2.5,0-4.6,1.8-4.6,4v2c0,2.2,2.1,4,4.6,4h42.3h18.8h42.3c2.5,0,4.6-1.8,4.6-4V9 C234.5,6.8,232.4,5,229.9,5z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M340,5h-45.8h-20.4H228c-2.7,0-5,1.8-5,4v2c0,2.2,2.2,4,5,4h45.8h20.4H340c2.7,0,5-1.8,5-4V9 C345,6.8,342.8,5,340,5z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M358.2,5h-20.4H292c-2.7,0-5,1.8-5,4v2c0,2.2,2.2,4,5,4h45.8h20.4H394V5H358.2z" />
+</vector></item><!---->
+<!----><item android:duration="50" >
+<vector 
+    android:width="394dp"
+    android:height="20dp"
+    android:viewportWidth="394"
+    android:viewportHeight="20">
+
+    <path
+        android:fillColor="@*android:color/holo_blue_light"
+        android:pathData="M383.2,5h-20.4H317c-2.7,0-5,1.8-5,4v2c0,2.2,2.2,4,5,4h45.8h20.4H394V5H383.2z" />
+</vector></item><!---->
+</animation-list>

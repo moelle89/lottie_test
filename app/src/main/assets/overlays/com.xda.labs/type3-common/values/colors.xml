@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing xda labs's Colors-->
+<resources>
+    <color name="primary">@*android:color/timepicker_default_background_material</color>
+    <color name="primary_dark">@*android:color/timepicker_default_background_material</color>
+    <color name="primary_dark_material_dark">@*android:color/timepicker_default_background_material</color>
+	<color name="colorPrimary">@*android:color/timepicker_default_background_material</color>
+    <color name="colorPrimaryDark">@*android:color/timepicker_default_background_material</color>	
+     <color name="navdrawer_divider_dark">@*android:color/background_dark</color>
+    <color name="login_modal_first">@*android:color/background_dark</color>	
+    <color name="background_dark">@*android:color/background_dark</color>
+    <color name="dialog_bg_dark">@*android:color/background_dark</color>
+    <color name="material_grey_900">@*android:color/background_dark</color>
+    <color name="search_divider_dark">@*android:color/background_dark</color>
+    <color name="search_list_results_bg_dark">@*android:color/background_dark</color>	
+    <color name="material_grey_800">@*android:color/background_dark</color>
+    <color name="cardview_dark_background">@*android:color/background_dark</color>
+	<color name="primary_bg">@*android:color/background_dark</color>
+	<color name="background_quoted_dark">#ff131517</color>
+    <color name="accent">@*android:color/accent_material_dark</color>
+	<color name="material_grey_850">@*android:color/background_dark</color>
+</resources>

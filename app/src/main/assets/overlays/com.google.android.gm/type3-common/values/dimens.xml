@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_fab_content_size">80.0dip</dimen>
+    <dimen name="rte_toolbar_height">48.0dip</dimen>
+    <dimen name="rte_toolbar_separator_thickness">1.0dip</dimen>
+    <dimen name="rte_toolbar_height_with_separator">49.0dip</dimen>
+    <dimen name="rte_toolbar_buttons_container_paddingLeft">0.0dip</dimen>
+    <dimen name="rte_toolbar_buttons_container_paddingRight">0.0dip</dimen>
+    <dimen name="rte_toolbar_corner_radius">1.0dip</dimen>
+    <dimen name="rte_toolbar_elevation">4.0dip</dimen>
+    <dimen name="rte_popup_window_location_gap_y">8.0dip</dimen>
+    <dimen name="rte_popup_window_elevation">1.0dip</dimen>
+    <dimen name="rte_close_button_spacing">0.0dip</dimen>
+    <dimen name="rte_close_button_elevation">14.0dip</dimen>
+    <dimen name="rte_toolbar_fade_edge_width">4.0dip</dimen>
+    <dimen name="rte_toolbar_button_width">48.0dip</dimen>
+    <dimen name="rte_toolbar_button_height">48.0dip</dimen>
+    <dimen name="rte_toolbar_button_background_width">36.0dip</dimen>
+    <dimen name="rte_toolbar_button_background_height">36.0dip</dimen>
+    <dimen name="rte_toolbar_button_background_corner_radius">2.0dip</dimen>
+    <dimen name="rte_toolbar_button_margin_left">0.0dip</dimen>
+    <dimen name="rte_toolbar_button_margin_right">0.0dip</dimen>
+    <dimen name="rte_toolbar_button_insetTop">6.0dip</dimen>
+    <dimen name="rte_toolbar_button_insetBottom">6.0dip</dimen>
+    <dimen name="rte_toolbar_button_insetLeft">6.0dip</dimen>
+    <dimen name="rte_toolbar_button_insetRight">6.0dip</dimen>
+    <dimen name="rte_popup_button_margin_left">6.0dip</dimen>
+    <dimen name="rte_popup_button_margin_right">6.0dip</dimen>
+    <dimen name="rte_font_picker_item_padding_end">24.0dip</dimen>
+    <dimen name="suw_card_corner_radius">2.0dip</dimen>
+    <item type="dimen" name="rte_toolbar_button_enabled_alpha">0.8</item>
+    <item type="dimen" name="rte_toolbar_button_disabled_alpha">0.2</item>
+	<dimen name="notification_view_height">40.0dip</dimen>
+    <dimen name="google_fab_branded_image_size">56.0dip</dimen>
+</resources>

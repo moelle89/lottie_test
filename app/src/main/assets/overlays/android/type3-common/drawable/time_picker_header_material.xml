@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/holo_button_pressed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@*android:color/holo_primary_dark" />
+    </item>
+</ripple>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:background="@*com.android.settings:drawable/fallback_home_unprovisioned_background" android:layout_height="@*com.android.settings:dimen/suw_items_icon_divider_inset" android:layout_marginBottom="0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+		android:src="@*com.android.settings:drawable/fallback_home_unprovisioned_background" />
+</FrameLayout>

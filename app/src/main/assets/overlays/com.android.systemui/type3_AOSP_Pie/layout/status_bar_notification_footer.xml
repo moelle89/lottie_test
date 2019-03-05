@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.FooterView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.AlphaOptimizedFrameLayout android:id="@*com.android.systemui:id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.systemui.statusbar.FooterViewButton android:textColor="#00000000" android:layout_gravity="end" android:background="@*com.android.systemui:drawable/pop_ball" android:id="@*com.android.systemui:id/manage_text" android:focusable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:text="@null" android:textAllCaps="false" style="@android:style/Widget.Material.Button.Borderless" />
+        <com.android.systemui.statusbar.FooterViewButton android:layout_width="42.0dip" android:layout_height="42.0dip" android:text="@null" android:textColor="#00000000" android:background="@*com.android.systemui:drawable/dismiss_all_shape"  android:layout_marginRight="72.0dip"  android:layout_gravity="end" android:id="@*com.android.systemui:id/dismiss_text" android:focusable="true" android:contentDescription="@null" style="@android:style/Widget.Material.Button.Borderless" />
+    </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+</com.android.systemui.statusbar.FooterView>

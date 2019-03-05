@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.9"
+        android:strokeAlpha="0.9"
+        android:strokeWidth="1"
+        android:pathData="M13.4,17.1l1.4-1l-3.4-3.5l-1.2-1.2C9.5,10.7,8.4,10,7.4,10c-2.3,0-4.2,1.9-4.2,4.2c0,1.2,0.3,2.3,1.2,3.1 l1.3,1.5l3.1,2.8c1.6,1.6,3.9,0.5,5.5-1.1C14.5,20.7,13.9,17.1,13.4,17.1z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M11.7,12.8l5.9,5.9l-3.1,3.1c-1.6,1.6-4,1.6-5.6,0l-3.1-3.1L11.7,12.8z M11.7,9.3c2.3,0,4.2-1.9,4.2-4.2S13.9,1,11.7,1 S7.5,2.7,7.5,5S9.4,9.3,11.7,9.3z M20.1,10.7h-0.9c-0.1,0-0.3-0.1-0.3-0.3V9.5c0-0.4-0.3-0.7-0.7-0.7h-1.3c-0.4,0-0.7,0.3-0.7,0.7 v0.9c0,0.1-0.1,0.3-0.3,0.3H15c-0.4,0-0.7,0.3-0.7,0.7v1.3c0,0.4,0.3,0.7,0.7,0.7H16c0.1,0,0.3,0.1,0.3,0.3v0.9 c0,0.4,0.3,0.7,0.7,0.7h1.3c0.4,0,0.7-0.3,0.7-0.7v-0.9c0-0.1,0.1-0.3,0.3-0.3h0.9c0.4,0,0.7-0.3,0.7-0.7v-1.3 C20.8,10.8,20.5,10.7,20.1,10.7z" />
+</vector>

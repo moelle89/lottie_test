@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="status_bar_opened_default_background">@*android:color/holo_primary_dark</item>
+    <item name="screen_background_light" type="drawable">@*android:color/background_dark</item>   
+	<item name="screen_background_light_transparent" type="drawable">#80000000</item>
+    <item name="search_bar_default_color" type="drawable">@*android:color/background_dark</item>
+    <item name="input_method_fullscreen_background" type="drawable">@*android:color/background_dark</item>
+    <item name="screen_background_holo_light" type="drawable">@*android:color/background_dark</item>
+    <item name="screen_background_holo_dark" type="drawable">@*android:color/background_dark</item>
+	<item name="sem_action_bar_background_dark" type="drawable">@*android:drawable/status_bar_closed_default_background</item>		
+	<item name="sem_action_bar_background" type="drawable">@*android:drawable/status_bar_closed_default_background</item>	
+	<item name="tw_action_bar_background" type="drawable">@*android:drawable/status_bar_closed_default_background</item>
+	<item name="sem_action_bar_background_stacked_dark" type="drawable">@*android:drawable/sem_action_bar_background_stacked</item>		
+	<item name="sem_toast_frame_mtrl" type="drawable">@*android:drawable/toast_frame</item>			
+	<item name="sem_toast_frame_mtrl_light" type="drawable">@*android:drawable/toast_frame</item>		
+	<item name="go_to_top_mtrl_dark" type="drawable">@*android:drawable/go_to_top_mtrl</item>		
+	<item name="tw_ic_do_restart" type="drawable">@*android:drawable/tw_ic_do_restart_square</item>	
+	<item name="tw_ic_do_restart_01" type="drawable">@*android:drawable/tw_ic_do_restart_01_square</item>
+	<item name="tw_ic_do_poweroff" type="drawable">@*android:drawable/tw_ic_do_poweroff_square</item>		
+	<item name="tw_ic_do_poweroff_01" type="drawable">@*android:drawable/tw_ic_do_poweroff_01_square</item>		
+	<item name="tw_ic_do_emergencymode" type="drawable">@*android:drawable/tw_ic_do_emergencymode_square</item>			
+	<item name="tw_ic_do_data_network" type="drawable">@*android:drawable/tw_ic_do_data_network_square</item>	
+	<item name="tw_btn_switch_mtrl_dark" type="drawable">@*android:drawable/tw_btn_switch_mtrl</item>	
+	<item name="floating_popup_background_dark" type="drawable">@*android:drawable/floating_popup_background_light</item>	
+	<item name="popup_background_material" type="drawable">@*android:drawable/floating_popup_background_light</item>	
+	<item name="tw_list_popup_background_material" type="drawable">@*android:drawable/floating_popup_background_light</item>	
+	<item name="tw_spinner_popup_background_material" type="drawable">@*android:drawable/floating_popup_background_light</item>	
+	<item name="tw_spinner_popup_background_material_dark" type="drawable">@*android:drawable/floating_popup_background_light</item>
+	<item name="ic_menu_search_holo_light" type="drawable">@*android:drawable/ic_menu_search_material</item>
+	<item name="ic_menu_search" type="drawable">@*android:drawable/ic_menu_search_material</item>
+	<item name="ic_menu_search_mtrl_alpha" type="drawable">@*android:drawable/ic_menu_search_material</item>
+	<item name="ic_search_api_holo_light" type="drawable">@*android:drawable/ic_menu_search_material</item>
+	<item name="ic_search_api_holo_dark" type="drawable">@*android:drawable/ic_menu_search_material</item>
+	<item name="tw_action_bar_icon_search_mtrl" type="drawable">@*android:drawable/ic_menu_search_material</item>
+</resources>

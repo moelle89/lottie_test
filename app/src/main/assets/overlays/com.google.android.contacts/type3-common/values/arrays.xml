@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="letter_tile_colors">
+		<item>@*android:color/highlighted_text_holo_dark</item>      
+		<item>@*android:color/holo_blue_light</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>      
+		<item>@*android:color/holo_blue_light</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item> 
+		<item>@*android:color/highlighted_text_holo_dark</item>      
+		<item>@*android:color/highlighted_text_holo_dark</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>      
+		<item>@*android:color/holo_blue_light</item>        
+		<item>@*android:color/highlighted_text_holo_dark</item>
+    </array>
+    <array name="letter_tile_colors_dark">
+		<item>@*android:color/suggestion_highlight_text</item>      
+		<item>@*android:color/holo_blue_dark</item>        
+		<item>@*android:color/suggestion_highlight_text</item>        
+		<item>@*android:color/suggestion_highlight_text</item>        
+		<item>@*android:color/suggestion_highlight_text</item>      
+		<item>@*android:color/holo_blue_dark</item>        
+		<item>@*android:color/suggestion_highlight_text</item> 
+		<item>@*android:color/suggestion_highlight_text</item>      
+		<item>@*android:color/suggestion_highlight_text</item>        
+		<item>@*android:color/suggestion_highlight_text</item>        
+		<item>@*android:color/suggestion_highlight_text</item>        
+		<item>@*android:color/suggestion_highlight_text</item>      
+		<item>@*android:color/holo_blue_dark</item>        
+		<item>@*android:color/suggestion_highlight_text</item>
+    </array>
+</resources>

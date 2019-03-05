@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_grey_50">@*android:color/dim_foreground_light</color>        <!-- Overflow -->
+    <color name="primary_text_default_material_light">#FFFFFF</color>                               <!-- Primary | Overflow Text -->
+    <color name="hint_text_color">@*android:color/holo_orange_light</color>                                                 <!-- Dialog Text Entry Hint -->
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+
+    <color name="emergency_accent">#FFFFFF</color>
+    <color name="emergency_primary">@*android:color/button_material_dark</color>
+    <color name="emergency_primary_dark">@*android:color/button_material_dark</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.moelle.deepdarkness"
+          android:installLocation="internalOnly">
+
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	
+	<uses-feature
+        android:name="projekt.substratum.theme"
+        android:required="false" /> <!-- Set to true for OMS-rom only block to be enabled -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/ThemeName"
+        android:supportsRtl="true"
+        android:theme="@style/Circular"
+        tools:node="replace"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!-- Activity for Splashscreen -Intro and Firebase notification -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/ThemeName"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/ThemeName"
+            android:theme="@style/Circular.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NextActivity" android:theme="@style/Circular.Fab" />
+
+        <activity android:name=".Welcome"
+            android:theme="@style/WelcomeScreenTheme"/>
+
+        <activity android:name="com.moelle.deepdarkness.SubstratumLauncher">
+            <intent-filter>
+                <action android:name="projekt.substratum.THEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="projekt.substratum.GET_KEYS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="Substratum_Legacy"
+            android:value="@bool/ThemeSupportLegacy"/>
+        <meta-data
+            android:name="Substratum_Name"
+            android:value="@string/ThemeName"/>
+        <meta-data
+            android:name="Substratum_Author"
+            android:value="@string/ThemeAuthor"/>
+        <meta-data
+            android:name="Substratum_Email"
+            android:value="@string/ThemeAuthorEmail"/>
+        <meta-data
+            android:name="Substratum_Samsung"
+            android:value="@bool/ThemeSupportSamsung"/>
+        <meta-data
+            android:name="Substratum_Wallpapers"
+            android:value="@string/ThemeWallpaperSource"/>
+        <meta-data
+            android:name="Substratum_HeroOverride"
+            android:value="@string/ThemeHeroOverride"/>
+
+        <!-- SUBSTRATUM INTERNAL USE: DO NOT TOUCH -->
+        <meta-data
+            android:name="Substratum_Plugin"
+            android:value="14.0.2"/>
+        <meta-data
+            android:name="Substratum_Encryption"
+            android:value="@string/encryption_status"/>
+
+    </application>
+
+</manifest>

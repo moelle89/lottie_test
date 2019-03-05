@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fab_ripple_color">@*android:color/ripple_material_dark</color>
+    <color name="highlights_notification_bg_color">@*android:color/transparent</color>
+    <color name="highlights_notification_story_bg">@*android:color/transparent</color>
+    <color name="highlights_notification_subtext">@*android:color/white</color>
+    <color name="notification_action_color_filter">@*android:color/accent_material_dark</color>
+    <color name="notification_media_tint">#c0000000</color>
+    <color name="notification_title_text">@*android:color/white</color>
+    <color name="highlights_notification_overlay_text">@*android:color/white</color>
+</resources>

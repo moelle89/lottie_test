@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="primary_text_disabled_material_light">#9EE2EDF3</color>
+    <color name="secondary_text_default_material_light">@*android:color/secondary_text_default_material_dark</color>
+    <color name="secondary_text_disabled_material_light">#9EB1C6CD</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_disabled_material_dark">#9EE2EDF3</color>
+    <color name="secondary_text_default_material_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="secondary_text_disabled_material_dark">#9EB1C6CD</color>
+</resources>

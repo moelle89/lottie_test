@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="button_material_dark">@*android:color/button_material_dark</color>
+    <color name="button_material_light">@*android:color/button_material_light</color>
+	<color name="dim_foreground_material_light">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_900">@*android:color/timepicker_default_background_material</color>
+    <color name="material_grey_850">@*android:color/background_dark</color>
+    <color name="material_grey_800">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_600">@*android:color/holo_orange_light</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_100">@*android:color/lighter_gray</color>
+    <color name="material_deep_teal_200">@*android:color/highlighted_text_holo_dark</color>
+    <color name="material_deep_teal_500">@*android:color/accent_material_dark</color>
+    <color name="material_blue_grey_800">@*android:color/button_material_dark</color>
+    <color name="app_icon_bg">@*android:color/button_material_dark</color>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="@*android:color/accessibility_focus_highlight"
+        android:pathData="M 3.3 16.7 L 11.7 21.8 L 11.7 11.7 L 3.3 6.7 Z" />
+    <path
+        android:fillColor="@*android:color/accessibility_focus_highlight"
+        android:fillAlpha="0.5"
+        android:strokeAlpha="0.5"
+        android:strokeWidth="1"
+        android:pathData="M 12 1.6 L 3.6 6.7 L 12 11.7 L 20.4 6.7 Z" />
+    <path
+        android:fillColor="@*com.android.systemui:color/fake_shadow_start_color"
+        android:pathData="M11.9,23.5c-0.4,0-0.8-0.1-1.1-0.3l-7.5-4.5c-0.6-0.4-1-1.1-1-1.8l0-9.7c0-0.7,0.4-1.4,1-1.8l7.5-4.5 c0.7-0.4,1.5-0.4,2.2,0l7.8,4.6c0.6,0.4,1.1,1.1,1.1,1.8v9.4c0,0.7-0.4,1.4-1,1.8L13,23.2C12.6,23.4,12.3,23.5,11.9,23.5z M9.8,20.3c0.3,0.2,0.6,0.1,0.7,0c0.1-0.1,0.4-0.2,0.4-0.6V13c0-0.2-0.1-0.5-0.3-0.6L5.1,9.1C4.8,8.9,4.5,9,4.4,9.1 C4.3,9.2,4.1,9.3,4.1,9.7l0,6.7c0,0.3,0.1,0.5,0.3,0.6L9.8,20.3z M19.1,8.9c-0.1,0-0.2,0-0.4,0.1l-5.5,3.3 c-0.2,0.1-0.3,0.4-0.3,0.6v6.7c0,0.4,0.3,0.6,0.4,0.6c0.1,0.1,0.4,0.2,0.7,0l5.5-3.3c0.2-0.1,0.3-0.4,0.3-0.6V9.7 c0-0.4-0.3-0.6-0.4-0.6C19.4,9,19.3,8.9,19.1,8.9z M5.9,6.1C5.6,6.2,5.5,6.5,5.5,6.7c0,0.1,0,0.4,0.3,0.6l5.6,3.4 c0.2,0.1,0.5,0.1,0.7,0l5.6-3.4c0.3-0.2,0.3-0.5,0.3-0.6c0-0.1,0-0.4-0.3-0.6l-5.6-3.4c-0.2-0.1-0.5-0.1-0.7,0L5.9,6.1L5.9,6.1z" />
+</vector>

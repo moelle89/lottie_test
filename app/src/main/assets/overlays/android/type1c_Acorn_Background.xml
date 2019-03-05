@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dark">#ff191522</color><!-- app background -->
+	<color name="timepicker_default_background_material">#ff100e16</color><!-- app background_2 -->
+	<color name="secondary_text_default_material_light">#d4191522</color><!-- app background_alpha -->
+    <color name="facelock_spotlight_mask">#d4191522</color><!-- settings background_alpha -->
+	<color name="background_floating_material_dark">@*android:color/dim_foreground_light</color><!-- bg tint solid -->
+	<color name="dim_foreground_light">#ff221e2c</color><!-- conversation_bg_color -->
+	<color name="user_icon_default_white">#0cb3d1e3</color><!-- pitchblack dim_foreground_light trans -->
+	<color name="button_material_dark">#FF262432</color><!-- controlnormal -->
+	<color name="holo_primary_dark">#ff100e16</color><!-- common black -->
+	<color name="shadow">#d41c1a27</color><!-- theme_color_alpha -->
+	<color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
+	<color name="holo_red_light">#fff62b48</color><!-- settings titles -->
+    <color name="primary_material_dark">#ff1c1a27</color><!-- theme_color -->
+	<color name="primary_dark_material_dark">@*android:color/legacy_primary</color>
+	<color name="secondary_text_leanback_light">#ff1d1827</color><!-- notifications_color -->
+	<color name="holo_light_control_normal">#ff000000</color><!-- search_impput_color -->
+</resources>

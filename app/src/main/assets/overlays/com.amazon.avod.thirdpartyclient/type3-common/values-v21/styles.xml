@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault">
+		<item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+		<item name="android:backgroundTint">@*android:color/facelock_spotlight_mask</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+		<item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+    </style>
+	
+    <style name="AVOD.Widget" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+	
+    <style name="AVOD.Widget.Button.Continue" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Purchase" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Launch" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Video" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Price" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Purchase" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Primary" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Button" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Prime" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Video" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Purchase" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Video" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Scene" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Button">
+        <item name="android:background">@*com.amazon.avod.thirdpartyclient:drawable/btn_scene_amazon_dark</item>
+		<item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="AVOD.Widget.Button.Subscribe" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Purchase" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Watch" parent="@*com.amazon.avod.thirdpartyclient:style/Widget.Fluid.Dark.Button.Video" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Watch.DevicePicker" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Button.Watch" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Watch.Fling" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Button.Watch" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Button.Watch.Join" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Button.Watch" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+	    <style name="AVOD.Widget.Header" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget" >
+			<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="AVOD.Widget.Header.Tabbar" parent="@*com.amazon.avod.thirdpartyclient:style/AVOD.Widget.Header" >
+		<item name="android:backgroundTint">@null</item>
+	</style>
+</resources>

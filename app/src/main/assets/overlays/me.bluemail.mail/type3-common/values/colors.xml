@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing BlueMail's Colors-->
+<resources>
+	<color name="notification_icon_color">@*android:color/accent_material_dark</color>
+	<color name="folder_explorer_dark_pager_title_bg">@*android:color/background_dark</color>
+	<color name="white_dark">@*android:color/background_dark</color>
+	<color name="folder_explorer_dark_list_bg">@*android:color/background_dark</color>
+	<color name="lockscr_dark_color_settings_bg">@*android:color/background_dark</color>
+	<color name="background_floating_material_dark">@*android:color/primary_material_dark</color>
+	<color name="background_material_dark">@*android:color/background_dark</color>
+	<color name="bg1_dark">@*android:color/background_dark</color>
+	<color name="swipe_bg_dark">@*android:color/background_dark</color>
+	<color name="blue_main_color">@*android:color/accent_material_dark</color>
+	<color name="swipe_middle_btn">@*android:color/accent_material_dark</color>
+	<color name="list_view_bg_dark">@*android:color/background_dark</color>
+    <color name="picker_bg_dark">@*android:color/background_floating_material_dark</color>
+    <color name="account_status_bg_black">@*android:color/background_floating_material_dark</color>
+	<color name="conversation_list_view_bg_dark">@*android:color/background_floating_material_dark</color>
+	<color name="divider_color">@*android:color/primary_material_dark</color>
+</resources>

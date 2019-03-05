@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Settings' Dimensions-->
+<resources>
+	<item type="dimen" name="oneplus_dashboard_tile_iconinside_size">@*com.android.settings:dimen/oneplus_contorl_icon_size_list</item> <!-- homepage icon / frontpage -->
+	<dimen name="oneplus_contorl_list_item_height_one_line2">60.0dip</dimen><!--Switchbar height-->
+	<dimen name="oneplus_contorl_appbar_size_standard">0.0dip</dimen><!--Actionbar height-->
+	<item type="dimen" name="appbar_layout_default_height_material">56.0dip</item>
+    <dimen name="settings_side_margin">2.0dip</dimen>
+    <dimen name="abc_action_bar_elevation_material">0.0dip</dimen>
+    <dimen name="suw_title_area_elevation">0.0dip</dimen>
+    <dimen name="suw_header_elevation_hack">0.0dip</dimen>
+    <dimen name="suw_glif_card_elevation">0.0dip</dimen>
+    <dimen name="suw_card_elevation">0.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="abc_control_corner_material">8.0dip</dimen>
+    <dimen name="tooltip_corner_radius">8.0dip</dimen>
+    <dimen name="suw_card_corner_radius">8.0dip</dimen>
+    <dimen name="suggestion_card_corner_radius">10.0dip</dimen>
+    <dimen name="dashboard_category_elevation">0dp</dimen>
+    <dimen name="search_panel_elevation">0.0dip</dimen>
+    <dimen name="dashboard_padding_top">0.0dip</dimen>
+	<dimen name="dashboard_padding_start">0dp</dimen>
+    <dimen name="dashboard_padding_end">0dp</dimen>
+    <dimen name="divider_height">0dip</dimen>
+    <dimen name="divider_margin_top">0dip</dimen>
+    <dimen name="divider_margin_bottom">0dip</dimen>
+    <dimen name="fingerprint_decor_padding_top">0.0dip</dimen>
+	<dimen name="dashboard_border_width">0dip</dimen>
+	<dimen name="dashboard_radius_bottom_left">0dip</dimen>
+	<dimen name="dashboard_radius_bottom_right">0dip</dimen>
+	<dimen name="dashboard_radius_top_left">0dip</dimen>
+	<dimen name="dashboard_radius_top_right">0dip</dimen>
+	<dimen name="vert_divider_width">1dip</dimen>
+    <dimen name="wifi_divider_height">0.0px</dimen>
+    <dimen name="usage_graph_divider_size">0.0dip</dimen>
+    <dimen name="design_appbar_elevation">0.0dip</dimen>
+    <dimen name="card_corner_radius">8.0dip</dimen>
+    <dimen name="card_elevation">0.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">0.0dip</dimen>
+    <dimen name="toolbar_elevation">0.0dip</dimen>
+    <dimen name="op_divider_height_standard">0.0dip</dimen>
+    <dimen name="oneplus_contorl_divider_height_standard">0.0dip</dimen>
+    <dimen name="oneplus_contorl_shadow_z5">0.0dip</dimen>
+    <dimen name="oneplus_contorl_shadow_z4">0.0dip</dimen>
+    <dimen name="oneplus_contorl_shadow_z3">0.0dip</dimen>
+    <dimen name="oneplus_contorl_shadow_z2">0.0dip</dimen>
+    <dimen name="oneplus_contorl_shadow_z1">0.0dip</dimen>
+    <dimen name="oneplus_contorl_layout_margin_right2">20.0dip</dimen>
+    <dimen name="oneplus_contorl_layout_margin_left2">20.0dip</dimen>
+    <dimen name="oneplus_settings_padding_left">20.0dip</dimen>
+    <dimen name="oneplus_settings_padding_right">20.0dip</dimen>    
+	<dimen name="preview_pager_padding">0.0dip</dimen>
+<!-- -->
+    <dimen name="dashboard_tile_image_margin">20.0dip</dimen>
+</resources>

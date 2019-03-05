@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault" >
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="android:colorPrimary">@*android:color/timepicker_default_background_material</item>
+		<item name="android:navigationBarColor">@*android:color/dim_foreground_light</item>
+		<item name="android:windowBackground">@*android:color/background_device_default_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:itemBackground">@*android:color/background_dark</item>
+        <item name="android:colorBackgroundFloating">@*android:color/background_dark</item>
+	</style>
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault" >
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="android:colorPrimary">@*android:color/timepicker_default_background_material</item>
+		<item name="android:navigationBarColor">@*android:color/dim_foreground_light</item>
+		<item name="android:windowBackground">@*android:color/background_device_default_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:itemBackground">@*android:color/background_dark</item>
+        <item name="android:colorBackgroundFloating">@*android:color/background_dark</item>
+	</style>
+    <style name="Base.V14.Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">@*projekt.substratum:drawable/abc_list_longpressed_holo</item>
+    </style>
+    <style name="Base.Widget.AppCompat.SearchView" parent="@*android:style/Widget.Material.SearchView">
+        <item name="*projekt.substratum:closeIcon">@*projekt.substratum:drawable/abc_ic_clear_material</item>
+        <item name="*projekt.substratum:commitIcon">@*projekt.substratum:drawable/abc_ic_commit_search_api_mtrl_alpha</item>
+        <item name="*projekt.substratum:goIcon">@*projekt.substratum:drawable/abc_ic_go_search_api_material</item>
+        <item name="*projekt.substratum:layout">@*projekt.substratum:layout/abc_search_view</item>
+        <item name="*projekt.substratum:queryBackground">@*projekt.substratum:drawable/abc_textfield_search_material</item>
+        <item name="*projekt.substratum:searchHintIcon">@*projekt.substratum:drawable/abc_ic_search_api_material</item>
+        <item name="*projekt.substratum:searchIcon">@*projekt.substratum:drawable/abc_ic_search_api_material</item>
+        <item name="*projekt.substratum:submitBackground">@*projekt.substratum:drawable/abc_textfield_search_material</item>
+        <item name="*projekt.substratum:suggestionRowLayout">@*projekt.substratum:layout/abc_search_dropdown_item_icons_2line</item>
+        <item name="*projekt.substratum:voiceIcon">@*projekt.substratum:drawable/abc_ic_voice_search_api_material</item>
+    </style>
+    <style name="PhotoCrop.ActivityTheme" parent="@*projekt.substratum:style/Theme.AppCompat.DayNight">
+        <item name="android:windowBackground">@*projekt.substratum:color/cropper_bg_glass</item>
+		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorPrimary">@android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+        <item name="*projekt.substratum:colorPrimary">@android:color/transparent</item>
+        <item name="*projekt.substratum:colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme" parent="@*projekt.substratum:style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@*projekt.substratum:color/statusBarColor</item>
+        <item name="android:navigationBarColor">@*projekt.substratum:color/navigationBarColor</item>
+        <item name="android:toolbarStyle">@*projekt.substratum:style/ToolbarTheme</item>
+        <item name="android:windowLightStatusBar">@*projekt.substratum:bool/windowLightStatusBar</item>
+        <item name="*projekt.substratum:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*projekt.substratum:colorControlHighlight">@*projekt.substratum:color/colorRipple</item>
+        <item name="*projekt.substratum:colorPrimary">@*projekt.substratum:color/colorPrimary</item>
+        <item name="*projekt.substratum:colorPrimaryDark">@*projekt.substratum:color/colorPrimaryDark</item>
+        <item name="*projekt.substratum:preferenceTheme">@*projekt.substratum:style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+    <style name="AppTheme.InformationActivity" parent="@*projekt.substratum:style/AppTheme">
+        <item name="android:windowBackground">@*projekt.substratum:color/information_activity_background_shadow</item>
+        <item name="android:windowIsTranslucent">false</item>
+		<item name="*projekt.substratum:colorPrimary">@*android:color/background_dark</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*projekt.substratum:windowActionBar">false</item>
+        <item name="*projekt.substratum:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+        <item name="*projekt.substratum:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*projekt.substratum:colorPrimary">@*projekt.substratum:color/colorPrimary</item>
+        <item name="*projekt.substratum:colorPrimaryDark">@*projekt.substratum:color/colorPrimaryDark</item>
+    </style>	
+    <style name="BB_BottomBarBadge_Text" parent="@*projekt.substratum:style/TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@*projekt.substratum:color/splashscreen_background</item>
+    </style>
+    <style name="Widget.MaterialComponents.CardView" parent="@*projekt.substratum:style/CardView">
+        <item name="*projekt.substratum:cardBackgroundColor">@*android:color/timepicker_default_background_material</item>
+        <item name="*projekt.substratum:cardElevation">0.0dip</item>
+    </style>
+    <style name="AppTheme.DialogAlert" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="RestoreDialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="PreferenceFragment">
+        <item name="android:divider">@*android:color/transparent</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="Widget.Design.FloatingActionButton" parent="@android:style/Widget">
+        <item name="android:background">@*projekt.substratum:drawable/design_fab_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="*projekt.substratum:backgroundTint">@null</item>
+        <item name="*projekt.substratum:borderWidth">@*projekt.substratum:dimen/design_fab_border_width</item>
+        <item name="*projekt.substratum:elevation">@*projekt.substratum:dimen/design_fab_elevation</item>
+        <item name="*projekt.substratum:fabSize">auto</item>
+        <item name="*projekt.substratum:hideMotionSpec">@*projekt.substratum:animator/design_fab_hide_motion_spec</item>
+        <item name="*projekt.substratum:hoveredFocusedTranslationZ">@*projekt.substratum:dimen/design_fab_translation_z_hovered_focused</item>
+        <item name="*projekt.substratum:maxImageSize">@*projekt.substratum:dimen/design_fab_image_size</item>
+        <item name="*projekt.substratum:pressedTranslationZ">@*projekt.substratum:dimen/design_fab_translation_z_pressed</item>
+        <item name="*projekt.substratum:rippleColor">@*android:color/holo_button_pressed</item>
+        <item name="*projekt.substratum:showMotionSpec">@*projekt.substratum:animator/design_fab_show_motion_spec</item>
+    </style>
+	
+    <style name="LeakCanaryTheme" parent="@*android:style/Theme.Material" />
+    <style name="Base.ThemeOverlay.AppCompat.Light" parent="@*projekt.substratum:style/Platform.ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="Widget.MaterialSheetFab.Sheet" parent="">
+        <item name="android:layout_width">280.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:layout_marginStart">10.0dip</item>
+        <item name="android:layout_marginEnd">12.0dip</item>
+        <item name="*projekt.substratum:cardBackgroundColor">@*projekt.substratum:color/fab_menu_background_card</item>
+        <item name="*projekt.substratum:cardElevation">6.0dip</item>
+        <item name="*projekt.substratum:cardMaxElevation">6.0dip</item>
+        <item name="*projekt.substratum:contentPadding">-4.0dip</item>
+        <item name="*projekt.substratum:cardCornerRadius">10.0dip</item>
+        <item name="*projekt.substratum:cardPreventCornerOverlap">true</item>
+    </style>
+    <style name="SplashScreen.ActivityTheme" parent="@*projekt.substratum:style/Theme.AppCompat.DayNight">
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:statusBarColor">@*android:color/transparent</item>
+		<item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+	<style name="Widget.AppCompat.ProgressBar" parent="@*android:style/Widget.ProgressBar.Large" >
+        <item name="android:indeterminateDrawable">@*projekt.substratum:drawable/substratum_icon</item>
+		<item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>

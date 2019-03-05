@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_overrideRemoteViewsActivityTransition">false</bool><!--draw_notifications_bg -->
+    <bool name="target_honeycomb_needs_options_menu">true</bool><!--windowIsTranslucent -->
+</resources>

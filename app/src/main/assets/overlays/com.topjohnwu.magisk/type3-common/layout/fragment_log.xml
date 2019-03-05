@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@*com.topjohnwu.magisk:id/tab" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:tabPaddingStart="20.0dip" app:tabPaddingEnd="20.0dip" />
+    <androidx.viewpager.widget.ViewPager android:id="@*com.topjohnwu.magisk:id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

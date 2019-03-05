@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.clockface.setting.ClockFaceThumbItem android:id="@*com.samsung.android.app.clockface:id/clock_face_settings_thumb_item" android:backgroundTint="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@*com.samsung.android.app.clockface:id/clock_face_thumb_item_container_parent" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@*com.samsung.android.app.clockface:id/clock_face_thumb_item_container_view" android:backgroundTint="@null" android:background="@*com.samsung.android.app.clockface:drawable/settings_grid_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="start|center|top" android:id="@*com.samsung.android.app.clockface:id/thumbnail_marker_images" android:backgroundTint="@null" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" android:layout_marginStart="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@*com.samsung.android.app.clockface:id/clock_face_thumb_item_selector" android:backgroundTint="@null" android:background="@*com.samsung.android.app.clockface:drawable/settings_grid_item_selected_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.samsung.android.app.clockface.setting.ClockFaceThumbItem>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Widget.AppCompat.Button" parent="@android:style/Widget">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:gravity">center</item>
+		<item name="android:buttonTint">#ff2b3238</item>
+		<item name="android:buttonTintMode">multiply</item>		
+        <item name="android:background">@*com.android.settings:drawable/abc_btn_default_mtrl_shape</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">88.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="description_text">
+        <item name="android:textAppearance">@*android:style/TextAppearance.DeviceDefault.Subhead</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdfecf2</item>        
+        <item name="android:textColorHighlight">@*android:color/accent_material_dark</item>		
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>		
+        <item name="android:lineSpacingExtra">4.0sp</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="description_link_text" parent="@*com.android.settings:style/description_text">
+        <item name="android:textColor">#ffffffff</item>		
+    </style>
+    <style name="relative_link_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff9ea8b6</item>		
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+    </style>
+    <style name="relative_link_link">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>		
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+    </style>
+    <style name="list_summary_text_style">
+        <item name="android:textAppearance">?android:textAppearanceListItemSecondary</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <!--<style name="list_item_container_style">
+		<item name="android:progressBarStyle">@*android:style/Widget.Material.ProgressBar</item>
+		<item name="android:progressBarStyleLarge">@*android:style/Widget.Material.ProgressBar.Large</item>
+		<item name="*android:trackTint">@*android:color/accent_material_dark</item>	
+        <item name="android:minHeight">?android:listPreferredItemHeightSmall</item>
+		<item name="*android:secondaryProgressTint">@*android:color/accent_material_dark</item>			
+        <item name="android:paddingStart">24.0dip</item>
+		<item name="*android:colorControlNormal">#ff9EA8B6</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:paddingEnd">24.0dip</item>
+		<item name="android:background">#00000000</item>			
+		<item name="*android:progressTint">@*android:color/accent_material_dark</item>			
+		<item name="*android:progressBackgroundTint">#ff556470</item>			
+		<item name="android:colorBackground">#00000000</item>
+    </style>-->
+	<style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
+		<item name="android:background">@*android:drawable/status_bar_closed_default_background</item>
+        <item name="android:elevation">0.0dp</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="*android:colorControlNormal">@*com.android.settings:color/no_result_search_text_color</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:contentInsetStart">24.0dip</item>
+    </style>
+    <style name="AppTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="*com.android.settings:switchBarTheme">@*com.android.settings:style/Theme.SwitchBar.Settings</item>
+    </style>
+    <!--<style name="TextAppearance.Design.Tab" parent="@*com.android.settings:style/TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@*com.android.settings:dimen/design_tab_text_size</item>
+        <item name="android:textColor">@*com.android.settings:color/no_result_search_text_color</item>
+        <item name="*com.android.settings:textAllCaps">true</item>
+    </style>-->
+    <style name="SecEntityHeader" parent="@*com.android.settings:style/EntityHeader">
+        <item name="android:background">@*com.android.settings:drawable/font_preview_bg</item>
+    </style>
+    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light" >
+        <item name="android:textColorPrimary">@*android:color/primary_text_material_dark</item>
+		<item name="android:colorPrimaryDark">@*android:color/accent_material_dark</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorForeground">@*android:color/white</item>
+		<item name="android:textColorHighlight">@*android:color/accent_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
+		<item name="android:colorSecondary">#0cb3d1e3</item>
+		<item name="*android:parentIsDeviceDefault">true</item>
+		<item name="android:windowBackground">@*com.android.settings:color/white</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:statusBarColor">@*android:color/legacy_light_button_normal</item>
+		<item name="android:windowShowWallpaper">@*android:bool/target_honeycomb_needs_options_menu</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>		
+    </style>
+	<style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault" >
+		<item name="*android:colorControlNormal">#ff9EA8B6</item>
+		<item name="android:textColorTertiary">#ff9ea8b6</item>		
+		<item name="android:buttonStyle">@*com.android.settings:style/Base.Widget.AppCompat.Button</item>
+		<item name="android:textColorHighlight">@*android:color/accent_material_dark</item>		
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>	
+		<item name="android:textColorSecondary">#ff9ea8b6</item>		
+		<item name="android:textColorPrimary">#ffffffff</item>
+		<item name="android:windowBackground">@*android:color/background_dark</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+	</style>
+	<!---->
+
+    <style name="Transparent" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+    </style>
+    <style name="Theme.NoActionBar" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:statusBarColor">@*android:color/legacy_light_button_normal</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="*android:colorControlNormal">@*com.android.settings:color/no_result_search_text_color</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+    </style>
+    <style name="Theme.Dialog.NoWindowDisplay" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+	
+	<style name="Theme.Panel" parent="@android:style/Theme.Material.Panel" >
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="ColorBalanceDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:backgroundTint">@null</item>
+        <item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:windowBackground">@*com.android.settings:drawable/abc_dialog_material_background</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Theme.ApnSettings" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:statusBarColor">@*android:color/legacy_light_button_normal</item>
+        <item name="android:windowLightStatusBar">false</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:itemBackground">@*android:color/dim_foreground_light</item>
+       <item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+    </style>
+    <style name="DashboardTabWidget" parent="@android:style/Widget.Material.TabWidget">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="cust_dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowTitleStyle">@*com.android.settings:style/dialog_title_style</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:backgroundTint">@null</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="dialog_title_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="retry_dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+		<item name="android:windowBackground">@*com.android.settings:drawable/abc_dialog_material_background</item>
+		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:backgroundTint">@null</item>
+		<item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
+		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="custom_spinner_item_content" parent="@android:style/Widget.Material.TextView.SpinnerItem">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/accent_material_dark</item>
+    </style>
+	
+<!-- -->
+
+    <style name="Theme.ScreenModeSettings" parent="@*com.android.settings:style/Theme.SettingsBase">
+		<item name="android:windowIsTranslucent">false</item>
+        <item name="android:actionBarStyle">@*com.android.settings:style/Theme.ScreenModeActionBar</item>
+    </style>
+    <style name="Theme.ScreenModeActionBar" parent="@*com.android.settings:style/Theme.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+		<item name="android:backgroundTint">@null</item>
+		<item name="android:background">@*android:drawable/status_bar_closed_default_background</item>
+        <item name="android:contentInsetStart">0.0dip</item>
+    </style>
+    <style name="Theme.EditActionBar" parent="@*com.android.settings:style/Theme.ActionBar">
+        <item name="android:background">@*android:drawable/status_bar_closed_default_background</item>
+		<item name="android:windowIsTranslucent">false</item>
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:contentInsetStart">0.0dip</item>
+    </style>
+    <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+		<item name="*android:colorControlNormal">@*com.android.settings:color/no_result_search_text_color</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:actionBarStyle">@*com.android.settings:style/Theme.ActionBar</item>
+        <item name="*com.android.settings:list_item_check_box_width_for_delete_mode_animation">38.0dip</item>
+        <item name="*com.android.settings:list_item_check_box_margin_left">@*com.android.settings:dimen/list_item_checkbox_margin_left</item>
+        <item name="*com.android.settings:list_item_check_box_margin_right">@*com.android.settings:dimen/list_item_checkbox_margin_right</item>
+    </style>	
+    <style name="Theme.ScreenResolutionSettings" parent="@*com.android.settings:style/Theme.EditAppBar">
+		<item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="Theme.EditAppBar" parent="@*com.android.settings:style/Theme.SettingsBase">
+        <item name="android:actionBarStyle">@*com.android.settings:style/Theme.EditActionBar</item>
+        <item name="android:statusBarColor">@*android:color/legacy_light_button_normal</item>
+    </style>
+    <style name="Theme.ActionMode" parent="@android:style/Widget.DeviceDefault.ActionMode">
+        <item name="android:background">@null</item>
+    </style>
+	    <style name="Base.TextAppearance.AppCompat.Button" parent="@*com.android.settings:style/Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@*com.android.settings:dimen/abc_text_size_button_material</item>
+        <item name="android:textColor">@*android:color/accent_material_dark</item>
+        <item name="*com.android.settings:textAllCaps">true</item>
+    </style>
+    <style name="BluetoothActionBarStyle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title.Inverse">
+		<item name="android:textColor">#ffffffff</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

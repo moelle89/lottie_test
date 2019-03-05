@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<FrameLayout android:layout_width="match_parent" android:background="@*com.android.settings:drawable/fallback_home_unprovisioned_background" android:layout_height="@*com.android.settings:dimen/suw_items_icon_divider_inset" android:layout_marginBottom="0dp" />
+	<FrameLayout android:id="@*com.android.settings:id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	<!--<include layout="@*com.android.settings:layout/design_navigation_item_separator"/>-->
+</RelativeLayout>

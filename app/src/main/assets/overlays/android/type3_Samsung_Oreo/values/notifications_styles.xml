@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Notifications -->
+    <style name="TextAppearance.Material.Notification.Title" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">@*android:dimen/notification_title_text_size</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Material.Notification" parent="@*android:style/TextAppearance.Material">
+        <item name="android:textSize">@*android:dimen/notification_text_size</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Emphasis" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Info" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">@*android:dimen/notification_subtext_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Line2" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">@*android:dimen/notification_subtext_size</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Material.Notification.Time" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColorPrimary">@*android:color/notification_primary_text_color_light</item>
+        <item name="android:textColorSecondary">@*android:color/accent_material_dark</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="NotificationSecondaryText">
+        <item name="android:textColorPrimary">@*android:color/notification_primary_text_color_light</item>
+        <item name="android:textColorSecondary">@*android:color/accent_material_dark</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+    <style name="notification_secondary_text">
+        <item name="android:textColorPrimary">@*android:color/notification_primary_text_color_light</item>
+        <item name="android:textColorSecondary">@*android:color/accent_material_dark</item>
+        <item name="android:textColor">@*android:color/notification_primary_text_color_light</item>
+    </style>
+	<!-- -->
+    <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.TextView">
+        <item name="*android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
+        <item name="*android:ellipsize">end</item>
+        <item name="*android:visibility">gone</item>
+        <item name="*android:layout_width">fill_parent</item>
+        <item name="*android:layout_height">wrap_content</item>
+    </style>
+</resources>

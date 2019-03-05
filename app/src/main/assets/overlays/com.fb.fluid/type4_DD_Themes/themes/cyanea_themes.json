@@ -1,0 +1,51 @@
+[
+  {
+    "theme_name":"DM","base_theme":"DARK",
+    "primary":"#ff16171d","primary_dark":"#ff16171d","primary_light":"#ff16171d","background":"#ff16171d",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#ff0f1014","background_light":"#ff20222b"
+  },  
+  {
+    "theme_name":"DM CLEAR","base_theme":"DARK",
+    "primary":"#6116171d","primary_dark":"#6116171d","primary_light":"#6116171d","background":"#C816171d",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#C80f1014","background_light":"#C820222b"
+  },
+  {
+    "theme_name":"ACORN","base_theme":"DARK",
+    "primary":"#ff191522","primary_dark":"#ff191522","primary_light":"#ff191522","background":"#ff191522",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#ff100e16","background_light":"#FF262432"
+  },  
+  {
+    "theme_name":"ACORN CLEAR","base_theme":"DARK",
+    "primary":"#61191522","primary_dark":"#61191522","primary_light":"#61191522","background":"#C8191522",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#C8100e16","background_light":"#C8262432"
+  },
+  {
+    "theme_name":"DD","base_theme":"DARK",
+    "primary":"#ff08131c","primary_dark":"#ff08131c","primary_light":"#ff08131c","background":"#ff08131c",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#ff0c1116","background_light":"#ff183544"
+  },  
+  {
+    "theme_name":"DD CLEAR","base_theme":"DARK",
+    "primary":"#6108131c","primary_dark":"#6108131c","primary_light":"#6108131c","background":"#C808131c",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#C80c1116","background_light":"#C8183544"
+  },
+  {
+    "theme_name":"PB","base_theme":"DARK",
+    "primary":"#ff000001","primary_dark":"#ff000001","primary_light":"#ff000001","background":"#ff000001",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#ff090A0C","background_light":"#ff1a1c23"
+  },
+  {
+    "theme_name":"PB CLEAR","base_theme":"DARK",
+    "primary":"#61000000","primary_dark":"#61000000","primary_light":"#61000000","background":"#C8000000",
+    "accent":"#FF044FE9","accent_dark":"#FF044FE9","accent_light":"#FF044FE9",
+    "background_dark":"#C8090A0C","background_light":"#C81a1c23"
+  },
+
+]

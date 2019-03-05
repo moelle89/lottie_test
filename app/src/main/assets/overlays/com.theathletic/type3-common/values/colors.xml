@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="global_text_secondary">@*android:color/secondary_text_default_material_dark</color>
+	<color name="global_bg_back">@*android:color/background_dark</color>	
+	<color name="black">@*android:color/background_dark</color>
+	<color name="global_text_primary">#ffffffff</color>
+    <color name="global_bg_half_transparent">@*android:color/secondary_text_default_material_light</color>
+    <color name="global_color_accent">@*android:color/accent_material_dark</color>
+	<color name="global_color_control_normal">@*android:color/holo_orange_light</color>
+	<color name="gray">@*android:color/holo_orange_light</color>
+    <color name="global_color_primary">@*android:color/background_dark</color>
+    <color name="global_color_primary_dark">@*android:color/background_dark</color>
+    <color name="global_divider">@*android:color/holo_button_pressed</color>
+    <color name="global_divider_dark">@*android:color/user_icon_default_white</color>
+    <color name="article_theme_black_divider">@*android:color/dim_foreground_light</color>
+    <color name="settings_divider">@*android:color/background_dark</color>
+</resources>

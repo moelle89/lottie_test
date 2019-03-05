@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="floating_action_button_diameter">58.0dip</dimen>
+    <dimen name="navigation_fab_margin">16.0dip</dimen>
+    <dimen name="design_fab_border_width">0.0dip</dimen>
+    <dimen name="design_fab_elevation">0.0dip</dimen>
+    <dimen name="design_fab_image_size">58.0dip</dimen>
+    <dimen name="design_fab_size_mini">40.0dip</dimen>
+    <dimen name="design_fab_size_normal">58.0dip</dimen>
+    <dimen name="empty_stream_card_elevation">0.0dip</dimen>
+    <dimen name="entity_action_button_default_elevation">0.0dip</dimen>
+    <dimen name="entity_action_button_pressed_elevation">2.0dip</dimen>
+    <dimen name="entity_action_button_radius">12.0dip</dimen>
+	<dimen name="entity_create_card_elevation">0.0dip</dimen>
+    <dimen name="entity_action_button_stroke">0.0dip</dimen>
+    <dimen name="mtrl_btn_elevation">0.0dip</dimen>
+    <dimen name="mtrl_card_elevation">0.0dip</dimen>
+    <dimen name="new_posts_button_elevation">0.0dip</dimen>
+    <dimen name="social_post_content_elevation">0.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+    <dimen name="social_post_elevation_adjustment">0.0dip</dimen>
+</resources>

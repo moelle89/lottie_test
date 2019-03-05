@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Styled.ActionBar" parent="@android:style/Widget.ActionBar">
+		<item name="android:icon">@android:color/transparent</item>
+		<item name="android:background">@*android:color/dim_foreground_light</item>			
+		<item name="android:backgroundTint">@*android:color/dim_foreground_light</item>
+		<item name="android:padding">0.0dip</item>
+		<item name="android:displayOptions">showHome|useLogo</item>
+		<item name="android:actionMenuTextAppearance">@*com.netflix.mediaclient:style/Widget.Styled.ActionBar.MenuTextStyle</item>
+    </style>
+</resources>

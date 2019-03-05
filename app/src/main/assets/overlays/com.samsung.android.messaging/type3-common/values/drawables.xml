@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="class_zero_background">@*android:color/facelock_spotlight_mask</item>
+    <item type="drawable" name="cmas_dialog_background">@*android:color/dim_foreground_light</item>
+    <item type="drawable" name="messages_bubble_bg_01">@*android:color/button_material_dark</item>
+    <item type="drawable" name="notification_template_icon_bg">@*android:color/holo_button_pressed</item>
+    <item type="drawable" name="push_message_dialog_background">@*android:color/facelock_spotlight_mask</item>
+    <item type="drawable" name="theme_bubble_list_bg">@*android:color/transparent</item>
+    <item type="drawable" name="white_background">@*android:color/background_dark</item>
+</resources>

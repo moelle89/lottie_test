@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:centerY="0.4"
+            android:gradientRadius="60%p"
+            android:startColor="@*android:color/button_material_dark"
+            android:endColor="@*android:color/black" />
+     </shape>
+    </item>
+    <item android:bottom="48.0dip">
+        <bitmap android:gravity="center" android:src="@*org.swiftapps.swiftbackup:drawable/splash_icon" />
+    </item>
+</layer-list>

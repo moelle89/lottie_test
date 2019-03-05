@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="placeholder2">#FFD47B</color>	
+	<color name="holo_green_light">@*android:color/holo_blue_light</color><!-- Accent Material Dark 2 -->
+	<color name="holo_green_dark">@*android:color/holo_blue_dark</color><!-- suggestion_highlight_text / theme_color_dark 2 -->
+</resources> 

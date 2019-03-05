@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">@*android:color/accent_material_dark</color>
+    <color name="dialer_settings_color_dark">@*android:color/accent_material_dark</color>
+    <color name="blocked_numbers_title_text_color">#FFFFFF</color>
+    <color name="blocked_numbers_secondary_text_color">@*android:color/secondary_text_default_material_dark</color>
+</resources>

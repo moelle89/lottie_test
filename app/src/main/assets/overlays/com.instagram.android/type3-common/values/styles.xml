@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="NotificationBadge">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/background_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="TabBarButton">
+        <item name="*com.instagram.android:normal">@*android:color/highlighted_text_holo_dark</item>
+        <item name="*com.instagram.android:active">@*android:color/white</item>
+    </style>
+    <style name="TabBarButton.White" parent="@*com.instagram.android:style/TabBarButton">
+        <item name="*com.instagram.android:normal">@*android:color/highlighted_text_holo_dark</item>
+        <item name="*com.instagram.android:active">@*android:color/white</item>
+    </style>
+    <style name="GradientPatternStyle">
+        <item name="*com.instagram.android:gradientColor1">@*android:color/highlighted_text_holo_dark</item>
+        <item name="*com.instagram.android:gradientColor2">@*android:color/holo_blue_bright</item>
+        <item name="*com.instagram.android:gradientColor3">@*android:color/accent_material_dark</item>
+        <item name="*com.instagram.android:gradientColor4">@*android:color/suggestion_highlight_text</item>
+        <item name="*com.instagram.android:gradientColor5">@*android:color/holo_button_pressed</item>
+    </style>
+	<style name="Avatar.ExploreStories" parent="@*com.instagram.android:style/Avatar">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="*com.instagram.android:strokeColor">@*android:color/white</item>
+        <item name="*com.instagram.android:strokeWidth">0.0dip</item>
+    </style>
+    <style name="Avatar">
+        <item name="*com.instagram.android:strokeColor">#33000000</item>
+        <item name="*com.instagram.android:strokeWidth">@*com.instagram.android:dimen/circular_avatar_stroke_width</item>
+        <item name="*com.instagram.android:placeholder">@*com.instagram.android:color/image_placeholder</item>
+    </style>
+    <style name="Widget.PeopleTag" parent="">
+		<item name="android:backgroundTint">@null</item>
+        <item name="*com.instagram.android:peopleTagSearchBackground">@*android:color/background_floating_material_dark</item>
+        <item name="*com.instagram.android:peopleTagSearchCacheColorHint">@*android:color/background_dark</item>
+        <item name="*com.instagram.android:peopleTagSearchItemBackground">@*com.instagram.android:drawable/people_tagging_search_background</item>
+    </style>
+    <style name="IgDialog" parent="@*android:style/Theme.Material.Dialog">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:windowAnimationStyle">@*com.instagram.android:style/animationDialog</item>
+        <item name="android:listChoiceIndicatorSingle">@null</item>
+        <item name="android:listChoiceIndicatorMultiple">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:listChoiceBackgroundIndicator">@null</item>
+        <item name="android:activatedBackgroundIndicator">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="CustomToast" >
+			<item name="android:backgroundTint">@null</item>
+	</style>
+    <style name="CustomToast.Red" parent="@*com.instagram.android:style/CustomToast">
+		<item name="android:backgroundTint">@null</item>
+        <item name="*com.instagram.android:notificationNub">@*com.instagram.android:drawable/notification_tooltip_nub_whiteout</item>
+        <item name="*com.instagram.android:notificationTooltip">@*com.instagram.android:drawable/notification_tooltip_whiteout</item>
+    </style>		
+	<style name="IgInviteButtonStyle" parent="@*com.instagram.android:style/IgUpdatableButtonStyle">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@*com.instagram.android:drawable/button_textcolor_selector_invite</item>
+        <item name="android:background">@*com.instagram.android:drawable/button_state_drawable_invite</item>
+    </style>
+    <style name="IgLinkButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_xsmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@*com.instagram.android:drawable/rounded_layout_border_stroke</item>
+        <item name="android:paddingLeft">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:paddingRight">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.instagram.android:dimen/follow_button_height</item>
+        <item name="android:maxWidth">@*com.instagram.android:dimen/follow_button_large_max_width</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="IgNoticeButton" parent="@*com.instagram.android:style/IgPrimaryButton.Inverse">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_small</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IgPrimaryButton" parent="@*com.instagram.android:style/IgButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@*com.instagram.android:color/white</item>
+        <item name="android:background">@*android:color/accessibility_focus_highlight</item>
+    </style>
+    <style name="IgPrimaryButton.Inverse" parent="@*com.instagram.android:style/IgButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@*com.instagram.android:drawable/primary_button_inverse_textcolor_selector</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="IgPrimaryButton.Inverse.Wrapped" parent="@*com.instagram.android:style/IgPrimaryButton.Inverse">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="IgPrimaryButton.Large" parent="@*com.instagram.android:style/IgPrimaryButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@*com.instagram.android:dimen/button_height_large</item>
+    </style>
+    <style name="IgPrimaryFullWidthButton" parent="@*com.instagram.android:style/IgPrimaryButton.Large">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*com.instagram.android:drawable/primary_button_selector_full_width</item>
+    </style>
+    <style name="IgPrimaryWrappedButton" parent="@*com.instagram.android:style/IgPrimaryButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IgProfileScoreboardCount">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_large_not_scaled</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center|top</item>
+    </style>
+    <style name="IgProfileScoreboardLabel">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium_not_scaled</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IgSecondaryButton" parent="@*com.instagram.android:style/IgButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@*com.instagram.android:color/grey_9</item>
+        <item name="android:background">@*com.instagram.android:drawable/secondary_button_selector</item>
+    </style>
+    <style name="IgSecondaryButton.Inverse" parent="@*com.instagram.android:style/IgButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textColor">@*com.instagram.android:drawable/secondary_button_inverse_textcolor_selector</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="IGToastStyle">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:background">@*com.instagram.android:drawable/ig_toast_background</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">14.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IgChainingButtonBase">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@*com.instagram.android:drawable/rounded_layout_border_stroke</item>
+        <item name="android:paddingLeft">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:paddingRight">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:layout_height">@*com.instagram.android:dimen/chaining_button_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IgConnectButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@*com.instagram.android:drawable/rounded_layout_border_stroke</item>
+        <item name="android:padding">@*com.instagram.android:dimen/connect_button_padding</item>
+        <item name="android:layout_height">@*com.instagram.android:dimen/connect_button_height</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="IgButton">
+		<item name="android:backgroundTint">@null</item>
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:paddingRight">@*com.instagram.android:dimen/row_text_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@*com.instagram.android:dimen/button_height_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="*com.instagram.android:capitalize">false</item>
+        <item name="*com.instagram.android:medium">false</item>
+    </style>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar_statusbar_color">@*android:color/background_dark</color>
+    <color name="bottombar_bg_color">@*android:color/background_dark</color>
+</resources>

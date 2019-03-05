@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:tint="@*android:color/accent_material_dark" android:drawable="@*com.google.android.inputmethod.latin:drawable/ic_key_ime_action_back_pressed_material_dark_theme" />
+    <item android:drawable="@*com.google.android.inputmethod.latin:drawable/ic_key_ime_action_back_material_dark_theme" android:tint="@*android:color/accent_material_dark" />
+</selector>

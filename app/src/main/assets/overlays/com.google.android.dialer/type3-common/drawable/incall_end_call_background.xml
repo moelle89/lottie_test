@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/holo_button_pressed"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.5"
+                android:centerY="1.45"
+                android:gradientRadius="130%p"
+                android:endColor="@*android:color/holo_button_pressed"
+                android:centerColor="@*android:color/accessibility_focus_highlight"
+                android:startColor="@*android:color/accent_material_dark"
+                android:type="radial" />
+            <size android:height="56.0dip" android:width="56.0dip" />
+            <stroke android:width="4.0dip" android:color="@*android:color/accent_material_dark" />
+        </shape>
+    </item>
+</ripple>

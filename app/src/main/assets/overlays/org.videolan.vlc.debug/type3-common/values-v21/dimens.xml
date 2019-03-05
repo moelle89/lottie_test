@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_compat_inset_shadow">0.0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>  
+	<dimen name="design_appbar_elevation">0.0dip</dimen>
+	<dimen name="design_navigation_elevation">0.0dip</dimen>
+	<dimen name="design_snackbar_elevation">0.0dip</dimen>
+	<dimen name="design_fab_elevation">0.0dip</dimen>
+	<dimen name="shadow_width">0.0px</dimen>
+	<dimen name="lb_page_indicator_arrow_shadow_radius">0.0dip</dimen>
+	<dimen name="lb_material_shadow_normal_z">0.0dip</dimen>
+	<dimen name="lb_material_shadow_details_z">0.0dip</dimen>
+    <dimen name="lb_material_shadow_focused_z">0.0dip</dimen>
+    <dimen name="cardview_default_radius">0.0dip</dimen>
+</resources>

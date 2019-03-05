@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" android:tint="@*android:color/holo_button_pressed" xmlns:android="http://schemas.android.com/apk/res/android">
+     <padding android:left="4.0dip" android:right="4.0dip" />
+	<gradient android:startColor="#79000000" android:endColor="#19000000" android:angle="90.0" />
+    <corners android:radius="24.0dip" />
+</shape>

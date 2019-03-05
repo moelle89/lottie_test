@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseThemeDark" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:editTextStyle">@*nextapp.fx:style/AppDark_EditTextStyle</item>
+		<item name="android:windowAnimationStyle">@*nextapp.fx:style/AppBaseActivityAnimation</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+        <item name="*nextapp.fx:dataViewStyle">@*nextapp.fx:style/DataView</item>
+        <item name="*nextapp.fx:rootLayout">@*nextapp.fx:style/RootLayout</item>
+		<item name="android:navigationBarColor">?android:colorBackground</item>
+		<item name="android:divider">@null</item>
+    </style>
+    <style name="AppBaseThemeLight" parent="@*android:style/Theme.Material.Light.NoActionBar">
+		<item name="android:windowAnimationStyle">@*nextapp.fx:style/AppBaseActivityAnimation</item>
+        <item name="android:editTextStyle">@*nextapp.fx:style/AppLight_EditTextStyle</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+        <item name="*nextapp.fx:dataViewStyle">@*nextapp.fx:style/DataView</item>
+        <item name="*nextapp.fx:rootLayout">@*nextapp.fx:style/RootLayout</item>
+		<item name="android:navigationBarColor">?android:colorBackground</item>
+    </style>
+</resources>

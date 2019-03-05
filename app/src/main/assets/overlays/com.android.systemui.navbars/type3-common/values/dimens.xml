@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing SystemUI's Dimensions-->
+<resources>
+    <item type="dimen" name="navigation_bar_size">38.0dip</item>
+    <dimen name="opa_diamond_translation">0.0dip</dimen>
+    <dimen name="opa_dot_diam">10.0dip</dimen>
+    <dimen name="opa_line_x_collapse_bg">46.0dip</dimen>
+    <dimen name="opa_line_x_collapse_ry">0.0dip</dimen>
+    <dimen name="opa_line_x_trans_bg">30.0dip</dimen>
+    <dimen name="opa_line_x_trans_ry">0.0dip</dimen>
+    <dimen name="opa_line_y_translation">0.0dip</dimen>
+    <dimen name="opa_overshoot_translation">8.0dip</dimen>
+</resources>

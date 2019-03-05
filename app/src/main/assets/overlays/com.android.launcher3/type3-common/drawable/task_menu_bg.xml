@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	    <item>
+        <shape android:shape="rectangle" >
+			<corners android:radius="12.0dip" />
+            <gradient
+                android:centerX="0.5"
+                android:centerY="-0.4"
+                android:gradientRadius="140%p"
+                android:endColor="@null"
+                android:centerColor="@*android:color/button_material_dark"
+                android:startColor="@*android:color/facelock_spotlight_mask"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

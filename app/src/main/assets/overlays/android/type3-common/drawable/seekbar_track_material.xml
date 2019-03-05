@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+        android:gravity="fill_horizontal|center">
+		<shape android:shape="rectangle" android:tint="@*android:color/holo_orange_light">
+            <size android:height="@*android:dimen/seekbar_track_background_height_material" />
+            <solid android:color="@*android:color/white_disabled_material" />
+            <corners android:radius="14.0dip" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress"
+        android:gravity="fill_horizontal|center">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false"
+                    android:drawable="@android:color/transparent" />
+                <item>
+                    <shape android:shape="rectangle">
+						<size android:height="@*android:dimen/seekbar_track_progress_height_material" />
+                        <solid android:color="#00000000" />
+						<corners android:radius="14.0dip" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+    <item android:id="@android:id/progress" android:gravity="fill_horizontal|center">
+		<scale android:scaleWidth="100%">
+			<selector>
+				<item android:state_enabled="false"
+					android:drawable="@android:color/transparent" />
+				<item android:state_enabled="true">
+					<layer-list>
+						<item>
+							<shape android:shape="rectangle">
+								<size android:height="@*android:dimen/seekbar_track_progress_height_material" />
+								<solid android:color="?android:colorControlActivated" />
+								<corners android:radius="14.0dip" />
+							</shape>
+						</item>
+						<item>
+							<shape android:shape="rectangle">
+								<size android:height="@*android:dimen/seekbar_track_progress_height_material" />
+								<gradient android:startColor="@*android:color/holo_green_light" android:endColor="@null" />
+								<corners android:radius="14.0dip" />
+							</shape>
+						</item>
+					</layer-list>
+				</item>
+			</selector>
+		</scale>
+    </item>
+</layer-list>

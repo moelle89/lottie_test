@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_enabled="true" android:state_pressed="true">
+	<inset android:insetLeft="4.0dip" android:insetRight="4.0dip" android:insetTop="6.0dip" android:insetBottom="6.0dip" >
+		<shape android:shape="rectangle" android:tint="?android:colorControlActivated">
+			<corners android:radius="16dip" />
+			<solid android:color="#95ffffff" />
+			<stroke android:width="3.0px" android:color="#ffffffff" />
+			<padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+		</shape>
+	</inset>
+</item>
+<item android:state_enabled="true">
+	<inset android:insetLeft="4.0dip" android:insetRight="4.0dip" android:insetTop="6.0dip" android:insetBottom="6.0dip" >
+		<shape android:shape="rectangle" android:tint="?android:colorButtonNormal">
+			<corners android:radius="16dip" />
+			<solid android:color="#BFB3D1E3" />
+			<stroke android:width="3.0px" android:color="#ffB3D1E3" />
+			<padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+		</shape>
+	</inset>
+</item>
+<item>
+	<inset android:insetLeft="4.0dip" android:insetRight="4.0dip" android:insetTop="6.0dip" android:insetBottom="6.0dip" >
+		<shape android:shape="rectangle" android:tint="?android:colorButtonNormal">
+			<corners android:radius="16dip" />
+			<solid android:color="#BFB3D1E3" />
+			<stroke android:width="2.0px" android:color="#BFB3D1E3" />
+			<padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+		</shape>
+	</inset>
+</item>
+</selector>

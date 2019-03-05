@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_text_disabled_material_light">#4dffffff</color>
+    <color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+    <color name="secondary_text_default_material_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="secondary_text_default_material_light">@*android:color/secondary_text_default_material_dark</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#36ffffff</color>
+    <color name="qsc_header_icon_color">#ffffffff</color>
+    <color name="si_row_main_title_color">#ffffffff</color>
+    <color name="si_row_sub_title_color">@*android:color/secondary_text_default_material_dark</color>
+	<color name="system_primary_color">@*android:color/background_dark</color>
+    <color name="qsc_color_primary">@*android:color/accent_material_dark</color>
+    <color name="si_row_switch_track_on_color">@*android:color/accent_material_dark</color>    
+	<color name="qs_tile_icon_on_tint_color">@*android:color/accent_material_dark</color>
+    <color name="qsc_divider_color">#C0000000</color>
+    <color name="qsc_bottom_bar_button_disabled">@*android:color/holo_orange_light</color>
+    <color name="qsc_bottom_bar_button_normal">@*android:color/accent_material_dark</color>
+    <color name="qsc_preview_notification_summary_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="qsc_preview_notification_title_text_color">#ffffff</color>
+    <color name="qsc_slider_bar_activated_color">@*android:color/accent_material_dark</color>
+    <color name="qsc_tile_label_color">@*android:color/holo_orange_light</color>
+    <color name="qt_main_icon_color_info">@*android:color/accent_material_dark</color>
+    <color name="qt_main_icon_color_nmw">#ffffff</color>
+    <color name="qt_main_icon_color_qc">#ffffff</color>
+    <color name="qt_main_icon_color_si">#ffffff</color>
+    <color name="selected_view_stroke_color">@*android:color/accent_material_dark</color>
+</resources>

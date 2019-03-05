@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@*com.whatsapp:drawable/list_section_divider_holo_custom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@*com.whatsapp:id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip">
+
+        <ImageView
+            android:id="@*com.whatsapp:id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginStart="5.0dip"
+            android:contentDescription="@*com.whatsapp:string/app_name"
+            android:src="@*com.whatsapp:drawable/actionbar_logo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip">
+
+            <TextView
+                android:id="@*com.whatsapp:id/title"
+                style="@*com.whatsapp:style/Theme.ActionBar.TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:singleLine="true"
+                android:text="@*com.whatsapp:string/app_name" />
+
+            <TextView
+                android:id="@*com.whatsapp:id/subtitle"
+                style="@*com.whatsapp:style/Theme.ActionBar.SubtitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3.0dip"
+                android:ellipsize="end"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@*com.whatsapp:id/list_view_widget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@*com.whatsapp:drawable/divider_gray"
+        android:dividerHeight="0.5dip" />
+
+    <TextView
+        android:id="@*com.whatsapp:id/empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@*com.whatsapp:string/no_unread_messages"
+        android:textColor="#99ffffff"
+        android:textSize="20.0sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@*com.google.clone.dialer:id/search_box_expanded"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton 
+        android:id="@*com.google.clone.dialer:id/search_back_button"
+        android:background="@*android:color/transparent"
+		android:layout_width="@*com.google.clone.dialer:dimen/search_box_icon_size" 
+		android:layout_height="@*com.google.clone.dialer:dimen/search_box_icon_size" 
+		android:src="@*com.google.clone.dialer:drawable/back_arrow" 
+        android:tint="#ffffff"
+		android:layout_centerVertical="true" 
+		android:contentDescription="@*com.google.clone.dialer:string/action_menu_back_from_search" 
+		android:layout_marginStart="16.0dip" />
+		
+	<EditText 
+		android:textSize="@*com.google.clone.dialer:dimen/search_text_size" 
+		android:textColor="@*com.google.clone.dialer:color/searchbox_text_color" 
+		android:textColorHint="@*com.google.clone.dialer:color/searchbox_hint_text_color" 
+		android:id="@*com.google.clone.dialer:id/search_view" 
+		android:background="@null" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:maxLines="1" 
+		android:layout_centerVertical="true" 
+		android:inputType="textFilter" 
+		android:imeOptions="flagNoExtractUi" 
+		android:textCursorDrawable="@*com.google.clone.dialer:drawable/searchedittext_custom_cursor" 
+		android:fontFamily="@*com.google.clone.dialer:string/search_font_family"
+		android:layout_marginStart="8.0dip" 
+		android:layout_toStartOf="@*com.google.clone.dialer:id/search_close_button" 
+		android:layout_toEndOf="@*com.google.clone.dialer:id/search_back_button" />
+		
+    <ImageView
+        android:id="@*com.google.clone.dialer:id/search_close_button"
+        android:background="@*android:color/transparent"
+        android:padding="@*com.google.clone.dialer:dimen/search_box_close_icon_padding"
+        android:clickable="true"
+        android:layout_width="@*com.google.clone.dialer:dimen/search_box_close_icon_size"
+        android:layout_height="@*com.google.clone.dialer:dimen/search_box_close_icon_size"
+        android:src="@*com.google.clone.dialer:drawable/quantum_ic_close_vd_theme_24"
+        android:tint="@*com.google.clone.dialer:color/searchbox_icon_tint"
+        android:contentDescription="@*com.google.clone.dialer:string/description_clear_search" />
+</LinearLayout>

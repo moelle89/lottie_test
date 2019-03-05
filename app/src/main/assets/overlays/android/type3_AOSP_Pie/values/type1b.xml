@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- fw notification title tinting fix -->
+    <color name="legacy_light_primary_dark">@*android:color/notification_material_background_color</color>
+
+    <!-- Notification | Text -->
+    <color name="notification_primary_text_color_light">#FFFFFF</color><!-- Title -->
+    <color name="notification_secondary_text_color_light">@*android:color/secondary_text_default_material_dark</color><!-- Subtitle -->
+    <color name="notification_default_color">@*android:color/accent_material_dark</color><!-- App Icon & Name -->
+    
+	<!-- Notification | Background -->
+	<color name="notification_progress_background_color">@*android:color/user_icon_default_white</color>
+	<!-- Action 1 | Button Bar Background -->
+    <color name="notification_action_list">@*android:color/user_icon_5</color><!--notification_shade/dim-->         
+	<color name="notification_action_list_dark">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
+	<!-- black-white-bridge of systemUI for notifications -->
+    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
+	<!-- cant be transparent -->
+	<color name="notification_material_background_color">#00FFFFFF</color>
+	
+	<!-- hardcoded notifications fix 	
+    <style name="Widget.Material.Notification.MessagingName" parent="@*android:style/Widget.Material.TextView">
+        <item name="*android:textAppearance">@*android:style/TextAppearance.Material.Notification.Title</item>
+        <item name="*android:ellipsize">end</item>
+        <item name="*android:layout_width">wrap_content</item>
+        <item name="*android:layout_height">wrap_content</item>
+        <item name="*android:shadowColor">@*android:color/white</item>
+        <item name="*android:shadowRadius">1.0</item>
+        <item name="android:shadowDx">0.8</item>
+        <item name="android:shadowDy">0.8</item>
+    </style>
+    <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.Notification.Text">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@*android:color/white</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowDx">0.8</item>
+        <item name="android:shadowDy">0.8</item>
+    </style> it seem to be fixed on P -->
+    <style name="Widget.Material.Notification.Text" parent="@*android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
+        <item name="android:lineHeight">20.0sp</item>
+    </style>
+</resources>

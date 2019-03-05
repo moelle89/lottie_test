@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DeskClock" parent="@*com.google.android.deskclock:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:actionBarStyle">@*com.google.android.deskclock:style/Widget.GoogleMaterial.ActionBar.Solid</item>
+    </style>
+	<style name="Widget.GoogleMaterial.ActionBar.Solid" parent="@*com.google.android.deskclock:style/Widget.AppCompat.ActionBar.Solid" >
+		<item name="android:background">@*com.google.android.deskclock:drawable/abc_list_divider_mtrl_alpha</item>
+		<item name="android:backgroundTint">@null</item>
+	</style>
+</resources>

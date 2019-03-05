@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Eleven's Styles-->
+
+<resources>
+    <style name="Eleven.Theme" parent="@android:style/Theme.Material" >
+			<item name="android:navigationBarColor">@*android:color/background_dark</item>
+	</style>
+    <style name="NotificationText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="ToolBarPopupTheme" parent="android:style/Theme.Material" />
+</resources>

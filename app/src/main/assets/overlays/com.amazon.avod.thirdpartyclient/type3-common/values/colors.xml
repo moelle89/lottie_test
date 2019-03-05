@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Amazon MP3's Colors-->
+<resources>
+    <color name="avod_dark_carbon_grey">@*android:color/timepicker_default_background_material</color>
+    <color name="avod_dark_grey">@*android:color/timepicker_default_background_material</color>
+    <color name="avod_dark_slate_grey">@*android:color/timepicker_default_background_material</color>
+    <color name="dim_foreground_material_light">@*android:color/timepicker_default_background_material</color>
+    <color name="avod_trans_grey">@*android:color/facelock_spotlight_mask</color>
+    <color name="avod_grey_thirtyfive_opaque">@*android:color/facelock_spotlight_mask</color>
+    <color name="avod_dark_carbon_grey_fifty_opacity">@*android:color/background_dark</color>
+    <color name="primary_material_dark">@*android:color/background_dark</color>    
+	<color name="avod_black">@*android:color/background_dark</color>
+    <color name="material_grey_900">@*android:color/background_dark</color>
+    <color name="f_gray_700">@*android:color/facelock_spotlight_mask</color>
+    <color name="material_grey_850">@*android:color/background_dark</color>
+    <color name="avod_mostly_black">@*android:color/facelock_spotlight_mask</color>
+    <color name="avod_gray_800_80_percent">@*android:color/background_dark</color>
+    <color name="avod_gray_800_90_percent">@*android:color/background_dark</color>
+	 <color name="avod_darker_grey_thirty_opacity">@*android:color/shadow</color>
+    <color name="f_nav_drawer_header_background_dark">@*android:color/background_dark</color>    
+    <color name="f_gray_500">@*android:color/button_material_dark</color>
+    <color name="f_gray_600">@*android:color/dim_foreground_light</color>
+    <color name="f_gray_800">@*android:color/background_dark</color>
+    <color name="material_grey_600">@*android:color/dim_foreground_light</color>
+    <color name="material_grey_800">@*android:color/background_dark</color>
+    <color name="f_primary_dark_dark">@*android:color/background_dark</color>
+    <color name="f_gray_900">@*android:color/background_dark</color>
+    <color name="pagination_normal_item_color">@*android:color/facelock_spotlight_mask</color>
+	
+    <color name="f_gray_200">@*android:color/holo_orange_light</color>
+    <color name="f_gray_300">@*android:color/holo_orange_light</color>
+    <color name="f_gray_400">@*android:color/holo_orange_light</color>
+	
+<!-- accents -->
+    <color name="f_orange_dark_100">@*android:color/highlighted_text_holo_dark</color>
+    <color name="f_orange_dark_200">@*android:color/highlighted_text_holo_dark</color>
+    <color name="f_orange_dark_300">@*android:color/accent_material_dark</color>
+    <color name="f_orange_dark_400">@*android:color/accent_material_dark</color>
+    <color name="f_orange_dark_50">@*android:color/accent_material_dark</color>
+    <color name="f_orange_dark_500">@*android:color/accent_material_dark</color>
+    <color name="f_orange_dark_600">@*android:color/control_checkable_material</color>
+    <color name="f_orange_dark_700">@*android:color/control_checkable_material</color>
+    <color name="f_orange_dark_800">@*android:color/control_checkable_material</color>
+    <color name="f_orange_dark_900">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_100">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_200">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_300">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_400">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_50">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_500">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_600">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_700">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_800">@*android:color/control_checkable_material</color>
+    <color name="f_orange_light_900">@*android:color/control_checkable_material</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aod_red_color">@*android:color/accent_material_dark</color>
+    <color name="aod_sky_blue_color">@*android:color/highlighted_text_holo_dark</color>
+    <color name="aod_yellow_color">@*android:color/holo_blue_light</color>
+    <color name="default_color">@*android:color/holo_orange_light</color>
+	<color name="setting_status_bar_color">@*android:color/background_dark</color>
+    <color name="aod_default_color">@*android:color/holo_orange_light</color>
+    <color name="lock_while_default_color">@*android:color/holo_orange_light</color>
+    <color name="lock_white_red_color">@*android:color/accent_material_dark</color>
+    <color name="lock_white_sky_blue_color">@*android:color/highlighted_text_holo_dark</color>
+    <color name="lock_white_yellow_color">@*android:color/holo_blue_light</color>
+</resources>

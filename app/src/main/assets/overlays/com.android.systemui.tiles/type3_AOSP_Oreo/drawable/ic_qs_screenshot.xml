@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32"
+	 
+	>
+
+    <path
+        android:fillColor="@*android:color/accent_material_dark"
+        android:fillAlpha="0.7"
+        android:strokeAlpha="0.7"
+        android:strokeWidth="1"
+        android:pathData="M20.7,19.6c-2,0-3.6,1.6-3.6,3.6c0,1.9,1.5,3.6,3.5,3.6s3.6-1.6,3.6-3.6S22.7,19.6,20.7,19.6z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M4.9,0.6H27c1.6,0,2.9,1.3,2.9,2.9v8.7c0,0.4-0.3,0.8-0.8,0.8h-0.5c-0.4,0-0.8-0.3-0.8-0.8V10c0-1.7-1.3-3-3-3H7.6 c-1.7,0-3,1.3-3,3v20.1c0,0.7-0.6,1.3-1.3,1.3l0,0c-0.7,0-1.3-0.6-1.3-1.3V3.6C2,1.9,3.3,0.6,4.9,0.6z M27.5,15.5h-10 c0-0.1,0-0.5,0-0.8c0-0.2-0.2-0.4-0.4-0.4h-2.5c-1.3,0-1.2,1.1-1.2,1.3v0.1c-0.9,0.5-1.5,1.2-1.5,2.2v11c0,1.3,1,2.3,2.3,2.3h13.5 c1.3,0,2.3-1,2.3-2.3v-11C29.9,16.7,28.9,15.6,27.5,15.5z M20.6,28.9c-3.2,0-5.7-2.5-5.7-5.7s2.5-5.7,5.7-5.7c3.1,0,5.7,2.6,5.7,5.7 C26.3,26.4,23.8,28.9,20.6,28.9z M27.8,18.4c-0.1,0.4-0.4,0.6-0.6,0.6h-1.1c-0.4,0-0.6-0.3-0.6-0.6v-0.2c0-0.4,0.3-0.6,0.6-0.6h1.1 c0.4,0,0.6,0.3,0.6,0.6V18.4z" />
+</vector>

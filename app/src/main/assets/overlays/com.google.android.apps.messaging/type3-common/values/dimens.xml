@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="conversation_compose_message_placeholder_default_height">62.0dip</dimen>
+   <dimen name="compose_message_view_margin_end">10.0dip</dimen>
+   <dimen name="compose_message_text_box_padding_side">10.0dip</dimen>
+   <dimen name="compose_message_send_arrow_margin">12.0dip</dimen>
+   <dimen name="conversation_list_fab_padding_start_end">20.0dip</dimen>
+   <dimen name="conversation_compose_message_send_padding_end">20.0dip</dimen>
+   <dimen name="conversation_compose_message_send_padding_start">10.0dip</dimen>
+   <dimen name="conversation_bottom_margin_without_compose">14.0dip</dimen>   
+</resources>

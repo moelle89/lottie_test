@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:windowIsTranslucent="false" android:backgroundTint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@*com.android.settings:id/headerbar" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Material.ActionBar.Solid" android:background="@*com.android.settings:drawable/edit_app_bar_bg" >
+        <Toolbar android:id="@*com.android.settings:id/my_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:navigationIcon="?android:homeAsUpIndicator" />
+    </LinearLayout>
+    <LinearLayout android:id="@*com.android.settings:id/list_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:windowIsTranslucent="false" android:backgroundTint="@*android:color/background_dark" />
+</LinearLayout>

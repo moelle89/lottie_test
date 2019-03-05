@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ComposeWebView"  parent="@*com.google.android.gm:style/ComposeBodyView">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@*com.google.android.gm:drawable/suw_card_bg_light</item>
+        <item name="android:backgroundTint">@*android:color/white</item>
+    </style>
+    <style name="ComposeTheme" parent="@*com.google.android.gm:style/ComposeThemeBase">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:alertDialogTheme">@*com.google.android.gm:style/AlertDialogComposeTheme</item>
+        <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogComposeTheme</item>
+    </style>
+    <style name="Widget.GoogleMaterial.OpenSearchBar" parent="@android:style/Widget">
+        <item name="android:textAppearance">@*com.google.android.gm:style/TextAppearance.GoogleMaterial.OpenSearchBar</item>
+        <item name="android:minHeight">@*com.google.android.gm:dimen/google_opensearchbar_height</item>
+        <item name="*com.google.android.gm:materialThemeOverlay">@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.OpenSearch</item>
+        <item name="*com.google.android.gm:elevation">@*com.google.android.gm:dimen/google_opensearchbar_elevation</item>
+        <item name="*com.google.android.gm:defaultMarginsEnabled">true</item>
+        <item name="*com.google.android.gm:defaultScrollFlagsEnabled">true</item>
+        <item name="*com.google.android.gm:hideNavigationIcon">false</item>
+        <item name="*com.google.android.gm:enforceMaterialTheme">true</item>
+		<item name="android:foreground">@*com.google.android.gm:drawable/ic_suw_header_01</item>			
+        <item name="*com.google.android.gm:maxButtonHeight">@*com.google.android.gm:dimen/google_opensearchbar_height</item>
+    </style>
+</resources>
