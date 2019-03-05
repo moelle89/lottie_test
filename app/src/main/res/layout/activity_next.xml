@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context=".FirstActivity">
 
-    <android.support.constraint.ConstraintLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.ConstraintLayout xmlns:n1="http://schemas.android.com/apk/res/android"
         xmlns:xmlstools="http://schemas.android.com/tools"
         n1:id="@+id/bg"
         n1:layout_width="fill_parent"
@@ -201,9 +201,9 @@
 
 
         </RelativeLayout>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.ConstraintLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/next_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -214,4 +214,4 @@
         android:backgroundTint="@color/orange_background_dark"
         android:transitionName="bg"
         app:srcCompat="@drawable/floating_action_button_icon_active" />
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
