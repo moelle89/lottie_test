@@ -21,24 +21,6 @@
         android:id="@+id/include2"
         layout="@layout/content_dashboard"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginLeft="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:backgroundTint="@color/orange_background"
-        android:elevation="0dp"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
-        android:transitionName="bg"
-        app:fab_elevationCompat="0dp"
-        app:fab_shadowRadius="0dp"
-        app:fab_showShadow="false"
-        app:srcCompat="@drawable/ic_overlays" />
-
     <ImageView
         android:id="@+id/gplus"
         android:layout_width="48dp"

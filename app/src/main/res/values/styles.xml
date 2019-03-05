@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="@android:style/Theme.Material">
-        <item name="MaterialTapTargetPromptTheme">@style/MaterialTapTargetPromptTheme</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -92,14 +91,4 @@
         <item name="windowNoTitle">false</item>
     </style>
     <style name="ThemeOverlay"/>
-
-    <style name="MaterialTapTargetPromptTheme">
-        <item name="mttp_target">@id/fab</item>
-        <item name="mttp_backgroundColour">@color/colorAccentPromptBackground</item>
-        <item name="mttp_focalRadius">38dp</item>
-        <item name="mttp_textPadding">49dp</item>
-        <item name="mttp_focalToTextPadding">32dp</item>
-        <item name="mttp_focalColour">@color/buttonFocused</item>
-    </style>
-
 </resources>

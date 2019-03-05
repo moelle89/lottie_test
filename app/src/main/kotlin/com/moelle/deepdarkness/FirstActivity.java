@@ -1,6 +1,5 @@
 package com.moelle.deepdarkness;
 
-import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -8,18 +7,19 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import androidx.annotation.RequiresApi;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.bumptech.glide.Glide;
-import com.moelle.deepdarkness.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import projekt.substrate.SubstratumLoader;
-import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
+
 import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
@@ -31,20 +31,6 @@ public class FirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
 
-
-        new MaterialTapTargetPrompt.Builder(FirstActivity.this)
-                .setTarget(findViewById(id.fab))
-                .setPrimaryText("Are you new to Substratum?")
-                .setSecondaryText("Tap this button to finish the required preconfigurations.")
-                .setPromptStateChangeListener(new MaterialTapTargetPrompt.PromptStateChangeListener() {
-                    @Override
-                    public void onPromptStateChanged(MaterialTapTargetPrompt prompt, int state) {
-                        if (state == MaterialTapTargetPrompt.STATE_FOCAL_PRESSED) {
-                            // User has pressed the prompt target
-                        }
-                    }
-                })
-                .show();
         ImageView image_view = findViewById(R.id.gplus);
         Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);
         ImageView image_view2 = findViewById(id.paypal);
@@ -52,23 +38,6 @@ public class FirstActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(id.toolbar);
         setSupportActionBar(toolbar);
-
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(FirstActivity.this, NextActivity.class);
-                ActivityOptions options = null;
-
-
-                options = ActivityOptions.makeSceneTransitionAnimation(
-                        FirstActivity.this,
-                        android.util.Pair.create((View) fab, "bg"));
-                startActivity(intent, options.toBundle());
-//                overridePendingTransition(0, 0);
-
-            }
-        });
     }
 
     //DASHBOARD BUTTONS
