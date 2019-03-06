@@ -13,7 +13,7 @@
         android:layout_gravity="top"
         android:layout_marginTop="0dp"
         android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/dashboardhero"
         android:contentDescription="@string/head" />
 
