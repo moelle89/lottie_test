@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Material">
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Splash" parent="android:Theme.Material.NoActionBar.Fullscreen" >
+    <style name="Theme.Splash" parent="@android:style/Theme.Material.NoActionBar.Fullscreen" >
         <item name="android:colorBackground">@android:color/black</item>
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:windowTranslucentStatus">true</item>
@@ -59,6 +61,8 @@
         <item name="welcomeLargeTextStyle">@style/NavTitle</item>
         <!-- Titles -->
         <item name="welcomeTitleTextStyle">@style/MyTitel</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="WelcomeScreenPageIndicator">
@@ -86,9 +90,9 @@
     <!-- Styles for button bar activities -->
 
     <!-- Styles to show action bar -->
-    <style name="ActionBarWelcomeScreenTheme" parent="WelcomeScreenTheme.SolidNavigation">
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">false</item>
+    <style name="ActionBarWelcomeScreenTheme" parent="@style/WelcomeScreenTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="ThemeOverlay"/>
 </resources>

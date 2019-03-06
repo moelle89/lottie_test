@@ -117,12 +117,21 @@
 		<item name="android:windowAnimationStyle">@*android:style/Animation.InputMethod</item>
 		<item name="android:imeFullscreenBackground">@*android:color/background_dark</item>
 	</style>
-
+    <style name="Theme.Material.Wallpaper" parent="@*android:style/Theme.Material">
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowBackground">@*android:color/secondary_text_default_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:navigationBarColor">#00000000</item>
+    </style>
     <style name="Theme.Holo.Wallpaper" parent="@*android:style/Theme.Material.Wallpaper" >
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:fitsSystemWindows">true</item>
      	<item name="android:windowIsTranslucent">false</item>
 		<item name="android:windowShowWallpaper">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/secondary_text_default_material_light</item>
         <item name="android:navigationBarColor">#00000000</item>
 	</style>    
 	
@@ -138,11 +147,16 @@
 		<item name="android:backgroundSplit">@android:color/black</item>
 		<item name="android:backgroundStacked">@*android:drawable/status_bar_closed_default_background</item>
 	</style>
-	<style name="Widget.Material.Light.ActionBar.Solid" parent="@android:style/Widget.Material.ActionBar">
-		<item name="android:background">?android:colorPrimary</item>
-		<item name="android:backgroundSplit">?android:colorPrimary</item>
-		<item name="android:backgroundStacked">?android:colorPrimary</item>
-	</style>	
+    <style name="Theme.Material.Light.DarkActionBar" parent="@*android:style/Theme.Material.Light">
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarTheme">@*android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@*android:color/black</item>
+        <item name="android:colorSecondary">@*android:color/black</item>
+        <item name="android:colorPrimaryDark">@*android:color/black</item>
+        <item name="android:popupTheme">@*android:style/ThemeOverlay.Material.Light</item>
+        <item name="android:navigationBarColor">@*android:color/black</item>
+        <item name="android:statusBarColor">@*android:color/black</item>
+    </style>
 	
 	<style name="Theme.Material.Light.Dialog.HeavyWeightSwitcherActivity" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.Material.Light.Dialog.ChooseAccountActivity" parent="@*android:style/Theme.Material.Dialog" />

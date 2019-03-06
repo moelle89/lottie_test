@@ -23,7 +23,6 @@
         <!-- Activity for Splashscreen -Intro and Firebase notification -->
         <activity
             android:name=".SplashActivity"
-            android:label="@string/ThemeName"
             android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +32,6 @@
 
         <activity
             android:name=".FirstActivity"
-            android:label="@string/ThemeName"
             android:theme="@style/Circular.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,10 +41,9 @@
         </activity>
         <activity android:name=".NextActivity" android:theme="@style/Circular.Fab" />
 
-        <activity android:name=".Welcome"
-            android:theme="@style/WelcomeScreenTheme"/>
+        <activity android:name=".Welcome" android:theme="@style/GeneralWelcomeScreenTheme"/>
 
-        <activity android:name="com.moelle.deepdarkness.SubstratumLauncher">
+        <activity android:name="com.moelle.deepdarkness.SubstratumLauncher" android:theme="@style/DialogStyle" >
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>

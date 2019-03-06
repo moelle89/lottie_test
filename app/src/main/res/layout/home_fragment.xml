@@ -19,11 +19,11 @@
 
     <include
         android:id="@+id/include2"
-        layout="@layout/content_dashboard"/>
+        layout="@layout/content_dashboard" />
 
     <ImageView
         android:id="@+id/gplus"
-        android:layout_width="48dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentTop="false"
@@ -38,13 +38,13 @@
 
     <ImageView
         android:id="@+id/paypal"
-        android:layout_width="110dp"
-        android:layout_height="48dp"
+        android:layout_width="204dp"
+        android:layout_height="85dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentTop="false"
         android:layout_gravity="end"
-        android:layout_marginBottom="56dp"
-        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/ic_paypal"
         android:gravity="right|center"
         android:onClick="launchPaypal"

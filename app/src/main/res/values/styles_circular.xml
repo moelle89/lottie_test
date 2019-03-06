@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Circular" parent="Theme.AppCompat">
+    <style name="Circular" parent="AppTheme.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/background</item>
         <item name="colorPrimaryDark">@color/background</item>
