@@ -134,7 +134,7 @@
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
 	</style>
     <style name="Theme.DeviceDefault.Settings.Dark.NoActionBar" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
        	<item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Dialog.Alert</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
@@ -158,7 +158,7 @@
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
     </style>-->
     <style name="Theme.Material.NoActionBar" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
         <item name="android:colorForeground">@*android:color/white</item>
         <item name="android:colorBackground">@*android:color/dim_foreground_light</item>
         <item name="android:statusBarColor">@*android:color/transparent</item>

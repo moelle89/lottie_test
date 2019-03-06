@@ -54,8 +54,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="welcomeNormalTextStyle">@style/MyLargeText</item>
         <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="welcomeNormalTextStyle">@style/MyLargeText</item>
         <item name="android:statusBarColor">@color/transparent</item>
         <!-- Headings -->
         <item name="welcomeLargeTextStyle">@style/NavTitle</item>

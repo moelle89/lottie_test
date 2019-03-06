@@ -7,7 +7,7 @@
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
     </style>
     <style name="Theme.Material.Settings" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:windowShowWallpaper">true</item>
 		<item name="android:colorBackgroundCacheHint">@null</item>
     	<item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
@@ -24,7 +24,7 @@
     </style>
     <style name="Theme.Material.Settings.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar">
 		<item name="android:colorBackgroundCacheHint">@null</item>
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
 		<item name="android:colorEdgeEffect">@*android:color/accent_material_dark</item>
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
@@ -40,7 +40,7 @@
     <style name="Theme.Material.Settings.DialogWhenLarge.NoActionBar" parent="@android:style/Theme.Material.DialogWhenLarge.NoActionBar"/>
     <style name="Theme.Material.Settings.Dialog.Presentation" parent="@android:style/Theme.Material.Dialog.Presentation"/>
     <style name="Theme.DeviceDefault.Settings" parent="@android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
     	<item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
 		<item name="android:windowShowWallpaper">true</item>
 		<item name="android:colorBackgroundCacheHint">@null</item>
@@ -59,7 +59,7 @@
     </style>
     <style name="Theme.DeviceDefault.Settings.Dark" parent="@*android:style/Theme.Material">
 		<item name="android:colorBackgroundCacheHint">@null</item>
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
     	<item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
 		<item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackground">@*android:color/user_icon_default_gray</item>
@@ -76,7 +76,7 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
     </style>
     <style name="Theme.DeviceDefault.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" >
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:alertDialogStyle">@*android:style/AlertDialog.DeviceDefault.Light</item>
         <item name="android:dialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
@@ -93,7 +93,7 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
     </style>
      <style name="Theme.DeviceDefault" parent="@*android:style/Theme.DeviceDefaultBase">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:alertDialogStyle">@*android:style/AlertDialog.DeviceDefault.Light</item>
         <item name="android:dialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
@@ -115,7 +115,7 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
 	</style>
      <style name="Theme.DeviceDefault.Light" parent="@*android:style/Theme.DeviceDefaultBase">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:alertDialogStyle">@*android:style/AlertDialog.DeviceDefault.Light</item>
         <item name="android:dialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog</item>
         <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
@@ -137,7 +137,7 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
 	</style>
      <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/background_dark</item>
         <item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
@@ -156,7 +156,7 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
 	</style>
     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
        	<item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Dialog.Alert</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
@@ -174,7 +174,7 @@
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
 	</style>
     <style name="Theme.DeviceDefault.Settings.Dark.NoActionBar" parent="@*android:style/Theme.Material">
-		<item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
        	<item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Dialog.Alert</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>

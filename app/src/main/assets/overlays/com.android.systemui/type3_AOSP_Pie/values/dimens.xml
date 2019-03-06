@@ -8,7 +8,8 @@
 	<dimen name="notification_shadow_radius">0.0dip</dimen>
     <dimen name="notification_scrim_wait_distance">900.0dip</dimen>
 	<dimen name="notification_divider_height_increased">0.0dip</dimen>
-    <dimen name="fake_shadow_inset">0.0dip</dimen>
+    <dimen name="notification_side_paddings">0.0dip</dimen>    
+	<dimen name="fake_shadow_inset">0.0dip</dimen>
     <dimen name="fake_shadow_size">0.0dip</dimen>
     <item type="dimen" name="scrim_behind_alpha">0.0</item>
     <dimen name="qs_panel_padding">20.0dip</dimen>
