@@ -21,7 +21,7 @@
         android:id="@+id/include2"
         layout="@layout/content_dashboard" />
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/gplus"
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -34,7 +34,7 @@
         android:gravity="right|center"
         android:onClick="launchCircleMe"
         app:layout_anchor="@+id/include2"
-        app:layout_anchorGravity="left|bottom" />
+        app:layout_anchorGravity="left|bottom" />-->
 
     <ImageView
         android:id="@+id/paypal"

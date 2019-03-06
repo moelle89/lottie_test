@@ -31,8 +31,9 @@ public class FirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
 
-        ImageView image_view = findViewById(R.id.gplus);
-        Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);
+        //ImageView image_view = findViewById(R.id.gplus);
+        //Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);
+
         ImageView image_view2 = findViewById(id.paypal);
         Glide.with(this).load("https://i.imgur.com/zuWN5Ct.gif").into(image_view2);
 
