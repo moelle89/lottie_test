@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="og_account_text_color">@android:color/white</color>
 	<color name="google_grey200">@*android:color/dim_foreground_light</color>
-    <color name="google_white">@*android:color/facelock_spotlight_mask</color>                   <!-- Drawer -->
     <color name="google_blue600">@*android:color/accent_material_dark</color>
     <color name="google_blue500">@*android:color/accent_material_dark</color>    
 	<color name="google_blue300">@*android:color/accent_material_dark</color>	

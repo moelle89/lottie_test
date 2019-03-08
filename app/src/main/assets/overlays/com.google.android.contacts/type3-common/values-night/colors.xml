@@ -8,4 +8,6 @@
     <color name="og_account_text_color">@android:color/white</color>
     <color name="og_item_text_color">@android:color/white</color>
     <color name="og_no_selected_account_header_color">@android:color/white</color>
+    <color name="google_dark_default_color_surface">@*android:color/background_dark</color>
+    <color name="background_floating_material_dark">@*android:color/dim_foreground_light</color>
 </resources>

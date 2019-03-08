@@ -14,7 +14,7 @@
     </style>
 
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar" >
-        <item name="android:navigationBarColor">@*android:color/user_icon_default_gray</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
         <item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
         <item name="android:textColorHintInverse">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
