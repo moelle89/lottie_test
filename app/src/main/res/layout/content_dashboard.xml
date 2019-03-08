@@ -38,7 +38,7 @@
             n1:onClick="substratum"
             n1:text="@string/launch_substratum"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
             n1:typeface="sans" />
 
@@ -57,7 +57,7 @@
             n1:inputType="none"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
             n1:textColor="@color/transparent"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
             n1:typeface="sans" />
 
@@ -68,7 +68,7 @@
             n1:layout_below="@+id/Substratum"
             n1:layout_alignStart="@+id/Substratum"
             n1:layout_marginLeft="0dp"
-            n1:layout_marginTop="30dp"
+            n1:layout_marginTop="32dp"
             n1:layout_marginRight="0dp"
             n1:background="?android:selectableItemBackground"
             n1:drawableStart="@drawable/ic_telegram"
@@ -79,7 +79,7 @@
             n1:onClick="launchTelegramLink"
             n1:text="@string/launch_telegramgroup"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
             n1:typeface="sans" />
 
@@ -90,7 +90,7 @@
             n1:layout_below="@+id/telegram"
             n1:layout_alignStart="@+id/Substratum"
             n1:layout_marginLeft="0dp"
-            n1:layout_marginTop="30dp"
+            n1:layout_marginTop="32dp"
             n1:layout_marginRight="0dp"
             n1:background="?android:selectableItemBackground"
             n1:drawableStart="@drawable/ic_contact"
@@ -101,11 +101,11 @@
             n1:onClick="launchEmail"
             n1:text="@string/launch_email"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
             n1:typeface="sans" />
 
-        <TextView
+        <!--<TextView
             n1:id="@+id/rate_button"
             n1:layout_width="300dp"
             n1:layout_height="wrap_content"
@@ -123,29 +123,29 @@
             n1:onClick="launchRateLink"
             n1:text="@string/launch_ratelink"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
-            n1:typeface="sans" />
+            n1:typeface="sans" />-->
 
         <TextView
             n1:id="@+id/btn_play_again"
             n1:layout_width="300dp"
             n1:layout_height="wrap_content"
-            n1:layout_below="@+id/rate_button"
+            n1:layout_below="@+id/email"
             n1:layout_alignStart="@+id/Substratum"
             n1:layout_marginLeft="0dp"
-            n1:layout_marginTop="30dp"
+            n1:layout_marginTop="32dp"
             n1:layout_marginRight="0dp"
             n1:background="?android:selectableItemBackground"
             n1:drawableStart="@drawable/ic_replay"
             n1:drawablePadding="36.0dip"
-            n1:fontFamily="@font/samsungone400"
+            n1:fontFamily="@font/samsungone800"
             n1:gravity="start"
             n1:inputType="none"
             n1:onClick="ReplayIntro"
             n1:text="@string/launch_intro"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            n1:textSize="20sp"
+            n1:textSize="@dimen/dashboard_list_title_size"
             n1:textStyle="bold"
             n1:typeface="sans" />
 
