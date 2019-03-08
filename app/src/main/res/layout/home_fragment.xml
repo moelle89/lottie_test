@@ -8,12 +8,12 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_marginTop="0dp"
         android:fitsSystemWindows="true"
-        android:scaleType="centerInside"
+        android:scaleType="center"
         android:src="@drawable/dashboardhero"
         android:contentDescription="@string/head" />
 
@@ -53,19 +53,24 @@
 
     <CheckBox
         android:id="@+id/hide"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="false"
         android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
         android:layout_gravity="end"
-        android:layout_marginBottom="12dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginBottom="12dp"
+        android:button="@drawable/btn_check_off"
         android:checked="false"
         android:gravity="center_vertical"
         android:onClick="hide"
         android:text="@string/launch_hide"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@color/textColor"
-        android:theme="@style/checkBoxStyle"
+        android:theme="@android:style/Widget.CompoundButton.CheckBox"
         app:layout_anchor="@+id/include2"
         app:layout_anchorGravity="left|bottom" />
+
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

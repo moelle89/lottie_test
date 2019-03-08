@@ -41,7 +41,7 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
     </style>
 
-    <style name="checkBoxStyle" parent="android:Theme.DeviceDefault.Light">
+    <style name="checkBoxStyle" parent="@android:style/Widget.Material.CompoundButton.RadioButton">
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textColorSecondary">@color/textColor</item>

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="CardActionBottomSheetClickable">
+        <item name="android:background">@*android:color/background_dark</item>
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@*com.android.vending:drawable/play_highlight_overlay_light</item>
+    </style>
+    <style name="BottomSheetDialog" parent="@*com.android.vending:style/FinskyTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
+		<item name="android:background">@*android:color/background_dark</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="*com.android.vending:windowActionBar">false</item>
+        <item name="*com.android.vending:windowNoTitle">true</item>
+    </style>
     <style name="VettedGamedFeatureRatingBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

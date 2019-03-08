@@ -24,7 +24,7 @@
         n3:layout_constraintVertical_bias="1.0">
 
         <TextView
-            n1:id="@+id/Substratum"
+            n1:id="@id/Substratum"
             n1:layout_width="300dp"
             n1:layout_height="wrap_content"
             n1:layout_marginLeft="0dp"
@@ -117,7 +117,7 @@
             n1:background="?android:selectableItemBackground"
             n1:drawableStart="@drawable/ic_rating"
             n1:drawablePadding="36.0dip"
-            n1:fontFamily="@font/samsungone800"
+            n1:fontFamily="@font/samsungone400"
             n1:gravity="start"
             n1:inputType="none"
             n1:onClick="launchRateLink"
@@ -139,7 +139,7 @@
             n1:background="?android:selectableItemBackground"
             n1:drawableStart="@drawable/ic_replay"
             n1:drawablePadding="36.0dip"
-            n1:fontFamily="@font/samsungone800"
+            n1:fontFamily="@font/samsungone400"
             n1:gravity="start"
             n1:inputType="none"
             n1:onClick="ReplayIntro"

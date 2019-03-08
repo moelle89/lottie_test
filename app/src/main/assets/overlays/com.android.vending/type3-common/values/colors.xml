@@ -2,8 +2,11 @@
 <resources>
 	<color name="phonesky_apps_primary">#3ac965</color>	
 	<color name="phonesky_apps_primary_v3">#3ac965</color>
-    <color name="phonesky_books_primary_v3">#28b6fb</color>
+    <color name="phonesky_books_primary">#28b6fb</color>    
+	<color name="phonesky_books_primary_v3">#28b6fb</color>
+    <color name="phonesky_movies_primary">#ff335b</color>
     <color name="phonesky_movies_primary_v3">#ff335b</color>
+    <color name="phonesky_music_primary">#ff7d3d</color>
     <color name="phonesky_music_primary_v3">#ff7d3d</color>
 
     <color name="play_books_light">#28b6fb</color>
@@ -93,6 +96,12 @@
     <color name="play_drawer_mini_profile_background">#2ca14f</color>
 	
 	<!-- -->
+    <color name="review_histogram_1_bar">#ff335b</color>
+    <color name="review_histogram_2_bar">#ff7d3d</color>
+    <color name="review_histogram_3_bar">#f5bd47</color>
+    <color name="review_histogram_4_bar">#2ca14f</color>
+    <color name="review_histogram_5_bar">#3ac965</color>	
+
 
     <color name="flat_card_cluster_header_title_text_color">#ffffff</color>
 	<color name="detailed_permissions_footer_bg">@*android:color/facelock_spotlight_mask</color>
@@ -137,7 +146,9 @@
     <color name="icon_color">#ffffff</color>
 	<color name="detailed_permissions_footer_text">#ffccd2df</color>
     <color name="whatsnew_music_v2">#17B3D1E3</color>
-    <color name="play_drawer_separator">#09bad3e0</color>
+    <color name="play_drawer_separator">#09bad3e0</color>    
+	<color name="review_endorsement_border">#1ABAD3E0</color>	
+	<color name="review_filter_pill_outline_color">#1ABAD3E0</color>
 
     <color name="review_acquisition_stars_border_color">#9CCCD2DF</color>
 
@@ -146,7 +157,11 @@
     <color name="whatsnew_books_v2">#17B3D1E3</color>
 
     <color name="play_fg_primary">#ffffffff</color>
-    <color name="material_grey_900">@*android:color/background_dark</color>
+    <color name="material_grey_900">@*android:color/background_dark</color>    
+	<color name="review_reply_background">@*android:color/dim_foreground_light</color>	
+	<color name="write_review_fragment_background_color">@*android:color/background_dark</color>
+	<color name="play_histogram_background">@*android:color/dim_foreground_light</color>	
+	<color name="all_reviews_filter_list_background">@*android:color/background_dark</color>
 	<color name="jpkr_grey_primary">#ffffffff</color>
     <color name="play_uninstall_wizard_title_color">#ffffffff</color>
     <color name="review_question_bg">#17B3D1E3</color>	
@@ -156,15 +171,16 @@
     <color name="light_half_transparent">#80eeeeee</color>
     <color name="play_search_suggestion_divider_background">#09bad3e0</color>
     <color name="play_icon_default">#ffffffff</color>
+	<color name="bottom_sheet_icon_color">@*android:color/lighter_gray</color>
     <color name="button_material_light">#ff2b3238</color>
     <color name="play_dismissed_overlay">#B3000000</color>
 
-    <color name="play_white">@*android:color/white</color>
+    <color name="play_white">@*android:color/background_dark</color>
     <color name="whatsnew_apps">@*android:color/transparent</color>
 
     <color name="play_rated_overlay">#A5000000</color>
     <color name="whatsnew_movies">@*android:color/transparent</color>
-    <color name="background_floating_material_light">@*android:color/background_dark</color>
+    <color name="background_floating_material_light">@*android:color/dim_foreground_light</color>
     <color name="play_search_plate_hint_text_color">#b3bdca</color>
     <color name="whatsnew_newsstand">@*android:color/transparent</color>
 
@@ -206,18 +222,18 @@
     <color name="foreground_material_light">@*android:color/white</color>
 	
 
-    <color name="account_email_dark_text_color">#FFFFFF</color>                                     <!-- Email Settings - Title -->
-    <color name="account_email_light_text_color">#b3FFFFFF</color>                                  <!-- Email Settings - SubTitle -->
-    <color name="white_action_bar_icon_color">#FFF</color>
-    <color name="white_action_bar_dark_title_color">#FFF</color>                                    <!-- Toolbar -->
-    <color name="play_secondary_light">#b3FFFFFF</color>                                            <!-- Tab Inactive -->
+    <color name="account_email_dark_text_color">#FFFFFF</color>
+    <color name="account_email_light_text_color">#b3FFFFFF</color>
+    <color name="white_action_bar_icon_color">#FFFFFF</color>
+    <color name="white_action_bar_dark_title_color">#FFFFFF</color>                                    
+    <color name="play_secondary_light">#b3FFFFFF</color>                                           
 
-    <color name="material_grey_50">@*android:color/secondary_text_leanback_light</color>                             <!-- Drawer Background (item) -->
+    <color name="material_grey_50">@*android:color/secondary_text_leanback_light</color>                            
 
-    <color name="play_installed_apps_toggle_switch_track_off">#757575</color>                       <!-- Switch Track -->
+    <color name="play_installed_apps_toggle_switch_track_off">@*android:color/button_material_dark</color>                       
 	<color name="bottom_sheet_light_text_color">@*android:color/white</color>
     <color name="primary_text_disabled_material_light">#ffffffff</color>
     <color name="secondary_text_disabled_material_light">#ffffffff</color>
     <color name="play_ripple_light">#20ffffff</color>
-    <color name="ripple_material_light">#ff9e9e9e</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
 </resources>

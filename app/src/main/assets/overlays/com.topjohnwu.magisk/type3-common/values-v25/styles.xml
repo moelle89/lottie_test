@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Platform.V25.AppCompat" parent="@*android:style/Theme.DeviceDefault.Settings" >
+		<item name="android:switchStyle">@*android:style/Widget.Material.CompoundButton.Switch</item>
 		<item name="android:actionBarStyle">@*com.topjohnwu.magisk:style/Widget.AppCompat.ActionBar.Solid</item>
 	    <item name="android:statusBarColor">@*android:color/secondary_text_default_material_light</item>
 		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>		

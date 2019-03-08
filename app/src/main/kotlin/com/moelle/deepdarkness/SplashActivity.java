@@ -1,6 +1,5 @@
 package com.moelle.deepdarkness;
 
-import android.app.LauncherActivity;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
@@ -19,7 +18,7 @@ public class SplashActivity extends Activity {
 			videoHolder = new VideoView(this);
 			setContentView(videoHolder);
 			Uri video = Uri.parse("android.resource://" + getPackageName() + "/"
-					+ R.raw.splash);
+					+ R.raw.splash_1);
 			videoHolder.setVideoURI(video);
 
 			videoHolder.setOnCompletionListener(new OnCompletionListener() {
@@ -46,7 +45,8 @@ public class SplashActivity extends Activity {
 
 	private void jump() {if(isFinishing())
 		return;
-		startActivity(new Intent(this, Welcome.class));
+		//startActivity(new Intent(this, Welcome.class));
+		startActivity(new Intent(this, FirstActivity.class));
 		overridePendingTransition(0, 0);
 		finish();
 	}
