@@ -9,4 +9,5 @@
     <dimen name="tooltip_corner_radius">6.0dip</dimen>
     <dimen name="abc_control_corner_material">6.0dip</dimen>
     <dimen name="cardview_default_radius">6.0dip</dimen>
+    <dimen name="sticker_icon_corner_radius_m2">10.0dip</dimen>
 </resources>

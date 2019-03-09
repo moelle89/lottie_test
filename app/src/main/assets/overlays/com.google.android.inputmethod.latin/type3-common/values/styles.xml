@@ -78,7 +78,6 @@
         <item name="android:singleLine">true</item>
         <item name="android:layout_weight">1.0</item>
     </style>
-	
 
 	<style name="BaseTheme" parent="@android:style/Theme.Material.Panel" >
 		<item name="android:textColor">@android:color/white</item>

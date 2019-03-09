@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>             
+<resources>
+    <color name="cardview_light_background">@*android:color/background_dark</color>
 	<color name="material_deep_teal_200">@*android:color/accent_material_dark</color>    
 	<color name="slide_indicator_material_dark_theme">@*android:color/accent_material_dark</color>
     <color name="ColorChordedTrackMaterialLightTheme">@*android:color/accent_material_dark</color>
     <color name="label_popup_pressed_material_light_theme">@*android:color/accent_material_dark</color>
     <color name="key_action_pressed_bordered_light_theme">@*android:color/accent_material_dark</color>
     <color name="ColorGestureTrackMaterialLightTheme">@*android:color/accent_material_dark</color>
-
+    <color name="google_grey50">@*android:color/dim_foreground_light</color>
     <color name="key_action_pressed_bordered_dark_theme">@*android:color/suggestion_highlight_text</color>
     <color name="key_dark_pressed_bordered_dark_theme">@*android:color/suggestion_highlight_text</color>
     <color name="language_picker_text_color">#ffffffff</color>
@@ -55,6 +56,7 @@
     <color name="gif_error_message_text_color_material_dark">#ffffffff</color>
     <color name="gif_error_message_text_color_material_light">#ffffffff</color>
     <color name="gif_search_candidate_divider_material_light">#00000000</color>
+    <color name="search_candidate_divider_material_light_m2">#00000000</color>
     <color name="gif_search_candidate_text_color_material_light">#ffffffff</color>
     <color name="header_bottom_separator_material_dark_theme">#00000000</color>
     <color name="highlighted_text_material_dark">@*android:color/accent_material_dark</color>
@@ -133,4 +135,6 @@
     <color name="translate_dialog_button_color">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</color>
     <color name="translate_dialog_separator">#00000000</color>
 	<color name="google_grey700">@*android:color/secondary_text_default_material_dark</color>
+	
+    <color name="sticker_icon_background_color_m2">@*android:color/user_icon_default_white</color>
 </resources>
