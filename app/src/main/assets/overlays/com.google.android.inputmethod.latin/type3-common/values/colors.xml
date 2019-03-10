@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="google_white">@*android:color/user_icon_default_white</color>
+
     <color name="cardview_light_background">@*android:color/background_dark</color>
 	<color name="material_deep_teal_200">@*android:color/accent_material_dark</color>    
 	<color name="slide_indicator_material_dark_theme">@*android:color/accent_material_dark</color>
