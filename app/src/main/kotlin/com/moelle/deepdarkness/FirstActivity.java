@@ -37,10 +37,10 @@ public class FirstActivity extends AppCompatActivity {
         //ImageView image_view3 = findViewById(id.image_view);
         //Glide.with(this).load("https://i.imgur.com/omwffNF.gif").into(image_view3);
         ImageView image_view3 = findViewById(id.image_view);
-        Glide.with(this).load("https://i.imgur.com/fGWSBFk.gif").into(image_view3);
+        Glide.with(this).load("https://i.imgur.com/Ia8FJgv.gif").into(image_view3);
 
         ImageView image_view2 = findViewById(id.paypal);
-        Glide.with(this).load("https://i.imgur.com/s9q1wol.gif").into(image_view2);
+        Glide.with(this).load("https://i.imgur.com/eU8ZRxo.gif").into(image_view2);
 
         Toolbar toolbar = findViewById(id.toolbar);
         setSupportActionBar(toolbar);
