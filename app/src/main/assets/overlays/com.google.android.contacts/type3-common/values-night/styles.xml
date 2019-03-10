@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.OneGoogle.GoogleMaterial.NavigationView" parent="@*com.google.android.contacts:style/Widget.GoogleMaterial.NavigationView">
+        <item name="*com.google.android.contacts:colorAccent">@*android:color/highlighted_text_holo_dark</item>
+    </style>
+	<style name="BaseAppTheme" parent="@*com.google.android.contacts:style/Theme.GoogleMaterial.Dark.NoActionBar" >
+		<item name="android:colorControlHighlight">@*android:color/user_icon_default_white</item>
+    </style>
+</resources>

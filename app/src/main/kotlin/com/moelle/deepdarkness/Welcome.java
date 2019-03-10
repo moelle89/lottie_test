@@ -28,8 +28,8 @@ public class Welcome extends WelcomeActivity {
                 .bottomLayout(WelcomeConfiguration.BottomLayout.INDICATOR_ONLY)
 
                 .page(new BasicPage(R.drawable.fin2,
-                        "Welcome to Black Panel",
-                        "Lets get some black UI on your device")
+                        "Welcome to DEEP DARKNESS",
+                        "Lets get some dark UI on your device")
                         .background(R.color.background)
                 )
 
@@ -52,19 +52,6 @@ public class Welcome extends WelcomeActivity {
 
                 }.background(R.color.background))
 
-
-                /** .page(new ParallaxPage(R.layout.parallax_root,
-                 "Made with love for SAMSUNG",
-                 "This theme is supporting the S8, S8+, Note8 and S7 (partial).")
-                 .lastParallaxFactor(2f)
-                 .background(R.color.inactive)
-                 )     */
-
-                .page(new BasicPage(R.drawable.fin1,
-                        "Lets start the fun",
-                        "All elements of the theme can be customized and mixed easily.")
-                        .background(R.color.background)
-                )
 
                 .swipeToDismiss(true)
                 .exitAnimation(android.R.anim.fade_out)

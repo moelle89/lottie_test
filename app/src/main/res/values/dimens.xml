@@ -15,4 +15,6 @@
     <dimen name="list_item_margin">16dp</dimen>
 
     <dimen name="dashboard_list_title_size">22sp</dimen>
+    <dimen name="dashboard_list_width">340dp</dimen>
+    <dimen name="dashboard_list_title_margin_top">36dp</dimen>
 </resources>

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="og_account_text_color">@android:color/white</color>
-	<color name="google_grey200">@*android:color/dim_foreground_light</color>
     <color name="google_blue600">@*android:color/accent_material_dark</color>
     <color name="google_blue500">@*android:color/accent_material_dark</color>    
 	<color name="google_blue300">@*android:color/accent_material_dark</color>	
 	<color name="google_blue800">@*android:color/accent_material_dark</color>
+    <color name="google_red600">@*android:color/accent_material_dark</color>
+<!--
+	<color name="og_account_text_color">@android:color/white</color>
+	<color name="google_grey200">@*android:color/dim_foreground_light</color>
+	<color name="icon_color">#ffffffff</color>
     <color name="google_grey600">#c8d1db</color>
     <color name="google_grey700">#ffffffff</color>                                                       
     <color name="google_grey800">#ffffffff</color>
@@ -15,7 +18,7 @@
 	<color name="ic_add_contact_shortcut_background">@*android:color/suggestion_highlight_text</color>	
     <color name="owner_snackbar_bg">@*android:color/dim_foreground_light</color>
     <color name="quantum_black_hint_text">@*android:color/white</color>
-    <color name="quantum_black_secondary_text">@*android:color/white</color><!-- navdrawer cattitles -->
+    <color name="quantum_black_secondary_text">@*android:color/white</color>
 	<color name="background_floating_material_light">@*android:color/dim_foreground_light</color>
     <color name="snackbar_background">@*android:color/dim_foreground_light</color>    
 	<color name="google_grey500">@*android:color/background_dark</color>
@@ -87,7 +90,7 @@
     <color name="background_social_updates">@*android:color/user_icon_default_gray</color>
     <color name="editor_account_header_bg">@*android:color/user_icon_default_gray</color>
     <color name="cardview_light_background">@*android:color/user_icon_default_gray</color>    
-    <color name="icon_color">#ffffffff</color>
+
     <color name="quickcontact_entry_header_text_color">#ffffffff</color>
     <color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
     <color name="secondary_header_separator_color">#ffffff</color>
@@ -125,5 +128,5 @@
     <color name="dialer_theme_color">@*android:color/suggestion_highlight_text</color>
     <color name="dialer_theme_color_dark">@*android:color/suggestion_highlight_text</color>
     <color name="quantum_pinkA400">@*android:color/accent_material_dark</color>
-    <color name="navigation_drawer_background_color">@*android:color/user_icon_default_gray</color>
+    <color name="navigation_drawer_background_color">@*android:color/user_icon_default_gray</color>-->
 </resources>
