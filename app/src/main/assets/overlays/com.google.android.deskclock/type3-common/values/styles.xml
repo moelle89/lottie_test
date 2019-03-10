@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="TextAppearance.TextClock" parent="@*com.google.android.deskclock:style/TextAppearance.AppCompat">
-        <item name="android:textSize">56.0sp</item>
-        <item name="android:textColor">@*android:color/highlighted_text_holo_dark</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:fontFeatureSettings">tnum</item>
-    </style>
-</resources>

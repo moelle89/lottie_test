@@ -4,9 +4,26 @@
         <item name="android:navigationBarColor">?android:colorBackground</item>
         <item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:actionBarStyle">@*com.google.android.deskclock:style/Widget.GoogleMaterial.ActionBar.Solid</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:timePickerStyle">@*com.google.android.deskclock:style/Widget.TimePicker</item>
+        <item name="android:popupTheme">@*com.google.android.deskclock:style/ThemeOverlay.Popup</item>
+        <item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
+        <item name="*com.google.android.deskclock:popupTheme">@*com.google.android.deskclock:style/ThemeOverlay.Popup</item>
+        <item name="*com.google.android.deskclock:popupMenuStyle">@*com.google.android.deskclock:style/Widget.PopupMenu</item>
+        <item name="*com.google.android.deskclock:imageButtonStyle">@*com.google.android.deskclock:style/Widget.ImageButton</item>
+        <item name="*com.google.android.deskclock:colorPrimary">@*android:color/background_dark</item>
+        <item name="*com.google.android.deskclock:colorPrimaryDark">@*android:color/background_dark</item>
+        <item name="*com.google.android.deskclock:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.deskclock:colorControlNormal">?android:textColorPrimary</item>
+        <item name="*com.google.android.deskclock:colorControlActivated">?android:textColorPrimary</item>
+        <item name="*com.google.android.deskclock:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
     </style>
 	<style name="Widget.GoogleMaterial.ActionBar.Solid" parent="@*com.google.android.deskclock:style/Widget.AppCompat.ActionBar.Solid" >
 		<item name="android:background">@*com.google.android.deskclock:drawable/abc_list_divider_mtrl_alpha</item>
 		<item name="android:backgroundTint">@null</item>
-	</style>
+        <item name="*com.google.android.deskclock:titleTextStyle">@*com.google.android.deskclock:style/TextAppearance.GoogleMaterial.ActionBar.Title</item>
+        <item name="*com.google.android.deskclock:subtitleTextStyle">@*com.google.android.deskclock:style/TextAppearance.GoogleMaterial.ActionBar.Subtitle</item>
+    </style>
 </resources>
