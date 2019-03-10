@@ -47,7 +47,7 @@ public class SplashActivity extends Activity {
 		return;
 		//startActivity(new Intent(this, Welcome.class));
 		startActivity(new Intent(this, FirstActivity.class));
-		overridePendingTransition(0, 0);
+		//overridePendingTransition(0, 0);
 		finish();
 	}
 }

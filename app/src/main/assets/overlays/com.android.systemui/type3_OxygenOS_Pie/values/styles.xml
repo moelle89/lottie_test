@@ -6,29 +6,6 @@
     <style name="Theme.SystemUI.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" >
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
 	</style>
-    <style name="DotStyle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_centerVertical">true</item>
-    </style>
-    <style name="Widget.TextView.NumPadKey" parent="@android:style/Widget.TextView">
-        <item name="android:textSize">32.5sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@null</item>
-        <item name="android:paddingBottom">-16.0dip</item>
-        <item name="android:singleLine">true</item>
-		<item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-    </style>
-    <style name="Widget.TextView.NumPadKey.Klondike" parent="@*com.android.systemui:style/Widget.TextView.NumPadKey">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">@*android:color/accent_material_dark</item>
-        <item name="android:paddingBottom">0.0dip</item>
-		<item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
     <style name="TextAppearance.QS" parent="@*com.android.systemui:style/TextAppearance">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@*android:color/white</item>

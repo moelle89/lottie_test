@@ -23,12 +23,6 @@
     <dimen name="cardview_default_elevation">0.0dip</dimen>
     <dimen name="cardview_default_radius">12.0dip</dimen>
     <dimen name="borderless_button_radius">8.0dip</dimen>
-    <dimen name="kg_status_line_font_size">11.5sp</dimen>
-    <dimen name="password_dot_size">12.0dip</dimen>
-    <dimen name="password_char_padding">8.0dip</dimen>
-    <dimen name="keyguard_security_width">420.0dip</dimen>
-    <dimen name="keyguard_security_height">450.0dip</dimen>
-    <dimen name="keyguard_security_max_height">550.0dip</dimen>
     <dimen name="notification_side_padding">0.0dip</dimen>
     <dimen name="notification_collapse_second_card_padding">0.0dip</dimen>
     <dimen name="notification_padding">0.0dip</dimen>
@@ -41,9 +35,7 @@
     <dimen name="notification_padding_dimmed">1.0dip</dimen>
     <dimen name="card_background_default_radius">10.0dip</dimen>
     <dimen name="key_button_ripple_max_width">37dp</dimen>
-    <dimen name="recents_lock_to_app_size">56dp</dimen>
     <dimen name="zen_mode_panel_radius">8dp</dimen>	
-    <item type="dimen" name="qs_panel_side_padding">0.0dip</item>
     <dimen name="qs_peek_height">0dp</dimen>
 	<dimen name="queue_top_shadow">0.0dip</dimen>
     <dimen name="status_bar_expanded_header_elevation">0dp</dimen>
@@ -55,15 +47,6 @@
 	<dimen name="seek_bar_corner_radius">15.0dip</dimen>
     <dimen name="volume_button_size">46.0dip</dimen>
 	<dimen name="z_distance_between_notifications">299.0dip</dimen>
-    <dimen name="system_icons_keyguard_padding_end">4.0dip</dimen>
-    <dimen name="keyguard_carrier_text_margin">16.0dip</dimen>
-    <dimen name="keyguard_affordance_width">56.0dip</dimen>
-    <dimen name="keyguard_affordance_height">56.0dip</dimen>
-    <dimen name="keyguard_indication_margin_bottom">65.0dip</dimen>
-    <dimen name="trust_circle_inner_radius_visible_min">22.0dip</dimen>
-    <dimen name="trust_circle_inner_radius_visible_max">24.0dip</dimen>
-    <dimen name="trust_circle_inner_radius_exit">38.0dip</dimen>
-    <dimen name="trust_circle_inner_radius_enter">18.0dip</dimen>
     <dimen name="trust_circle_thickness">2.0dip</dimen>
     <dimen name="widget_label_font_size">14.0sp</dimen>
     <dimen name="widget_big_font_size">78.0dip</dimen>
