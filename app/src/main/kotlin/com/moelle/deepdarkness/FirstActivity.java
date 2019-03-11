@@ -26,7 +26,7 @@ import static com.moelle.deepdarkness.R.id;
 public class FirstActivity extends AppCompatActivity {
 
     private static final String DASHBOARD_HEAD =
-            "https://bitbucket.org/moelle/media/raw/6543bb65af2c017e9e46f883d0c9614384460d6a/dashboardhero_7.mp4";
+            "https://bitbucket.org/moelle/media/raw/a390d85d4617cbcbde4ad93bcd6cdd84724f00db/dashboardhero_7_1.mp4";
 
     private SimpleVideoView videoView;
 
@@ -47,15 +47,7 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
         videoView.start(DASHBOARD_HEAD);
-        videoView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (videoView.isPlaying())
-                    videoView.pause();
-                else
-                    videoView.play();
-            }
-        });
+
 
         //ImageView image_view = findViewById(R.id.gplus);
         //Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);

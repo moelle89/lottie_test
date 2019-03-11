@@ -8,12 +8,12 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="0dp"
         android:fitsSystemWindows="true"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:src="@drawable/dashboardhero"
         android:contentDescription="@string/head" />
 
@@ -24,9 +24,10 @@
         android:layout_gravity="top"
         android:layout_marginTop="0dp"
         android:fitsSystemWindows="true"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         app:loop="true"
         app:muted="false"
+        app:showSpinner="false"
         android:contentDescription="@string/head" />
 
     <include
