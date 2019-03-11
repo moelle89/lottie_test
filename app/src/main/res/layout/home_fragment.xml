@@ -17,6 +17,18 @@
         android:src="@drawable/dashboardhero"
         android:contentDescription="@string/head" />
 
+    <com.klinker.android.simple_videoview.SimpleVideoView
+        android:id="@+id/dashboard_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="center"
+        app:loop="true"
+        app:muted="false"
+        android:contentDescription="@string/head" />
+
     <include
         android:id="@+id/include2"
         layout="@layout/content_dashboard" />

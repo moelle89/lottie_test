@@ -16,28 +16,54 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.klinker.android.simple_videoview.SimpleVideoView;
 
 import projekt.substrate.SubstratumLoader;
 
 import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
-    FloatingActionButton fab;
+
+    private static final String DASHBOARD_HEAD =
+            "https://bitbucket.org/moelle/media/raw/6543bb65af2c017e9e46f883d0c9614384460d6a/dashboardhero_7.mp4";
+
+    private SimpleVideoView videoView;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
 
+        videoView = findViewById(id.dashboard_head);
+        videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
+            @Override
+            public void onPlaybackError(Exception e) {
+                e.printStackTrace();
+                Snackbar.make(videoView, "Uh oh, error playing!", Snackbar.LENGTH_INDEFINITE).show();
+            }
+        });
+        videoView.start(DASHBOARD_HEAD);
+        videoView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (videoView.isPlaying())
+                    videoView.pause();
+                else
+                    videoView.play();
+            }
+        });
+
         //ImageView image_view = findViewById(R.id.gplus);
         //Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);
 
         //ImageView image_view3 = findViewById(id.image_view);
         //Glide.with(this).load("https://i.imgur.com/omwffNF.gif").into(image_view3);
-        ImageView image_view3 = findViewById(id.image_view);
-        Glide.with(this).load("https://i.imgur.com/ehWybTA.gif").into(image_view3);
+        //ImageView image_view3 = findViewById(id.image_view);
+        //Glide.with(this).load("https://i.imgur.com/ehWybTA.gif").into(image_view3);
 
         ImageView image_view2 = findViewById(id.paypal);
         Glide.with(this).load("https://i.imgur.com/eU8ZRxo.gif").into(image_view2);
