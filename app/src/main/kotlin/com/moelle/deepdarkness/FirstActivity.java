@@ -25,8 +25,7 @@ import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
 
-    private static final String DASHBOARD_HEAD =
-            "https://bitbucket.org/moelle/media/raw/a390d85d4617cbcbde4ad93bcd6cdd84724f00db/dashboardhero_7_1.mp4";
+    private static final String DASHBOARD_HEAD = "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4";
 
     private SimpleVideoView videoView;
 

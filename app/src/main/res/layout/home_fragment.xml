@@ -9,13 +9,13 @@
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="596px"
+        android:layout_gravity="top"
         android:layout_marginTop="0dp"
-        android:contentDescription="@string/head"
         android:fitsSystemWindows="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/dashboardhero" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/dashboardhero"
+        android:contentDescription="@string/head" />
 
     <com.klinker.android.simple_videoview.SimpleVideoView
         android:id="@+id/dashboard_head"
