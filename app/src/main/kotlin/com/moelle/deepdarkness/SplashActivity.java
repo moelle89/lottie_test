@@ -10,25 +10,26 @@ import android.view.MotionEvent;
 import android.widget.VideoView;
 
 public class SplashActivity extends Activity {
-	VideoView videoHolder;
+
+	VideoView videoView;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		try{
-			videoHolder = new VideoView(this);
-			setContentView(videoHolder);
-			Uri video = Uri.parse("android.resource://" + getPackageName() + "/"
-					+ R.raw.splash_1);
-			videoHolder.setVideoURI(video);
+			videoView = new VideoView(this);
+			setContentView(videoView);
+			Uri video = Uri.parse("https://raw.githubusercontent.com/moelle89/deepdarkness/master/splash_1.mp4");
+			videoView.setVideoURI(video);
 
-			videoHolder.setOnCompletionListener(new OnCompletionListener() {
+			videoView.setOnCompletionListener(new OnCompletionListener() {
 
 				public void onCompletion(MediaPlayer mp) {
-					jump();
+                    videoView.start();   //it will start again
+				    //jump();
 				}
 
 			});
-			videoHolder.start();
+			videoView.start();
 		} catch(Exception ex) {
 			jump();
 		}
@@ -37,7 +38,7 @@ public class SplashActivity extends Activity {
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		try {
-			videoHolder.stopPlayback();
+			videoView.stopPlayback();
 		} catch(Exception ex) {}
 		jump();
 		return true;

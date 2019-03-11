@@ -115,6 +115,7 @@
     <color name="pe__card_divider_color">#00bad3e0</color>
     <color name="pe__dc_dock_divider_color">#09bad3e0</color>
     <color name="play_cards_separator_color">#00bad3e0</color>
+	<color name="flat_card_consolidated_separator_color">@*android:color/transparent</color>
     <color name="play_reason_separator">#09bad3e0</color>
     <color name="play_translucent_separator_line">#09bad3e0</color>
     <color name="account_separator">#09bad3e0</color>
