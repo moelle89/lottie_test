@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="0dp"
+        android:contentDescription="@string/head"
         android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/dashboardhero"
-        android:contentDescription="@string/head" />
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboardhero" />
 
     <com.klinker.android.simple_videoview.SimpleVideoView
         android:id="@+id/dashboard_head"
