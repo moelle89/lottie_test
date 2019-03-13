@@ -20,7 +20,6 @@
         <item name="*com.netflix.mediaclient:colorPrimary">@*android:color/facelock_spotlight_mask</item>
         <item name="*com.netflix.mediaclient:colorPrimaryDark">@*android:color/facelock_spotlight_mask</item>
         <item name="*com.netflix.mediaclient:netflixTextViewStyle">@*com.netflix.mediaclient:style/NetflixSignUpTextViewStyle</item>
-        <item name="*com.netflix.mediaclient:signupWarningViewStyle">@*com.netflix.mediaclient:style/SignupWarningContainer</item>
         <item name="*com.netflix.mediaclient:toolbarBackground">@*android:color/transparent</item>
         <item name="*com.netflix.mediaclient:windowActionBar">false</item>
         <item name="*com.netflix.mediaclient:windowNoTitle">true</item>
