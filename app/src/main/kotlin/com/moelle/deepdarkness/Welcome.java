@@ -22,8 +22,6 @@ public class Welcome extends WelcomeActivity {
     @Override
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
-                .defaultTitleTypefacePath(String.valueOf(R.font.samsungone800))
-                .defaultHeaderTypefacePath(String.valueOf(R.font.samsungone800))
                 .backButtonNavigatesPages(false)
                 .bottomLayout(WelcomeConfiguration.BottomLayout.INDICATOR_ONLY)
 

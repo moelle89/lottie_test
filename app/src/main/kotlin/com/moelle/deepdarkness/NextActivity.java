@@ -28,7 +28,7 @@ public class NextActivity extends AppCompatActivity {
 
 
     private static final String SAMPLE_VIDEO =
-            "https://bitbucket.org/moelle/subs_template/raw/066735ab72c435c07b0c20dd28c06345f05553fc/app/src/main/res/tutorial.mp4";
+            "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/splash.mp4";
 
     private SimpleVideoView videoView;
 

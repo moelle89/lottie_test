@@ -31,7 +31,6 @@
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/btn_default_mtrl_shape</item>
-        <item name="android:fontFamily">@font/samsungone800</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
     </style>
 
@@ -68,18 +67,15 @@
     <style name="MyTitel" parent="@style/WelcomeScreenText.Title.Centered">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">28sp</item>
-        <item name="android:fontFamily">@font/samsungone800</item>
     </style>
     <style name="NavTitle" parent="@style/WelcomeScreenText.Title.Centered"><!-- slide titles -->
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">26sp</item>
         <item name="android:layout_marginBottom">42dp</item>
-        <item name="android:fontFamily">@font/samsungone800</item>
     </style>
     <style name="MyLargeText" parent="@style/WelcomeScreenText.Large.Centered">
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/samsungone400</item>
     </style>
 
     <!-- Styles for button bar activities -->
