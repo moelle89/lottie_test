@@ -19,8 +19,6 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 
-import projekt.substrate.SubstratumLoader;
-
 import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
@@ -66,10 +64,12 @@ public class FirstActivity extends AppCompatActivity {
     //DASHBOARD BUTTONS
     public void substratum(View view) { ////button to launch theme on substratum app
         {
-            Intent launchIntent = SubstratumLoader.launchThemeActivity(getApplicationContext(),
-                    getIntent(), getString(R.string.ThemeName), getPackageName());
-            startActivity(launchIntent);//null pointer check in case package name was not found
+            Intent intent = new Intent();
+            intent = intent.setClassName("projekt.substratum",
+                    "projekt.substratum.MainActivity");
+            startActivity(intent);
         }
+
     }
     public void launchRateLink(View view) { ////button to launch playstore theme page
         Intent rateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.moelle.blacksammy")); ////Insert your link
