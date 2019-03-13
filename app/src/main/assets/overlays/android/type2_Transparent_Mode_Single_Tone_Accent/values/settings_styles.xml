@@ -5,6 +5,7 @@
         <item name="android:colorPrimaryDark">@*android:color/shadow</item>
         <item name="android:colorSecondary">@*android:color/user_icon_7</item>
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.Material.Settings" parent="@*android:style/Theme.Material">
     	<item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
@@ -20,6 +21,7 @@
 		<item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.Material.Settings.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar">
 		<item name="android:colorBackgroundCacheHint">@null</item>
@@ -32,6 +34,7 @@
         <item name="android:statusBarColor">@*android:color/user_icon_default_gray</item>
 		<item name="android:windowBackground">@*android:color/user_icon_default_gray</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.Material.Settings.BaseDialog" parent="@*android:style/Theme.Material.BaseDialog"/>
     <style name="Theme.Material.Settings.Dialog.BaseAlert" parent="@*android:style/Theme.Material.Dialog.BaseAlert"/>
@@ -51,6 +54,7 @@
 		<item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.DeviceDefault.Settings.Dark" parent="@*android:style/Theme.Material">
 		<item name="android:colorBackgroundCacheHint">@null</item>
@@ -66,6 +70,7 @@
 		<item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.DeviceDefault.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" >
 		<item name="android:alertDialogStyle">@*android:style/AlertDialog.DeviceDefault.Light</item>
@@ -80,6 +85,7 @@
 		<item name="android:colorBackground">@*android:color/user_icon_default_gray</item>
 		<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
      <style name="Theme.DeviceDefault" parent="@*android:style/Theme.Material">
 		<item name="android:alertDialogStyle">@*android:style/AlertDialog.DeviceDefault.Light</item>
@@ -99,6 +105,7 @@
 		<item name="android:statusBarColor">@*android:color/transparent</item>
 		<item name="android:colorPrimaryDark">@*android:color/transparent</item>
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
      <style name="Theme.DeviceDefault.Light.DarkActionBar" parent="@*android:style/Theme.Material">
 		<item name="android:colorBackground">@*android:color/background_dark</item>
@@ -115,6 +122,7 @@
 		<item name="android:statusBarColor">@*android:color/transparent</item>
 		<item name="android:colorPrimaryDark">@*android:color/transparent</item>
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">
        	<item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Dialog.Alert</item>
@@ -132,6 +140,7 @@
 		<item name="android:statusBarColor">@*android:color/transparent</item>
 		<item name="android:colorPrimaryDark">@*android:color/transparent</item>
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
     <style name="Theme.DeviceDefault.Settings.Dark.NoActionBar" parent="@*android:style/Theme.Material">
 		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
@@ -150,13 +159,8 @@
 		<item name="android:statusBarColor">@*android:color/transparent</item>
 		<item name="android:colorPrimaryDark">@*android:color/transparent</item>
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
-    <!--<style name="Theme.DeviceDefault.Dialog.Alert" parent="@*android:style/Theme.Material.Dialog.Alert">
-        <item name="android:colorBackground">@*android:color/user_icon_default_gray</item>
-        <item name="android:colorPrimary">@*android:color/transparent</item>
-        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-    </style>-->
     <style name="Theme.Material.NoActionBar" parent="@*android:style/Theme.Material">
 		<item name="android:windowAnimationStyle">@*android:style/Animation</item>
         <item name="android:colorForeground">@*android:color/white</item>
@@ -176,6 +180,7 @@
         <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	<style name="Animation.DeviceDefault.Activity" parent="" />
 </resources>

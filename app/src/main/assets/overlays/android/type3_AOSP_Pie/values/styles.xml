@@ -21,27 +21,6 @@
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
     </style>
-	<!--
-    <style name="Widget.Material.DatePicker" parent="@android:style/Widget.Material">
-        <item name="android:headerBackground">@*android:color/accent_material_dark</item>
-        <item name="android:calendarViewShown">true</item>
-        <item name="android:datePickerMode">@*android:integer/date_picker_mode_material</item>
-        <item name="headerTextColor">#ffffffff</item>
-        <item name="internalLayout">@*android:layout/date_picker_material</item>
-        <item name="legacyLayout">@*android:layout/date_picker_legacy_holo</item>
-    </style>
-	<style name="Widget.Material.TimePicker" parent="@android:style/Widget.Material">
-        <item name="android:headerBackground">@*android:color/accent_material_dark</item>
-        <item name="android:numbersTextColor">#ffffffff</item>
-        <item name="android:numbersBackgroundColor">@*android:color/accent_material_dark</item>
-        <item name="android:numbersSelectorColor">@*android:color/timepicker_default_background_material</item>
-        <item name="android:amPmTextColor">@*android:color/timepicker_default_background_material</item>
-        <item name="android:timePickerMode">@*android:integer/time_picker_mode_material</item>
-        <item name="android:numbersInnerTextColor">#ffffffff</item>
-        <item name="headerTextColor">#ffffffff</item>
-        <item name="internalLayout">@*android:layout/time_picker_material</item>
-        <item name="legacyLayout">@*android:layout/time_picker_legacy_material</item>
-    </style>-->
     <!-- Resolver -->
     <style name="Theme.DeviceDefault.Resolver" parent="@*android:style/Theme.DeviceDefault">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -67,6 +46,7 @@
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	<style name="Theme.DeviceDefault.QuickSettings" parent="@*android:style/Theme.DeviceDefault" >
 		<item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
@@ -84,6 +64,7 @@
 		<item name="android:colorError">@*android:color/accent_material_dark</item>
 		<item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
 		<item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	
     <style name="Theme.Material.SearchBar" parent="@android:style/Theme.Material.Panel" />    
@@ -167,7 +148,9 @@
     <style name="ConfirmUserCreationActivityTheme" parent="@*android:style/Theme.Material.Dialog.Alert" />
     <style name="UnlaunchableAppActivityTheme" parent="@*android:style/Theme.Material.Dialog.Alert" />
 	
-    <style name="Theme.Material.DayNight" parent="@*android:style/Theme.DeviceDefault.Settings.Dark.NoActionBar" />
+    <style name="Theme.Material.DayNight" parent="@*android:style/Theme.DeviceDefault.Settings.Dark.NoActionBar" >
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+	</style>
     <style name="Theme.Material.DayNight.DarkActionBar" parent="@*android:style/Theme.DeviceDefault.Settings.Dark.NoActionBar" />
     <style name="Theme.Material.DayNight.Dialog" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.Material.DayNight.Dialog.Alert" parent="@*android:style/Theme.Material.Dialog.Alert" />
@@ -201,6 +184,7 @@
 		<item name="android:statusBarColor">@*android:color/background_dark</item>
 		<item name="android:colorPrimaryDark">@*android:color/background_dark</item>
 		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
 	<style name="Theme.DeviceDefault.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog" />
 	<style name="Theme.DeviceDefault.Dialog.Alert" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
@@ -233,23 +217,4 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-	<!--
-    <style name="Theme.Material.NoActionBar" parent="@*android:style/Theme.Material">
-        <item name="android:colorForeground">@*android:color/white</item>
-        <item name="android:colorBackground">@*android:color/dim_foreground_light</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/background_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:colorPrimary">@*android:color/transparent</item>
-        <item name="android:colorSecondary">@*android:color/transparent</item>
-        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
-        <item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
-        <item name="android:colorEdgeEffect">@*android:color/holo_button_pressed</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:colorControlNormal">@*android:color/lighter_gray</item>
-        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-	-->
 </resources>

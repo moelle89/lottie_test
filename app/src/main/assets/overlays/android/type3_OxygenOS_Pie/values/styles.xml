@@ -20,28 +20,8 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
 		<item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
-	<!--
-    <style name="Widget.Material.DatePicker" parent="@android:style/Widget.Material">
-        <item name="android:headerBackground">@*android:color/accent_material_dark</item>
-        <item name="android:calendarViewShown">true</item>
-        <item name="android:datePickerMode">@*android:integer/date_picker_mode_material</item>
-        <item name="headerTextColor">#ffffffff</item>
-        <item name="internalLayout">@*android:layout/date_picker_material</item>
-        <item name="legacyLayout">@*android:layout/date_picker_legacy_holo</item>
-    </style>
-	<style name="Widget.Material.TimePicker" parent="@android:style/Widget.Material">
-        <item name="android:headerBackground">@*android:color/accent_material_dark</item>
-        <item name="android:numbersTextColor">#ffffffff</item>
-        <item name="android:numbersBackgroundColor">@*android:color/accent_material_dark</item>
-        <item name="android:numbersSelectorColor">@*android:color/timepicker_default_background_material</item>
-        <item name="android:amPmTextColor">@*android:color/timepicker_default_background_material</item>
-        <item name="android:timePickerMode">@*android:integer/time_picker_mode_material</item>
-        <item name="android:numbersInnerTextColor">#ffffffff</item>
-        <item name="headerTextColor">#ffffffff</item>
-        <item name="internalLayout">@*android:layout/time_picker_material</item>
-        <item name="legacyLayout">@*android:layout/time_picker_legacy_material</item>
-    </style>-->
     <!-- Resolver -->
     <style name="Theme.DeviceDefault.Resolver" parent="@*android:style/Theme.DeviceDefault">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -67,6 +47,7 @@
         <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	<style name="Theme.DeviceDefault.QuickSettings" parent="@*android:style/Theme.DeviceDefault" >
 		<item name="android:toolbarStyle">@*android:style/Widget.DeviceDefault.Toolbar</item>
@@ -84,6 +65,7 @@
 		<item name="android:colorError">@*android:color/accent_material_dark</item>
 		<item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
 		<item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	
     <style name="Theme.Material.SearchBar" parent="@android:style/Theme.Material.Panel" />    
@@ -124,6 +106,7 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
 		<item name="android:navigationBarColor">#00000000</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Theme.Holo.Wallpaper" parent="@*android:style/Theme.Material.Wallpaper" >
 		<item name="android:windowTranslucentNavigation">true</item>
@@ -133,6 +116,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowBackground">@*android:color/secondary_text_default_material_light</item>
         <item name="android:navigationBarColor">#00000000</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>    
 	
     <style name="TextAppearance.Material.Body2" parent="@android:style/TextAppearance.Material">
@@ -156,6 +140,7 @@
         <item name="android:popupTheme">@*android:style/ThemeOverlay.Material.Light</item>
         <item name="android:navigationBarColor">@*android:color/black</item>
         <item name="android:statusBarColor">@*android:color/black</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
     </style>
 	
 	<style name="Theme.Material.Light.Dialog.HeavyWeightSwitcherActivity" parent="@*android:style/Theme.Material.Dialog" />
@@ -215,6 +200,7 @@
 		<item name="android:statusBarColor">@*android:color/background_dark</item>
 		<item name="android:colorPrimaryDark">@*android:color/background_dark</item>
 		<item name="android:navigationBarColor">@*android:color/background_dark</item>
+		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
 	</style>
 	<style name="Theme.DeviceDefault.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog" />
 	<style name="Theme.DeviceDefault.Dialog.Alert" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
