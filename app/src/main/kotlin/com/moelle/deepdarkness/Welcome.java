@@ -5,7 +5,6 @@ import android.net.Uri;
 import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.view.View;
-import android.os.Bundle;
 
 import com.moelle.deepdarkness.fragment.ExampleFragment;
 import com.stephentuso.welcome.BasicPage;

@@ -2,12 +2,10 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Transition;
 import android.util.DisplayMetrics;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import com.bumptech.glide.Glide;
@@ -28,7 +25,7 @@ public class NextActivity extends AppCompatActivity {
 
 
     private static final String SAMPLE_VIDEO =
-            "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/splash.mp4";
+            "https://bitbucket.org/moelle/subs_template/raw/066735ab72c435c07b0c20dd28c06345f05553fc/app/src/main/res/tutorial.mp4";
 
     private SimpleVideoView videoView;
 
