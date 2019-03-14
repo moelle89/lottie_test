@@ -2,16 +2,20 @@
 
 package com.moelle.deepdarkness
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
 import android.util.Log
 import android.widget.Toast
-import com.github.javiersantos.piracychecker.*
-import com.github.javiersantos.piracychecker.enums.*
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.github.javiersantos.piracychecker.allow
+import com.github.javiersantos.piracychecker.callback
+import com.github.javiersantos.piracychecker.doNotAllow
+import com.github.javiersantos.piracychecker.enums.InstallerID
+import com.github.javiersantos.piracychecker.onError
+import com.github.javiersantos.piracychecker.piracyChecker
 import com.github.javiersantos.piracychecker.utils.apkSignature
 import com.moelle.deepdarkness.AdvancedConstants.ORGANIZATION_THEME_SYSTEMS
 import com.moelle.deepdarkness.AdvancedConstants.OTHER_THEME_SYSTEMS
@@ -32,7 +36,7 @@ import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
  * The more you play with this the harder it would be to decompile and crack!
  */
 
-class SubstratumLauncher : Activity() {
+class SubstratumLauncher : AppCompatActivity() {
 
     private val debug = false
     private val tag = "SubstratumThemeReport"
@@ -81,7 +85,7 @@ class SubstratumLauncher : Activity() {
         } else {
             OTHER_THEME_SYSTEMS
                     .filter { action?.startsWith(prefix = it, ignoreCase = true) ?: false }
-                    .forEach { verified = true }
+                    .forEach { _ -> verified = true }
         }
         if (!verified) {
             Log.e(tag, "This theme does not support the launching theme system. ($action)")

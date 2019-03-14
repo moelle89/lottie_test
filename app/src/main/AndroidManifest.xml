@@ -12,6 +12,7 @@
         android:required="false" /> <!-- Set to true for OMS-rom only block to be enabled -->
 
     <application
+        android:name=".DDApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"

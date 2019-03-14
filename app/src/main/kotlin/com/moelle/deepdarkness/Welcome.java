@@ -47,9 +47,8 @@ public class Welcome extends WelcomeActivity {
                         return new ExampleFragment();
                     }
 
-                }.background(R.color.background))
-
-
+                }
+                .background(R.color.background))
                 .swipeToDismiss(true)
                 .exitAnimation(R.anim.slide_next_in)
                 .build();
