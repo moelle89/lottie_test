@@ -38,7 +38,7 @@ public class ExampleFragment extends Fragment implements WelcomePage.OnChangeLis
 
         ImageView image_view = view.findViewById(R.id.test);
 
-        Glide.with(this).load("https://i.imgur.com/Me1aiso.gif").into(image_view);
+        Glide.with(this).load("https://i.imgur.com/aQvGaFJ.gif").into(image_view);
 
     }
 
