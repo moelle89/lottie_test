@@ -3,12 +3,12 @@
     <style name="SearchHeaderInnerView">
         <item name="android:orientation">vertical</item>
         <item name="android:id">@*com.google.android.inputmethod.latin:id/search_header_inner_view</item>
-        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:background">@*android:color/transparent</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:divider">@*com.google.android.inputmethod.latin:drawable/search_box_divider</item>
+        <item name="android:divider">@null</item>
         <item name="android:showDividers">middle</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/user_icon_default_white</item>
     </style>
     <style name="Header">
         <item name="android:tag">.keyboard-header-area</item>
@@ -22,7 +22,7 @@
         <item name="android:id">@*com.google.android.inputmethod.latin:id/header_area</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="HeaderInner.SearchBar" parent="@*com.google.android.inputmethod.latin:style/HeaderInner">
         <item name="android:layout_marginTop">0.0dip</item>
@@ -32,7 +32,7 @@
         <item name="*com.google.android.inputmethod.latin:cardCornerRadius">@*com.google.android.inputmethod.latin:dimen/header_corner_radius</item>
         <item name="*com.google.android.inputmethod.latin:cardElevation">@*com.google.android.inputmethod.latin:dimen/header_elevation</item>
         <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">true</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="HeaderInner.SearchBar.Large" parent="@*com.google.android.inputmethod.latin:style/HeaderInner.SearchBar">
         <item name="android:layout_height">wrap_content</item>
@@ -49,22 +49,22 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:divider">@*com.google.android.inputmethod.latin:drawable/search_candidate_divider</item>
         <item name="android:showDividers">middle</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="SearchHeader">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="SearchHeader.NonPrime" parent="@*com.google.android.inputmethod.latin:style/SearchHeader">
         <item name="android:tag">.keyboard-search-header-area.keyboard-body-area</item>
         <item name="android:background">@*android:color/timepicker_default_background_material</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="SearchHeader.Prime" parent="@*com.google.android.inputmethod.latin:style/SearchHeader">
         <item name="android:tag">.keyboard-header-area</item>
         <item name="android:background">@*android:color/timepicker_default_background_material</item>
-		<item name="android:backgroundTint">@*android:color/timepicker_default_background_material</item>
+		<item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="SearchResultQueryTextView">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>

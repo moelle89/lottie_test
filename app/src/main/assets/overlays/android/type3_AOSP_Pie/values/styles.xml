@@ -64,7 +64,7 @@
 		<item name="android:colorError">@*android:color/accent_material_dark</item>
 		<item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
 		<item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
-		<item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+		<item name="android:textColorSecondary">#BAAAC0CA</item>
     </style>
 	
     <style name="Theme.Material.SearchBar" parent="@android:style/Theme.Material.Panel" />    

@@ -89,7 +89,7 @@
     <style name="Base.V21.Theme.AppCompat.Dialog" parent="@*com.whatsapp:style/Base.V7.Theme.AppCompat.Dialog">
         <item name="android:windowElevation">@*com.whatsapp:dimen/abc_floating_window_z</item>
     </style>
-    <style name="Platform.AppCompat" parent="@*android:style/Theme.Material.NoActionBar">
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:textColorLink">@*android:color/secondary_text_default_material_dark</item>
@@ -100,7 +100,7 @@
         <item name="android:statusBarColor">@*android:color/background_dark</item>
         <item name="android:navigationBarColor">@*android:color/background_dark</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:textColorLink">@*android:color/secondary_text_default_material_dark</item>

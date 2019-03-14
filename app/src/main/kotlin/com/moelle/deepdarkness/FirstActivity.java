@@ -23,7 +23,7 @@ import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
 
-    private static final String DASHBOARD_HEAD = "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4";
+    //private static final String DASHBOARD_HEAD = "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4";
 
     private SimpleVideoView videoView;
 
@@ -34,7 +34,8 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
-
+        Uri DASHBOARD_HEAD = Uri.parse("android.resource://" + getPackageName() + "/"
+                + R.raw.dashboardhero);
         videoView = findViewById(id.dashboard_head);
         videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
             @Override

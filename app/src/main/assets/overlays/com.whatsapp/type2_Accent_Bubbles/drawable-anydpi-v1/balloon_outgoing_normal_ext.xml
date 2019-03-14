@@ -5,7 +5,7 @@
         android:bottom="4dp">
 
         <shape android:shape="rectangle" android:tint="@*android:color/accessibility_focus_highlight">
-            <corners android:radius="14dip" />
+            <corners android:topLeftRadius="14dp" android:bottomLeftRadius="14dp" android:bottomRightRadius="14dp" android:topRightRadius="6dp"/>
             <solid android:color="#000000" />
             <padding android:start="8dp" android:end="8dp" android:top="4.0dip" android:bottom="4.0dip" />
         </shape>

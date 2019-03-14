@@ -23,6 +23,6 @@
     <color name="purple_background">#000000</color>
 
     <color name="transparent_button_pressed">#44767676</color>
-    <color name="transparent_button_focused">#44c6c6c6</color>
+    <color name="transparent_button_focused">#BAAAC0CA</color>
 
 </resources>
