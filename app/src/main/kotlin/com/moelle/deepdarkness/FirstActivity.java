@@ -131,17 +131,15 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     public void ReplayIntro(View view) { ////button to repeat intro activity
-        findViewById(id.btn_play_again).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
                 PrefManager prefManager = new PrefManager(getApplicationContext());
                 prefManager.setFirstTimeLaunch(true);
 
                 startActivity(new Intent(FirstActivity.this, Welcome.class));
                 finish();
-            }
-        });
-    }
+     }
+
+
 
     public void hide (View v) { ////checkbox to hide icon launcher on drawer
         CheckBox checkBox = (CheckBox)v;

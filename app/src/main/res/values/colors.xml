@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1531DB</color>
     <color name="background">#000000</color><!-- #ff16171d -->
-    <color name="inactive">#2bcbd3ed</color>
+    <color name="inactive">#12CBD3ED</color>
     <color name="textColor">#fff7fbff</color>
     <color name="buttonFocused">#a3a3aece</color>
     <color name="buttonNormal">@color/inactive</color>

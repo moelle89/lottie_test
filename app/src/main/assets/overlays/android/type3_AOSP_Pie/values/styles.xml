@@ -176,8 +176,8 @@
      	<item name="android:colorBackgroundFloating">@*android:color/dim_foreground_light</item>
         <item name="android:windowBackground">@*android:color/legacy_primary</item>
 		<item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
-		<item name="android:colorEdgeEffect">@*android:color/accent_material_dark</item>
 		<item name="android:colorControlHighlight">@*android:color/holo_button_pressed</item>
+		<item name="android:colorEdgeEffect">@*android:color/accent_material_dark</item>
         <item name="android:colorForeground">#ffffffff</item>
         <item name="android:windowShowWallpaper">false</item>
 		<item name="android:colorPrimary">@*android:color/background_dark</item>
