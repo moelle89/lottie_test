@@ -212,5 +212,12 @@
 	
     <color name="picker_underline_color">@*android:color/accent_material_dark</color>
     <color name="sticker_update_badge_color">@*android:color/accent_material_dark</color>
-    <color name="sticker_update_badge_outline_color">@*android:color/accent_material_dark</color>
+    <color name="sticker_update_badge_outline_color">@*android:color/accent_material_dark</color>    
+	
+	<color name="settings_divider">@*android:color/transparent</color>	
+	<color name="settings_icon">@*android:color/accent_material_dark</color>
+	<color name="settings_profile_photo_outline">@*android:color/dim_foreground_light</color>
+	<color name="settings_item_subtitle_text">@*android:color/secondary_text_default_material_dark</color>
+	<color name="settings_item_title_text">@*android:color/white</color>
+
 </resources>
