@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.moelle.deepdarkness.GifDrawableImageViewTarget;
 import com.moelle.deepdarkness.R;
 import com.stephentuso.welcome.WelcomePage;
 import com.stephentuso.welcome.WelcomeUtils;
@@ -35,7 +36,9 @@ public class GlideFragment extends Fragment implements WelcomePage.OnChangeListe
 
         ImageView image_view = view.findViewById(R.id.test);
 
-        Glide.with(this).load("https://i.imgur.com/aQvGaFJ.gif").into(image_view);
+        Glide.with(this)
+                .load("https://i.imgur.com/aQvGaFJ.gif")
+                .into(new GifDrawableImageViewTarget(image_view, 1));
 
     }
 

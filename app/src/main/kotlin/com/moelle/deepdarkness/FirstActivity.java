@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
+import com.danikula.videocache.HttpProxyCacheServer;
 import com.google.android.material.snackbar.Snackbar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 
@@ -34,8 +35,8 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
-        Uri DASHBOARD_HEAD = Uri.parse("android.resource://" + getPackageName() + "/"
-                + R.raw.dashboardhero);
+        HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
+        String DASHBOARD_HEAD = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4");
         videoView = findViewById(id.dashboard_head);
         videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
             @Override
