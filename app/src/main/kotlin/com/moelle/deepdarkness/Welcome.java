@@ -6,7 +6,8 @@ import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.view.View;
 
-import com.moelle.deepdarkness.fragment.ExampleFragment;
+import com.moelle.deepdarkness.fragment.GlideFragment;
+import com.moelle.deepdarkness.fragment.LottieFragment;
 import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.FragmentWelcomePage;
 import com.stephentuso.welcome.ParallaxPage;
@@ -30,11 +31,15 @@ public class Welcome extends WelcomeActivity {
                         .background(R.color.background)
                 )
 
-                .page(new ParallaxPage(R.layout.parallax_root,
-                        "Does it only work on rooted devices?",
-                        "No! You only need Substratum and its Samsung-addon.")
-                        .background(R.color.background)
-                )
+                .page(new FragmentWelcomePage() {
+                    @Override
+                    protected Fragment fragment() {
+                        return new LottieFragment();
+                    }
+
+                }
+                .background(R.color.background))
+
                 .page(new ParallaxPage(R.layout.parallax_samsung,
                         "Only for Samsung devices",
                         "This theme is supporting the S8, S8+, Note8 and S7 (partial).")
@@ -44,11 +49,12 @@ public class Welcome extends WelcomeActivity {
                 .page(new FragmentWelcomePage() {
                     @Override
                     protected Fragment fragment() {
-                        return new ExampleFragment();
+                        return new GlideFragment();
                     }
 
                 }
                 .background(R.color.background))
+
                 .swipeToDismiss(true)
                 .exitAnimation(R.anim.slide_next_in)
                 .build();

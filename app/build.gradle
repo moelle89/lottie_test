@@ -83,6 +83,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.stephentuso:welcome:1.4.1'
     implementation 'com.danikula:videocache:2.7.1'
+    implementation 'com.airbnb.android:lottie:2.8.0'
 }
 
 // Themers: DO NOT MODIFY ANYTHING BELOW

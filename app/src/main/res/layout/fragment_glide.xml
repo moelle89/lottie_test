@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.moelle.deepdarkness.fragment.ExampleFragment"
+    tools:context="com.moelle.deepdarkness.fragment.GlideFragment"
     android:gravity="center"
     android:id="@+id/layout">
 
