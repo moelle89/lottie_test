@@ -17,7 +17,7 @@ import com.stephentuso.welcome.WelcomeUtils;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GlideFragment extends Fragment implements WelcomePage.OnChangeListener {
+public class Slide_03 extends Fragment implements WelcomePage.OnChangeListener {
 
     private ViewGroup rootLayout;
 
@@ -25,7 +25,7 @@ public class GlideFragment extends Fragment implements WelcomePage.OnChangeListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_glide, container, false);
+        return inflater.inflate(R.layout.slide_03, container, false);
     }
 
     @Override
@@ -34,10 +34,10 @@ public class GlideFragment extends Fragment implements WelcomePage.OnChangeListe
 
         rootLayout = (ViewGroup) view.findViewById(R.id.layout);
 
-        ImageView image_view = view.findViewById(R.id.test);
+        ImageView image_view = view.findViewById(R.id.slide_03);
 
         Glide.with(this)
-                .load("https://i.imgur.com/aQvGaFJ.gif")
+                .load("https://i.imgur.com/WDu8x5X.gif")
                 .into(new GifDrawableImageViewTarget(image_view, 1));
 
     }

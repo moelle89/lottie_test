@@ -6,8 +6,9 @@ import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.view.View;
 
-import com.moelle.deepdarkness.fragment.GlideFragment;
+import com.moelle.deepdarkness.fragment.Slide_03;
 import com.moelle.deepdarkness.fragment.LottieFragment;
+import com.moelle.deepdarkness.fragment.Slide_01;
 import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.FragmentWelcomePage;
 import com.stephentuso.welcome.ParallaxPage;
@@ -25,11 +26,12 @@ public class Welcome extends WelcomeActivity {
                 .backButtonNavigatesPages(false)
                 .bottomLayout(WelcomeConfiguration.BottomLayout.INDICATOR_ONLY)
 
-                .page(new BasicPage(R.drawable.fin2,
-                        "Welcome to DEEP DARKNESS",
-                        "Lets get some dark UI on your device")
-                        .background(R.color.background)
-                )
+                .page(new FragmentWelcomePage() {
+                    @Override
+                    protected Fragment fragment() {
+                        return new Slide_01();
+                    }}
+                    .background(R.color.background))
 
                 .page(new FragmentWelcomePage() {
                     @Override
@@ -49,10 +51,8 @@ public class Welcome extends WelcomeActivity {
                 .page(new FragmentWelcomePage() {
                     @Override
                     protected Fragment fragment() {
-                        return new GlideFragment();
-                    }
-
-                }
+                        return new Slide_03();
+                    }}
                 .background(R.color.background))
 
                 .swipeToDismiss(true)
