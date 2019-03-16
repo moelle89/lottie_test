@@ -27,6 +27,14 @@
         <item name="android:actionModeSelectAllDrawable">@*com.whatsapp:drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="android:actionModeShareDrawable">@*com.whatsapp:drawable/abc_ic_menu_share_mtrl_alpha</item>
     </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@android:style/Widget">
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+		<item name="android:backgroundTint">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:elevation">@*com.whatsapp:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.whatsapp:behavior_hideable">true</item>
+        <item name="*com.whatsapp:behavior_peekHeight">auto</item>
+        <item name="*com.whatsapp:behavior_skipCollapsed">false</item>
+    </style>
     <style name="Theme.App" parent="@*com.whatsapp:style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:statusBarColor">@*android:color/background_dark</item>

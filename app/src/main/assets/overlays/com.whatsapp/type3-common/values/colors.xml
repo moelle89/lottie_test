@@ -17,7 +17,7 @@
     <color name="action_mode_dark">@*android:color/background_dark</color>
     <color name="action_mode">@*android:color/white</color>
     <!-- Primary -->
-    <color name="primary">@*android:color/transparent</color>
+    <color name="primary">@*android:color/accent_material_dark</color>
     <color name="primary_dark">@*android:color/background_dark</color>
     <color name="primary_dark_voip">@*android:color/background_dark</color>
     <color name="primary_voip">@*android:color/background_dark</color>
@@ -108,8 +108,8 @@
     <color name="material_grey_50">@*android:color/highlighted_text_holo_dark</color>   
 	<color name="music_scrubber">@*android:color/highlighted_text_holo_dark</color>
     <color name="gdrive_setup_disabled_button_color">#4a777777</color>
-    <color name="highlighted_text_material_dark">#66787878</color>
-    <color name="highlighted_text_material_light">#66787878</color>
+    <color name="highlighted_text_material_dark">@*android:color/accessibility_focus_highlight</color>
+    <color name="highlighted_text_material_light">@*android:color/accessibility_focus_highlight</color>
     <color name="home_row_selection">@*android:color/dim_foreground_light</color>
 
     <color name="media_message_progress_indeterminate">#ffffffff</color>
@@ -132,7 +132,10 @@
     <color name="status_unseen">@*com.whatsapp:color/accent</color>
 	
     <color name="tooltip_background_dark">@*android:color/dim_foreground_light</color>
-    <color name="switch_thumb_normal_material_light">@*android:color/holo_orange_light</color>
+    <color name="switch_thumb_disabled_material_dark">@*android:color/holo_orange_light</color>
+    <color name="switch_thumb_disabled_material_light">@*android:color/white</color>
+    <color name="switch_thumb_normal_material_dark">@*android:color/lighter_gray</color>
+    <color name="switch_thumb_normal_material_light">@*android:color/white</color>
                                              
     <color name="link_color_outgoing">#ffffffff</color>
     <color name="link_color_incoming">@*android:color/accent_material_dark</color>
@@ -163,12 +166,12 @@
     <color name="notification_icon_bg_color">@*android:color/notification_default_color</color>
     <color name="notification_material_background_media_default_color">@*android:color/notification_default_color</color>
 <!-- accent -->
-	<color name="accent">@*android:color/accent_material_dark</color>
-    <color name="accent_dark">@*android:color/accent_material_dark</color>
+	<color name="accent">@*android:color/white</color>
+    <color name="accent_dark">@*android:color/white</color>
     <color name="accent_dark_30">@*android:color/ripple_material_dark</color>
-    <color name="accent_light">@*android:color/accent_material_dark</color>
-    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
-    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+    <color name="accent_light">@*android:color/white</color>
+    <color name="accent_material_dark">@*android:color/white</color>
+    <color name="accent_material_light">@*android:color/white</color>
     <color name="call_answer">@*android:color/accent_material_dark</color>
     <color name="search_text_highlight">@*android:color/accent_material_dark</color>
     <color name="live_location_arrow">@*android:color/accent_material_dark</color>
@@ -188,6 +191,17 @@
     <color name="tos_indicator_dark">@*android:color/accent_material_dark</color>
     <color name="tos_indicator_light">@*android:color/accent_material_dark</color>
     <color name="bouncing_lock_icon_locked">@*android:color/accent_material_dark</color>
+    <color name="qr_code_amount_text_color">@*android:color/accent_material_dark</color>
+    <color name="audio_picker_stop_button_progress">@*android:color/accent_material_dark</color>
+    <color name="settings_title_accent">@*android:color/accent_material_dark</color>
+    <color name="live_location_teal">@*android:color/accent_material_dark</color>
+    <color name="catalog_list_footer_text_color">@*android:color/accent_material_dark</color>
+    <color name="chats_filter">@*android:color/accent_material_dark</color>
+    <color name="list_item_selected">@*android:color/accessibility_focus_highlight</color>
+    <color name="payments_pill_text_highlight">@*android:color/accent_material_dark</color>
+    <color name="payments_pill_text_right">@*android:color/accessibility_focus_highlight</color>
+    <color name="payments_request_action_button">@*android:color/accent_material_dark</color>
+    <color name="payments_request_action_enable">@*android:color/accent_material_dark</color>
 <!-- #ffaaaaaa -->
     <color name="material_grey_100">#ffaaaaaa</color>
     <color name="secondary_text_default_material_dark">#ffaaaaaa</color>
@@ -219,5 +233,7 @@
 	<color name="settings_profile_photo_outline">@*android:color/dim_foreground_light</color>
 	<color name="settings_item_subtitle_text">@*android:color/secondary_text_default_material_dark</color>
 	<color name="settings_item_title_text">@*android:color/white</color>
+	
+	<color name="list_item_disabled">#40ffffff</color>
 
 </resources>

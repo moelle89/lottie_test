@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="btn_disabled">@*android:color/button_material_dark</color>
+    <color name="btn_disabled">@*android:color/dim_foreground_light</color>
 </resources>

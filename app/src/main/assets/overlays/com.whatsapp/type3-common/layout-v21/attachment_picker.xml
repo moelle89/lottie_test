@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.whatsapp.CircularRevealView android:layout_gravity="center_horizontal"
     android:id="@*com.whatsapp:id/paper_clip_layout"
-    android:backgroundTint="@*android:color/dim_foreground_light"
+    android:backgroundTint="@*android:color/facelock_spotlight_mask"
     android:paddingBottom="4.0dip"
     android:visibility="gone"
     android:clipChildren="false"

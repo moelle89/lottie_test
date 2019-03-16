@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="md_grey_900">@*android:color/background_dark</color>
+    <color name="md_grey_900">@*android:color/background_dark</color>    
+	<color name="md_grey_800">@*android:color/secondary_text_leanback_light</color>
 	<color name="md_white_1000">@*android:color/background_dark</color>
     <color name="material_grey_900">@*android:color/background_dark</color>
     <color name="md_grey_850">@*android:color/dim_foreground_light</color>
-	<color name="material_grey_850">@*android:color/dim_foreground_light</color>
+	<color name="material_grey_850">@*android:color/dim_foreground_light</color>	
+	<color name="ate_secondary_text_dark">@*android:color/lighter_gray</color>
+	<color name="md_teal_A400">@*android:color/accent_material_dark</color>
+    <color name="md_green_A200">@*android:color/accent_material_dark</color>
+    <color name="md_green_A700">@*android:color/accent_material_dark</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+	<color name="cardview_dark_background">@*android:color/secondary_text_leanback_light</color>
+	<color name="button_material_dark">@*android:color/button_material_dark</color>
+	<color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
+	<color name="eighty_percent_black_overlay">@*android:color/facelock_spotlight_mask</color>
+	<color name="material_grey_600">@*android:color/holo_orange_light</color>
+    <color name="material_grey_800">@*android:color/dim_foreground_light</color>
+	<color name="md_divider_dark_theme">@*android:color/user_icon_default_white</color>
+	<color name="md_grey_700">@*android:color/button_material_dark</color>
+    <color name="tooltip_background_dark">@*android:color/shadow</color>
+	<color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
+    <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+	<color name="twenty_percent_black_overlay">@*android:color/user_icon_default_white</color>
 </resources>

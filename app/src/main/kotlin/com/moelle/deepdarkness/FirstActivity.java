@@ -35,9 +35,13 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
-        HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
-        String DASHBOARD_HEAD = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4");
+        //HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
+        //String DASHBOARD_HEAD = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4");
+
+        Uri DASHBOARD_HEAD = Uri.parse("android.resource://" + getPackageName() + "/"
+                + R.raw.dashboardhero);
         videoView = findViewById(id.dashboard_head);
+
         videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
             @Override
             public void onPlaybackError(Exception e) {

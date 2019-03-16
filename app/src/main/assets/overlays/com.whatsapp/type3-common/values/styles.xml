@@ -17,7 +17,23 @@
         <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
         <item name="android:navigationBarColor">@*android:color/background_dark</item>
     </style>
-
+    <style name="WhatsAppButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@*android:color/lighter_gray</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+		<item name="android:backgroundTint">@null</item>		
+		<item name="android:foreground">@*com.whatsapp:drawable/btn_green_small</item>
+    </style>
     <style name="Theme.App.Home" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:fastScrollThumbDrawable">@*com.whatsapp:drawable/fastscroll_thumb_home</item>
@@ -185,13 +201,15 @@
         <item name="*com.whatsapp:colorPrimaryDark">@android:color/transparent</item>
     </style>
     <style name="Theme.Prefs" parent="@*com.whatsapp:style/Theme.App">
+		<item name="android:colorControlActivated">@*android:color/highlighted_text_holo_dark</item>    
         <item name="android:icon">@null</item>
         <item name="*com.whatsapp:icon">@null</item>
 		<item name="android:backgroundTint">@*android:color/background_dark</item>
 		<item name="android:windowBackground">@*android:color/background_dark</item>		
     </style>
     <style name="Theme.App.SettingsLight" parent="@*com.whatsapp:style/Theme.Prefs">
-        <item name="android:backgroundTint">@*android:color/background_dark</item>     
+        <item name="android:backgroundTint">@*android:color/background_dark</item>            
+		<item name="android:colorControlActivated">@*android:color/highlighted_text_holo_dark</item>     
 		<item name="*com.whatsapp:settingsBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.whatsapp:settingsDividerColor">@*com.whatsapp:color/settings_divider</item>
         <item name="*com.whatsapp:settingsIconColor">@*com.whatsapp:color/settings_icon</item>

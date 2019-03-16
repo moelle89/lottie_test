@@ -31,16 +31,9 @@ public class Welcome extends WelcomeActivity {
                     protected Fragment fragment() {
                         return new Slide_01();
                     }}
-                    .background(R.color.background))
+                    .background(R.color.background)
+                )
 
-                .page(new FragmentWelcomePage() {
-                    @Override
-                    protected Fragment fragment() {
-                        return new LottieFragment();
-                    }
-
-                }
-                .background(R.color.background))
 
                 .page(new ParallaxPage(R.layout.parallax_samsung,
                         "Only for Samsung devices",
@@ -53,7 +46,8 @@ public class Welcome extends WelcomeActivity {
                     protected Fragment fragment() {
                         return new Slide_03();
                     }}
-                .background(R.color.background))
+                .background(R.color.background)
+                )
 
                 .swipeToDismiss(true)
                 .exitAnimation(R.anim.slide_next_in)

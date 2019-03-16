@@ -3,6 +3,7 @@ package com.moelle.deepdarkness;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.VideoView;
@@ -23,6 +24,7 @@ public class SplashActivity extends AppCompatActivity {
 			HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
 			String proxyUrl = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/splash.mp4");
 			videoView.setVideoPath(proxyUrl);
+
 			videoView.setOnCompletionListener(new OnCompletionListener() {
 
 				public void onCompletion(MediaPlayer mp) {
