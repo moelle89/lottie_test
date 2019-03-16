@@ -17,4 +17,10 @@
     <dimen name="attach_popup_horizontal_margin">0.0dip</dimen>
     <dimen name="attach_popup_top_margin">0.0dip</dimen>
     <dimen name="attach_popup_vertical_padding">25.0dip</dimen>
+    <dimen name="call_avatar_view_elevation">4.0dip</dimen>
+    <dimen name="call_avatar_view_elevation_difference">0.0dip</dimen>
+    <dimen name="bouncing_lock_elevation">0.0dip</dimen>
+    <dimen name="abc_action_bar_elevation_material">0.0dip</dimen>
+    <dimen name="compat_control_corner_material">10.0dip</dimen>
+    <dimen name="abc_control_corner_material">10.0dip</dimen>	
 </resources>

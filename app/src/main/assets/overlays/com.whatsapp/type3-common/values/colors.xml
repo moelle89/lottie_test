@@ -166,12 +166,13 @@
     <color name="notification_icon_bg_color">@*android:color/notification_default_color</color>
     <color name="notification_material_background_media_default_color">@*android:color/notification_default_color</color>
 <!-- accent -->
-	<color name="accent">@*android:color/white</color>
-    <color name="accent_dark">@*android:color/white</color>
-    <color name="accent_dark_30">@*android:color/ripple_material_dark</color>
-    <color name="accent_light">@*android:color/white</color>
-    <color name="accent_material_dark">@*android:color/white</color>
-    <color name="accent_material_light">@*android:color/white</color>
+	<color name="accent">@*android:color/accent_material_dark</color>
+    <color name="accent_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_light">@*android:color/accent_material_dark</color>
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+	
+	<color name="accent_dark_30">@*android:color/ripple_material_dark</color>
     <color name="call_answer">@*android:color/accent_material_dark</color>
     <color name="search_text_highlight">@*android:color/accent_material_dark</color>
     <color name="live_location_arrow">@*android:color/accent_material_dark</color>
