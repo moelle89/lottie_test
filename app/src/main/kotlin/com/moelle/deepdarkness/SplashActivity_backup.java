@@ -1,15 +1,18 @@
 package com.moelle.deepdarkness;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
 import android.view.MotionEvent;
 import android.widget.VideoView;
 
-public class SplashActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.danikula.videocache.HttpProxyCacheServer;
+
+public class SplashActivity_backup extends AppCompatActivity {
 
 	VideoView videoView;
 	@Override
@@ -18,10 +21,9 @@ public class SplashActivity extends Activity {
 		try{
 			videoView = new VideoView(this);
 			setContentView(videoView);
-			//Uri video = Uri.parse("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/splash.mp4");
-			Uri video = Uri.parse("android.resource://" + getPackageName() + "/"
-					+ R.raw.splash);
-			videoView.setVideoURI(video);
+			HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
+			String proxyUrl = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/splash.mp4");
+			videoView.setVideoPath(proxyUrl);
 
 			videoView.setOnCompletionListener(new OnCompletionListener() {
 
@@ -32,22 +34,25 @@ public class SplashActivity extends Activity {
 
 			});
 			videoView.start();
-		} catch(Exception ex) {
+		} catch(Exception ignored) {
 			jump();
 		}
 	}
+
 	//  Uncomment this function if you want the user to be able to skip this screen
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		try {
 			videoView.stopPlayback();
-		} catch(Exception ex) {}
+		} catch (Exception ignored) {
+
+		}
 		jump();
 		return true;
 	}
 
-	private void jump() {if(isFinishing())
-		return;
+	private void jump() {
+		if(isFinishing()) return;
 		//startActivity(new Intent(this, Welcome.class));
 		startActivity(new Intent(this, FirstActivity.class));
 		//overridePendingTransition(0, 0);

@@ -52,14 +52,6 @@ public class FirstActivity extends AppCompatActivity {
         videoView.start(DASHBOARD_HEAD);
 
 
-        //ImageView image_view = findViewById(R.id.gplus);
-        //Glide.with(this).load("https://i.imgur.com/Js6xhDy.gif").into(image_view);
-
-        //ImageView image_view3 = findViewById(id.image_view);
-        //Glide.with(this).load("https://i.imgur.com/omwffNF.gif").into(image_view3);
-        //ImageView image_view3 = findViewById(id.image_view);
-        //Glide.with(this).load("https://i.imgur.com/ehWybTA.gif").into(image_view3);
-
         ImageView image_view2 = findViewById(id.paypal);
         Glide.with(this).load("https://i.imgur.com/eU8ZRxo.gif").into(image_view2);
 

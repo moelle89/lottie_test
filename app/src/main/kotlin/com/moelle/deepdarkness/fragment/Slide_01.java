@@ -37,7 +37,7 @@ public class Slide_01 extends Fragment implements WelcomePage.OnChangeListener {
         ImageView image_view = view.findViewById(R.id.slide_01);
 
         Glide.with(this)
-                .load("https://i.imgur.com/Dh2ZaSq.gif")
+                .load("https://i.imgur.com/tVoXBc2.gif")
                 .into(new GifDrawableImageViewTarget(image_view, 1));
 
     }
