@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="search_card_text_action_color_m2">@*android:color/secondary_text_default_material_dark</color>
+    <color name="search_card_text_action_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="search_card_blue_text_color">@*android:color/white</color>
+    <color name="search_card_blue_text_color_m2">@*android:color/white</color>
+    <color name="search_card_action_color_dark">@*android:color/white</color>
+    <color name="search_card_action_color_dark_m2">@*android:color/white</color>
+    <color name="search_candidate_text_color_material_light_m2">@*android:color/lighter_gray</color>
+    <color name="search_card_action_color">@*android:color/holo_orange_light</color>
+    <color name="search_card_action_color_m2">@*android:color/holo_orange_light</color>
+    <color name="search_card_green_text_color">@*android:color/accent_material_dark</color>
+    <color name="search_card_green_text_color_m2">@*android:color/accent_material_dark</color>
+	
+	
     <color name="google_white">@*android:color/user_icon_default_white</color>
 
     <color name="item_board_background">@*android:color/background_dark</color>
@@ -124,7 +137,7 @@
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#4dffffff</color>
     <color name="quantum_black_hint_text">#4dffffff</color>
-    <color name="quantum_black_text">#ffffffff</color>
+
     <color name="quantum_white_divider">#00000000</color>
     <color name="ripple_material_dark">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</color>
     <color name="ripple_material_light">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</color>
@@ -146,4 +159,11 @@
 	<color name="google_grey700">@*android:color/secondary_text_default_material_dark</color>
 	
     <color name="sticker_icon_background_color_m2">@*android:color/user_icon_default_white</color>
+	
+    <color name="quantum_black_100">#ffffffff</color>
+    <color name="quantum_black_divider">#00000000</color>
+    <color name="quantum_black_secondary_text">@*android:color/secondary_text_default_material_dark</color>
+	<color name="quantum_black_text">#ffffffff</color>
+
+    <color name="clipboard_grey">@*android:color/holo_orange_light</color>
 </resources>
