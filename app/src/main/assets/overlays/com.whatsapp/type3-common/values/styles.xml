@@ -210,15 +210,17 @@
         <item name="*com.whatsapp:colorPrimaryDark">@android:color/transparent</item>
     </style>
     <style name="Theme.Prefs" parent="@*com.whatsapp:style/Theme.App">
-		<item name="android:colorControlActivated">@*android:color/highlighted_text_holo_dark</item>    
+		<item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+		<item name="*com.whatsapp:colorAccent">@*android:color/white</item>	
         <item name="android:icon">@null</item>
         <item name="*com.whatsapp:icon">@null</item>
 		<item name="android:backgroundTint">@*android:color/background_dark</item>
 		<item name="android:windowBackground">@*android:color/background_dark</item>		
     </style>
     <style name="Theme.App.SettingsLight" parent="@*com.whatsapp:style/Theme.Prefs">
-        <item name="android:backgroundTint">@*android:color/background_dark</item>            
-		<item name="android:colorControlActivated">@*android:color/highlighted_text_holo_dark</item>     
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+		<item name="*com.whatsapp:colorAccent">@*android:color/highlighted_text_holo_dark</item>		
+		<item name="android:colorControlActivated">@*android:color/accent_material_dark</item>     
 		<item name="*com.whatsapp:settingsBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.whatsapp:settingsDividerColor">@*com.whatsapp:color/settings_divider</item>
         <item name="*com.whatsapp:settingsIconColor">@*com.whatsapp:color/settings_icon</item>

@@ -23,7 +23,7 @@
     <color name="primary_voip">@*android:color/background_dark</color>
     <color name="about_statusbar">@*android:color/background_dark</color>
     <color name="divider_gray">@*android:color/background_dark</color>     
-    <color name="black">@*android:color/background_dark</color>
+    <color name="black">@*android:color/white</color>
     <color name="primary_dark_dimmed">@*android:color/background_dark</color>
     <color name="announcement_footer_background">@*android:color/background_dark</color>
     <color name="blank_reply_background">@*android:color/background_dark</color>
@@ -99,7 +99,7 @@
     <color name="secondary_text_disabled_material_light">#36ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80ffffff</color>
     <color name="description_gray">#FFE2E2E2</color>                                               
-    <color name="dark_gray">#FFC4C4C4</color>
+    <color name="dark_gray">@*android:color/holo_orange_light</color>
     <color name="status_normal">#ffffffff</color>
     <color name="conversations_text_gray">@*android:color/secondary_text_default_material_dark</color>
     <color name="edit_text_counter">@*android:color/secondary_text_default_material_dark</color>                                               
@@ -237,4 +237,9 @@
 	
 	<color name="list_item_disabled">#40ffffff</color>
 
+    <color name="settings_disabled_text">@*android:color/holo_orange_light</color>
+    <color name="settings_inline_link_color">@*android:color/accent_material_dark</color>
+    <color name="settings_inline_link_color_selected">@*android:color/highlighted_text_holo_dark</color>
+    <color name="settings_network_usage_arrow_tint">@*android:color/lighter_gray</color>
+    <color name="settings_network_usage_up_down_text_color">@*android:color/lighter_gray</color>
 </resources>

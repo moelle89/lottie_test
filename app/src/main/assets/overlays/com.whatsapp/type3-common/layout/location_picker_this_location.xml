@@ -17,8 +17,7 @@
             android:layout_gravity="center"
             android:background="@*com.whatsapp:drawable/send_current_location_background"
             android:scaleType="center"
-            android:src="@*com.whatsapp:drawable/ic_current_location"
-            android:tint="@*com.whatsapp:color/list_item_verified_title" />
+            android:src="@*com.whatsapp:drawable/ic_current_location" />
     </FrameLayout>
 
     <LinearLayout

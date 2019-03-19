@@ -9,7 +9,7 @@
         android:id="@*com.whatsapp:id/toolbar_holder"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@*com.whatsapp:color/white"
+        android:background="@*com.whatsapp:color/background_material_light"
         android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
 
         <include layout="@*com.whatsapp:layout/toolbar" />
@@ -150,7 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:animateLayoutChanges="true"
-            android:background="@*com.whatsapp:color/white"
+            android:background="@*com.whatsapp:color/background_material_light"
             android:clickable="true"
             android:clipChildren="false">
 
@@ -417,7 +417,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@*com.whatsapp:color/white"
+            android:background="@*com.whatsapp:color/background_material_light"
             android:clickable="true"
             android:clipChildren="false"
             android:visibility="gone">

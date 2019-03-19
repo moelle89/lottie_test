@@ -2,6 +2,13 @@
 <resources>
     <color name="google_white">@*android:color/user_icon_default_white</color>
 
+    <color name="item_board_background">@*android:color/background_dark</color>
+    <color name="item_icon_background_color">@*android:color/background_dark</color>
+    <color name="item_board_text_color">#ddffffff</color>
+	
+    <color name="add_clip_item_dialog_background">@*android:color/facelock_spotlight_mask</color>
+    <color name="add_clip_item_dialog_button_label">@*android:color/accent_material_dark</color>
+    <color name="add_clip_item_dialog_title">@*android:color/lighter_gray</color>
     <color name="cardview_light_background">@*android:color/background_dark</color>
 	<color name="material_deep_teal_200">@*android:color/accent_material_dark</color>    
 	<color name="slide_indicator_material_dark_theme">@*android:color/accent_material_dark</color>

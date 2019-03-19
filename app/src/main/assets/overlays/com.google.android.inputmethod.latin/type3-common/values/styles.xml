@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AlertDialog.AppCompat.Light" parent="@*com.google.android.inputmethod.latin:style/Base.AlertDialog.AppCompat" />
+    <style name="AddClipItemDialogView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_padding_top</item>
+        <item name="android:paddingBottom">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_margin_bottom</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_padding_start</item>
+        <item name="android:paddingEnd">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_padding_end</item>
+        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_margin_start</item>
+        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/add_clip_item_dialog_margin_end</item>
+		<item name="android:backgroundTint">#24B3D1E3</item>		
+		<item name="android:background">@*android:color/background_dark</item>
+    </style>
     <style name="SearchHeaderInnerView">
         <item name="android:orientation">vertical</item>
         <item name="android:id">@*com.google.android.inputmethod.latin:id/search_header_inner_view</item>

@@ -3,12 +3,12 @@
     android:enterFadeDuration="@android:integer/config_mediumAnimTime"
     android:exitFadeDuration="@android:integer/config_mediumAnimTime">
     <item android:state_checked="true">
-        <shape android:shape="rectangle" android:useLevel="false" android:tint="?android:attr/colorControlActivated"
+        <shape android:shape="rectangle" android:useLevel="false" android:tint="?android:attr/textColorPrimary"
             android:visible="true">
 			<solid android:color="#64008EC2" />
             <corners android:radius="25.0dip" />
             <size android:width="21.0dip" android:height="21.0dip" />
-            <stroke android:width="1.2dp" android:color="?android:attr/colorControlActivated" />
+            <stroke android:width="1.2dp" android:color="?android:attr/textColorPrimary" />
         </shape>
     </item>
     <item android:state_checked="false">

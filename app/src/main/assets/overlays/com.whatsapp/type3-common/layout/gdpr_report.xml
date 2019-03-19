@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@*com.whatsapp:id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:id="@*com.whatsapp:id/gdpr_report_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/settings_account_info" android:scaleType="center" />
+                <com.whatsapp.TextEmojiLabel android:textSize="16.0sp" android:textColor="@*android:color/lighter_gray" android:gravity="left" android:id="@*com.whatsapp:id/gdpr_report_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:lineSpacingExtra="4.0dip" />
+            </LinearLayout>
+            <View android:background="@*com.whatsapp:color/settings_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+            <FrameLayout android:id="@*com.whatsapp:id/gdpr_report_button" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_gravity="center|left" android:id="@*com.whatsapp:id/gdpr_report_button_icon" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/ic_settings_terms_policy" android:tint="@*com.whatsapp:color/settings_icon" />
+                <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:paddingLeft="72.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaTextView android:textSize="16.0sp" android:textColor="@*com.whatsapp:color/settings_item_title_text" android:id="@*com.whatsapp:id/gdpr_report_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/gdpr_report_request" android:singleLine="true" />
+                    <com.whatsapp.WaTextView android:textSize="@*com.whatsapp:dimen/settings_subtitle_text_size" android:textColor="@*com.whatsapp:color/settings_item_subtitle_text" android:id="@*com.whatsapp:id/gdpr_report_button_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+            <View android:background="@*com.whatsapp:color/settings_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+            <FrameLayout android:id="@*com.whatsapp:id/gdpr_report_delete" android:background="?android:selectableItemBackground" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_gravity="center|left" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/ic_action_delete" android:tint="@*com.whatsapp:color/red_button_text" />
+                <com.whatsapp.WaTextView android:textSize="16.0sp" android:textColor="@*com.whatsapp:color/settings_item_title_text" android:gravity="center_vertical" android:layout_gravity="center|left" android:paddingLeft="72.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/gdpr_report_delete" android:singleLine="true" />
+            </FrameLayout>
+            <View android:id="@*com.whatsapp:id/gdpr_report_delete_divider" android:background="@*com.whatsapp:color/settings_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+            <com.whatsapp.WaTextView android:textSize="@*com.whatsapp:dimen/settings_subtitle_text_size" android:textColor="@*com.whatsapp:color/settings_item_subtitle_text" android:id="@*com.whatsapp:id/gdpr_report_footer" android:paddingLeft="24.0dip" android:paddingTop="8.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
