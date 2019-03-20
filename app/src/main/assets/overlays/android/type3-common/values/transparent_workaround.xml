@@ -11,7 +11,7 @@
     <color name="user_icon_8">@*android:color/background_floating_material_dark</color><!-- background_floating_material_dark solid/trans -->   
 	<color name="user_icon_7">@*android:color/dim_foreground_light</color><!-- dim_foreground_light solid/trans -->
     <color name="keyguard_avatar_frame_shadow_color">@*android:color/secondary_text_leanback_light</color><!-- notifications_bg bridge solid/trans -->	
-    <color name="legacy_control_normal">@*android:color/dim_foreground_light</color><!-- notifications_bg -->	
+	<color name="legacy_control_normal">@*android:color/dim_foreground_light</color><!-- notifications_bg -->	
 	<color name="user_icon_6">@*android:color/primary_material_dark</color><!-- primary_material_dark solid/trans -->	
 	<color name="user_icon_5">@*android:color/timepicker_default_background_material</color><!-- timepicker_default_background_material solid/trans -->
 	<color name="user_icon_3">@*android:color/background_dark</color><!-- trans/solid bridge of qs panel, notifications etc.  -->

@@ -17,26 +17,4 @@
     <color name="dim_foreground_inverse_disabled_holo_light">#E3FDFEFF</color> 
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">#ffffff</color>
-    
-	
-	<!-- hardcoded notifications fix 
-    <style name="Widget.Material.Notification.MessagingName" parent="@*android:style/Widget.Material.TextView">
-        <item name="*android:textAppearance">@*android:style/TextAppearance.Material.Notification.Title</item>
-        <item name="*android:ellipsize">end</item>
-        <item name="*android:layout_width">wrap_content</item>
-        <item name="*android:layout_height">wrap_content</item>
-        <item name="*android:shadowColor">@*android:color/transparent</item>
-        <item name="*android:shadowRadius">0.0</item>
-    </style>
-    <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.Notification.Text">
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:shadowColor">@*android:color/transparent</item>
-        <item name="android:shadowRadius">0.0</item>
-    </style>
-    <style name="Widget.Material.Notification.Text" parent="@*android:style/Widget.Material.TextView">
-        <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
-        <item name="android:lineHeight">20.0sp</item>
-    </style>-->	
 </resources> 
