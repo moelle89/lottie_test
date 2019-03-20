@@ -114,8 +114,8 @@
 
     <color name="media_message_progress_indeterminate">#ffffffff</color>
     <color name="mention_annotation_on_dark">#7fffffff</color>
-    <color name="mention_preview_dark">#ffdddddd</color>
-    <color name="body_light_gray">#ffdddddd</color>
+    <color name="mention_preview_dark">@*android:color/lighter_gray</color>
+    <color name="body_light_gray">@*android:color/lighter_gray</color>
     <color name="media_view_action_bar_background">#33000000</color>
     <color name="media_view_footer_background">#66000000</color>
 
@@ -219,8 +219,8 @@
     <color name="white_20">#33ffffff</color>
     <color name="white_40">#66ffffff</color>
     <color name="npci_text_disabled_light">#4dffffff</color>
-    <color name="npci_text_secondary_dark">#b3ffffff</color>
-    <color name="npci_text_secondary_light">#b3ffffff</color>
+    <color name="npci_text_secondary_dark">@*android:color/secondary_text_default_material_dark</color>
+    <color name="npci_text_secondary_light">@*android:color/secondary_text_default_material_dark</color>
     <color name="npci_text_tertiary_dark">#61ffffff</color>
     <color name="live_location_status_bar_text">#84ffffff</color>
     <color name="payments_status_gray">#4cffffff</color>

@@ -105,7 +105,7 @@
                                 android:scrollbarAlwaysDrawVerticalTrack="true"
                                 android:scrollbarStyle="outsideOverlay"
                                 android:textColor="#ffffff"
-                                android:textColorHint="#b3FFFFFF"
+                                android:textColorHint="@*android:color/secondary_text_default_material_dark"
                                 android:layout_gravity="center_vertical"
                                 android:id="@*com.whatsapp:id/entry"
                                 android:background="@null"

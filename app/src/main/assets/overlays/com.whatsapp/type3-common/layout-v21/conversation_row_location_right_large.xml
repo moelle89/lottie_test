@@ -96,7 +96,7 @@
 
             <TextView
                 android:textSize="@*com.whatsapp:dimen/conversation_location_address"
-                android:textColor="#b3FFFFFF"
+                android:textColor="@*android:color/secondary_text_default_material_dark"
                 android:ellipsize="end"
                 android:gravity="left"
                 android:id="@*com.whatsapp:id/place_address"
@@ -109,7 +109,7 @@
 
             <TextView
                 android:textSize="@*com.whatsapp:dimen/conversation_location_host"
-                android:textColor="#b3FFFFFF"
+                android:textColor="@*android:color/secondary_text_default_material_dark"
                 android:ellipsize="start"
                 android:id="@*com.whatsapp:id/host_view"
                 android:paddingLeft="8.0dip"

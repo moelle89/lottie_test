@@ -34,7 +34,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:textColor="#b3ffffff"
+                android:textColor="@*android:color/secondary_text_default_material_dark"
                 android:gravity="left"
                 android:id="@*com.whatsapp:id/remaining"
                 android:paddingLeft="12.0dip"

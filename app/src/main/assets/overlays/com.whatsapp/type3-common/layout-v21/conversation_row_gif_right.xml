@@ -95,7 +95,7 @@
 
                 <com.whatsapp.TextEmojiLabel
                     android:textSize="@*com.whatsapp:dimen/conversation_text_row_tv"
-                    android:textColor="#b3FFFFFF"
+                    android:textColor="@*android:color/secondary_text_default_material_dark"
                     android:layout_gravity="left"
                     android:id="@*com.whatsapp:id/caption"
                     android:paddingLeft="8.0dip"
