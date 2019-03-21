@@ -24,7 +24,9 @@
 	<color name="search_suggestion_entry_text_color">#ff7c8fa2</color>
 
 <!-- red accents -->
-    <color name="theme_main_color_primary">#fff62b48</color><!-- #ff090a0c -->
+    <color name="theme_main_color_primary">#fff62b48</color><!-- #ff090a0c -->      
+	<color name="yt_youtube_red">#fff62b48</color><!-- #ff090a0c -->    
+	<color name="gallery_camera_record_button_record_circle_color">#fff62b48</color><!-- #ff090a0c -->
     <color name="theme_main_color_primary_dark">#fff62b48</color><!-- #ff090a0c -->
 	<color name="theme_main_color_accent">#fff62b48</color>
     <color name="color_primary">#fff62b48</color>    
@@ -389,14 +391,14 @@
     <color name="yt_text_3_light">#ff7c8fa2</color>
     <color name="yt_static_grey">@*android:color/holo_orange_light</color>    
 	<color name="tab_content_color_dark">@*android:color/holo_orange_light</color>
-    <color name="yt_static_white">@*android:color/background_dark</color>
+    <color name="yt_static_white">#ffffffff</color>
     <color name="yt_text_1_dark">#ffffffff</color>
     <color name="yt_text_2_dark">#ffcddbe0</color>
     <color name="yt_text_3_dark">#ff7c8fa2</color>
 	
 <!-- -->
     <color name="navigationbar_background_light">@*android:color/background_dark</color>
-    <color name="as_good_as_white">@*android:color/background_dark</color>
+    <color name="as_good_as_white">@*android:color/lighter_gray</color>
     <color name="lc_white">@*android:color/background_dark</color>
     <color name="quantum_white_100">@*android:color/background_dark</color>
     <color name="reel_window_light_background_color">@*android:color/background_dark</color>

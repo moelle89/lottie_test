@@ -14,9 +14,14 @@
     <color name="notification_action_list">@*android:color/user_icon_5</color><!--notification_shade/dim-->         
 	<color name="notification_action_list_dark">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
 	<!-- black-white-bridge of systemUI for notifications -->
-    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
+    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/secondary_text_leanback_light</color> 
 	<!-- cant be transparent -->
-	<color name="notification_material_background_color">#00ffffff</color>
+	<color name="notification_material_background_color">#00FFFFFF</color>
+	
+    <style name="Widget.Material.Notification.Text" parent="@*android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
+        <item name="android:lineHeight">20.0sp</item>
+    </style>
 	
 	<!-- hardcoded notifications fix -->	
     <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.TextView">

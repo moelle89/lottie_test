@@ -14,7 +14,7 @@
     <color name="notification_action_list">@*android:color/timepicker_default_background_material</color>    
 	<color name="notification_action_list_dark">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
 	<!-- black-white-bridge of systemUI for notifications -->
-    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
+    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/secondary_text_leanback_light</color> 
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">#00ffffff</color>
 	

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*com.whatsapp:id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@*com.whatsapp:id/video_playback_container" android:background="@*android:color/background_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@*com.whatsapp:id/video_playback_container_overlay" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.whatsapp.statusplayback.StatusPlaybackPager android:id="@*com.whatsapp:id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@*com.whatsapp:id/overlay_container" android:background="@*android:color/background_leanback_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
