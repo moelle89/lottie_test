@@ -3,9 +3,11 @@
 	<style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar.Solid">
 		<item name="android:background">@*android:drawable/status_bar_closed_default_background</item>
         <item name="android:elevation">0.0dp</item>
+        <item name="android:contentInsetStart">@*com.android.settings:dimen/actionbar_contentInsetStart</item>
     </style>
     <style name="Theme.ActionBar.SubSettings" parent="@*com.android.settings:style/Theme.ActionBar">
 		<item name="android:background">@*android:drawable/status_bar_closed_default_background</item>
+        <item name="android:contentInsetStart">@*com.android.settings:dimen/actionbar_subsettings_contentInsetStart</item>
     </style>
     <style name="SuggestionConditionStyle">
 		<item name="android:background">@*com.android.settings:drawable/switchbar_background</item>	

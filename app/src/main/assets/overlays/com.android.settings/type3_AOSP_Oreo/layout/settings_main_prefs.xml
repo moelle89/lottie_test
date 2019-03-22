@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.android.settings.widget.SwitchBar android:theme="@*com.android.settings:style/ThemeOverlay.SwitchBar.Settings" android:id="@*com.android.settings:id/switch_bar" android:background="@*com.android.settings:drawable/switchbar_background" android:backgroundTint="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+        <FrameLayout android:id="@*com.android.settings:id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@*com.android.settings:id/button_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:id="@*com.android.settings:id/back_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@null" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <Button android:id="@*com.android.settings:id/skip_button" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@*android:string/save_password_label" />
+            <Button android:id="@*com.android.settings:id/next_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@*android:string/mediasize_na_junior_legal" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
