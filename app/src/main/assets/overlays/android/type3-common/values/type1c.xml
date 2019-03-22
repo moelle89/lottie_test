@@ -2,7 +2,8 @@
 <resources>
 	<color name="background_dark">#ff16171d</color><!-- app_background -->
 	<color name="timepicker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
-	<color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->	
+	<color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->		
+	<color name="bright_foreground_light_disabled">#BF16171D</color><!-- app background_alpha 75% -->
 	<color name="background_leanback_dark">#AD191a21</color><!-- app background_alpha 65% -->
     <color name="facelock_spotlight_mask">#DC16171D</color><!-- settings background_alpha -->
 	<color name="background_floating_material_dark">@*android:color/dim_foreground_light</color><!-- bg_tint_solid -->
