@@ -12,15 +12,15 @@
         android:required="false" /> <!-- Set to true for OMS-rom only block to be enabled -->
 
     <application
-        android:name=".DDApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/ThemeName"
         android:supportsRtl="true"
         android:theme="@style/Circular"
         tools:node="replace"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:extractNativeLibs="false">>
         <!-- Activity for Splashscreen -Intro and Firebase notification -->
         <activity
             android:name=".SplashActivity"
@@ -43,9 +43,13 @@
 
         <activity android:name=".Welcome" android:theme="@style/GeneralWelcomeScreenTheme"/>
 
-        <activity android:name="com.moelle.deepdarkness.SubstratumLauncher" android:theme="@style/DialogStyle" >
+        <activity android:name=".SubstratumLauncher" android:theme="@style/DialogStyle" >
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="projekt.substratum.lite.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <intent-filter>

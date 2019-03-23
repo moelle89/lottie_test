@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Circular" parent="AppTheme.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
         <item name="android:colorControlActivated">@color/orange_background</item>
         <item name="android:colorControlHighlight">@color/inactive</item>
         <item name="colorPrimary">@color/background</item>
@@ -24,6 +25,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Circular.NoActionBar">
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
         <item name="android:colorControlActivated">@color/orange_background</item>
         <item name="android:colorControlHighlight">@color/inactive</item>
         <item name="android:windowAnimationStyle">@style/Animation</item>
