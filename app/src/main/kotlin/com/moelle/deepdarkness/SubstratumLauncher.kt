@@ -201,15 +201,6 @@ class SubstratumLauncher : AppCompatActivity() {
         title.text = getString(R.string.launch_dialog_title)
 
         /*Buttons*/
-        val support = view.findViewById(R.id.ic_support) as ImageButton
-        support.setImageResource(R.drawable.ic_support)
-        support.setOnClickListener { _ ->
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_support))))
-        }
-        val textSupportLink = view.findViewById(R.id.textSupportLink) as Button
-        textSupportLink.setOnClickListener { _ ->
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_support))))
-        }
         val cont = view.findViewById(R.id.ic_continue) as ImageButton
         cont.setImageResource(R.drawable.ic_continue)
         cont.setOnClickListener { _ ->

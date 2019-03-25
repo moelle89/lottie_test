@@ -4,7 +4,7 @@
     <layer-list>
         <item>
             <shape>
-                <gradient android:startColor="@android:color/transparent" android:endColor="#ff000000" android:angle="90.0" />
+                <gradient android:startColor="#D016171D" android:endColor="#0D16171D" android:angle="-90.0" />
                 <corners android:radius="16dp" />
                 <stroke
                     android:width="2.0dp"
@@ -13,7 +13,7 @@
         </item>
         <item>
             <shape>
-                <gradient android:startColor="#20000000" android:endColor="#ff000000" android:angle="90.0" />
+                <gradient android:startColor="@android:color/transparent" android:endColor="#CB000000" android:angle="90.0" />
                 <corners android:radius="16dp" />
                 <stroke
                     android:width="2.0dp"
