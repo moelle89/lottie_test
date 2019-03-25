@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_showDividersWhenGroupNotificationExpanded">false</bool>
-    <bool name="config_showGroupNotificationBgWhenExpanded">true</bool>
+    <bool name="config_showGroupNotificationBgWhenExpanded">false</bool>
 	<bool name="config_hideDividersDuringExpand">true</bool>
 </resources>

@@ -14,4 +14,11 @@
     <string name="addon">get the Samsung addon</string>
     <string name="getsubs">get substratum theme engine</string>
     <string name="head">Header</string>
+    <string name="do_not_show_again">Do not show again</string>
+    <string name="support">Support</string>
+    <string name="proceed">Continue</string>
+    <string name="app_name">@string/ThemeName</string>
+    <string name="launch_dialog_title">DEEP DARKNESS</string>
+    <string name="launch_dialog_content">Hello chosen one, ready to enter the dark side?</string>
+    <string name="launch_dialog_positive">OK</string>
 </resources>

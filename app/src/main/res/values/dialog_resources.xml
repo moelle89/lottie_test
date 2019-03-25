@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.AppCompat" parent="@android:style/Theme.NoTitleBar" >
-    </style>
     <!-- Making a dark theme? You know what to do! -->
     <style name="DialogStyle" parent="@style/Theme.AppCompat.Dialog.Alert" >
-        <item name="android:windowBackground">@drawable/dialog_background_material</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:elevation">0dp</item>
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
     <!--
       ~ Custom dialog message on theme launch.
       ~ Add word in launch_dialog_negative to add a cancel button on the dialog
       -->
-    <string name="launch_dialog_title">DEEP DARKNESS</string>
-    <string name="launch_dialog_content">Hello chosen one, ready to enter the dark side?</string>
-    <string name="launch_dialog_positive">OK</string>
     <string name="launch_dialog_negative">Nah</string>
     <string name="launch_dialog_negative_url" />
+    <string name="link_playstore">https://play.google.com/store/apps/details?id=com.pierx.prime.novus</string>
+    <string name="link_support">https://t.me/themes_pier</string>
+    <string name="link_changelog">https://raw.githubusercontent.com/pierx/links/master/prime.txt</string>
+    <string name="launch_dialog_neutral">Rate</string>
 </resources>

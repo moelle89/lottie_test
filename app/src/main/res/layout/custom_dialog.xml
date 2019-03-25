@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background_material"
+    android:padding="8dp"
+    tools:context=".SubstratumLauncher">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/launch_dialog_title"
+        android:textColor="#00000000"
+        android:textSize="22sp"/>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="350dip"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:background="#00000000"
+        android:paddingBottom="16dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            app:lottie_fileName="dd.json"
+            android:gravity="center"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+v
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="170dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:text="@string/launch_dialog_content"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:background="#00000000"
+            android:buttonTint="#fff"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/launch_hide"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/textColor"
+            android:theme="@android:style/Widget.CompoundButton.CheckBox"
+            android:textSize="12sp"/>
+
+
+        <Button
+            android:id="@+id/textSupportLink"
+            android:layout_width="106dp"
+            android:layout_height="27dp"
+            android:layout_above="@+id/myCheckBox"
+            android:layout_alignEnd="@+id/animation_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="22dp"
+            android:background="#00000000"
+            android:gravity="start"
+            android:text="@string/support"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/textContinue"
+            android:layout_width="126dp"
+            android:layout_height="24dp"
+            android:layout_alignLeft="@+id/ic_support"
+            android:layout_alignTop="@+id/textSupportLink"
+            android:layout_alignEnd="@+id/myCheckBox"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/animation_view"
+            android:background="#00000000"
+            android:gravity="start"
+            android:text="@string/proceed"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/ic_continue"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ic_support"
+            android:layout_alignBottom="@+id/textContinue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="143dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_continue" />
+
+        <ImageButton
+            android:id="@+id/ic_support"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textSupportLink"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginBottom="27dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_telegram"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="10sp"
+            android:text="@string/app_version" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -3,8 +3,6 @@
     <bool name="config_invert_colors_on_doze">false</bool>
     <bool name="disableQsTileTint">true</bool>
     <bool name="disableExternalQSTileTint">false</bool>
-    <bool name="config_status_bar_scrim_behind_use_src">false</bool>
-    <bool name="config_showDividersWhenGroupNotificationExpanded">false</bool>
-    <bool name="config_showGroupNotificationBgWhenExpanded">true</bool>
+    <bool name="config_showDividersWhenGroupNotificationExpanded">true</bool>
 	<bool name="config_hideDividersDuringExpand">true</bool>
 </resources>

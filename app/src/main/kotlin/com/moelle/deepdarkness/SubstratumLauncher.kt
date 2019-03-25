@@ -7,9 +7,13 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import android.widget.*
+import androidx.annotation.Nullable
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.github.javiersantos.piracychecker.allow
 import com.github.javiersantos.piracychecker.callback
 import com.github.javiersantos.piracychecker.doNotAllow
@@ -43,6 +47,8 @@ class SubstratumLauncher : AppCompatActivity() {
     private val substratumIntentData = "projekt.substratum.THEME"
     private val getKeysIntent = "projekt.substratum.GET_KEYS"
     private val receiveKeysIntent = "projekt.substratum.RECEIVE_KEYS"
+
+
 
     private val themePiracyCheck by lazy {
         if (BuildConfig.ENABLE_APP_BLACKLIST_CHECK) {
@@ -188,23 +194,64 @@ class SubstratumLauncher : AppCompatActivity() {
     }
 
     private fun showDialog() {
-        val dialog = AlertDialog.Builder(this, R.style.DialogStyle)
-                .setCancelable(false)
-                .setIcon(R.mipmap.ic_launcher)
-                .setTitle(R.string.launch_dialog_title)
-                .setMessage(R.string.launch_dialog_content)
-                .setPositiveButton(R.string.launch_dialog_positive) { _, _ -> startAntiPiracyCheck() }
-        if (getString(R.string.launch_dialog_negative).isNotEmpty()) {
-            if (getString(R.string.launch_dialog_negative_url).isNotEmpty()) {
-                dialog.setNegativeButton(R.string.launch_dialog_negative) { _, _ ->
-                    startActivity(Intent(Intent.ACTION_VIEW,
-                            Uri.parse(getString(R.string.launch_dialog_negative_url))))
-                    finish()
-                }
+
+        val alertDialog = AlertDialog.Builder(this, R.style.CustomDialog)
+        val view = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
+        val title = view.findViewById(R.id.title) as TextView
+        title.text = getString(R.string.launch_dialog_title)
+
+        /*Buttons*/
+        val support = view.findViewById(R.id.ic_support) as ImageButton
+        support.setImageResource(R.drawable.ic_support)
+        support.setOnClickListener { _ ->
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_support))))
+        }
+        val textSupportLink = view.findViewById(R.id.textSupportLink) as Button
+        textSupportLink.setOnClickListener { _ ->
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_support))))
+        }
+        val cont = view.findViewById(R.id.ic_continue) as ImageButton
+        cont.setImageResource(R.drawable.ic_continue)
+        cont.setOnClickListener { _ ->
+            startAntiPiracyCheck()
+        }
+        val textContinue = view.findViewById(R.id.textContinue) as Button
+        textContinue.setOnClickListener { _ ->
+            startAntiPiracyCheck()
+
+        }
+
+
+
+        /*Checkbox*/
+        val myCheckBox = view.findViewById(R.id.myCheckBox) as CheckBox
+        myCheckBox.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                storeDialogStatus(true)
             } else {
-                dialog.setNegativeButton(R.string.launch_dialog_negative) { _, _ -> finish() }
+                storeDialogStatus(false)
             }
         }
-        dialog.show()
+
+        alertDialog.setView(view)
+
+        if (getDialogStatus()) {
+            startAntiPiracyCheck()
+        } else {
+            alertDialog.show()
+        }
+
+    }
+
+    private fun storeDialogStatus(isChecked: Boolean) {
+        val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
+        val mEditor = mSharedPreferences.edit()
+        mEditor.putBoolean("show_dialog_" + BuildConfig.VERSION_CODE, isChecked)
+        mEditor.apply()
+    }
+
+    private fun getDialogStatus(): Boolean {
+        val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
+        return mSharedPreferences.getBoolean("show_dialog_" + BuildConfig.VERSION_CODE, false)
     }
 }

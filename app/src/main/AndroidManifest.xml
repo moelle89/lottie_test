@@ -17,10 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/ThemeName"
         android:supportsRtl="true"
-        android:theme="@style/Circular"
+        android:theme="@style/DialogStyle"
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning"
-        android:extractNativeLibs="false">>
+        android:extractNativeLibs="false">
         <!-- Activity for Splashscreen -Intro and Firebase notification -->
         <activity
             android:name=".SplashActivity"
@@ -43,7 +43,7 @@
 
         <activity android:name=".Welcome" android:theme="@style/GeneralWelcomeScreenTheme"/>
 
-        <activity android:name=".SubstratumLauncher" android:theme="@style/DialogStyle" >
+        <activity android:name=".SubstratumLauncher" >
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>

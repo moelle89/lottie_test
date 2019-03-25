@@ -33,7 +33,7 @@
 
     <color name="notification_header_bg">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
     <color name="notification_legacy_background_color">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
-    <color name="notification_material_background_color">@*android:color/legacy_light_primary_dark</color>
+    <color name="notification_material_background_color">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
     <color name="notification_material_background_dimmed_color">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
     <color name="notification_material_background_low_priority_color">@*android:color/legacy_light_primary_dark</color><!-- has to stay black to fix messed up fw notification title tinting -->
     <color name="notification_material_background_media_default_color">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
