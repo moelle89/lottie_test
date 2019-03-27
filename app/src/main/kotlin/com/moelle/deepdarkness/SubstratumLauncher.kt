@@ -2,29 +2,21 @@
 
 package com.moelle.deepdarkness
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.ViewGroup
 import android.widget.*
-import androidx.annotation.Nullable
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.github.javiersantos.piracychecker.allow
-import com.github.javiersantos.piracychecker.callback
-import com.github.javiersantos.piracychecker.doNotAllow
-import com.github.javiersantos.piracychecker.enums.InstallerID
-import com.github.javiersantos.piracychecker.onError
-import com.github.javiersantos.piracychecker.piracyChecker
+import com.github.javiersantos.piracychecker.*
+import com.github.javiersantos.piracychecker.enums.*
 import com.github.javiersantos.piracychecker.utils.apkSignature
 import com.moelle.deepdarkness.AdvancedConstants.ORGANIZATION_THEME_SYSTEMS
 import com.moelle.deepdarkness.AdvancedConstants.OTHER_THEME_SYSTEMS
-import com.moelle.deepdarkness.AdvancedConstants.SHOW_DIALOG_REPEATEDLY
-import com.moelle.deepdarkness.AdvancedConstants.SHOW_LAUNCH_DIALOG
 import com.moelle.deepdarkness.ThemeFunctions.checkApprovedSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfVerifiedPirateTools
@@ -40,15 +32,13 @@ import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
  * The more you play with this the harder it would be to decompile and crack!
  */
 
-class SubstratumLauncher : AppCompatActivity() {
+class SubstratumLauncher : Activity() {
 
     private val debug = false
     private val tag = "SubstratumThemeReport"
     private val substratumIntentData = "projekt.substratum.THEME"
     private val getKeysIntent = "projekt.substratum.GET_KEYS"
     private val receiveKeysIntent = "projekt.substratum.RECEIVE_KEYS"
-
-
 
     private val themePiracyCheck by lazy {
         if (BuildConfig.ENABLE_APP_BLACKLIST_CHECK) {
@@ -91,7 +81,7 @@ class SubstratumLauncher : AppCompatActivity() {
         } else {
             OTHER_THEME_SYSTEMS
                     .filter { action?.startsWith(prefix = it, ignoreCase = true) ?: false }
-                    .forEach { _ -> verified = true }
+                    .forEach { verified = true }
         }
         if (!verified) {
             Log.e(tag, "This theme does not support the launching theme system. ($action)")
@@ -103,21 +93,7 @@ class SubstratumLauncher : AppCompatActivity() {
             Log.d(tag, "'$action' has been authorized to launch this theme. (Phase 2)")
         }
 
-
-        /* STEP 3: Do da thang */
-        if (SHOW_LAUNCH_DIALOG) run {
-            if (SHOW_DIALOG_REPEATEDLY) {
-                showDialog()
-                sharedPref.edit().remove("dialog_showed").apply()
-            } else if (!sharedPref.getBoolean("dialog_showed", false)) {
-                showDialog()
-                sharedPref.edit().putBoolean("dialog_showed", true).apply()
-            } else {
-                startAntiPiracyCheck()
-            }
-        } else {
-            startAntiPiracyCheck()
-        }
+        showDialog()
     }
 
     private fun startAntiPiracyCheck() {
@@ -193,56 +169,44 @@ class SubstratumLauncher : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("InflateParams")
     private fun showDialog() {
 
-        val alertDialog = AlertDialog.Builder(this, R.style.CustomDialog)
-        val view = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
-        val title = view.findViewById(R.id.title) as TextView
-        title.text = getString(R.string.launch_dialog_title)
+    val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
+            .setCancelable(false)
+    val view = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
+    val title = view.findViewById(R.id.title) as TextView
+    title.text = getString(R.string.launch_dialog_title)
 
-        /*Buttons*/
-        val cont = view.findViewById(R.id.ic_continue) as ImageButton
-        cont.setImageResource(R.drawable.ic_continue)
-        cont.setOnClickListener { _ ->
-            startAntiPiracyCheck()
-        }
-        val textContinue = view.findViewById(R.id.textContinue) as Button
-        textContinue.setOnClickListener { _ ->
-            startAntiPiracyCheck()
-
-        }
-
-
-
-        /*Checkbox*/
-        val myCheckBox = view.findViewById(R.id.myCheckBox) as CheckBox
-        myCheckBox.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                storeDialogStatus(true)
-            } else {
-                storeDialogStatus(false)
-            }
-        }
-
-        alertDialog.setView(view)
-
-        if (getDialogStatus()) {
-            startAntiPiracyCheck()
-        } else {
-            alertDialog.show()
-        }
+    /*Buttons*/
+    val cont = view.findViewById(R.id.ic_continue) as ImageButton
+    cont.setImageResource(R.drawable.ic_continue)
+    cont.setOnClickListener { _ ->
+        startAntiPiracyCheck()
+    }
+    val textContinue = view.findViewById(R.id.textContinue) as Button
+    textContinue.setOnClickListener { _ ->
+        startAntiPiracyCheck()
 
     }
-
-    private fun storeDialogStatus(isChecked: Boolean) {
-        val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
-        val mEditor = mSharedPreferences.edit()
-        mEditor.putBoolean("show_dialog_" + BuildConfig.VERSION_CODE, isChecked)
-        mEditor.apply()
+    val textExit = view.findViewById(R.id.textExit) as Button
+        textExit.setOnClickListener { _ ->
+        finish()
     }
+
+
+    alertDialog.setView(view)
+
+    if (getDialogStatus()) {
+        startAntiPiracyCheck()
+    } else {
+        alertDialog.show()
+    }
+
+}
 
     private fun getDialogStatus(): Boolean {
         val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
         return mSharedPreferences.getBoolean("show_dialog_" + BuildConfig.VERSION_CODE, false)
-    }
+}
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/dialog_background_material"
+    android:foreground="@drawable/dialog_foreground_material"
     android:padding="8dp"
     tools:context=".SubstratumLauncher">
 
@@ -39,7 +40,7 @@
             android:layout_marginTop="20dp"
             android:background="#00000000"
             android:gravity="center"
-            android:paddingStart="16dp"
+            android:paddingStart="0dp"
             android:text="@string/launch_dialog_content"
             android:textAlignment="center"
             android:textColor="#fff"
@@ -53,15 +54,16 @@
             app:lottie_fileName="data.json"
             app:lottie_loop="true"
             app:lottie_autoPlay="true"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:paddingEnd="2dp"/>
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_alignParentStart="true"
-            android:layout_above="@+id/myCheckBox"
-            android:layout_marginBottom="52dp"
+            android:layout_above="@+id/textExit"
+            android:layout_marginBottom="35dp"
             android:layout_marginStart="30dp"
             android:background="#00000000"
             android:contentDescription="@string/launch_dialog_title"
@@ -69,40 +71,44 @@
             android:src="@drawable/ic_launcher_foreground"/>
 
         <CheckBox
-            android:id="@+id/myCheckBox"
-            android:layout_width="180dp"
+            android:id="@+id/textExit"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
             android:background="#00000000"
             android:button="@drawable/btn_check_off"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:text="@string/launch_hide"
+            android:paddingStart="6dp"
+            android:paddingEnd="18dp"
+            android:text="@string/exit"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="@color/textColor"
+            android:textStyle="bold"
             android:theme="@android:style/Widget.CompoundButton.CheckBox"
-            android:textSize="12sp"/>
+            android:textSize="18sp"/>
 
 
         <Button
             android:id="@+id/textContinue"
-            android:layout_width="108dp"
-            android:layout_height="30dp"
-            android:layout_above="@+id/myCheckBox"
+            android:layout_width="150dp"
+            android:layout_height="34dp"
+            android:layout_toRightOf="@+id/textExit"
+            android:layout_alignParentBottom="true"
             android:layout_alignEnd="@+id/animation_view"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="-10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="22dp"
             android:background="#00000000"
             android:gravity="start"
             android:text="@string/proceed"
             android:textColor="@android:color/white"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="@dimen/dashboard_list_title_size"
+            android:textSize="24sp"
             android:textStyle="bold" />
+
 
 
         <ImageButton
@@ -111,8 +117,8 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/textContinue"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="34dp"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/ic_continue"/>
 
