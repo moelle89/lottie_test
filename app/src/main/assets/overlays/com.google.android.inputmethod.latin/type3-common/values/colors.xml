@@ -167,4 +167,12 @@
 	<color name="quantum_black_text">#ffffffff</color>
 
     <color name="clipboard_grey">@*android:color/holo_orange_light</color>
+	
+    <color name="accent_material_dark">@*android:color/accent_material_dark</color>
+    <color name="accent_material_light">@*android:color/accent_material_dark</color>
+    <color name="design_dark_default_color_secondary">@*android:color/accent_material_dark</color>
+    <color name="design_dark_default_color_secondary_variant">@*android:color/accent_material_dark</color>
+    <color name="design_default_color_secondary">@*android:color/accent_material_dark</color>
+    <color name="design_default_color_secondary_variant">@*android:color/accent_material_dark</color>
+    <color name="material_deep_teal_500">@*android:color/accent_material_dark</color>
 </resources>

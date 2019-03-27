@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppThemeSelector" parent="@android:style/Theme.Material" />
-    <style name="SettingsTheme" parent="@android:style/Theme.Material" >
+    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings" >
 		<item name="android:homeAsUpIndicator">@*com.google.android.inputmethod.latin:drawable/quantum_ic_arrow_back_white_24</item>
 		<item name="android:colorAccent">@*android:color/accent_material_dark</item>
 		<item name="android:divider">@*android:color/transparent</item>		
 		<item name="android:dividerHorizontal">@*android:color/transparent</item>
-		<item name="android:listDivider">@*android:color/transparent</item>		
-        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+		<item name="android:listDivider">@*android:color/transparent</item>
     </style>
-    <style name="SettingsTheme.Transparent" parent="@*android:style/Theme.Material.NoActionBar">
+    <style name="SettingsTheme.Transparent" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -20,11 +19,8 @@
         <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
     </style>
-    <style name="ThemeSettingsTheme" parent="@*android:style/Theme.Material.Settings">
-        <item name="android:windowNoTitle">true</item>
-    </style>
     <!--<style name="platformDialogTheme" parent="@*android:style/Theme.Material.Dialog" />-->
-	<style name="BaseTheme" parent="@*android:style/Theme.Material.InputMethod" />	
+	<style name="BaseTheme" parent="@*android:style/Theme.DeviceDefault.InputMethod" />	
 	<style name="MaterialPopupContent" parent="@*com.google.android.inputmethod.latin:style/MaterialPopupView">
         <item name="android:tag">.popup</item>
 		<item name="android:backgroundTint">@null</item>
@@ -62,11 +58,15 @@
 		<item name="android:listDivider">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/background_dark</item>		
     </style>	
-    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+		<item name="android:buttonBarStyle">?*android:buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?*android:buttonBarButtonStyle</item>
         <item name="android:textColorHintInverse">@*android:color/accent_material_dark</item>
         <item name="android:textColorHint">@*android:color/accent_material_dark</item>
         <item name="android:textColorLink">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
         <item name="android:textColorLinkInverse">@*com.google.android.inputmethod.latin:color/key_action_pressed_bordered_dark_theme</item>
         <item name="android:navigationBarColor">@*android:color/background_dark</item>
     </style>
+	
+    <style name="platformDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
 </resources>
