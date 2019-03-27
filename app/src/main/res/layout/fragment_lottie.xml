@@ -5,16 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.moelle.deepdarkness.fragment.LottieFragment"
-    android:gravity="center"
+    android:layout_gravity="center"
     android:id="@+id/layout">
 
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:lottie_fileName="dd.json"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/colorAccent"
+        app:lottie_fileName="data.json"
+        app:lottie_loop="true" />
 		
 </RelativeLayout>

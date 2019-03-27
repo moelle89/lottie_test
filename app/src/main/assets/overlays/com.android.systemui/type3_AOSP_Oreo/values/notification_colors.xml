@@ -26,7 +26,7 @@
     <color name="notification_default_color">@*android:color/highlighted_text_holo_dark</color>
 	
 
-    <color name="notification_header_bg">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
+    <color name="notification_header_bg">@*android:color/notification_action_list_dark</color>
     <color name="notification_legacy_background_color">@*android:color/notification_action_list_dark</color>
     <color name="notification_material_background_color">@*android:color/notification_action_list_dark</color>
     <color name="notification_material_background_dimmed_color">@*android:color/notification_action_list_dark</color>

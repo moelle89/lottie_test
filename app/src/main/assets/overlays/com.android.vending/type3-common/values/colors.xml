@@ -221,7 +221,8 @@
     <color name="happiness_survey_prompt_button_text">@*android:color/white</color>
     <color name="foreground_material_dark">@*android:color/white</color>
     <color name="foreground_material_light">@*android:color/white</color>
-	
+    <color name="replay__pal_gray_900">@*android:color/white</color>
+    <color name="replay__pal_gray_700">@*android:color/secondary_text_default_material_dark</color>   	
 
     <color name="account_email_dark_text_color">#FFFFFF</color>
     <color name="account_email_light_text_color">#b3FFFFFF</color>
@@ -237,4 +238,5 @@
     <color name="secondary_text_disabled_material_light">#ffffffff</color>
     <color name="play_ripple_light">#20ffffff</color>
     <color name="ripple_material_light">@*android:color/holo_button_pressed</color>
+	
 </resources>

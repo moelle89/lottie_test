@@ -6,9 +6,9 @@
     android:viewportHeight="28">
 
     <path
-        android:fillColor="?colorAccent"
-        android:fillAlpha="0.5"
-        android:strokeAlpha="0.5"
+        android:fillColor="@color/inactive"
+        android:fillAlpha="0.85"
+        android:strokeAlpha="0.85"
         android:strokeWidth="1"
         android:pathData="M 13.9 4.6 C 19.0362481734 4.6 23.2 8.76375182657 23.2 13.9 C 23.2 19.0362481734 19.0362481734 23.2 13.9 23.2 C 8.76375182657 23.2 4.6 19.0362481734 4.6 13.9 C 4.6 8.76375182657 8.76375182657 4.6 13.9 4.6 Z" />
     <path

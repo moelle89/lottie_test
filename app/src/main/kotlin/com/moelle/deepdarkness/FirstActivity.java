@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
-import com.danikula.videocache.HttpProxyCacheServer;
 import com.google.android.material.snackbar.Snackbar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 

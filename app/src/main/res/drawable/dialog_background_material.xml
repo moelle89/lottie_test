@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <layer-list>
         <item>
-            <shape>
+            <shape android:tint="?android:colorBackgroundFloating">
                 <gradient android:startColor="#D016171D" android:endColor="#0D16171D" android:angle="-90.0" />
                 <corners android:radius="16dp" />
                 <stroke
@@ -13,7 +13,7 @@
         </item>
         <item>
             <shape>
-                <gradient android:startColor="@android:color/transparent" android:endColor="#CB000000" android:angle="90.0" />
+                <gradient android:startColor="@android:color/transparent" android:endColor="#CB0D0E11" android:angle="90.0" />
                 <corners android:radius="16dp" />
                 <stroke
                     android:width="2.0dp"
@@ -21,7 +21,7 @@
             </shape>
         </item>
         <item>
-            <shape android:tint="#C1929FA8">
+            <shape android:tint="#66929FA8">
                 <solid android:color="#00000000" />
                 <corners android:radius="16dp" />
                 <stroke android:width="2.2dp" android:color="?android:colorAccent" />

@@ -12,6 +12,7 @@
     <color name="search_card_green_text_color">@*android:color/accent_material_dark</color>
     <color name="search_card_green_text_color_m2">@*android:color/accent_material_dark</color>
 	
+    <color name="theme_builder_opacity_view_background">@*android:color/dim_foreground_light</color>
 	
     <color name="google_white">@*android:color/user_icon_default_white</color>
 

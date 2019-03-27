@@ -11,6 +11,10 @@
         <item name="*com.android.vending:behavior_peekHeight">auto</item>
         <item name="*com.android.vending:behavior_skipCollapsed">false</item>
     </style>
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@android:style/TextAppearance.Material.Medium.Inverse">
+        <item name="*com.android.vending:fixed_bounds">true</item>
+        <item name="*com.android.vending:is_avatar">true</item>
+    </style>
     <style name="PlayDrawerSelectedText" parent="@*com.android.vending:style/PlayDrawerBaseText">
 		<item name="android:backgroundTint">#17B3D1E3</item>		
 		<item name="android:background">@*android:color/background_dark</item>
