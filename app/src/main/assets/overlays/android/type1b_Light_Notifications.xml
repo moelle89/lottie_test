@@ -11,10 +11,11 @@
 	<!-- Notification | Background -->
 	<color name="notification_progress_background_color">@*android:color/holo_button_pressed</color>
 	<!-- Action 1 | Button Bar Background -->
-    <color name="notification_action_list">#f3f4f5</color>         
+    <color name="notification_action_list">@*android:color/legacy_button_pressed</color>         
 	<color name="notification_action_list_dark">#ffffff</color>
 	<!-- black-white-bridge of systemUI for notifications -->
-    <color name="dim_foreground_inverse_disabled_holo_light">#E3FDFEFF</color> 
+    <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/legacy_long_pressed_highlight</color>
+	
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">#ffffff</color>
 </resources> 

@@ -17,17 +17,4 @@
     <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">#00FFFFFF</color>
-
-	<!-- hardcoded notifications fix -->	
-    <style name="Widget.Material.Notification.MessagingText" parent="@*android:style/Widget.Material.TextView">
-        <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:visibility">gone</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:shadowColor">@*android:color/white</item>
-        <item name="android:shadowRadius">1.5</item>
-        <item name="android:shadowDx">0.8</item>
-        <item name="android:shadowDy">0.8</item>
-    </style>
 </resources>
