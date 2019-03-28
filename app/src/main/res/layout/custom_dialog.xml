@@ -55,7 +55,9 @@
             app:lottie_loop="true"
             app:lottie_autoPlay="true"
             android:paddingBottom="10dp"
+            android:paddingStart="2dp"
             android:paddingEnd="2dp"/>
+
 
         <ImageView
             android:id="@+id/image"
@@ -69,6 +71,7 @@
             android:contentDescription="@string/launch_dialog_title"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground"/>
+
 
         <CheckBox
             android:id="@+id/textExit"
