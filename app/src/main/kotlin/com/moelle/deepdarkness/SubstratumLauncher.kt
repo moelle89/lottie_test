@@ -92,7 +92,6 @@ class SubstratumLauncher : Activity() {
         if (debug) {
             Log.d(tag, "'$action' has been authorized to launch this theme. (Phase 2)")
         }
-
         showDialog()
     }
 
@@ -171,10 +170,10 @@ class SubstratumLauncher : Activity() {
 
     @SuppressLint("InflateParams")
     private fun showDialog() {
-
-    val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
+    val alertDialog = AlertDialog.Builder(this, R.style.Fullscreendialog)
             .setCancelable(false)
-    val view = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
+
+    val view = LayoutInflater.from(this).inflate(R.layout.fullscreen_dialog, null)
     val title = view.findViewById(R.id.title) as TextView
     title.text = getString(R.string.launch_dialog_title)
 

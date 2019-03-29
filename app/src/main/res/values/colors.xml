@@ -18,6 +18,8 @@
     <color name="gradientbottom">#060e40</color>
     <color name="gradientcenter">@color/inactive</color>
 
+    <color name="black_75">#BF000000</color>
+
     <color name="orange_background_dark">#091668</color>
     <color name="red_background">#761b2a</color>
     <color name="purple_background">#000000</color>
