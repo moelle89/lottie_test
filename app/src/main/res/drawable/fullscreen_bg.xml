@@ -11,19 +11,7 @@
                     android:gradientRadius="300%p"
                     android:endColor="@null"
                     android:centerColor="@android:color/transparent"
-                    android:startColor="#9F2C60E2" />
-            </shape>
-        </item>
-        <item>
-            <shape android:shape="rectangle">
-                <gradient
-                    android:type="radial"
-                    android:centerX="-0.20"
-                    android:centerY="0.90"
-                    android:gradientRadius="200%p"
-                    android:endColor="@android:color/transparent"
-                    android:centerColor="@android:color/transparent"
-                    android:startColor="#8DF01E8B" />
+                    android:startColor="#9F5A83EC" />
             </shape>
         </item>
         <item>
