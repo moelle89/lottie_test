@@ -3,7 +3,7 @@
     android:height="24dp"
     android:viewportWidth="24.0"
     android:viewportHeight="24.0"
-    android:tint="@*com.google.android.apps.messaging:color/search_icon_tint_color">
+    android:tint="?android:textColorPrimary">
     <path
         android:fillColor="#f9f9f9"
         android:fillAlpha="0.3"

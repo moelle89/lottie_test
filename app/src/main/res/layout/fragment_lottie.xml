@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scaleType="centerInside"
-    app:lottie_rawRes="@raw/data"
+    app:lottie_rawRes="@raw/accent"
     app:lottie_loop="true"
     app:lottie_autoPlay="true" />

@@ -34,17 +34,12 @@ public class Welcome extends WelcomeActivity {
                     .background(R.color.background)
                 )
 
-               // .page(new FragmentWelcomePage() {
-               //    @Override
-               //     protected Fragment fragment() { return new LottieFragment();
-               //     }}
-               //         .background(R.color.background))
+                .page(new FragmentWelcomePage() {
+                   @Override
+                    protected Fragment fragment() { return new LottieFragment();
+                    }}
+                    .background(R.color.background))
 
-                .page(new ParallaxPage(R.layout.parallax_samsung,
-                        "Only for Samsung devices",
-                        "This theme is supporting the S8, S8+, Note8 and S7 (partial).")
-                        .background(R.color.background)
-                )
 
                 .page(new FragmentWelcomePage() {
                     @Override

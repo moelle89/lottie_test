@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="BugleTooltipStyle">
-        <item name="android:background">@*com.google.android.apps.messaging:drawable/tooltip</item>
-		<item name="android:backgroundTint">@*android:color/control_checkable_material</item>
+        <item name="android:background">@*android:color/background_dark</item>
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
     </style>
 	<style name="BugleSearchViewStyleM2" parent="@*android:style/Widget.Material.SearchView">
-        <item name="android:textColorHint">@*com.google.android.apps.messaging:color/search_view_text_hint_m2</item>
+        <item name="android:textColorHint">@*android:color/holo_orange_light</item>
+    </style>
+	<style name="ConversationMessageText">
+        <item name="android:background">@null</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
     </style>
     <style name="SnackBarText">
         <item name="android:textSize">14.0sp</item>

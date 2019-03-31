@@ -42,5 +42,5 @@
 	
 	<color name="conversation_edge_effect">@*android:color/holo_button_pressed</color>
 	<color name="item_pressed_color">@*android:color/holo_button_pressed</color>
-	
+
 </resources>

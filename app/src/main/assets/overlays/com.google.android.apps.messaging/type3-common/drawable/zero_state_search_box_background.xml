@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@*com.google.android.apps.messaging:color/zero_state_search_box_background" />
+    <solid android:color="@*android:color/user_icon_default_white" />
 	<stroke android:width="2.0dip" android:color="@*android:color/accent_material_dark" />
     <corners android:radius="@*com.google.android.apps.messaging:dimen/zero_state_search_box_corner_radius" />
 </shape>

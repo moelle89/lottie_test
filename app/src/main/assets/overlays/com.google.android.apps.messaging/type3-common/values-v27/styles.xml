@@ -3,11 +3,17 @@
     <style name="Platform.V25.AppCompat.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
         <item name="android:navigationBarDividerColor">@*android:color/user_icon_default_white</item>
     </style>
-    <style name="BugleBaseTheme" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="BugleBaseThemeDark.NoActionBar" parent="@*com.google.android.apps.messaging:style/BugleBaseThemeDark">
+        <item name="*com.google.android.apps.messaging:actionBarBackgroundColorM2">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.messaging:zeroStateSearchBoxBackground">@*android:color/user_icon_default_white</item>
+        <item name="*com.google.android.apps.messaging:bannerBackgroundM2">@*android:color/dim_foreground_light</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+        <item name="android:navigationBarDividerColor">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.messaging:windowActionBar">false</item>
+        <item name="*com.google.android.apps.messaging:windowNoTitle">true</item>
     </style>
     <style name="BugleBaseToolbarTheme" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
@@ -26,4 +32,5 @@
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
     </style>
+
 </resources>
