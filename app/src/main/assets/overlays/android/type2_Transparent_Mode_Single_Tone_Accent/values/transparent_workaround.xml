@@ -10,10 +10,10 @@
     <color name="user_icon_4">@*android:color/transparent</color><!--actionbar trans/solid -->
     <color name="user_icon_8">@*android:color/background_floating_material_dark</color><!-- background_floating_material_dark solid/trans -->
 	<color name="user_icon_7">@*android:color/user_icon_default_white</color><!-- dim_foreground_light solid/trans -->
-    <color name="keyguard_avatar_frame_shadow_color">@*android:color/bright_foreground_light_disabled</color><!-- notifications_bg bridge solid/trans -->	
+    <color name="keyguard_avatar_frame_shadow_color">@*android:color/secondary_text_default_material_light</color><!-- notifications_bg bridge solid/trans -->	
     <color name="legacy_control_normal">@*android:color/dim_foreground_light</color><!-- notifications_bg -->	
 	<color name="user_icon_6">@*android:color/primary_material_dark</color><!-- primary_material_dark solid/trans -->	
-	<color name="user_icon_5">@*android:color/background_leanback_dark</color><!-- timepicker_default_background_material solid/trans -->
+	<color name="user_icon_5">@*android:color/transparent</color><!-- timepicker_default_background_material solid/trans -->
 	<color name="user_icon_3">@*android:color/secondary_text_default_material_light</color><!-- trans/solid bridge of qs panel, notifications etc.  -->
 	<color name="holo_light_control_activated">@*android:color/notification_primary_text_color_light</color><!-- Gear / Snooze icon tint -->
     <color name="material_blue_grey_700">@*android:color/holo_orange_light</color>

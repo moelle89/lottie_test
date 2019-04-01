@@ -49,8 +49,8 @@ class SubstratumLauncher : Activity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
+        super.onCreate(savedInstanceState)
         /* STEP 1: Block hijackers */
         val caller = callingActivity!!.packageName
         val organizationsSystem = ORGANIZATION_THEME_SYSTEMS.contains(caller)
