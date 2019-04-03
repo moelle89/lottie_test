@@ -34,37 +34,57 @@
 		android:layout_below="@+id/title"
 		android:layout_alignParentStart="true"
 		android:background="#00000000"
+		android:fitsSystemWindows="false"
 		android:paddingBottom="110dp">
 
 		<Button
 			android:id="@+id/textContinue"
 			android:layout_width="150dp"
 			android:layout_height="38dp"
-			android:layout_alignParentBottom="true"
 			android:layout_alignParentEnd="true"
+			android:layout_alignParentBottom="true"
 			android:layout_marginStart="54dp"
-			android:paddingStart="0dp"
 			android:layout_marginEnd="45dp"
 			android:layout_marginBottom="52dp"
 			android:background="#00000000"
 			android:gravity="start"
+			android:paddingStart="0dp"
 			android:text="@string/proceed"
-			android:textColor="@android:color/white"
 			android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+			android:textColor="@android:color/white"
 			android:textSize="22sp"
 			android:textStyle="bold" />
 
 
-	<ImageButton
-		android:id="@+id/ic_continue"
-		android:layout_width="48dp"
-		android:layout_height="wrap_content"
-		android:layout_alignBottom="@+id/textContinue"
-		android:layout_alignParentEnd="true"
-		android:layout_marginEnd="148dp"
-		android:layout_marginBottom="40dp"
-		android:background="@android:color/transparent"
-		app:srcCompat="@drawable/ic_continue"/>
+		<CheckBox
+			android:id="@+id/textExit"
+			android:layout_width="125dp"
+			android:layout_height="40dp"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginStart="92dp"
+			android:layout_marginBottom="54dp"
+			android:background="#00000000"
+			android:button="@drawable/btn_check_off"
+			android:paddingStart="6dp"
+			android:paddingEnd="18dp"
+			android:text="@string/exit"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:textColor="@color/buttonFocused"
+			android:textSize="19sp"
+			android:theme="@android:style/Widget.CompoundButton.CheckBox" />
+
+
+		<ImageButton
+			android:id="@+id/ic_continue"
+			android:layout_width="48dp"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/textContinue"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="148dp"
+			android:layout_marginBottom="40dp"
+			android:background="@android:color/transparent"
+			app:srcCompat="@drawable/ic_continue" />
 
 
 		<TextView
@@ -84,26 +104,6 @@
 			android:textSize="16sp" />
 
 
-		<CheckBox
-			android:id="@+id/textExit"
-			android:layout_width="125dp"
-			android:layout_height="40dp"
-			android:layout_alignParentStart="true"
-			android:layout_alignParentBottom="true"
-			android:layout_marginStart="82dp"
-			android:layout_marginBottom="54dp"
-			android:background="#00000000"
-			android:button="@drawable/btn_check_off"
-			android:paddingStart="6dp"
-			android:paddingEnd="18dp"
-			android:text="@string/exit"
-			android:textAppearance="@style/TextAppearance.AppCompat.Small"
-			android:textColor="@color/buttonFocused"
-			android:theme="@android:style/Widget.CompoundButton.CheckBox"
-			android:textSize="19sp"/>
-
-
-
 		<TextView
 			android:id="@+id/textView2"
 			android:layout_width="wrap_content"
@@ -112,9 +112,9 @@
 			android:layout_alignParentBottom="true"
 			android:layout_marginEnd="32dp"
 			android:layout_marginBottom="0dp"
-			android:textSize="9sp"
+			android:text="@string/app_version"
 			android:textColor="@color/buttonFocused"
-			android:text="@string/app_version" />
+			android:textSize="9sp" />
 
 	</RelativeLayout>
 
