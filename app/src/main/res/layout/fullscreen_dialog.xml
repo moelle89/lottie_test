@@ -7,13 +7,12 @@
 	tools:context=".SubstratumLauncher">
 
 	<com.airbnb.lottie.LottieAnimationView
-		android:id="@+id/animation_view"
+		android:id="@+id/av_from_code"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_gravity="center"
-		app:lottie_rawRes="@raw/data"
-		app:lottie_loop="false"
-		app:lottie_autoPlay="true" />
+		app:lottie_speed="1.05" />
+
 
 	<TextView
 		android:id="@+id/title"
@@ -37,18 +36,31 @@
 		android:fitsSystemWindows="false"
 		android:paddingBottom="110dp">
 
+		<ImageButton
+			android:id="@+id/ic_continue"
+			android:layout_width="58dp"
+			android:layout_height="32dp"
+			android:layout_alignLeft="@+id/textContinue"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="192dp"
+			android:layout_marginBottom="54dp"
+			android:background="@android:color/transparent"
+			app:srcCompat="@drawable/ic_continue" />
+
+
 		<Button
 			android:id="@+id/textContinue"
-			android:layout_width="150dp"
-			android:layout_height="38dp"
+			android:layout_width="160dp"
+			android:layout_height="32dp"
 			android:layout_alignParentEnd="true"
 			android:layout_alignParentBottom="true"
-			android:layout_marginStart="54dp"
-			android:layout_marginEnd="45dp"
-			android:layout_marginBottom="52dp"
+			android:layout_marginStart="0dp"
+			android:layout_marginEnd="65dp"
+			android:layout_marginBottom="54dp"
 			android:background="#00000000"
 			android:gravity="start"
-			android:paddingStart="0dp"
+			android:paddingStart="40dp"
 			android:text="@string/proceed"
 			android:textAppearance="@style/TextAppearance.AppCompat.Body2"
 			android:textColor="@android:color/white"
@@ -58,11 +70,11 @@
 
 		<CheckBox
 			android:id="@+id/textExit"
-			android:layout_width="125dp"
-			android:layout_height="40dp"
+			android:layout_width="120dp"
+			android:layout_height="32dp"
 			android:layout_alignParentStart="true"
 			android:layout_alignParentBottom="true"
-			android:layout_marginStart="92dp"
+			android:layout_marginStart="90dp"
 			android:layout_marginBottom="54dp"
 			android:background="#00000000"
 			android:button="@drawable/btn_check_off"
@@ -73,18 +85,6 @@
 			android:textColor="@color/buttonFocused"
 			android:textSize="19sp"
 			android:theme="@android:style/Widget.CompoundButton.CheckBox" />
-
-
-		<ImageButton
-			android:id="@+id/ic_continue"
-			android:layout_width="48dp"
-			android:layout_height="wrap_content"
-			android:layout_alignBottom="@+id/textContinue"
-			android:layout_alignParentEnd="true"
-			android:layout_marginEnd="148dp"
-			android:layout_marginBottom="40dp"
-			android:background="@android:color/transparent"
-			app:srcCompat="@drawable/ic_continue" />
 
 
 		<TextView
@@ -110,7 +110,7 @@
 			android:layout_height="wrap_content"
 			android:layout_alignParentEnd="true"
 			android:layout_alignParentBottom="true"
-			android:layout_marginEnd="32dp"
+			android:layout_marginEnd="35dp"
 			android:layout_marginBottom="0dp"
 			android:text="@string/app_version"
 			android:textColor="@color/buttonFocused"
