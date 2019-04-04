@@ -22,6 +22,7 @@ import com.moelle.deepdarkness.ThemeFunctions.getSelfSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfVerifiedPirateTools
 import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
 import com.airbnb.lottie.LottieAnimationView
+import com.airbnb.lottie.LottieDrawable
 import kotlinx.android.synthetic.main.fullscreen_dialog.*
 
 
@@ -55,9 +56,13 @@ class SubstratumLauncher : Activity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fullscreen_dialog)
+
         av_from_code.setAnimation("data.json")
         av_from_code.playAnimation()
-        av_from_code.loop(true)
+        av_from_code.repeatMode = LottieDrawable.RESTART
+        av_from_code.repeatCount = LottieDrawable.INFINITE
+        av_from_code.setMinAndMaxFrame(110, 500)
+
         /* STEP 1: Block hijackers */
         val caller = callingActivity!!.packageName
         val organizationsSystem = ORGANIZATION_THEME_SYSTEMS.contains(caller)
