@@ -2,15 +2,18 @@
 
 package com.moelle.deepdarkness
 
+import android.animation.Animator
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.CountDownTimer
 import androidx.appcompat.app.AlertDialog
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.*
 import com.github.javiersantos.piracychecker.*
 import com.github.javiersantos.piracychecker.enums.*
@@ -23,6 +26,7 @@ import com.moelle.deepdarkness.ThemeFunctions.getSelfVerifiedPirateTools
 import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
+import com.airbnb.lottie.LottieDrawable.INFINITE
 import kotlinx.android.synthetic.main.fullscreen_dialog.*
 
 
@@ -56,12 +60,25 @@ class SubstratumLauncher : Activity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fullscreen_dialog)
-
         av_from_code.setAnimation("data.json")
-        av_from_code.playAnimation()
-        av_from_code.repeatMode = LottieDrawable.RESTART
         av_from_code.repeatCount = LottieDrawable.INFINITE
-        av_from_code.setMinAndMaxFrame(110, 500)
+        av_from_code.playAnimation()
+
+        av_from_code.addAnimatorListener(object : Animator.AnimatorListener{
+            override fun onAnimationRepeat(p0: Animator?) {
+                av_from_code.setMinAndMaxFrame(112, 500)
+            }
+
+            override fun onAnimationEnd(p0: Animator?) {
+            }
+
+            override fun onAnimationCancel(p0: Animator?) {
+            }
+
+            override fun onAnimationStart(p0: Animator?) {
+            }
+
+        })
 
         /* STEP 1: Block hijackers */
         val caller = callingActivity!!.packageName

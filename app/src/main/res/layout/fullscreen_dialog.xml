@@ -11,8 +11,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_gravity="center"
-		app:lottie_speed="1.05" />
-
+		app:lottie_speed="1.1" />
 
 	<TextView
 		android:id="@+id/title"
