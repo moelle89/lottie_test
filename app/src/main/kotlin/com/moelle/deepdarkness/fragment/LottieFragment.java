@@ -23,7 +23,6 @@ public class LottieFragment extends Fragment implements WelcomePage.OnChangeList
         return inflater.inflate(R.layout.fragment_lottie, container, false);
     }
 
-
     @Override
     public void onWelcomeScreenPageScrolled(int pageIndex, float offset, int offsetPixels) {
         if (rootLayout != null)

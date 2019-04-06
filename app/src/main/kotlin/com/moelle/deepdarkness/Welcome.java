@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.net.Uri;
 import androidx.fragment.app.Fragment;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 
 import com.moelle.deepdarkness.fragment.Slide_03;
@@ -19,6 +20,7 @@ import com.stephentuso.welcome.WelcomeConfiguration;
  * Created by stephentuso on 11/15/15.
  */
 public class Welcome extends WelcomeActivity {
+
 
     @Override
     protected WelcomeConfiguration configuration() {
@@ -73,4 +75,5 @@ public class Welcome extends WelcomeActivity {
         startActivity(new Intent(this, FirstActivity.class));
         finish();
     }
+
 }

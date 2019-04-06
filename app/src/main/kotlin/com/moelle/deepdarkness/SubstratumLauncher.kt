@@ -66,7 +66,7 @@ class SubstratumLauncher : Activity() {
 
         av_from_code.addAnimatorListener(object : Animator.AnimatorListener{
             override fun onAnimationRepeat(p0: Animator?) {
-                av_from_code.setMinAndMaxFrame(106, 177)
+                av_from_code.setMinAndMaxFrame(106, 181)
             }
 
             override fun onAnimationEnd(p0: Animator?) {
