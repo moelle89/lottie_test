@@ -1,6 +1,7 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.airbnb.lottie.LottieDrawable;
 import com.bumptech.glide.Glide;
 import com.moelle.deepdarkness.GifDrawableImageViewTarget;
 import com.moelle.deepdarkness.R;
@@ -28,19 +30,6 @@ public class Slide_01 extends Fragment implements WelcomePage.OnChangeListener {
         return inflater.inflate(R.layout.slide_01, container, false);
     }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        rootLayout = (ViewGroup) view.findViewById(R.id.layout);
-
-        ImageView image_view = view.findViewById(R.id.slide_01);
-
-        Glide.with(this)
-                .load("https://i.imgur.com/tVoXBc2.gif")
-                .into(new GifDrawableImageViewTarget(image_view, 1));
-
-    }
 
     @Override
     public void onWelcomeScreenPageScrolled(int pageIndex, float offset, int offsetPixels) {

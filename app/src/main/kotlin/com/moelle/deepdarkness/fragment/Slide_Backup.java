@@ -17,7 +17,7 @@ import com.stephentuso.welcome.WelcomeUtils;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Slide_03 extends Fragment implements WelcomePage.OnChangeListener {
+public class Slide_Backup extends Fragment implements WelcomePage.OnChangeListener {
 
     private ViewGroup rootLayout;
 
@@ -25,8 +25,22 @@ public class Slide_03 extends Fragment implements WelcomePage.OnChangeListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.slide_03, container, false);
+        return inflater.inflate(R.layout.slide_01, container, false);
     }
+
+   // @Override
+    //public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    //    super.onViewCreated(view, savedInstanceState);
+    //
+    //   rootLayout = (ViewGroup) view.findViewById(R.id.layout);
+
+    //    ImageView image_view = view.findViewById(R.id.slide_01);
+
+    //    Glide.with(this)
+    //            .load("https://i.imgur.com/tVoXBc2.gif")
+    //            .into(new GifDrawableImageViewTarget(image_view, 1));
+
+    //}
 
     @Override
     public void onWelcomeScreenPageScrolled(int pageIndex, float offset, int offsetPixels) {

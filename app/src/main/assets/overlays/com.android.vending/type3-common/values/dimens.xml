@@ -52,4 +52,6 @@
     <dimen name="play_star_rating_bar_small_gap">1.0dip</dimen>
     <dimen name="play_star_rating_bar_small_height">11.0dip</dimen>
     <dimen name="warm_welcome_v2_card_text_padding">24.0dip</dimen>
+	<dimen name="componentized_button_corner_radius">14.0dip</dimen>
+    <dimen name="gm2_button_corner_radius">14.0dip</dimen>
 </resources>

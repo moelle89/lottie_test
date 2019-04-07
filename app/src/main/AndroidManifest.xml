@@ -30,7 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".AppIntroActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FirstActivity"
             android:theme="@style/Circular.NoActionBar">

@@ -2,6 +2,6 @@
 <inset
   xmlns:android="http://schemas.android.com/apk/res/android">
     <shape>
-        <solid android:color="@*com.android.systemui:color/qs_background_dark" />
+        <solid android:color="@*android:color/user_icon_3" />
     </shape>
 </inset>

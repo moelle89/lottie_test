@@ -75,5 +75,4 @@ public class Welcome extends WelcomeActivity {
         startActivity(new Intent(this, FirstActivity.class));
         finish();
     }
-
 }
