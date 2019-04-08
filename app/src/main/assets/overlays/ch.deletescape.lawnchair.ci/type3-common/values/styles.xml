@@ -4,45 +4,10 @@
         <item name="android:background">@*ch.deletescape.lawnchair.ci:drawable/notification_bg_low_normal</item>
 		<item name="android:backgroundTint">@null</item>
     </style>
-    <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault">
-        <item name="android:actionBarTheme">@*ch.deletescape.lawnchair.ci:style/SettingsTheme.ActionBar</item>
-        <item name="android:colorPrimary">@*android:color/user_icon_default_white</item>
-        <item name="android:colorPrimaryDark">@*android:color/user_icon_default_white</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:statusBarColor">@*android:color/user_icon_default_white</item>
-    </style>
-
-    <style name="BaseLauncherTheme" parent="@*android:style/Theme.DeviceDefault.Light.NoActionBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-    </style>
-
-    <style name="BaseLauncherThemeWithCustomAttrs" parent="@*ch.deletescape.lawnchair.ci:style/BaseLauncherTheme">
-        <item name="android:textColorPrimary">@*ch.deletescape.lawnchair.ci:color/primary_text_material_light</item>
-        <item name="android:textColorSecondary">@*ch.deletescape.lawnchair.ci:color/secondary_text_material_light</item>
-        <item name="android:textColorPrimaryInverse">?android:textColorPrimary</item>
-        <item name="android:textColorSecondaryInverse">?android:textColorSecondary</item>
-        <item name="android:colorPrimary">@*ch.deletescape.lawnchair.ci:color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@*ch.deletescape.lawnchair.ci:color/colorPrimaryDark</item>
-        <item name="android:colorAccent">@*ch.deletescape.lawnchair.ci:color/colorAccent</item>
-        <item name="*ch.deletescape.lawnchair.ci:allAppsScrimColor">#64000000</item>
-        <item name="*ch.deletescape.lawnchair.ci:allAppsNavBarScrimColor">@*android:color/shadow</item>
-        <item name="*ch.deletescape.lawnchair.ci:popupColorPrimary">@*android:color/dim_foreground_light</item>
-        <item name="*ch.deletescape.lawnchair.ci:popupColorSecondary">@*android:color/dim_foreground_light</item>
-        <item name="*ch.deletescape.lawnchair.ci:popupColorTertiary">@*android:color/button_material_dark</item>
-        <item name="*ch.deletescape.lawnchair.ci:isMainColorDark">true</item>
-        <item name="*ch.deletescape.lawnchair.ci:isWorkspaceDarkText">false</item>
-        <item name="*ch.deletescape.lawnchair.ci:workspaceTextColor">@*android:color/white</item>
-        <item name="*ch.deletescape.lawnchair.ci:workspaceShadowColor">@*android:color/transparent</item>
-        <item name="*ch.deletescape.lawnchair.ci:workspaceAmbientShadowColor">@*android:color/shadow</item>
-        <item name="*ch.deletescape.lawnchair.ci:workspaceKeyShadowColor">@*android:color/transparent</item>
-        <item name="*ch.deletescape.lawnchair.ci:workspaceStatusBarScrim">@*ch.deletescape.lawnchair.ci:drawable/workspace_bg</item>
-        <item name="*ch.deletescape.lawnchair.ci:widgetsTheme">@*ch.deletescape.lawnchair.ci:style/WidgetContainerTheme</item>
-    </style>
-	
+    <!--<style name="SettingsTheme.Search.Toolbar" parent="@*ch.deletescape.lawnchair.ci:style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="*ch.deletescape.lawnchair.ci:toolbarNavigationButtonStyle">@*ch.deletescape.lawnchair.ci:style/SettingsTheme.Search.Toolbar.Button.Navigation</item>
+		<item name="android:foreground">@*ch.deletescape.lawnchair.ci:drawable/abc_textfield_search_default_mtrl_alpha</item>
+    </style>-->
     <style name="LauncherThemeDarkText" parent="@*ch.deletescape.lawnchair.ci:style/LauncherTheme">
         <item name="*ch.deletescape.lawnchair.ci:isWorkspaceDarkText">false</item>
         <item name="*ch.deletescape.lawnchair.ci:workspaceTextColor">#ffffffff</item>
@@ -58,6 +23,7 @@
         <item name="android:textColorTertiary">@*android:color/lighter_gray</item>
         <item name="android:colorControlHighlight">@*android:color/accent_material_dark</item>
         <item name="android:colorPrimary">@*android:color/background_dark</item>
+		<item name="android:alertDialogTheme">@*ch.deletescape.lawnchair.ci:style/SettingsTheme.V2.Dark.Dialog</item>
         <item name="*ch.deletescape.lawnchair.ci:allAppsScrimColor">#64000000</item>
         <item name="*ch.deletescape.lawnchair.ci:allAppsNavBarScrimColor">@*android:color/shadow</item>
         <item name="*ch.deletescape.lawnchair.ci:popupColorPrimary">@*android:color/dim_foreground_light</item>
@@ -65,8 +31,9 @@
         <item name="*ch.deletescape.lawnchair.ci:popupColorTertiary">@*android:color/button_material_dark</item>
         <item name="*ch.deletescape.lawnchair.ci:isMainColorDark">true</item>
         <item name="*ch.deletescape.lawnchair.ci:widgetsTheme">@*ch.deletescape.lawnchair.ci:style/WidgetContainerTheme.Dark</item>
+		<item name="*ch.deletescape.lawnchair.ci:workspaceStatusBarScrim">@*ch.deletescape.lawnchair.ci:drawable/workspace_bg_dark</item>
+		<item name="*ch.deletescape.lawnchair.ci:allAppsInterimScrimAlpha">102</item>
     </style>
-	
     <style name="WidgetContainerTheme" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="android:textColorPrimary">@*android:color/white</item>        
 		<item name="android:backgroundTint">@*android:color/secondary_text_default_material_light</item>

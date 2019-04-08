@@ -4,15 +4,12 @@ import android.content.ActivityNotFoundException;
 import android.net.Uri;
 import androidx.fragment.app.Fragment;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
+import com.moelle.deepdarkness.fragment.Slide_02;
 import com.moelle.deepdarkness.fragment.Slide_03;
-import com.moelle.deepdarkness.fragment.LottieFragment;
 import com.moelle.deepdarkness.fragment.Slide_01;
-import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.FragmentWelcomePage;
-import com.stephentuso.welcome.ParallaxPage;
 import com.stephentuso.welcome.WelcomeActivity;
 import com.stephentuso.welcome.WelcomeConfiguration;
 
@@ -38,7 +35,7 @@ public class Welcome extends WelcomeActivity {
 
                 .page(new FragmentWelcomePage() {
                    @Override
-                    protected Fragment fragment() { return new LottieFragment();
+                    protected Fragment fragment() { return new Slide_02();
                     }}
                     .background(R.color.background))
 

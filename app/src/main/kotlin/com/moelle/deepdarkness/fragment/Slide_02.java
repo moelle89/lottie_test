@@ -2,16 +2,11 @@ package com.moelle.deepdarkness.fragment;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
-import com.airbnb.lottie.LottieDrawable;
-import com.bumptech.glide.Glide;
-import com.moelle.deepdarkness.GifDrawableImageViewTarget;
 import com.moelle.deepdarkness.R;
 import com.stephentuso.welcome.WelcomePage;
 import com.stephentuso.welcome.WelcomeUtils;
@@ -19,7 +14,7 @@ import com.stephentuso.welcome.WelcomeUtils;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LottieFragment extends Fragment implements WelcomePage.OnChangeListener {
+public class Slide_02 extends Fragment implements WelcomePage.OnChangeListener {
 
     private ViewGroup rootLayout;
 
@@ -27,7 +22,7 @@ public class LottieFragment extends Fragment implements WelcomePage.OnChangeList
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lottie, container, false);
+        return inflater.inflate(R.layout.slide_02, container, false);
     }
 
 

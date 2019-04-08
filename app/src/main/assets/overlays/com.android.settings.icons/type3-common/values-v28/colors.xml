@@ -38,7 +38,8 @@
     <color name="homepage_du_background">@*android:color/transparent</color>
     <color name="homepage_pewdiepie_background">@*android:color/transparent</color>
     <color name="homepage_syberia_background">@*android:color/transparent</color>
-    <color name="homepage_sparks_background">@*android:color/transparent</color>
+    <color name="homepage_sparks_background">@*android:color/transparent</color>    
+	<color name="homepage_colt_background">@*android:color/transparent</color>
 	
     <color name="owlsnest_oval_advanced">#08B3D1E3</color>
     <color name="owlsnest_oval_buttons">#08B3D1E3</color>

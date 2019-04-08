@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.moelle.deepdarkness.fragment.Slide_01"
-    android:id="@+id/Slide_01">
+    tools:context="com.moelle.deepdarkness.fragment.Slide_02"
+    android:id="@+id/Slide_02">
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -14,10 +14,11 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:id="@+id/lottie"
-        app:lottie_rawRes="@raw/aosp_oos"
+        app:lottie_rawRes="@raw/subs"
         app:lottie_loop="true"
         app:lottie_autoPlay="true"
-        app:lottie_renderMode="hardware"/>
+        app:lottie_speed="1.2"
+        app:lottie_renderMode="hardware" />
 
 
 </RelativeLayout>
