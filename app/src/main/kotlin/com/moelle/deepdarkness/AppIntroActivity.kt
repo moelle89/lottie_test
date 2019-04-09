@@ -14,7 +14,7 @@ import com.matthewtamlin.sliding_intro_screen_library.core.LockableViewPager
 
 
 class AppIntroActivity : IntroActivity() {
-    private val ANIMATION_TIMES = floatArrayOf(0f, 0.1875f, 0.6666f, 1f, 1f)
+    private val ANIMATION_TIMES = floatArrayOf(0f, 0.2000f, 0.3400f, 0.5000f, 0.7454f, 1f)
 
     private val animationView: LottieAnimationView by lazy {
         rootView.inflate(R.layout.app_intro_animation_view, false) as LottieAnimationView
@@ -25,6 +25,7 @@ class AppIntroActivity : IntroActivity() {
 
     override fun generatePages(savedInstanceState: Bundle?): Collection<Fragment> {
         return listOf(
+                EmptyFragment.newInstance(),
                 EmptyFragment.newInstance(),
                 EmptyFragment.newInstance(),
                 EmptyFragment.newInstance(),
@@ -82,7 +83,7 @@ class AppIntroActivity : IntroActivity() {
 
             val scroller = object : Scroller(this, interpolator.get(null) as Interpolator) {
                 override fun startScroll(startX: Int, startY: Int, dx: Int, dy: Int, duration: Int) {
-                    super.startScroll(startX, startY, dx, dy, duration * 5)
+                    super.startScroll(startX, startY, dx, dy, duration * 7)
                 }
             }
             scrollerField.set(viewPager, scroller)

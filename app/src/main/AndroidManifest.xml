@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppIntroActivity" android:theme="@style/Circular.NoActionBar"
+            android:name=".AppIntroActivity" android:theme="@style/AppThemeBgTint"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -60,7 +60,6 @@ class SubstratumLauncher : Activity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fullscreen_dialog)
-        av_from_code.setAnimation("data.json")
         av_from_code.repeatCount = LottieDrawable.INFINITE
         av_from_code.playAnimation()
 
@@ -207,16 +206,11 @@ class SubstratumLauncher : Activity() {
     title.text = getString(R.string.launch_dialog_title)
 
     /*Buttons*/
-    val cont = view.findViewById(R.id.ic_continue) as ImageButton
-    cont.setImageResource(R.drawable.ic_continue)
-    cont.setOnClickListener { _ ->
+    val cont = view.findViewById(R.id.ic_continue) as Button
+        cont.setOnClickListener { _ ->
         startAntiPiracyCheck()
     }
-    val textContinue = view.findViewById(R.id.textContinue) as Button
-    textContinue.setOnClickListener { _ ->
-        startAntiPiracyCheck()
 
-    }
     val textExit = view.findViewById(R.id.textExit) as Button
         textExit.setOnClickListener { _ ->
         finish()

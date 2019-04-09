@@ -25,13 +25,6 @@ public class Welcome extends WelcomeActivity {
                 .backButtonNavigatesPages(false)
                 .bottomLayout(WelcomeConfiguration.BottomLayout.INDICATOR_ONLY)
 
-                .page(new FragmentWelcomePage() {
-                    @Override
-                    protected Fragment fragment() {
-                        return new Slide_01();
-                    }}
-                    .background(R.color.background)
-                )
 
                 .page(new FragmentWelcomePage() {
                    @Override
