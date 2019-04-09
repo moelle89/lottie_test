@@ -14,7 +14,7 @@
 	
     <color name="summary_notification_icon_tint_color">@*android:color/accent_material_dark</color>
 	<color name="notification_guts_btn_color">@*android:color/notification_action_list_dark</color>
-	<color name="notification_guts_bg_color">@*android:color/facelock_spotlight_mask</color>
+	<color name="notification_guts_bg_color">@*android:color/dim_foreground_inverse_disabled_holo_light</color>
     <color name="notification_shade_background_color">@*android:color/notification_action_list</color>
 	
     <color name="fake_shadow_end_color">@*android:color/notification_action_list_dark</color>
