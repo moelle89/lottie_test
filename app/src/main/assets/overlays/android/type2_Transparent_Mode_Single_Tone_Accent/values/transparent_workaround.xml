@@ -15,12 +15,12 @@
 	<color name="user_icon_6">@*android:color/primary_material_dark</color><!-- primary_material_dark solid/trans -->	
 	<color name="user_icon_5">@*android:color/transparent</color><!-- timepicker_default_background_material solid/trans -->
 	<color name="user_icon_3">@*android:color/secondary_text_default_material_light</color><!-- trans/solid bridge of qs panel, notifications etc.  -->
-	<color name="holo_light_control_activated">@*android:color/notification_primary_text_color_light</color><!-- Gear / Snooze icon tint -->
+	<color name="holo_light_control_activated">@*android:color/lighter_gray</color><!-- Gear / Snooze icon tint -->
     <color name="material_blue_grey_700">@*android:color/holo_orange_light</color>
     <color name="material_grey_900">@*android:color/legacy_light_button_normal</color>
 	<color name="material_grey_800">@*android:color/dim_foreground_light</color>
 <!---->
 <!-- light notifications bridge -->
-	<color name="legacy_long_pressed_highlight">#99FDFEFF</color><!-- light notifications solid/transparent -->	
+	<color name="legacy_long_pressed_highlight">#E6FDFEFF</color><!-- light notifications solid/transparent -->	
 	<color name="legacy_button_pressed">#A6F3F4F5</color><!-- light notifications shade solide /transparent -->
 </resources>

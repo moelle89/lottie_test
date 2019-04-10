@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape
-  xmlns:android="http://schemas.android.com/apk/res/android" android:tint="@*android:color/dim_foreground_inverse_disabled_holo_light" >
-    <solid android:color="#E6000001" />
-    <corners android:radius="1.0dip" />
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@*android:color/dim_foreground_inverse_disabled_holo_light" />
+            <corners android:radius="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@*android:color/dim_foreground_inverse_disabled_holo_light" />
+            <corners android:radius="1.0dip" />
+        </shape>
+    </item>
+	<item>
+        <shape android:tint="@*android:color/notification_primary_text_color_light">
+            <solid android:color="#08000000" />
+            <corners android:radius="1.0dip" />
+        </shape>
+    </item>
+</layer-list>
