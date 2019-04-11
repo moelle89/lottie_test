@@ -2,7 +2,7 @@
 <resources>
 	<color name="placeholder">#ffffff</color>
 	<!-- fw notification title tinting fix -->
-	<color name="legacy_light_primary_dark">@*android:color/notification_material_background_color</color>
+	<color name="legacy_light_primary_dark">@*android:color/black</color>
 
     <!-- Notification | Text -->
     <color name="notification_primary_text_color_light">#ff000000</color><!-- Title -->

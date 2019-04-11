@@ -2,7 +2,7 @@
 <resources>
 	<color name="placeholder">#28333e</color>
 	<!-- fw notification title tinting fix -->
-    <color name="legacy_light_primary_dark">@*android:color/notification_material_background_color</color>
+    <color name="legacy_light_primary_dark">@*android:color/black</color>
 
     <!-- Notification | Text -->
     <color name="notification_primary_text_color_light">#FFFFFF</color><!-- Title -->
@@ -17,5 +17,5 @@
 	<!-- black-white-bridge of systemUI for notifications -->
     <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
 	<!-- cant be transparent -->
-	<color name="notification_material_background_color">#00FFFFFF</color>
+	<color name="notification_material_background_color">@*android:color/black</color>
 </resources>
