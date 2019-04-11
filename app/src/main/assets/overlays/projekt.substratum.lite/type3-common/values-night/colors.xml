@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@*android:color/background_dark</color>
+    <color name="colorPrimaryDark">@*android:color/background_dark</color>
+    <color name="colorPrimaryVariant">@*android:color/background_dark</color>
+    <color name="window_bg">@*android:color/background_dark</color>
+    <color name="popupColor">@*android:color/dim_foreground_light</color>
+    <color name="splash_bg">@*android:color/background_dark</color>
+	<color name="bottombar_icon_inactive_tint">@*android:color/holo_orange_light</color>
+	<color name="fab_menu_divider">@*android:color/user_icon_default_white</color>
+	<color name="list_divider_color">#00ffffff</color>
+</resources>

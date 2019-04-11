@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.view.View;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieComposition;
+import com.airbnb.lottie.LottieDrawable;
 import com.moelle.deepdarkness.fragment.Slide_02;
 import com.moelle.deepdarkness.fragment.Slide_03;
 import com.moelle.deepdarkness.fragment.Slide_01;
@@ -18,7 +21,6 @@ import com.stephentuso.welcome.WelcomeConfiguration;
  */
 public class Welcome extends WelcomeActivity {
 
-
     @Override
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
@@ -29,7 +31,8 @@ public class Welcome extends WelcomeActivity {
                     @Override
                     protected Fragment fragment() { return new Slide_01();
                     }}
-                    .background(R.color.background))
+                    .background(R.color.background)
+                )
 
                 .page(new FragmentWelcomePage() {
                    @Override

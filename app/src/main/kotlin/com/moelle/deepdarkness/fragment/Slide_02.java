@@ -2,11 +2,13 @@ package com.moelle.deepdarkness.fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.moelle.deepdarkness.R;
 import com.stephentuso.welcome.WelcomePage;
 import com.stephentuso.welcome.WelcomeUtils;
@@ -25,7 +27,6 @@ public class Slide_02 extends Fragment implements WelcomePage.OnChangeListener {
         return inflater.inflate(R.layout.slide_02, container, false);
     }
 
-
     @Override
     public void onWelcomeScreenPageScrolled(int pageIndex, float offset, int offsetPixels) {
         if (rootLayout != null)
@@ -34,12 +35,10 @@ public class Slide_02 extends Fragment implements WelcomePage.OnChangeListener {
 
     @Override
     public void onWelcomeScreenPageSelected(int pageIndex, int selectedPageIndex) {
-        //Not used
     }
 
     @Override
     public void onWelcomeScreenPageScrollStateChanged(int pageIndex, int state) {
         //Not used
     }
-
 }
