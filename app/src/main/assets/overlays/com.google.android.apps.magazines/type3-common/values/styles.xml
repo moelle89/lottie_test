@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="NSTheme.Light.CustomToolbar" parent="@*com.google.android.apps.magazines:style/NSTheme.Dark">
+    <style name="NSTheme.DayNight.CustomToolbar" parent="@*com.google.android.apps.magazines:style/NSTheme.DayNight">
 		<item name="android:windowLightStatusBar">false</item>
         <item name="*com.google.android.apps.magazines:windowActionBar">false</item>
         <item name="*com.google.android.apps.magazines:windowNoTitle">true</item>
     </style>
-    <style name="NSTheme.SplashScreen" parent="@*com.google.android.apps.magazines:style/NSTheme.Light.CustomToolbar">
+    <style name="NSTheme.SplashScreen" parent="@*com.google.android.apps.magazines:style/NSTheme.DayNight.CustomToolbar">
         <item name="android:windowBackground">@*com.google.android.apps.magazines:drawable/quantum_launchscreen_google_news</item>
 		<item name="android:backgroundTint">@null</item>
     </style>
