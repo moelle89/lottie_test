@@ -8,7 +8,7 @@
 	<color name="holo_button_pressed">#3Dcae17c</color><!-- ripple_dark -->
 	<color name="holo_control_activated">#ff80a71a</color><!-- theme_color_light -->
     <color name="suggestion_highlight_text">#ff567f11</color><!-- theme_color_dark -->
-	<color name="holo_orange_light">#ff7f929e</color> <!-- controlnormal_light -->
+	<color name="holo_orange_light">#ff7f929e</color><!-- controlnormal_light -->
 	<color name="secondary_text_default_material_dark">#ffaabfca</color> <!-- secondary_text_material_dark -->
 
 	<!-- dualtone accent -->

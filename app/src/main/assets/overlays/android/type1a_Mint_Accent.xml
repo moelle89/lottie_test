@@ -6,7 +6,7 @@
 	<color name="accessibility_focus_highlight">#BE90d3b7</color><!-- common_color_alpha -->
 	<color name="highlighted_text_dark">#7890d3b7</color><!-- common_color_alpha2 -->
 	<color name="holo_button_pressed">#3D90d3b7</color><!-- ripple_dark -->
-	<color name="holo_control_activated">#ff4fc293</color>><!-- theme_color_light -->
+	<color name="holo_control_activated">#ff4fc293</color><!-- theme_color_light -->
     <color name="suggestion_highlight_text">#ff42a47c</color><!-- theme_color_dark -->
 	<color name="holo_orange_light">#ff778797</color> <!-- controlnormal_light -->
 	<color name="secondary_text_default_material_dark">#ffaabfca</color> <!-- secondary_text_material_dark -->
