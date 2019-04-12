@@ -4,7 +4,7 @@
     <!-- Light -->
     <color name="google_blue600">@*android:color/accent_material_dark</color>       	                     <!-- Accent -->
     <color name="google_blue900">@*android:color/suggestion_highlight_text</color>                             <!-- Outgoing Text, Bubble Seclected -->
-    <color name="google_blue400">@*android:color/control_checkable_material</color>                             <!-- Attachement Picker Categories -->
+    <color name="google_blue400">@*android:color/holo_control_activated</color>                             <!-- Attachement Picker Categories -->
 	<color name="primary_ripple_color">@*android:color/holo_button_pressed</color>	
 	<color name="google_grey500">#a0b0bd</color>
     <!-- Dark -->
@@ -24,9 +24,9 @@
     <color name="google_grey800">@*android:color/background_dark</color>                            <!-- Card -->    
 	<color name="promo_background">@*android:color/background_dark</color>  	
 	<color name="promo_button_background">@*android:color/background_dark</color>                          
-	<color name="promo_negative_button_text_color">@*android:color/control_checkable_material</color>
+	<color name="promo_negative_button_text_color">@*android:color/holo_control_activated</color>
 	<color name="design_snackbar_background_color">@*android:color/dim_foreground_light</color>
-	<color name="google_snackbar_button">@*android:color/control_checkable_material</color>
+	<color name="google_snackbar_button">@*android:color/holo_control_activated</color>
     <!-- >Notification -->
     <color name="notification_sender_text">#FFFFFF</color>
     <color name="notification_secondary_text">@*android:color/secondary_text_default_material_dark</color>

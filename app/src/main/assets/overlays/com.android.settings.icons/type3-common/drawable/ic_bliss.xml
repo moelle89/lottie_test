@@ -109,7 +109,7 @@ M307,120.8
 c-6.2,6.1-11.4,13.1-16.5,20.2c2.7,0.1,5.4-0.3,8-0.6c7.7-1,15.4-2.5,22.5-5.6c4.3-1.9,8.6-4.5,11.5-8.4c5.6-7,9.8-14.9,13.4-23
 c0.8-1.6,1.3-3.4,2.6-4.7c-4.7,0.6-9.4,1.5-13.9,3.2C324.1,105.8,314.8,112.7,307,120.8z" />
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:pathData="M357,54.5c-8-10.2-18.4-18.5-30-24c-11.2-5.4-23.8-8.2-36.4-8.2c-2.3,0-4.6,0.1-6.8,0.3
 c-21.8,1.6-42.6,12.1-57.1,28.8c-10.7,12.2-17.8,27.7-20,43.7c-2.3,16.4,0.3,33.6,7.4,48.4c9.6,20.2,27.2,36,48.3,43.4
 c9,3.2,18.5,4.8,28.2,4.8c9,0,17.8-1.4,26.2-4.1c12.1-3.9,23.4-10.8,32.7-19.7c9.4-9.1,16.7-20.5,21-32.7
@@ -119,7 +119,7 @@ C299,191.3,280,191,263,185c-20.5-7.2-37.8-22.8-47.1-42.4c-7-14.6-9.5-31.2-7.2-47
 c14-16.2,34.4-26.5,55.7-28.1c14.4-1.2,29.2,1.5,42.2,7.8c11.4,5.4,21.5,13.5,29.3,23.4c6.7,8.4,11.7,18.1,14.6,28.5
 C374.7,100.6,374.2,118.4,368.5,134.5z" />
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:fillAlpha="0.8"
         android:strokeAlpha="0.8"
         android:strokeWidth="1"
@@ -151,7 +151,7 @@ c2.9,0,5.2-2.3,5.3-5.1C202.6,102.4,202.9,98.9,203.4,95.4z" />
 c-1.3-0.6-2.6-1.2-3.9-1.9c-4.9-2.5-9.8-5.2-14.8-8.2c-3.7-2.2-7.5-4.6-10.9-7.5c-0.5-0.4-1-0.9-1.4-1.3c-1.1-1-1.7-2.3-2.3-3.6
 c-2.4-5-3.9-10.3-5-15.6c-0.2-1-0.4-2-0.5-3C247.1,90.8,246.6,87.2,246.2,83.8z" />
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:fillAlpha="0.18"
         android:strokeAlpha="0.18"
         android:strokeWidth="1"
@@ -166,7 +166,7 @@ c-2.4-5-3.9-10.3-5-15.6c-0.2-1-0.4-2-0.5-3C247.1,90.8,246.6,87.2,246.2,83.8z" />
         android:pathData="M284.9,108.8c2.1,8.5,3.1,17.3,2.8,26c-4-5.5-8.1-11-12.7-16c-2.8-3.1-5.7-6.1-8.8-8.8c-1-0.7-1.2-2-1.5-3.1
 c-1.4-5.8-1.9-11.9-1.8-17.9c0.3-5,0.5-10.2,1.7-15.1C275,83,281.5,95.7,284.9,108.8z" />
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:fillAlpha="0.18"
         android:strokeAlpha="0.18"
         android:strokeWidth="1"

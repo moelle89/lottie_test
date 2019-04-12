@@ -6,14 +6,11 @@ import android.animation.Animator
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.os.CountDownTimer
 import androidx.appcompat.app.AlertDialog
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
+import android.content.Intent
 import android.widget.*
 import com.github.javiersantos.piracychecker.*
 import com.github.javiersantos.piracychecker.enums.*
@@ -24,9 +21,7 @@ import com.moelle.deepdarkness.ThemeFunctions.checkApprovedSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfVerifiedPirateTools
 import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
-import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
-import com.airbnb.lottie.LottieDrawable.INFINITE
 import kotlinx.android.synthetic.main.fullscreen_dialog.*
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">@*android:color/control_checkable_material</color>
+    <color name="ic_launcher_background">@*android:color/holo_control_activated</color>
 	<color name="colorAccent">@*android:color/accent_material_dark</color>
     <color name="colorBackgroundBorder">@*android:color/background_dark</color>
     <color name="colorBlack">@*android:color/background_dark</color>
@@ -9,6 +9,6 @@
     <color name="colorKeyContainerBG">@*android:color/background_dark</color>
     <color name="colorKeyContainerBorder">@*android:color/accent_material_dark</color>
     <color name="colorKeyIconTint">#ffffffff</color>
-    <color name="colorPrimary">@*android:color/control_checkable_material</color>
-    <color name="colorPrimaryDark">@*android:color/control_checkable_material</color>
+    <color name="colorPrimary">@*android:color/holo_control_activated</color>
+    <color name="colorPrimaryDark">@*android:color/holo_control_activated</color>
 </resources>

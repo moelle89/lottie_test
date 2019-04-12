@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
-    <stroke android:width="2.4dp" android:color="@*android:color/control_checkable_material" />
+    <stroke android:width="2.4dp" android:color="@*android:color/holo_control_activated" />
 	<padding android:left="12.0dip" android:top="12.0dip" android:right="12.0dip" android:bottom="12.0dip" />
     <corners android:radius="24.0dip" />
 	<solid android:color="@*android:color/highlighted_text_dark" />

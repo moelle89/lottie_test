@@ -5,7 +5,7 @@
         <shape android:shape="oval">
               <solid android:color="@*android:color/holo_primary_dark" />
 			  <size android:height="56.0dip" android:width="56.0dip" />
-			  <stroke android:width="4.0dip" android:color="@*android:color/control_checkable_material" />
+			  <stroke android:width="4.0dip" android:color="@*android:color/holo_control_activated" />
         </shape>
     </item>
 </ripple>

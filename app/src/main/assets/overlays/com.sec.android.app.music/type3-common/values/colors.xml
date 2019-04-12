@@ -3,14 +3,14 @@
     <color name="action_bar_app_title_text_mmapp">@*android:color/accent_material_dark</color>
     <color name="action_bar_drawer_back_icon_mmapp">@*android:color/accent_material_dark</color>
     <color name="action_bar_menu_text_mmapp">@*android:color/accent_material_dark</color>
-    <color name="action_bar_search_icon_winset">@*android:color/control_checkable_material</color>
+    <color name="action_bar_search_icon_winset">@*android:color/holo_control_activated</color>
     <color name="accent_material_dark">@*android:color/accent_material_dark</color>
     <color name="accent_material_light">@*android:color/accent_material_dark</color>
 
     <color name="full_player_synced_lyric_icon_text">@*android:color/highlighted_text_holo_dark</color>
     <color name="bottom_dialog_go_to_color">@*android:color/accent_material_dark</color>
     <color name="lock_player_nowplaying_button_selected_color">@*android:color/highlighted_text_holo_dark</color>
-    <color name="milk_popup_button_color">@*android:color/control_checkable_material</color>
+    <color name="milk_popup_button_color">@*android:color/holo_control_activated</color>
     <color name="milk_popup_button_color_dim">@*android:color/highlighted_text_dark</color>
     <color name="sesl_loading_progress_color2">@*android:color/holo_blue_light</color>
   

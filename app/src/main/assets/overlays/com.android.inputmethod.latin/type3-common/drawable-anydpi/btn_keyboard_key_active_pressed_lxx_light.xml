@@ -7,7 +7,7 @@
         </shape>
     </item>
     <item android:gravity="center">
-        <shape android:tint="@*android:color/control_checkable_material" android:shape="oval">
+        <shape android:tint="@*android:color/holo_control_activated" android:shape="oval">
             <size android:height="42.0dip" android:width="42.0dip" />
             <solid android:color="#77ffffff" />
             <stroke android:width="2.0dip" android:color="#87ffffff" />

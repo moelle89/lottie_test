@@ -58,7 +58,7 @@
 
 	<color name="view_overlay_green">@*android:color/holo_button_pressed</color>	
 	<color name="solar_green">@*android:color/accent_material_dark</color>
-    <color name="solar_green_dark">@*android:color/control_checkable_material</color>
+    <color name="solar_green_dark">@*android:color/holo_control_activated</color>
     <color name="solar_green_light">@*android:color/holo_blue_bright</color>
 	<!-- small control icons active --><!--green button bg -->
 
@@ -71,10 +71,10 @@
     <color name="login_text_field_focused">@*android:color/holo_button_pressed</color>
     <color name="login_text_field_not_focused">#189ebdd0</color>
 
-	<color name="cat_dark_green">@*android:color/control_checkable_material</color>	
+	<color name="cat_dark_green">@*android:color/holo_control_activated</color>	
 	<color name="cat_dark_green_40">#f20033</color>
     <color name="cat_medium_green">@*android:color/holo_blue_bright</color><!-- small control icons active --><!--green button bg -->
-    <color name="glue_green_dark">@*android:color/control_checkable_material</color>
+    <color name="glue_green_dark">@*android:color/holo_control_activated</color>
     <color name="cat_button_info_dialog_text_default">#121314</color>    
 	<color name="cat_black_20">#48000000</color>
     <color name="cat_black_40">#7e000000</color>

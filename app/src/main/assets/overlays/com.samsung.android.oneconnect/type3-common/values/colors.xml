@@ -25,7 +25,7 @@
     <color name="dashboard_d2d_device_switch_color">@*android:color/accent_material_dark</color>
     <color name="dashboard_switch_active_track_color_for_l">@*android:color/accent_material_dark</color>
     <color name="device_background_blue_end">@*android:color/suggestion_highlight_text</color>
-    <color name="device_background_blue_start">@*android:color/control_checkable_material</color>
+    <color name="device_background_blue_start">@*android:color/holo_control_activated</color>
     <color name="device_color_blue">@*android:color/accent_material_dark</color>
     <color name="device_color_blue_1">@*android:color/accent_material_dark</color>
     <color name="device_color_blue_2">@*android:color/accent_material_dark</color>

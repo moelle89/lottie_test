@@ -31,7 +31,7 @@
     <color name="color_primary">@*android:color/accent_material_dark</color>
     <color name="color_primary_accent">@*android:color/accent_material_dark</color>
     <color name="system_pink">@*android:color/accent_material_dark</color>
-    <color name="system_pink_pressed">@*android:color/control_checkable_material</color>
+    <color name="system_pink_pressed">@*android:color/holo_control_activated</color>
     <color name="primary_accent_50">@*android:color/accessibility_focus_highlight</color>
     <color name="system_light_gray_2">@*android:color/dim_foreground_light</color>
 	<color name="connect_banner_bg_color">@*android:color/transparent</color>

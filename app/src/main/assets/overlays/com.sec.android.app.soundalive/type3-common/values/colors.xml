@@ -24,12 +24,12 @@
     <color name="listview_preset_text_color">#ffffffff</color>
     <color name="seekbar_progress_bg">@*android:color/lighter_gray</color>
     <color name="seekbar_progress_primary">@*android:color/accent_material_dark</color>
-    <color name="seekbar_progress_secondary">@*android:color/control_checkable_material</color>
+    <color name="seekbar_progress_secondary">@*android:color/holo_control_activated</color>
     <color name="soundalive_bg">@*android:color/transparent</color>
     <color name="soundalive_system_bg">@*android:color/secondary_text_default_material_light</color>
     <color name="ssw_seekbar_bg_color">@*android:color/transparent</color>
     <color name="tw_progress_color_control_activated">@*android:color/accent_material_dark</color>
     <color name="tw_progress_color_control_normal">#ffc9c9c9</color>
-    <color name="tw_progress_color_control_secondary">@*android:color/control_checkable_material</color>
+    <color name="tw_progress_color_control_secondary">@*android:color/holo_control_activated</color>
     <color name="tw_secondary_color">@*android:color/holo_orange_light</color>
 </resources>

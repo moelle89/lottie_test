@@ -7,7 +7,7 @@
 	<color name="accessibility_focus_highlight">#BEc7a861</color><!-- common_color_alpha -->
 	<color name="highlighted_text_dark">#78c7a861</color><!-- common_color_alpha2 -->
 	<color name="holo_button_pressed">#3Dc7a861</color><!-- ripple_dark -->
-	<color name="control_checkable_material">#ffb39246</color><!-- theme_color_light -->
+	<color name="holo_control_activated">#ffb39246</color><!-- theme_color_light -->
     <color name="suggestion_highlight_text">#ff987835</color><!-- theme_color_dark -->
 	<color name="secondary_text_default_material_dark">#ffaabfca</color> <!-- secondary_text_material_dark -->
 
@@ -21,7 +21,6 @@
 	<color name="Red_800">#ffff6679</color><!-- Google Red / Default common_color_alpha -->
 	<color name="holo_orange_dark">@*android:color/highlighted_text_dark</color><!-- Google / Default highlighted_text_dark -->
 	<color name="holo_purple">@*android:color/highlighted_text_holo_dark</color><!-- Google Red / Default highlighted_text_holo_dark -->
-	<color name="holo_control_activated">@*android:color/control_checkable_material</color><!-- Google Blue / Default Actionbar Color -->
 	<color name="Blue_700">@*android:color/accent_material_dark</color><!-- Google Blue / Default Accent Color -->
 	<color name="holo_primary">@*android:color/suggestion_highlight_text</color><!-- Google / Default suggestion_highlight_text - Keyboard BG -->
 </resources>

@@ -2,7 +2,7 @@
 <resources>
     <color name="sliding_view_menu_icon_color">@*android:color/accent_material_dark</color>
     <color name="preference_title_connecting_color">@*android:color/accessibility_focus_highlight</color>
-    <color name="preference_title_connected_color">@*android:color/control_checkable_material</color>
+    <color name="preference_title_connected_color">@*android:color/holo_control_activated</color>
     <color name="icon_view_shape_color">@*android:color/accent_material_dark</color>
     <color name="about_page_update_background_color">@*android:color/accent_material_dark</color>
     <color name="connecting_popup_source_device">@*android:color/suggestion_highlight_text</color>

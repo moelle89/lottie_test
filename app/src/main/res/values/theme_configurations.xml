@@ -22,4 +22,5 @@
     <string-array name="ThemeChangelog">
         <item>close it. now!</item>
     </string-array>
+    <bool name="ThemeHideDefaultType3Option">true</bool>
 </resources>

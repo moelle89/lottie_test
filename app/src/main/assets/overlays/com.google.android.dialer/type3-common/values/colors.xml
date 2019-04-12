@@ -17,9 +17,9 @@
     <color name="shortcut_add_contact_foreground_color">#fff9f9f9</color>    
 	<color name="dialer_primary_text_color_white">#fff9f9f9</color>
     <color name="dialer_light_theme_color">@*android:color/accent_material_dark</color>
-    <color name="dialer_theme_color_dark">@*android:color/control_checkable_material</color>
-    <color name="primary_material_dark">@*android:color/control_checkable_material</color>
-    <color name="primary_material_light">@*android:color/control_checkable_material</color>
+    <color name="dialer_theme_color_dark">@*android:color/holo_control_activated</color>
+    <color name="primary_material_dark">@*android:color/holo_control_activated</color>
+    <color name="primary_material_light">@*android:color/holo_control_activated</color>
 	<color name="dialer_secondary_color">@*android:color/accent_material_dark</color>
 	<color name="titlebar_in_recents_background_color">@*android:color/dim_foreground_light</color>
 	<color name="notification_action_accept">#fff9f9f9</color>

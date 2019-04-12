@@ -80,7 +80,7 @@
     <color name="secondary_text_color">@*android:color/secondary_text_default_material_dark</color>  
     <color name="frequent_contact_text_color">#ffffffff</color>
     <color name="background_dialpad">@*android:color/user_icon_default_gray</color>
-    <color name="quickcontact_default_photo_tint_color">@*android:color/control_checkable_material</color>
+    <color name="quickcontact_default_photo_tint_color">@*android:color/holo_control_activated</color>
     <color name="actionbar_icon_color">#ffffffff</color>
     <color name="dialtacts_theme_color">@*android:color/suggestion_highlight_text</color>
     <color name="actionbar_color_grey_solid">@*android:color/white</color>

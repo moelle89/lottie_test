@@ -6,7 +6,7 @@
     android:viewportHeight="48">
 
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:fillAlpha="0.35"
         android:strokeAlpha="0.35"
         android:strokeWidth="1"

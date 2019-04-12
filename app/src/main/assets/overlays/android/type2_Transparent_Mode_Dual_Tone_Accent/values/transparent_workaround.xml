@@ -22,5 +22,5 @@
 <!---->
 <!-- light notifications bridge -->
 	<color name="legacy_long_pressed_highlight">#E6FDFEFF</color><!-- light notifications solid/transparent -->	
-	<color name="legacy_button_pressed">#A6F3F4F5</color><!-- light notifications shade solide /transparent -->
+	<color name="legacy_button_pressed">#00F3F4F5</color><!-- light notifications shade solide /transparent -->
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Base.DialogWindowTitle.AppCompat" parent="@android:style/Widget">
-        <item name="android:textColor">@*android:color/control_checkable_material</item>
+        <item name="android:textColor">@*android:color/holo_control_activated</item>
         <item name="android:maxLines">1</item>
         <item name="android:scrollHorizontally">true</item>
     </style>

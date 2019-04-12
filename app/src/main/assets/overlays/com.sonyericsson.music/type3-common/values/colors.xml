@@ -15,7 +15,7 @@
     <color name="button_material_dark">@*android:color/accent_material_dark</color>
     <color name="button_material_light">@*android:color/accent_material_dark</color>  
     <color name="list_divider_color_inverse">#0CFFFFFF</color> 
-    <color name="design_snackbar_background_color">@*android:color/control_checkable_material</color>
+    <color name="design_snackbar_background_color">@*android:color/holo_control_activated</color>
 	<color name="music_landingpage_background_color_inverse">@*android:color/background_dark</color>   
 	<color name="background_color_inverse">@*android:color/background_dark</color>
     <color name="promotion_backplate_normal">@*android:color/accent_material_dark</color>

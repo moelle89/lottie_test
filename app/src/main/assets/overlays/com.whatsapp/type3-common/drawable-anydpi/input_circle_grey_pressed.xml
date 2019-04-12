@@ -6,6 +6,6 @@
     android:viewportHeight="64">
 
     <path
-        android:fillColor="@*android:color/control_checkable_material"
+        android:fillColor="@*android:color/holo_control_activated"
         android:pathData="M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0z" />
 </vector>

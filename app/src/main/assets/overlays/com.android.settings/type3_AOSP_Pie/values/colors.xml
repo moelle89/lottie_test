@@ -96,8 +96,8 @@
     <color name="divider_color">@*android:color/transparent</color>
     <color name="wifi_divider">@*android:color/transparent</color>    
 	<color name="dim_foreground_light">@*android:color/dim_foreground_light</color>
-	<color name="fab_bg_main">@*android:color/control_checkable_material</color>	
-    <color name="action_picker_fab_background">@*android:color/control_checkable_material</color>	
+	<color name="fab_bg_main">@*android:color/holo_control_activated</color>	
+    <color name="action_picker_fab_background">@*android:color/holo_control_activated</color>	
     <color name="highlighted_text_material_light">@*android:color/accent_material_dark</color>
     <color name="material_deep_teal_500">@*android:color/accent_material_dark</color>
 	<color name="material_blue_grey_800">@*android:color/primary_material_dark</color>
@@ -159,7 +159,7 @@
     <color name="suw_link_color_light">@*android:color/accent_material_dark</color>
     <color name="suw_color_accent_dark">@*android:color/accent_material_dark</color>
 	<color name="suw_color_accent_glif_dark">@*android:color/accent_material_dark</color>
-    <color name="suw_color_accent_glif_light">@*android:color/control_checkable_material</color>
+    <color name="suw_color_accent_glif_light">@*android:color/holo_control_activated</color>
     <color name="suw_color_accent_light">@*android:color/accent_material_dark</color>
     <color name="suw_navbar_bg_dark">@*android:color/dim_foreground_light</color>
     <color name="suw_navbar_bg_light">@*android:color/dim_foreground_light</color>
@@ -222,7 +222,7 @@
 	
     <color name="fab_button_icon_color">#ffffffff</color>
     <color name="fab_rr_color_ripple">@*android:color/holo_button_pressed</color>
-    <color name="fab_rr_bg">@*android:color/control_checkable_material</color>
+    <color name="fab_rr_bg">@*android:color/holo_control_activated</color>
     <color name="rr_config_tab_color">@*android:color/legacy_primary_dark</color>
     <color name="rr_config_tab_text_color">#ffffffff</color>
 	

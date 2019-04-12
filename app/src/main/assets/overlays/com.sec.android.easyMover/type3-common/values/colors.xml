@@ -42,7 +42,7 @@
     <color name="color_589fc6">@*android:color/accent_material_dark</color>
     <color name="fluid_index_view_stroke">@*android:color/button_material_dark</color>
 	<color name="color_stroke">@*android:color/button_material_dark</color>	
-    <color name="color_499ebd">@*android:color/control_checkable_material</color>
+    <color name="color_499ebd">@*android:color/holo_control_activated</color>
     <color name="color_42a5c9">@*android:color/suggestion_highlight_text</color>
     <color name="color_42a5c9_95">@*android:color/suggestion_highlight_text</color>
     <color name="color_0084a5">@*android:color/suggestion_highlight_text</color>

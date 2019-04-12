@@ -19,7 +19,7 @@
                 android:centerY="0.8"
                 android:gradientRadius="100%p"
                 android:endColor="#37FFFFFF"
-                android:startColor="@*android:color/control_checkable_material" />
+                android:startColor="@*android:color/holo_control_activated" />
         </shape>
     </item>
     <item>

@@ -13,7 +13,7 @@
     <color name="grey_3">@*android:color/suggestion_highlight_text</color><!--nav normal state - loading spinners and chat timestamp -->
     <color name="grey_3_whiteout">@*android:color/material_blue_grey_700</color>
     <color name="grey_4">@*android:color/material_blue_grey_700</color>
-    <color name="grey_4_whiteout">@*android:color/control_checkable_material</color>
+    <color name="grey_4_whiteout">@*android:color/holo_control_activated</color>
     <color name="grey_5">@*android:color/secondary_text_default_material_dark</color>
     <color name="grey_5_whiteout">@*android:color/secondary_text_default_material_dark</color>
     <color name="grey_6">@*android:color/material_blue_grey_700</color>
@@ -79,7 +79,7 @@
     <color name="ig_red">@*android:color/accent_material_dark</color>
     <color name="ig_yellow">@*android:color/accent_material_dark</color>
     <color name="iglive_ssi_banner_gradient_end">@*android:color/highlighted_text_holo_dark</color>
-    <color name="iglive_ssi_banner_gradient_start">@*android:color/control_checkable_material</color>
+    <color name="iglive_ssi_banner_gradient_start">@*android:color/holo_control_activated</color>
     <color name="igtv_banner_gradient_1">@*android:color/highlighted_text_holo_dark</color>
     <color name="igtv_banner_gradient_2">@*android:color/accent_material_dark</color>
     <color name="igtv_banner_gradient_3">@*android:color/accent_material_dark</color>
@@ -91,7 +91,7 @@
     <color name="music_sticker_tray_color_2">@*android:color/accent_material_dark</color>
     <color name="music_sticker_tray_color_3">@*android:color/highlighted_text_holo_dark</color>
     <color name="slider_gradient_end">@*android:color/highlighted_text_holo_dark</color>
-    <color name="slider_gradient_start">@*android:color/control_checkable_material</color>    
+    <color name="slider_gradient_start">@*android:color/holo_control_activated</color>    
 	<color name="purple_5">@*android:color/accent_material_dark</color>
     <color name="pink_4">@*android:color/accent_material_dark</color>
     <color name="pink_5">@*android:color/accent_material_dark</color>    
@@ -108,8 +108,8 @@
     <color name="direct_blue_gradient_light">@*android:color/highlighted_text_holo_dark</color>
     <color name="direct_blue_ring_gradient_colour1">@*android:color/highlighted_text_holo_dark</color>
     <color name="direct_blue_ring_gradient_colour2">@*android:color/accent_material_dark</color>
-    <color name="direct_blue_ring_gradient_colour3">@*android:color/control_checkable_material</color>
-    <color name="direct_blue_ring_gradient_colour4">@*android:color/control_checkable_material</color>
+    <color name="direct_blue_ring_gradient_colour3">@*android:color/holo_control_activated</color>
+    <color name="direct_blue_ring_gradient_colour4">@*android:color/holo_control_activated</color>
     <color name="direct_blue_ring_gradient_colour5">@*android:color/suggestion_highlight_text</color>
 
     <color name="browser_alternative_subtitle_color">@*android:color/holo_blue_light</color>

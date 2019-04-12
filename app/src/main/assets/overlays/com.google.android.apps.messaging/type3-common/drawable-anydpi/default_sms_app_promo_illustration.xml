@@ -40,7 +40,7 @@
             android:fillColor="@*android:color/accent_material_dark"
             android:pathData="M760.6,35H455.9c-48.1,0-87.1,39-87.1,87.1v0c0,48.1,39,87.1,87.1,87.1h110.4v24.5c0,7.2,8.7,10.8,13.8,5.7 l30.2-30.2h150.3c48.1,0,87.1-39,87.1-87.1v0C847.7,74,808.7,35,760.6,35z" />
         <path
-            android:fillColor="@*android:color/control_checkable_material"
+            android:fillColor="@*android:color/holo_control_activated"
             android:pathData="M791.7,316.7H550.1c-38.1,0-69.1,30.9-69.1,69.1v0c0,32.6,22.6,60,53.1,67.2v21.3c0,5.7,6.9,8.6,10.9,4.5 l24-24h222.7c38.1,0,69.1-30.9,69.1-69.1v0C860.8,347.6,829.8,316.7,791.7,316.7z" />
         <path
             android:fillColor="#1b1b1b"

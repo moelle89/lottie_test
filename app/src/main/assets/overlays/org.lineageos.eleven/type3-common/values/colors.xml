@@ -33,7 +33,7 @@
     <color name="background_color">@*android:color/background_dark</color>
     <color name="header_action_bar_color">@*android:color/holo_primary_dark</color>
     <color name="header_shadow_color">#ea232323</color>
-    <color name="page_header_background">@*android:color/control_checkable_material</color>
+    <color name="page_header_background">@*android:color/holo_control_activated</color>
     <color name="primary">@*android:color/holo_primary_dark</color>
     <color name="primary_dark">@*android:color/holo_primary_dark</color>
     <color name="primary_light">@*android:color/holo_primary_dark</color>

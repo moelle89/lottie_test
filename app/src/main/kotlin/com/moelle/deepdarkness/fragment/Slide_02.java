@@ -2,16 +2,15 @@ package com.moelle.deepdarkness.fragment;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.moelle.deepdarkness.R;
 import com.stephentuso.welcome.WelcomePage;
 import com.stephentuso.welcome.WelcomeUtils;
+
 
 /**
  * A simple {@link Fragment} subclass.

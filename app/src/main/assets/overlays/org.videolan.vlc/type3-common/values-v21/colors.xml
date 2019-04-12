@@ -18,9 +18,9 @@
     <color name="cardview_shadow_start_color">#00000000</color>
     <color name="lb_preference_item_secondary_text_color_default">#DAFFFFFF</color>
 	<color name="secondary_text_default_material_dark">#DAFFFFFF</color>
-    <color name="orange500">@*android:color/control_checkable_material</color>    
-	<color name="orange600">@*android:color/control_checkable_material</color>	
-	<color name="orange700">@*android:color/control_checkable_material</color>
+    <color name="orange500">@*android:color/holo_control_activated</color>    
+	<color name="orange600">@*android:color/holo_control_activated</color>	
+	<color name="orange700">@*android:color/holo_control_activated</color>
 	<color name="orange800">@*android:color/accent_material_dark</color>	
 	<color name="orange900">@*android:color/accent_material_dark</color>
     <color name="orange500transparent">@*android:color/accent_material_dark</color>	

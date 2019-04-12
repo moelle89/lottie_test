@@ -74,15 +74,15 @@
     <color name="primary_text_default_material_light">@*android:color/black</color>
 	
 	<color name="red">@*android:color/accent_material_dark</color>
-	<color name="pink">@*android:color/control_checkable_material</color>
+	<color name="pink">@*android:color/holo_control_activated</color>
     <color name="purple">@*android:color/accent_material_dark</color>
-    <color name="deep_purple">@*android:color/control_checkable_material</color>
+    <color name="deep_purple">@*android:color/holo_control_activated</color>
     <color name="cyan">@*android:color/accent_material_dark</color>
-    <color name="light_blue">@*android:color/control_checkable_material</color>
+    <color name="light_blue">@*android:color/holo_control_activated</color>
     <color name="blue">@*android:color/accent_material_dark</color>
     <color name="indigo">@*android:color/accent_material_dark</color>
     <color name="teal">@*android:color/accent_material_dark</color>
-    <color name="green">@*android:color/control_checkable_material</color>
+    <color name="green">@*android:color/holo_control_activated</color>
     <color name="light_green">@*android:color/button_material_dark</color>
     <color name="lime">@*android:color/accent_material_dark</color>
     <color name="deep_orange">@*android:color/accent_material_dark</color>

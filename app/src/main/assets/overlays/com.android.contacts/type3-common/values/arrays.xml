@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="letter_tile_colors">
-		<item>@*android:color/control_checkable_material</item>      
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>      
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item> 
-		<item>@*android:color/control_checkable_material</item>      
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>      
-		<item>@*android:color/control_checkable_material</item>        
-		<item>@*android:color/control_checkable_material</item>
+		<item>@*android:color/holo_control_activated</item>      
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>      
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item> 
+		<item>@*android:color/holo_control_activated</item>      
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>      
+		<item>@*android:color/holo_control_activated</item>        
+		<item>@*android:color/holo_control_activated</item>
     </array>
     <array name="letter_tile_colors_dark">
 		<item>@*android:color/suggestion_highlight_text</item>      

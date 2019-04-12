@@ -55,7 +55,7 @@
     <color name="google_blue500">@*android:color/accent_material_dark</color>
     <color name="google_blue600">@*android:color/accent_material_dark</color>
     <color name="google_blue700">@*android:color/accent_material_dark</color>
-    <color name="google_blue900">@*android:color/control_checkable_material</color>
+    <color name="google_blue900">@*android:color/holo_control_activated</color>
     <color name="google_default_color_background">@*com.google.android.apps.walletnfcrel:color/google_white</color>
     <color name="google_default_color_error">@*com.google.android.apps.walletnfcrel:color/google_red600</color>
     <color name="google_default_color_hairline">@*android:color/dim_foreground_light</color>
@@ -156,7 +156,7 @@
     <color name="quantum_bluegrey800">@*android:color/holo_orange_light</color>
     <color name="quantum_deeporange600">#fff4511e</color>
     <color name="quantum_googblue">@*com.google.android.apps.walletnfcrel:color/quantum_googblue500</color>
-    <color name="quantum_googblue500">@*android:color/control_checkable_material</color>
+    <color name="quantum_googblue500">@*android:color/holo_control_activated</color>
     <color name="quantum_googblue600">@*android:color/accent_material_dark</color>
     <color name="quantum_googgreen">@*com.google.android.apps.walletnfcrel:color/quantum_googgreen500</color>
     <color name="quantum_googgreen500">#ff0f9d58</color>
