@@ -24,8 +24,8 @@ public class Welcome extends WelcomeActivity {
     @Override
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
-                .backButtonNavigatesPages(false)
-                .bottomLayout(WelcomeConfiguration.BottomLayout.INDICATOR_ONLY)
+                .backButtonNavigatesPages(true)
+                .bottomLayout(WelcomeConfiguration.BottomLayout.STANDARD)
 
                 .page(new FragmentWelcomePage() {
                     @Override
