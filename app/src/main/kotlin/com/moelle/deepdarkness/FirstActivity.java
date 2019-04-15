@@ -147,6 +147,5 @@ public class FirstActivity extends AppCompatActivity {
         }
     }
 
-    public void close(View view) {
-    }
+    public void close(View view) { }
 }
