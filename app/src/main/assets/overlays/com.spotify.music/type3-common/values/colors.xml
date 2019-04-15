@@ -169,4 +169,7 @@
     <color name="header_overlay_start_color">@*android:color/transparent</color>
     <color name="glue_gray_7">@*android:color/background_device_default_dark</color>
     <color name="glue_gray_background">@*android:color/transparent</color>
+	<color name="bg_picker">@*android:color/facelock_spotlight_mask</color>
+    <color name="device_picker_volume_background">@*android:color/background_dark</color>
+    <color name="device_picker_volume_icon">#7BB3D1E3</color>
 </resources>
