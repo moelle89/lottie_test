@@ -9,7 +9,6 @@
 	<color name="dialer_dark_theme_button_color">@*android:color/accent_material_dark</color>
     <color name="dialer_call_green">@*android:color/accent_material_dark</color>
     <color name="incoming_answer_icon">@*android:color/accent_material_dark</color>
-    <color name="notification_action_answer_video">@*android:color/accent_material_dark</color>
     <color name="rtt_navigation_bar_color">@*android:color/transparent</color>
     <color name="searchbox_hint_text_color">#ffaac0ca</color>
     <color name="background_dialer_results">@*android:color/transparent</color>
@@ -22,8 +21,6 @@
     <color name="primary_material_light">@*android:color/holo_control_activated</color>
 	<color name="dialer_secondary_color">@*android:color/accent_material_dark</color>
 	<color name="titlebar_in_recents_background_color">@*android:color/dim_foreground_light</color>
-	<color name="notification_action_accept">#fff9f9f9</color>
-	<color name="notification_action_dismiss">#fff44336</color>
     <color name="dialer_activity_background">@*android:color/transparent</color>
     <color name="dialer_dialpad_touch_tint">@*android:color/holo_button_pressed</color>
     <color name="dialpad_call_button_color">#00000000</color>    
@@ -307,4 +304,7 @@
     <color name="google_blue_800">@*android:color/accent_material_dark</color>
     <color name="google_blue_900">@*android:color/accent_material_dark</color>
     <color name="dialer_divider_line_color">#00000000</color>
+    <color name="notification_action_accept">@*android:color/accent_material_dark</color>
+    <color name="notification_action_answer_video">@*android:color/accent_material_dark</color>
+	<color name="notification_action_dismiss">#fff62b48</color>
 </resources>

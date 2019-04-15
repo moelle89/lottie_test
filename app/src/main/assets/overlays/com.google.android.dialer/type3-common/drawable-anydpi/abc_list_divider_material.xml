@@ -9,7 +9,7 @@
 		</shape> 
 	</item>
     <item>
-		<shape android:tint="@*android:color/timepicker_default_background_material" >
+		<shape android:tint="@*android:color/background_dark" >
 			<gradient
 					android:startColor="@*android:color/legacy_button_normal"
 					android:endColor="#00000000"

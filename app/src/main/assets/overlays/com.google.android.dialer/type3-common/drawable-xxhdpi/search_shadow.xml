@@ -16,7 +16,7 @@
                 android:centerY="-0.4"
                 android:gradientRadius="100%p"
                 android:endColor="@null"
-                android:centerColor="@*android:color/timepicker_default_background_material"
+                android:centerColor="@*android:color/secondary_text_leanback_light"
                 android:startColor="@*android:color/facelock_spotlight_mask"
                 android:type="radial" />
         </shape>
