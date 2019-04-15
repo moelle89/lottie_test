@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="airview_background">@*android:color/dim_foreground_light</color>
+    <color name="airview_background_border">@*android:color/dim_foreground_light</color>
+    <color name="airview_grid_background">@*android:color/dim_foreground_light</color>
+    <color name="basic_dialog_background_color">@*android:color/dim_foreground_light</color>
+    <color name="bookmark_action_bar_arrow_color_private">@*android:color/dim_foreground_light</color>
+    <color name="bookmark_list_bg_color">@*android:color/dim_foreground_light</color>
+    <color name="bridge_detail_view_background">@*android:color/dim_foreground_light</color>
+    <color name="bridge_expandable_view_background">@*android:color/dim_foreground_light</color>
+    <color name="bridge_extensions_switch_bg_color">@*android:color/dim_foreground_light</color>
+    <color name="bridge_pager_plate_bg">@*android:color/dim_foreground_light</color>
+    <color name="bridge_promotion_text">@*android:color/dim_foreground_light</color>
+    <color name="bridge_promotional_background">@*android:color/dim_foreground_light</color>
+    <color name="data_saver_all_time_card_color">@*android:color/dim_foreground_light</color>
+    <color name="data_saver_data_graph_background_color">@*android:color/dim_foreground_light</color>
+    <color name="folder_navigation_background_color">@*android:color/dim_foreground_light</color>
+    <color name="recent_normal_tab_background">@*android:color/dim_foreground_light</color>
+    <color name="sites_menu_background_color">@*android:color/dim_foreground_light</color>
+    <color name="sites_secret_mode_window_background_color">@*android:color/dim_foreground_light</color>
+    <color name="toast_solid_color">@*android:color/dim_foreground_light</color>
+    <color name="toolbar_bg_color">@*android:color/dim_foreground_light</color>
+    <color name="toolbar_option_menu_list_bg_color">@*android:color/dim_foreground_light</color>
+    <color name="winset_list_item_bg">@*android:color/dim_foreground_light</color>
+    <color name="webselect_bg_color">@*android:color/dim_foreground_light</color>
+    <color name="data_saver_data_background_color">@*android:color/background_dark</color>
+    <color name="winset_list_divider_light">@*android:color/user_icon_default_white</color>
+    <color name="show_bookmarks_list_divider_shadow_color">@*android:color/user_icon_default_white</color>
+    <color name="saved_page_list_view_bottom_divider_layout_color">@*android:color/user_icon_default_white</color>
+    <color name="media_history_list_divider">@*android:color/user_icon_default_white</color>
+    <color name="history_page_list_view_bottom_divider_layout_color">@*android:color/user_icon_default_white</color>
+    <color name="settings_button_background_color">@*android:color/timepicker_default_background_material</color>
+    <color name="sites_activity_menu_selection_color">@*android:color/timepicker_default_background_material</color>
+</resources>
