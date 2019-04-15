@@ -17,7 +17,8 @@
     <color name="colorAccentPromptBackground">#ee06113e</color>
     <color name="gradientbottom">#060e40</color>
     <color name="gradientcenter">@color/inactive</color>
-
+    <color name="slide03">#0E1014</color>
+    <color name="slide02">#ff090A0C</color>
     <color name="black_75">#99000000</color>
 
     <color name="orange_background_dark">#091668</color>

@@ -38,7 +38,7 @@ public class Welcome extends WelcomeActivity {
                    @Override
                     protected Fragment fragment() { return new Slide_02();
                     }}
-                    .background(R.color.background))
+                    .background(R.color.slide02))
 
 
                 .page(new FragmentWelcomePage() {
@@ -46,7 +46,7 @@ public class Welcome extends WelcomeActivity {
                     protected Fragment fragment() {
                         return new Slide_03();
                     }}
-                .background(R.color.background)
+                .background(R.color.slide03)
                 )
 
                 .swipeToDismiss(false)

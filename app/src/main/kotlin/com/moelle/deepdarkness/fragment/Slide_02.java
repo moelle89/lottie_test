@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.moelle.deepdarkness.R;
 import com.stephentuso.welcome.WelcomePage;
 import com.stephentuso.welcome.WelcomeUtils;
@@ -19,11 +18,13 @@ public class Slide_02 extends Fragment implements WelcomePage.OnChangeListener {
 
     private ViewGroup rootLayout;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.slide_02, container, false);
+
     }
 
     @Override
@@ -34,10 +35,12 @@ public class Slide_02 extends Fragment implements WelcomePage.OnChangeListener {
 
     @Override
     public void onWelcomeScreenPageSelected(int pageIndex, int selectedPageIndex) {
+        //Not used
     }
 
     @Override
     public void onWelcomeScreenPageScrollStateChanged(int pageIndex, int state) {
         //Not used
     }
+
 }
