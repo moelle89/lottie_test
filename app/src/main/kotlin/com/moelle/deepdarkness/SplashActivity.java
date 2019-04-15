@@ -49,7 +49,7 @@ public class SplashActivity extends Activity {
 	private void jump() {if(isFinishing())
 		return;
 		//startActivity(new Intent(this, Welcome.class));
-		startActivity(new Intent(this, AppIntroActivity.class));
+		startActivity(new Intent(this, Welcome.class));
 		//overridePendingTransition(0, 0);
 		finish();
 	}

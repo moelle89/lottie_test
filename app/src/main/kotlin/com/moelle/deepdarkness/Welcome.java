@@ -2,13 +2,11 @@ package com.moelle.deepdarkness;
 
 import android.content.ActivityNotFoundException;
 import android.net.Uri;
+
 import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.view.View;
 
-import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieComposition;
-import com.airbnb.lottie.LottieDrawable;
 import com.moelle.deepdarkness.fragment.Slide_02;
 import com.moelle.deepdarkness.fragment.Slide_03;
 import com.moelle.deepdarkness.fragment.Slide_01;
@@ -38,7 +36,7 @@ public class Welcome extends WelcomeActivity {
                    @Override
                     protected Fragment fragment() { return new Slide_02();
                     }}
-                    .background(R.color.slide02))
+                    .background(R.color.background))
 
 
                 .page(new FragmentWelcomePage() {
@@ -46,7 +44,7 @@ public class Welcome extends WelcomeActivity {
                     protected Fragment fragment() {
                         return new Slide_03();
                     }}
-                .background(R.color.slide03)
+                .background(R.color.background)
                 )
 
                 .swipeToDismiss(false)
@@ -73,4 +71,5 @@ public class Welcome extends WelcomeActivity {
         startActivity(new Intent(this, FirstActivity.class));
         finish();
     }
+
 }

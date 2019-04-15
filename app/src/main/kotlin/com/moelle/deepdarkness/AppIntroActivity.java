@@ -26,10 +26,9 @@ public class AppIntroActivity extends IntroActivity {
     private static final float[] ANIMATION_TIMES = new float[]{
 
             0.00f,
-            0.26f,
-            0.42f,
-            0.65f,
-            0.95f,
+            0.33f,
+            0.66f,
+            1.0f,
             1f
 
     };
@@ -39,7 +38,6 @@ public class AppIntroActivity extends IntroActivity {
     @Override
     protected Collection<? extends Fragment> generatePages(Bundle savedInstanceState) {
         return new ArrayList<EmptyFragment>() {{
-            add(EmptyFragment.newInstance());
             add(EmptyFragment.newInstance());
             add(EmptyFragment.newInstance());
             add(EmptyFragment.newInstance());
