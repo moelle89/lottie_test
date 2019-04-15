@@ -45,13 +45,15 @@
             android:layout_height="0dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"/>
-        <Button
+        <TextView
             android:id="@+id/textExit"
-            android:text="@string/exit"
+            android:text=""
             android:textSize="21sp"
             android:textStyle="bold"
             android:textColor="@color/buttonFocused"
-            android:layout_marginBottom="64dip"
+            android:layout_marginBottom="70dip"
+            android:layout_marginStart="20dip"
+			android:drawableStart="@drawable/ic_back"
             android:layout_width="0dp"
             android:background="@android:color/transparent"
             android:layout_height="wrap_content"
@@ -59,13 +61,15 @@
             android:layout_alignRight="@id/strut"
             android:layout_alignParentLeft="true" />
 
-        <Button
+        <TextView
             android:id="@+id/ic_continue"
-            android:text="@string/proceed"
+            android:text=""
             android:textSize="21sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="64dip"
+            android:layout_marginBottom="70dip"
+            android:layout_marginStart="10dip"
+            android:drawableStart="@drawable/ic_continue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/strut"

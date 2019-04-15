@@ -49,7 +49,7 @@ public class Welcome extends WelcomeActivity {
                 .background(R.color.background)
                 )
 
-                .swipeToDismiss(true)
+                .swipeToDismiss(false)
                 .exitAnimation(R.anim.slide_next_in)
                 .build();
 

@@ -201,12 +201,12 @@ class SubstratumLauncher : Activity() {
     title.text = getString(R.string.launch_dialog_title)
 
     /*Buttons*/
-    val cont = view.findViewById(R.id.ic_continue) as Button
+    val cont = view.findViewById(R.id.ic_continue) as TextView
         cont.setOnClickListener { _ ->
         startAntiPiracyCheck()
     }
 
-    val textExit = view.findViewById(R.id.textExit) as Button
+    val textExit = view.findViewById(R.id.textExit) as TextView
         textExit.setOnClickListener { _ ->
         finish()
     }
