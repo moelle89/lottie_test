@@ -13,8 +13,8 @@
 		android:layout_gravity="center"
 		android:scaleType="centerCrop"
 		app:lottie_rawRes="@raw/data"
-		app:lottie_speed="1.15"
-		app:lottie_renderMode="hardware"/>
+		app:lottie_speed="1.1"
+        app:lottie_renderMode="hardware"/>
 
 	<TextView
 		android:id="@+id/title"
@@ -84,7 +84,7 @@
 		<TextView
 			android:id="@+id/dialog_content"
 			android:layout_width="match_parent"
-			android:layout_height="42dip"
+			android:layout_height="0dip"
 			android:layout_alignParentStart="true"
 			android:layout_alignParentTop="true"
 			android:layout_marginStart="0dip"

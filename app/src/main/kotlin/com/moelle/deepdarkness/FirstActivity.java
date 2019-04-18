@@ -131,7 +131,7 @@ public class FirstActivity extends AppCompatActivity {
                 PrefManager prefManager = new PrefManager(getApplicationContext());
                 prefManager.setFirstTimeLaunch(true);
 
-                startActivity(new Intent(FirstActivity.this, Welcome.class));
+                startActivity(new Intent(FirstActivity.this, LottieIntro.class));
                 finish();
      }
 

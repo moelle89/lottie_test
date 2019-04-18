@@ -31,14 +31,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppIntroActivity" android:theme="@style/AppThemeBgTint"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".FirstActivity"
             android:theme="@style/Circular.NoActionBar">
             <intent-filter>
@@ -46,9 +38,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Welcome" android:theme="@style/GeneralWelcomeScreenTheme"/>
-
+        <activity
+            android:name=".LottieIntro"
+            android:theme="@style/LottieIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SubstratumLauncher" >
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>

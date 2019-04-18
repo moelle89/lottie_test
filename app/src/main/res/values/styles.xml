@@ -48,50 +48,5 @@
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textColorSecondary">@color/textColor</item>
     </style>
-
-    <!-- Styles used by most of the welcome screens -->
-    <style name="GeneralWelcomeScreenTheme" parent="WelcomeScreenTheme">
-        <item name="android:windowAnimationStyle">@style/Animation</item>
-        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="welcomeNormalTextStyle">@style/MyLargeText</item>
-        <item name="android:statusBarColor">@color/transparent</item>
-        <!-- Headings -->
-        <item name="welcomeLargeTextStyle">@style/NavTitle</item>
-        <!-- Titles -->
-        <item name="welcomeTitleTextStyle">@style/MyTitel</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="WelcomeScreenPageIndicator">
-        <item name="animation">fade</item>
-        <item name="currentPageColor">@color/fab</item>
-        <item name="indicatorColor">@color/inactive</item>
-    </style>
-    <style name="MyTitel" parent="@style/WelcomeScreenText.Title.Centered">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">28sp</item>
-    </style>
-    <style name="NavTitle" parent="@style/WelcomeScreenText.Title.Centered"><!-- slide titles -->
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">26sp</item>
-        <item name="android:layout_marginBottom">42dp</item>
-    </style>
-    <style name="MyLargeText" parent="@style/WelcomeScreenText.Large.Centered">
-        <item name="android:textStyle">normal</item>
-        <item name="android:textSize">18sp</item>
-    </style>
-
-    <!-- Styles for button bar activities -->
-
-    <!-- Styles to show action bar -->
-    <style name="ActionBarWelcomeScreenTheme" parent="@style/WelcomeScreenTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
     <style name="ThemeOverlay"/>
 </resources>

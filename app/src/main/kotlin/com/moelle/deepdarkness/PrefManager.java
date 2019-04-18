@@ -5,7 +5,9 @@ import android.content.SharedPreferences;
 
 
 public class PrefManager {
-    SharedPreferences PREFS;
+
+
+    SharedPreferences pref;
     SharedPreferences.Editor editor;
     Context _context;
 
@@ -13,14 +15,13 @@ public class PrefManager {
     int PRIVATE_MODE = 0;
 
     // Shared preferences file name
-    private static final String PREF_NAME = "PREFS";
-
+    private static final String PREF_NAME = "LottieIntro";
     private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
     public PrefManager(Context context) {
         this._context = context;
-        PREFS = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
-        editor = PREFS.edit();
+        pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
+        editor = pref.edit();
     }
 
     public void setFirstTimeLaunch(boolean isFirstTime) {
@@ -29,8 +30,6 @@ public class PrefManager {
     }
 
     public boolean isFirstTimeLaunch() {
-        return PREFS.getBoolean(IS_FIRST_TIME_LAUNCH, true);
+        return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
-
 }
-

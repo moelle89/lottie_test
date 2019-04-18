@@ -60,7 +60,7 @@ class SubstratumLauncher : Activity() {
 
         av_from_code.addAnimatorListener(object : Animator.AnimatorListener{
             override fun onAnimationRepeat(p0: Animator?) {
-                av_from_code.setMinAndMaxFrame(106, 181)
+                av_from_code.setMinAndMaxFrame(106, 180)
             }
 
             override fun onAnimationEnd(p0: Animator?) {
@@ -115,6 +115,7 @@ class SubstratumLauncher : Activity() {
         if (debug) {
             Log.d(tag, "'$action' has been authorized to launch this theme. (Phase 2)")
         }
+        overridePendingTransition(0, 0);
         showDialog()
     }
 
@@ -193,7 +194,8 @@ class SubstratumLauncher : Activity() {
 
     @SuppressLint("InflateParams")
     private fun showDialog() {
-    val alertDialog = AlertDialog.Builder(this, R.style.Fullscreendialog)
+
+    val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
             .setCancelable(false)
 
     val view = LayoutInflater.from(this).inflate(R.layout.fullscreen_dialog, null)
@@ -210,8 +212,6 @@ class SubstratumLauncher : Activity() {
         textExit.setOnClickListener { _ ->
         finish()
     }
-
-
     alertDialog.setView(view)
 
     if (getDialogStatus()) {
