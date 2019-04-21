@@ -23,5 +23,4 @@
     <color name="notification_default_color_light">#FFFFFF</color>
 	
     <bool name="config_useDarkBgNotificationIconTextTinting">true</bool>
-    <bool name="config_useDarkBgNotificationTinting_override">true</bool>
 </resources>
