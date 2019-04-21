@@ -33,7 +33,7 @@
 		<item name="android:statusBarColor">@*android:color/background_dark</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:windowShowWallpaper">false</item>
-        <item name="android:windowBackground">@*android:color/background_device_default_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/secondary_text_leanback_light</item>		
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
         <item name="*com.google.android.dialer:windowActionBar">false</item>
@@ -45,7 +45,7 @@
 		<item name="android:statusBarColor">@*android:color/background_dark</item>
 		<item name="android:colorBackground">@*android:color/background_dark</item>
 		<item name="android:windowShowWallpaper">false</item>
-        <item name="android:windowBackground">@*android:color/background_device_default_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
 		<item name="android:colorBackgroundFloating">@*android:color/secondary_text_leanback_light</item>		
 		<item name="android:navigationBarColor">@*android:color/transparent</item>
         <item name="*com.google.android.dialer:windowActionBar">false</item>
@@ -179,12 +179,12 @@
 	<style name="DialtactsActionBarTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
         <item name="android:textColor">#fff9f9f9</item>
     </style>
-    <!--<style name="ListViewStyle" parent="@android:style/Widget.Material.ListView">
+    <style name="ListViewStyle" parent="@android:style/Widget.Material.ListView">
 		<item name="android:windowIsTranslucent">false</item>
-		<item name="android:colorBackground">@*android:color/transparent</item>
-		<item name="android:backgroundTint">@*android:color/transparent</item>
+		<item name="android:colorBackground">@*android:color/background_dark</item>
+		<item name="android:backgroundTint">@*android:color/background_dark</item>
         <item name="android:overScrollMode">always</item>
-    </style>-->
+    </style>
     <style name="TextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#fff9f9f9</item>

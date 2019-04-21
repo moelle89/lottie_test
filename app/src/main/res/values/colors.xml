@@ -3,6 +3,7 @@
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
+    <color name="colorAccent_40">#661835FC</color>
     <color name="background">#000000</color><!-- #ff16171d -->
     <color name="inactive">#1ACBD3ED</color>
     <color name="textColor">#fff7fbff</color>
@@ -20,6 +21,7 @@
     <color name="slide03">#0E1014</color>
     <color name="slide02">#ff090A0C</color>
     <color name="black_75">#99000000</color>
+    <color name="black_40">#66000000</color>
 
     <color name="orange_background_dark">#091668</color>
     <color name="red_background">#761b2a</color>

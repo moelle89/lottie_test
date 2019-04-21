@@ -15,7 +15,7 @@
     <color name="facelock_spotlight_mask">#DC16171D</color><!-- settings background_alpha -->
     <color name="background_floating_material_dark">@color/dim_foreground_light</color><!-- bg_tint_solid -->
     <color name="dim_foreground_light">#ff1c1e27</color><!-- conversation_bg_color -->
-    <color name="user_icon_default_white">#0cb3d1e3</color><!-- pitchblack dim_foreground_light trans -->
+    <color name="user_icon_default_white">#16B3D1E3</color><!-- pitchblack dim_foreground_light trans -->
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
     <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
     <color name="shadow">#d41e212a</color><!-- theme_color_alpha -->

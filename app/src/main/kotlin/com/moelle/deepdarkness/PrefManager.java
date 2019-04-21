@@ -3,7 +3,6 @@ package com.moelle.deepdarkness;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-
 public class PrefManager {
 
 

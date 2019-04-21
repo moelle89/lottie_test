@@ -1,6 +1,5 @@
 package com.moelle.deepdarkness;
 
-import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -68,51 +67,9 @@ public class FirstActivity extends AppCompatActivity {
         }
 
     }
-    public void launchRateLink(View view) { ////button to launch playstore theme page
-        Intent rateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.moelle.blacksammy")); ////Insert your link
-        rateLink.setPackage("com.android.vending");
-        Intent webRateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.moelle.blacksammy")); ////Insert your link
-        try {
-            startActivity(rateLink);
-        } catch (ActivityNotFoundException ex) {
-            startActivity(webRateLink);
-        }
-    }
-    public void launchtutorialLink(View view) { ////button to launch tutorial link remove this if you not have a tutorial
-        Intent rateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=projekt.substratum&hl=it")); ////Insert your link
-        rateLink.setPackage("com.google.android.apps.docs");
-        Intent webRateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=projekt.substratum&hl=it"));////Insert your link
-        try {
-            startActivity(rateLink);
-        } catch (ActivityNotFoundException ex) {
-            startActivity(webRateLink);
-        }
-    }
-    public void launchDriveLink(View view) { ////button to launch a google drive stored extra resources
-        Intent rateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/moelle89/DEEPDARKNESS_sub/raw/master/com.moelle.ddsamsung.apk")); ////Insert your link
-        rateLink.setPackage("com.google.android.apps.docs");
-        Intent webRateLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/moelle89/DEEPDARKNESS_sub/raw/master/com.moelle.ddsamsung.apk")); ////Insert your link
-        try {
-            startActivity(rateLink);
-        } catch (ActivityNotFoundException ex) {
-            startActivity(webRateLink);
-        }
-    }
     public void launchTelegramLink(View view) {   ////button to launch a telegram group
         Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/moelle1")); ////Insert your link
         startActivity(telegramLink);
-    }
-
-    public void launchCircleMe(View view) { ////button to launch google + profile
-        Intent appIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/104011287090851876009")); ////Insert your link
-        appIntent.setPackage("com.google.android.apps.plus");
-        Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/104011287090851876009")); ////Insert your link
-        try {
-            startActivity(appIntent);
-        } catch (ActivityNotFoundException ex) {
-            startActivity(webIntent);
-        }
-
     }
 
     public void launchPaypal(View view) { ////button to launch paypal.me donationslink
