@@ -13,7 +13,7 @@
 		android:layout_gravity="center"
 		android:scaleType="centerCrop"
 		app:lottie_rawRes="@raw/data"
-		app:lottie_speed="1.1"
+		app:lottie_speed="1.1 "
         app:lottie_renderMode="hardware"/>
 
 	<TextView

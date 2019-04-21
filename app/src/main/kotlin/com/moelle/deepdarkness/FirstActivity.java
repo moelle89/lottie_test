@@ -128,9 +128,6 @@ public class FirstActivity extends AppCompatActivity {
 
     public void ReplayIntro(View view) { ////button to repeat intro activity
 
-                PrefManager prefManager = new PrefManager(getApplicationContext());
-                prefManager.setFirstTimeLaunch(true);
-
                 startActivity(new Intent(FirstActivity.this, LottieIntro.class));
                 finish();
      }

@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
-    android:background="@color/background"
     android:orientation="vertical">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -13,7 +12,8 @@
         android:scaleType="centerCrop"
         android:id="@+id/animation_view2"
         app:lottie_rawRes="@raw/slide02"
-        app:lottie_loop="false"
-        app:lottie_autoPlay="false" />
+        app:lottie_loop="true"
+        app:lottie_autoPlay="false"
+        app:lottie_renderMode="hardware"/>
 
 </LinearLayout>

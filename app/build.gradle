@@ -87,6 +87,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.0.0'
     implementation 'com.github.AppIntro:AppIntro:5.1.0'
 
+
 }
 
 // Themers: DO NOT MODIFY ANYTHING BELOW
