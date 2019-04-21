@@ -18,4 +18,10 @@
     <color name="dim_foreground_inverse_disabled_holo_light">@*android:color/keyguard_avatar_frame_shadow_color</color> 
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">@*android:color/black</color>
+	
+    <color name="notification_default_color_dark">#FFFFFF</color>
+    <color name="notification_default_color_light">#FFFFFF</color>
+	
+    <bool name="config_useDarkBgNotificationIconTextTinting">true</bool>
+    <bool name="config_useDarkBgNotificationTinting_override">true</bool>
 </resources>

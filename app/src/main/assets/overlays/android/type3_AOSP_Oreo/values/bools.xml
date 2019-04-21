@@ -3,8 +3,4 @@
     <bool name="config_invert_colors_on_doze">false</bool>
     <!-- True if the notifications should dynamically tint the app icon and app title -->
     <bool name="config_allowNotificationIconTextTinting">false</bool>
-    
-    <!-- True if the notification's dynamic app icon/title tint should be optimised for dark
-    backgrounds (requires to be true)-->
-    <bool name="config_useDarkBgNotificationIconTextTinting">false</bool>
 </resources>

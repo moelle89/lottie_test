@@ -19,4 +19,7 @@
 	
 	<!-- cant be transparent -->
 	<color name="notification_material_background_color">#ffffff</color>
+	
+    <color name="notification_default_color_dark">@*android:color/accent_material_dark</color>
+    <color name="notification_default_color_light">@*android:color/accent_material_dark</color>
 </resources> 
