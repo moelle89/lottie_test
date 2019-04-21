@@ -20,7 +20,8 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_1;
     private SampleSlide slide_2;
     private SampleSlide slide_3;
-    Fragment slide_4;
+    private SampleSlide slide_4;
+    Fragment slide_5;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,19 +30,14 @@ public class LottieIntro extends AppIntro {
         slide_1 = SampleSlide.newInstance(R.layout.slide_01);
         slide_2 = SampleSlide.newInstance(R.layout.slide_02);
         slide_3 = SampleSlide.newInstance(R.layout.slide_03);
-        slide_4 = new FirstSlide();
+        slide_4 = SampleSlide.newInstance(R.layout.slide_04);
+        slide_5 = new FirstSlide();
 
         addSlide(slide_1);
         addSlide(slide_2);
         addSlide(slide_3);
         addSlide(slide_4);
-
-        SliderPage slide_5 = new SliderPage();
-        slide_5.setTitle("Explore");
-        slide_5.setDescription("Feel free to explore the rest of the library demo!");
-        slide_5.setImageDrawable(R.drawable.background_activity);
-        slide_5.setBgColor(Color.TRANSPARENT);
-        addSlide(AppIntroFragment.newInstance(slide_5));
+        addSlide(slide_5);
 
         setProgressIndicator();
         setGoBackLock(true);
@@ -155,6 +151,12 @@ public class LottieIntro extends AppIntro {
                 }
             });
         }
+        else if((oldFragment==slide_3) && (newFragment==slide_4) || (oldFragment==slide_5) && (newFragment==slide_4)){
+            LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
+            animationView4.playAnimation();
+
+        }
+
     }
 
 

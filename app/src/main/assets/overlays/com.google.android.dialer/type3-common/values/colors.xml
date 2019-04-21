@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="google_default_color_surface">@*android:color/transparent</color>
+	<color name="google_default_color_surface">@*android:color/accent_material_dark</color>
 	<color name="spam_contact_background">#fc4258</color>
 	<color name="dialer_red">#fc4258</color>
     <color name="google_grey_900_elevated">@*android:color/dim_foreground_light</color>
@@ -299,7 +299,8 @@
     <color name="incall_background_multiwindow_spam">#d9000000</color>
 	<color name="dialer_background_color">@*android:color/transparent</color>              
     <color name="google_grey_800">@*android:color/transparent</color>    
-	<color name="google_grey_900">@*android:color/transparent</color>
+	<color name="google_grey_900">@*android:color/background_dark</color>
+	<color name="google_grey900">@*android:color/background_dark</color>
     <color name="google_blue_600">@*android:color/accent_material_dark</color>
     <color name="google_blue_800">@*android:color/accent_material_dark</color>
     <color name="google_blue_900">@*android:color/accent_material_dark</color>
@@ -307,4 +308,6 @@
     <color name="notification_action_accept">@*android:color/accent_material_dark</color>
     <color name="notification_action_answer_video">@*android:color/accent_material_dark</color>
 	<color name="notification_action_dismiss">#fff62b48</color>
+    <color name="google_default_color_on_background">@*android:color/background_dark</color>
+    <color name="google_default_color_on_primary">@*android:color/background_dark</color>
 </resources>

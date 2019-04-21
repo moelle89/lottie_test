@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:id="@+id/animation_view4"
-        app:lottie_rawRes="@raw/slide03"
-        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/slide04"
+        app:lottie_loop="true"
         app:lottie_autoPlay="false" />
 
 </LinearLayout>

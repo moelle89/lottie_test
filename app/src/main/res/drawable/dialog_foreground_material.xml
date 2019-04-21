@@ -17,7 +17,7 @@
         </item>
         <item>
             <shape android:tint="#73929FA8">
-                <solid android:color="#00000000" />
+                <solid android:color="#30000000" />
                 <corners android:radius="16dp" />
                 <stroke android:width="2.6dp" android:color="?android:colorAccent" />
             </shape>
