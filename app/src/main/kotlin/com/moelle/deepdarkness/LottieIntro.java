@@ -151,7 +151,7 @@ public class LottieIntro extends AppIntro {
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
-                    animationView2.setMinFrame(55);
+                    animationView2.setVisibility(View.INVISIBLE);
                 }
             });
         }
@@ -172,8 +172,8 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    //LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
-                    //animationView3.setMinFrame(70);
+                    LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
+                    animationView3.setMinFrame(0);
                     next();
                 }
             });
