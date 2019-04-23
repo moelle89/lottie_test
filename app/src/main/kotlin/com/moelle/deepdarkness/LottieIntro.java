@@ -23,7 +23,8 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_2;
     private SampleSlide slide_3;
     private SampleSlide slide_4;
-    Fragment slide_5;
+    private SampleSlide slide_5;
+    Fragment slide_6;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,13 +34,15 @@ public class LottieIntro extends AppIntro {
         slide_2 = SampleSlide.newInstance(R.layout.slide_02);
         slide_3 = SampleSlide.newInstance(R.layout.slide_03);
         slide_4 = SampleSlide.newInstance(R.layout.slide_04);
-        slide_5 = new FirstSlide();
+        slide_5 = SampleSlide.newInstance(R.layout.slide_05);
+
+        slide_6 = new FirstSlide();
 
         addSlide(slide_1);
         addSlide(slide_2);
         addSlide(slide_3);
         addSlide(slide_4);
-        //addSlide(slide_5);
+        addSlide(slide_5);
 
         setProgressIndicator();
         setImmersiveMode(true);
@@ -195,11 +198,33 @@ public class LottieIntro extends AppIntro {
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
                     animationView4.setVisibility(View.INVISIBLE);
+                    next();
+                }
+            });
+        }
+        else if((oldFragment==slide_4) && (newFragment==slide_5) || (oldFragment==slide_6) && (newFragment==slide_5)){
+            LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
+            animationView5.playAnimation();
+            animationView5.addAnimatorListener(new Animator.AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                }
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                    LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
+                    animationView5.setVisibility(View.INVISIBLE);
                     finalToast();
                     launchHomeScreen();
                 }
             });
         }
+
     }
     public void finalToast() {
         Toast toast=Toast.makeText(getApplicationContext(),"done!",Toast.LENGTH_LONG);
