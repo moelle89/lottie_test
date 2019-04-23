@@ -3,8 +3,11 @@
     <color name="button_material_dark">@*android:color/button_material_dark</color>
     <color name="cardview_dark_background">@*android:color/user_icon_default_white</color>
     <color name="ripple_material_dark">@*android:color/holo_button_pressed</color>
-    <color name="colorAccent">@*android:color/accent_material_dark</color>
-    <color name="colorPrimary">@*android:color/transparent</color>
-    <color name="colorPrimaryDark">@*android:color/secondary_text_default_material_light</color>
-	
+    <color name="colorAccent">@*android:color/accent_material_dark</color>    
+	<color name="secondaryColor">@*android:color/accent_material_dark</color>
+    <color name="colorPrimary">@*android:color/transparent</color>    
+	<color name="primaryColor">@*android:color/transparent</color>
+    <color name="colorPrimaryDark">@*android:color/secondary_text_default_material_light</color>        
+	<color name="primaryLightColor">@*android:color/secondary_text_default_material_light</color>    
+	<color name="primaryDarkColor">@*android:color/secondary_text_default_material_light</color>
 </resources>

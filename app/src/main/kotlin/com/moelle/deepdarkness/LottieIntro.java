@@ -46,7 +46,7 @@ public class LottieIntro extends AppIntro {
 
         setProgressIndicator();
         setImmersiveMode(true);
-        setSwipeLock(true);
+        setSwipeLock(false);
         setGoBackLock(true);
         setNextArrowColor(getResources().getColor(R.color.background));
         setNavBarColor(R.color.background);
@@ -219,8 +219,8 @@ public class LottieIntro extends AppIntro {
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
                     animationView5.setVisibility(View.INVISIBLE);
-                    finalToast();
-                    launchHomeScreen();
+                    //finalToast();
+                    //launchHomeScreen();
                 }
             });
         }
@@ -232,7 +232,7 @@ public class LottieIntro extends AppIntro {
         View view=toast.getView();
         TextView view1=(view.findViewById(android.R.id.message));
         view1.setTextColor(Color.WHITE);
-        view.setBackgroundResource(R.drawable.toast_frame);
+        view.setBackgroundResource(R.drawable.toast_frame_accent);
         toast.show();
     }
 
