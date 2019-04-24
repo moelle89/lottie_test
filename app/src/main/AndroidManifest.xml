@@ -46,6 +46,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LottieTutorial"
+            android:theme="@style/LottieIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SubstratumLauncher" >
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>

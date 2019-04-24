@@ -12,6 +12,7 @@
     <color name="transparent">#00000000</color>
     <color name="buttonPressed">#c4ffffff</color>
     <color name="fab">#91B8FF</color>
+    <color name="appintro_icon_tint">#91B8FF</color>
     <color name="blue_background">#000000</color>
     <color name="teal_background">#00796B</color>
     <color name="orange_background">#132ccb</color>

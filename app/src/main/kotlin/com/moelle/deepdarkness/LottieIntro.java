@@ -6,13 +6,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.github.paolorotolo.appintro.AppIntro;
-import com.moelle.deepdarkness.fragment.FirstSlide;
 import com.moelle.deepdarkness.util.SampleSlide;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -24,7 +24,8 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_3;
     private SampleSlide slide_4;
     private SampleSlide slide_5;
-    Fragment slide_6;
+
+    private boolean nextButtonReplaced = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,19 +37,15 @@ public class LottieIntro extends AppIntro {
         slide_4 = SampleSlide.newInstance(R.layout.slide_04);
         slide_5 = SampleSlide.newInstance(R.layout.slide_05);
 
-        slide_6 = new FirstSlide();
-
         addSlide(slide_1);
         addSlide(slide_2);
         addSlide(slide_3);
         addSlide(slide_4);
-        addSlide(slide_5);
 
         setProgressIndicator();
         setImmersiveMode(true);
-        setSwipeLock(false);
+        setSwipeLock(true);
         setGoBackLock(true);
-        setNextArrowColor(getResources().getColor(R.color.background));
         setNavBarColor(R.color.background);
         showStatusBar(true);
         showSkipButton(true);
@@ -59,13 +56,13 @@ public class LottieIntro extends AppIntro {
     @Override
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
-        launchHomeScreen();
+        launchDashboard();
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        launchHomeScreen();
+        launchTutorial();
     }
 
     public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
@@ -102,13 +99,14 @@ public class LottieIntro extends AppIntro {
         }
     }
 
-    private void launchHomeScreen() {
+    private void launchDashboard() {
         startActivity(new Intent(this, FirstActivity.class));
         finish();
     }
 
-    private void next() {
-        pager.goToNextSlide();
+    private void launchTutorial() {
+        startActivity(new Intent(this, LottieTutorial.class));
+        finish();
     }
 
     @Override
@@ -130,7 +128,7 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    next();
+                    pager.goToNextSlide();
                 }
             });
         }
@@ -151,6 +149,8 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
+                    LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
+                    animationView2.setVisibility(View.INVISIBLE);
                 }
             });
         }
@@ -170,6 +170,8 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
+                    LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
+                    animationView3.setVisibility(View.INVISIBLE);
                     pager.goToNextSlide();
                 }
             });
@@ -189,30 +191,39 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    next();
+                    LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
+                    animationView4.setVisibility(View.INVISIBLE);
+                    launchTutorial();
                 }
             });
         }
-        if((oldFragment==slide_4) && (newFragment==slide_5) || (oldFragment==slide_6) && (newFragment==slide_5)){
-            LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
-            animationView5.playAnimation();
-            animationView5.addAnimatorListener(new Animator.AnimatorListener() {
+
+        boolean isLastSlide = pager.getCurrentItem() == (slidesNumber - 1);
+        // replace image for next-button with text
+        if (!nextButtonReplaced && !isLastSlide) {
+            View oldNextButton = findViewById(R.id.next);
+            ViewGroup buttonParent = (ViewGroup) oldNextButton.getParent();
+            int index = buttonParent.indexOfChild(oldNextButton);
+            buttonParent.removeView(oldNextButton);
+
+            TextView newNextButton = (TextView) getLayoutInflater().inflate(R.layout.appintro_button_copy, buttonParent, false);
+            newNextButton.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onAnimationStart(Animator animation) {
-                }
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                }
-                @Override
-                public void onAnimationCancel(Animator animation) {
-                }
-                @Override
-                public void onAnimationRepeat(Animator animation) {
-                    //finalToast();
-                    //launchHomeScreen();
+                public void onClick(View v) {
+                    pager.goToNextSlide();
                 }
             });
+            newNextButton.setTextColor(Color.parseColor("#6b6b6b"));
+            buttonParent.addView(newNextButton, index);
+
+            nextButtonReplaced = true;
+        } else {
+            View newNextButton = findViewById(R.id.next);
+            setButtonState(newNextButton, !isLastSlide);
         }
+
+
+
 
     }
     public void finalToast() {
