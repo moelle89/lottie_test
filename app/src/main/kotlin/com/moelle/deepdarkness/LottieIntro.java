@@ -108,7 +108,6 @@ public class LottieIntro extends AppIntro {
     }
 
     private void next() {
-        pager = findViewById(R.id.view_pager);
         pager.goToNextSlide();
     }
 
@@ -136,9 +135,8 @@ public class LottieIntro extends AppIntro {
             });
         }
 
-        else if((oldFragment==slide_1) && (newFragment==slide_2) || (oldFragment==slide_3) && (newFragment==slide_2)){
+        if((oldFragment==slide_1) && (newFragment==slide_2) || (oldFragment==slide_3) && (newFragment==slide_2)){
             LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
-            animationView2.setMinFrame(0);
             animationView2.playAnimation();
 
             animationView2.addAnimatorListener(new Animator.AnimatorListener() {
@@ -153,15 +151,12 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
-                    animationView2.setVisibility(View.INVISIBLE);
                 }
             });
         }
 
-        else if((oldFragment==slide_2) && (newFragment==slide_3) || (oldFragment==slide_4) && (newFragment==slide_3)){
+        if((oldFragment==slide_2) && (newFragment==slide_3) || (oldFragment==slide_4) && (newFragment==slide_3)){
             LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
-            animationView3.setMinFrame(0);
             animationView3.playAnimation();
             animationView3.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
@@ -175,13 +170,11 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
-                    animationView3.setMinFrame(0);
-                    next();
+                    pager.goToNextSlide();
                 }
             });
         }
-        else if((oldFragment==slide_3) && (newFragment==slide_4) || (oldFragment==slide_5) && (newFragment==slide_4)){
+        if((oldFragment==slide_3) && (newFragment==slide_4) || (oldFragment==slide_5) && (newFragment==slide_4)){
             LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
             animationView4.playAnimation();
             animationView4.addAnimatorListener(new Animator.AnimatorListener() {
@@ -196,13 +189,11 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
-                    animationView4.setVisibility(View.INVISIBLE);
                     next();
                 }
             });
         }
-        else if((oldFragment==slide_4) && (newFragment==slide_5) || (oldFragment==slide_6) && (newFragment==slide_5)){
+        if((oldFragment==slide_4) && (newFragment==slide_5) || (oldFragment==slide_6) && (newFragment==slide_5)){
             LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
             animationView5.playAnimation();
             animationView5.addAnimatorListener(new Animator.AnimatorListener() {
@@ -217,8 +208,6 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
-                    animationView5.setVisibility(View.INVISIBLE);
                     //finalToast();
                     //launchHomeScreen();
                 }
