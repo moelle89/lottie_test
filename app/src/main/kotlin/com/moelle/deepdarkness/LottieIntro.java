@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
@@ -19,13 +18,13 @@ import androidx.fragment.app.Fragment;
 
 public class LottieIntro extends AppIntro {
 
+    private boolean nextButtonReplaced = false;
+
     private SampleSlide slide_1;
     private SampleSlide slide_2;
     private SampleSlide slide_3;
     private SampleSlide slide_4;
     private SampleSlide slide_5;
-
-    private boolean nextButtonReplaced = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,7 +49,6 @@ public class LottieIntro extends AppIntro {
         showStatusBar(true);
         showSkipButton(true);
         setBackButtonVisibilityWithDone(false);
-        setCustomTransformer(new ZoomOutPageTransformer());
     }
 
     @Override
@@ -63,40 +61,6 @@ public class LottieIntro extends AppIntro {
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
         launchTutorial();
-    }
-
-    public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
-        private static final float MIN_SCALE = 0.75f;
-        private static final float MIN_ALPHA = 0.0f;
-
-        public void transformPage(View view, float position) {
-            int pageWidth = view.getWidth();
-            int pageHeight = view.getHeight();
-
-            if (position < -1) {
-                view.setAlpha(0);
-
-            } else if (position <= 1) {
-                float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
-                float vertMargin = pageHeight * (1 - scaleFactor) / 2;
-                float horzMargin = pageWidth * (1 - scaleFactor) / 2;
-                if (position < 0) {
-                    view.setTranslationX(horzMargin - vertMargin / 2);
-                } else {
-                    view.setTranslationX(-horzMargin + vertMargin / 2);
-                }
-
-                view.setScaleX(scaleFactor);
-                view.setScaleY(scaleFactor);
-
-                view.setAlpha(MIN_ALPHA +
-                        (scaleFactor - MIN_SCALE) /
-                                (1 - MIN_SCALE) * (1 - MIN_ALPHA));
-
-            } else { // (1,+Infinity]
-                view.setAlpha(0);
-            }
-        }
     }
 
     private void launchDashboard() {
@@ -197,7 +161,6 @@ public class LottieIntro extends AppIntro {
                 }
             });
         }
-
         boolean isLastSlide = pager.getCurrentItem() == (slidesNumber - 1);
         // replace image for next-button with text
         if (!nextButtonReplaced && !isLastSlide) {
@@ -206,14 +169,13 @@ public class LottieIntro extends AppIntro {
             int index = buttonParent.indexOfChild(oldNextButton);
             buttonParent.removeView(oldNextButton);
 
-            TextView newNextButton = (TextView) getLayoutInflater().inflate(R.layout.appintro_button_copy, buttonParent, false);
+            TextView newNextButton = (TextView) getLayoutInflater().inflate(R.layout.appintro_button_null, buttonParent, false);
             newNextButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    pager.goToNextSlide();
                 }
             });
-            newNextButton.setTextColor(Color.parseColor("#6b6b6b"));
+            newNextButton.setTextColor(Color.parseColor("#000000"));
             buttonParent.addView(newNextButton, index);
 
             nextButtonReplaced = true;
@@ -221,8 +183,6 @@ public class LottieIntro extends AppIntro {
             View newNextButton = findViewById(R.id.next);
             setButtonState(newNextButton, !isLastSlide);
         }
-
-
 
 
     }

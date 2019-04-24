@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.fragment.FirstSlide;
@@ -35,7 +34,6 @@ public class LottieTutorial extends AppIntro {
         addSlide(slide_5);
         addSlide(slide_6);
 
-        setProgressIndicator();
         setImmersiveMode(true);
         setSwipeLock(false);
         setGoBackLock(true);
@@ -43,7 +41,8 @@ public class LottieTutorial extends AppIntro {
         showStatusBar(true);
         showSkipButton(true);
         setBackButtonVisibilityWithDone(false);
-        setCustomTransformer(new ZoomOutPageTransformer());
+        setFadeAnimation();
+        //setCustomTransformer(new ZoomOutPageTransformer());
     }
 
     @Override
@@ -58,40 +57,6 @@ public class LottieTutorial extends AppIntro {
         launchDashboard();
     }
 
-    public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
-        private static final float MIN_SCALE = 0.75f;
-        private static final float MIN_ALPHA = 0.0f;
-
-        public void transformPage(View view, float position) {
-            int pageWidth = view.getWidth();
-            int pageHeight = view.getHeight();
-
-            if (position < -1) {
-                view.setAlpha(0);
-
-            } else if (position <= 1) {
-                float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
-                float vertMargin = pageHeight * (1 - scaleFactor) / 2;
-                float horzMargin = pageWidth * (1 - scaleFactor) / 2;
-                if (position < 0) {
-                    view.setTranslationX(horzMargin - vertMargin / 2);
-                } else {
-                    view.setTranslationX(-horzMargin + vertMargin / 2);
-                }
-
-                view.setScaleX(scaleFactor);
-                view.setScaleY(scaleFactor);
-
-                view.setAlpha(MIN_ALPHA +
-                        (scaleFactor - MIN_SCALE) /
-                                (1 - MIN_SCALE) * (1 - MIN_ALPHA));
-
-            } else { // (1,+Infinity]
-                view.setAlpha(0);
-            }
-        }
-    }
-
     private void launchDashboard() {
         startActivity(new Intent(this, FirstActivity.class));
         finish();
@@ -103,7 +68,7 @@ public class LottieTutorial extends AppIntro {
 
         if ((oldFragment==null) && (newFragment==slide_5) || (oldFragment==slide_6) && (newFragment==slide_5)) {
             LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
-            animationView5.playAnimation();
+            //animationView5.playAnimation();
             animationView5.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -123,7 +88,6 @@ public class LottieTutorial extends AppIntro {
         if((oldFragment==slide_5) && (newFragment==slide_6) || (oldFragment==slide_7) && (newFragment==slide_6)){
             LottieAnimationView animationView6 = findViewById(R.id.animation_view6);
             animationView6.playAnimation();
-
             animationView6.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -137,8 +101,8 @@ public class LottieTutorial extends AppIntro {
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView6 = findViewById(R.id.animation_view6);
-                    animationView6.setVisibility(View.INVISIBLE);
-                    launchDashboard();
+                    animationView6.setMinAndMaxFrame(200, 201);
+                    //launchDashboard();
                 }
             });
         }

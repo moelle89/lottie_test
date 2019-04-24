@@ -42,6 +42,10 @@
         <item name="android:background">@drawable/btn_default_mtrl_shape</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
     </style>
+    <style name="ButtonNull">
+        <item name="android:background">@color/background</item>
+        <item name="android:backgroundTint">@color/background</item>
+    </style>
 
     <style name="checkBoxStyle" parent="@android:style/Widget.Material.CompoundButton.RadioButton">
         <item name="colorAccent">@color/colorAccent</item>

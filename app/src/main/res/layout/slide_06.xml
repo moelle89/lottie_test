@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:id="@+id/animation_view6"
-        app:lottie_rawRes="@raw/slide05"
-        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/slide06"
+        app:lottie_loop="true"
         app:lottie_autoPlay="false"
         app:lottie_renderMode="hardware"/>
 

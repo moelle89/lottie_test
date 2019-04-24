@@ -13,7 +13,7 @@
         android:id="@+id/animation_view5"
         app:lottie_rawRes="@raw/slide05"
         app:lottie_loop="false"
-        app:lottie_autoPlay="false"
+        app:lottie_autoPlay="true"
         app:lottie_renderMode="hardware"/>
 
 </LinearLayout>
