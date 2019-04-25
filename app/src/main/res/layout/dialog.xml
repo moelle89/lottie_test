@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/dialog"
     android:layout_height="match_parent"
-    android:background="@drawable/fullscreen_bg">
+    android:background="@color/colorAccentPromptBackground">
     <ImageView
         android:id="@+id/closeDialogImg"
         android:layout_width="0dp"
@@ -17,9 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:id="@+id/animation_view5"
-        app:lottie_rawRes="@raw/slide05"
-        app:lottie_loop="false"
-        app:lottie_autoPlay="true"
+        android:id="@+id/animation_viewNull"
+        app:lottie_rawRes="@raw/slidenull"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="false"
         app:lottie_renderMode="hardware"/>
 </RelativeLayout>

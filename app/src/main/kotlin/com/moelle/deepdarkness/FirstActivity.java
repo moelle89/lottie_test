@@ -23,6 +23,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -109,6 +110,7 @@ public class FirstActivity extends AppCompatActivity {
 
     private void launchTutorial() {
         startActivity(new Intent(this, LottieTutorial.class));
+        overridePendingTransition(0, 0);
         finish();
     }
 
@@ -130,6 +132,7 @@ public class FirstActivity extends AppCompatActivity {
         final Dialog dialog = new Dialog(this,R.style.DialogStyle);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
+
 
         ImageView imageView = dialog.findViewById(R.id.closeDialogImg);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -164,6 +167,23 @@ public class FirstActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         dialog.show();
+        LottieAnimationView animation_viewNull = dialog.findViewById(R.id.animation_viewNull);
+        animation_viewNull.playAnimation();
+        animation_viewNull.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+            }
+            @Override
+            public void onAnimationEnd(Animator animation) {
+            }
+            @Override
+            public void onAnimationCancel(Animator animation) {
+            }
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                launchTutorial();
+            }
+        });
 
     }
 
@@ -184,7 +204,7 @@ public class FirstActivity extends AppCompatActivity {
             Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx,cy, 0, endRadius);
 
             view.setVisibility(View.VISIBLE);
-            revealAnimator.setDuration(700);
+            revealAnimator.setDuration(800);
             revealAnimator.start();
 
 
@@ -202,7 +222,7 @@ public class FirstActivity extends AppCompatActivity {
 
                 }
             });
-            anim.setDuration(700);
+            anim.setDuration(800);
             anim.start();
 
         }

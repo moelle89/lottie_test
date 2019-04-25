@@ -24,7 +24,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="LottieTutorial" parent="@style/Theme.AppCompat.NoActionBar" >
-        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>

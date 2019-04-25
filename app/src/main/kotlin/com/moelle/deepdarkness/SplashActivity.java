@@ -20,7 +20,7 @@ public class SplashActivity extends Activity {
 		// Checking for first time launch - before calling setContentView()
 		prefManager = new PrefManager(this);
 		if (!prefManager.isFirstTimeLaunch()) {
-			launchHomeScreen();
+			launchDashboard();
 			finish();
 		}
 
@@ -61,7 +61,7 @@ public class SplashActivity extends Activity {
 		prefManager.setFirstTimeLaunch(false);
 		launchIntroScreen();
 	}
-	private void launchHomeScreen() {
+	private void launchDashboard() {
 		prefManager.setFirstTimeLaunch(false);
 		startActivity(new Intent(this, FirstActivity.class));
 		finish();

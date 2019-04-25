@@ -16,7 +16,7 @@
     <color name="blue_background">#000000</color>
     <color name="teal_background">#00796B</color>
     <color name="orange_background">#132ccb</color>
-    <color name="colorAccentPromptBackground">#ee06113e</color>
+    <color name="colorAccentPromptBackground">#06113E</color>
     <color name="gradientbottom">#060e40</color>
     <color name="gradientcenter">@color/inactive</color>
     <color name="slide03">#E6000000</color>

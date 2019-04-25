@@ -2,12 +2,7 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.github.paolorotolo.appintro.AppIntro;
@@ -34,11 +29,11 @@ public class LottieTutorial extends AppIntro {
         addSlide(slide_5);
         addSlide(slide_6);
 
-        setImmersiveMode(true);
+        setImmersiveMode(false);
         setSwipeLock(false);
-        setGoBackLock(false);
-        setNavBarColor(R.color.colorAccent);
-        showStatusBar(true);
+        setGoBackLock(true);
+        setNavBarColor(R.color.colorAccentPromptBackground);
+        showStatusBar(false);
         showSkipButton(true);
         setBackButtonVisibilityWithDone(true);
         setFadeAnimation();
@@ -108,15 +103,6 @@ public class LottieTutorial extends AppIntro {
         }
 
 
-    }
-    public void finalToast() {
-        Toast toast=Toast.makeText(getApplicationContext(),"done!",Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM | Gravity.CENTER,0,120);
-        View view=toast.getView();
-        TextView view1=(view.findViewById(android.R.id.message));
-        view1.setTextColor(Color.WHITE);
-        view.setBackgroundResource(R.drawable.toast_frame_accent);
-        toast.show();
     }
 
 }
