@@ -36,11 +36,11 @@ public class LottieTutorial extends AppIntro {
 
         setImmersiveMode(true);
         setSwipeLock(false);
-        setGoBackLock(true);
-        setNavBarColor(R.color.background);
+        setGoBackLock(false);
+        setNavBarColor(R.color.colorAccent);
         showStatusBar(true);
         showSkipButton(true);
-        setBackButtonVisibilityWithDone(false);
+        setBackButtonVisibilityWithDone(true);
         setFadeAnimation();
         //setCustomTransformer(new ZoomOutPageTransformer());
     }
@@ -101,7 +101,7 @@ public class LottieTutorial extends AppIntro {
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView6 = findViewById(R.id.animation_view6);
-                    animationView6.setMinAndMaxFrame(200, 201);
+                    animationView6.setMinFrame(175);
                     //launchDashboard();
                 }
             });

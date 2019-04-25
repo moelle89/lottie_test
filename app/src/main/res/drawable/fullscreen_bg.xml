@@ -16,8 +16,29 @@
         </item>
         <item>
             <shape>
-                <solid android:color="#99000000" />
+                <solid android:color="#DA000000" />
                </shape>
+        </item>
+        <item>
+            <shape android:shape="rectangle">
+                <gradient
+                    android:type="radial"
+                    android:centerX="1.10"
+                    android:centerY="0.30"
+                    android:gradientRadius="300%p"
+                    android:endColor="@null"
+                    android:centerColor="@android:color/transparent"
+                    android:startColor="#73131B30" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <gradient
+                    android:startColor="#68000000"
+                    android:centerColor="#27000000"
+                    android:endColor="#65000000"
+                    android:angle="270" />
+            </shape>
         </item>
     </layer-list>
 </inset>
