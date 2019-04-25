@@ -95,8 +95,8 @@ public class LottieTutorial extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView6 = findViewById(R.id.animation_view6);
-                    animationView6.setMinFrame(175);
+                    //LottieAnimationView animationView6 = findViewById(R.id.animation_view6);
+                    //animationView6.setMinFrame(175);
                     //launchDashboard();
                 }
             });
