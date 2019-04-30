@@ -22,4 +22,8 @@
     <string name="launch_dialog_title">DEEP DARKNESS</string>
     <string name="launch_dialog_content">Hello chosen one, ready to enter the dark side?</string>
     <string name="launch_dialog_positive">OK</string>
+
+    <string name="home">home</string>
+    <string name="search">how-to</string>
+    <string name="favorite">misc.</string>
 </resources>

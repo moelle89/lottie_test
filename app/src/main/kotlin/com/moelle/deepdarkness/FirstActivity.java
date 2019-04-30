@@ -18,6 +18,7 @@ import android.view.ViewAnimationUtils;
 import android.view.Window;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.iammert.library.readablebottombar.ReadableBottomBar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 
 import static com.moelle.deepdarkness.R.id;
@@ -44,6 +46,23 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
+        ReadableBottomBar nav = findViewById(id.nav);
+        nav.setOnItemSelectListener(new ReadableBottomBar.ItemSelectListener() {
+            @Override
+            public void onItemSelected(int index) {
+                switch (index) {
+                    case 0:
+                        Toast.makeText(FirstActivity.this, "home", Toast.LENGTH_LONG).show();
+                        break;
+                    case 1:
+                        ReplayIntro();
+                        break;
+                    case 2:
+                        showDiag();
+                        break;
+                }
+            }
+        });
         //HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
         //String DASHBOARD_HEAD = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4");
         fab = findViewById(R.id.fab);
@@ -103,7 +122,7 @@ public class FirstActivity extends AppCompatActivity {
         startActivity(email);
     }
 
-    public void ReplayIntro(View view) { ////button to repeat intro activity
+    public void ReplayIntro() { ////button to repeat intro activity
                 startActivity(new Intent(FirstActivity.this, LottieIntro.class));
                 finish();
      }
