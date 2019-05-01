@@ -136,7 +136,7 @@
             n1:drawablePadding="36.0dip"
             n1:gravity="start"
             n1:inputType="none"
-            n1:onClick="ReplayIntro"
+            n1:onClick="replay"
             n1:text="@string/launch_intro"
             n1:textAppearance="@style/TextAppearance.AppCompat.Body2"
             n1:textSize="@dimen/dashboard_list_title_size"

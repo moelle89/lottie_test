@@ -12,17 +12,25 @@ import android.media.Image;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
@@ -30,6 +38,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.iammert.library.readablebottombar.ReadableBottomBar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
+import com.moelle.deepdarkness.fragment.FirstSlide;
 
 import static com.moelle.deepdarkness.R.id;
 
@@ -38,13 +47,20 @@ public class FirstActivity extends AppCompatActivity {
     //private static final String DASHBOARD_HEAD = "https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4";
     private SimpleVideoView videoView;
 
-    ImageView fab;
+    ImageView fab, image_view2;
+    Fragment slide_7;
+    Animation frombottom;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        slide_7 = new FirstSlide();
+        fab = findViewById(R.id.fab);
+        frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.home_fragment);
         ReadableBottomBar nav = findViewById(id.nav);
         nav.setOnItemSelectListener(new ReadableBottomBar.ItemSelectListener() {
@@ -55,7 +71,7 @@ public class FirstActivity extends AppCompatActivity {
                         Toast.makeText(FirstActivity.this, "home", Toast.LENGTH_LONG).show();
                         break;
                     case 1:
-                        ReplayIntro();
+                        replay();
                         break;
                     case 2:
                         showDiag();
@@ -74,6 +90,8 @@ public class FirstActivity extends AppCompatActivity {
 
             }
         });
+        fab.startAnimation(frombottom);
+
 
         Uri DASHBOARD_HEAD = Uri.parse("android.resource://" + getPackageName() + "/"
                 + R.raw.dashboardhero);
@@ -95,7 +113,6 @@ public class FirstActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(id.toolbar);
         setSupportActionBar(toolbar);
     }
-
     //DASHBOARD BUTTONS
     public void substratum(View view) { ////button to launch theme on substratum app
         {
@@ -122,9 +139,9 @@ public class FirstActivity extends AppCompatActivity {
         startActivity(email);
     }
 
-    public void ReplayIntro() { ////button to repeat intro activity
-                startActivity(new Intent(FirstActivity.this, LottieIntro.class));
-                finish();
+    public void replay() { ////button to repeat intro activity
+        startActivity(new Intent(this, LottieIntro.class));
+        finish();
      }
 
     private void launchTutorial() {
