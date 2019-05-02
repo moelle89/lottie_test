@@ -2,15 +2,15 @@
 <inset android:inset="8.0dip"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <layer-list>
-        <item android:bottom="3dp" android:left="3dp" android:top="3dp" android:right="3dp">
+        <item>
             <shape android:tint="?android:colorBackgroundFloating">
-                <gradient android:startColor="#D016171D" android:endColor="#0D16171D" android:angle="-90.0" />
+                <gradient android:startColor="#D016171D" android:endColor="#288294C7" android:angle="90.0" />
                 <corners android:radius="16dp" />
             </shape>
         </item>
-        <item android:bottom="3dp" android:left="3dp" android:top="3dp" android:right="3dp">
+        <item>
             <shape>
-                <gradient android:startColor="@android:color/transparent" android:endColor="#CB0D0E11" android:angle="90.0" />
+                <gradient android:startColor="@android:color/transparent" android:endColor="#CB0D0E11" android:angle="-90.0" />
                 <corners android:radius="16dp" />
             </shape>
         </item>

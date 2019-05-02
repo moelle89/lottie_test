@@ -141,11 +141,14 @@ public class FirstActivity extends AppCompatActivity {
 
     public void replay() { ////button to repeat intro activity
         startActivity(new Intent(this, LottieIntro.class));
+        Intent a = new Intent(FirstActivity.this,LottieIntro.class);
+        startActivity(a);
         finish();
      }
 
     private void launchTutorial() {
-        startActivity(new Intent(this, LottieTutorial.class));
+        Intent a = new Intent(FirstActivity.this,LottieTutorial.class);
+        startActivity(a);
         overridePendingTransition(0, 0);
         finish();
     }
