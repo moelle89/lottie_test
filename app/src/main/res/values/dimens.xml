@@ -10,11 +10,13 @@
     <dimen name="design_appbar_elevation" tools:ignore="PrivateResource">0dp</dimen>
 
     <!-- Intro Dimens -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="list_item_margin">16dp</dimen>
+
+    <dimen name="cardCornerRadius">12dp</dimen>
 
     <dimen name="dashboard_list_title_size">22sp</dimen>
     <dimen name="dashboard_list_width">340dp</dimen>
     <dimen name="dashboard_list_title_margin_top">36dp</dimen>
+
+    <dimen name="nav_icon">30dp</dimen>
 </resources>

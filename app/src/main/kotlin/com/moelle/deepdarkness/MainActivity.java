@@ -1,78 +1,96 @@
 package com.moelle.deepdarkness;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.klinker.android.simple_videoview.SimpleVideoView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.moelle.deepdarkness.fragment.CallsFragment;
+import com.moelle.deepdarkness.fragment.ChatFragment;
+import com.moelle.deepdarkness.fragment.ContactsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SimpleVideoView videoView;
-    TextView review, network, plugins, myapps,
-            pagetitle, pagesubtitle;
+    BottomNavigationView bottomNavigationView;
 
-    Button btnguide;
-    Animation atg, atgtwo, atgthree;
-    ImageView imageView3;
+    //This is our viewPager
+    private ViewPager viewPager;
+
+
+    //Fragments
+
+    ChatFragment chatFragment;
+    CallsFragment callsFragment;
+    ContactsFragment contactsFragment;
+    MenuItem prevMenuItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Uri DASHBOARD_HEAD = Uri.parse("android.resource://" + getPackageName() + "/"
-                + R.raw.dashboardhero);
-        videoView = findViewById(R.id.dashboard_head);
+        //Initializing viewPager
+        viewPager = findViewById(R.id.viewpager);
 
-        videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
+        //Initializing the bottomNavigationView
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.action_call:
+                                viewPager.setCurrentItem(0);
+                                break;
+                            case R.id.action_chat:
+                                viewPager.setCurrentItem(1);
+                                break;
+                            case R.id.action_contact:
+                                viewPager.setCurrentItem(2);
+                                break;
+                        }
+                        return false;
+                    }
+                });
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onPlaybackError(Exception e) {
-                e.printStackTrace();
-                Snackbar.make(videoView, "Uh oh, error playing!", Snackbar.LENGTH_INDEFINITE).show();
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+                bottomNavigationView.getMenu().getItem(position).setChecked(true);
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
             }
         });
-        videoView.start(DASHBOARD_HEAD);
 
-        atg = AnimationUtils.loadAnimation(this, R.anim.atg);
-        atgtwo = AnimationUtils.loadAnimation(this, R.anim.atgtwo);
-        atgthree = AnimationUtils.loadAnimation(this, R.anim.atgthree);
+        setupViewPager(viewPager);
+    }
 
-        imageView3 = findViewById(R.id.imageView3);
+    private void setupViewPager(ViewPager viewPager) {
 
-        review = findViewById(R.id.review);
-        network = findViewById(R.id.network);
-        plugins = findViewById(R.id.plugins);
-        myapps = findViewById(R.id.myapps);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        pagetitle = findViewById(R.id.pagetitle);
-        pagesubtitle = findViewById(R.id.pagesubtitle);
+        callsFragment = new CallsFragment();
+        chatFragment = new ChatFragment();
+        contactsFragment = new ContactsFragment();
 
-        btnguide = findViewById(R.id.btnguide);
+        adapter.addFragment(callsFragment);
+        adapter.addFragment(chatFragment);
+        adapter.addFragment(contactsFragment);
 
-        btnguide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, PackageAct.class);
-                startActivity(a);
-            }
-        });
-
-        // pass an animation
-        imageView3.startAnimation(atg);
-
-        review.startAnimation(atgtwo);
-        network.startAnimation(atgtwo);
-
-        btnguide.startAnimation(atgthree);
+        viewPager.setAdapter(adapter);
     }
 }

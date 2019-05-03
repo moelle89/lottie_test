@@ -31,4 +31,8 @@
     <color name="transparent_button_pressed">#44767676</color>
     <color name="transparent_button_focused">#EE000001</color>
 
+    <color name="tab_disable">@color/buttonFocused</color>
+    <color name="tab_enable">#000000</color>
+    <color name="tab_checked">@color/colorAccent</color>
+    <color name="tab_unchecked">@color/buttonFocused</color>
 </resources>

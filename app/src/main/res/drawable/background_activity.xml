@@ -2,12 +2,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle" android:dither="true">
-            <solid android:color="#000000" />
+            <solid android:color="#1D000000" />
         </shape>
     </item>
-    <item android:gravity="bottom" android:height="320.0dip">
-    <shape android:tint="@color/gradientbottom" android:dither="true">
-        <gradient android:startColor="#00000000" android:centerColor="#08000000" android:endColor="#05000000" android:angle="-90.0" />
+    <item>
+    <shape android:tint="@color/colorAccent" android:dither="true">
+        <gradient android:startColor="#4F000000" android:centerColor="#74000000" android:endColor="#000000" android:angle="-90.0" />
     </shape>
     </item>
 </layer-list>

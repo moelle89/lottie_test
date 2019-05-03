@@ -17,6 +17,7 @@ public class FirstSlide extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         //LottieAnimationView animationView4 = getView().findViewById(R.id.animation_view4);
         }
 
