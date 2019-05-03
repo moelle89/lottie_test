@@ -22,6 +22,8 @@ import com.moelle.deepdarkness.ThemeFunctions.getSelfSignature
 import com.moelle.deepdarkness.ThemeFunctions.getSelfVerifiedPirateTools
 import com.moelle.deepdarkness.ThemeFunctions.isCallingPackageAllowed
 import com.airbnb.lottie.LottieDrawable
+import com.moelle.deepdarkness.AdvancedConstants.SHOW_DIALOG_REPEATEDLY
+import com.moelle.deepdarkness.AdvancedConstants.SHOW_LAUNCH_DIALOG
 import kotlinx.android.synthetic.main.fullscreen_dialog.*
 
 
@@ -115,9 +117,24 @@ class SubstratumLauncher : Activity() {
         if (debug) {
             Log.d(tag, "'$action' has been authorized to launch this theme. (Phase 2)")
         }
-        overridePendingTransition(0, 0);
-        showDialog()
+
+
+        /* STEP 3: Do da thang */
+        if (SHOW_LAUNCH_DIALOG) run {
+            if (SHOW_DIALOG_REPEATEDLY) {
+                showDialog()
+                sharedPref.edit().remove("dialog_showed").apply()
+            } else if (!sharedPref.getBoolean("dialog_showed", false)) {
+                showDialog()
+                sharedPref.edit().putBoolean("dialog_showed", true).apply()
+            } else {
+                startAntiPiracyCheck()
+            }
+        } else {
+            startAntiPiracyCheck()
+        }
     }
+
 
     private fun startAntiPiracyCheck() {
         if (BuildConfig.BASE_64_LICENSE_KEY.isEmpty() && debug && !BuildConfig.DEBUG) {

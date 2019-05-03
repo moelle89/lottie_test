@@ -10,7 +10,7 @@
     <dimen name="design_appbar_elevation" tools:ignore="PrivateResource">0dp</dimen>
 
     <!-- Intro Dimens -->
-    <dimen name="list_item_margin">16dp</dimen>
+    <dimen name="list_item_margin">0dp</dimen>
 
     <dimen name="cardCornerRadius">12dp</dimen>
 

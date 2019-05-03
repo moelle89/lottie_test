@@ -3,11 +3,12 @@
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
+    <color name="colorAccent_light">#2E62FF</color>
     <color name="colorAccent_40">#661835FC</color>
     <color name="background">#000000</color><!-- #ff16171d -->
     <color name="inactive">#1ACBD3ED</color>
     <color name="textColor">#fff7fbff</color>
-    <color name="buttonFocused">#BFA3AECE</color>
+    <color name="buttonFocused">#AE5D6A88</color>
     <color name="buttonNormal">@color/inactive</color>
     <color name="transparent">#00000000</color>
     <color name="buttonPressed">#c4ffffff</color>
@@ -31,8 +32,8 @@
     <color name="transparent_button_pressed">#44767676</color>
     <color name="transparent_button_focused">#EE000001</color>
 
-    <color name="tab_disable">@color/buttonFocused</color>
-    <color name="tab_enable">#000000</color>
-    <color name="tab_checked">@color/colorAccent</color>
-    <color name="tab_unchecked">@color/buttonFocused</color>
+    <color name="tab_disable">@color/tab_unchecked</color>
+    <color name="tab_enable">#00000000</color>
+    <color name="tab_checked">@color/colorAccent_light</color>
+    <color name="tab_unchecked">#5D6A88</color>
 </resources>

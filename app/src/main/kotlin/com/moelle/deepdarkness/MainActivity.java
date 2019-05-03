@@ -2,15 +2,17 @@ package com.moelle.deepdarkness;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.moelle.deepdarkness.fragment.CallsFragment;
-import com.moelle.deepdarkness.fragment.ChatFragment;
-import com.moelle.deepdarkness.fragment.ContactsFragment;
+import com.moelle.deepdarkness.fragment.fragment_1;
+import com.moelle.deepdarkness.fragment.fragment_2;
+import com.moelle.deepdarkness.fragment.fragment_3;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     //Fragments
 
-    ChatFragment chatFragment;
-    CallsFragment callsFragment;
-    ContactsFragment contactsFragment;
+    fragment_1 fragment1;
+    fragment_2 fragment2;
+    fragment_3 fragment3;
     MenuItem prevMenuItem;
 
     @Override
@@ -37,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Initializing the bottomNavigationView
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        // ini & setup Animations
+        Animation animeBottomToTop = AnimationUtils.loadAnimation(this, R.anim.anime_bottom_to_top);
+        bottomNavigationView.setAnimation(animeBottomToTop);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -83,13 +89,13 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        callsFragment = new CallsFragment();
-        chatFragment = new ChatFragment();
-        contactsFragment = new ContactsFragment();
+        fragment1 = new fragment_1();
+        fragment2 = new fragment_2();
+        fragment3 = new fragment_3();
 
-        adapter.addFragment(callsFragment);
-        adapter.addFragment(chatFragment);
-        adapter.addFragment(contactsFragment);
+        adapter.addFragment(fragment1);
+        adapter.addFragment(fragment2);
+        adapter.addFragment(fragment3);
 
         viewPager.setAdapter(adapter);
     }

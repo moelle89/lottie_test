@@ -10,10 +10,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:foreground="@drawable/bottombar_bar_background"
-        app:itemBackground="@android:color/transparent"
+        android:foreground="@drawable/bottombar_bar_foreground"
+        android:background="@drawable/bottombar_bar_background"
+        app:itemBackground="@color/transparent"
         app:itemIconSize="@dimen/nav_icon"
         app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@drawable/bottom_navigation_color_selector"
@@ -24,7 +25,7 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="30dp"
         android:layout_alignParentTop="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 

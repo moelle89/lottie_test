@@ -17,12 +17,12 @@ import com.moelle.deepdarkness.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link CallsFragment.OnFragmentInteractionListener} interface
+ * {@link fragment_1.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link CallsFragment#newInstance} factory method to
+ * Use the {@link fragment_1#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CallsFragment extends Fragment {
+public class fragment_1 extends Fragment {
 
     private CardView cardTop,cardRight,cardLeft,cardLeft2;
 
@@ -37,7 +37,7 @@ public class CallsFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public CallsFragment() {
+    public fragment_1() {
         // Required empty public constructor
     }
     /**
@@ -49,8 +49,8 @@ public class CallsFragment extends Fragment {
      * @return A new instance of fragment DashboardFrag.
      */
     // TODO: Rename and change types and number of parameters
-    public static CallsFragment newInstance(String param1, String param2) {
-        CallsFragment fragment = new CallsFragment();
+    public static fragment_1 newInstance(String param1, String param2) {
+        fragment_1 fragment = new fragment_1();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -71,7 +71,7 @@ public class CallsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_calls, container, false);
+        View v = inflater.inflate(R.layout.fragment_1, container, false);
         // card ini
         cardTop = v.findViewById(R.id.cardTop);
         cardRight = v.findViewById(R.id.cardRight);
