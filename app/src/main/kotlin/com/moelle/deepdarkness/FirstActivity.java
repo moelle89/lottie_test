@@ -74,7 +74,6 @@ public class FirstActivity extends AppCompatActivity {
         });
         //HttpProxyCacheServer proxy = ((DDApplication) getApplication()).getProxy(this);
         //String DASHBOARD_HEAD = proxy.getProxyUrl("https://bitbucket.org/moelle/media/raw/c6535ca0fa8e14abd83494e12e9067c4a49d29d2/dashboardhero.mp4");
-        fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

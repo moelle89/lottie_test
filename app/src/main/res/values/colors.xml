@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_70">#B3000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+    <color name="overlay_dark_90">#E6000000</color>
+
+    <color name="overlay_light_10">#1AFFFFFF</color>
+    <color name="overlay_light_20">#33FFFFFF</color>
+    <color name="overlay_light_30">#4DFFFFFF</color>
+    <color name="overlay_light_40">#66FFFFFF</color>
+    <color name="overlay_light_50">#8FFFFFF0</color>
+    <color name="overlay_light_60">#99FFFFFF</color>
+    <color name="overlay_light_70">#B3FFFFFF</color>
+    <color name="overlay_light_80">#CCFFFFFF</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+
+    <color name="overlay_accent_10">#1A1835FC</color>
+    <color name="overlay_accent_20">#331835FC</color>
+    <color name="overlay_accent_30">#4D1835FC</color>
+    <color name="overlay_accent_40">#661835FC</color>
+    <color name="overlay_accent_50">#811835FC</color>
+    <color name="overlay_accent_60">#991835FC</color>
+    <color name="overlay_accent_70">#B31835FC</color>
+    <color name="overlay_accent_80">#CC1835FC</color>
+    <color name="overlay_accent_90">#E61835FC</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
@@ -12,7 +51,7 @@
     <color name="buttonNormal">@color/inactive</color>
     <color name="transparent">#00000000</color>
     <color name="buttonPressed">#c4ffffff</color>
-    <color name="fab">#0C0F15</color>
+    <color name="fab">#132ccb</color>
     <color name="appintro_icon_tint">#91B8FF</color>
     <color name="blue_background">#000000</color>
     <color name="teal_background">#00796B</color>

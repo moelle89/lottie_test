@@ -10,7 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.moelle.deepdarkness.R;
 
 
@@ -24,8 +27,8 @@ import com.moelle.deepdarkness.R;
  */
 public class fragment_1 extends Fragment {
 
-    private CardView cardTop,cardRight,cardLeft,cardLeft2;
-
+    private LinearLayout cardRight,cardRight2,cardLeft,cardLeft2;
+    private FrameLayout cardTop;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -73,8 +76,9 @@ public class fragment_1 extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_1, container, false);
         // card ini
-        cardTop = v.findViewById(R.id.cardTop);
+        cardTop = v.findViewById(R.id.flmiddle);
         cardRight = v.findViewById(R.id.cardRight);
+        cardRight2 = v.findViewById(R.id.cardRight2);
         cardLeft = v.findViewById(R.id.cardLeft);
         cardLeft2 = v.findViewById(R.id.cardLeft2) ;
 
@@ -87,11 +91,11 @@ public class fragment_1 extends Fragment {
 
 
         // setup Animation :
-        cardLeft2.setAnimation(animeBottomToTop);
         cardTop.setAnimation(animeTopToBottom);
         cardRight.setAnimation(animeRightToleft);
         cardLeft.setAnimation(animeLeftToRight);
-
+        cardLeft2.setAnimation(animeBottomToTop);
+        cardRight2.setAnimation(animeBottomToTop);
 
         // Inflate the layout for this fragment
         return  v ;

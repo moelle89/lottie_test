@@ -36,7 +36,7 @@ public class fragment_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_2, container, false);
 
-
+/*
         Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
         videoView = v.findViewById(R.id.dashboard_head);
 
@@ -48,6 +48,7 @@ public class fragment_2 extends Fragment {
             }
         });
         videoView.start(DASHBOARD_HEAD);
+ */
         return  v ;
     }
 

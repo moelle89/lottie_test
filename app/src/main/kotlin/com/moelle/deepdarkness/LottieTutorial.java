@@ -53,7 +53,7 @@ public class LottieTutorial extends AppIntro {
     }
 
     private void launchDashboard() {
-        startActivity(new Intent(this, FirstActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 
@@ -101,7 +101,6 @@ public class LottieTutorial extends AppIntro {
                 }
             });
         }
-
 
     }
 
