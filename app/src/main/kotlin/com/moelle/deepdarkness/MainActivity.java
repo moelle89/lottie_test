@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     //This is our viewPager
     private ViewPager viewPager;
     private FloatingActionButton fab;
+    private View curtain;
 
     //Fragments
 
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fab = findViewById(R.id.fab);
+        curtain = findViewById(R.id.curtain_fg);
         //Initializing viewPager
         viewPager = findViewById(R.id.viewpager);
 
@@ -55,12 +57,13 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         // ini & setup Animations
+        curtain.animate().alpha(0f).setDuration(1500);
         Animation animeBottomToTop = AnimationUtils.loadAnimation(this, R.anim.anime_bottom_to_top);
         Animation frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        animeBottomToTop.setStartOffset(400);
+        animeBottomToTop.setStartOffset(600);
         animeBottomToTop.setInterpolator(new OvershootInterpolator());
         bottomNavigationView.setAnimation(animeBottomToTop);
-        frombottom.setStartOffset(300);
+        frombottom.setStartOffset(500);
         frombottom.setInterpolator(new OvershootInterpolator());
         fab.setAnimation(frombottom);
 

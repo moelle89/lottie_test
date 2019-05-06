@@ -51,7 +51,11 @@
             app:fabCustomSize="@dimen/fab_size"
             app:layout_anchorGravity="bottom|end"
             app:srcCompat="@drawable/ic_overlays" />
-
+    <View
+        android:id="@+id/curtain_fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" />
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -61,6 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_rawRes="@raw/intro"
+        app:lottie_speed="1.15"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />
 
