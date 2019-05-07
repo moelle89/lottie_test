@@ -7,8 +7,11 @@
         </shape>
     </item>
     <item android:state_enabled="true">
-        <shape android:shape="rectangle" android:tint="@color/background_dark">
-            <solid android:color="#A6FFFFFF" />
+        <shape android:shape="rectangle" android:tint="?attr/cardbackground">
+            <gradient
+                android:startColor="#A6FFFFFF"
+                android:endColor="#FFFFFFFF"
+                android:angle="-90" />
             <corners android:radius="23dp" />
         </shape>
     </item>

@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -14,8 +15,9 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
-import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,11 +33,10 @@ import com.moelle.deepdarkness.fragment.fragment_3;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-
-    //This is our viewPager
     private ViewPager viewPager;
     private FloatingActionButton fab;
-    private View curtain;
+    private Switch myswitch;
+    PrefManager sharedpref;
 
     //Fragments
 
@@ -46,15 +47,61 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // dark/light mode switch
+        sharedpref = new PrefManager(this);
+        if(sharedpref.loadNightModeState()) {
+            setTheme(R.style.AppTheme_Dark);
+        }
+        else  setTheme(R.style.AppTheme);
+        // end of dark/light mode switch
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // dark/light mode switch
+        myswitch=(Switch)findViewById(R.id.myswitch);
+        if (sharedpref.loadNightModeState()) {
+            myswitch.setChecked(true);
+        }
+        myswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    sharedpref.setNightModeState(true);
+                    restartApp();
+                }
+                else {
+                    sharedpref.setNightModeState(false);
+                    restartApp();
+                }
+            }
+        });
+        // end of dark/light mode switch
+
         fab = findViewById(R.id.fab);
-        //curtain = findViewById(R.id.curtain_fg);
         //Initializing viewPager
         viewPager = findViewById(R.id.viewpager);
-
         //Initializing the bottomNavigationView
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        LottieAnimationView intro = findViewById(R.id.intro);
+        //animationView5.playAnimation();
+        intro.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+            }
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                LottieAnimationView intro = findViewById(R.id.intro);
+                intro.setVisibility(View.INVISIBLE);
+            }
+            @Override
+            public void onAnimationCancel(Animator animation) {
+            }
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+            }
+        });
 
         // ini & setup Animations
         //curtain.animate().alpha(0f).setDuration(1500);
@@ -114,7 +161,6 @@ public class MainActivity extends AppCompatActivity {
         });
         setupViewPager(viewPager);
     }
-
     //
     private void showDiag() {
 
@@ -212,5 +258,9 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.setAdapter(adapter);
     }
-
+    public void restartApp () {
+        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(i);
+        finish();
+    }
 }

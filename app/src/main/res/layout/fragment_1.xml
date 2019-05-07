@@ -11,7 +11,7 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="260dp"
-        android:background="@color/background"
+        android:background="@color/background_dark"
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="@color/background"
+            app:contentScrim="?attr/backgroundcolor"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:titleEnabled="false">
@@ -103,7 +103,7 @@
                             android:fontFamily="@font/circularspuiv3bold"
                             android:gravity="center"
                             android:text="@string/app_name"
-                            android:textColor="@color/lighter_gray"
+                            android:textColor="?attr/textcolor"
                             android:textSize="25sp"
                             android:textStyle="bold" />
 
@@ -220,7 +220,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/righteous_regular"
                     android:text="Collection"
-                    android:textColor="#fff"
+                    android:textColor="?attr/textcolor"
                     android:textSize="20sp" />
 
                 <TextView
@@ -275,7 +275,7 @@
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="start"
                         android:text="Loves"
-                        android:textColor="@color/lighter_gray"
+                        android:textColor="?attr/textcolor"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -313,7 +313,7 @@
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="start"
                         android:text="Loves"
-                        android:textColor="@color/lighter_gray"
+                        android:textColor="?attr/textcolor"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -364,7 +364,7 @@
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="start"
                         android:text="Loves"
-                        android:textColor="@color/lighter_gray"
+                        android:textColor="?attr/textcolor"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -401,7 +401,7 @@
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="start"
                         android:text="Loves"
-                        android:textColor="@color/lighter_gray"
+                        android:textColor="?attr/textcolor"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 

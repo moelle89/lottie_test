@@ -17,13 +17,35 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:foreground="@drawable/bottombar_bar_foreground"
-            android:background="@drawable/bottombar_bar_background"
+            android:backgroundTint="?attr/backgroundcolor"
+            android:background="?attr/backgroundcolor"
             app:itemBackground="@color/transparent"
             app:itemIconSize="@dimen/nav_icon"
             app:labelVisibilityMode="unlabeled"
             app:itemIconTint="@drawable/bottom_navigation_color_selector"
             app:itemTextColor="@drawable/bottom_navigation_color_selector"
             app:menu="@menu/menu_bottom_navigation" />
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="?attr/cardbackground"
+            app:cardCornerRadius="10dp"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp">
+                <Switch
+                    android:id="@+id/myswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
@@ -36,26 +58,21 @@
             android:scrollingCache="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     </RelativeLayout>
-
-   <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/fab_margin"
-            android:layout_marginRight="@dimen/fab_margin"
-            android:clickable="true"
-            android:tint="@android:color/white"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="96dp"
-            app:backgroundTint="@color/fab"
-            app:fabCustomSize="@dimen/fab_size"
-            app:layout_anchorGravity="bottom|end"
-            app:srcCompat="@drawable/ic_overlays" />
-    <View
-        android:id="@+id/curtain_fg"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/transparent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="96dp"
+        app:backgroundTint="@color/fab"
+        app:fabCustomSize="@dimen/fab_size"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_overlays" />
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

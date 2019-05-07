@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="@color/background"
+            app:contentScrim="?attr/backgroundcolor"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:titleEnabled="false">
@@ -242,7 +242,7 @@
                     android:layout_marginEnd="6dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-
+                    android:backgroundTint="?attr/cardbackground"
                     android:layout_weight="1"
                     android:background="@drawable/background_round"
                     android:orientation="vertical">

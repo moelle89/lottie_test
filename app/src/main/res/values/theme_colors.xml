@@ -9,7 +9,6 @@
     <color name="control_checkable_material">#fc4258</color><!-- theme_color_light -->
     <color name="suggestion_highlight_text">#d4304e</color><!-- theme_color_dark -->
     <color name="holo_orange_light">#ff92a1b0</color> <!-- controlnormal_light -->
-    <color name="background_dark">#ff16171d</color><!-- app_background -->
     <color name="timepsecondary_text_default_material_lighticker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
     <color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->
     <color name="facelock_spotlight_mask">#CC16171D</color><!-- settings background_alpha -->

@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 
 public class PrefManager {
 
-
     SharedPreferences pref;
     SharedPreferences.Editor editor;
     Context _context;
@@ -30,5 +29,17 @@ public class PrefManager {
 
     public boolean isFirstTimeLaunch() {
         return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
+    }
+
+    // this method will save the nightMode State : True or False
+    public void setNightModeState(Boolean state) {
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("NightMode",state);
+        editor.commit();
+    }
+    // this method will load the Night Mode State
+    public Boolean loadNightModeState (){
+        Boolean state = pref.getBoolean("NightMode",false);
+        return  state;
     }
 }
