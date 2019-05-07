@@ -208,10 +208,10 @@
                 android:alpha="0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="28dp"
+                android:layout_marginLeft="34dp"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
-                android:layout_marginRight="28dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="34dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -234,17 +234,19 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:weightSum="2"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:id="@+id/cardLeft"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
                     android:paddingBottom="5dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -257,15 +259,17 @@
 
                     <ImageView
                         android:id="@+id/img1"
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:src="@drawable/ic_overlays"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_1"
                         android:layout_gravity="center|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="15dp"
+                        android:layout_marginBottom="12dp"
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="center_horizontal"
                         android:text="Loves"
@@ -279,7 +283,8 @@
                     android:id="@+id/cardRight"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
                     android:paddingBottom="5dp"
                     android:focusable="true"
                     android:clickable="true"
@@ -290,17 +295,19 @@
 
                     <ImageView
                         android:id="@+id/img2"
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_gravity="center|top"
-                        android:src="@drawable/ic_overlays" />
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_2"
+                        android:layout_gravity="center|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginBottom="15dp"
+                        android:layout_marginBottom="12dp"
                         android:fontFamily="@font/circularspuiv3bold"
+                        android:layout_gravity="center_horizontal"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
@@ -312,17 +319,19 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:weightSum="2"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:id="@+id/cardLeft2"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
                     android:paddingBottom="5dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -335,29 +344,31 @@
 
                     <ImageView
                         android:id="@+id/img3"
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:src="@drawable/ic_overlays"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_3"
                         android:layout_gravity="center|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="15dp"
+                        android:layout_marginBottom="12dp"
                         android:fontFamily="@font/circularspuiv3bold"
                         android:layout_gravity="center_horizontal"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
                         android:textStyle="bold" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/cardRight2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
                     android:paddingBottom="5dp"
                     android:focusable="true"
                     android:clickable="true"
@@ -368,17 +379,19 @@
 
                     <ImageView
                         android:id="@+id/img4"
-                        android:layout_width="92dp"
-                        android:layout_height="92dp"
-                        android:layout_gravity="center|top"
-                        android:src="@drawable/ic_overlays" />
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_4"
+                        android:layout_gravity="center|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginBottom="15dp"
+                        android:layout_marginBottom="12dp"
                         android:fontFamily="@font/circularspuiv3bold"
+                        android:layout_gravity="center_horizontal"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"

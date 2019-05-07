@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
@@ -19,6 +21,7 @@ import com.moelle.deepdarkness.R;
 public class fragment_3 extends Fragment implements View.OnClickListener {
 
     private SimpleVideoView videoView;
+    private TextView title;
     public fragment_3() {
         // Required empty public constructor
     }
@@ -46,8 +49,12 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
             }
         });
         videoView.start(DASHBOARD_HEAD);
- */
+ */     title = v.findViewById(R.id.titlehowto);
+        title.animate().alpha(1f).setDuration(800).setStartDelay(5000);
+        LottieAnimationView btn_ripple = v.findViewById(R.id.btn_ripple);
+        btn_ripple.animate().alpha(1f).setDuration(800).setStartDelay(5500);
         Button tutorial_btn = v.findViewById(R.id.tutorial_btn);
+        tutorial_btn.animate().alpha(1f).setDuration(800).setStartDelay(5300);
         tutorial_btn.setOnClickListener(this);
         return  v ;
     }
