@@ -58,14 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
         // ini & setup Animations
         //curtain.animate().alpha(0f).setDuration(1500);
-        Animation animeBottomToTop = AnimationUtils.loadAnimation(this, R.anim.anime_bottom_to_top);
-        Animation frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        animeBottomToTop.setStartOffset(600);
-        animeBottomToTop.setInterpolator(new OvershootInterpolator());
-        bottomNavigationView.setAnimation(animeBottomToTop);
-        frombottom.setStartOffset(500);
-        frombottom.setInterpolator(new OvershootInterpolator());
-        fab.setAnimation(frombottom);
+        Animation anim_nav = AnimationUtils.loadAnimation(this, R.anim.frombottom);
+        Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
+        anim_nav.setStartOffset(520);
+        anim_nav.setInterpolator(new OvershootInterpolator());
+        bottomNavigationView.setAnimation(anim_nav);
+        anim_fab.setStartOffset(620);
+        anim_fab.setInterpolator(new OvershootInterpolator());
+        fab.setAnimation(anim_fab);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {

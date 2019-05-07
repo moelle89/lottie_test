@@ -51,7 +51,7 @@
     <color name="buttonNormal">@color/inactive</color>
     <color name="transparent">#00000000</color>
     <color name="buttonPressed">#c4ffffff</color>
-    <color name="fab">#132ccb</color>
+    <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
     <color name="blue_background">#000000</color>
     <color name="teal_background">#00796B</color>

@@ -11,8 +11,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-
-import com.google.android.material.snackbar.Snackbar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
 import com.moelle.deepdarkness.R;
 
@@ -21,7 +19,6 @@ import com.moelle.deepdarkness.R;
  * Activities that contain this fragment must implement the
  * {@link fragment_1.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link fragment_1#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class fragment_1 extends Fragment {
@@ -29,33 +26,11 @@ public class fragment_1 extends Fragment {
     private LinearLayout cardRight,cardRight2,cardLeft,cardLeft2,cat_top;
     private FrameLayout cardTop;
     private SimpleVideoView videoView;
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
 
     private OnFragmentInteractionListener mListener;
 
     public fragment_1() {
         // Required empty public constructor
-    }
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DashboardFrag.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static fragment_1 newInstance(String param1, String param2) {
-        fragment_1 fragment = new fragment_1();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
@@ -64,21 +39,12 @@ public class fragment_1 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_1, container, false);
 
         Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
         videoView = v.findViewById(R.id.dashboard_head);
-
-        videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
-            @Override
-            public void onPlaybackError(Exception e) {
-                e.printStackTrace();
-                Snackbar.make(videoView, "Uh oh, error playing!", Snackbar.LENGTH_INDEFINITE).show();
-            }
-        });
         videoView.start(DASHBOARD_HEAD);
 
         // content ini

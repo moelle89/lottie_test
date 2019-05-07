@@ -260,18 +260,20 @@
                     <ImageView
                         android:id="@+id/img1"
                         android:layout_marginTop="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/ic_1"
-                        android:layout_gravity="center|top" />
+                        android:layout_gravity="start|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
+                        android:layout_marginStart="26dp"
                         android:fontFamily="@font/circularspuiv3bold"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="start"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
@@ -296,18 +298,20 @@
                     <ImageView
                         android:id="@+id/img2"
                         android:layout_marginTop="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/ic_2"
-                        android:layout_gravity="center|top" />
+                        android:layout_gravity="start|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
+                        android:layout_marginStart="26dp"
                         android:fontFamily="@font/circularspuiv3bold"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="start"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
@@ -345,18 +349,20 @@
                     <ImageView
                         android:id="@+id/img3"
                         android:layout_marginTop="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/ic_3"
-                        android:layout_gravity="center|top" />
+                        android:layout_gravity="start|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
+                        android:layout_marginStart="26dp"
                         android:fontFamily="@font/circularspuiv3bold"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="start"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
@@ -380,18 +386,20 @@
                     <ImageView
                         android:id="@+id/img4"
                         android:layout_marginTop="22dp"
+                        android:layout_marginStart="26dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/ic_4"
-                        android:layout_gravity="center|top" />
+                        android:layout_gravity="start|top" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
+                        android:layout_marginStart="26dp"
                         android:fontFamily="@font/circularspuiv3bold"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="start"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"

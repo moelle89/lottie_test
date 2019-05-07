@@ -20,7 +20,7 @@
     <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
     <color name="shadow">#B21E212A</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
-    <color name="holo_red_light">#ECC1DDF0</color><!-- settings titles -->
+    <color name="holo_red_light">#ECCAE5FF</color><!-- settings titles -->
     <color name="primary_material_dark">#ff1e212a</color><!-- theme_color -->
     <color name="holo_red_dark">#ff191a21</color><!-- notifications_color -->
     <color name="holo_light_control_normal">#DC000000</color><!-- search_impput_color -->
