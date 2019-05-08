@@ -30,6 +30,7 @@
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:id="@+id/dashboard_head"
+                app:lottie_colorFilter="?backgroundcolor"
                 app:layout_collapseMode="parallax"
                 app:lottie_rawRes="@raw/dashboard_head"
                 app:lottie_loop="true"

@@ -10,7 +10,8 @@
     <color name="suggestion_highlight_text">#d4304e</color><!-- theme_color_dark -->
     <color name="holo_orange_light">#ff92a1b0</color> <!-- controlnormal_light -->
     <color name="timepsecondary_text_default_material_lighticker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
-    <color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->
+    <color name="secondary_text_light">#778597</color><!-- app background_alpha -->
+    <color name="secondary_text_dark">#AAB9CA</color> <!-- secondary_text_material_dark -->
     <color name="facelock_spotlight_mask">#CC16171D</color><!-- settings background_alpha -->
     <color name="background_floating_material_dark">#ff1c1e27</color><!-- bg_tint_solid -->
     <color name="dim_foreground_light">#E6101319</color><!-- conversation_bg_color #E61A1C2A -->
@@ -19,7 +20,7 @@
     <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
     <color name="shadow">#B21E212A</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
-    <color name="holo_red_light">#ECD6E9FC</color><!-- settings titles -->
+    <color name="holo_red_light">#ECE7EEFA</color><!-- settings titles -->
     <color name="primary_material_dark">#ff1e212a</color><!-- theme_color -->
     <color name="holo_red_dark">#ff191a21</color><!-- notifications_color -->
     <color name="holo_light_control_normal">#DC000000</color><!-- search_impput_color -->

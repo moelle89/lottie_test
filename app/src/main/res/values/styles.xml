@@ -23,6 +23,7 @@
         <item name="backgroundcolor">@color/background</item>
         <item name="cardbackground">@color/holo_red_light</item>
         <item name="textcolor">@color/textColor</item>
+        <item name="textcolorsecondary">@color/secondary_text_light</item>
         <item name="tintcolor">@color/colorAccent_light</item>
         <item name="buttoncolor">@color/appintro_icon_tint</item>
         <item name="android:navigationBarColor">@color/grey_20</item>
@@ -44,6 +45,7 @@
         <item name="backgroundcolor">@color/background_dark</item>
         <item name="cardbackground">@color/dim_foreground_light</item>
         <item name="textcolor">@color/textColor_dark</item>
+        <item name="textcolorsecondary">@color/secondary_text_dark</item>
         <item name="tintcolor">@color/appintro_icon_tint</item>
         <item name="buttoncolor">@color/buttonNormal</item>
         <item name="cardelevation">@dimen/cardelevation_dark</item>

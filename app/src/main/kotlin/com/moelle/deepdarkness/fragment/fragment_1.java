@@ -43,9 +43,9 @@ public class fragment_1 extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_1, container, false);
 
-        Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
+        /*Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
         videoView = v.findViewById(R.id.dashboard_head);
-        videoView.start(DASHBOARD_HEAD);
+        videoView.start(DASHBOARD_HEAD);*/
 
         // content ini
         cardTop = v.findViewById(R.id.flmiddle);

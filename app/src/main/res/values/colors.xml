@@ -47,7 +47,7 @@
     <color name="background">#FFFFFF</color><!-- #ff16171d -->
     <color name="background_dark">#000000</color><!-- #ff16171d -->
     <color name="inactive">#1ACBD3ED</color>
-    <color name="textColor">#FF191A21</color>
+    <color name="textColor">#3A3D50</color>
     <color name="textColor_dark">#fff7fbff</color>
     <color name="buttonFocused">#AE5D6A88</color>
     <color name="buttonNormal">@color/inactive</color>

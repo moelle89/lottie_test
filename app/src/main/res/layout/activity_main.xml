@@ -17,7 +17,7 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:foreground="@drawable/bottombar_bar_foreground"
-            android:background="?attr/backgroundcolor"
+            android:background="?backgroundcolor"
             app:itemBackground="@color/transparent"
             app:itemIconSize="@dimen/nav_icon"
             app:labelVisibilityMode="unlabeled"
@@ -26,26 +26,34 @@
             app:menu="@menu/menu_bottom_navigation" />
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="?attr/backgroundcolor"
+            app:cardBackgroundColor="?backgroundcolor"
             android:foreground="@color/user_icon_default_white"
             app:cardElevation="3dp"
             app:cardCornerRadius="25dp"
-            android:layout_width="64dp"
+            android:layout_width="96dp"
             android:layout_height="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="18dp"
             android:layout_alignParentEnd="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingTop="6dp"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
                 android:paddingEnd="8dp"
-                android:paddingStart="10dp">
+                android:paddingStart="12dp">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:tint="?textcolorsecondary"
+                    android:src="@drawable/ic_darkmode"
+                    android:layout_gravity="top|start" />
                 <Switch
                     android:id="@+id/myswitch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -60,6 +68,8 @@
             android:scrollingCache="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     </RelativeLayout>
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -70,11 +80,12 @@
         android:focusable="true"
         android:tint="@android:color/white"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="96dp"
-        app:backgroundTint="@color/fab"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="?android:colorAccent"
         app:fabCustomSize="@dimen/fab_size"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@drawable/ic_overlays" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -84,6 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_rawRes="@raw/intro"
+        app:lottie_colorFilter="?backgroundcolor"
         app:lottie_speed="1.1"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />

@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -18,12 +19,15 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
-
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.SimpleColorFilter;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieValueCallback;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.moelle.deepdarkness.fragment.fragment_1;
@@ -39,11 +43,9 @@ public class MainActivity extends AppCompatActivity {
     PrefManager sharedpref;
 
     //Fragments
-
     fragment_1 fragment1;
     fragment_2 fragment2;
     fragment_3 fragment3;
-    MenuItem prevMenuItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,8 +86,14 @@ public class MainActivity extends AppCompatActivity {
         //Initializing the bottomNavigationView
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
+        //final int introBG = ContextCompat.getColor(MainActivity.this, R.color.background);
         LottieAnimationView intro = findViewById(R.id.intro);
-        //animationView5.playAnimation();
+        /*SimpleColorFilter filter = new SimpleColorFilter(introBG);
+        KeyPath keyPath = new KeyPath("Shape Layer 1", "Fill 1");
+        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filter);
+        intro.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback);
+        intro.playAnimation();*/
+
         intro.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -109,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         myswitch.setAlpha(0f);
         myswitch.animate().alpha(1f).setDuration(500).setStartDelay(500);
-        anim_nav.setStartOffset(580);
+        anim_nav.setStartOffset(600);
         anim_nav.setInterpolator(new OvershootInterpolator(2.8f));
         bottomNavigationView.setAnimation(anim_nav);
         anim_fab.setStartOffset(680);
@@ -164,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
         setupViewPager(viewPager);
     }
     //
+
     private void showDiag() {
 
         final View dialogView = View.inflate(this,R.layout.dialog,null);
