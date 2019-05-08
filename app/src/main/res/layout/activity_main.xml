@@ -17,7 +17,6 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:foreground="@drawable/bottombar_bar_foreground"
-            android:backgroundTint="?attr/backgroundcolor"
             android:background="?attr/backgroundcolor"
             app:itemBackground="@color/transparent"
             app:itemIconSize="@dimen/nav_icon"
@@ -27,22 +26,25 @@
             app:menu="@menu/menu_bottom_navigation" />
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="?attr/cardbackground"
-            app:cardCornerRadius="10dp"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="14dp"
-            android:layout_margin="8dp"
+            app:cardBackgroundColor="?attr/backgroundcolor"
+            android:foreground="@color/user_icon_default_white"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="25dp"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
             android:layout_alignParentEnd="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="12dp"
-                android:paddingEnd="12dp">
+                android:paddingTop="6dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="10dp">
                 <Switch
                     android:id="@+id/myswitch"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -85,5 +87,4 @@
         app:lottie_speed="1.1"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

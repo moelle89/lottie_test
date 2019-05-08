@@ -64,7 +64,8 @@
         app:lottie_rawRes="@raw/tut_bg"
         app:lottie_colorFilter="@color/overlay_accent_90"
         app:lottie_loop="true"
-        app:lottie_autoPlay="true"/>
+        app:lottie_autoPlay="true"
+        app:lottie_renderMode="hardware" />
 
     <Button
         android:id="@+id/tutorial_btn"
@@ -74,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="55dp"
         android:clickable="true"
         android:focusable="true"
         android:text="You tell me!"
@@ -85,13 +86,14 @@
         android:id="@+id/ripplehowto"
         android:alpha="0"
         android:layout_width="390dp"
-        android:layout_height="162dp"
+        android:layout_height="155dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
         android:scaleType="centerCrop"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
+        app:lottie_colorFilter="@color/colorAccent_light"
         app:lottie_rawRes="@raw/ripple_button" />
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -113,7 +115,7 @@
             android:foreground="?attr/selectableItemBackground"
             app:cardBackgroundColor="?attr/cardbackground"
             app:cardCornerRadius="20dp"
-            app:cardElevation="12dp">
+            app:cardElevation="?attr/cardelevation">
 
             <RelativeLayout
                 android:layout_width="340dp"
@@ -129,7 +131,7 @@
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/iconhowto"
                         android:layout_width="250dp"
                         android:layout_height="0dp"
@@ -138,8 +140,10 @@
                         android:layout_marginRight="@dimen/spacing_xlarge"
                         android:layout_weight="1"
                         android:padding="@dimen/spacing_large"
-                        android:src="@drawable/ic_search_black_24dp"
-                        android:tint="?attr/tintcolor" />
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/tut_icon"
+                        app:lottie_colorFilter="?attr/tintcolor" />
 
                     <TextView
                         android:id="@+id/titlehowto"

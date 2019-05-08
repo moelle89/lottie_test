@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:top="@dimen/spacing_smlarge">
-        <shape>
+    <item>
+        <shape android:tint="?backgroundcolor">
             <gradient
                 android:angle="90.0"
                 android:endColor="#00000000"

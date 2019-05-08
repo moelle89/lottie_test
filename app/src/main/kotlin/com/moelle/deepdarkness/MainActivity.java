@@ -50,16 +50,16 @@ public class MainActivity extends AppCompatActivity {
         // dark/light mode switch
         sharedpref = new PrefManager(this);
         if(sharedpref.loadNightModeState()) {
-            setTheme(R.style.AppTheme_Dark);
+            setTheme(R.style.AppTheme_Dark_NoActionBar);
         }
-        else  setTheme(R.style.AppTheme);
+        else  setTheme(R.style.AppTheme_NoActionBar);
         // end of dark/light mode switch
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // dark/light mode switch
-        myswitch=(Switch)findViewById(R.id.myswitch);
+        myswitch=findViewById(R.id.myswitch);
         if (sharedpref.loadNightModeState()) {
             myswitch.setChecked(true);
         }
@@ -107,11 +107,13 @@ public class MainActivity extends AppCompatActivity {
         //curtain.animate().alpha(0f).setDuration(1500);
         Animation anim_nav = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        anim_nav.setStartOffset(520);
-        anim_nav.setInterpolator(new OvershootInterpolator());
+        myswitch.setAlpha(0f);
+        myswitch.animate().alpha(1f).setDuration(500).setStartDelay(500);
+        anim_nav.setStartOffset(580);
+        anim_nav.setInterpolator(new OvershootInterpolator(2.8f));
         bottomNavigationView.setAnimation(anim_nav);
-        anim_fab.setStartOffset(620);
-        anim_fab.setInterpolator(new OvershootInterpolator());
+        anim_fab.setStartOffset(680);
+        anim_fab.setInterpolator(new OvershootInterpolator(3.5f));
         fab.setAnimation(anim_fab);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(

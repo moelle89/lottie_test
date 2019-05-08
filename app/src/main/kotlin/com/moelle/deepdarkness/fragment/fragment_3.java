@@ -7,12 +7,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.AnticipateOvershootInterpolator;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.klinker.android.simple_videoview.SimpleVideoView;
@@ -42,19 +48,23 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         View v = inflater.inflate(R.layout.fragment_3, container, false);
 
         //ini animations
-        Animation anim_card = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);
-        Animation anim_icon = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
-        anim_icon.setStartOffset(100);
+        Animation anim_icon = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);
+        anim_icon.setStartOffset(200);
+        anim_icon.setDuration(600);
         Animation anim_title = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
         anim_title.setStartOffset(300);
         Animation anim_text = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
         anim_text.setStartOffset(500);
+        anim_text.setDuration(600);
         Animation anim_button = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
-        anim_button.setStartOffset(600);
-
+        anim_button.setStartOffset(550);
+        anim_button.setDuration(950);
         CardView card = v.findViewById(R.id.cardView);
-        card.setAnimation(anim_card);
-        iconhowto = v.findViewById(R.id.iconhowto);
+        card.setScaleX(0.5f);
+        card.setScaleY(0.5f);
+        card.setAlpha(0f);
+        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         iconhowto.setAnimation(anim_icon);
         title = v.findViewById(R.id.titlehowto);
         title.setAnimation(anim_title);

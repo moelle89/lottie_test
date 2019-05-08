@@ -12,14 +12,14 @@
     <color name="timepsecondary_text_default_material_lighticker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
     <color name="secondary_text_default_material_light">#d416171d</color><!-- app background_alpha -->
     <color name="facelock_spotlight_mask">#CC16171D</color><!-- settings background_alpha -->
-    <color name="background_floating_material_dark">@color/dim_foreground_light</color><!-- bg_tint_solid -->
-    <color name="dim_foreground_light">#ff1c1e27</color><!-- conversation_bg_color -->
+    <color name="background_floating_material_dark">#ff1c1e27</color><!-- bg_tint_solid -->
+    <color name="dim_foreground_light">#E6101319</color><!-- conversation_bg_color #E61A1C2A -->
     <color name="user_icon_default_white">#16B3D1E3</color><!-- pitchblack dim_foreground_light trans -->
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
     <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
     <color name="shadow">#B21E212A</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
-    <color name="holo_red_light">#ECCAE5FF</color><!-- settings titles -->
+    <color name="holo_red_light">#ECD6E9FC</color><!-- settings titles -->
     <color name="primary_material_dark">#ff1e212a</color><!-- theme_color -->
     <color name="holo_red_dark">#ff191a21</color><!-- notifications_color -->
     <color name="holo_light_control_normal">#DC000000</color><!-- search_impput_color -->
