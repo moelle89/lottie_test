@@ -3,6 +3,8 @@ package com.moelle.deepdarkness.fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +25,8 @@ import com.moelle.deepdarkness.R;
  */
 public class fragment_1 extends Fragment {
 
-    private LinearLayout cardRight,cardRight2,cardLeft,cardLeft2,cat_top;
+    private LinearLayout cat_top;
+    private CardView cardRight,cardLeft,cardRight2,cardLeft2;
     private FrameLayout cardTop;
     private SimpleVideoView videoView;
 
@@ -88,7 +91,6 @@ public class fragment_1 extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-
     }
 
     @Override

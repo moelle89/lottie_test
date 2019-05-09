@@ -172,7 +172,6 @@ public class MainActivity extends AppCompatActivity {
         setupViewPager(viewPager);
     }
     //
-
     private void showDiag() {
 
         final View dialogView = View.inflate(this,R.layout.dialog,null);
