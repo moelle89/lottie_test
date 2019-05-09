@@ -8,6 +8,9 @@
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="switchStyle">@style/switch.style</item>
+        <item name="fontFamily">@font/sequel_sans_heavy</item>
+        <item name="android:fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="*android:isLightTheme">true</item>
         <item name="android:colorControlNormal">@color/textColor</item>
@@ -31,6 +34,9 @@
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
     </style>
     <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="switchStyle">@style/switch.style</item>
+        <item name="fontFamily">@font/sequel_sans_heavy</item>
+        <item name="android:fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="*android:isLightTheme">false</item>
         <item name="android:colorControlNormal">@color/textColor_dark</item>
@@ -117,12 +123,23 @@
         <item name="mrl_rippleHover">true</item>
         <item name="mrl_rippleAlpha">0.2</item>
     </style>
-
     <style name="RippleStyleBlack" parent="RippleStyleWhite">
         <item name="mrl_rippleColor">?android:colorControlHighlight</item>
     </style>
-
     <style name="RippleStyleDark" parent="RippleStyleWhite">
         <item name="mrl_rippleColor">#80000000</item>
+    </style>
+
+    <style name="switch.style" parent="@android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/switch_thumb_material_anim</item>
+        <item name="track">@drawable/switch_track_material</item>
+        <item name="trackTint">@color/switch_track</item>
+        <item name="showText">false</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="switchPadding">@dimen/abc_switch_padding</item>
+    </style>
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 </resources>

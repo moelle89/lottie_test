@@ -96,13 +96,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="26dp"
                             android:layout_marginBottom="5dp"
-                            android:fontFamily="@font/circularspuiv3bold"
+                            android:fontFamily="@font/sequel_sans_heavy"
                             android:gravity="center"
                             android:text="@string/app_name"
                             android:textColor="?textcolor"
                             android:textSize="25sp"
                             android:textStyle="bold" />
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -123,7 +122,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Purchased"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textAllCaps="true"
                                     android:textColor="?textcolorsecondary"
                                     android:textSize="10sp" />
@@ -150,7 +149,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Wished"
                                     android:textAllCaps="true"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textColor="?textcolorsecondary"
                                     android:textSize="10sp" />
 
@@ -175,7 +174,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Likes"
                                     android:textAllCaps="true"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textColor="?textcolorsecondary"
                                     android:textSize="10sp" />
 
@@ -214,7 +213,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/righteous_regular"
+                    android:fontFamily="@font/sequel_sans_medium"
                     android:text="Collection"
                     android:textColor="?attr/textcolor"
                     android:textSize="20sp" />

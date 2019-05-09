@@ -98,13 +98,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="26dp"
                             android:layout_marginBottom="5dp"
-                            android:fontFamily="@font/circularspuiv3bold"
+                            android:fontFamily="@font/sequel_sans_heavy"
                             android:gravity="center"
                             android:text="@string/app_name"
                             android:textColor="@color/lighter_gray"
                             android:textSize="25sp"
                             android:textStyle="bold" />
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -125,7 +124,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Purchased"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textAllCaps="true"
                                     android:textColor="@color/appintro_icon_tint"
                                     android:textSize="10sp" />
@@ -152,7 +151,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Wished"
                                     android:textAllCaps="true"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textColor="@color/appintro_icon_tint"
                                     android:textSize="10sp" />
 
@@ -177,7 +176,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Likes"
                                     android:textAllCaps="true"
-                                    android:fontFamily="@font/circularspuiv3bold"
+                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:textColor="@color/colorAccent_light"
                                     android:textSize="10sp" />
 
@@ -214,7 +213,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/righteous_regular"
+                    android:fontFamily="@font/sequel_sans_medium"
                     android:text="Collection"
                     android:textColor="#ff3f4751"
                     android:textSize="20sp" />
@@ -258,7 +257,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:fontFamily="@font/circularspuiv3bold"
+                        android:fontFamily="@font/sequel_sans_heavy"
                         android:layout_gravity="center_horizontal"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
@@ -288,7 +287,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginBottom="15dp"
-                        android:fontFamily="@font/circularspuiv3bold"
+                        android:fontFamily="@font/sequel_sans_heavy"
                         android:text="Loves"
                         android:textColor="@color/lighter_gray"
                         android:textSize="15sp"
@@ -328,7 +327,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="15dp"
-                            android:fontFamily="@font/circularspuiv3bold"
+                            android:fontFamily="@font/sequel_sans_heavy"
                             android:layout_gravity="center_horizontal"
                             android:text="Loves"
                             android:textColor="@color/lighter_gray"
@@ -358,7 +357,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginBottom="15dp"
-                            android:fontFamily="@font/circularspuiv3bold"
+                            android:fontFamily="@font/sequel_sans_heavy"
                             android:text="Loves"
                             android:textColor="@color/lighter_gray"
                             android:textSize="15sp"

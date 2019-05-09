@@ -26,8 +26,7 @@
             app:menu="@menu/menu_bottom_navigation" />
 
         <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="?backgroundcolor"
-            android:foreground="@color/user_icon_default_white"
+            app:cardBackgroundColor="?cardbackground"
             app:cardElevation="3dp"
             app:cardCornerRadius="25dp"
             android:layout_width="96dp"
@@ -35,26 +34,32 @@
             android:layout_marginTop="60dp"
             android:layout_marginEnd="18dp"
             android:layout_alignParentEnd="true">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingTop="6dp"
-                android:paddingBottom="6dp"
-                android:paddingEnd="8dp"
-                android:paddingStart="12dp">
+                android:paddingStart="12dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp">
+
                 <ImageView
                     android:id="@+id/img1"
                     android:layout_width="25dp"
+                    android:paddingEnd="5dp"
                     android:layout_height="match_parent"
-                    android:tint="?textcolorsecondary"
+                    android:layout_gravity="start"
                     android:src="@drawable/ic_darkmode"
-                    android:layout_gravity="start" />
+                    android:tint="?textcolorsecondary" />
+
                 <Switch
                     android:id="@+id/myswitch"
+                    style="@style/switch.style"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="end"/>
+                    android:layout_gravity="end"
+                    android:theme="@style/SwitchCompatTheme" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -100,4 +105,5 @@
         app:lottie_speed="1.1"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
