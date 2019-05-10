@@ -130,15 +130,28 @@
         <item name="mrl_rippleColor">#80000000</item>
     </style>
 
-    <style name="switch.style" parent="@android:style/Widget.Material.CompoundButton.Switch">
+    <style name="mySwitchStyle" parent="@style/Widget.AppCompat.CompoundButton.Switch">
         <item name="android:thumb">@drawable/switch_thumb_material_anim</item>
         <item name="track">@drawable/switch_track_material</item>
-        <item name="trackTint">@color/switch_track</item>
+        <item name="trackTint">@color/track_selector</item>
         <item name="showText">false</item>
         <item name="colorControlActivated">@color/colorAccent</item>
         <item name="android:background">@android:color/transparent</item>
-        <item name="switchPadding">@dimen/abc_switch_padding</item>
+        <item name="switchPadding">0dp</item>
     </style>
+    <style name="mySwitchTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="switchStyle">@style/mySwitchStyle</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="trackTint">@color/track_selector</item>
+    </style>
+    <style name="switch.style" parent="ThemeOverlay.AppCompat.Light">
+        <item name="switchStyle">@style/mySwitchStyle</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="trackTint">@color/track_selector</item>
+    </style>
+
     <style name="SwitchCompatTheme" >
         <item name="colorControlActivated">@color/colorAccent</item>
     </style>

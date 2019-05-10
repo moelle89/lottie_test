@@ -5,6 +5,8 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -18,16 +20,12 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Switch;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieProperty;
-import com.airbnb.lottie.SimpleColorFilter;
-import com.airbnb.lottie.model.KeyPath;
-import com.airbnb.lottie.value.LottieValueCallback;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.moelle.deepdarkness.fragment.fragment_1;
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     private ViewPager viewPager;
     private FloatingActionButton fab;
-    private Switch myswitch;
+    SwitchCompat myswitch;
     PrefManager sharedpref;
 
     //Fragments
@@ -62,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         // dark/light mode switch
         myswitch=findViewById(R.id.myswitch);
+        setSwitchColor(myswitch);
         if (sharedpref.loadNightModeState()) {
             myswitch.setChecked(true);
         }
@@ -273,4 +272,34 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+    public static void setSwitchColor(SwitchCompat v) {
+        // thumb color of your choice
+        int thumbColor = Color.RED;
+
+        // trackColor is the thumbColor with 30% transparency (77)
+        int trackColor = Color.argb(77, Color.red(thumbColor), Color.green(thumbColor), Color.blue(thumbColor));
+
+        // setting the thumb color
+        DrawableCompat.setTintList(v.getThumbDrawable(), new ColorStateList(
+                new int[][]{
+                        new int[]{android.R.attr.state_checked},
+                        new int[]{}
+                },
+                new int[]{
+                        thumbColor,
+                        Color.WHITE
+                }));
+
+        // setting the track color
+        DrawableCompat.setTintList(v.getTrackDrawable(), new ColorStateList(
+                new int[][]{
+                        new int[]{android.R.attr.state_checked},
+                        new int[]{}
+                },
+                new int[]{
+                        trackColor,
+                        Color.parseColor("#FFFFFFFF") // full black with 30% transparency (4D)
+                }));
+    }
+
 }

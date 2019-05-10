@@ -53,13 +53,13 @@
                     android:src="@drawable/ic_darkmode"
                     android:tint="?textcolorsecondary" />
 
-                <Switch
+                <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/myswitch"
-                    style="@style/switch.style"
+                    android:theme="@style/mySwitchTheme"
+                    style="@style/mySwitchStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:theme="@style/SwitchCompatTheme" />
+                    />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
