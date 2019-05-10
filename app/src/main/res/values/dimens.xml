@@ -40,4 +40,7 @@
     <dimen name="cardelevation_small">4dp</dimen>
     <dimen name="cardelevation_dark">0dp</dimen>
     <dimen name="cardelevation_small_dark">0dp</dimen>
+
+    <dimen name="radius_corner">@dimen/cardCornerRadius</dimen>
+    <dimen name="layoutElevation">10dp</dimen>
 </resources>

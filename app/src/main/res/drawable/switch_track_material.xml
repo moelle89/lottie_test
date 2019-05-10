@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:enterFadeDuration="@android:integer/config_mediumAnimTime"
-    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    android:enterFadeDuration="1600"
+    android:exitFadeDuration="1600">
     <item android:state_checked="true">
-        <shape android:shape="rectangle" android:useLevel="false" android:visible="true">
-			<solid android:color="@color/overlay_accent_60" />
-            <corners android:radius="25.0dip" />
-            <size android:width="24.0dip" android:height="24.0dip" />
-            <stroke android:width="1.2dp" android:color="@color/colorAccent" />
+        <shape android:shape="rectangle" android:tint="?colorControlActivated">
+            <solid android:color="#64008EC2" />
+            <corners android:radius="24.0dip" />
+            <size android:width="21.0dip" android:height="21.0dip" />
+            <stroke android:width="1.5dp" android:color="?colorControlActivated" />
         </shape>
     </item>
     <item android:state_checked="false">
-        <shape android:dither="true" android:shape="rectangle" android:visible="true" >
-			<solid android:color="#C4C4C4" />
-            <corners android:radius="25.0dip" />
-            <size android:width="24.0dip" android:height="24.0dip" />
+        <shape android:shape="rectangle" android:tint="?textcolor" >
+            <solid android:color="#14FFFFFF" />
+            <corners android:radius="24.0dip" />
+            <size android:width="21.0dip" android:height="21.0dip" />
+            <stroke android:width="1.5dp" android:color="#8CFFFFFF" />
         </shape>
     </item>
 </selector>

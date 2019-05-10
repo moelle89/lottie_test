@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true" android:state_pressed="true">
-        <shape android:shape="rectangle" android:tint="@color/gradientbottom">
-            <solid android:color="#CDFFFFFF" />
-            <corners android:radius="23dp" />
-        </shape>
-    </item>
-    <item android:state_enabled="true">
-        <shape android:shape="rectangle" android:tint="?attr/cardbackground">
-            <gradient
-                android:startColor="#A6FFFFFF"
-                android:endColor="#FFFFFFFF"
-                android:angle="-90" />
-            <corners android:radius="23dp" />
-        </shape>
-    </item>
-</selector>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android" android:tint="?backgroundcolor">
+    <solid android:color="@color/background_dark" />
+    <corners android:radius="12dp" />
+</shape>

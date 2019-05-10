@@ -26,6 +26,7 @@
             app:menu="@menu/menu_bottom_navigation" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/switchcard"
             app:cardBackgroundColor="?cardbackground"
             app:cardElevation="3dp"
             app:cardCornerRadius="25dp"
@@ -55,7 +56,6 @@
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/myswitch"
-                    android:theme="@style/mySwitchTheme"
                     style="@style/mySwitchStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

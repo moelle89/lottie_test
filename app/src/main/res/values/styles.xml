@@ -8,7 +8,6 @@
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="switchStyle">@style/switch.style</item>
         <item name="fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -34,7 +33,6 @@
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
     </style>
     <style name="AppTheme.Dark" parent="Theme.AppCompat">
-        <item name="switchStyle">@style/switch.style</item>
         <item name="fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:windowLightStatusBar">false</item>
@@ -138,21 +136,5 @@
         <item name="colorControlActivated">@color/colorAccent</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="switchPadding">0dp</item>
-    </style>
-    <style name="mySwitchTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="switchStyle">@style/mySwitchStyle</item>
-        <item name="colorControlActivated">@color/colorAccent</item>
-        <item name="colorControlNormal">@color/colorAccent</item>
-        <item name="trackTint">@color/track_selector</item>
-    </style>
-    <style name="switch.style" parent="ThemeOverlay.AppCompat.Light">
-        <item name="switchStyle">@style/mySwitchStyle</item>
-        <item name="colorControlActivated">@color/colorAccent</item>
-        <item name="colorControlNormal">@color/colorAccent</item>
-        <item name="trackTint">@color/track_selector</item>
-    </style>
-
-    <style name="SwitchCompatTheme" >
-        <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 </resources>

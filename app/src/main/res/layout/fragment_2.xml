@@ -78,15 +78,16 @@
                 android:paddingTop="10dp"
                 android:paddingRight="25dp">
 
-                <FrameLayout
+                <com.moelle.deepdarkness.RoundLinerLayoutNormal
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
                     android:focusable="true"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground"
-                    android:background="@drawable/background_round">
+                    android:clickable="true">
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_round" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -194,7 +195,7 @@
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </FrameLayout>
+                </com.moelle.deepdarkness.RoundLinerLayoutNormal>
 
                 <ImageView
                     android:id="@+id/imgprofile"

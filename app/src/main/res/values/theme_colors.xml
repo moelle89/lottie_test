@@ -19,6 +19,7 @@
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
     <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
     <color name="shadow">#B21E212A</color><!-- theme_color_alpha -->
+    <color name="shadowColor">#25000000</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
     <color name="holo_red_light">#ECE7EEFA</color><!-- settings titles -->
     <color name="cardbackgroundlight">#FFFFFF</color><!-- F5F9FF -->

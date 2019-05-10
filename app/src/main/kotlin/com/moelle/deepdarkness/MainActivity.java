@@ -5,9 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -23,7 +20,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
-import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -38,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private FloatingActionButton fab;
     SwitchCompat myswitch;
+    CardView switchcard;
     PrefManager sharedpref;
 
     //Fragments
@@ -59,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // dark/light mode switch
+        switchcard=findViewById(R.id.switchcard);
         myswitch=findViewById(R.id.myswitch);
-        setSwitchColor(myswitch);
         if (sharedpref.loadNightModeState()) {
             myswitch.setChecked(true);
         }
@@ -115,7 +113,9 @@ public class MainActivity extends AppCompatActivity {
         Animation anim_nav = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         myswitch.setAlpha(0f);
-        myswitch.animate().alpha(1f).setDuration(500).setStartDelay(500);
+        switchcard.setAlpha(0f);
+        myswitch.animate().alpha(1f).setDuration(600).setStartDelay(500);
+        switchcard.animate().alpha(1f).setDuration(500).setStartDelay(500);
         anim_nav.setStartOffset(600);
         anim_nav.setInterpolator(new OvershootInterpolator(2.8f));
         bottomNavigationView.setAnimation(anim_nav);
@@ -271,35 +271,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
         finish();
-    }
-    public static void setSwitchColor(SwitchCompat v) {
-        // thumb color of your choice
-        int thumbColor = Color.RED;
-
-        // trackColor is the thumbColor with 30% transparency (77)
-        int trackColor = Color.argb(77, Color.red(thumbColor), Color.green(thumbColor), Color.blue(thumbColor));
-
-        // setting the thumb color
-        DrawableCompat.setTintList(v.getThumbDrawable(), new ColorStateList(
-                new int[][]{
-                        new int[]{android.R.attr.state_checked},
-                        new int[]{}
-                },
-                new int[]{
-                        thumbColor,
-                        Color.WHITE
-                }));
-
-        // setting the track color
-        DrawableCompat.setTintList(v.getTrackDrawable(), new ColorStateList(
-                new int[][]{
-                        new int[]{android.R.attr.state_checked},
-                        new int[]{}
-                },
-                new int[]{
-                        trackColor,
-                        Color.parseColor("#FFFFFFFF") // full black with 30% transparency (4D)
-                }));
     }
 
 }
