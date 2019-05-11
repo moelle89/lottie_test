@@ -237,6 +237,9 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLeft"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:cardUseCompatPadding="true"
@@ -245,19 +248,9 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="?cardelevation_small">
 
-                    <com.balysv.materialripple.MaterialRippleLayout
-                        style="@style/RippleStyleBlack"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:mrl_rippleHover="true"
-                        app:mrl_rippleDelayClick="true"
-                        app:mrl_rippleFadeDuration="140"
-                        app:mrl_rippleDuration="160">
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:clickable="true"
                             android:gravity="center|start"
                             android:orientation="vertical"
                             android:padding="@dimen/spacing_large">
@@ -283,8 +276,6 @@
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
-
-                    </com.balysv.materialripple.MaterialRippleLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -372,7 +363,6 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:clickable="true"
                             android:gravity="center|start"
                             android:orientation="vertical"
                             android:padding="@dimen/spacing_large">
@@ -425,7 +415,6 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:clickable="true"
                             android:gravity="center|start"
                             android:orientation="vertical"
                             android:padding="@dimen/spacing_large">

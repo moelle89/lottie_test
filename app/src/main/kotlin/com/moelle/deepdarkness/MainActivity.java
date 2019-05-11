@@ -131,12 +131,15 @@ public class MainActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
                             case R.id.action_call:
                                 viewPager.setCurrentItem(0);
+                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                             case R.id.action_chat:
                                 viewPager.setCurrentItem(1);
+                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                             case R.id.action_contact:
                                 viewPager.setCurrentItem(2);
+                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                         }
                         return false;

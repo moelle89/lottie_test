@@ -43,23 +43,23 @@ public class LottieTutorial extends AppIntro {
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
         Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        super.finish();
         startActivity(backToDash);
-        overridePendingTransition(R.anim.goup, R.anim.goup);
     }
     @Override
     public void onBackPressed(){
         super.onBackPressed();
         Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        super.finish();
         startActivity(backToDash);
-        overridePendingTransition(R.anim.goup, R.anim.goup);
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
         Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        super.finish();
         startActivity(backToDash);
-        overridePendingTransition(R.anim.goup, R.anim.goup);
     }
 
     @Override

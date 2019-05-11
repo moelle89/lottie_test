@@ -1,6 +1,7 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -11,26 +12,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
+import com.balysv.materialripple.MaterialRippleLayout;
 import com.klinker.android.simple_videoview.SimpleVideoView;
+import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link fragment_1.OnFragmentInteractionListener} interface
  * to handle interaction events.
  * create an instance of this fragment.
  */
-public class fragment_1 extends Fragment {
+public class fragment_1 extends Fragment implements View.OnClickListener {
 
     private LinearLayout cat_top;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2;
     private FrameLayout cardTop;
-    private SimpleVideoView videoView;
 
-    private OnFragmentInteractionListener mListener;
 
     public fragment_1() {
         // Required empty public constructor
@@ -57,6 +59,8 @@ public class fragment_1 extends Fragment {
         cardLeft = v.findViewById(R.id.cardLeft);
         cardLeft2 = v.findViewById(R.id.cardLeft2);
         cat_top = v.findViewById(R.id.cat_top);
+        Button tutorial_btn = v.findViewById(R.id.tutorial_btn);
+        cardLeft.setOnClickListener(this);
 
         // ini Animations
         Animation fadeIn = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);
@@ -81,36 +85,18 @@ public class fragment_1 extends Fragment {
         return  v ;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
     }
 
     @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.cardLeft:
+                Intent tutorial = new Intent(getActivity(), LottieTutorial.class);
+                startActivity(tutorial);
+                getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
+        }
     }
 }
