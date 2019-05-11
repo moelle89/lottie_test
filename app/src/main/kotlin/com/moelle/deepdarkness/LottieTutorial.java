@@ -31,7 +31,6 @@ public class LottieTutorial extends AppIntro {
 
         setImmersiveMode(false);
         setSwipeLock(false);
-        setGoBackLock(true);
         setNavBarColor(R.color.colorAccentPromptBackground);
         showStatusBar(false);
         showSkipButton(true);
@@ -43,18 +42,24 @@ public class LottieTutorial extends AppIntro {
     @Override
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
-        launchDashboard();
+        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(backToDash);
+        overridePendingTransition(R.anim.goup, R.anim.goup);
+    }
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(backToDash);
+        overridePendingTransition(R.anim.goup, R.anim.goup);
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        launchDashboard();
-    }
-
-    private void launchDashboard() {
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
+        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(backToDash);
+        overridePendingTransition(R.anim.goup, R.anim.goup);
     }
 
     @Override

@@ -7,21 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.AnticipateOvershootInterpolator;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.OvershootInterpolator;
+
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.klinker.android.simple_videoview.SimpleVideoView;
 import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 
@@ -30,9 +24,7 @@ import com.moelle.deepdarkness.R;
  */
 public class fragment_3 extends Fragment implements View.OnClickListener {
 
-    private SimpleVideoView videoView;
     private TextView title,description;
-    private ImageView iconhowto;
     public fragment_3() {
         // Required empty public constructor
     }
@@ -83,7 +75,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
             case R.id.tutorial_btn:
                 Intent tutorial = new Intent(getActivity(), LottieTutorial.class);
                 startActivity(tutorial);
-                break;
+                getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
         }
     }
 

@@ -26,7 +26,7 @@ class RoundLinerLayoutNormal : LinearLayout {
 
     private fun initBackground() {
         // TODO add whatever attribute you want to use or just remove the comment
-        background = ViewUtils.generateBackgroundWithShadow(this, context.resolveAttribute(R.attr.background),
+        background = ViewUtils.generateBackgroundWithShadow(this, R.color.background,
                 R.dimen.radius_corner, R.color.shadowColor, R.dimen.layoutElevation, Gravity.CENTER)
     }
 }

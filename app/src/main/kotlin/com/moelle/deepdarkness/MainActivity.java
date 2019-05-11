@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         // dark/light mode switch
         sharedpref = new PrefManager(this);
         if(sharedpref.loadNightModeState()) {
@@ -272,5 +273,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
-
 }

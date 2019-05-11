@@ -138,6 +138,7 @@
                         android:layout_marginTop="@dimen/spacing_large"
                         android:layout_marginRight="@dimen/spacing_xlarge"
                         android:layout_weight="1"
+                        app:lottie_colorFilter="?tintcolor"
                         app:lottie_autoPlay="true"
                         app:lottie_loop="true"
                         app:lottie_rawRes="@raw/tut_icon_test" />
