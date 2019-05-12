@@ -11,21 +11,17 @@ import com.moelle.deepdarkness.util.ViewUtils
  * Created by ArmanSo on 4/16/17.
  */
 
-class RoundLinerLayoutNormal : LinearLayout {
-    constructor(context: Context) : super(context) {
-        initBackground()
-    }
+class RoundLinearLayoutNormal @JvmOverloads constructor(
+        context: Context? = null,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : LinearLayout(context, attrs, defStyleAttr) {
 
-    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
-        initBackground()
-    }
-
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+    init {
         initBackground()
     }
 
     private fun initBackground() {
-        // TODO add whatever attribute you want to use or just remove the comment
         background = ViewUtils.generateBackgroundWithShadow(this, R.color.background,
                 R.dimen.radius_corner, R.color.shadowColor, R.dimen.layoutElevation, Gravity.CENTER)
     }

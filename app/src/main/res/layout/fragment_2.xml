@@ -78,7 +78,7 @@
                 android:paddingTop="10dp"
                 android:paddingRight="25dp">
 
-                <com.moelle.deepdarkness.RoundLinerLayoutNormal
+                <com.moelle.deepdarkness.RoundLinearLayoutNormal
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
@@ -192,7 +192,7 @@
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </com.moelle.deepdarkness.RoundLinerLayoutNormal>
+                </com.moelle.deepdarkness.RoundLinearLayoutNormal>
 
                 <ImageView
                     android:id="@+id/imgprofile"
