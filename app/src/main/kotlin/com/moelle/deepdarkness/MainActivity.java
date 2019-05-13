@@ -2,16 +2,20 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
@@ -19,8 +23,10 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
+import androidx.core.os.BuildCompat;
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,6 +34,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
+import com.moelle.deepdarkness.ExtensionsKt;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,17 +53,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        // For overlap of Re Entering Activity - MainActivity.java and Exiting TransitionActivity.java
+        getWindow().setAllowReturnTransitionOverlap(false);
+
         // dark/light mode switch
         sharedpref = new PrefManager(this);
         if(sharedpref.loadNightModeState()) {
-            setTheme(R.style.AppTheme_Dark_NoActionBar);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
-        else  setTheme(R.style.AppTheme_NoActionBar);
+        else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
         // end of dark/light mode switch
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         // dark/light mode switch
         switchcard=findViewById(R.id.switchcard);
         myswitch=findViewById(R.id.myswitch);
@@ -226,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
         int endRadius = (int) Math.hypot(w, h);
 
         int cx = (int) (fab.getX() + (fab.getWidth()/2));
-        int cy = (int) (fab.getY())+ fab.getHeight() + 56;
+        int cy = (int) (fab.getY())+ fab.getHeight();
 
 
         if(b){
@@ -255,7 +264,6 @@ public class MainActivity extends AppCompatActivity {
             anim.start();
 
         }
-
     }
     private void setupViewPager(ViewPager viewPager) {
 
@@ -276,4 +284,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+    //
 }

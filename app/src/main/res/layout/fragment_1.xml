@@ -229,6 +229,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/anchor_cardleft"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -248,15 +249,16 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="?cardelevation_small">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center|start"
-                            android:orientation="vertical"
-                            android:padding="@dimen/spacing_large">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_large">
 
                             <ImageView
                                 android:id="@+id/img1"
+                                android:transitionName="feature_img1"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="14dp"
@@ -266,6 +268,8 @@
                                 android:layout_gravity="start|top" />
 
                             <TextView
+                                android:id="@+id/text1"
+                                android:transitionName="feature_text1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
@@ -275,8 +279,7 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="?textcolorsecondary" />
 
-                        </LinearLayout>
-
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -301,7 +304,6 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:clickable="true"
                             android:gravity="center|start"
                             android:orientation="vertical"
                             android:padding="@dimen/spacing_large">

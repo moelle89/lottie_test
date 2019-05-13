@@ -31,8 +31,6 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 import com.iammert.library.readablebottombar.ReadableBottomBar;
 import com.klinker.android.simple_videoview.SimpleVideoView;
-import com.moelle.deepdarkness.fragment.FirstSlide;
-
 import static com.moelle.deepdarkness.R.id;
 
 public class FirstActivity extends AppCompatActivity {
@@ -48,7 +46,6 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        slide_7 = new FirstSlide();
         fab = findViewById(R.id.fab);
         frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
 

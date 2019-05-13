@@ -7,11 +7,15 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="ApptThemeDialog" parent="AppTheme">
+        <item name="android:statusBarColor">@color/dialog</item>
+        <item name="android:navigationBarColor">@color/dialog</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:fontFamily">@font/sequel_sans_heavy</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="*android:isLightTheme">true</item>
+        <item name="android:windowLightStatusBar">@bool/windowLightStatusBar</item>
+        <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
         <item name="android:colorControlNormal">@color/textColor</item>
         <item name="android:colorControlActivated">@color/orange_background</item>
         <item name="android:colorControlHighlight">@color/overlay_accent_20</item>
@@ -28,7 +32,8 @@
         <item name="textcolorsecondary">@color/secondary_text_light</item>
         <item name="tintcolor">@color/colorAccent_light</item>
         <item name="buttoncolor">@color/appintro_icon_tint</item>
-        <item name="android:navigationBarColor">@color/grey_20</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:statusBarColor">@color/transparent</item>
         <item name="cardelevation">@dimen/cardelevation</item>
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
     </style>
@@ -56,14 +61,6 @@
         <item name="cardelevation">@dimen/cardelevation_dark</item>
         <item name="cardelevation_small">@dimen/cardelevation_small_dark</item>
         <item name="android:navigationBarColor">@color/background_dark</item>
-    </style>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="AppTheme.Dark.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
     <style name="AppThemeBgTint" parent="AppTheme">
         <item name="android:windowAnimationStyle">@style/Animation</item>

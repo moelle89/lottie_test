@@ -4,7 +4,7 @@
     n1:layout_width="fill_parent"
     n1:layout_height="fill_parent"
     n1:background="@color/transparent"
-    n1:theme="@style/AppTheme.NoActionBar"
+    n1:theme="@style/AppTheme"
     xmlstools:actionBarNavMode="standard"
     xmlstools:context="com.moelle.deepdarkness.FirstActivity"
     xmlstools:showIn="@layout/home_fragment">

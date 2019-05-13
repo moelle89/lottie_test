@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Circular" parent="AppTheme.NoActionBar">
+    <style name="Circular" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="android:alertDialogTheme">@style/DialogStyle</item>
         <item name="android:colorControlActivated">@color/orange_background</item>

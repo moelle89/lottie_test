@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="overlay_10">#1A000000</color>
-    <color name="overlay_20">#33000000</color>
-    <color name="overlay_30">#4D000000</color>
-    <color name="overlay_40">#66000000</color>
-    <color name="overlay_50">#80000000</color>
-    <color name="overlay_60">#99000000</color>
-    <color name="overlay_70">#B3000000</color>
-    <color name="overlay_80">#CC000000</color>
-    <color name="overlay_90">#E6000000</color>
+    <color name="overlay_10">#1Affffff</color>
+    <color name="overlay_20">#33ffffff</color>
+    <color name="overlay_30">#4Dffffff</color>
+    <color name="overlay_40">#66ffffff</color>
+    <color name="overlay_50">#8ffffff0</color>
+    <color name="overlay_60">#99ffffff</color>
+    <color name="overlay_70">#B3ffffff</color>
+    <color name="overlay_80">#CCffffff</color>
+    <color name="overlay_90">#E6ffffff</color>
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
@@ -34,18 +34,21 @@
     <color name="colorAccent">#1835FC</color>
     <color name="colorAccent_light">#2E62FF</color>
     <color name="colorAccent_40">#661835FC</color>
-    <color name="background">#FFFFFF</color><!-- #ff16171d -->
+    <color name="background">#000000</color><!-- #ff16171d -->
     <color name="background_dark">#000000</color><!-- #ff16171d -->
+    <color name="cardbackgroundlight">@color/dim_foreground_light</color><!-- F5F9FF -->
+    <color name="dialog">@color/dim_foreground_light</color><!-- navbar -->
     <color name="inactive">#1ACBD3ED</color>
-    <color name="textColor">#3A3D50</color>
+    <color name="textColor">#fff7fbff</color>
     <color name="textColor_dark">#fff7fbff</color>
+    <color name="secondary_text_light">#AAB9CA</color><!-- app background_alpha -->
+    <color name="secondary_text_dark">#AAB9CA</color> <!-- secondary_text_material_dark -->
     <color name="buttonFocused">#AE5D6A88</color>
     <color name="buttonNormal">@color/inactive</color>
     <color name="transparent">#00000000</color>
     <color name="buttonPressed">#c4ffffff</color>
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
-    <color name="dialog">#ffe2edf3</color><!-- navbar -->
     <color name="blue_background">#000000</color>
     <color name="teal_background">#00796B</color>
     <color name="orange_background">#132ccb</color>

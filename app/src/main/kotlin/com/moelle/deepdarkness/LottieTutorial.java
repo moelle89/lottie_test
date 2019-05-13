@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.github.paolorotolo.appintro.AppIntro;
-import com.moelle.deepdarkness.fragment.FirstSlide;
 import com.moelle.deepdarkness.util.SampleSlide;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -19,12 +18,14 @@ public class LottieTutorial extends AppIntro {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        // For overlap of Re Entering Activity - MainActivity.java and Exiting TransitionActivity.java
+        getWindow().setAllowReturnTransitionOverlap(false);
         super.onCreate(savedInstanceState);
 
         slide_5 = SampleSlide.newInstance(R.layout.slide_05);
         slide_6 = SampleSlide.newInstance(R.layout.slide_06);
 
-        slide_7 = new FirstSlide();
+        slide_7 = new SampleSlide();
 
         addSlide(slide_5);
         addSlide(slide_6);
@@ -42,24 +43,21 @@ public class LottieTutorial extends AppIntro {
     @Override
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
-        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
         super.finish();
-        startActivity(backToDash);
+        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
     @Override
     public void onBackPressed(){
         super.onBackPressed();
-        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
         super.finish();
-        startActivity(backToDash);
+        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        Intent backToDash = new Intent(getApplicationContext(), MainActivity.class);
         super.finish();
-        startActivity(backToDash);
+        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
 
     @Override

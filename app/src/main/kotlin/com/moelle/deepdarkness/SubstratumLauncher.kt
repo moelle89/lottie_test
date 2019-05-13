@@ -11,6 +11,8 @@ import androidx.appcompat.app.AlertDialog
 import android.util.Log
 import android.view.LayoutInflater
 import android.content.Intent
+import android.graphics.Color
+import android.view.View
 import android.widget.*
 import com.github.javiersantos.piracychecker.*
 import com.github.javiersantos.piracychecker.enums.*
@@ -25,6 +27,10 @@ import com.airbnb.lottie.LottieDrawable
 import com.moelle.deepdarkness.AdvancedConstants.SHOW_DIALOG_REPEATEDLY
 import com.moelle.deepdarkness.AdvancedConstants.SHOW_LAUNCH_DIALOG
 import kotlinx.android.synthetic.main.fullscreen_dialog.*
+import android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+import android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+import android.view.Window
+import android.view.WindowManager
 
 
 /**
@@ -54,8 +60,12 @@ class SubstratumLauncher : Activity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        val window = getWindow()
+        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.setStatusBarColor(Color.TRANSPARENT)
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.fullscreen_dialog)
         av_from_code.repeatCount = LottieDrawable.INFINITE
         av_from_code.playAnimation()
