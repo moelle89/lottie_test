@@ -2,39 +2,26 @@ package com.moelle.deepdarkness.fragment;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.media.Image;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 
-import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 /**
@@ -45,7 +32,7 @@ import com.moelle.deepdarkness.R;
  */
 public class fragment_1 extends Fragment implements View.OnClickListener {
 
-    private LinearLayout cat_top;
+    private LinearLayout cat_top,cat_middle;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2;
     private FrameLayout cardTop;
     private LinearLayout anchor_cardleft;
@@ -76,6 +63,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cardLeft = v.findViewById(R.id.cardLeft);
         cardLeft2 = v.findViewById(R.id.cardLeft2);
         cat_top = v.findViewById(R.id.cat_top);
+        cat_middle = v.findViewById(R.id.cat_middle);
         anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
         cardLeft.setOnClickListener(this);
 
@@ -91,6 +79,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         // setup Animation :
         cat_top.animate().alpha(1f).setDuration(2000).setStartDelay(800);
+        cat_middle.animate().alpha(1f).setDuration(2000).setStartDelay(1200);
         cardTop.setAnimation(fadeIn);
         cardLeft.setAnimation(vonOben);
         cardRight.setAnimation(vonOben2);

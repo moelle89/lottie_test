@@ -61,8 +61,7 @@
         app:lottie_rawRes="@raw/tut_bg"
         app:lottie_colorFilter="@color/overlay_accent_90"
         app:lottie_loop="true"
-        app:lottie_autoPlay="true"
-        app:lottie_renderMode="hardware" />
+        app:lottie_autoPlay="true" />
 
     <Button
         android:id="@+id/tutorial_btn"
@@ -72,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="50dp"
         android:clickable="true"
         android:focusable="true"
         android:text="You tell me!"
@@ -83,7 +82,7 @@
         android:id="@+id/ripplehowto"
         android:alpha="0"
         android:layout_width="390dp"
-        android:layout_height="155dp"
+        android:layout_height="145dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
@@ -106,7 +105,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginStart="@dimen/spacing_middle"
             android:layout_marginEnd="@dimen/spacing_middle"
-            android:layout_marginBottom="@dimen/spacing_xlarge"
+            android:layout_marginBottom="@dimen/spacing_large"
             android:clickable="true"
             android:focusable="true"
             app:cardUseCompatPadding="true"
@@ -131,7 +130,7 @@
                         android:layout_width="275dp"
                         android:layout_height="0dp"
                         android:layout_marginLeft="@dimen/spacing_xlarge"
-                        android:layout_marginTop="@dimen/spacing_large"
+                        android:layout_marginTop="@dimen/spacing_xlarge"
                         android:layout_marginRight="@dimen/spacing_xlarge"
                         android:layout_weight="1"
                         app:lottie_colorFilter="?tintcolor"

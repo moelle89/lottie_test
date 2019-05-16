@@ -2,20 +2,16 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
@@ -26,7 +22,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
-import androidx.core.os.BuildCompat;
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -34,7 +29,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
-import com.moelle.deepdarkness.ExtensionsKt;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -140,15 +134,12 @@ public class MainActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
                             case R.id.action_call:
                                 viewPager.setCurrentItem(0);
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                             case R.id.action_chat:
                                 viewPager.setCurrentItem(1);
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                             case R.id.action_contact:
                                 viewPager.setCurrentItem(2);
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                                 break;
                         }
                         return false;

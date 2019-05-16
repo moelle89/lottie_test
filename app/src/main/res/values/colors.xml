@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="overlay_head">@color/overlay_accent_10</color>
+
     <color name="overlay_10">#1A000000</color>
     <color name="overlay_20">#33000000</color>
     <color name="overlay_30">#4D000000</color>
@@ -9,6 +11,16 @@
     <color name="overlay_70">#B3000000</color>
     <color name="overlay_80">#CC000000</color>
     <color name="overlay_90">#E6000000</color>
+	
+	<color name="background_10">#1Affffff</color>
+    <color name="background_20">#33ffffff</color>
+    <color name="background_30">#4Dffffff</color>
+    <color name="background_40">#66ffffff</color>
+    <color name="background_50">#8ffffff0</color>
+    <color name="background_60">#99ffffff</color>
+    <color name="background_70">#B3ffffff</color>
+    <color name="background_80">#CCffffff</color>
+    <color name="background_90">#E6ffffff</color>
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>

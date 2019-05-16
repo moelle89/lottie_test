@@ -14,6 +14,7 @@
     <dimen name="list_item_margin">0dp</dimen>
 
     <dimen name="cardCornerRadius">12dp</dimen>
+    <dimen name="cardCornerRadius_small">10dp</dimen>
 
     <dimen name="dashboard_list_title_size">22sp</dimen>
     <dimen name="dashboard_list_width">340dp</dimen>
@@ -36,11 +37,11 @@
     <dimen name="spacing_xxlarge">50dp</dimen>
     <dimen name="spacing_xxxlarge">55dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
-    <dimen name="cardelevation">10dp</dimen>
-    <dimen name="cardelevation_small">3dp</dimen>
+    <dimen name="cardelevation">6dp</dimen>
+    <dimen name="cardelevation_small">2dp</dimen>
     <dimen name="cardelevation_dark">0dp</dimen>
     <dimen name="cardelevation_small_dark">0dp</dimen>
 
     <dimen name="radius_corner">@dimen/cardCornerRadius</dimen>
-    <dimen name="layoutElevation">10dp</dimen>
+    <dimen name="layoutElevation">6dp</dimen>
 </resources>
