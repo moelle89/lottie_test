@@ -10,11 +10,10 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="130dp"
         android:background="?backgroundcolor"
-        android:foreground="@drawable/gradient_cover"
         android:fitsSystemWindows="true"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -32,6 +31,7 @@
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:id="@+id/dashboard_head"
+                android:foreground="@color/overlay_head"
                 app:lottie_colorFilter="?backgroundcolor"
                 app:layout_collapseMode="parallax"
                 app:lottie_rawRes="@raw/dashboard_head"
@@ -43,7 +43,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                app:layout_collapseMode="none"
+                app:layout_collapseMode="parallax"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -64,7 +64,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/cat_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sequel_sans_medium"
+                    android:text="Collection"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/lyt_form"
                 android:layout_width="match_parent"
@@ -81,14 +100,15 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/card1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         app:cardUseCompatPadding="true"
+                        android:clickable="true"
+                        android:focusable="true"
                         android:layout_weight="1"
                         app:cardBackgroundColor="?cardbackground"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small">
+                        app:cardElevation="?cardelevation_tiny" >
 
                         <com.balysv.materialripple.MaterialRippleLayout
                             style="@style/RippleStyleBlack"
@@ -100,14 +120,16 @@
                             app:mrl_rippleDuration="160">
 
                             <LinearLayout
+                                android:id="@+id/accent1"
                                 android:layout_width="match_parent"
-                                android:layout_height="140dp"
+                                android:layout_height="80dp"
                                 android:gravity="bottom|start"
                                 android:orientation="vertical"
-                                android:background="@drawable/photo_female_8">
+                                android:background="@color/accent1">
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="35dp"
+                                    android:layout_height="30dp"
                                     android:background="@drawable/gradient_card"
                                     android:padding="@dimen/spacing_small"
                                     android:gravity="bottom|start">
@@ -115,7 +137,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="8dp"
-                                        android:layout_marginBottom="2dp"
+                                        android:layout_marginBottom="0dp"
                                         android:text="WATER"
                                         android:textAlignment="textStart"
                                         android:textSize="12sp"
@@ -134,7 +156,7 @@
                         android:layout_weight="1"
                         app:cardBackgroundColor="?cardbackground"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small">
+                        app:cardElevation="?cardelevation_tiny">
 
                         <com.balysv.materialripple.MaterialRippleLayout
                             style="@style/RippleStyleBlack"
@@ -146,14 +168,15 @@
                             app:mrl_rippleDuration="160">
 
                             <LinearLayout
+                                android:id="@+id/accent2"
                                 android:layout_width="match_parent"
-                                android:layout_height="140dp"
+                                android:layout_height="80dp"
                                 android:gravity="bottom|start"
                                 android:orientation="vertical"
-                                android:background="@drawable/image_12">
+                                android:background="@color/accent2">
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="35dp"
+                                    android:layout_height="30dp"
                                     android:background="@drawable/gradient_card"
                                     android:padding="@dimen/spacing_small"
                                     android:gravity="bottom|start">
@@ -161,7 +184,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="8dp"
-                                        android:layout_marginBottom="2dp"
+                                        android:layout_marginBottom="0dp"
                                         android:text="WATER"
                                         android:textAlignment="textStart"
                                         android:textSize="12sp"
@@ -173,14 +196,110 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardRight"
+                        android:id="@+id/card3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:id="@+id/accent3"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@color/accent3"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:id="@+id/accent4"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@color/accent4"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         app:cardUseCompatPadding="true"
                         android:layout_weight="1"
                         app:cardBackgroundColor="?cardbackground"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small">
+                        app:cardElevation="?cardelevation_tiny">
 
                         <com.balysv.materialripple.MaterialRippleLayout
                             style="@style/RippleStyleBlack"
@@ -192,14 +311,15 @@
                             app:mrl_rippleDuration="160">
 
                             <LinearLayout
+                                android:id="@+id/accent5"
                                 android:layout_width="match_parent"
-                                android:layout_height="140dp"
+                                android:layout_height="80dp"
                                 android:gravity="bottom|start"
                                 android:orientation="vertical"
-                                android:background="@drawable/photo_female_8">
+                                android:background="@color/accent5">
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="35dp"
+                                android:layout_height="30dp"
                                 android:background="@drawable/gradient_card"
                                 android:padding="@dimen/spacing_small"
                                 android:gravity="bottom|start">
@@ -207,7 +327,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
-                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginBottom="0dp"
                                     android:text="WATER"
                                     android:textAlignment="textStart"
                                     android:textSize="12sp"
@@ -218,7 +338,6 @@
 
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -228,109 +347,13 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/card4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="?cardbackground"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small"
-                        app:cardUseCompatPadding="true">
-
-                        <com.balysv.materialripple.MaterialRippleLayout
-                            style="@style/RippleStyleBlack"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:mrl_rippleDelayClick="true"
-                            app:mrl_rippleDuration="160"
-                            app:mrl_rippleFadeDuration="140"
-                            app:mrl_rippleHover="true">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="140dp"
-                                android:background="@drawable/image_12"
-                                android:gravity="bottom|start"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="35dp"
-                                    android:background="@drawable/gradient_card"
-                                    android:gravity="bottom|start"
-                                    android:padding="@dimen/spacing_small">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:layout_marginBottom="2dp"
-                                        android:text="WATER"
-                                        android:textAlignment="textStart"
-                                        android:textColor="?textcolor"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-                            </LinearLayout>
-                        </com.balysv.materialripple.MaterialRippleLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/card5"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="?cardbackground"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small"
-                        app:cardUseCompatPadding="true">
-
-                        <com.balysv.materialripple.MaterialRippleLayout
-                            style="@style/RippleStyleBlack"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:mrl_rippleDelayClick="true"
-                            app:mrl_rippleDuration="160"
-                            app:mrl_rippleFadeDuration="140"
-                            app:mrl_rippleHover="true">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="140dp"
-                                android:background="@drawable/photo_female_8"
-                                android:gravity="bottom|start"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="35dp"
-                                    android:background="@drawable/gradient_card"
-                                    android:gravity="bottom|start"
-                                    android:padding="@dimen/spacing_small">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:layout_marginBottom="2dp"
-                                        android:text="WATER"
-                                        android:textAlignment="textStart"
-                                        android:textColor="?textcolor"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-                            </LinearLayout>
-                        </com.balysv.materialripple.MaterialRippleLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
                         android:id="@+id/card6"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:cardBackgroundColor="?cardbackground"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_small"
+                        app:cardElevation="?cardelevation_tiny"
                         app:cardUseCompatPadding="true">
 
                         <com.balysv.materialripple.MaterialRippleLayout
@@ -344,14 +367,14 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="140dp"
+                                android:layout_height="80dp"
                                 android:background="@drawable/image_12"
                                 android:gravity="bottom|start"
                                 android:orientation="vertical">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="35dp"
+                                    android:layout_height="30dp"
                                     android:background="@drawable/gradient_card"
                                     android:gravity="bottom|start"
                                     android:padding="@dimen/spacing_small">
@@ -360,7 +383,697 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="8dp"
-                                        android:layout_marginBottom="2dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/photo_female_8"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/photo_female_8"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/photo_female_8"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:text="WATER"
+                                        android:textAlignment="textStart"
+                                        android:textColor="?textcolor"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="?cardbackground"
+                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardElevation="?cardelevation_tiny"
+                        app:cardUseCompatPadding="true">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            style="@style/RippleStyleBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleDuration="160"
+                            app:mrl_rippleFadeDuration="140"
+                            app:mrl_rippleHover="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/image_12"
+                                android:gravity="bottom|start"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_card"
+                                    android:gravity="bottom|start"
+                                    android:padding="@dimen/spacing_small">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="0dp"
                                         android:text="WATER"
                                         android:textAlignment="textStart"
                                         android:textColor="?textcolor"
@@ -452,14 +1165,21 @@
                             android:textColor="@color/colorPrimary"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <Button
+                            android:id="@+id/btn_test"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_middle"
-                            android:lineSpacingExtra="2dp"
-                            android:text="Swimming, playing tennis, cooking are my favorite hobbies"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                            android:textColor="@color/holo_orange_light" />
+                            android:background="@drawable/bgbtn"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/guideline"
+                            android:layout_marginTop="50dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="You tell me!"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -469,93 +1189,6 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/spacing_large" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:layout_width="@dimen/spacing_xlarge"
-                        android:layout_height="@dimen/spacing_xlarge"
-                        android:background="@android:color/transparent"
-                        android:tint="@color/appintro_icon_tint"
-                        app:srcCompat="@drawable/ic_favorite_black_24dp" />
-
-                    <View
-                        android:layout_width="@dimen/spacing_large"
-                        android:layout_height="match_parent" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Photos"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold" />
-
-                        <HorizontalScrollView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/spacing_middle"
-                            android:scrollbarSize="0dp">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_vertical"
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:id="@+id/image_1"
-                                    android:layout_width="120dp"
-                                    android:layout_height="120dp"
-                                    android:layout_marginEnd="@dimen/spacing_middle"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/background_round" />
-
-                                <ImageView
-                                    android:id="@+id/image_2"
-                                    android:layout_width="120dp"
-                                    android:layout_height="120dp"
-                                    android:layout_marginEnd="@dimen/spacing_middle"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/background_round" />
-
-                                <ImageView
-                                    android:id="@+id/image_3"
-                                    android:layout_width="120dp"
-                                    android:layout_height="120dp"
-                                    android:layout_marginEnd="@dimen/spacing_middle"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/background_round" />
-
-                                <ImageView
-                                    android:id="@+id/image_4"
-                                    android:layout_width="120dp"
-                                    android:layout_height="120dp"
-                                    android:layout_marginEnd="@dimen/spacing_middle"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/background_round" />
-
-                                <ImageView
-                                    android:id="@+id/image_5"
-                                    android:layout_width="120dp"
-                                    android:layout_height="120dp"
-                                    android:layout_marginEnd="@dimen/spacing_middle"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/background_round" />
-
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

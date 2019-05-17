@@ -36,6 +36,7 @@
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="cardelevation">@dimen/cardelevation</item>
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
+        <item name="cardelevation_tiny">@dimen/cardelevation_tiny</item>
     </style>
     <style name="AppTheme.Dark" parent="Theme.AppCompat">
         <item name="fontFamily">@font/sequel_sans_heavy</item>

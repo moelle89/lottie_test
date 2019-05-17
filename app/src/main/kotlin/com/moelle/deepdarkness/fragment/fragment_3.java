@@ -1,6 +1,7 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.content.Intent;
+import android.graphics.ColorFilter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +13,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.SimpleColorFilter;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieValueCallback;
 import com.moelle.deepdarkness.LottieTutorial;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 /**
@@ -57,6 +64,14 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setAlpha(0f);
         card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
+        final int introBG = ContextCompat.getColor(v.getContext(), R.color.accent1);
+        SimpleColorFilter filter = new SimpleColorFilter(introBG);
+        KeyPath keyPath = new KeyPath("**");
+        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filter);
+        iconhowto.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback);
+        iconhowto.playAnimation();
+
+
         iconhowto.setAnimation(anim_icon);
         title = v.findViewById(R.id.titlehowto);
         title.setAnimation(anim_title);

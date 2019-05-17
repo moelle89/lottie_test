@@ -5,6 +5,7 @@
         <attr name="cardbackground" format="color" />
         <attr name="cardelevation" format="dimension" />
         <attr name="cardelevation_small" format="dimension" />
+        <attr name="cardelevation_tiny" format="dimension" />
         <attr name="textcolor" format="color" />
         <attr name="textcolorsecondary" format="color" />
         <attr name="tintcolor" format="color" />

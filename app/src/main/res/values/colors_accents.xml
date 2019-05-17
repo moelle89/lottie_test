@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="accent1">#ff385f</color><!--Acorn-->
+	<color name="accent2">#00b7cd</color><!--Cyan-->
+	<color name="accent3">#c7a861</color><!--Gold-->
+	<color name="accent4">#19cc7f</color><!--Venom-->
+	<color name="accent5">#ffc12f</color><!--Holi-->
+	<color name="accent6">#f62b48</color><!--Infrared-->
+	<color name="accent7">#90d3b7</color><!--Mint-->	
+	<color name="accent8">#afca54</color><!--Mojito-->
+	<color name="accent9">#0dd453</color><!--Monster-->
+	<color name="accent10">#007eff</color><!--Octopus-->
+	
+	
+	
+	
+	
+	
+</resources>
