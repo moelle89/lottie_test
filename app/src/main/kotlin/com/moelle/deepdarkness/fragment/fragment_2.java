@@ -47,7 +47,6 @@ public class fragment_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_2, container, false);
         card1 = v.findViewById(R.id.accent1);
-        btn_test = v.findViewById(R.id.btn_test);
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

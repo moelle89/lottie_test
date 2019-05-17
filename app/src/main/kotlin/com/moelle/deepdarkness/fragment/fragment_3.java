@@ -64,11 +64,16 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setAlpha(0f);
         card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
-        final int introBG = ContextCompat.getColor(v.getContext(), R.color.accent1);
-        SimpleColorFilter filter = new SimpleColorFilter(introBG);
-        KeyPath keyPath = new KeyPath("**");
-        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filter);
-        iconhowto.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback);
+        final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);
+        SimpleColorFilter filterGear = new SimpleColorFilter(gear);
+        KeyPath keyPathGear = new KeyPath("gear", "**");
+        final int lupe = ContextCompat.getColor(v.getContext(), R.color.textColor);
+        SimpleColorFilter filterLupe = new SimpleColorFilter(lupe);
+        KeyPath keyPathLupe = new KeyPath("lupe", "**");
+        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterLupe);
+        iconhowto.addValueCallback(keyPathLupe, LottieProperty.COLOR_FILTER, callback);
+        LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterGear);
+        iconhowto.addValueCallback(keyPathGear, LottieProperty.COLOR_FILTER, callback2);
         iconhowto.playAnimation();
 
 
