@@ -34,7 +34,6 @@
         <item name="buttoncolor">@color/appintro_icon_tint</item>
         <item name="android:navigationBarColor">?android:colorBackground</item>
         <item name="android:statusBarColor">@color/transparent</item>
-        <item name="android:fitsSystemWindows">false</item>
         <item name="cardelevation">@dimen/cardelevation</item>
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
         <item name="cardelevation_tiny">@dimen/cardelevation_tiny</item>

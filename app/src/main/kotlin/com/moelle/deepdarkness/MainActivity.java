@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        // For overlap of Re Entering Activity - MainActivity.java and Exiting TransitionActivity.java
-        getWindow().setAllowReturnTransitionOverlap(false);
         // dark/light mode switch
         sharedpref = new PrefManager(this);
         if(sharedpref.loadNightModeState()) {
@@ -274,5 +272,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
-    //
 }

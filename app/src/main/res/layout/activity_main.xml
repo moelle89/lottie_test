@@ -56,6 +56,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginBottom="60dp"
             android:nestedScrollingEnabled="true"
+            android:fitsSystemWindows="false"
             android:scrollbars="vertical"
             android:scrollingCache="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -76,17 +77,18 @@
             app:itemTextColor="@drawable/bottom_navigation_color_selector"
             app:menu="@menu/menu_bottom_navigation" />
     </RelativeLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         android:layout_marginLeft="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="80dp"
         android:clickable="true"
         android:focusable="true"
         android:tint="@android:color/white"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="80dp"
         app:backgroundTint="?android:colorAccent"
         app:fabCustomSize="@dimen/fab_size"
         app:layout_anchorGravity="bottom|end"

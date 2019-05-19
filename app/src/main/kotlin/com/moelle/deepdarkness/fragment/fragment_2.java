@@ -1,15 +1,13 @@
 package com.moelle.deepdarkness.fragment;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -24,8 +22,7 @@ import static android.widget.Toast.LENGTH_SHORT;
  */
 public class fragment_2 extends Fragment {
 
-    private LinearLayout card1;
-    private Button btn_test;
+    private CardView card1;
 
     // image url to download
     private static String url = "https://3.bp.blogspot.com/-EFwVj5ztKtQ/V8Qs6Viyl6I/AAAAAAAADWs/031SPYFrUnM-wreztTT4fgPe1yQj3LFhgCPcB/s1600/developer.jpg";
@@ -46,6 +43,8 @@ public class fragment_2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_2, container, false);
+        Toolbar toolbar = v.findViewById(R.id.toolbar);
+        toolbar.setTitle(null);
         card1 = v.findViewById(R.id.accent1);
         card1.setOnClickListener(new View.OnClickListener() {
             @Override

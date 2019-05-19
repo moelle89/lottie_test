@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fitsSystemWindows="true"
     tools:context=".fragment.fragment_1"
     android:theme="@style/AppTheme">
 
@@ -465,7 +464,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sequel_sans_medium"
-                    android:text="Supported Android Systems:"
+                    android:text="Suspects with sexual orientation in gay males"
                     android:textColor="?attr/textcolorsecondary"
                     android:textSize="16sp" />
 
@@ -500,7 +499,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:background="@drawable/image_12"
+                            android:background="@drawable/supergay"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
 
@@ -516,7 +515,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
-                                    android:text="WATER"
+                                    android:text="SUPERGAY"
                                     android:textAlignment="textStart"
                                     android:textColor="?textcolor"
                                     android:textSize="12sp" />
@@ -548,7 +547,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:background="@drawable/photo_female_8"
+                            android:background="@drawable/motherofgay"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
 
@@ -564,10 +563,10 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
-                                    android:text="WATER"
+                                    android:text="orientation in gay males"
                                     android:textAlignment="textStart"
                                     android:textColor="?textcolor"
-                                    android:textSize="12sp" />
+                                    android:textSize="9sp" />
                             </LinearLayout>
                         </LinearLayout>
                     </com.balysv.materialripple.MaterialRippleLayout>
@@ -596,7 +595,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:background="@drawable/image_12"
+                            android:background="@drawable/ultragay"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
 
@@ -612,7 +611,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
-                                    android:text="WATER"
+                                    android:text="ultragay"
                                     android:textAlignment="textStart"
                                     android:textColor="?textcolor"
                                     android:textSize="12sp" />

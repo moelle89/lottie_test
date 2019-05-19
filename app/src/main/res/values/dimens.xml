@@ -14,7 +14,9 @@
     <dimen name="list_item_margin">0dp</dimen>
 
     <dimen name="cardCornerRadius">12dp</dimen>
-    <dimen name="cardCornerRadius_small">16dp</dimen>
+    <dimen name="accent_name">8sp</dimen>
+    <dimen name="accent_name_bg">24dp</dimen>
+    <dimen name="cardCornerRadius_small">14dp</dimen>
 
     <dimen name="dashboard_list_title_size">22sp</dimen>
     <dimen name="dashboard_list_width">340dp</dimen>

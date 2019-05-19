@@ -50,20 +50,17 @@ public class LottieTutorial extends AppIntro {
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
         super.finish();
-        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
     @Override
     public void onBackPressed(){
         super.onBackPressed();
         super.finish();
-        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
         super.finish();
-        startActivity(new Intent (getApplicationContext(), MainActivity.class));
     }
 
     @Override
