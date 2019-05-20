@@ -35,7 +35,19 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
     public fragment_3() {
         // Required empty public constructor
     }
+/*
+        Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
+        videoView = v.findViewById(R.id.dashboard_head);
 
+        videoView.setErrorTracker(new SimpleVideoView.VideoPlaybackErrorTracker() {
+            @Override
+            public void onPlaybackError(Exception e) {
+                e.printStackTrace();
+                Snackbar.make(videoView, "Uh oh, error playing!", Snackbar.LENGTH_INDEFINITE).show();
+            }
+        });
+        videoView.start(DASHBOARD_HEAD);
+ */
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
