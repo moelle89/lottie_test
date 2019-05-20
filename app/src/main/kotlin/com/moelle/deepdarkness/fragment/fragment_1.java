@@ -33,7 +33,7 @@ import com.moelle.deepdarkness.R;
 public class fragment_1 extends Fragment implements View.OnClickListener {
 
     private LinearLayout cat_top,cat_middle;
-    private CardView cardRight,cardLeft,cardRight2,cardLeft2;
+    private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6;
     private FrameLayout cardTop;
     private LinearLayout anchor_cardleft;
 
@@ -65,6 +65,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cat_top = v.findViewById(R.id.cat_top);
         cat_middle = v.findViewById(R.id.cat_middle);
         anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
+        card4 = v.findViewById(R.id.card4);
+        card5 = v.findViewById(R.id.card5);
+        card6 = v.findViewById(R.id.card6);
         cardLeft.setOnClickListener(this);
 
         // ini Animations
@@ -76,6 +79,10 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         vonUnten.setStartOffset(170);
         Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
         vonUnten2.setStartOffset(220);
+        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten3.setStartOffset(250);
+        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten4.setStartOffset(280);
 
         // setup Animation :
         cat_top.animate().alpha(1f).setDuration(2000).setStartDelay(800);
@@ -85,7 +92,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cardRight.setAnimation(vonOben2);
         cardLeft2.setAnimation(vonUnten);
         cardRight2.setAnimation(vonUnten2);
-
+        card4.setAnimation(vonUnten2);
+        card5.setAnimation(vonUnten3);
+        card6.setAnimation(vonUnten4);
 
         // Inflate the layout for this fragment
         return  v ;
