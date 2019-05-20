@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <shape android:tint="?cardbackground">
+        <shape>
             <gradient
-                android:angle="-90.0"
-                android:endColor="#B300EDCE"
-                android:startColor="#A6000000"
+                android:angle="270.0"
+                android:endColor="#1F9EFF"
+                android:startColor="#000AD2"
                 android:type="linear" />
         </shape>
     </item>
