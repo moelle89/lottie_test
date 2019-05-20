@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         fab = findViewById(R.id.fab);
         //Initializing viewPager
-        viewPager = findViewById(R.id.viewpager);
+        final CustomViewPager viewPager = findViewById(R.id.viewpager);
         //Initializing the bottomNavigationView
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -144,9 +144,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+       viewPager.addOnPageChangeListener(new CustomViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
 
             }
 
@@ -254,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    private void setupViewPager(ViewPager viewPager) {
+    private void setupViewPager(CustomViewPager viewPager) {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
@@ -267,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(fragment3);
 
         viewPager.setAdapter(adapter);
+        viewPager.disableScroll(true);
     }
     public void restartApp () {
         Intent i = new Intent(getApplicationContext(),MainActivity.class);

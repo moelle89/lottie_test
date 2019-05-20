@@ -75,6 +75,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setScaleY(0.5f);
         card.setAlpha(0f);
         card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);
         final int lupe = ContextCompat.getColor(v.getContext(), R.color.textColor);
@@ -91,6 +92,14 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         iconhowto.addValueCallback(keyPathGear, LottieProperty.COLOR_FILTER, callback2);
         iconhowto.addValueCallback(keyPathcheckbox, LottieProperty.COLOR_FILTER, callback3);
         iconhowto.playAnimation();
+        LottieAnimationView intro_img = v.findViewById(R.id.intro_img);
+        SimpleColorFilter filter = new SimpleColorFilter(gear);
+        KeyPath keyPath = new KeyPath("rect1", "**");
+        KeyPath keyPath2 = new KeyPath("rect3", "**");
+        LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(filter);
+        intro_img.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback4);
+        intro_img.addValueCallback(keyPath2, LottieProperty.COLOR_FILTER, callback4);
+        intro_img.playAnimation();
 
         iconhowto.setAnimation(anim_icon);
         title = v.findViewById(R.id.titlehowto);

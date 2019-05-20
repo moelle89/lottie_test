@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.76" />
+        app:layout_constraintGuide_percent="0.77" />
 
     <TextView
         android:id="@+id/intro_title"
@@ -46,7 +46,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_rawRes="@raw/tut_bg"
-        app:lottie_colorFilter="@color/overlay_accent_90"
+        android:alpha="0.7"
+        app:lottie_speed="0.6"
+        app:lottie_colorFilter="@color/secondary_text_light"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 
@@ -104,7 +106,7 @@
 
                 <LinearLayout
                     android:layout_width="340dp"
-                    android:layout_height="400dp"
+                    android:layout_height="380dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="0dp"
