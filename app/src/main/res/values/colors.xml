@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="overlay_head">@color/overlay_accent_10</color>
+    <color name="overlay_card">#1Affffff</color>
     <color name="stroke">#00000000</color>
     <color name="overlay_10">#1A000000</color>
     <color name="overlay_20">#33000000</color>

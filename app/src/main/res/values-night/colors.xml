@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="overlay_head">#00000000</color>
+    <color name="overlay_card">#00000000</color>
     <color name="stroke">@color/cardbackgroundlight</color>
     <color name="overlay_10">#1AFFFFFF</color>
     <color name="overlay_20">#33ffffff</color>
