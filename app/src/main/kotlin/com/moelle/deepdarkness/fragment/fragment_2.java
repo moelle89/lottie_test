@@ -65,8 +65,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_2, container, false);
-        Toolbar toolbar = v.findViewById(R.id.toolbar);
-        toolbar.setTitle(null);
         CardView card1 = v.findViewById(R.id.accent1);
         CardView card2 = v.findViewById(R.id.accent2);
         CardView card3 = v.findViewById(R.id.accent3);

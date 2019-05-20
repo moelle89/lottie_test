@@ -39,6 +39,15 @@
 	<color name="accent19">#ced8de</color>
 	<string name="accent19">White</string><!--White-->
 	<color name="accent20">#ffc107</color>
-	<string name="accent20">Yellow</string><!--Yellow-->
+	<string name="accent20">Yellow</string><!--Yellow-->	
+	
+	<color name="background1">#16171d</color>
+	<string name="background1">Dark Material</string><!--Dark Material-->
+	<color name="background2">#191522</color>
+	<string name="background2">Acorn</string><!--Acorn-->
+	<color name="background3">#08131c</color>
+	<string name="background3">Deep Darkness</string><!--Deep Darkness-->
+	<color name="background4">#000000</color>
+	<string name="background4">Pitchblack</string><!--Pitchblack-->
 	
 </resources>
