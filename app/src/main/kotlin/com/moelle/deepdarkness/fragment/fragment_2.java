@@ -47,9 +47,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
     private static final String accent19 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/19.png";
     private static final String accent20 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/20.png";
 
-    private static final int WRITE_EXTERNAL_STORAGE_REQUEST_CODE = 54654;
-
-
     public fragment_2() {
         // Required empty public constructor
     }
@@ -107,11 +104,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
         card19.setOnClickListener(this);
         card20.setOnClickListener(this);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, WRITE_EXTERNAL_STORAGE_REQUEST_CODE);
-            return v;
-        }
-        DirectoryHelper.createDirectory(getContext());
         return  v ;
     }
 
@@ -218,14 +210,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
                 Toast();
                 break;
             }
-        }
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == WRITE_EXTERNAL_STORAGE_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-                DirectoryHelper.createDirectory(getContext());
         }
     }
     public void Toast(){
