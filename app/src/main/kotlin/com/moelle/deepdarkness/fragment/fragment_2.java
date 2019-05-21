@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
@@ -78,26 +80,56 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
         CardView card19 = v.findViewById(R.id.accent19);
         CardView card20 = v.findViewById(R.id.accent20);
 
-        card1.setOnClickListener(this);
-        card2.setOnClickListener(this);
-        card3.setOnClickListener(this);
-        card4.setOnClickListener(this);
-        card5.setOnClickListener(this);
-        card6.setOnClickListener(this);
-        card7.setOnClickListener(this);
-        card8.setOnClickListener(this);
-        card9.setOnClickListener(this);
-        card10.setOnClickListener(this);
-        card11.setOnClickListener(this);
-        card12.setOnClickListener(this);
-        card13.setOnClickListener(this);
-        card14.setOnClickListener(this);
-        card15.setOnClickListener(this);
-        card16.setOnClickListener(this);
-        card17.setOnClickListener(this);
-        card18.setOnClickListener(this);
-        card19.setOnClickListener(this);
-        card20.setOnClickListener(this);
+        CardView background1 = v.findViewById(R.id.background1);
+        CardView background2 = v.findViewById(R.id.background2);
+        CardView background3 = v.findViewById(R.id.background3);
+        CardView background4 = v.findViewById(R.id.background4);
+
+        // ini Animations
+        Animation vonOben = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        vonOben2.setStartOffset(70);
+        Animation vonOben3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        vonOben3.setStartOffset(170);
+        Animation vonOben4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        vonOben4.setStartOffset(220);
+        Animation vonUnten = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten.setStartOffset(170);
+        Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten2.setStartOffset(220);
+        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten3.setStartOffset(250);
+        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        vonUnten4.setStartOffset(280);
+
+        card1.setOnClickListener(this);card1.setAnimation(vonOben);
+        card2.setOnClickListener(this);card2.setAnimation(vonOben);
+        card3.setOnClickListener(this);card3.setAnimation(vonOben);
+        card4.setOnClickListener(this);card4.setAnimation(vonOben);
+        card5.setOnClickListener(this);card5.setAnimation(vonOben);
+        card6.setOnClickListener(this);card6.setAnimation(vonOben);
+
+        card7.setOnClickListener(this);card7.setAnimation(vonOben2);
+        card8.setOnClickListener(this);card8.setAnimation(vonOben2);
+        card9.setOnClickListener(this);card9.setAnimation(vonOben2);
+        card10.setOnClickListener(this);card10.setAnimation(vonOben2);
+        card11.setOnClickListener(this);card11.setAnimation(vonOben2);
+        card12.setOnClickListener(this);card12.setAnimation(vonOben2);
+
+        card13.setOnClickListener(this);card13.setAnimation(vonOben3);
+        card14.setOnClickListener(this);card14.setAnimation(vonOben3);
+        card15.setOnClickListener(this);card15.setAnimation(vonOben3);
+        card16.setOnClickListener(this);card16.setAnimation(vonOben3);
+        card17.setOnClickListener(this);card17.setAnimation(vonOben3);
+        card18.setOnClickListener(this);card18.setAnimation(vonOben3);
+
+        card19.setOnClickListener(this);card19.setAnimation(vonOben4);
+        card20.setOnClickListener(this);card20.setAnimation(vonOben4);
+
+        background1.setAnimation(vonUnten);
+        background2.setAnimation(vonUnten2);
+        background3.setAnimation(vonUnten3);
+        background4.setAnimation(vonUnten4);
 
         return  v ;
     }

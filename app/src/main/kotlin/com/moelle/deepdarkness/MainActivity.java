@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     fragment_3 fragment3;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         // dark/light mode switch
@@ -155,7 +156,6 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
 
                 bottomNavigationView.getMenu().getItem(position).setChecked(true);
-
             }
 
             @Override
