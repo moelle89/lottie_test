@@ -19,10 +19,6 @@ public class DirectoryHelper extends ContextWrapper {
         createFolderDirectories();
     }
 
-    public static void createDirectory(Context context) {
-        new DirectoryHelper(context);
-    }
-
     private boolean isExternalStorageAvailable() {
         String extStorageState = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(extStorageState);

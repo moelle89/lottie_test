@@ -18,7 +18,6 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         ActivityCompat.requestPermissions(MainActivity.this,
-                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
 
         // dark/light mode switch
         sharedpref = new PrefManager(this);
@@ -155,8 +154,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             return loadFragment(fragment);
         }
-        @Override
-        public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {}
+
         private boolean loadFragment(Fragment fragment) {
             //switching fragment
             if (fragment != null) {

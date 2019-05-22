@@ -1,6 +1,8 @@
 package com.moelle.deepdarkness.fragment;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +13,12 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 
@@ -53,9 +57,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
         super.onAttach(context);
     }
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState); }
 
     @Nullable
     @Override
@@ -241,6 +243,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
             }
         }
     }
+
+
     public void Toast(){
         Toast.makeText(getActivity(), "DOWNLOAD SUCCESSFUL", Toast.LENGTH_LONG).show();
     }
