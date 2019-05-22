@@ -1,5 +1,6 @@
 package com.moelle.deepdarkness.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -29,7 +31,7 @@ import com.moelle.deepdarkness.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class fragment_3 extends Fragment implements View.OnClickListener {
+public class fragment_3 extends Fragment implements View.OnClickListener{
 
     private TextView title,description;
     public fragment_3() {
@@ -50,13 +52,18 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
  */
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+    }
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_3, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_3, null);
 
         //ini animations
         Animation anim_icon = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);

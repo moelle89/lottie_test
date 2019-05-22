@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        drawable="@drawable/ic_home_black_24dp"
+        drawable="@drawable/nav_1"
         text="@string/home" />
 
     <tab
-        drawable="@drawable/ic_favorite_black_24dp"
+        drawable="@drawable/nav_2"
         text="@string/favorite" />
 
     <tab
-        drawable="@drawable/ic_search_black_24dp"
+        drawable="@drawable/nav_3"
         text="@string/search" />
-
-
 
 </tabs>

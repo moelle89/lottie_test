@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragment.fragment_1"
+    android:fitsSystemWindows="true"
     android:theme="@style/AppTheme">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -380,8 +381,8 @@
                                 android:layout_gravity="start|top" />-->
                             <com.airbnb.lottie.LottieAnimationView
                                 android:id="@+id/img3"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="14dp"

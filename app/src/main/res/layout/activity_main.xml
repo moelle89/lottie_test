@@ -48,18 +48,13 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <com.moelle.deepdarkness.CustomViewPager
-            android:id="@+id/viewpager"
+        <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
             android:layout_marginBottom="60dp"
-            android:nestedScrollingEnabled="true"
-            android:fitsSystemWindows="false"
-            android:scrollbars="vertical"
-            android:scrollingCache="true"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
