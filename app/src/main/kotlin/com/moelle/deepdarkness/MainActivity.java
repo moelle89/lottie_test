@@ -1,5 +1,6 @@
 package com.moelle.deepdarkness;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
@@ -17,11 +18,14 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -42,6 +46,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+
         // dark/light mode switch
         sharedpref = new PrefManager(this);
         if (sharedpref.loadNightModeState()) {
@@ -121,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         anim_fab.setInterpolator(new OvershootInterpolator(3.5f));
         fab.setAnimation(anim_fab);
     }
+
         private int previousSelectedId = 0;
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -146,7 +155,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             return loadFragment(fragment);
         }
-
+        @Override
+        public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {}
         private boolean loadFragment(Fragment fragment) {
             //switching fragment
             if (fragment != null) {

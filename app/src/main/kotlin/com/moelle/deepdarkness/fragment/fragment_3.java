@@ -102,12 +102,9 @@ public class fragment_3 extends Fragment implements View.OnClickListener{
         LottieAnimationView intro_img = v.findViewById(R.id.intro_img);
         SimpleColorFilter filter = new SimpleColorFilter(gear);
         SimpleColorFilter filterbg = new SimpleColorFilter(bg);
-        KeyPath keyPath = new KeyPath("rect1", "**");
-        KeyPath keyPath2 = new KeyPath("borderfg", "**");
+        KeyPath keyPath = new KeyPath("rect", "**");
         LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(filter);
-        LottieValueCallback<ColorFilter> callback5 = new LottieValueCallback<ColorFilter>(filterbg);
         intro_img.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback4);
-        intro_img.addValueCallback(keyPath2, LottieProperty.COLOR_FILTER, callback5);
 
         iconhowto.setAnimation(anim_icon);
         title = v.findViewById(R.id.titlehowto);

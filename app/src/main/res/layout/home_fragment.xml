@@ -93,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_alignParentBottom="true"
-            app:rbb_tabs="@xml/tabs"
+            app:rbb_tabs="@menu/menu_bottom_navigation"
             android:foreground="@drawable/bottombar_bar_background"
             app:rbb_backgroundColor="@color/background"
             app:rbb_textColor="@android:color/white"
