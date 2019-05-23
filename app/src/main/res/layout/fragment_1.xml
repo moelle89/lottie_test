@@ -84,6 +84,7 @@
                     android:foreground="?attr/selectableItemBackground">
 
                     <LinearLayout
+                        android:id="@+id/transitions_container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="40dp"
@@ -93,6 +94,7 @@
                         android:paddingRight="16dp">
 
                         <TextView
+                            android:id="@+id/text_dd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="26dp"
