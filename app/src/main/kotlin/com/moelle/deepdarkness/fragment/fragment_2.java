@@ -1,8 +1,7 @@
 package com.moelle.deepdarkness.fragment;
 
-import android.Manifest;
 import android.content.Context;
-import android.content.pm.PackageManager;
+import android.graphics.ColorFilter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +12,16 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.SimpleColorFilter;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieValueCallback;
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 
@@ -88,6 +91,20 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
         CardView background2 = v.findViewById(R.id.background2);
         CardView background3 = v.findViewById(R.id.background3);
         CardView background4 = v.findViewById(R.id.background4);
+
+        LottieAnimationView keyboard = v.findViewById(R.id.dashboard_head);
+        final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
+        final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
+        SimpleColorFilter filterfg = new SimpleColorFilter(fg);
+        KeyPath keyfg = new KeyPath("fg","**");
+        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterfg);
+        keyboard.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+
+        SimpleColorFilter filterbg = new SimpleColorFilter(bg);
+        KeyPath keybg = new KeyPath("bg", "**");
+        LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
+        keyboard.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
+
 
         // ini Animations
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);

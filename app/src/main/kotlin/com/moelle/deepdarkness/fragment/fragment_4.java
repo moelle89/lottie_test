@@ -101,7 +101,6 @@ public class fragment_4 extends Fragment implements View.OnClickListener{
         iconhowto.addValueCallback(keyPathcheckbox, LottieProperty.COLOR_FILTER, callback3);
         LottieAnimationView intro_img = v.findViewById(R.id.intro_img);
         SimpleColorFilter filter = new SimpleColorFilter(gear);
-        SimpleColorFilter filterbg = new SimpleColorFilter(bg);
         KeyPath keyPath = new KeyPath("rect", "**");
         LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(filter);
         intro_img.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback4);
