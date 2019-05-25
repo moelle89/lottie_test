@@ -27,6 +27,7 @@ import com.airbnb.lottie.value.LottieValueCallback;
 import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
+import com.moelle.deepdarkness.Wallpaper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -122,9 +123,9 @@ public class fragment_3 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tutorial_btn:
-                Intent tutorial = new Intent(getActivity(), LottieTutorial.class);
+                Intent tutorial = new Intent(getActivity(), Wallpaper.class);
                 startActivity(tutorial);
-                getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
+                //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
         }
     }
 

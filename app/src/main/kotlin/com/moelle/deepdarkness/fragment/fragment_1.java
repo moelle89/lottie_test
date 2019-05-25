@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
@@ -25,7 +26,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.moelle.deepdarkness.DirectoryHelper;
+import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
+import com.moelle.deepdarkness.Wallpaper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,6 +77,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         card5 = v.findViewById(R.id.card5);
         card6 = v.findViewById(R.id.card6);
         cardLeft.setOnClickListener(this);
+        cardRight2.setOnClickListener(this);
 
         // ini Animations
         Animation fadeIn = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);
@@ -111,9 +116,18 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-              showDiag();
-        }
+        switch (v.getId()) {
+            case R.id.cardLeft:{
+                showDiag();
+            }
+                //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
+            case R.id.cardRight2: {
+                Intent tutorial = new Intent(getActivity(), Wallpaper.class);
+                startActivity(tutorial);
+            }
 
+        }
+    }
     //
     private void showDiag() {
 

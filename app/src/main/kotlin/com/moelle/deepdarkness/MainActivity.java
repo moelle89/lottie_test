@@ -145,8 +145,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     break;
 
                 case R.id.nav_2:
-                    fragment = new fragment_2();
-                    break;
+                    Intent i = new Intent(getApplicationContext(),Wallpaper.class);
+                    startActivity(i);
 
                 case R.id.nav_3:
                     fragment = new fragment_3();

@@ -11,6 +11,10 @@
         <item name="android:statusBarColor">@color/dialog</item>
         <item name="android:navigationBarColor">@color/dialog</item>
     </style>
+    <style name="ApptThemeWall" parent="AppTheme">
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

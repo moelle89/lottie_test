@@ -55,6 +55,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Wallpaper"
+            android:theme="@style/ApptThemeWall">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WallpaperDetail" android:theme="@style/ApptThemeWall"/>
+        <activity
             android:name=".LottieTutorial"
             android:theme="@style/LottieTutorial">
             <intent-filter>
