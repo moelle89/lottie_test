@@ -56,7 +56,7 @@
         </activity>
         <activity
             android:name=".Wallpaper"
-            android:theme="@style/ApptThemeWall">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />

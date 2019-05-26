@@ -12,7 +12,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.transition.TransitionManager;
 
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -24,10 +23,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.moelle.deepdarkness.DirectoryHelper;
-import com.moelle.deepdarkness.DownloadService;
+import com.moelle.deepdarkness.FirstActivity;
+import com.moelle.deepdarkness.LottieIntro;
+import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
@@ -37,7 +36,7 @@ import com.moelle.deepdarkness.Wallpaper;
  * to handle interaction events.
  * create an instance of this fragment.
  */
-public class fragment_1 extends Fragment implements View.OnClickListener {
+public class fragment_1 extends Fragment implements View.OnClickListener{
 
     private LinearLayout cat_top,cat_middle;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6;
@@ -51,9 +50,11 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onAttach(Context context) {
+        super.onAttach(context);
     }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState); }
 
     @Nullable
     @Override
@@ -77,6 +78,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         card5 = v.findViewById(R.id.card5);
         card6 = v.findViewById(R.id.card6);
         cardLeft.setOnClickListener(this);
+        cardLeft2.setOnClickListener(this);
         cardRight2.setOnClickListener(this);
 
         // ini Animations
@@ -110,25 +112,26 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
-
-    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.cardLeft:{
                 showDiag();
+                break;
             }
                 //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
             case R.id.cardRight2: {
-                Intent tutorial = new Intent(getActivity(), Wallpaper.class);
-                startActivity(tutorial);
+                Intent wallpaper = new Intent(getActivity(), Wallpaper.class);
+                startActivity(wallpaper);
+                break;
             }
-
+            case R.id.cardLeft2: {
+                Intent intro = new Intent(getActivity(), LottieIntro.class);
+                startActivity(intro);
+                break;
+            }
         }
     }
-    //
+
     private void showDiag() {
 
         final View dialogView = View.inflate(getActivity(), R.layout.dialog,null);
@@ -209,7 +212,6 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         }
 
     }
-
     //
 
 }

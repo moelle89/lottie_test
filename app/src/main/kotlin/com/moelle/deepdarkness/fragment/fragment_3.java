@@ -123,7 +123,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tutorial_btn:
-                Intent tutorial = new Intent(getActivity(), Wallpaper.class);
+                Intent tutorial = new Intent(getActivity(), LottieTutorial.class);
                 startActivity(tutorial);
                 //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
         }

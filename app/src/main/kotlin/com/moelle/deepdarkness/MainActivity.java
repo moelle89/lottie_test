@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(this);
 
-        //final int introBG = ContextCompat.getColor(MainActivity.this, R.color.background);
         LottieAnimationView intro = findViewById(R.id.intro);
         intro.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
@@ -108,14 +107,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             public void onAnimationRepeat(Animator animation) {
             }
         });
-        /*SimpleColorFilter filter = new SimpleColorFilter(introBG);
-        KeyPath keyPath = new KeyPath("Shape Layer 1", "Fill 1");
-        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filter);
-        intro.addValueCallback(keyPath, LottieProperty.COLOR_FILTER, callback);
-        intro.playAnimation();*/
 
         // ini & setup Animations
-        //curtain.animate().alpha(0f).setDuration(1500);
         Animation anim_nav = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         myswitch.setAlpha(0f);
@@ -145,8 +138,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     break;
 
                 case R.id.nav_2:
-                    Intent i = new Intent(getApplicationContext(),Wallpaper.class);
-                    startActivity(i);
+                    fragment = new fragment_2();
+                    break;
 
                 case R.id.nav_3:
                     fragment = new fragment_3();
@@ -167,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
             return false;
         }
-    //
         private void showDiag() {
 
             final View dialogView = View.inflate(this,R.layout.dialog,null);

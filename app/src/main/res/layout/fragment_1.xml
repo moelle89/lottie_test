@@ -349,21 +349,15 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLeft2"
                     android:layout_width="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:layout_height="wrap_content"
                     app:cardUseCompatPadding="true"
                     android:layout_weight="1"
                     app:cardBackgroundColor="?cardbackground"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="?cardelevation_small">
-
-                    <com.balysv.materialripple.MaterialRippleLayout
-                        style="@style/RippleStyleBlack"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:mrl_rippleHover="true"
-                        app:mrl_rippleDelayClick="true"
-                        app:mrl_rippleFadeDuration="140"
-                        app:mrl_rippleDuration="160">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -372,15 +366,6 @@
                             android:orientation="vertical"
                             android:padding="@dimen/spacing_large">
 
-                            <!--<ImageView
-                                android:id="@+id/img3"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginBottom="14dp"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/ic_3"
-                                android:layout_gravity="start|top" />-->
                             <com.airbnb.lottie.LottieAnimationView
                                 android:id="@+id/img3"
                                 android:layout_width="64dp"
@@ -399,14 +384,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
-                                android:text="ELECTRICITY"
+                                android:text="RESTART INTRO"
                                 android:textAlignment="textStart"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:fontFamily="@font/cocogoose_regular"
+                                app:fontFamily="@font/cocogoose_regular"
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
-
-                    </com.balysv.materialripple.MaterialRippleLayout>
 
                 </androidx.cardview.widget.CardView>
 
