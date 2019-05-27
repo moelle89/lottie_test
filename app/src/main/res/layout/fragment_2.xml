@@ -11,7 +11,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="290dp"
         android:background="?backgroundcolor"
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -35,7 +35,6 @@
                 app:layout_collapseMode="parallax"
                 app:lottie_rawRes="@raw/keyboard2"
                 app:lottie_loop="true"
-                app:lottie_autoPlay="true"
                 android:fitsSystemWindows="true" />
 
             <androidx.appcompat.widget.Toolbar
@@ -67,7 +66,7 @@
                 android:padding="@dimen/spacing_small">
 
             <LinearLayout
-                android:id="@+id/cat_top2"
+                android:id="@+id/cat_top1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/spacing_large"
@@ -83,6 +82,7 @@
                     android:textSize="24sp" />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/cat_top2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_small"

@@ -96,8 +96,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         vonUnten4.setStartOffset(280);
 
         // setup Animation :
-        cat_top.animate().alpha(1f).setDuration(2000).setStartDelay(800);
-        cat_middle.animate().alpha(1f).setDuration(2000).setStartDelay(1200);
+        cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
+        cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
         cardTop.setAnimation(fadeIn);
         cardLeft.setAnimation(vonOben);
         cardRight.setAnimation(vonOben2);

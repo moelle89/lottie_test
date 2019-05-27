@@ -63,11 +63,9 @@ public class SplashActivity extends Activity {
     }
     private void launchDashboard() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(this, FirstActivity.class));
-        finish();
+        startActivity(new Intent(this, MainActivity.class));
     }
     private void launchIntroScreen() {
         startActivity(new Intent(this, LottieIntro.class));
-        finish();
     }
 }

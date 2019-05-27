@@ -2,6 +2,8 @@
 <Button xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@id/next"
     style="@style/ButtonNull"
+    android:background="#000000"
+    android:backgroundTint="@color/background"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="end"

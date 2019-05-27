@@ -47,6 +47,8 @@ public class LottieIntro extends AppIntro {
         setImmersiveMode(true);
         setSwipeLock(true);
         setGoBackLock(true);
+        setColorDoneText(getResources().getColor(R.color.textColor));
+        setColorSkipButton(getResources().getColor(R.color.textColor));
         setNavBarColor(R.color.background);
         showStatusBar(true);
         showSkipButton(true);
@@ -66,12 +68,14 @@ public class LottieIntro extends AppIntro {
     }
 
     private void launchDashboard() {
-        startActivity(new Intent(this, FirstActivity.class));
+        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(i);
         finish();
     }
 
     private void launchTutorial() {
-        startActivity(new Intent(this, LottieTutorial.class));
+        Intent i = new Intent(getApplicationContext(),LottieTutorial.class);
+        startActivity(i);
         finish();
     }
 
@@ -186,6 +190,7 @@ public class LottieIntro extends AppIntro {
                 public void onAnimationRepeat(Animator animation) {
                     prefManager.setFirstTimeLaunch(false);
                     launchTutorial();
+                    finish();
                 }
             });
         }
@@ -211,8 +216,6 @@ public class LottieIntro extends AppIntro {
             View newNextButton = findViewById(R.id.next);
             setButtonState(newNextButton, !isLastSlide);
         }
-
-
     }
 
 }
