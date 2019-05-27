@@ -11,7 +11,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="150dp"
         android:background="?backgroundcolor"
         android:foreground="@drawable/gradient_cover"
         android:fitsSystemWindows="true"
@@ -56,7 +56,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:scrollbars="none"
-        app:behavior_overlapTop="105dp"
+        app:behavior_overlapTop="110dp"
         app:layout_anchor="@id/appbar"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -64,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_large"
+            android:layout_gravity="center"
             android:orientation="vertical">
 
             <FrameLayout
@@ -71,147 +72,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:paddingLeft="25dp"
+                android:paddingLeft="16dp"
                 android:paddingTop="20dp"
-                android:paddingRight="25dp">
-
-                <com.moelle.deepdarkness.RoundLinearLayoutNormal
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:focusable="true"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground">
+                android:paddingRight="16dp">
 
                     <LinearLayout
                         android:id="@+id/transitions_container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:orientation="vertical"
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp">
 
-                        <TextView
-                            android:id="@+id/text_dd"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="26dp"
-                            android:layout_marginBottom="5dp"
-                            android:fontFamily="@font/sequel_sans_heavy"
-                            android:gravity="center"
-                            android:text="@string/app_name"
-                            android:textColor="?textcolor"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/animation_view2"
+                            android:layout_margin="@dimen/spacing_middle"
+                            android:layout_width="92dp"
+                            android:layout_height="92dp"
+                            android:src="@drawable/ic_launcher_foreground" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:baselineAligned="false"
-                            android:orientation="horizontal"
-                            android:weightSum="3">
 
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/sequel_sans_heavy"
-                                    android:text="Purchased"
-                                    android:textAllCaps="true"
-                                    android:textColor="?textcolorsecondary"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-condensed"
-                                    android:text="1.5 K"
-                                    android:textColor="@color/holo_orange_light"
-                                    android:textSize="24sp"
-                                    android:textStyle="normal" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/sequel_sans_heavy"
-                                    android:text="Wished"
-                                    android:textAllCaps="true"
-                                    android:textColor="?textcolorsecondary"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-condensed"
-                                    android:text="1.1 K"
-                                    android:textColor="@color/holo_blue_bright"
-                                    android:textSize="24sp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/sequel_sans_heavy"
-                                    android:text="Likes"
-                                    android:textAllCaps="true"
-                                    android:textColor="?textcolorsecondary"
-                                    android:textSize="10sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-condensed"
-                                    android:text="450"
-                                    android:textColor="@color/orange_background"
-                                    android:textSize="24sp" />
-                            </LinearLayout>
-                        </LinearLayout>
                     </LinearLayout>
-                </com.moelle.deepdarkness.RoundLinearLayoutNormal>
-
-                <ImageView
-                    android:id="@+id/animation_view2"
-                    android:layout_margin="@dimen/spacing_large"
-                    android:layout_width="82dp"
-                    android:layout_height="82dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    android:layout_gravity="center|top" />
             </FrameLayout>
 
             <LinearLayout
                 android:id="@+id/cat_top"
-                android:alpha="0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginBottom="14dp"
-                android:layout_marginRight="34dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
@@ -219,17 +116,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sequel_sans_medium"
-                    android:text="Collection"
+                    android:text="DEEP DARKNESS //"
                     android:textColor="?attr/textcolor"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
-                    android:text="More"
-                    android:textColor="@color/holo_orange_light"
-                    android:textSize="15sp" />
+                    android:textSize="22sp" />
 
             </LinearLayout>
             <LinearLayout
@@ -296,15 +185,6 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="?cardelevation_small">
 
-                    <com.balysv.materialripple.MaterialRippleLayout
-                        style="@style/RippleStyleBlack"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:mrl_rippleHover="true"
-                        app:mrl_rippleDelayClick="true"
-                        app:mrl_rippleFadeDuration="140"
-                        app:mrl_rippleDuration="160">
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -334,7 +214,6 @@
 
                         </LinearLayout>
 
-                    </com.balysv.materialripple.MaterialRippleLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -445,10 +324,10 @@
                 android:alpha="0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="14dp"
-                android:layout_marginRight="34dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
                 android:orientation="horizontal">
 
                 <TextView

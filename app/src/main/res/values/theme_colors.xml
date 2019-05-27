@@ -19,7 +19,7 @@
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
     <!-- common black -->
     <!-- theme_color_alpha -->
-    <color name="shadowColor">#25000000</color><!-- theme_color_alpha -->
+    <color name="shadowColor">#2D000000</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
     <!-- settings titles -->
     <color name="cardbackgroundlight">#FFFFFF</color><!-- F5F9FF -->

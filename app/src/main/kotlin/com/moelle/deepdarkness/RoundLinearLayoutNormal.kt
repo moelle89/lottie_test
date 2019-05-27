@@ -23,6 +23,6 @@ class RoundLinearLayoutNormal @JvmOverloads constructor(
 
     private fun initBackground() {
         background = ViewUtils.generateBackgroundWithShadow(this, R.color.background,
-                R.dimen.radius_corner, R.color.shadowColor, R.dimen.layoutElevation, Gravity.TOP)
+                R.dimen.radius_corner, R.color.shadowColor, R.dimen.layoutElevation, Gravity.CENTER)
     }
 }
