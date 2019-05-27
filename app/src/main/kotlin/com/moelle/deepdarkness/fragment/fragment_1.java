@@ -12,6 +12,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
     private LinearLayout cat_top,cat_middle;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6;
-    private FrameLayout cardTop;
+    private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
 
     public static final String TAG = fragment_1.class.getSimpleName();
@@ -82,7 +83,6 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         cardRight2.setOnClickListener(this);
 
         // ini Animations
-        Animation fadeIn = AnimationUtils.loadAnimation(getActivity(),R.anim.fade_in);
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
@@ -98,7 +98,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         // setup Animation :
         cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
         cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
-        cardTop.setAnimation(fadeIn);
+        cardTop.setAlpha(0f);
+        cardTop.setTranslationY(50);
+        cardTop.animate().translationY(0).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         cardLeft.setAnimation(vonOben);
         cardRight.setAnimation(vonOben2);
         cardLeft2.setAnimation(vonUnten);
