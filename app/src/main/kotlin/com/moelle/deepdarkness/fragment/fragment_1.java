@@ -99,7 +99,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
         cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
         cardTop.setAlpha(0f);
-        cardTop.setTranslationY(50);
+        cardTop.setTranslationY(-50);
         cardTop.animate().translationY(0).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         cardLeft.setAnimation(vonOben);
         cardRight.setAnimation(vonOben2);
