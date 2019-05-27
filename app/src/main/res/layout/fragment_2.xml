@@ -54,7 +54,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:scrollbars="none"
-        app:behavior_overlapTop="80dp"
+        app:behavior_overlapTop="90dp"
         app:layout_anchor="@id/appbar"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -63,21 +63,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/spacing_small">
+                android:padding="@dimen/spacing_middle">
 
             <LinearLayout
                 android:id="@+id/cat_top1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:layout_marginBottom="@dimen/spacing_middle"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Additional Files"
+                    android:text="Additional\nFiles"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorAccent_light"
                     android:textStyle="bold"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -85,9 +87,9 @@
                 android:id="@+id/cat_top2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginTop="0dp"
                 android:layout_marginStart="@dimen/spacing_large"
-                android:layout_marginBottom="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_middle"
                 android:orientation="horizontal">
 
                 <TextView
@@ -97,7 +99,7 @@
                     android:fontFamily="@font/sequel_sans_medium"
                     android:text="Accent Colors"
                     android:textColor="?attr/textcolor"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -112,7 +114,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent1"
                         android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
@@ -144,7 +146,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent2"
                         android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent2"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -173,7 +175,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent3"
                         android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent3"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -202,7 +204,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent4"
                         android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent4"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -231,7 +233,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent5"
                         android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_height="90dp"
                         app:cardUseCompatPadding="true"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent5"
@@ -257,35 +259,6 @@
                             </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent6"
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        app:cardUseCompatPadding="true"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent6"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small"
-                            android:layout_gravity="bottom|start">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent6"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
             <LinearLayout
@@ -299,7 +272,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent7"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -332,7 +305,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent8"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent8"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -362,7 +335,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent9"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent9"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -392,7 +365,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent10"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent10"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -422,7 +395,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent11"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent11"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -448,36 +421,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/accent12"
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    app:cardBackgroundColor="@color/accent12"
-                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                    app:cardElevation="?cardelevation_tiny"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/accent_name_bg"
-                        android:layout_gravity="bottom|start"
-                        android:background="@drawable/gradient_card"
-                        android:padding="@dimen/spacing_small">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="2dp"
-                            android:text="@string/accent12"
-                            android:textAlignment="textStart"
-                            android:textColor="?textcolor"
-                            android:textSize="@dimen/accent_name" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -490,7 +433,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent13"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -523,7 +466,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent14"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent14"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -553,7 +496,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent15"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent15"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -583,7 +526,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent16"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent16"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -613,7 +556,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent17"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent17"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -639,11 +582,138 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent19"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/accent19"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="?cardelevation_tiny"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/accent_name_bg"
+                        android:layout_gravity="bottom|start"
+                        android:background="@drawable/gradient_card"
+                        android:padding="@dimen/spacing_small">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/accent19"
+                            android:textAlignment="textStart"
+                            android:textColor="?textcolor"
+                            android:textSize="@dimen/accent_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent20"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/accent20"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="?cardelevation_tiny"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/accent_name_bg"
+                        android:layout_gravity="bottom|start"
+                        android:background="@drawable/gradient_card"
+                        android:padding="@dimen/spacing_small">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/accent20"
+                            android:textAlignment="textStart"
+                            android:textColor="?textcolor"
+                            android:textSize="@dimen/accent_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent12"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/accent12"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="?cardelevation_tiny"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/accent_name_bg"
+                        android:layout_gravity="bottom|start"
+                        android:background="@drawable/gradient_card"
+                        android:padding="@dimen/spacing_small">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/accent12"
+                            android:textAlignment="textStart"
+                            android:textColor="?textcolor"
+                            android:textSize="@dimen/accent_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent6"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/accent6"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="?cardelevation_tiny">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/accent_name_bg"
+                        android:background="@drawable/gradient_card"
+                        android:padding="@dimen/spacing_small"
+                        android:layout_gravity="bottom|start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/accent6"
+                            android:textAlignment="textStart"
+                            android:textColor="?textcolor"
+                            android:textSize="@dimen/accent_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent18"
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent18"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -670,84 +740,14 @@
 
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="154dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/accent19"
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
-                    app:cardBackgroundColor="@color/accent19"
-                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                    app:cardElevation="?cardelevation_tiny"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/accent_name_bg"
-                        android:layout_gravity="bottom|start"
-                        android:background="@drawable/gradient_card"
-                        android:orientation="vertical"
-                        android:padding="@dimen/spacing_small">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="2dp"
-                            android:text="@string/accent19"
-                            android:textAlignment="textStart"
-                            android:textColor="?textcolor"
-                            android:textSize="@dimen/accent_name" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/accent20"
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    app:cardBackgroundColor="@color/accent20"
-                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                    app:cardElevation="?cardelevation_tiny"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/accent_name_bg"
-                        android:layout_gravity="bottom|start"
-                        android:background="@drawable/gradient_card"
-                        android:padding="@dimen/spacing_small">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="2dp"
-                            android:text="@string/accent20"
-                            android:textAlignment="textStart"
-                            android:textColor="?textcolor"
-                            android:textSize="@dimen/accent_name" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/cat_bottom2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_middle"
                 android:orientation="horizontal">
 
                 <TextView
@@ -757,7 +757,7 @@
                     android:fontFamily="@font/sequel_sans_medium"
                     android:text="Background Colors"
                     android:textColor="?attr/textcolor"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -783,16 +783,17 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom|start"
+                        android:gravity="bottom|start"
                         android:orientation="vertical"
                         android:padding="@dimen/spacing_small">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="3dp"
                             android:text="@string/background1"
                             android:textAlignment="textStart"
                             android:textColor="@color/lighter_gray"
@@ -813,15 +814,16 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom|start"
+                        android:gravity="bottom|start"
                         android:padding="@dimen/spacing_small">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="3dp"
                             android:text="@string/background2"
                             android:textAlignment="textStart"
                             android:textColor="@color/lighter_gray"
@@ -842,15 +844,16 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom|start"
+                        android:gravity="bottom|start"
                         android:padding="@dimen/spacing_small">
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginTop="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="3dp"
                             android:text="@string/background3"
                             android:textAlignment="textStart"
                             android:textColor="@color/lighter_gray"
@@ -868,21 +871,24 @@
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:foreground="@drawable/card_stroke">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="bottom|start"
+                        android:gravity="bottom|start"
                         android:padding="@dimen/spacing_small">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
                             android:text="@string/background4"
                             android:textAlignment="textStart"
                             android:textColor="@color/lighter_gray"

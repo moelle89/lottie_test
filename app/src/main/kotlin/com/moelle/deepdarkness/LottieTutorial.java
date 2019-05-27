@@ -23,9 +23,22 @@ public class LottieTutorial extends AppIntro {
     Fragment slide_7;
 
     @Override
+    public void onDonePressed(Fragment currentFragment) {
+        Boolean isFirstRun3 = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun3", true);
+
+        if (isFirstRun3) {
+            //show start activity
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                    .putBoolean("isFirstRun3", false).commit();
+            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(i);
+        }
+        finish();
+    }
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         // For overlap of Re Entering Activity - MainActivity.java and Exiting TransitionActivity.java
-        getWindow().setAllowReturnTransitionOverlap(false);
         super.onCreate(savedInstanceState);
 
         slide_5 = SampleSlide.newInstance(R.layout.slide_05);
@@ -40,27 +53,10 @@ public class LottieTutorial extends AppIntro {
         setSwipeLock(false);
         setNavBarColor(R.color.colorAccentPromptBackground);
         showStatusBar(false);
-        showSkipButton(true);
+        showSkipButton(false);
         setBackButtonVisibilityWithDone(true);
         setFadeAnimation();
         //setCustomTransformer(new ZoomOutPageTransformer());
-    }
-
-    @Override
-    public void onSkipPressed(Fragment currentFragment) {
-        super.onSkipPressed(currentFragment);
-        super.finish();
-    }
-    @Override
-    public void onBackPressed(){
-        super.onBackPressed();
-        super.finish();
-    }
-
-    @Override
-    public void onDonePressed(Fragment currentFragment) {
-        super.onDonePressed(currentFragment);
-        super.finish();
     }
 
     @Override

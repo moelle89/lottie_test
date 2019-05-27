@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
@@ -23,7 +24,6 @@ import androidx.fragment.app.Fragment;
 public class LottieIntro extends AppIntro {
 
     private boolean nextButtonReplaced = false;
-    private PrefManager prefManager;
 
     private SampleSlide slide_1;
     private SampleSlide slide_2;
@@ -31,6 +31,7 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_4;
     private SampleSlide slide_5;
     private SampleSlide slide_null;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,37 +53,42 @@ public class LottieIntro extends AppIntro {
         setProgressIndicator();
         setImmersiveMode(true);
         setSwipeLock(true);
-        setGoBackLock(true);
+        //setGoBackLock(true);
         setColorDoneText(getResources().getColor(R.color.textColor));
         setColorSkipButton(getResources().getColor(R.color.textColor));
         setNavBarColor(R.color.background);
         showStatusBar(true);
         showSkipButton(true);
         setBackButtonVisibilityWithDone(false);
+
     }
 
     @Override
     public void onSkipPressed(Fragment currentFragment) {
-        super.onSkipPressed(currentFragment);
-        launchDashboard();
+        Boolean isFirstRun2 = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun2", true);
+
+        if (isFirstRun2) {
+            //show start activity
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                    .putBoolean("isFirstRun2", false).commit();
+            launchDashboard();
+        }
+        finish();
     }
 
     @Override
     public void onDonePressed(Fragment currentFragment) {
-        super.onDonePressed(currentFragment);
-        launchTutorial();
+        finish();
     }
-
     private void launchDashboard() {
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
-        finish();
     }
 
     private void launchTutorial() {
         Intent i = new Intent(getApplicationContext(),LottieTutorial.class);
         startActivity(i);
-        finish();
     }
 
     @Override
@@ -172,19 +178,25 @@ public class LottieIntro extends AppIntro {
                     }
                     @Override
                     public void onAnimationRepeat(Animator animation) {
+                        Boolean isFirstRun2 = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                                .getBoolean("isFirstRun2", true);
+
+                        if (isFirstRun2) {
+                            //show start activity
+                            LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
+                            animationView4.setVisibility(View.INVISIBLE);
+                            pager.goToNextSlide();
+                        }
                         LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
                         animationView4.setVisibility(View.INVISIBLE);
-                        pager.goToNextSlide();
+                        finish();
                     }
             });
         }
         if((oldFragment==slide_4) && (newFragment==slide_null) || (oldFragment==slide_5) && (newFragment==slide_null)){
             // Checking for first time launch - before calling setContentView()
-            prefManager = new PrefManager(this);
-            if (!prefManager.isFirstTimeLaunch()) {
-                launchDashboard();
-                finish();
-            }
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                    .putBoolean("isFirstRun2", false).commit();
             LottieAnimationView animationViewNull = findViewById(R.id.animation_viewNull);
             animationViewNull.playAnimation();
             animationViewNull.addAnimatorListener(new Animator.AnimatorListener() {
@@ -199,9 +211,7 @@ public class LottieIntro extends AppIntro {
                 }
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    prefManager.setFirstTimeLaunch(false);
                     launchTutorial();
-                    finish();
                 }
             });
         }

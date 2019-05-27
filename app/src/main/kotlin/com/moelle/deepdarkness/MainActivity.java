@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         ActivityCompat.requestPermissions(MainActivity.this,

@@ -31,6 +31,7 @@ public class PrefManager {
         return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
 
+
     // this method will save the nightMode State : True or False
     public void setNightModeState(Boolean state) {
         SharedPreferences.Editor editor = pref.edit();
@@ -42,4 +43,5 @@ public class PrefManager {
         Boolean state = pref.getBoolean("NightMode",false);
         return  state;
     }
+
 }
