@@ -19,8 +19,4 @@
     <!-- Force white/light icons? -> light -->
     <string name="ThemeHeroOverride">light</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
-    <string-array name="ThemeChangelog">
-        <item>close it. now!</item>
-    </string-array>
-    <bool name="ThemeHideDefaultType3Option">true</bool>
 </resources>

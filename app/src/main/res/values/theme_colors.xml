@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="accent_material_dark">#fff62b48</color><!-- common_color -->
-    <color name="highlighted_text_holo_dark">#ff788a</color><!-- statusbar_accent_icon_tint -->
+    <!-- statusbar_accent_icon_tint -->
     <color name="holo_blue_bright">#ff3854</color><!-- settings_icon_tint -->
-    <color name="accessibility_focus_highlight">#BEf62b48</color><!-- common_color_alpha -->
-    <color name="highlighted_text_dark">#78f62b48</color><!-- common_color_alpha2 -->
-    <color name="holo_button_pressed">#3dff4761</color><!-- ripple_dark -->
-    <color name="control_checkable_material">#fc4258</color><!-- theme_color_light -->
-    <color name="suggestion_highlight_text">#d4304e</color><!-- theme_color_dark -->
+    <!-- common_color_alpha -->
+    <!-- common_color_alpha2 -->
+    <!-- ripple_dark -->
+    <!-- theme_color_light -->
+    <!-- theme_color_dark -->
     <color name="holo_orange_light">#ff92a1b0</color> <!-- controlnormal_light -->
-    <color name="timepsecondary_text_default_material_lighticker_default_background_material">#ff0f1014</color><!-- app_background_2 -->
+    <!-- app_background_2 -->
     <color name="secondary_text_light">#778597</color><!-- app background_alpha -->
-    <color name="secondary_text_dark">#AAB9CA</color> <!-- secondary_text_material_dark -->
-    <color name="facelock_spotlight_mask">#CC16171D</color><!-- settings background_alpha -->
+    <!-- secondary_text_material_dark -->
+    <!-- settings background_alpha -->
     <color name="background_floating_material_dark">#ff1c1e27</color><!-- bg_tint_solid -->
     <color name="dim_foreground_light">#E6101319</color><!-- conversation_bg_color #E61A1C2A -->
     <color name="user_icon_default_white">#16B3D1E3</color><!-- pitchblack dim_foreground_light trans -->
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
-    <color name="holo_primary_dark">#ff0e0f13</color><!-- common black -->
-    <color name="shadow">#B21E212A</color><!-- theme_color_alpha -->
+    <!-- common black -->
+    <!-- theme_color_alpha -->
     <color name="shadowColor">#25000000</color><!-- theme_color_alpha -->
     <color name="lighter_gray">#ffe2edf3</color><!-- navbar -->
-    <color name="holo_red_light">#ECE7EEFA</color><!-- settings titles -->
+    <!-- settings titles -->
     <color name="cardbackgroundlight">#FFFFFF</color><!-- F5F9FF -->
     <color name="primary_material_dark">#ff1e212a</color><!-- theme_color -->
-    <color name="holo_red_dark">#ff191a21</color><!-- notifications_color -->
-    <color name="holo_light_control_normal">#DC000000</color><!-- search_impput_color -->
+    <!-- notifications_color -->
+    <!-- search_impput_color -->
 </resources>

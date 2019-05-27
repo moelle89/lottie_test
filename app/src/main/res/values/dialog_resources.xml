@@ -35,10 +35,4 @@
       ~ Custom dialog message on theme launch.
       ~ Add word in launch_dialog_negative to add a cancel button on the dialog
       -->
-    <string name="launch_dialog_negative">Nah</string>
-    <string name="launch_dialog_negative_url" />
-    <string name="link_playstore">https://play.google.com/store/apps/details?id=com.pierx.prime.novus</string>
-    <string name="link_support">https://t.me/themes_pier</string>
-    <string name="link_changelog">https://raw.githubusercontent.com/pierx/links/master/prime.txt</string>
-    <string name="launch_dialog_neutral">Rate</string>
 </resources>

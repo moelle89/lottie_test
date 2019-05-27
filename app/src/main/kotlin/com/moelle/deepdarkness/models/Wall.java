@@ -7,10 +7,10 @@ public class Wall {
     private int coverPhoto;
 
 
-    public Wall(String title, int thumbnail, int coverPhoto) {
+    public Wall(String title, int thumbnail) {
         this.title = title;
         this.thumbnail = thumbnail;
-        this.coverPhoto = coverPhoto;
+        this.coverPhoto = thumbnail;
     }
 
     public int getCoverPhoto() {

@@ -1,88 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="overlay_head">#00000000</color>
-    <color name="overlay_card">#00000000</color>
     <color name="stroke">@color/cardbackgroundlight</color>
-    <color name="overlay_10">#1AFFFFFF</color>
-    <color name="overlay_20">#33ffffff</color>
-    <color name="overlay_30">#4Dffffff</color>
-    <color name="overlay_40">#66ffffff</color>
-    <color name="overlay_50">#8ffffff0</color>
-    <color name="overlay_60">#99ffffff</color>
-    <color name="overlay_70">#B3ffffff</color>
-    <color name="overlay_80">#CCffffff</color>
-    <color name="overlay_90">#E6ffffff</color>
 
-	<color name="background_10">#1A000000</color>
-    <color name="background_20">#33000000</color>
-    <color name="background_30">#4D000000</color>
-    <color name="background_40">#66000000</color>
-    <color name="background_50">#80000000</color>
-    <color name="background_60">#99000000</color>
-    <color name="background_70">#B3000000</color>
-    <color name="background_80">#CC000000</color>
-    <color name="background_90">#E6000000</color>
-	
-	
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
     <color name="overlay_accent_30">#4D1835FC</color>
     <color name="overlay_accent_40">#661835FC</color>
-    <color name="overlay_accent_50">#811835FC</color>
+    <color name="overlay_accent_50">#801835FC</color>
     <color name="overlay_accent_60">#991835FC</color>
     <color name="overlay_accent_70">#B31835FC</color>
     <color name="overlay_accent_80">#CC1835FC</color>
     <color name="overlay_accent_90">#E61835FC</color>
 
-    <color name="grey_3">#f7f7f7</color>
-    <color name="grey_5">#f2f2f2</color>
-    <color name="grey_10">#e6e6e6</color>
-    <color name="grey_20">#BEC8D1</color>
-    <color name="grey_40">#999999</color>
-    <color name="grey_60">#666666</color>
-    <color name="grey_80">#37474F</color>
-    <color name="grey_90">#263238</color>
-
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
     <color name="colorAccent_light">#2E62FF</color>
-    <color name="colorAccent_40">#661835FC</color>
     <color name="background">#000000</color><!-- #ff16171d -->
-    <color name="background_dark">#000000</color><!-- #ff16171d -->
+    <!-- #ff16171d -->
     <color name="cardbackgroundlight">@color/dim_foreground_light</color><!-- F5F9FF -->
     <color name="dialog">@color/dim_foreground_light</color><!-- navbar -->
     <color name="inactive">#1ACBD3ED</color>
     <color name="textColor">#fff7fbff</color>
-    <color name="textColor_dark">#fff7fbff</color>
     <color name="secondary_text_light">#AAB9CA</color><!-- app background_alpha -->
-    <color name="secondary_text_dark">#AAB9CA</color> <!-- secondary_text_material_dark -->
+    <!-- secondary_text_material_dark -->
     <color name="buttonFocused">#AE5D6A88</color>
-    <color name="buttonNormal">@color/inactive</color>
     <color name="transparent">#00000000</color>
-    <color name="buttonPressed">#c4ffffff</color>
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
-    <color name="blue_background">#000000</color>
-    <color name="teal_background">#00796B</color>
     <color name="orange_background">#132ccb</color>
     <color name="colorAccentPromptBackground">#0F121A</color>
-    <color name="gradientbottom">#060e40</color>
-    <color name="gradientcenter">@color/inactive</color>
-    <color name="slide03">#E6000000</color>
-    <color name="slide02">#ff090A0C</color>
-    <color name="black_75">#99000000</color>
-    <color name="black_40">#66000000</color>
 
     <color name="orange_background_dark">#091668</color>
-    <color name="red_background">#761b2a</color>
-    <color name="purple_background">#000000</color>
 
-    <color name="transparent_button_pressed">#44767676</color>
-    <color name="transparent_button_focused">#EE000001</color>
-
-    <color name="tab_disable">@color/tab_unchecked</color>
-    <color name="tab_enable">#00000000</color>
     <color name="tab_checked">@color/colorAccent_light</color>
     <color name="tab_unchecked">#5D6A88</color>
 </resources>

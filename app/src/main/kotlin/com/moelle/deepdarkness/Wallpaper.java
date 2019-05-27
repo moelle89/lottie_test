@@ -4,11 +4,8 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,29 +36,29 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         // Recyclerview Setup
         // ini data
 
-        List<Wall> lstWalls = new ArrayList<>();
-        lstWalls.add(new Wall("W1",R.drawable.w1,R.drawable.w1));
-        lstWalls.add(new Wall("W2",R.drawable.w2,R.drawable.w2));
-        lstWalls.add(new Wall("W3",R.drawable.w3,R.drawable.w3));
-        lstWalls.add(new Wall("W4",R.drawable.w4,R.drawable.w4));
-        lstWalls.add(new Wall("W5",R.drawable.w5,R.drawable.w5));
-        lstWalls.add(new Wall("W6",R.drawable.w6,R.drawable.w6));
-        lstWalls.add(new Wall("W7",R.drawable.w7,R.drawable.w7));
-        lstWalls.add(new Wall("W8",R.drawable.w8,R.drawable.w8));
-        lstWalls.add(new Wall("W9",R.drawable.w9,R.drawable.w9));
-        lstWalls.add(new Wall("W10",R.drawable.w10,R.drawable.w10));
-        lstWalls.add(new Wall("W11",R.drawable.w11,R.drawable.w11));
-        lstWalls.add(new Wall("W12",R.drawable.w12,R.drawable.w12));
-        lstWalls.add(new Wall("W13",R.drawable.w13,R.drawable.w13));
-        lstWalls.add(new Wall("W14",R.drawable.w14,R.drawable.w14));
-        lstWalls.add(new Wall("W15",R.drawable.w15,R.drawable.w15));
-        lstWalls.add(new Wall("W16",R.drawable.w16,R.drawable.w16));
-        lstWalls.add(new Wall("W17",R.drawable.w17,R.drawable.w17));
-        lstWalls.add(new Wall("W18",R.drawable.w18,R.drawable.w18));
-        lstWalls.add(new Wall("W19",R.drawable.w19,R.drawable.w19));
-        lstWalls.add(new Wall("W20",R.drawable.w20,R.drawable.w20));
+        List<Wall> listWalls = new ArrayList<>();
+        listWalls.add(new Wall("W1",R.drawable.w1));
+        listWalls.add(new Wall("W2",R.drawable.w2));
+        listWalls.add(new Wall("W3",R.drawable.w3));
+        listWalls.add(new Wall("W4",R.drawable.w4));
+        listWalls.add(new Wall("W5",R.drawable.w5));
+        listWalls.add(new Wall("W6",R.drawable.w6));
+        listWalls.add(new Wall("W7",R.drawable.w7));
+        listWalls.add(new Wall("W8",R.drawable.w8));
+        listWalls.add(new Wall("W9",R.drawable.w9));
+        listWalls.add(new Wall("W10",R.drawable.w10));
+        listWalls.add(new Wall("W11",R.drawable.w11));
+        listWalls.add(new Wall("W12",R.drawable.w12));
+        listWalls.add(new Wall("W13",R.drawable.w13));
+        listWalls.add(new Wall("W14",R.drawable.w14));
+        listWalls.add(new Wall("W15",R.drawable.w15));
+        listWalls.add(new Wall("W16",R.drawable.w16));
+        listWalls.add(new Wall("W17",R.drawable.w17));
+        listWalls.add(new Wall("W18",R.drawable.w18));
+        listWalls.add(new Wall("W19",R.drawable.w19));
+        listWalls.add(new Wall("W20",R.drawable.w20));
         
-        WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, lstWalls,this);
+        WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls,this);
         WallsRV.setAdapter(wallpaperAdapter);
         WallsRV.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
 

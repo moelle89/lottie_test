@@ -26,15 +26,6 @@
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:navigationBarColor">@color/transparent</item>
     </style>
-    <style name="Circular.Fab">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:navigationBarColor">@color/gradientbottom</item>
-    </style>
-
-    <style name="Circular.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
-
-    <style name="Circular.PopupOverlay" parent="ThemeOverlay.AppCompat" />
 
     <style name="Animation" >
         <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>

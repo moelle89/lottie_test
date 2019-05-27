@@ -44,79 +44,11 @@
         <item name="cardelevation_small">@dimen/cardelevation_small</item>
         <item name="cardelevation_tiny">@dimen/cardelevation_tiny</item>
     </style>
-    <style name="AppTheme.Dark" parent="Theme.AppCompat">
-        <item name="fontFamily">@font/sequel_sans_heavy</item>
-        <item name="android:fontFamily">@font/sequel_sans_heavy</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="*android:isLightTheme">false</item>
-        <item name="android:colorControlNormal">@color/textColor_dark</item>
-        <item name="android:colorControlActivated">@color/orange_background</item>
-        <item name="android:colorControlHighlight">@color/overlay_accent_20</item>
-        <item name="android:windowAnimationStyle">@style/Animation</item>
-        <item name="android:windowBackground">@android:color/black</item>
-        <item name="android:colorBackground">@android:color/black</item>
-        <item name="android:colorBackgroundFloating">@color/dim_foreground_light</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/background_dark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="backgroundcolor">@color/background_dark</item>
-        <item name="cardbackground">@color/dim_foreground_light</item>
-        <item name="textcolor">@color/textColor_dark</item>
-        <item name="textcolorsecondary">@color/secondary_text_dark</item>
-        <item name="tintcolor">@color/appintro_icon_tint</item>
-        <item name="buttoncolor">@color/buttonNormal</item>
-        <item name="cardelevation">@dimen/cardelevation_dark</item>
-        <item name="cardelevation_small">@dimen/cardelevation_small_dark</item>
-        <item name="android:navigationBarColor">@color/background_dark</item>
-    </style>
-    <style name="AppThemeBgTint" parent="AppTheme">
-        <item name="android:windowAnimationStyle">@style/Animation</item>
-        <item name="android:backgroundTint">@android:color/black</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">false</item>
-        <item name="android:navigationBarColor">@color/transparent</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="CollapsingToolbarLayoutCollapsedTextStyle" parent="AppTheme">
-        <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:textSize">28sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-condensed</item>
-    </style>
     <!-- Base application theme. -->
-    <style name="ButtonCustom">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/textColor</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:background">@drawable/btn_default_mtrl_shape</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
-    </style>
     <style name="ButtonNull">
         <item name="android:background">@color/background</item>
         <item name="android:backgroundTint">@color/background</item>
-    </style>
-    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@color/colorAccentPromptBackground</item>
-    </style>
-    <style name="checkBoxStyle" parent="@android:style/Widget.Material.CompoundButton.RadioButton">
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/textColor</item>
-        <item name="android:textColorSecondary">@color/textColor</item>
-    </style>
-    <style name="ThemeOverlay"/>
-    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
-        <item name="android:textColor">@android:color/transparent</item>
-        <item name="android:textSize">0sp</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="collapsed">
-        <item name="android:textColor">@android:color/white</item>
     </style>
     <!--style for ripple library-->
     <style name="RippleStyleWhite">
@@ -127,9 +59,6 @@
     </style>
     <style name="RippleStyleBlack" parent="RippleStyleWhite">
         <item name="mrl_rippleColor">?android:colorControlHighlight</item>
-    </style>
-    <style name="RippleStyleDark" parent="RippleStyleWhite">
-        <item name="mrl_rippleColor">#80000000</item>
     </style>
 
     <style name="mySwitchStyle" parent="@style/Widget.AppCompat.CompoundButton.Switch">
