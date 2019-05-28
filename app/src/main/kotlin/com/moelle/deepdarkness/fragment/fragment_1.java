@@ -181,27 +181,31 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         });
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
+        tg.setAlpha(0.0f);
         tg.setScaleX(0.7f);
         tg.setScaleY(0.7f);
         tg.setTranslationY(200);
         tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.setAlpha(0.0f);
         iconTG.setScaleX(0.8f);
         iconTG.setScaleY(0.8f);
         iconTG.setTranslationY(250);
         iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(700).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
         mail.setTranslationY(200);
         mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.setAlpha(0.0f);
         iconMAIL.setScaleX(0.8f);
         iconMAIL.setScaleY(0.8f);
         iconMAIL.setTranslationY(250);
         iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(800).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
-
+        closeBG.setAlpha(0.0f);
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.9f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
