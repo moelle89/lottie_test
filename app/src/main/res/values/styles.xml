@@ -48,7 +48,7 @@
     <!-- Base application theme. -->
     <style name="ButtonNull">
         <item name="android:background">@color/background</item>
-        <item name="android:backgroundTint">@color/background</item>
+        <item name="android:backgroundTint">@android:color/black</item>
     </style>
     <!--style for ripple library-->
     <style name="RippleStyleWhite">

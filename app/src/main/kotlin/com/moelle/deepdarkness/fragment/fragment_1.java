@@ -38,7 +38,7 @@ import com.moelle.deepdarkness.Wallpaper;
 public class fragment_1 extends Fragment implements View.OnClickListener{
 
     private LinearLayout cat_top,cat_middle;
-    private ImageView closeBG, iconTG, iconMAIL;
+    private ImageView closeBG, iconTG, iconMAIL, imageView;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6,tg,mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
@@ -146,7 +146,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         dialog.setContentView(dialogView);
 
 
-        ImageView imageView = dialog.findViewById(R.id.closeDialogImg);
+        imageView = dialog.findViewById(R.id.closeDialogImg);
         iconTG = dialog.findViewById(R.id.iconTG);
         iconMAIL = dialog.findViewById(R.id.iconMAIL);
         closeBG = dialog.findViewById(R.id.closeBG);
@@ -185,27 +185,32 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         tg.setScaleX(0.7f);
         tg.setScaleY(0.7f);
         tg.setTranslationY(200);
-        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
         iconTG.setAlpha(0.0f);
         iconTG.setScaleX(0.8f);
         iconTG.setScaleY(0.8f);
         iconTG.setTranslationY(250);
-        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(700).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(700).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
         mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
         mail.setTranslationY(200);
-        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(600).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
         iconMAIL.setAlpha(0.0f);
         iconMAIL.setScaleX(0.8f);
         iconMAIL.setScaleY(0.8f);
         iconMAIL.setTranslationY(250);
-        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(800).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(800).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
         closeBG.setAlpha(0.0f);
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.65f).setStartDelay(400).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.setAlpha(0.0f);
+        imageView.setScaleX(0.5f);
+        imageView.setScaleY(0.5f);
+        imageView.setTranslationY(100);
+        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(600).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
@@ -242,12 +247,18 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                     dialog.dismiss();
                 }
             });
+
+            mail.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(100).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+            iconMAIL.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(200).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            tg.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(0).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+            iconTG.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(100).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+            closeBG.animate().translationY(300).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            imageView.animate().translationY(100).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
             anim.setDuration(800);
+            anim.setStartDelay(100);
             anim.start();
 
         }
-
     }
-    //
 
 }

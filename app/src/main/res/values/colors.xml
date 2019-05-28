@@ -16,6 +16,7 @@
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
+    <color name="colorAccent_dark">#B3C4EE</color>
     <color name="colorAccent_light">#2E62FF</color>
     <color name="background">#FFFFFF</color><!-- #ff16171d -->
     <!-- #ff16171d -->
