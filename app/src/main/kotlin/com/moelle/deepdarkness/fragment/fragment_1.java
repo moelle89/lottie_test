@@ -25,9 +25,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.moelle.deepdarkness.FirstActivity;
 import com.moelle.deepdarkness.LottieIntro;
-import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
@@ -40,7 +38,8 @@ import com.moelle.deepdarkness.Wallpaper;
 public class fragment_1 extends Fragment implements View.OnClickListener{
 
     private LinearLayout cat_top,cat_middle;
-    private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6;
+    private ImageView closeBG, iconTG, iconMAIL;
+    private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6,tg,mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
 
@@ -113,6 +112,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         card5.setAnimation(vonUnten3);
         card6.setAnimation(vonUnten4);
 
+
         // Inflate the layout for this fragment
         return  v ;
     }
@@ -147,6 +147,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
 
         ImageView imageView = dialog.findViewById(R.id.closeDialogImg);
+        iconTG = dialog.findViewById(R.id.iconTG);
+        iconMAIL = dialog.findViewById(R.id.iconMAIL);
+        closeBG = dialog.findViewById(R.id.closeBG);
+        tg = dialog.findViewById(R.id.tg);
+        mail = dialog.findViewById(R.id.mail);
+
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,6 +181,27 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         });
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
+        tg.setScaleX(0.7f);
+        tg.setScaleY(0.7f);
+        tg.setTranslationY(200);
+        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.setScaleX(0.8f);
+        iconTG.setScaleY(0.8f);
+        iconTG.setTranslationY(250);
+        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(700).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.setScaleX(0.7f);
+        mail.setScaleY(0.7f);
+        mail.setTranslationY(200);
+        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.setScaleX(0.8f);
+        iconMAIL.setScaleY(0.8f);
+        iconMAIL.setTranslationY(250);
+        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(800).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+
+        closeBG.setScaleX(0.8f);
+        closeBG.setScaleY(0.8f);
+        closeBG.setTranslationY(300);
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.9f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
@@ -207,9 +234,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
-                    dialog.dismiss();
                     view.setVisibility(View.INVISIBLE);
-
+                    dialog.dismiss();
                 }
             });
             anim.setDuration(800);

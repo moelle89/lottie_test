@@ -114,7 +114,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent1"
                         android:layout_width="0dp"
-                        android:layout_height="90dp"
+                        android:layout_height="83dip"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
@@ -146,7 +146,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent2"
                         android:layout_width="0dp"
-                        android:layout_height="90dp"
+                        android:layout_height="83dip"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent2"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -175,7 +175,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent3"
                         android:layout_width="0dp"
-                        android:layout_height="90dp"
+                        android:layout_height="83dip"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent3"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -204,7 +204,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent4"
                         android:layout_width="0dp"
-                        android:layout_height="90dp"
+                        android:layout_height="83dip"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent4"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -233,7 +233,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent5"
                         android:layout_width="0dp"
-                        android:layout_height="90dp"
+                        android:layout_height="83dip"
                         app:cardUseCompatPadding="true"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/accent5"
@@ -272,7 +272,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent7"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -305,7 +305,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent8"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent8"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -335,7 +335,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent9"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent9"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -365,7 +365,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent10"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent10"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -395,7 +395,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent11"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent11"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -433,7 +433,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent13"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -466,7 +466,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent14"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent14"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -496,7 +496,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent15"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent15"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -526,7 +526,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent16"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent16"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -556,7 +556,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent17"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent17"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -594,7 +594,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent19"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
@@ -626,7 +626,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent20"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent20"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -655,7 +655,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent12"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent12"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -684,7 +684,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent6"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     app:cardUseCompatPadding="true"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent6"
@@ -713,7 +713,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/accent18"
                     android:layout_width="0dp"
-                    android:layout_height="90dp"
+                    android:layout_height="83dip"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/accent18"
                     app:cardCornerRadius="@dimen/cardCornerRadius_small"

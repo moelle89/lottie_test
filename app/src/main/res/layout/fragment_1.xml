@@ -155,17 +155,17 @@
                                 android:src="@drawable/ic_1"
                                 android:layout_gravity="start|top" />
 
-                            <TextView
-                                android:id="@+id/text1"
-                                android:transitionName="feature_text1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginBottom="2dp"
-                                android:text="ELECTRICITY"
-                                android:textAlignment="textStart"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="?textcolorsecondary" />
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="CONTACT ME"
+                            android:textAlignment="textStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="?textcolorsecondary"
+                            android:transitionName="feature_text1" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -202,7 +202,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
-                                android:text="WATER"
+                                android:text="MAKE A DONATION"
                                 android:textAlignment="textStart"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="?textcolorsecondary" />
@@ -355,7 +355,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="113dip"
                             android:background="@drawable/gradient_bg1"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
@@ -392,7 +392,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="113dip"
                             android:background="@drawable/gradient_bg2"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
@@ -429,7 +429,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="113dip"
                             android:background="@drawable/gradient_bg3"
                             android:gravity="bottom|start"
                             android:orientation="vertical">

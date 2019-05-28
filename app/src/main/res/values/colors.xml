@@ -25,7 +25,7 @@
     <color name="transparent">#00000000</color>
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
-    <color name="dialog">#ffe2edf3</color><!-- navbar -->
+    <color name="dialog">#EBE2EDF3</color><!-- navbar -->
     <color name="orange_background">#132ccb</color>
     <color name="colorAccentPromptBackground">#0F121A</color>
 

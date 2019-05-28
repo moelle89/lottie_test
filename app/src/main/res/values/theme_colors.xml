@@ -14,7 +14,7 @@
     <!-- secondary_text_material_dark -->
     <!-- settings background_alpha -->
     <color name="background_floating_material_dark">#ff1c1e27</color><!-- bg_tint_solid -->
-    <color name="dim_foreground_light">#E6101319</color><!-- conversation_bg_color #E61A1C2A -->
+    <color name="dim_foreground_light">#EB101319</color><!-- conversation_bg_color #E61A1C2A -->
     <color name="user_icon_default_white">#16B3D1E3</color><!-- pitchblack dim_foreground_light trans -->
     <color name="button_material_dark">#ff20222b</color><!-- controlnormal -->
     <!-- common black -->
