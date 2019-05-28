@@ -54,8 +54,8 @@ public class LottieIntro extends AppIntro {
         setImmersiveMode(true);
         setSwipeLock(true);
         //setGoBackLock(true);
-        setColorDoneText(getResources().getColor(R.color.textColor));
-        setColorSkipButton(getResources().getColor(R.color.textColor));
+        setColorDoneText(getResources().getColor(R.color.lighter_gray));
+        setColorSkipButton(getResources().getColor(R.color.lighter_gray));
         setNavBarColor(R.color.background);
         showStatusBar(true);
         showSkipButton(true);
