@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
@@ -13,8 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-
-import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +25,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.LottieIntro;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
@@ -38,6 +39,7 @@ import com.moelle.deepdarkness.Wallpaper;
  */
 public class fragment_1 extends Fragment implements View.OnClickListener{
 
+
     private LinearLayout cat_top,cat_middle;
     private ImageView closeBG, iconTG, iconMAIL, imageView;
     private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6,tg, mail;
@@ -45,6 +47,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     private LinearLayout anchor_cardleft;
 
     public static final String TAG = fragment_1.class.getSimpleName();
+    // Give your color picker dialog unique IDs if you have multiple dialogs.
+    private static final int DIALOG_ID = 0;
 
     public fragment_1() {
         // Required empty public constructor
@@ -135,6 +139,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                 startActivity(intro);
                 break;
             }
+            case R.id.cardRight: {
+                break;
+            }
         }
     }
 
@@ -185,32 +192,32 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         tg.setScaleX(0.7f);
         tg.setScaleY(0.7f);
         tg.setTranslationY(200);
-        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
         iconTG.setAlpha(0.0f);
         iconTG.setScaleX(0.8f);
         iconTG.setScaleY(0.8f);
         iconTG.setTranslationY(250);
-        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(700).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(650).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
         mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
         mail.setTranslationY(200);
-        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(600).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(550).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
         iconMAIL.setAlpha(0.0f);
         iconMAIL.setScaleX(0.8f);
         iconMAIL.setScaleY(0.8f);
         iconMAIL.setTranslationY(250);
-        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(800).setDuration(700).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(750).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
         closeBG.setAlpha(0.0f);
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.65f).setStartDelay(400).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.65f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
         imageView.setTranslationY(-100);
-        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(600).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
@@ -254,7 +261,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
             iconTG.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(130).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             closeBG.animate().translationY(300).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             imageView.animate().translationY(-100).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
-            anim.setDuration(800);
+            anim.setDuration(750);
             anim.setStartDelay(100);
             anim.start();
 

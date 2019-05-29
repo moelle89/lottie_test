@@ -7,6 +7,7 @@ import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -22,6 +23,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -32,13 +34,21 @@ import androidx.fragment.app.Fragment;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
 
+import static android.graphics.Color.alpha;
+import static androidx.fragment.app.DialogFragment.STYLE_NORMAL;
+
 
 //implement the interface OnNavigationItemSelectedListener in your activity class
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, ColorPickerDialogListener {
+
+    // Give your color picker dialog unique IDs if you have multiple dialogs.
+    private static final int DIALOG_ID = 0;
 
     private FloatingActionButton fab;
     float durationScale;
@@ -52,12 +62,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         // Get duration scale from the global settings.
         durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+        // If global duration scale is not 1 (default), try to override it
         if (durationScale != 1) {
             try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
-            catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}}
-
-        ActivityCompat.requestPermissions(MainActivity.this,
-        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+            catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}
+        }
 
         // dark/light mode switch
         sharedpref = new PrefManager(this);
@@ -231,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx,cy, 0, endRadius);
 
                 view.setVisibility(View.VISIBLE);
-                revealAnimator.setDuration(800);
+                revealAnimator.setDuration(750);
                 revealAnimator.start();
 
 
@@ -255,8 +264,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
         }
         public void launchPicker(View view) {
-            Intent picker = new Intent(getApplicationContext(),Picker.class);
-            startActivity(picker);
+            ColorPickerDialog.newBuilder()
+                    .setDialogType(ColorPickerDialog.TYPE_CUSTOM)
+                    .setAllowPresets(true)
+                    .setDialogId(DIALOG_ID)
+                    .setShowColorShades(true)
+                    .setAllowCustom(true)
+                    .setShowAlphaSlider(false)
+                    .show(this);
         }
 
         public void restartApp () {
@@ -264,6 +279,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             startActivity(i);
             finish();
         }
-
-
+    public void onColorSelected(int dialogId, @ColorInt int color) { }
+    public void onDialogDismissed(int dialogId) { }
 }
