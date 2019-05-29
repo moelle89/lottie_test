@@ -3,13 +3,12 @@ package com.moelle.deepdarkness;
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.KeyEvent;
@@ -38,27 +37,24 @@ import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
 
+import static java.lang.reflect.Array.getFloat;
+
 
 //implement the interface OnNavigationItemSelectedListener in your activity class
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private FloatingActionButton fab;
     float durationScale;
-    SwitchCompat myswitch;
-    CardView switchcard;
+    SwitchCompat myswitch,myswitch2;
+    CardView switchcard, switchcard2;
     PrefManager sharedpref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
-    // Get duration scale from the global settings.
-    durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
-    // If global duration scale is not 1 (default), try to override it
-    if (durationScale != 1) {
-        try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
-        catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}
-    }
+        // Get duration scale from the global settings.
+        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
 
         ActivityCompat.requestPermissions(MainActivity.this,
         new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
@@ -94,6 +90,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
         });
         // end of dark/light mode switch
+
+        // slow/fast mode switch
+        switchcard2 = findViewById(R.id.switchcard2);
+        myswitch2 = findViewById(R.id.myswitch2);
+        myswitch2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    fast();
+                } else {
+                    slow();
+                }
+            }
+        });
+        // end of dark/light mode switch
+
+
         fab = findViewById(R.id.fab);
 
         //getting bottom navigation view and attaching the listener
@@ -136,6 +149,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         fab.setAnimation(anim_fab);
     }
         private int previousSelectedId = 0;
+
+
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment = null;
@@ -261,5 +276,31 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             startActivity(i);
             finish();
         }
+        public void fast () {
+            // Get duration scale from the global settings.
+            durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+            if (durationScale != 1) {
+                try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
+                catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}}
+            else {
+                try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
+                catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}}
+            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(i);
+            finish();
+        }
+        public void slow () {
+            // Get duration scale from the global settings.
+            durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+            if (durationScale != 1) {
+            try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 2.7f); durationScale = 2.7f;}
+            catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}}
+            else {
+                try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 2.7f); durationScale = 2.7f;}
+                catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}}
+            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(i);
+            finish();
+        }
 
-    }
+}

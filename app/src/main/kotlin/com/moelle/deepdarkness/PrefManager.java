@@ -3,6 +3,8 @@ package com.moelle.deepdarkness;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.security.Key;
+
 public class PrefManager {
 
     SharedPreferences pref;
@@ -42,6 +44,20 @@ public class PrefManager {
     public Boolean loadNightModeState (){
         Boolean state = pref.getBoolean("NightMode",false);
         return  state;
+    }
+
+    //
+    // this method will save the nightMode State : True or False
+
+    public static final class Key {
+        static final String COMMON = "COMMON";
+    }
+
+    public void setScale (String key, float value) {
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putFloat("DEFAULT",0.7f).apply();
+        editor.putFloat("COMMON", 1.2f).commit();
+        editor.putFloat("SLOW", 2f).commit();
     }
 
 }
