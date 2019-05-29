@@ -28,7 +28,6 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
-
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
 

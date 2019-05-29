@@ -131,7 +131,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
         vonUnten3.setStartOffset(250);
         Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
         vonUnten4.setStartOffset(280);
-
         keyboard.setAlpha(0f);
         keyboard.setScaleX(1.3f);
         keyboard.setScaleY(1.3f);

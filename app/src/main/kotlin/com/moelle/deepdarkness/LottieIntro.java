@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
@@ -31,7 +30,6 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_4;
     private SampleSlide slide_5;
     private SampleSlide slide_null;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

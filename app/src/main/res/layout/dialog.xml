@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:id="@+id/dialog"
     android:layout_height="match_parent"
-    xmlstools:showIn="@layout/fragment_1"
     android:background="@color/dialog">
+    <!--xmlstools:showIn="@layout/fragment_1"-->
 
     <ImageView
         android:id="@+id/closeDialogImg"
@@ -30,7 +30,7 @@
         android:layout_height="0dp"
         android:layout_margin="0dp"
         android:src="@drawable/ic_1"
-        android:alpha="0.0"
+        android:alpha="1.0"
         android:tint="@color/background"/>
 
 
@@ -64,7 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:alpha="0.0"
+            android:alpha="1.0"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"
             app:cardElevation="0dp"
             app:cardUseCompatPadding="true">
@@ -113,7 +113,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:alpha="0.0"
+            android:alpha="1.0"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"
             app:cardElevation="0dp"
             app:cardUseCompatPadding="true">
@@ -160,7 +160,7 @@
 
     <ImageView
         android:id="@+id/iconTG"
-        android:alpha="0.0"
+        android:alpha="1.0"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_marginStart="20dp"
@@ -172,7 +172,7 @@
 
     <ImageView
         android:id="@+id/iconMAIL"
-        android:alpha="0.0"
+        android:alpha="1.0"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_marginStart="35dp"

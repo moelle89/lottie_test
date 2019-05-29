@@ -14,6 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,7 +60,6 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         View v = inflater.inflate(R.layout.fragment_1, null);
         /*Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
         videoView = v.findViewById(R.id.dashboard_head);
@@ -209,7 +209,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
-        imageView.setTranslationY(100);
+        imageView.setTranslationY(-100);
         imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(600).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
@@ -248,12 +248,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                 }
             });
 
-            mail.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(100).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
-            iconMAIL.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(200).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
+            mail.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            iconMAIL.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(180).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             tg.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             iconTG.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(130).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             closeBG.animate().translationY(300).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
-            imageView.animate().translationY(100).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            imageView.animate().translationY(-100).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             anim.setDuration(800);
             anim.setStartDelay(100);
             anim.start();

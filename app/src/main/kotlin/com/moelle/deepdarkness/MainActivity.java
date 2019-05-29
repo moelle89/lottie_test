@@ -3,11 +3,15 @@ package com.moelle.deepdarkness;
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.TimeInterpolator;
+import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +22,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +43,7 @@ import com.moelle.deepdarkness.fragment.fragment_3;
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private FloatingActionButton fab;
+    float durationScale;
     SwitchCompat myswitch;
     CardView switchcard;
     PrefManager sharedpref;
@@ -45,6 +51,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+
+    // Get duration scale from the global settings.
+    durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+    // If global duration scale is not 1 (default), try to override it
+    if (durationScale != 1) {
+        try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
+        catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}
+    }
 
         ActivityCompat.requestPermissions(MainActivity.this,
         new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
@@ -121,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         anim_fab.setInterpolator(new OvershootInterpolator(3.5f));
         fab.setAnimation(anim_fab);
     }
-
         private int previousSelectedId = 0;
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -147,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             return loadFragment(fragment);
         }
-
+        // Settings that should be changed when toggling animations
         private boolean loadFragment(Fragment fragment) {
             //switching fragment
             if (fragment != null) {
@@ -159,6 +172,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
             return false;
         }
+
         private void showDiag() {
 
             final View dialogView = View.inflate(this,R.layout.dialog,null);
@@ -200,6 +214,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             dialog.show();
 
         }
+
         private void revealShow(View dialogView, boolean b, final Dialog dialog) {
 
             final View view = dialogView.findViewById(R.id.dialog);
@@ -240,9 +255,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             }
         }
+
         public void restartApp () {
             Intent i = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(i);
             finish();
         }
+
     }
