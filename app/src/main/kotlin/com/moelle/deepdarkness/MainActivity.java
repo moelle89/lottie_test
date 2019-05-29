@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         public void launchPicker(View view) {
             ColorPickerDialog.newBuilder()
-                    .setDialogType(ColorPickerDialog.TYPE_CUSTOM)
+                    .setDialogType(ColorPickerDialog.TYPE_PRESETS)
                     .setAllowPresets(true)
                     .setDialogId(DIALOG_ID)
                     .setShowColorShades(true)
