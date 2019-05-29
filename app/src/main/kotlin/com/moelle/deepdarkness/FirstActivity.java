@@ -123,11 +123,6 @@ public class FirstActivity extends AppCompatActivity {
     }
 
 
-    public void launchEmail(View view) { ////button to send mail to theme dev
-        Intent email = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:manuel.moellmann@gmail.com?subject=[Black Panel // Samsung Mod]")); ////Insert email and subject
-        startActivity(email);
-    }
-
     public void replay() { ////button to repeat intro activity
         startActivity(new Intent(this, LottieIntro.class));
         Intent a = new Intent(FirstActivity.this,LottieIntro.class);

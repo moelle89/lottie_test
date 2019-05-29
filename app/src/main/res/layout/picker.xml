@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="vertical"
+    android:showDividers="none">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/cardbackgroundlight"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="@dimen/spacing_middle"
+        app:cardElevation="?cardelevation_small"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp">
+
+                <com.jaredrummler.android.colorpicker.ColorPickerView
+                    android:id="@id/cpv_color_picker_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:cpv_alphaChannelVisible="false"
+                    app:cpv_colorPresets="@array/demo_colors"
+                    app:cpv_dialogType="preset"
+                    app:cpv_allowPresets="true"
+                    app:cpv_allowCustom="false"
+                    app:cpv_showDialog="true"
+                    app:cpv_borderColor="@color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/panel_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cpv_color_picker_view"
+                android:orientation="horizontal">
+
+                <com.jaredrummler.android.colorpicker.ColorPanelView
+                    android:id="@id/cpv_color_panel_old"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    app:cpv_borderColor="@color/transparent"
+                    app:cpv_colorShape="square" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="→"
+                    android:textColor="@color/transparent"
+                    android:textSize="20sp" />
+
+                <com.jaredrummler.android.colorpicker.ColorPanelView
+                    android:id="@id/cpv_color_panel_new"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    app:cpv_borderColor="@color/transparent"
+                    app:cpv_colorShape="square" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonbar"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panel_layout"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@android:string/cancel" />
+
+                <Button
+                    android:id="@+id/okButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@android:string/ok" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

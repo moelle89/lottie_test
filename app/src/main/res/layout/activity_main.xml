@@ -48,44 +48,6 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/switchcard2"
-            app:cardBackgroundColor="?cardbackground"
-            app:cardElevation="3dp"
-            app:cardCornerRadius="25dp"
-            android:layout_width="96dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_alignParentStart="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingTop="2dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="2dp">
-
-                <ImageView
-                    android:id="@+id/img2"
-                    android:layout_width="25dp"
-                    android:paddingEnd="5dp"
-                    android:paddingStart="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:src="@drawable/ic_darkmode"
-                    android:tint="?textcolorsecondary" />
-
-                <androidx.appcompat.widget.SwitchCompat
-                    android:id="@+id/myswitch2"
-                    style="@style/mySwitchStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
@@ -119,9 +81,10 @@
         android:layout_marginLeft="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
         android:layout_marginBottom="80dp"
-        android:alpha="0"
+        android:alpha="1"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="launchPicker"
         android:tint="@android:color/white"
         app:backgroundTint="?android:colorAccent"
         app:fabCustomSize="@dimen/fab_size"

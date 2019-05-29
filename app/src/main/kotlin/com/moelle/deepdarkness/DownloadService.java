@@ -42,4 +42,6 @@ public class DownloadService extends IntentService {
         request.setDestinationInExternalPublicDir(destinationPath, uri.getLastPathSegment());  // Storage directory path
         ((DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE)).enqueue(request); // This will start downloading
     }
+
+
 }

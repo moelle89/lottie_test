@@ -99,6 +99,9 @@ dependencies {
     implementation 'com.balysv:material-ripple:1.0.2'                  // ripple effect
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+
+
 }
 
 // Themers: DO NOT MODIFY ANYTHING BELOW
