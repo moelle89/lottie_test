@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:xmlstools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:id="@+id/dialog"
     android:layout_height="match_parent"
-    android:background="@color/dialog">
+    android:background="@drawable/gradient_bg_donation">
     <!--xmlstools:showIn="@layout/fragment_1"-->
 
     <ImageView
@@ -15,7 +14,7 @@
         android:layout_height="32dp"
         android:layout_margin="50dp"
         android:src="@drawable/ic_close_black_24dp"
-        android:tint="@color/textColor"
+        android:tint="@color/md_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,9 +28,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="0dp"
-        android:src="@drawable/ic_1"
-        android:alpha="1.0"
-        android:tint="@color/background"/>
+        android:src="@drawable/ic_2"
+        android:alpha="0.2"
+        android:tint="@color/donation_sb"/>
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -72,7 +71,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/gradient_bg_tg"
+                android:background="@drawable/gradient_bg_donation"
                 android:gravity="top|end"
                 android:orientation="vertical">
 
@@ -82,9 +81,9 @@
                     android:layout_height="150dp"
                     android:layout_gravity="top|end"
                     android:layout_marginTop="-35dp"
-                    android:alpha="0.08"
-                    android:src="@drawable/tg"
-                    android:tint="#D9000000"
+                    android:alpha="0.15"
+                    android:src="@drawable/ic_2"
+                    android:tint="@color/donation_nav"
                     android:transitionName="feature_img1" />
 
                 <LinearLayout
@@ -121,7 +120,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/gradient_bg_mail"
+                android:background="@drawable/gradient_bg3"
+                android:backgroundTint="@color/donation_sb"
                 android:gravity="top|end"
                 android:orientation="vertical">
 
@@ -165,8 +165,8 @@
         android:layout_height="85dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="130dp"
-        android:src="@drawable/tg"
-        android:tint="#4197FF"
+        android:src="@drawable/ic_2"
+        android:tint="@color/donation_nav"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
 
@@ -179,7 +179,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="130dp"
         android:src="@drawable/ic_1"
-        android:tint="#F8415C"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toEndOf="@+id/iconTG" />

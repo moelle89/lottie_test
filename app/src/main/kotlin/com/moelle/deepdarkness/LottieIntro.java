@@ -40,7 +40,7 @@ public class LottieIntro extends AppIntro {
         slide_3 = SampleSlide.newInstance(R.layout.slide_03);
         slide_4 = SampleSlide.newInstance(R.layout.slide_04);
         slide_5 = SampleSlide.newInstance(R.layout.slide_05);
-        slide_null = SampleSlide.newInstance(R.layout.dialog);
+        slide_null = SampleSlide.newInstance(R.layout.dialog_contact);
 
         addSlide(slide_1);
         addSlide(slide_2);
@@ -69,7 +69,7 @@ public class LottieIntro extends AppIntro {
         if (isFirstRun2) {
             //show start activity
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                    .putBoolean("isFirstRun2", false).commit();
+                    .putBoolean("isFirstRun2", false).apply();
             launchDashboard();
         }
         finish();
@@ -194,7 +194,7 @@ public class LottieIntro extends AppIntro {
         if((oldFragment==slide_4) && (newFragment==slide_null) || (oldFragment==slide_5) && (newFragment==slide_null)){
             // Checking for first time launch - before calling setContentView()
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                    .putBoolean("isFirstRun2", false).commit();
+                    .putBoolean("isFirstRun2", false).apply();
             LottieAnimationView animationViewNull = findViewById(R.id.animation_viewNull);
             animationViewNull.playAnimation();
             animationViewNull.addAnimatorListener(new Animator.AnimatorListener() {

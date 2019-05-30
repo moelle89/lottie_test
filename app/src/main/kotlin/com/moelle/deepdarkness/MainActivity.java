@@ -1,16 +1,15 @@
 package com.moelle.deepdarkness;
 
-import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,8 +28,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -40,15 +40,35 @@ import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
 
-import static android.graphics.Color.alpha;
-import static androidx.fragment.app.DialogFragment.STYLE_NORMAL;
-
-
 //implement the interface OnNavigationItemSelectedListener in your activity class
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, ColorPickerDialogListener {
 
+    private static final String TAG = "MainActivity";
     // Give your color picker dialog unique IDs if you have multiple dialogs.
     private static final int DIALOG_ID = 0;
+
+    public static final int[] DD_Colors = {
+            0xFFff385f,  //  Acorn
+            0xFF00b7cd,  //  Cyan
+            0xFFc7a861,  //  Gold
+            0xFF19cc7f,  //  Venom
+            0xFFffc12f,  //  Holi
+            0xFFf62b48,  //  Infrared
+            0xFF90d3b7,  //  Mint
+            0xFFafca54,  //  Mojito
+            0xFF0dd453,  //  Monster
+            0xFF007eff,  //  Octopus
+            0xFFFF701C,  //  Orange
+            0xFF5eb9ff,  //  Pastel Blue
+            0xFFE27C7C,  //  Pastel Red
+            0xFFff2c63,  //  Pink
+            0xFF9085ff,  //  Purple
+            0xFFff4b79,  //  Raspberry
+            0xFFFF232D,  //  Red
+            0xFF7049f5,  //  Violet
+            0xFFced8de,  //  White
+            0xFFffc107,  //  Yellow
+    };
 
     private FloatingActionButton fab;
     float durationScale;
@@ -183,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         private void showDiag() {
 
-            final View dialogView = View.inflate(this,R.layout.dialog,null);
+            final View dialogView = View.inflate(this,R.layout.dialog_contact,null);
 
             final Dialog dialog = new Dialog(this,R.style.DialogStyle);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -264,8 +284,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
         }
         public void launchPicker(View view) {
+            final int Default = ContextCompat.getColor(this, R.color.accent1);
             ColorPickerDialog.newBuilder()
+                    .setDialogTitle(R.string.Null)
                     .setDialogType(ColorPickerDialog.TYPE_PRESETS)
+                    .setColor(Default)
+                    .setPresets(DD_Colors)
                     .setAllowPresets(true)
                     .setDialogId(DIALOG_ID)
                     .setShowColorShades(true)
@@ -274,11 +298,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     .show(this);
         }
 
-        public void restartApp () {
-            Intent i = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(i);
-            finish();
+        public void onColorSelected(int dialogId, @ColorInt int color) {
+            Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
+            switch (dialogId) {
+                case DIALOG_ID:
+                    // We got result from the dialog that is shown when clicking on the icon in the action bar.
+                    Toast.makeText(MainActivity.this, "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
+                    break;
+            }
         }
-    public void onColorSelected(int dialogId, @ColorInt int color) { }
-    public void onDialogDismissed(int dialogId) { }
+        public void onDialogDismissed(int dialogId) { }
+
+        public void restartApp () {
+            Intent b = new Intent(getApplicationContext(),MainActivity.class);
+            finish();
+            startActivity(b);
+        }
 }

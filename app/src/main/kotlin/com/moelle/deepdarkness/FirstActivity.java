@@ -150,7 +150,7 @@ public class FirstActivity extends AppCompatActivity {
     //
     private void showDiag() {
 
-        final View dialogView = View.inflate(this,R.layout.dialog,null);
+        final View dialogView = View.inflate(this,R.layout.dialog_contact,null);
 
         final Dialog dialog = new Dialog(this,R.style.DialogStyle);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

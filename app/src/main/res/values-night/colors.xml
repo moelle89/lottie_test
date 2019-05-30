@@ -2,6 +2,7 @@
 <resources>
     <color name="overlay_head">#00000000</color>
     <color name="stroke">@color/cardbackgroundlight</color>
+    <color name="pickerStroke">@color/overlay_accent_80</color>
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
@@ -20,7 +21,7 @@
     <color name="background">#000000</color><!-- #ff16171d -->
     <!-- #ff16171d -->
     <color name="cardbackgroundlight">@color/dim_foreground_light</color><!-- F5F9FF -->
-    <color name="dialog">@color/dim_foreground_light</color><!-- navbar -->
+    <color name="dialog_contact">@color/dim_foreground_light</color><!-- navbar -->
     <color name="inactive">#1ACBD3ED</color>
     <color name="textColor">#fff7fbff</color>
     <color name="secondary_text_light">#AAB9CA</color><!-- app background_alpha -->

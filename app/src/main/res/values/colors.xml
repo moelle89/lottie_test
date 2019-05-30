@@ -2,6 +2,7 @@
 <resources>
     <color name="overlay_head">@color/overlay_accent_10</color>
     <color name="stroke">#00000000</color>
+    <color name="pickerStroke">@color/background</color>
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
@@ -26,7 +27,11 @@
     <color name="transparent">#00000000</color>
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
-    <color name="dialog">#EBE2EDF3</color><!-- navbar -->
+    <color name="dialog_contact">#EBE2EDF3</color><!-- navbar -->
+    <color name="dialog_donation">#E6162ED3</color>
+    <color name="donation_sb">#E6BF009F</color>
+    <color name="donation_nav">#F7DB70</color>
+
     <color name="orange_background">#132ccb</color>
     <color name="colorAccentPromptBackground">#0F121A</color>
 

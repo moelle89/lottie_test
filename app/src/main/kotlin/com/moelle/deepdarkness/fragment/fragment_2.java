@@ -3,6 +3,7 @@ package com.moelle.deepdarkness.fragment;
 import android.content.Context;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -22,15 +24,22 @@ import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
+import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
+
+import static com.moelle.deepdarkness.MainActivity.DD_Colors;
+import static com.moelle.deepdarkness.fragment.fragment_1.TAG;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class fragment_2 extends Fragment implements View.OnClickListener{
+public class fragment_2 extends Fragment implements View.OnClickListener, ColorPickerDialogListener {
+
+    private static final int DIALOG_ID = 0;
 
     private LinearLayout cat_top1, cat_top2,cat_bottom;
     // image url to download
@@ -176,8 +185,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.accent1: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent1, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
+                //getActivity().startService(DownloadService.getDownloadService(getContext(), accent1, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
+                launchPicker(getView());
                 break;
             }
             case R.id.accent2: {
@@ -277,7 +286,31 @@ public class fragment_2 extends Fragment implements View.OnClickListener{
             }
         }
     }
+    public void launchPicker(View view) {
+        final int Default = ContextCompat.getColor(view.getContext(), R.color.accent1);
+        ColorPickerDialog.newBuilder()
+                .setDialogTitle(R.string.Null)
+                .setDialogType(ColorPickerDialog.TYPE_PRESETS)
+                .setColor(Default)
+                .setPresets(DD_Colors)
+                .setAllowPresets(true)
+                .setDialogId(DIALOG_ID)
+                .setShowColorShades(true)
+                .setAllowCustom(true)
+                .setShowAlphaSlider(false)
+                .show(getActivity());
+    }
 
+    public void onColorSelected(int dialogId, @ColorInt int color) {
+        Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
+        switch (dialogId) {
+            case DIALOG_ID:
+                // We got result from the dialog that is shown when clicking on the icon in the action bar.
+                Toast.makeText(getContext(), "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+    public void onDialogDismissed(int dialogId) { }
 
     public void Toast(){
         Toast.makeText(getActivity(), "DOWNLOAD SUCCESSFUL", Toast.LENGTH_LONG).show();

@@ -24,10 +24,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.LottieIntro;
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
@@ -82,6 +79,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         card5 = v.findViewById(R.id.card5);
         card6 = v.findViewById(R.id.card6);
         cardLeft.setOnClickListener(this);
+        cardRight.setOnClickListener(this);
         cardLeft2.setOnClickListener(this);
         cardRight2.setOnClickListener(this);
 
@@ -125,7 +123,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.cardLeft:{
-                showDiag();
+                showContact();
                 break;
             }
                 //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
@@ -140,18 +138,16 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                 break;
             }
             case R.id.cardRight: {
+                showDonation();
                 break;
             }
         }
     }
 
-    private void showDiag() {
-
-        final View dialogView = View.inflate(getActivity(), R.layout.dialog,null);
-
-        final Dialog dialog = new Dialog(getActivity() ,R.style.ApptThemeDialog);
+    private void showContact() {
+        final View dialogView = View.inflate(getActivity(), R.layout.dialog_contact,null);
+        final Dialog dialog = new Dialog(getActivity() ,R.style.ApptThemeDialogContact);
         dialog.setContentView(dialogView);
-
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
         iconTG = dialog.findViewById(R.id.iconTG);
@@ -161,33 +157,33 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         mail = dialog.findViewById(R.id.mail);
 
         imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                revealShow(dialogView, false, dialog);
-            }
-        });
+                    @Override
+                    public void onClick(View v) {
+                        revealShow(dialogView, false, dialog);
+                    }
+                });
 
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialogInterface) {
-                revealShow(dialogView, true, null);
-            }
-        });
+                    @Override
+                    public void onShow(DialogInterface dialogInterface) {
+                        revealShow(dialogView, true, null);
+                    }
+                });
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-            @Override
-            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                if (i == KeyEvent.KEYCODE_BACK){
+                    @Override
+                    public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
+                        if (i == KeyEvent.KEYCODE_BACK){
 
-                    revealShow(dialogView, false, dialog);
-                    return true;
-                }
+                            revealShow(dialogView, false, dialog);
+                            return true;
+                        }
 
-                return false;
-            }
-        });
+                        return false;
+                    }
+                });
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
+
         tg.setAlpha(0.0f);
         tg.setScaleX(0.7f);
         tg.setScaleY(0.7f);
@@ -220,6 +216,80 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
+
+    private void showDonation() {
+        final View dialogView = View.inflate(getActivity(), R.layout.dialog_donation,null);
+        final Dialog dialog = new Dialog(getActivity() ,R.style.ApptThemeDialogDonation);
+        dialog.setContentView(dialogView);
+
+        imageView = dialog.findViewById(R.id.closeDialogImg);
+        iconTG = dialog.findViewById(R.id.iconTG);
+        iconMAIL = dialog.findViewById(R.id.iconMAIL);
+        closeBG = dialog.findViewById(R.id.closeBG);
+        tg = dialog.findViewById(R.id.tg);
+        mail = dialog.findViewById(R.id.mail);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                revealShow(dialogView, false, dialog);
+            }
+        });
+
+        dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialogInterface) {
+                revealShow(dialogView, true, null);
+            }
+        });
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_BACK){
+
+                    revealShow(dialogView, false, dialog);
+                    return true;
+                }
+
+                return false;
+            }
+        });
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+
+        tg.setAlpha(0.0f);
+        tg.setScaleX(0.7f);
+        tg.setScaleY(0.7f);
+        tg.setTranslationY(200);
+        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.setAlpha(0.0f);
+        iconTG.setScaleX(0.8f);
+        iconTG.setScaleY(0.8f);
+        iconTG.setTranslationY(250);
+        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(650).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.setAlpha(0.0f);
+        mail.setScaleX(0.7f);
+        mail.setScaleY(0.7f);
+        mail.setTranslationY(200);
+        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(550).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.setAlpha(0.0f);
+        iconMAIL.setScaleX(0.8f);
+        iconMAIL.setScaleY(0.8f);
+        iconMAIL.setTranslationY(250);
+        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(750).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.setAlpha(0.0f);
+        closeBG.setScaleX(0.8f);
+        closeBG.setScaleY(0.8f);
+        closeBG.setTranslationY(300);
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.2f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.setAlpha(0.0f);
+        imageView.setScaleX(0.5f);
+        imageView.setScaleY(0.5f);
+        imageView.setTranslationY(-100);
+        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+
+    }
+
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
 
         final View view = dialogView.findViewById(R.id.dialog);
@@ -229,8 +299,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
         int endRadius = (int) Math.hypot(w, h);
 
-        int cx = (int) (anchor_cardleft.getX() + (anchor_cardleft.getWidth()/2)) / 2;
-        int cy = (int) (anchor_cardleft.getY())+ anchor_cardleft.getHeight() + 56;
+        int cx = (int) (anchor_cardleft.getX() + (anchor_cardleft.getWidth()/2));
+        int cy = (int) (anchor_cardleft.getY())+ anchor_cardleft.getHeight() - 90;
 
 
         if(b){
@@ -242,10 +312,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
 
         } else {
-
             Animator anim =
                     ViewAnimationUtils.createCircularReveal(view, cx, cy, endRadius, 0);
-
             anim.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
@@ -254,7 +322,6 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
                     dialog.dismiss();
                 }
             });
-
             mail.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             iconMAIL.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(180).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             tg.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();

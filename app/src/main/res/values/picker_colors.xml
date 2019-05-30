@@ -102,4 +102,6 @@
   <!-- blue_grey -->
   <color name="md_blue_grey_500">#607d8b</color>
 
+  <color name="cpv_borderColor">#F900FF</color>
+
 </resources>

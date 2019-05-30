@@ -7,15 +7,23 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
-    <style name="ApptThemeDialog" parent="AppTheme">
-        <item name="android:statusBarColor">@color/dialog</item>
-        <item name="android:navigationBarColor">@color/dialog</item>
+    <style name="ApptThemeDialogContact" parent="AppTheme">
+       <item name="android:statusBarColor">@color/dialog_contact</item>
+       <item name="android:navigationBarColor">@color/dialog_contact</item>
+    </style>
+    <style name="ApptThemeDialogDonation" parent="AppTheme">
+        <item name="android:statusBarColor">@color/donation_sb</item>
+        <item name="android:navigationBarColor">@color/donation_nav</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
     <style name="ApptThemeWall" parent="AppTheme">
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="dialogTheme">@style/ThemeOverlay.Material.Dialog</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Material.Dialog</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="fontFamily">@font/sequel_sans_heavy</item>
@@ -28,7 +36,7 @@
         <item name="android:windowAnimationStyle">@style/Animation</item>
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
-        <item name="android:colorBackgroundFloating">@color/user_icon_default_white</item>
+        <item name="android:colorBackgroundFloating">@color/background</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/background</item>
         <item name="colorAccent">@color/colorAccent</item>
