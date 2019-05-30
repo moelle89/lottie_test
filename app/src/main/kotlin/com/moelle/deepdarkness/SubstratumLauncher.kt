@@ -70,7 +70,7 @@ class SubstratumLauncher : Activity() {
         av_from_code.repeatCount = LottieDrawable.INFINITE
         av_from_code.playAnimation()
 
-        av_from_code.addAnimatorListener(object : Animator.AnimatorListener{
+        av_from_code.addAnimatorListener(object : Animator.AnimatorListener {
             override fun onAnimationRepeat(p0: Animator?) {
                 av_from_code.setMinAndMaxFrame(106, 180)
             }
@@ -222,35 +222,35 @@ class SubstratumLauncher : Activity() {
     @SuppressLint("InflateParams")
     private fun showDialog() {
 
-    val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
-            .setCancelable(false)
+        val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
+                .setCancelable(false)
 
-    val view = LayoutInflater.from(this).inflate(R.layout.fullscreen_dialog, null)
-    val title = view.findViewById(R.id.title) as TextView
-    title.text = getString(R.string.launch_dialog_title)
+        val view = LayoutInflater.from(this).inflate(R.layout.fullscreen_dialog, null)
+        val title = view.findViewById(R.id.title) as TextView
+        title.text = getString(R.string.launch_dialog_title)
 
-    /*Buttons*/
-    val cont = view.findViewById(R.id.ic_continue) as TextView
+        /*Buttons*/
+        val cont = view.findViewById(R.id.ic_continue) as TextView
         cont.setOnClickListener { _ ->
-        startAntiPiracyCheck()
-    }
+            startAntiPiracyCheck()
+        }
 
-    val textExit = view.findViewById(R.id.textExit) as TextView
+        val textExit = view.findViewById(R.id.textExit) as TextView
         textExit.setOnClickListener { _ ->
-        finish()
-    }
-    alertDialog.setView(view)
+            finish()
+        }
+        alertDialog.setView(view)
 
-    if (getDialogStatus()) {
-        startAntiPiracyCheck()
-    } else {
-        alertDialog.show()
-    }
+        if (getDialogStatus()) {
+            startAntiPiracyCheck()
+        } else {
+            alertDialog.show()
+        }
 
-}
+    }
 
     private fun getDialogStatus(): Boolean {
         val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
         return mSharedPreferences.getBoolean("show_dialog_" + BuildConfig.VERSION_CODE, false)
-}
+    }
 }

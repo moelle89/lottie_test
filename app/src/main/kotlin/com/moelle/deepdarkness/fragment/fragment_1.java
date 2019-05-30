@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
@@ -34,12 +36,12 @@ import com.moelle.deepdarkness.Wallpaper;
  * to handle interaction events.
  * create an instance of this fragment.
  */
-public class fragment_1 extends Fragment implements View.OnClickListener{
+public class fragment_1 extends Fragment implements View.OnClickListener {
 
 
-    private LinearLayout cat_top,cat_middle;
+    private LinearLayout cat_top, cat_middle;
     private ImageView closeBG, iconTG, iconMAIL, imageView;
-    private CardView cardRight,cardLeft,cardRight2,cardLeft2,card4,card5,card6,tg, mail;
+    private CardView cardRight, cardLeft, cardRight2, cardLeft2, card4, card5, card6, tg, mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
 
@@ -55,8 +57,11 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     public void onAttach(Context context) {
         super.onAttach(context);
     }
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState); }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Nullable
     @Override
@@ -84,16 +89,16 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         cardRight2.setOnClickListener(this);
 
         // ini Animations
-        Animation vonOben = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
-        Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
+        Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
-        Animation vonUnten = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten.setStartOffset(170);
-        Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten2.setStartOffset(220);
-        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten3.setStartOffset(250);
-        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten4.setStartOffset(280);
 
         // setup Animation :
@@ -116,17 +121,17 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
 
         // Inflate the layout for this fragment
-        return  v ;
+        return v;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.cardLeft:{
+            case R.id.cardLeft: {
                 showContact();
                 break;
             }
-                //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
+            //getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
             case R.id.cardRight2: {
                 Intent wallpaper = new Intent(getActivity(), Wallpaper.class);
                 startActivity(wallpaper);
@@ -145,8 +150,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     }
 
     private void showContact() {
-        final View dialogView = View.inflate(getActivity(), R.layout.dialog_contact,null);
-        final Dialog dialog = new Dialog(getActivity() ,R.style.ApptThemeDialogContact);
+        final View dialogView = View.inflate(getActivity(), R.layout.dialog_contact, null);
+        final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogContact);
         dialog.setContentView(dialogView);
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
@@ -157,30 +162,30 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         mail = dialog.findViewById(R.id.mail);
 
         imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        revealShow(dialogView, false, dialog);
-                    }
-                });
+            @Override
+            public void onClick(View v) {
+                revealShow(dialogView, false, dialog);
+            }
+        });
 
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-                    @Override
-                    public void onShow(DialogInterface dialogInterface) {
-                        revealShow(dialogView, true, null);
-                    }
-                });
+            @Override
+            public void onShow(DialogInterface dialogInterface) {
+                revealShow(dialogView, true, null);
+            }
+        });
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-                    @Override
-                    public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                        if (i == KeyEvent.KEYCODE_BACK){
+            @Override
+            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_BACK) {
 
-                            revealShow(dialogView, false, dialog);
-                            return true;
-                        }
+                    revealShow(dialogView, false, dialog);
+                    return true;
+                }
 
-                        return false;
-                    }
-                });
+                return false;
+            }
+        });
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
 
@@ -218,8 +223,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
     }
 
     private void showDonation() {
-        final View dialogView = View.inflate(getActivity(), R.layout.dialog_donation,null);
-        final Dialog dialog = new Dialog(getActivity() ,R.style.ApptThemeDialogDonation);
+        final View dialogView = View.inflate(getActivity(), R.layout.dialog_donation, null);
+        final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogDonation);
         dialog.setContentView(dialogView);
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
@@ -245,7 +250,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
         dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override
             public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                if (i == KeyEvent.KEYCODE_BACK){
+                if (i == KeyEvent.KEYCODE_BACK) {
 
                     revealShow(dialogView, false, dialog);
                     return true;
@@ -299,12 +304,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener{
 
         int endRadius = (int) Math.hypot(w, h);
 
-        int cx = (int) (anchor_cardleft.getX() + (anchor_cardleft.getWidth()/2));
-        int cy = (int) (anchor_cardleft.getY())+ anchor_cardleft.getHeight() - 90;
+        int cx = (int) (anchor_cardleft.getX() + (anchor_cardleft.getWidth() / 2));
+        int cy = (int) (anchor_cardleft.getY()) + anchor_cardleft.getHeight() - 90;
 
 
-        if(b){
-            Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx,cy, 80, endRadius);
+        if (b) {
+            Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, 80, endRadius);
 
             view.setVisibility(View.VISIBLE);
             revealAnimator.setDuration(800);

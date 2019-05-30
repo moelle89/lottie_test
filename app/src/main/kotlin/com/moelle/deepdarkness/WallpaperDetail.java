@@ -19,7 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class WallpaperDetail extends AppCompatActivity {
 
-    private ImageView MovieThumbnailImg,MovieCoverImg;
+    private ImageView MovieThumbnailImg, MovieCoverImg;
     private FloatingActionButton play_fab;
 
     @Override

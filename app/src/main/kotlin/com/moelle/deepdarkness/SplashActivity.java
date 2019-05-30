@@ -24,7 +24,7 @@ public class SplashActivity extends Activity {
             finish();
         }
 
-        try{
+        try {
             videoView = new VideoView(this);
 
             setContentView(videoView);
@@ -42,7 +42,7 @@ public class SplashActivity extends Activity {
 
             });
             videoView.start();
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             jump();
         }
     }
@@ -56,15 +56,18 @@ public class SplashActivity extends Activity {
     //	return true;
     //}
 
-    private void jump() {if(isFinishing())
-        return;
+    private void jump() {
+        if (isFinishing())
+            return;
         prefManager.setFirstTimeLaunch(false);
         launchIntroScreen();
     }
+
     private void launchDashboard() {
         prefManager.setFirstTimeLaunch(false);
         startActivity(new Intent(this, MainActivity.class));
     }
+
     private void launchIntroScreen() {
         startActivity(new Intent(this, LottieIntro.class));
     }

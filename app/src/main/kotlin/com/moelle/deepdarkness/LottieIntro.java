@@ -16,6 +16,7 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
+
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -79,13 +80,14 @@ public class LottieIntro extends AppIntro {
     public void onDonePressed(Fragment currentFragment) {
         finish();
     }
+
     private void launchDashboard() {
-        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
 
     private void launchTutorial() {
-        Intent i = new Intent(getApplicationContext(),LottieTutorial.class);
+        Intent i = new Intent(getApplicationContext(), LottieTutorial.class);
         startActivity(i);
     }
 
@@ -93,11 +95,11 @@ public class LottieIntro extends AppIntro {
     public void onSlideChanged(@Nullable Fragment oldFragment, @Nullable Fragment newFragment) {
         super.onSlideChanged(oldFragment, newFragment);
 
-        if ((oldFragment==null) && (newFragment==slide_1) || (oldFragment==slide_2) && (newFragment==slide_1)) {
+        if ((oldFragment == null) && (newFragment == slide_1) || (oldFragment == slide_2) && (newFragment == slide_1)) {
             LottieAnimationView animationView1 = findViewById(R.id.animation_view1);
-            final int fg = ContextCompat.getColor(this,(R.color.textColor));
+            final int fg = ContextCompat.getColor(this, (R.color.textColor));
             SimpleColorFilter filterfg = new SimpleColorFilter(fg);
-            KeyPath keyfg = new KeyPath("fg","**");
+            KeyPath keyfg = new KeyPath("fg", "**");
             LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterfg);
             animationView1.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
             animationView1.playAnimation();
@@ -105,12 +107,15 @@ public class LottieIntro extends AppIntro {
                 @Override
                 public void onAnimationStart(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationEnd(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationCancel(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     pager.goToNextSlide();
@@ -118,7 +123,7 @@ public class LottieIntro extends AppIntro {
             });
         }
 
-        if((oldFragment==slide_1) && (newFragment==slide_2) || (oldFragment==slide_3) && (newFragment==slide_2)){
+        if ((oldFragment == slide_1) && (newFragment == slide_2) || (oldFragment == slide_3) && (newFragment == slide_2)) {
             LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
             animationView2.playAnimation();
 
@@ -126,12 +131,15 @@ public class LottieIntro extends AppIntro {
                 @Override
                 public void onAnimationStart(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationEnd(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationCancel(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
@@ -140,19 +148,22 @@ public class LottieIntro extends AppIntro {
             });
         }
 
-        if((oldFragment==slide_2) && (newFragment==slide_3) || (oldFragment==slide_4) && (newFragment==slide_3)){
+        if ((oldFragment == slide_2) && (newFragment == slide_3) || (oldFragment == slide_4) && (newFragment == slide_3)) {
             LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
             animationView3.playAnimation();
             animationView3.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationEnd(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationCancel(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     LottieAnimationView animationView3 = findViewById(R.id.animation_view3);
@@ -161,37 +172,40 @@ public class LottieIntro extends AppIntro {
                 }
             });
         }
-        if((oldFragment==slide_3) && (newFragment==slide_4) || (oldFragment==slide_5) && (newFragment==slide_4)){
+        if ((oldFragment == slide_3) && (newFragment == slide_4) || (oldFragment == slide_5) && (newFragment == slide_4)) {
             LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
             animationView4.playAnimation();
             animationView4.addAnimatorListener(new Animator.AnimatorListener() {
-                    @Override
-                    public void onAnimationStart(Animator animation) {
-                    }
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                    }
-                    @Override
-                    public void onAnimationCancel(Animator animation) {
-                    }
-                    @Override
-                    public void onAnimationRepeat(Animator animation) {
-                        Boolean isFirstRun2 = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                                .getBoolean("isFirstRun2", true);
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
 
-                        if (isFirstRun2) {
-                            //show start activity
-                            LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
-                            animationView4.setVisibility(View.INVISIBLE);
-                            pager.goToNextSlide();
-                        }
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                    Boolean isFirstRun2 = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                            .getBoolean("isFirstRun2", true);
+
+                    if (isFirstRun2) {
+                        //show start activity
                         LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
                         animationView4.setVisibility(View.INVISIBLE);
-                        finish();
+                        pager.goToNextSlide();
                     }
+                    LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
+                    animationView4.setVisibility(View.INVISIBLE);
+                    finish();
+                }
             });
         }
-        if((oldFragment==slide_4) && (newFragment==slide_null) || (oldFragment==slide_5) && (newFragment==slide_null)){
+        if ((oldFragment == slide_4) && (newFragment == slide_null) || (oldFragment == slide_5) && (newFragment == slide_null)) {
             // Checking for first time launch - before calling setContentView()
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                     .putBoolean("isFirstRun2", false).apply();
@@ -201,12 +215,15 @@ public class LottieIntro extends AppIntro {
                 @Override
                 public void onAnimationStart(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationEnd(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationCancel(Animator animation) {
                 }
+
                 @Override
                 public void onAnimationRepeat(Animator animation) {
                     launchTutorial();

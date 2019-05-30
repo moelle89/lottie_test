@@ -6,7 +6,6 @@ public class Wall {
     private int thumbnail;
     private int coverPhoto;
 
-
     public Wall(String title, int thumbnail) {
         this.title = title;
         this.thumbnail = thumbnail;

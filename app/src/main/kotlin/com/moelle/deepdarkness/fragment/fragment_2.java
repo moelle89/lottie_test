@@ -41,14 +41,14 @@ import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class fragment_2 extends Fragment implements View.OnClickListener, ColorPickerDialogListener {
+public class fragment_2 extends Fragment implements View.OnClickListener {
 
 
     public static final String TAG = fragment_2.class.getSimpleName();
 
     private static final int DIALOG_ID = 0;
 
-    private LinearLayout cat_top1, cat_top2,cat_bottom;
+    private LinearLayout cat_top1, cat_top2, cat_bottom;
     // image url to download
     private static final String accent1 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/1.png";
     private static final String accent2 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/2.png";
@@ -74,12 +74,16 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
     public fragment_2() {
         // Required empty public constructor
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
     }
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState); }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Nullable
     @Override
@@ -122,7 +126,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
-        KeyPath keyfg = new KeyPath("fg","**");
+        KeyPath keyfg = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterfg);
         keyboard.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
         SimpleColorFilter filterbg = new SimpleColorFilter(bg);
@@ -132,20 +136,20 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
         keyboard.playAnimation();
 
         // ini Animations
-        Animation vonOben = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
-        Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
+        Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
-        Animation vonOben3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        Animation vonOben3 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben3.setStartOffset(170);
-        Animation vonOben4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_top_to_bottom);
+        Animation vonOben4 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben4.setStartOffset(220);
-        Animation vonUnten = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten.setStartOffset(170);
-        Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten2.setStartOffset(220);
-        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten3 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten3.setStartOffset(250);
-        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(),R.anim.anime_bottom_to_top);
+        Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten4.setStartOffset(280);
         keyboard.setAlpha(0f);
         keyboard.setScaleX(1.3f);
@@ -156,36 +160,56 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
         cat_top2.animate().alpha(1f).setDuration(1000).setStartDelay(300);
         cat_bottom.animate().alpha(1f).setDuration(1000).setStartDelay(400);
 
-        card1.setOnClickListener(this);card1.setAnimation(vonOben);
-        card2.setOnClickListener(this);card2.setAnimation(vonOben);
-        card3.setOnClickListener(this);card3.setAnimation(vonOben);
-        card4.setOnClickListener(this);card4.setAnimation(vonOben);
-        card5.setOnClickListener(this);card5.setAnimation(vonOben);
-        card6.setOnClickListener(this);card6.setAnimation(vonOben);
+        card1.setOnClickListener(this);
+        card1.setAnimation(vonOben);
+        card2.setOnClickListener(this);
+        card2.setAnimation(vonOben);
+        card3.setOnClickListener(this);
+        card3.setAnimation(vonOben);
+        card4.setOnClickListener(this);
+        card4.setAnimation(vonOben);
+        card5.setOnClickListener(this);
+        card5.setAnimation(vonOben);
+        card6.setOnClickListener(this);
+        card6.setAnimation(vonOben);
 
-        card7.setOnClickListener(this);card7.setAnimation(vonOben2);
-        card8.setOnClickListener(this);card8.setAnimation(vonOben2);
-        card9.setOnClickListener(this);card9.setAnimation(vonOben2);
-        card10.setOnClickListener(this);card10.setAnimation(vonOben2);
-        card11.setOnClickListener(this);card11.setAnimation(vonOben2);
-        card12.setOnClickListener(this);card12.setAnimation(vonOben2);
+        card7.setOnClickListener(this);
+        card7.setAnimation(vonOben2);
+        card8.setOnClickListener(this);
+        card8.setAnimation(vonOben2);
+        card9.setOnClickListener(this);
+        card9.setAnimation(vonOben2);
+        card10.setOnClickListener(this);
+        card10.setAnimation(vonOben2);
+        card11.setOnClickListener(this);
+        card11.setAnimation(vonOben2);
+        card12.setOnClickListener(this);
+        card12.setAnimation(vonOben2);
 
-        card13.setOnClickListener(this);card13.setAnimation(vonOben3);
-        card14.setOnClickListener(this);card14.setAnimation(vonOben3);
-        card15.setOnClickListener(this);card15.setAnimation(vonOben3);
-        card16.setOnClickListener(this);card16.setAnimation(vonOben3);
-        card17.setOnClickListener(this);card17.setAnimation(vonOben3);
-        card18.setOnClickListener(this);card18.setAnimation(vonOben3);
+        card13.setOnClickListener(this);
+        card13.setAnimation(vonOben3);
+        card14.setOnClickListener(this);
+        card14.setAnimation(vonOben3);
+        card15.setOnClickListener(this);
+        card15.setAnimation(vonOben3);
+        card16.setOnClickListener(this);
+        card16.setAnimation(vonOben3);
+        card17.setOnClickListener(this);
+        card17.setAnimation(vonOben3);
+        card18.setOnClickListener(this);
+        card18.setAnimation(vonOben3);
 
-        card19.setOnClickListener(this);card19.setAnimation(vonOben4);
-        card20.setOnClickListener(this);card20.setAnimation(vonOben4);
+        card19.setOnClickListener(this);
+        card19.setAnimation(vonOben4);
+        card20.setOnClickListener(this);
+        card20.setAnimation(vonOben4);
 
         background1.setAnimation(vonUnten);
         background2.setAnimation(vonUnten2);
         background3.setAnimation(vonUnten3);
         background4.setAnimation(vonUnten4);
 
-        return  v ;
+        return v;
     }
 
     @Override
@@ -293,6 +317,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
             }
         }
     }
+
     public void launchPicker(View view) {
         final int Default = ContextCompat.getColor(view.getContext(), R.color.accent1);
         ColorPickerDialog.newBuilder()
@@ -308,35 +333,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
                 .show(getActivity());
     }
 
-    public void onColorSelected(int dialogId, @ColorInt int color) {
-        Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
-        switch (dialogId) {
-            case DIALOG_ID:
-                createColorBitmapAndSave(1000,500, color);
-                Log.d(TAG,"BitmapSaved");
-                // We got result from the dialog that is shown when clicking on the icon in the action bar.
-                Toast.makeText(getContext(), "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
-                break;
-        }
-    }
-    public void onDialogDismissed(int dialogId) { }
-
-    public void Toast(){
+    public void Toast() {
         Toast.makeText(getActivity(), "DOWNLOAD SUCCESSFUL", Toast.LENGTH_LONG).show();
     }
-
-    public static void createColorBitmapAndSave(int width, int height, @ColorInt int color) {
-        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        bitmap.eraseColor(color);
-
-        String fileName = Environment.getExternalStorageDirectory() + "color.png";
-
-        try (FileOutputStream fos = new FileOutputStream(fileName)) {
-            // Use Bitmap.CompressFormat.JPEG if you want JPEG
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
-        } catch (IOException e) {
-            Log.e(TAG, "failed to save bitmap ", e);
-        }
-    }
-
 }

@@ -6,8 +6,10 @@ import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -39,6 +41,9 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 //implement the interface OnNavigationItemSelectedListener in your activity class
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, ColorPickerDialogListener {
@@ -81,11 +86,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         // Get duration scale from the global settings.
-        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(),Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
         // If global duration scale is not 1 (default), try to override it
         if (durationScale != 1) {
-            try {ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f); durationScale = 0.7f;}
-            catch (Throwable t) {Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG); toast.show();}
+            try {
+                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
+                durationScale = 0.7f;
+            } catch (Throwable t) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+                toast.show();
+            }
         }
 
         // dark/light mode switch
@@ -161,17 +171,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         anim_fab.setInterpolator(new OvershootInterpolator(3.5f));
         fab.setAnimation(anim_fab);
     }
-        private int previousSelectedId = 0;
+
+    private int previousSelectedId = 0;
 
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment = null;
-            int id = item.getItemId();
-            if(previousSelectedId == id) {
-                return true;
-            }else{
-                previousSelectedId = id;
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
+        int id = item.getItemId();
+        if (previousSelectedId == id) {
+            return true;
+        } else {
+            previousSelectedId = id;
             switch (item.getItemId()) {
                 case R.id.nav_1:
                     fragment = new fragment_1();
@@ -184,134 +195,157 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 case R.id.nav_3:
                     fragment = new fragment_3();
                     break;
-            }}
-
-            return loadFragment(fragment);
-        }
-        // Settings that should be changed when toggling animations
-        private boolean loadFragment(Fragment fragment) {
-            //switching fragment
-            if (fragment != null) {
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment_container, fragment)
-                        .commit();
-                return true;
             }
-            return false;
         }
 
-        private void showDiag() {
+        return loadFragment(fragment);
+    }
 
-            final View dialogView = View.inflate(this,R.layout.dialog_contact,null);
+    // Settings that should be changed when toggling animations
+    private boolean loadFragment(Fragment fragment) {
+        //switching fragment
+        if (fragment != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
+    }
 
-            final Dialog dialog = new Dialog(this,R.style.DialogStyle);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setContentView(dialogView);
+    private void showDiag() {
+
+        final View dialogView = View.inflate(this, R.layout.dialog_contact, null);
+
+        final Dialog dialog = new Dialog(this, R.style.DialogStyle);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(dialogView);
 
 
-            ImageView imageView = dialog.findViewById(R.id.closeDialogImg);
-            imageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        ImageView imageView = dialog.findViewById(R.id.closeDialogImg);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                revealShow(dialogView, false, dialog);
+            }
+        });
+
+        dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialogInterface) {
+                revealShow(dialogView, true, null);
+            }
+        });
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_BACK) {
 
                     revealShow(dialogView, false, dialog);
+                    return true;
                 }
-            });
 
-            dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-                @Override
-                public void onShow(DialogInterface dialogInterface) {
-                    revealShow(dialogView, true, null);
-                }
-            });
-            dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-                @Override
-                public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                    if (i == KeyEvent.KEYCODE_BACK){
-
-                        revealShow(dialogView, false, dialog);
-                        return true;
-                    }
-
-                    return false;
-                }
-            });
-
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-            dialog.show();
-
-        }
-
-        private void revealShow(View dialogView, boolean b, final Dialog dialog) {
-
-            final View view = dialogView.findViewById(R.id.dialog);
-
-            int w = view.getWidth();
-            int h = view.getHeight();
-
-            int endRadius = (int) Math.hypot(w, h);
-
-            int cx = (int) (fab.getX() + (fab.getWidth()/2));
-            int cy = (int) (fab.getY())+ fab.getHeight();
-
-
-            if(b){
-                Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx,cy, 0, endRadius);
-
-                view.setVisibility(View.VISIBLE);
-                revealAnimator.setDuration(750);
-                revealAnimator.start();
-
-
-            } else {
-
-                Animator anim =
-                        ViewAnimationUtils.createCircularReveal(view, cx, cy, endRadius, 0);
-
-                anim.addListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        super.onAnimationEnd(animation);
-                        dialog.dismiss();
-                        view.setVisibility(View.INVISIBLE);
-
-                    }
-                });
-                anim.setDuration(800);
-                anim.start();
-
+                return false;
             }
-        }
-        public void launchPicker(View view) {
-            final int Default = ContextCompat.getColor(this, R.color.accent1);
-            ColorPickerDialog.newBuilder()
-                    .setDialogTitle(R.string.Null)
-                    .setDialogType(ColorPickerDialog.TYPE_PRESETS)
-                    .setColor(Default)
-                    .setPresets(DD_Colors)
-                    .setAllowPresets(true)
-                    .setDialogId(DIALOG_ID)
-                    .setShowColorShades(true)
-                    .setAllowCustom(true)
-                    .setShowAlphaSlider(false)
-                    .show(this);
-        }
+        });
 
-        public void onColorSelected(int dialogId, @ColorInt int color) {
-            Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
-            switch (dialogId) {
-                case DIALOG_ID:
-                    // We got result from the dialog that is shown when clicking on the icon in the action bar.
-                    Toast.makeText(MainActivity.this, "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
-                    break;
-            }
-        }
-        public void onDialogDismissed(int dialogId) { }
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
 
-        public void restartApp () {
-            Intent b = new Intent(getApplicationContext(),MainActivity.class);
-            finish();
-            startActivity(b);
+    }
+
+    private void revealShow(View dialogView, boolean b, final Dialog dialog) {
+
+        final View view = dialogView.findViewById(R.id.dialog);
+
+        int w = view.getWidth();
+        int h = view.getHeight();
+
+        int endRadius = (int) Math.hypot(w, h);
+
+        int cx = (int) (fab.getX() + (fab.getWidth() / 2));
+        int cy = (int) (fab.getY()) + fab.getHeight();
+
+
+        if (b) {
+            Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, 0, endRadius);
+
+            view.setVisibility(View.VISIBLE);
+            revealAnimator.setDuration(750);
+            revealAnimator.start();
+
+
+        } else {
+
+            Animator anim =
+                    ViewAnimationUtils.createCircularReveal(view, cx, cy, endRadius, 0);
+
+            anim.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    super.onAnimationEnd(animation);
+                    dialog.dismiss();
+                    view.setVisibility(View.INVISIBLE);
+
+                }
+            });
+            anim.setDuration(800);
+            anim.start();
+
         }
+    }
+
+    public void launchPicker(View view) {
+        final int Default = ContextCompat.getColor(this, R.color.accent1);
+        ColorPickerDialog.newBuilder()
+                .setDialogTitle(R.string.Null)
+                .setDialogType(ColorPickerDialog.TYPE_PRESETS)
+                .setColor(Default)
+                .setPresets(DD_Colors)
+                .setAllowPresets(true)
+                .setDialogId(DIALOG_ID)
+                .setShowColorShades(true)
+                .setAllowCustom(true)
+                .setShowAlphaSlider(false)
+                .show(this);
+    }
+
+    @Override
+    public void onColorSelected(int dialogId, @ColorInt int color) {
+        Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
+        switch (dialogId) {
+            case DIALOG_ID:
+                createColorBitmapAndSave(100, 500, color);
+                // We got result from the dialog that is shown when clicking on the icon in the action bar.
+                Toast.makeText(MainActivity.this, "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
+    @Override
+    public void onDialogDismissed(int dialogId) {
+    }
+
+    public void restartApp() {
+        Intent b = new Intent(getApplicationContext(), MainActivity.class);
+        finish();
+        startActivity(b);
+    }
+
+    private void createColorBitmapAndSave(int width, int height, @ColorInt int color) {
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        bitmap.eraseColor(color);
+
+        String fileName = Environment.getExternalStorageDirectory() + "color.png";
+
+        try (FileOutputStream fos = new FileOutputStream(fileName)) {
+            // Use Bitmap.CompressFormat.JPEG if you want JPEG
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (IOException e) {
+            Log.e(TAG, "failed to save bitmap ", e);
+        }
+    }
+
 }

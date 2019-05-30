@@ -16,7 +16,7 @@ import java.util.List;
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.MyViewHolder> {
 
-    Context context ;
+    Context context;
     List<Wall> mData;
     WallItemClickListener wallItemClickListener;
 
@@ -33,11 +33,11 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.MyVi
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
 
-        View view = LayoutInflater.from(context).inflate(R.layout.item_movie,viewGroup,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_movie, viewGroup, false);
         return new MyViewHolder(view);
 
 
-        }
+    }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
@@ -68,7 +68,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.MyVi
                 @Override
                 public void onClick(View v) {
 
-                    wallItemClickListener.onMovieClick(mData.get(getAdapterPosition()),ImgMovie);
+                    wallItemClickListener.onMovieClick(mData.get(getAdapterPosition()), ImgMovie);
 
 
                 }
