@@ -1,8 +1,10 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +31,9 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.fragment.fragment_1.TAG;
@@ -305,6 +310,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
         Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
         switch (dialogId) {
             case DIALOG_ID:
+                createColorBitmapAndSave(1000,500, color);
                 // We got result from the dialog that is shown when clicking on the icon in the action bar.
                 Toast.makeText(getContext(), "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
                 break;
@@ -315,4 +321,19 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
     public void Toast(){
         Toast.makeText(getActivity(), "DOWNLOAD SUCCESSFUL", Toast.LENGTH_LONG).show();
     }
+
+    public static void createColorBitmapAndSave(int width, int height, @ColorInt int color) {
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        bitmap.eraseColor(color);
+
+        String fileName = Environment.getExternalStorageDirectory() + "color.png";
+
+        try (FileOutputStream fos = new FileOutputStream(fileName)) {
+            // Use Bitmap.CompressFormat.JPEG if you want JPEG
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (IOException e) {
+            Log.e(TAG, "failed to save bitmap ", e);
+        }
+    }
+
 }
