@@ -41,7 +41,9 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
 import com.moelle.deepdarkness.fragment.fragment_3;
+import com.moelle.deepdarkness.util.PermissionHelper;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -146,6 +148,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             public void onAnimationEnd(Animator animation) {
                 LottieAnimationView intro = findViewById(R.id.intro);
                 intro.setVisibility(View.INVISIBLE);
+
+                PermissionHelper.checkPermissions(MainActivity.this);
             }
 
             @Override
@@ -199,6 +203,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
 
         return loadFragment(fragment);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                                           int[] grantResults) {
+        if (!PermissionHelper.checkPermissionResult(permissions, grantResults)) {
+            Toast.makeText(this, R.string.no_permission, Toast.LENGTH_LONG).show();
+        }
     }
 
     // Settings that should be changed when toggling animations
@@ -317,9 +329,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
         switch (dialogId) {
             case DIALOG_ID:
-                createColorBitmapAndSave(100, 500, color);
-                // We got result from the dialog that is shown when clicking on the icon in the action bar.
-                Toast.makeText(MainActivity.this, "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
+                try {
+                    createColorBitmapAndSave(100, 500, color);
+                } catch (IOException e) {
+                    Log.e("ANAS", "failed to save file ", e);
+                }
                 break;
         }
     }
@@ -334,17 +348,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(b);
     }
 
-    private void createColorBitmapAndSave(int width, int height, @ColorInt int color) {
+    private void createColorBitmapAndSave(int width, int height, @ColorInt int color)
+            throws IOException {
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         bitmap.eraseColor(color);
 
-        String fileName = Environment.getExternalStorageDirectory() + "color.png";
+        File parent = new File(Environment.getExternalStorageDirectory() + "/"
+                + DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/"));
+        if (!parent.exists() && !parent.mkdirs()) {
+            throw new IOException("failed to create path " + parent);
+        }
 
-        try (FileOutputStream fos = new FileOutputStream(fileName)) {
+        File file = new File(parent, Integer.toHexString(color) + ".png");
+        try (FileOutputStream fos = new FileOutputStream(file)) {
             // Use Bitmap.CompressFormat.JPEG if you want JPEG
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
-        } catch (IOException e) {
-            Log.e(TAG, "failed to save bitmap ", e);
         }
     }
 
