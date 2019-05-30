@@ -5,7 +5,7 @@
             <shape android:tint="@color/cardbackgroundlight">
                 <gradient
                     android:angle="90.0"
-                    android:endColor="#D9000000"
+                    android:endColor="#E6000000"
                     android:startColor="#000000"
                     android:type="linear" />
                 <corners android:radius="20dp" />

@@ -7,6 +7,12 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Environment;
@@ -367,8 +373,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private void createColorBitmapAndSave(int width, int height, @ColorInt int color)
             throws IOException {
+        //Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        //bitmap.eraseColor(color);
+
+        int colors[] = new int[2];
+        colors[0] = Color.parseColor("#000000");
+        colors[1] = Color.parseColor("#123456");
+
+        LinearGradient gradient = new LinearGradient(0, 0, 0, 768, color, Color.TRANSPARENT, Shader.TileMode.CLAMP);
+        Paint p = new Paint();
+        p.setDither(true);
+        p.setShader(gradient);
+
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        bitmap.eraseColor(color);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawRect(new RectF(0, 0, width, height), p);
 
         File parent = new File(Environment.getExternalStorageDirectory() + "/"
                 + DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/"));

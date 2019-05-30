@@ -1,11 +1,8 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +10,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
-import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -27,14 +22,9 @@ import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
-import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 
@@ -90,15 +80,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_2, null);
         CardView card1 = v.findViewById(R.id.accent1);
-        CardView card2 = v.findViewById(R.id.accent2);
-        CardView card3 = v.findViewById(R.id.accent3);
         CardView card4 = v.findViewById(R.id.accent4);
-        CardView card5 = v.findViewById(R.id.accent5);
         CardView card6 = v.findViewById(R.id.accent6);
         CardView card7 = v.findViewById(R.id.accent7);
-        CardView card8 = v.findViewById(R.id.accent8);
-        CardView card9 = v.findViewById(R.id.accent9);
-        CardView card10 = v.findViewById(R.id.accent10);
         CardView card11 = v.findViewById(R.id.accent11);
         CardView card12 = v.findViewById(R.id.accent12);
         CardView card13 = v.findViewById(R.id.accent13);
@@ -162,25 +146,13 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         card1.setOnClickListener(this);
         card1.setAnimation(vonOben);
-        card2.setOnClickListener(this);
-        card2.setAnimation(vonOben);
-        card3.setOnClickListener(this);
-        card3.setAnimation(vonOben);
         card4.setOnClickListener(this);
         card4.setAnimation(vonOben);
-        card5.setOnClickListener(this);
-        card5.setAnimation(vonOben);
         card6.setOnClickListener(this);
         card6.setAnimation(vonOben);
 
         card7.setOnClickListener(this);
         card7.setAnimation(vonOben2);
-        card8.setOnClickListener(this);
-        card8.setAnimation(vonOben2);
-        card9.setOnClickListener(this);
-        card9.setAnimation(vonOben2);
-        card10.setOnClickListener(this);
-        card10.setAnimation(vonOben2);
         card11.setOnClickListener(this);
         card11.setAnimation(vonOben2);
         card12.setOnClickListener(this);
@@ -220,24 +192,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 launchPicker(getView());
                 break;
             }
-            case R.id.accent2: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent2, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
-            case R.id.accent3: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent3, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
             case R.id.accent4: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent4, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
-            case R.id.accent5: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent5, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
+                launchPicker(getView());
                 break;
             }
             case R.id.accent6: {
@@ -247,21 +203,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             }
             case R.id.accent7: {
                 getActivity().startService(DownloadService.getDownloadService(getContext(), accent7, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
-            case R.id.accent8: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent8, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
-            case R.id.accent9: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent9, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                Toast();
-                break;
-            }
-            case R.id.accent10: {
-                getActivity().startService(DownloadService.getDownloadService(getContext(), accent10, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
                 Toast();
                 break;
             }
