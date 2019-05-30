@@ -84,7 +84,6 @@
         android:alpha="1"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="launchPicker"
         android:tint="@android:color/white"
         app:backgroundTint="?android:colorAccent"
         app:fabCustomSize="@dimen/fab_size"

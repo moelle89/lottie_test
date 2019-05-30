@@ -12,7 +12,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -22,6 +24,8 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.ColorInt;
@@ -330,7 +334,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (dialogId) {
             case DIALOG_ID:
                 try {
-                    createColorBitmapAndSave(100, 500, color);
+                    createColorBitmapAndSave(1366, 768, color);
+
+                    Toast toast = new Toast(this);
+                    View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
+                    CardView card = view.findViewById(R.id.card_toast);
+                    card.setCardBackgroundColor(color);
+                    TextView textView = view.findViewById(R.id.text);
+                    textView.setText(R.string.success);
+                    toast.setView(view);
+                    toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.CENTER);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.show();
+
+
                 } catch (IOException e) {
                     Log.e("ANAS", "failed to save file ", e);
                 }

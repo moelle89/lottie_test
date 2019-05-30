@@ -13,6 +13,6 @@
     <string name="Null"/>
     <string name="search">how-to</string>
     <string name="favorite">misc.</string>
-
+    <string name="success">DOWNLOAD SUCCESSFUL</string>
     <string name="no_permission">No permission to access storage. Certain functions will not function properly.</string>
 </resources>
