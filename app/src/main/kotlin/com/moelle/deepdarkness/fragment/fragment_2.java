@@ -36,13 +36,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
-import static com.moelle.deepdarkness.fragment.fragment_1.TAG;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class fragment_2 extends Fragment implements View.OnClickListener, ColorPickerDialogListener {
+
+
+    public static final String TAG = fragment_2.class.getSimpleName();
 
     private static final int DIALOG_ID = 0;
 
@@ -311,6 +313,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener, ColorP
         switch (dialogId) {
             case DIALOG_ID:
                 createColorBitmapAndSave(1000,500, color);
+                Log.d(TAG,"BitmapSaved");
                 // We got result from the dialog that is shown when clicking on the icon in the action bar.
                 Toast.makeText(getContext(), "Selected Color: #" + Integer.toHexString(color), Toast.LENGTH_SHORT).show();
                 break;
