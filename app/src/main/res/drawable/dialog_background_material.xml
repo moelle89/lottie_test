@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <inset android:inset="16.0dip" xmlns:android="http://schemas.android.com/apk/res/android">
     <layer-list>
-        <item android:top="-12dp">
-            <shape android:tint="@color/cardbackgroundlight">
-                <gradient
-                    android:angle="90.0"
-                    android:endColor="#E6000000"
-                    android:startColor="#000000"
-                    android:type="linear" />
-                <corners android:radius="20dp" />
+        <item android:top="0dp" android:right="3dp" android:left="3dp">
+            <shape android:tint="@color/background">
+                <solid android:color="#000000" />
+                <corners android:radius="18dp" />
                 <stroke
                     android:width="3.0dp"
-                    android:color="@color/cardbackgroundlight" />
+                    android:color="@color/background" />
             </shape>
         </item>
-        <item android:top="-12dp">
+        <item android:top="0dp" android:right="3dp" android:left="3dp">
             <shape>
                 <solid android:color="#00000000" />
-                <corners android:radius="20dp" />
+                <corners android:radius="18dp" />
                 <stroke android:width="3.0dp" android:color="@color/pickerStroke" />
             </shape>
         </item>

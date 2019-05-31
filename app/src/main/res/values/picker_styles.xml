@@ -21,10 +21,11 @@
     <item name="android:windowActionModeOverlay">true</item>
     <item name="android:windowElevation">2.0dip</item>
     <item name="android:elevation">2.0dip</item>
-    <item name="*android:windowFixedWidthMajor">250dp</item>
-    <item name="*android:windowFixedHeightMinor">315dp</item>
-    <item name="*android:windowFixedWidthMinor">250dp</item>
     <item name="*android:windowFixedHeightMajor">315dp</item>
+  </style>
+  <style name="cpv_ColorPickerViewStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">270dp</item>
   </style>
   <style name="Animation.Dialog" parent="@style/Animation">
     <item name="android:windowEnterAnimation">@anim/dialog_enter</item>

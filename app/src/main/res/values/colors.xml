@@ -31,6 +31,10 @@
     <color name="dialog_donation">#E6162ED3</color>
     <color name="donation_sb">#E6BF009F</color>
     <color name="donation_nav">#F7DB70</color>
+    <color name="oos_sb">#E6020DE4</color>
+    <color name="oos_nav">#D022FC</color>
+     <color name="aosp_sb">#E6020DE4</color>
+    <color name="aosp_nav">#1F9EFF</color>
 
     <color name="orange_background">#132ccb</color>
     <color name="colorAccentPromptBackground">#28324D</color>

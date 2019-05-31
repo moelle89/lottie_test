@@ -26,7 +26,6 @@ import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
 
-import static androidx.fragment.app.DialogFragment.STYLE_NO_FRAME;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 
@@ -256,7 +255,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     public void launchPicker(View view) {
         final int Default = ContextCompat.getColor(view.getContext(), R.color.accent1);
         ColorPickerDialog.newBuilder()
-                .setDialogTitle(R.string.Null)
+                .setDialogTitle(R.string.pickerTitle)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
                 .setColor(Default)
                 .setPresets(DD_Colors)

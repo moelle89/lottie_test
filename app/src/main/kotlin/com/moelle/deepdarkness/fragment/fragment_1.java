@@ -86,6 +86,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cardRight.setOnClickListener(this);
         cardLeft2.setOnClickListener(this);
         cardRight2.setOnClickListener(this);
+        card5.setOnClickListener(this);
 
         // ini Animations
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
@@ -143,6 +144,10 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
             }
             case R.id.cardRight: {
                 showDonation();
+                break;
+            }
+            case R.id.card5: {
+                showOOS();
                 break;
             }
         }
@@ -293,7 +298,78 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(0.8f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
+    private void showOOS() {
+        final View dialogView = View.inflate(getActivity(), R.layout.dialog_oos, null);
+        final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogOOS);
+        dialog.setContentView(dialogView);
 
+        imageView = dialog.findViewById(R.id.closeDialogImg);
+        iconTG = dialog.findViewById(R.id.iconTG);
+        iconMAIL = dialog.findViewById(R.id.iconMAIL);
+        closeBG = dialog.findViewById(R.id.closeBG);
+        tg = dialog.findViewById(R.id.tg);
+        mail = dialog.findViewById(R.id.mail);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                revealShow(dialogView, false, dialog);
+            }
+        });
+
+        dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialogInterface) {
+                revealShow(dialogView, true, null);
+            }
+        });
+        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
+                if (i == KeyEvent.KEYCODE_BACK) {
+
+                    revealShow(dialogView, false, dialog);
+                    return true;
+                }
+
+                return false;
+            }
+        });
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+
+        tg.setAlpha(0.0f);
+        tg.setScaleX(0.7f);
+        tg.setScaleY(0.7f);
+        tg.setTranslationY(200);
+        tg.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(400).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.setAlpha(0.0f);
+        iconTG.setScaleX(0.8f);
+        iconTG.setScaleY(0.8f);
+        iconTG.setTranslationY(250);
+        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(650).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        mail.setAlpha(0.0f);
+        mail.setScaleX(0.7f);
+        mail.setScaleY(0.7f);
+        mail.setTranslationY(200);
+        mail.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(550).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconMAIL.setAlpha(0.0f);
+        iconMAIL.setScaleX(0.8f);
+        iconMAIL.setScaleY(0.8f);
+        iconMAIL.setTranslationY(250);
+        iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(750).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.setAlpha(0.0f);
+        closeBG.setScaleX(0.8f);
+        closeBG.setScaleY(0.8f);
+        closeBG.setTranslationY(300);
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.2f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.setAlpha(0.0f);
+        imageView.setScaleX(0.5f);
+        imageView.setScaleY(0.5f);
+        imageView.setRotation(120);
+        imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(0.8f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+
+    }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
 
         final View view = dialogView.findViewById(R.id.dialog);
