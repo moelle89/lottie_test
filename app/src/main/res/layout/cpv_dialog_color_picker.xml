@@ -40,6 +40,7 @@
           android:layout_gravity="center_vertical"
           android:paddingLeft="4dp"
           android:paddingRight="4dp"
+          android:layout_marginBottom="4dp"
           android:src="@drawable/cpv_ic_arrow_right_black_24dp"
           tools:ignore="ContentDescription"
           />
@@ -60,7 +61,7 @@
       <LinearLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginLeft="16dp"
+          android:layout_marginLeft="36dp"
           android:descendantFocusability="beforeDescendants"
           android:focusableInTouchMode="true"
           android:gravity="right"
@@ -71,7 +72,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="6dp"
+            android:textAlignment="textStart"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             android:text="#"
+            android:textColor="@color/textColor"
             android:typeface="monospace"
             tools:ignore="HardcodedText"
             />

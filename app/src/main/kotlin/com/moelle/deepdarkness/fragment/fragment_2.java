@@ -40,16 +40,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
     private LinearLayout cat_top1, cat_top2, cat_bottom;
     // image url to download
-    private static final String accent1 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/1.png";
-    private static final String accent2 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/2.png";
-    private static final String accent3 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/3.png";
-    private static final String accent4 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/4.png";
-    private static final String accent5 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/5.png";
     private static final String accent6 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/6.png";
     private static final String accent7 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/7.png";
-    private static final String accent8 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/8.png";
-    private static final String accent9 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/9.png";
-    private static final String accent10 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/10.png";
     private static final String accent11 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/11.png";
     private static final String accent12 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/12.png";
     private static final String accent13 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/13.png";

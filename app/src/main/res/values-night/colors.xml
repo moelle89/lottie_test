@@ -2,7 +2,7 @@
 <resources>
     <color name="overlay_head">#00000000</color>
     <color name="stroke">@color/cardbackgroundlight</color>
-    <color name="pickerStroke">@color/overlay_accent_80</color>
+    <color name="pickerStroke">#667E9EFF</color>
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
@@ -37,4 +37,5 @@
 
     <color name="tab_checked">@color/colorAccent_light</color>
     <color name="tab_unchecked">#5D6A88</color>
+    <color name="selectableItemBackgroundBorderless">#1FB3D7FD</color>
 </resources>

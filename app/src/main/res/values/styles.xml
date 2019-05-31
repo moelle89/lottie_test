@@ -8,10 +8,14 @@
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
     <style name="ApptThemeDialogContact" parent="AppTheme">
+        <item name="android:colorControlHighlight">@color/selectableItemBackgroundBorderless</item>
+        <item name="android:colorControlActivated">@color/selectableItemBackgroundBorderless</item>
        <item name="android:statusBarColor">@color/dialog_contact</item>
        <item name="android:navigationBarColor">@color/dialog_contact</item>
     </style>
     <style name="ApptThemeDialogDonation" parent="AppTheme">
+        <item name="android:colorControlHighlight">@color/selectableItemBackgroundBorderless</item>
+        <item name="android:colorControlActivated">@color/selectableItemBackgroundBorderless</item>
         <item name="android:statusBarColor">@color/donation_sb</item>
         <item name="android:navigationBarColor">@color/donation_nav</item>
         <item name="android:windowLightStatusBar">false</item>
@@ -31,8 +35,8 @@
         <item name="android:windowLightStatusBar">@bool/windowLightStatusBar</item>
         <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
         <item name="android:colorControlNormal">@color/textColor</item>
-        <item name="android:colorControlActivated">@color/orange_background</item>
-        <item name="android:colorControlHighlight">@color/overlay_accent_20</item>
+        <item name="android:colorControlActivated">@color/selectableItemBackgroundBorderless</item>
+        <item name="android:colorControlHighlight">@color/selectableItemBackgroundBorderless</item>
         <item name="android:windowAnimationStyle">@style/Animation</item>
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
@@ -66,7 +70,7 @@
         <item name="mrl_rippleAlpha">0.2</item>
     </style>
     <style name="RippleStyleBlack" parent="RippleStyleWhite">
-        <item name="mrl_rippleColor">?android:colorControlHighlight</item>
+        <item name="mrl_rippleColor">@color/selectableItemBackgroundBorderless</item>
     </style>
 
     <style name="mySwitchStyle" parent="@style/Widget.AppCompat.CompoundButton.Switch">

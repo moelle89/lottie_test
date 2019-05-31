@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <style name="LightPickerDialogTheme" parent="DialogStyle">
-    <item name="android:colorAccent">#FC0000</item>
-    <item name="android:background">#ff000000</item>
-    <item name="android:backgroundTint">@color/colorAccent</item>
-    <item name="android:windowTitleStyle">@style/LightPickerDialogTitleStyle</item>
-  </style>
-
-  <style name="DarkPickerDialogTheme" parent="android:Theme.Material.Dialog">
-    <item name="android:colorAccent">#FF0000</item>
-    <item name="android:background">#ff000000</item>
-    <item name="android:backgroundTint">@color/colorAccent</item>
-    <item name="android:windowTitleStyle">@style/DarkPickerDialogTitleStyle</item>
-  </style>
-
-  <style name="LightPickerDialogTitleStyle">
-    <item name="android:maxLines">1</item>
-    <item name="android:scrollHorizontally">true</item>
-    <item name="android:textAppearance">@android:style/TextAppearance.Material.DialogWindowTitle</item>
-    <item name="android:textColor">#FF0000</item>
-  </style>
-
-  <style name="DarkPickerDialogTitleStyle">
-    <item name="android:maxLines">1</item>
-    <item name="android:scrollHorizontally">true</item>
-    <item name="android:textAppearance">@android:style/TextAppearance.Material.DialogWindowTitle</item>
-    <item name="android:textColor">#FF0000</item>
-  </style>
-
   <style name="ThemeOverlay.Material.Dialog" parent="@android:style/ThemeOverlay.Material">
+    <item name="android:windowAnimationStyle">@style/Animation</item>
+    <item name="android:textColorSecondary">@color/accent15</item>
+    <item name="android:textColorTertiary">@color/accent15</item>
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
@@ -40,8 +15,9 @@
     <item name="android:windowContentOverlay">@null</item>
     <item name="android:listDivider">@null</item>
     <item name="android:divider">@null</item>
+    <item name="android:dividerHorizontal">@null</item>
     <item name="android:backgroundDimEnabled">true</item>
-    <item name="android:backgroundDimAmount">0.45</item>
+    <item name="android:backgroundDimAmount">0.65</item>
     <item name="android:windowSoftInputMode">adjustPan</item>
     <item name="android:colorBackgroundCacheHint">@null</item>
     <item name="android:windowActionModeOverlay">true</item>

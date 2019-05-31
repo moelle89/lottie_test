@@ -6,7 +6,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
@@ -217,8 +216,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
-        imageView.setTranslationY(-100);
-        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.setRotation(120);
+        imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(0.8f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
 
@@ -290,8 +289,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
-        imageView.setTranslationY(-100);
-        imageView.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.setRotation(120);
+        imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(0.8f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
 
     }
 
@@ -332,7 +331,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
             tg.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             iconTG.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(130).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             closeBG.animate().translationY(300).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(0).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
-            imageView.animate().translationY(-100).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            imageView.animate().rotation(120).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             anim.setDuration(750);
             anim.setStartDelay(100);
             anim.start();
