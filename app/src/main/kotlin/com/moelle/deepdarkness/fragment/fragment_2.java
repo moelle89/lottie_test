@@ -25,6 +25,8 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.DirectoryHelper;
 import com.moelle.deepdarkness.DownloadService;
 import com.moelle.deepdarkness.R;
+
+import static androidx.fragment.app.DialogFragment.STYLE_NO_FRAME;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 

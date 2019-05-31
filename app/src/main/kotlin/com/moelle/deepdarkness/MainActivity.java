@@ -332,6 +332,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 .setAllowCustom(true)
                 .setShowAlphaSlider(false)
                 .show(this);
+        overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
     }
 
     @Override

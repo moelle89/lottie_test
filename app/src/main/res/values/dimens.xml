@@ -34,4 +34,7 @@
 
     <dimen name="radius_corner">@dimen/cardCornerRadius</dimen>
     <dimen name="layoutElevation">4dp</dimen>
+
+    <dimen name="cpv_dialog_preview_height">64dp</dimen>
+    <dimen name="cpv_dialog_preview_width">92dp</dimen>
 </resources>

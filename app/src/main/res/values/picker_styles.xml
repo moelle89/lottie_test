@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <style name="ThemeOverlay.Material.Dialog" parent="@android:style/ThemeOverlay.Material">
-    <item name="android:windowAnimationStyle">@style/Animation</item>
-    <item name="android:textColorSecondary">@color/accent15</item>
-    <item name="android:textColorTertiary">@color/accent15</item>
+    <item name="android:windowAnimationStyle">@style/Animation.Dialog</item>
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
@@ -23,10 +21,13 @@
     <item name="android:windowActionModeOverlay">true</item>
     <item name="android:windowElevation">2.0dip</item>
     <item name="android:elevation">2.0dip</item>
-    <item name="*android:windowFixedWidthMajor">@null</item>
-    <item name="*android:windowFixedHeightMinor">@null</item>
-    <item name="*android:windowFixedWidthMinor">@null</item>
-    <item name="*android:windowFixedHeightMajor">@null</item>
+    <item name="*android:windowFixedWidthMajor">250dp</item>
+    <item name="*android:windowFixedHeightMinor">315dp</item>
+    <item name="*android:windowFixedWidthMinor">250dp</item>
+    <item name="*android:windowFixedHeightMajor">315dp</item>
   </style>
-
+  <style name="Animation.Dialog" parent="@style/Animation">
+    <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+    <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+  </style>
 </resources>
