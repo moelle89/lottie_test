@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     >
 
   <LinearLayout
@@ -16,15 +16,16 @@
     <com.jaredrummler.android.colorpicker.NestedGridView
         android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent"
         android:clickable="false"
         android:columnWidth="@dimen/cpv_column_width"
-        android:horizontalSpacing="4dp"
+        android:horizontalSpacing="3dp"
         android:listSelector="@android:color/transparent"
         android:numColumns="auto_fit"
         android:stretchMode="spacingWidthUniform"
-        android:verticalSpacing="8dp"
+        android:verticalSpacing="6dp"
+        style="@style/cpv_ColorPickerViewStyle"
         />
 
     <View
@@ -48,8 +49,8 @@
           android:id="@+id/shades_layout"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginLeft="5dp"
-          android:layout_marginRight="5dp"
+          android:layout_marginLeft="6dp"
+          android:layout_marginRight="6dp"
           android:orientation="horizontal"
           >
 

@@ -1,5 +1,6 @@
 package com.moelle.deepdarkness.fragment;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
@@ -182,7 +183,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.accent1: {
                 //getActivity().startService(DownloadService.getDownloadService(getContext(), accent1, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                launchPicker(getView());
+                launchPicker(v);
                 break;
             }
             case R.id.accent4: {

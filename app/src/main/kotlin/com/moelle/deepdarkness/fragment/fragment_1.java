@@ -21,6 +21,7 @@ import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -290,7 +291,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.2f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.25f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
@@ -346,8 +347,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         iconTG.setAlpha(0.0f);
         iconTG.setScaleX(0.8f);
         iconTG.setScaleY(0.8f);
+        iconTG.setRotation(90);
         iconTG.setTranslationY(250);
-        iconTG.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(650).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        iconTG.animate().rotation(-45).translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(650).setDuration(650).setInterpolator(new DecelerateInterpolator()).start();
         mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
@@ -362,7 +364,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.2f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.7f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);

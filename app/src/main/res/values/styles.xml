@@ -48,9 +48,9 @@
     <style name="ApptThemeWall" parent="AppTheme">
         <item name="android:statusBarColor">@color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
+    <item name="android:navigationBarColor">@color/background</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="dialogTheme">@style/ThemeOverlay.Material.Dialog</item>
         <item name="alertDialogTheme">@style/ThemeOverlay.Material.Dialog</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

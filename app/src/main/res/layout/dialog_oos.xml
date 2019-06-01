@@ -13,24 +13,26 @@
         android:layout_width="38dp"
         android:layout_height="38dp"
         android:layout_margin="56dp"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/ic_close_black_24dp"
         android:tint="@color/md_white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
         android:id="@+id/closeBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:alpha="0.8"
+        android:src="@drawable/move"
+        android:tint="@color/oos_sb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="0dp"
-        android:src="@drawable/ic_palette_white_24dp"
-        android:alpha="0.4"
-        android:tint="@color/oos_sb"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -97,14 +99,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="25dp"
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="0dp"
                         android:text="OXYGEN\nOOS"
                         android:textAlignment="textStart"
                         android:textColor="#D9FFFFFF"
-                        android:textSize="36sp" />
+                        android:textSize="38sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -132,13 +134,12 @@
 
                 <ImageView
                     android:id="@+id/imgMail"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_gravity="top|end"
-                    android:layout_marginTop="-35dp"
-                    android:alpha="0.08"
+                    android:layout_marginTop="-30dp"
+                    android:alpha="0.1"
                     android:src="@drawable/ic_palette_white_24dp"
-                    android:tint="#D9000000"
                     android:transitionName="feature_img1" />
 
                 <LinearLayout
@@ -153,10 +154,11 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
-                        android:text="ONE PLUS"
+                        android:fontFamily="@font/cocogoose_semilight"
+                        android:text="ONE"
                         android:textAlignment="textStart"
                         android:textColor="#D9FFFFFF"
-                        android:textSize="20sp" />
+                        android:textSize="22sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -165,27 +167,30 @@
 
     <ImageView
         android:id="@+id/iconTG"
-        android:alpha="0.0"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="130dp"
-        android:src="@drawable/nav_1"
-        android:tint="@color/transparent"
+        android:alpha="1.0"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="135dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:rotation="45"
+        android:translationX="200dp"
+        android:tint="@color/accent15"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
 
     <ImageView
         android:id="@+id/iconMAIL"
-        android:alpha="1.0"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="85dp"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="110dp"
-        android:src="@drawable/ic_palette_white_24dp"
-        android:tint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        android:layout_marginBottom="0dp"
+        android:alpha="1.0"
+        android:src="@drawable/move"
+        app:layout_constraintBottom_toBottomOf="@+id/closeBG"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-        app:layout_constraintStart_toEndOf="@+id/iconTG" />
+        app:layout_constraintStart_toEndOf="@+id/iconTG"
+        app:layout_constraintTop_toTopOf="@+id/animation_viewNull" />
 </androidx.constraintlayout.widget.ConstraintLayout>

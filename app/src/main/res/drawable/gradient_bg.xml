@@ -14,7 +14,7 @@
                       android:angle="90" />
         </shape>
     </item>
-    <item android:top="200dp">
+    <item android:top="0dp">
         <shape>
             <gradient android:startColor="@color/background" android:angle="90" />
         </shape>

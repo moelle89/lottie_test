@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This version zooms the new non-wallpaper up out of the
-     wallpaper, without zooming the wallpaper itself. -->
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:interpolator/decelerate_quad"
     android:detachWallpaper="true">
-    <scale android:fromXScale="1.0" android:toXScale="0.95"
-        android:fromYScale="1.0" android:toYScale="0.95"
+    <scale android:fromXScale="1" android:toXScale="1.25"
+        android:fromYScale="1" android:toYScale="1.25"
         android:pivotX="50%p" android:pivotY="50%p"
-        android:duration="500" />
-    <alpha android:duration="500" android:fromAlpha="1" android:toAlpha="0.0" />
-    <translate
-        android:duration="500"
-        android:fromYDelta="0%"
-        android:toYDelta="1%"
-        />
+        android:duration="550" />
+    <alpha android:duration="550" android:fromAlpha="1" android:toAlpha="0" />
 </set>
