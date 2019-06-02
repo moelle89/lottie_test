@@ -1,14 +1,21 @@
 package com.moelle.deepdarkness.fragment;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.graphics.ColorFilter;
+import android.graphics.Picture;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -23,6 +30,8 @@ import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
+import org.w3c.dom.Text;
+
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 
@@ -31,10 +40,15 @@ import static com.moelle.deepdarkness.MainActivity.DD_Colors;
  */
 public class fragment_2 extends Fragment implements View.OnClickListener {
 
-
+    private SharedPreferences preferences;
+    private int pickedColor1;
+    private int pickedColor2;
+    private final String PICKED_COLOR_KEY1 = "picker-key1";
+    private final String PICKED_COLOR_KEY2 = "picker-key2";
     public static final String TAG = fragment_2.class.getSimpleName();
 
-    private static final int DIALOG_ID = 0;
+    private static final int DIALOG_ID1 = 0;
+    private static final int DIALOG_ID2 = 1;
 
     private LinearLayout cat_top1, cat_top2, cat_bottom;
     // image url to download
@@ -59,8 +73,17 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.transparent));
         View v = inflater.inflate(R.layout.fragment_2, null);
+
+        preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
+        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
+        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.colorAccent));
+        LinearLayout anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
+        LinearLayout cat_middle = v.findViewById(R.id.cat_middle);
+        LinearLayout card4 = v.findViewById(R.id.accent4);
+        card4.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
+        card4.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
         CardView card1 = v.findViewById(R.id.accent1);
-        CardView card4 = v.findViewById(R.id.accent4);
+        card1.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
 
         CardView background1 = v.findViewById(R.id.background1);
         CardView background2 = v.findViewById(R.id.background2);
@@ -113,9 +136,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         cat_bottom.animate().alpha(1f).setDuration(1000).setStartDelay(400);
 
         card1.setOnClickListener(this);
-        card1.setAnimation(vonOben);
         card4.setOnClickListener(this);
-        card4.setAnimation(vonOben);
+        anchor_cardleft.setAnimation(vonOben);
+        cat_middle.setAnimation(vonUnten);
+
 
         background1.setAnimation(vonUnten);
         background2.setAnimation(vonUnten2);
@@ -130,26 +154,40 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.accent1: {
                 //getActivity().startService(DownloadService.getDownloadService(getContext(), accent1, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
-                launchPicker(getView());
+                launchPicker1(getView());
                 break;
             }
             case R.id.accent4: {
-                launchPicker(getView());
+                launchPicker2(getView());
                 break;
             }
         }
     }
 
-    public void launchPicker(View view) {
-        final int Default = ContextCompat.getColor(view.getContext(), R.color.accent1);
-        ColorPickerDialog Picker = ColorPickerDialog.newBuilder().create();
-        Picker.newBuilder()
+    public void launchPicker1(View view) {
+        final int Default = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(view.getContext(), R.color.accent1));
+        ColorPickerDialog.newBuilder()
                 .setDialogTitle(R.string.pickerTitle)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
                 .setColor(Default)
                 .setPresets(DD_Colors)
                 .setAllowPresets(true)
-                .setDialogId(DIALOG_ID)
+                .setDialogId(DIALOG_ID1)
+                .setShowColorShades(true)
+                .setAllowCustom(true)
+                .setShowAlphaSlider(false)
+                .show(getActivity());
+    }
+
+    public void launchPicker2(View view) {
+        final int Default2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(view.getContext(), R.color.background));
+        ColorPickerDialog.newBuilder()
+                .setDialogTitle(R.string.pickerTitle2)
+                .setDialogType(ColorPickerDialog.TYPE_PRESETS)
+                .setColor(Default2)
+                .setPresets(DD_Colors)
+                .setAllowPresets(true)
+                .setDialogId(DIALOG_ID2)
                 .setShowColorShades(true)
                 .setAllowCustom(true)
                 .setShowAlphaSlider(false)

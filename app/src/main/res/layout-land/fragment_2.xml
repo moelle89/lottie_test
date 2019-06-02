@@ -80,7 +80,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="IMAGE\nCREATOR"
+                        android:text="Additional\nFiles"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                         android:textColor="@color/textColor"
                         android:textSize="24sp"
@@ -101,9 +101,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/sequel_sans_medium"
-                        android:text="For Gboard Custom Themes"
+                        android:text="Gboard Background Images"
                         android:textColor="@color/secondary_text_light"
-                        android:textSize="15sp" />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -118,7 +118,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent1"
                         android:layout_width="0dp"
-                        android:layout_height="125dip"
+                        android:layout_height="110dip"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
@@ -152,7 +152,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
-                        android:layout_height="125dip"
+                        android:layout_height="110dip"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
@@ -197,7 +197,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
-                        android:layout_height="125dip"
+                        android:layout_height="110dip"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
@@ -233,17 +233,17 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/accent11"
                         android:layout_width="0dp"
-                        android:layout_height="125dip"
+                        android:layout_height="110dip"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/transparent"
-                        android:alpha="1.0"
+                        android:foreground="@drawable/card_stroke"
+                        app:cardBackgroundColor="@color/tab_unchecked"
+                        android:alpha="0.08"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
                             android:id="@+id/colorPreview"
-                            android:foreground="@drawable/card_stroke"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="bottom|start"

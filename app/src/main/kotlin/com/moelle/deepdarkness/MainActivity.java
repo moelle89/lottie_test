@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -15,8 +16,6 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -34,6 +33,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +43,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -63,8 +64,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private static final String TAG = "MainActivity";
     // Give your color picker dialog unique IDs if you have multiple dialogs.
-    private static final int DIALOG_ID = 0;
-    static int pickedColor = 0;
+    private static final int DIALOG_ID1 = 0;
+    private static final int DIALOG_ID2 = 1;
+
+    private int pickedColor1;
+    private int pickedColor2;
+    SharedPreferences preferences;
+    private final String PICKED_COLOR_KEY1 = "picker-key1";
+    private final String PICKED_COLOR_KEY2 = "picker-key2";
 
 
     public static final int[] DD_Colors = {
@@ -123,6 +130,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(this, R.color.colorAccent));
+        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(this, R.color.background));
+        fab = findViewById(R.id.fab);
+        //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
+
         //loading the default fragment
         loadFragment(new fragment_1());
 
@@ -145,8 +159,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
         });
         // end of dark/light mode switch
-
-        fab = findViewById(R.id.fab);
 
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
@@ -327,17 +339,22 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public void onColorSelected(int dialogId, @ColorInt int color) {
         Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
         switch (dialogId) {
-            case DIALOG_ID:
+            case DIALOG_ID1:
                 try {
-                    createColorBitmapAndSave(1366, 768, color);
-                    pickedColor = color;
-                    sharedpref.editor.putInt("pickedColor", pickedColor);
-                    sharedpref.editor.commit();
+                    //createColorBitmapAndSave(1366, 768, color);
 
+                    //fab.setBackgroundTintList(ColorStateList.valueOf(color));
+                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
+                    CardView accent1 = previewCardview.findViewById(R.id.accent1);
+                    accent1.setBackgroundTintList(ColorStateList.valueOf(color));
+                    LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
+                    accent4.setBackgroundTintList(ColorStateList.valueOf(color));
+                    pickedColor1 = color;
+                    preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
                     Toast toast = new Toast(this);
                     View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     CardView card = view.findViewById(R.id.card_toast);
-                    card.setCardBackgroundColor(pickedColor);
+                    card.setCardBackgroundColor(pickedColor1);
                     TextView textView = view.findViewById(R.id.text);
                     textView.setText(R.string.success);
                     toast.setView(view);
@@ -345,10 +362,30 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     toast.setDuration(Toast.LENGTH_LONG);
                     overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
                     toast.show();
+                    Fragment fragment = new fragment_2();
+                    loadFragment(fragment);
 
 
-                } catch (IOException e) {
-                    Log.e("ANAS", "failed to save file ", e);
+                } catch (Throwable t) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+                break;
+            case DIALOG_ID2:
+                try {
+                    //fab.setBackgroundTintList(ColorStateList.valueOf(color));
+                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
+                    LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
+                    accent4.setForegroundTintList(ColorStateList.valueOf(color));
+                    pickedColor2 = color;
+                    preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
+                    Fragment fragment = new fragment_2();
+                    loadFragment(fragment);
+
+
+                } catch (Throwable t) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+                    toast.show();
                 }
                 break;
         }

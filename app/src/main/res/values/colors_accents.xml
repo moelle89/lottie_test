@@ -48,6 +48,6 @@
 	<color name="background3">#08131c</color>
 	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
 	<color name="background4">#000000</color>
-	<string name="background4">Pitchblack</string><!--Pitchblack-->
+	<string name="background4">Pitch-\nblack</string><!--Pitchblack-->
 	
 </resources>

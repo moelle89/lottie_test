@@ -22,7 +22,7 @@
     <color name="background">#FFFFFF</color><!-- #ff16171d -->
     <!-- #ff16171d -->
     <color name="inactive">#1FCBD3ED</color>
-    <color name="textColor">#3A3D50</color>
+    <color name="textColor">#2C2F3D</color>
     <color name="buttonFocused">#AE5D6A88</color>
     <color name="transparent">#00000000</color>
     <color name="fab">#1832E6</color>
@@ -42,6 +42,6 @@
     <color name="orange_background_dark">#091668</color>
 
     <color name="tab_checked">@color/colorAccent_light</color>
-    <color name="tab_unchecked">#3F4E6B</color>
+    <color name="tab_unchecked">#495A7A</color>
     <color name="selectableItemBackgroundBorderless">#2E9FB0EC</color>
 </resources>

@@ -18,7 +18,7 @@
                 android:centerX="0.40"
                 android:centerY="0.0"
                 android:endColor="@android:color/transparent"
-                android:gradientRadius="125%p"
+                android:gradientRadius="130%p"
                 android:startColor="#DDFFB3B3"
                 android:type="radial" />
         </shape>
@@ -31,7 +31,7 @@
                 android:centerX="0.2"
                 android:centerY="0.01"
                 android:endColor="@android:color/transparent"
-                android:gradientRadius="90%p"
+                android:gradientRadius="100%p"
                 android:startColor="#EBB3FBFF"
                 android:type="radial" />
         </shape>

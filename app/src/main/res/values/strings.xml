@@ -12,6 +12,7 @@
     <string name="home">home</string>
     <string name="Null"/>
     <string name="pickerTitle">Pick your preferred color</string>
+    <string name="pickerTitle2">Pick your second color</string>
     <string name="search">how-to</string>
     <string name="favorite">misc.</string>
     <string name="success">DOWNLOAD SUCCESSFUL</string>
