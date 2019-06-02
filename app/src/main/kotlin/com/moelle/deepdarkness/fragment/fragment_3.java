@@ -2,11 +2,14 @@ package com.moelle.deepdarkness.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -28,6 +31,9 @@ import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
+
+import static android.graphics.Color.TRANSPARENT;
+import static android.graphics.Color.alpha;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,13 +67,14 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_3, null);
-
+        getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.aosp_sb));
+        View v = inflater.inflate(R.layout.fragment_3,null);
         //ini animations
         Animation anim_icon = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
         anim_icon.setStartOffset(200);
@@ -84,11 +91,11 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setScaleX(0.5f);
         card.setScaleY(0.5f);
         card.setAlpha(0f);
-        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
 
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);
-        final int rect = ContextCompat.getColor(v.getContext(), R.color.colorAccent_dark);
+        final int rect = ContextCompat.getColor(v.getContext(), R.color.aosp_nav);
         final int lupe = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         SimpleColorFilter filterGear = new SimpleColorFilter(gear);

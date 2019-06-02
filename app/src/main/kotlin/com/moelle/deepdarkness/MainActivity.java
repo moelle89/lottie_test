@@ -6,6 +6,7 @@ import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -30,7 +31,6 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,13 +40,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 import com.moelle.deepdarkness.fragment.fragment_1;
 import com.moelle.deepdarkness.fragment.fragment_2;
@@ -63,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private static final String TAG = "MainActivity";
     // Give your color picker dialog unique IDs if you have multiple dialogs.
     private static final int DIALOG_ID = 0;
+    static int pickedColor = 0;
+
 
     public static final int[] DD_Colors = {
             0xFFff385f,  //  Acorn
@@ -87,11 +87,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             0xFFffc107,  //  Yellow
     };
 
-    private FloatingActionButton fab;
     float durationScale;
     SwitchCompat myswitch;
     CardView switchcard;
     PrefManager sharedpref;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //loading the default fragment
         loadFragment(new fragment_1());
 
@@ -319,22 +320,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
     }
 
-    public void launchPicker(View view) {
-        final int Default = ContextCompat.getColor(this, R.color.accent1);
-        ColorPickerDialog.newBuilder()
-                .setDialogTitle(R.string.Null)
-                .setDialogType(ColorPickerDialog.TYPE_PRESETS)
-                .setColor(Default)
-                .setPresets(DD_Colors)
-                .setAllowPresets(true)
-                .setDialogId(DIALOG_ID)
-                .setShowColorShades(true)
-                .setAllowCustom(true)
-                .setShowAlphaSlider(false)
-                .show(this);
-        overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
-    }
-
     @Override
     public void onColorSelected(int dialogId, @ColorInt int color) {
         Log.d(TAG, "onColorSelected() called with: dialogId = [" + dialogId + "], color = [" + color + "]");
@@ -342,16 +327,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case DIALOG_ID:
                 try {
                     createColorBitmapAndSave(1366, 768, color);
-
+                    pickedColor = color;
+                    sharedpref = new PrefManager(this);
+                    sharedpref.editor.putInt("pickedColor", pickedColor);
+                    sharedpref.editor.commit();
+                    TEST();
                     Toast toast = new Toast(this);
                     View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     CardView card = view.findViewById(R.id.card_toast);
-                    card.setCardBackgroundColor(color);
+                    card.setCardBackgroundColor(pickedColor);
                     TextView textView = view.findViewById(R.id.text);
                     textView.setText(R.string.success);
                     toast.setView(view);
                     toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.CENTER);
                     toast.setDuration(Toast.LENGTH_LONG);
+                    overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
                     toast.show();
 
 
@@ -366,10 +356,17 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public void onDialogDismissed(int dialogId) {
     }
 
+
     public void restartApp() {
         Intent b = new Intent(getApplicationContext(), MainActivity.class);
         finish();
         startActivity(b);
+    }
+    private void TEST() {
+        View preview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
+        CardView previewCard = preview.findViewById(R.id.accent11);
+        previewCard.setCardBackgroundColor(pickedColor);
+        previewCard.refreshDrawableState();
     }
 
     private void createColorBitmapAndSave(int width, int height, @ColorInt int color)

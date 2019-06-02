@@ -84,6 +84,7 @@ public class LottieIntro extends AppIntro {
     private void launchDashboard() {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
+        finish();
     }
 
     private void launchTutorial() {

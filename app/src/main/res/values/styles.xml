@@ -51,7 +51,7 @@
     <item name="android:navigationBarColor">@color/background</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="alertDialogTheme">@style/ThemeOverlay.Material.Dialog</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Dialog</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="fontFamily">@font/sequel_sans_heavy</item>

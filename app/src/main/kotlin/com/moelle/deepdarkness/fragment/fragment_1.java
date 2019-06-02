@@ -11,6 +11,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
@@ -29,6 +30,8 @@ import android.widget.LinearLayout;
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
+
+import static android.graphics.Color.TRANSPARENT;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,7 +69,9 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.transparent));
         View v = inflater.inflate(R.layout.fragment_1, null);
+
         /*Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
         videoView = v.findViewById(R.id.dashboard_head);
         videoView.start(DASHBOARD_HEAD);*/

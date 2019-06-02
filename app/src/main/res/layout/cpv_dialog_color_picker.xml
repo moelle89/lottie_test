@@ -18,7 +18,7 @@
         android:padding="0dp"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="235dp"
+        android:layout_height="wrap_content"
         android:foreground="@drawable/item_fg"
         />
 
@@ -42,8 +42,8 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center_vertical"
-          android:paddingLeft="4dp"
-          android:paddingRight="4dp"
+          android:paddingLeft="3dp"
+          android:paddingRight="3dp"
           android:layout_marginBottom="4dp"
           android:src="@drawable/cpv_ic_arrow_right_black_24dp"
           tools:ignore="ContentDescription"
@@ -66,12 +66,14 @@
       <LinearLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginLeft="36dp"
           android:descendantFocusability="beforeDescendants"
           android:focusableInTouchMode="true"
           android:layout_gravity="center_vertical"
-          android:gravity="center_vertical|right"
+          android:gravity="center_vertical"
           android:orientation="horizontal"
+          android:foreground="@drawable/item_fg"
+          android:background="#2171A1F0"
+          android:padding="8dp"
           tools:ignore="RtlHardcoded"
           >
 
@@ -79,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="3dp"
-            android:layout_marginLeft="6dp"
+            android:layout_marginLeft="10dp"
             android:textAlignment="textStart"
             android:scaleX="1.5"
             android:scaleY="1.5"
@@ -91,7 +93,8 @@
 
         <EditText
             android:id="@+id/cpv_hex"
-            android:layout_width="110dp"
+            android:layout_width="80dp"
+            android:layout_marginEnd="5dp"
             android:layout_height="wrap_content"
             android:digits="0123456789ABCDEFabcdef"
             android:focusable="true"

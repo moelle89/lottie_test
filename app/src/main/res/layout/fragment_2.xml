@@ -111,8 +111,8 @@
                     android:id="@+id/anchor_cardleft"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
@@ -182,9 +182,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="2dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="2dp"
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
@@ -224,12 +224,13 @@
                         android:layout_width="0dp"
                         android:layout_height="110dip"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#2A5D6A88"
+                        app:cardBackgroundColor="#FFFFFF"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
+                            android:id="@+id/colorPreview"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="bottom|start"
@@ -242,331 +243,6 @@
                                 android:layout_marginStart="4dp"
                                 android:layout_marginTop="2dp"
                                 android:text="@string/Null"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="horizontal"
-                    tools:visibility="invisible">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent13"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:cardBackgroundColor="@color/accent13"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:orientation="vertical"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent13"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent14"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent14"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent14"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent15"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent15"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent15"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent16"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent16"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent16"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent17"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent17"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent17"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="horizontal"
-                    tools:visibility="invisible">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent19"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:cardBackgroundColor="@color/accent19"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent19"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent20"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent20"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent20"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent12"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent12"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent12"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent6"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent6"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent6"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/accent18"
-                        android:layout_width="0dp"
-                        android:layout_height="83dip"
-                        android:layout_weight="1"
-                        app:cardBackgroundColor="@color/accent18"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="?cardelevation_tiny"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/accent_name_bg"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/gradient_card"
-                            android:padding="@dimen/spacing_small">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/accent18"
                                 android:textAlignment="textStart"
                                 android:textColor="?textcolor"
                                 android:textSize="@dimen/accent_name" />
@@ -598,9 +274,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="2dp"
                     android:layout_marginTop="0dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="2dp"
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
