@@ -74,16 +74,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/spacing_large"
                     android:layout_marginTop="@dimen/spacing_middle"
-                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:layout_marginBottom="@dimen/spacing_medium"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:lineHeight="30dp"
                         android:text="IMAGE\nCREATOR"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                         android:textColor="@color/textColor"
-                        android:textSize="24sp"
+                        android:textSize="26sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -93,14 +93,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/spacing_large"
                     android:layout_marginTop="0dp"
-                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_middle"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/sequel_sans_medium"
                         android:text="For Gboard Custom Themes"
                         android:textColor="@color/secondary_text_light"
                         android:textSize="15sp" />
@@ -122,7 +121,6 @@
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        android:alpha="0.9"
                         android:foreground="?attr/selectableItemBackground"
                         app:cardBackgroundColor="@color/colorAccent"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
@@ -138,13 +136,17 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_gravity="bottom"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="SOLID\nFILL"
-                                android:textColor="#B3FFFFFF"
+                                android:gravity="bottom"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="12dp"
+                                android:textAlignment="gravity"
+                                android:maxLines="2"
+                                android:text="SOLID FILL"
+                                android:textColor="@color/md_white"
+                                android:alpha="0.9"
                                 android:textSize="@dimen/gradient_name" />
                         </LinearLayout>
 
@@ -174,13 +176,18 @@
 
                         <TextView
                                 android:tag="@+id/text3"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_gravity="bottom"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="LINEAR\nGRADIENT"
-                                android:textColor="#B3FFFFFF"
+                                android:gravity="bottom"
+                                android:layout_marginStart="14dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="12dp"
+                                android:textAlignment="gravity"
+                                android:lineHeight="21dp"
+                                android:maxLines="2"
+                                android:text="LINEAR GRADIENT"
+                                android:textColor="@color/md_white"
+                                android:alpha="0.9"
                                 android:textSize="@dimen/gradient_name" />
 
                     </androidx.cardview.widget.CardView>
@@ -218,13 +225,18 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_gravity="bottom"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="RADIAL\nGRADIENT"
-                                android:textColor="#B3FFFFFF"
+                                android:gravity="bottom"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="12dp"
+                                android:textAlignment="gravity"
+                                android:maxLines="2"
+                                android:lineHeight="21dp"
+                                android:text="RADIAL GRADIENT"
+                                android:textColor="@color/md_white"
+                                android:alpha="0.9"
                                 android:textSize="@dimen/gradient_name" />
                         </LinearLayout>
 
@@ -268,7 +280,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/spacing_large"
-                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_middle"
                     android:layout_marginBottom="@dimen/spacing_middle"
                     android:orientation="horizontal">
 
@@ -276,7 +288,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="@font/sequel_sans_medium"
+                        android:fontFamily="@font/cocogoose_semilight"
                         android:text="Background Colors"
                         android:textColor="@color/secondary_text_light"
                         android:textSize="16sp" />
@@ -294,12 +306,12 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/background1"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="95dp"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
                         app:cardBackgroundColor="@color/background1"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
@@ -314,8 +326,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginBottom="3dp"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:maxLines="2"
                                 android:text="@string/background1"
                                 android:textAlignment="textStart"
                                 android:textColor="@color/lighter_gray"
@@ -327,10 +341,10 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/background2"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="95dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/background2"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
@@ -344,8 +358,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginBottom="3dp"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:maxLines="2"
                                 android:text="@string/background2"
                                 android:textAlignment="textStart"
                                 android:textColor="@color/lighter_gray"
@@ -357,10 +373,10 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/background3"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="95dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/background3"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
@@ -374,8 +390,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginBottom="3dp"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:maxLines="2"
                                 android:text="@string/background3"
                                 android:textAlignment="textStart"
                                 android:textColor="@color/lighter_gray"
@@ -387,10 +405,10 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/background4"
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="95dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/background4"
-                        app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true">
 
@@ -409,9 +427,11 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="8dp"
-                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginBottom="4dp"
                                     android:text="@string/background4"
+                                    android:maxLines="2"
                                     android:textAlignment="textStart"
                                     android:textColor="@color/lighter_gray"
                                     android:textSize="@dimen/background_name" />
