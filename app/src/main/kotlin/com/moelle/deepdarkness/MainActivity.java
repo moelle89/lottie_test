@@ -15,8 +15,11 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
@@ -93,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     PrefManager sharedpref;
     FloatingActionButton fab;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
@@ -119,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //loading the default fragment
         loadFragment(new fragment_1());
 
@@ -328,10 +331,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 try {
                     createColorBitmapAndSave(1366, 768, color);
                     pickedColor = color;
-                    sharedpref = new PrefManager(this);
                     sharedpref.editor.putInt("pickedColor", pickedColor);
                     sharedpref.editor.commit();
-                    TEST();
+
                     Toast toast = new Toast(this);
                     View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     CardView card = view.findViewById(R.id.card_toast);
@@ -361,12 +363,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Intent b = new Intent(getApplicationContext(), MainActivity.class);
         finish();
         startActivity(b);
-    }
-    private void TEST() {
-        View preview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
-        CardView previewCard = preview.findViewById(R.id.accent11);
-        previewCard.setCardBackgroundColor(pickedColor);
-        previewCard.refreshDrawableState();
     }
 
     private void createColorBitmapAndSave(int width, int height, @ColorInt int color)
