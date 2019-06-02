@@ -11,6 +11,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
@@ -47,6 +48,10 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.SimpleColorFilter;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieValueCallback;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
@@ -111,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         // Get duration scale from the global settings.
         durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
         // If global duration scale is not 1 (default), try to override it
-        if (durationScale != 1) {
+        if ((durationScale != 1) && (durationScale == 0) || (durationScale != 2)) {
             try {
                 ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
                 durationScale = 0.7f;
@@ -349,6 +354,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     accent1.setBackgroundTintList(ColorStateList.valueOf(color));
                     LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
                     accent4.setBackgroundTintList(ColorStateList.valueOf(color));
+                    LottieAnimationView radial_gradient = previewCardview.findViewById(R.id.radial_gradient);
+                    SimpleColorFilter tintfilter = new SimpleColorFilter(color);
+                    KeyPath keyfg = new KeyPath("**");
+                    LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(tintfilter);
+                    radial_gradient.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+                    radial_gradient.playAnimation();
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
                     Toast toast = new Toast(this);

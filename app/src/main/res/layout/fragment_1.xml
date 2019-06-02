@@ -103,6 +103,7 @@
                     android:layout_weight="1"
                     android:lineHeight="21dp"
                     android:text="DEEP\nDARKNESS //"
+                    android:fontFamily="@font/cocogoose_regular"
                     android:textColor="@color/textColor"
                     android:textSize="19sp" />
                 <TextView
@@ -112,6 +113,7 @@
                     android:layout_weight="1"
                     android:lineHeight="21dp"
                     android:text="welcome to\nthe dark side."
+                    android:fontFamily="@font/sequel_sans_heavy"
                     android:textColor="@color/secondary_text_light"
                     android:textSize="19sp" />
 
@@ -163,6 +165,7 @@
                             android:layout_marginBottom="2dp"
                             android:text="CONTACT ME"
                             android:textAlignment="textStart"
+                            android:fontFamily="@font/sequel_sans_heavy"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                             android:textColor="?textcolorsecondary"
                             android:transitionName="feature_text1" />
@@ -205,9 +208,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
-                                android:text="MAKE A DONATION"
+                                android:text="SHOW SOME LOVE"
+                                android:fontFamily="@font/sequel_sans_heavy"
                                 android:textAlignment="textStart"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
@@ -262,8 +265,8 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
                                 android:text="RESTART INTRO"
+                                android:fontFamily="@font/sequel_sans_heavy"
                                 android:textAlignment="textStart"
-                                android:fontFamily="@font/cocogoose_regular"
                                 app:fontFamily="@font/cocogoose_regular"
                                 android:textColor="?textcolorsecondary" />
 
@@ -309,6 +312,7 @@
                                 android:layout_marginBottom="2dp"
                                 android:text="WALLPAPERS"
                                 android:textAlignment="textStart"
+                                android:fontFamily="@font/sequel_sans_heavy"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="?textcolorsecondary" />
 
@@ -361,7 +365,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="113dip"
+                            android:layout_height="105dip"
                             android:background="@drawable/gradient_bg1"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
@@ -378,6 +382,7 @@
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
                                     android:text="AOSP"
+                                    android:fontFamily="@font/cocogoose_regular"
                                     android:textAlignment="textStart"
                                     android:textColor="#B3ffffff"
                                     android:textSize="21sp" />
@@ -401,7 +406,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="113dip"
+                            android:layout_height="105dip"
                             android:background="@drawable/gradient_bg2"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
@@ -417,10 +422,11 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
-                                    android:text="OXYGEN OS"
+                                    android:fontFamily="@font/cocogoose_regular"
+                                    android:text="OXYGEN\nOS"
                                     android:textAlignment="textStart"
                                     android:textColor="#B3ffffff"
-                                    android:textSize="22sp" />
+                                    android:textSize="20sp" />
                             </LinearLayout>
                         </LinearLayout>
 
@@ -441,7 +447,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="113dip"
+                            android:layout_height="105dip"
                             android:background="@drawable/gradient_bg3"
                             android:gravity="bottom|start"
                             android:orientation="vertical">
@@ -457,10 +463,11 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginBottom="2dp"
+                                    android:fontFamily="@font/cocogoose_regular"
                                     android:text="SAMSUNG"
                                     android:textAlignment="textStart"
                                     android:textColor="#B3ffffff"
-                                    android:textSize="18sp" />
+                                    android:textSize="19sp" />
                             </LinearLayout>
                         </LinearLayout>
                 </androidx.cardview.widget.CardView>

@@ -78,8 +78,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.colorAccent));
         LinearLayout anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
-        LinearLayout cat_middle = v.findViewById(R.id.cat_middle);
         LinearLayout card4 = v.findViewById(R.id.accent4);
+        LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
+        radial_gradient.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
+        SimpleColorFilter tintfilter = new SimpleColorFilter(pickedColor1);
+        KeyPath keyfg = new KeyPath("**");
+        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(tintfilter);
+        radial_gradient.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+        radial_gradient.playAnimation();
         card4.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         card4.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
         CardView card1 = v.findViewById(R.id.accent1);
@@ -103,9 +109,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
-        KeyPath keyfg = new KeyPath("fg", "**");
-        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterfg);
-        keyboard.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+        KeyPath keyboardKey = new KeyPath("fg", "**");
+        LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
+        keyboard.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
         SimpleColorFilter filterbg = new SimpleColorFilter(bg);
         KeyPath keybg = new KeyPath("bg", "**");
         LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);

@@ -54,8 +54,6 @@
         <item name="alertDialogTheme">@style/ThemeOverlay.Dialog</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="fontFamily">@font/sequel_sans_heavy</item>
-        <item name="android:fontFamily">@font/sequel_sans_heavy</item>
         <item name="android:windowLightStatusBar">@bool/windowLightStatusBar</item>
         <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
         <item name="android:colorControlNormal">@color/textColor</item>

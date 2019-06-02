@@ -13,7 +13,7 @@
 
     <dimen name="cardCornerRadius">12dp</dimen>
     <dimen name="accent_name">9sp</dimen>
-    <dimen name="background_name">14sp</dimen>
+    <dimen name="background_name">13sp</dimen>
     <dimen name="gradient_name">18.5sp</dimen>
     <dimen name="accent_name_bg">24dp</dimen>
     <dimen name="cardCornerRadius_small">14dp</dimen>

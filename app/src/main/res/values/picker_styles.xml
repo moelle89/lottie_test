@@ -16,6 +16,7 @@
   </style>
   <style name="Button">
     <item name="android:textColor">@color/tab_unchecked</item>
+    <item name="android:fontFamily">@font/sequel_sans_heavy</item>
     <item name="android:gravity">center</item>
     <item name="android:background">@color/transparent</item>
     <item name="android:focusable">true</item>
@@ -29,6 +30,7 @@
     <item name="android:scrollHorizontally">true</item>
   </style>
   <style name="TextAppearance.DialogWindowTitle" parent="@android:style/TextAppearance.Material">
+    <item name="android:fontFamily">@font/cocogoose_regular</item>
     <item name="android:textSize">22.0sp</item>
     <item name="android:textColor">@color/textColor</item>
   </style>

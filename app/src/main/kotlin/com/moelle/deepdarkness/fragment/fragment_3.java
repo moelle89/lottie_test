@@ -73,7 +73,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.aosp_sb));
+        getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.overlay_head));
         View v = inflater.inflate(R.layout.fragment_3,null);
         //ini animations
         Animation anim_icon = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
@@ -95,7 +95,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
 
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);
-        final int rect = ContextCompat.getColor(v.getContext(), R.color.aosp_nav);
+        final int rect = ContextCompat.getColor(v.getContext(), R.color.colorAccent_dark);
         final int lupe = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         SimpleColorFilter filterGear = new SimpleColorFilter(gear);
