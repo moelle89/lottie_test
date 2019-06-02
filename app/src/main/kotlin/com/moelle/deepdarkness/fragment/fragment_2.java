@@ -85,6 +85,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         CardView card1 = v.findViewById(R.id.accent1);
         card1.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
 
+        CardView accent7 = v.findViewById(R.id.accent7);
+        CardView accent11 = v.findViewById(R.id.accent11);
         CardView background1 = v.findViewById(R.id.background1);
         CardView background2 = v.findViewById(R.id.background2);
         CardView background3 = v.findViewById(R.id.background3);
@@ -138,7 +140,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         card1.setOnClickListener(this);
         card4.setOnClickListener(this);
         anchor_cardleft.setAnimation(vonOben);
-        cat_middle.setAnimation(vonUnten);
+        accent7.setAnimation(vonUnten);
+        accent11.setAnimation(vonUnten2);
 
 
         background1.setAnimation(vonUnten);

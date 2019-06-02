@@ -203,6 +203,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/accent7"
                         android:layout_width="0dp"
                         android:layout_height="125dip"
                         android:layout_weight="1"
@@ -216,7 +217,6 @@
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
-                            android:id="@+id/accent7"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="bottom|start"
@@ -247,10 +247,10 @@
                         android:layout_width="0dp"
                         android:layout_height="125dip"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/transparent"
+                        app:cardBackgroundColor="@color/background"
                         android:alpha="1.0"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                        app:cardElevation="0dp"
+                        app:cardElevation="?cardelevation_small"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
@@ -258,18 +258,20 @@
                             android:foreground="@drawable/card_stroke"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_gravity="bottom|start"
-                            android:padding="@dimen/spacing_small">
+                            android:gravity="end|start"
+                            android:orientation="vertical"
+                            android:padding="0dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/Null"
-                                android:textAlignment="textStart"
-                                android:textColor="?textcolor"
-                                android:textSize="@dimen/accent_name" />
+                            <ImageView
+                                android:id="@+id/dl"
+                                android:layout_width="135dp"
+                                android:layout_height="135dp"
+                                android:layout_gravity="end"
+                                android:alpha="0.12"
+                                android:src="@drawable/ic_4"
+                                android:tint="@color/tab_unchecked"
+                                android:transitionName="feature_img1" />
+
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -324,9 +326,9 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="6dp"
+                                android:layout_marginStart="7dp"
                                 android:layout_marginEnd="4dp"
                                 android:layout_marginBottom="4dp"
                                 android:maxLines="2"
@@ -356,9 +358,9 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="6dp"
+                                android:layout_marginStart="7dp"
                                 android:layout_marginEnd="4dp"
                                 android:layout_marginBottom="4dp"
                                 android:maxLines="2"
@@ -388,9 +390,9 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="6dp"
+                                android:layout_marginStart="7dp"
                                 android:layout_marginEnd="4dp"
                                 android:layout_marginBottom="4dp"
                                 android:maxLines="2"
@@ -425,9 +427,9 @@
                                 android:padding="@dimen/spacing_small">
 
                                 <TextView
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginStart="6dp"
+                                    android:layout_marginStart="7dp"
                                     android:layout_marginEnd="4dp"
                                     android:layout_marginBottom="4dp"
                                     android:text="@string/background4"
