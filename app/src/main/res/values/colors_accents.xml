@@ -42,12 +42,12 @@
 	<string name="accent20">Yellow</string><!--Yellow-->	
 	
 	<color name="background1">#16171d</color>
-	<string name="background1">Dark\nMaterial</string><!--Dark Material-->
+	<string name="background1">Dark Material</string><!--Dark Material-->
 	<color name="background2">#191522</color>
 	<string name="background2">Acorn</string><!--Acorn-->
 	<color name="background3">#08131c</color>
-	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
+	<string name="background3">Deep Darkness</string><!--Deep Darkness-->
 	<color name="background4">#000000</color>
-	<string name="background4">Pitch\nBlack</string><!--Pitchblack-->
+	<string name="background4">Pitch Black</string><!--Pitchblack-->
 	
 </resources>
