@@ -16,7 +16,7 @@
     <dimen name="background_name">16sp</dimen>
     <dimen name="gradient_name">18.5sp</dimen>
     <dimen name="accent_name_bg">24dp</dimen>
-    <dimen name="cardCornerRadius_small">14dp</dimen>
+    <dimen name="cardCornerRadius_small">15dp</dimen>
 
     <dimen name="dashboard_list_title_size">22sp</dimen>
 

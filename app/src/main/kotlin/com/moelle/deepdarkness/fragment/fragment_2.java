@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
-import org.w3c.dom.Text;
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
@@ -157,7 +158,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         return v;
     }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

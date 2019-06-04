@@ -5,6 +5,6 @@
     <scale android:fromXScale="1" android:toXScale="1.15"
         android:fromYScale="1" android:toYScale="1.15"
         android:pivotX="50%p" android:pivotY="50%p"
-        android:duration="400" />
-    <alpha android:duration="400" android:fromAlpha="1" android:toAlpha="0" />
+        android:duration="430" />
+    <alpha android:duration="430" android:fromAlpha="1" android:toAlpha="0" />
 </set>

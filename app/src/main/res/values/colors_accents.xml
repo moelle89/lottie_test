@@ -46,7 +46,7 @@
 	<color name="background2">#191522</color>
 	<string name="background2">Acorn</string><!--Acorn-->
 	<color name="background3">#08131c</color>
-	<string name="background3">Deep Darkness</string><!--Deep Darkness-->
+	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
 	<color name="background4">#000000</color>
 	<string name="background4">Pitch Black</string><!--Pitchblack-->
 	
