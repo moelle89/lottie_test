@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.ColorFilter;
-import android.graphics.Picture;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
@@ -13,9 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -30,8 +26,6 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
-
-import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 

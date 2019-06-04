@@ -20,6 +20,10 @@
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="ifContentScrolls">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,11 +168,15 @@
                                 android:layout_gravity="start|top" />
 
                             <TextView
+                                android:id="@+id/card2Text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
+                                android:layout_marginEnd="6dp"
                                 android:layout_marginBottom="2dp"
-                                android:text="SHOW SOME LOVE"
+                                android:autoSizeTextType="uniform"
+                                android:text="MAKE A DONATION"
+                                android:maxLines="1"
                                 android:fontFamily="@font/sequel_sans_heavy"
                                 android:textAlignment="textStart"
                                 android:textColor="?textcolorsecondary" />
@@ -342,15 +350,18 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginBottom="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/cocogoose_regular"
                                 android:text="AOSP"
-                                android:textAlignment="textStart"
                                 android:textColor="#B3ffffff"
-                                android:textSize="21sp" />
+                                android:gravity="bottom|start"
+                                android:textAlignment="gravity"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="20sp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -388,15 +399,18 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginBottom="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/cocogoose_regular"
-                                android:text="OXYGEN\nOS"
-                                android:textAlignment="textStart"
-                                android:textColor="#B3ffffff"
-                                android:textSize="20sp" />
+                                android:text="OXYGEN OS"
+                                android:gravity="bottom|start"
+                                android:textAlignment="gravity"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="20sp"
+                                android:textColor="#B3ffffff" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -434,18 +448,23 @@
                             android:padding="@dimen/spacing_small">
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginBottom="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:maxLines="1"
+                                android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/cocogoose_regular"
                                 android:text="SAMSUNG"
-                                android:textAlignment="textStart"
                                 android:textColor="#B3ffffff"
-                                android:textSize="19sp" />
+                                android:gravity="bottom|start"
+                                android:textAlignment="gravity"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="20sp" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
