@@ -10,8 +10,9 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:alpha="1.0"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="280dp"
+        android:layout_marginTop="-20dp"
         android:scaleType="centerCrop"
         android:id="@+id/dashboard_head"
         app:lottie_rawRes="@raw/keyboard2"
@@ -19,21 +20,24 @@
         app:lottie_speed="0.75"
         android:fitsSystemWindows="true" />
 
-        <LinearLayout
-            android:id="@+id/lyt_form"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="170dp"
-            android:padding="@dimen/spacing_middle">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="ifContentScrolls">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyt_form"
+        android:layout_marginTop="@dimen/spacing_middle"
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/cat_top1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_large"
-            android:layout_marginTop="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="170dp"
             android:layout_marginBottom="@dimen/spacing_small"
             android:orientation="horizontal">
 
@@ -45,7 +49,7 @@
                 android:text="IMAGE\nCREATOR"
                 android:textAppearance="@style/TextAppearance.Cocogoose"
                 android:textColor="@color/textColor"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -53,7 +57,7 @@
             android:id="@+id/cat_top2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal">
@@ -65,7 +69,7 @@
                 android:fontFamily="@font/sequel_sans_heavy"
                 android:text="For Gboard Custom Themes"
                 android:textColor="@color/secondary_text_light"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -73,8 +77,8 @@
             android:id="@+id/anchor_cardleft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
@@ -163,9 +167,10 @@
             android:id="@+id/cat_middle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="14dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
@@ -258,7 +263,7 @@
             android:id="@+id/cat_bottom2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal">
@@ -283,9 +288,9 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="2dp"
+                    android:layout_marginStart="14dp"
                     android:layout_marginTop="0dp"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="14dp"
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
@@ -329,13 +334,13 @@
                                 android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="12dp"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="17sp"
+                                android:autoSizeMaxTextSize="18sp"
                                 android:maxLines="2"
                                 android:text="@string/background1"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
                                 android:textColor="#CCFFFFFF"
-                                android:textSize="@dimen/background_name" />
+                                android:textAppearance="@style/TextAppearance.KhulaBold" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -378,15 +383,14 @@
                                 android:layout_marginStart="16dp"
                                 android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="12dp"
-                                android:fontFamily="@font/sequel_sans_heavy"
                                 android:maxLines="2"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="17sp"
+                                android:autoSizeMaxTextSize="18sp"
                                 android:text="@string/background2"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
                                 android:textColor="#CCFFFFFF"
-                                android:textSize="@dimen/background_name" />
+                                android:textAppearance="@style/TextAppearance.KhulaBold" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -432,11 +436,11 @@
                                 android:maxLines="2"
                                 android:text="@string/background3"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="17sp"
+                                android:autoSizeMaxTextSize="18sp"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
                                 android:textColor="#CCFFFFFF"
-                                android:textSize="@dimen/background_name" />
+                                android:textAppearance="@style/TextAppearance.KhulaBold" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -487,19 +491,19 @@
                                     android:layout_marginStart="16dp"
                                     android:layout_marginEnd="16dp"
                                     android:layout_marginBottom="12dp"
-                                    android:fontFamily="@font/sequel_sans_heavy"
                                     android:maxLines="2"
                                     android:text="@string/background4"
                                     android:autoSizeTextType="uniform"
-                                    android:autoSizeMaxTextSize="17sp"
+                                    android:autoSizeMaxTextSize="18sp"
                                     android:gravity="bottom"
                                     android:textAlignment="gravity"
                                     android:textColor="#CCFFFFFF"
-                                    android:textSize="@dimen/background_name" />
+                                    android:textAppearance="@style/TextAppearance.KhulaBold" />
                             </LinearLayout></LinearLayout>
 
                     </androidx.cardview.widget.CardView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.moelle.deepdarkness.HorizontalOverScrollView>
         </LinearLayout>
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

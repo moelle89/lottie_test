@@ -86,6 +86,10 @@
         <item name="android:backgroundTint">@android:color/black</item>
     </style>
     <style name="TextAppearance.Khula" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Khula-Bold.ttf</item>
+        <item name="android:lineSpacingMultiplier">0.6</item>
+    </style>
+    <style name="TextAppearance.KhulaBold" parent="android:TextAppearance">
         <item name="fontPath">fonts/Khula-ExtraBold.ttf</item>
         <item name="android:lineSpacingMultiplier">0.6</item>
     </style>
