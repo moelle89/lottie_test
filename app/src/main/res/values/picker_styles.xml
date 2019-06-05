@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <style name="ThemeOverlay.Dialog" parent="@*android:style/Theme.Holo.Dialog.BaseAlert">
+  <style name="ThemeOverlay.Dialog" parent="@*android:style/Theme.Material.Dialog.BaseAlert">
+    <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+    <item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
     <item name="android:buttonStyle">@style/Button</item>
+    <item name="android:borderlessButtonStyle">@style/Button</item>
+    <item name="android:buttonBarStyle">@style/Button</item>
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
@@ -15,11 +19,13 @@
     <item name="android:windowElevation">@dimen/cardelevation_big</item>
   </style>
   <style name="Button">
-    <item name="android:textColor">@color/tab_unchecked</item>
-    <item name="android:fontFamily">@font/sequel_sans_heavy</item>
+    <item name="android:textColor">@color/btn_colored_text</item>
     <item name="android:gravity">center</item>
-    <item name="android:background">@color/transparent</item>
-    <item name="android:focusable">true</item>
+    <item name="android:background">@null</item>
+    <item name="android:windowBackground">@null</item>
+    <item name="android:foreground">@color/transparent</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:focusable">false</item>
     <item name="android:clickable">true</item>
     <item name="android:minWidth">88.0dip</item>
     <item name="android:minHeight">48.0dip</item>
@@ -31,7 +37,7 @@
   </style>
   <style name="TextAppearance.DialogWindowTitle" parent="@android:style/TextAppearance.Material">
     <item name="android:fontFamily">@font/cocogoose_regular</item>
-    <item name="android:textSize">22.0sp</item>
+    <item name="android:textSize">22.0dp</item>
     <item name="android:textColor">@color/textColor</item>
   </style>
   <style name="cpv_ColorPickerViewStyle">

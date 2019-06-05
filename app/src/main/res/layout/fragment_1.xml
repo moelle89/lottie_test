@@ -65,21 +65,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:lineHeight="21dp"
-                    android:text="DEEP\nDARKNESS //"
-                    android:fontFamily="@font/cocogoose_regular"
+                    android:text="DEEP\nDARKNESS"
+                    android:textAppearance="@style/TextAppearance.Cocogoose"
+                    android:lineSpacingExtra="4dp"
                     android:textColor="@color/textColor"
-                    android:textSize="19sp" />
+                    android:textSize="26dp" />
                 <TextView
                     android:layout_marginStart="25dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:lineHeight="21dp"
                     android:text="welcome to\nthe dark side."
-                    android:fontFamily="@font/sequel_sans_heavy"
                     android:textColor="@color/secondary_text_light"
-                    android:textSize="19sp" />
+                    android:textSize="24dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -123,14 +121,14 @@
 
                         <TextView
                             android:id="@+id/text1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginBottom="2dp"
+                            android:autoSizeTextType="uniform"
                             android:text="CONTACT ME"
                             android:textAlignment="textStart"
-                            android:fontFamily="@font/sequel_sans_heavy"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textAppearance="@style/TextAppearance.Cocogoose"
                             android:textColor="?textcolorsecondary"
                             android:transitionName="feature_text1" />
 
@@ -169,16 +167,15 @@
 
                             <TextView
                                 android:id="@+id/card2Text"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="6dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
                                 android:layout_marginBottom="2dp"
                                 android:autoSizeTextType="uniform"
                                 android:text="MAKE A DONATION"
                                 android:maxLines="1"
-                                android:fontFamily="@font/sequel_sans_heavy"
-                                android:textAlignment="textStart"
+                                android:textAppearance="@style/TextAppearance.Cocogoose"
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
@@ -218,9 +215,9 @@
                                 android:id="@+id/img3"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="8dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginBottom="14dp"
+                                android:layout_marginBottom="12dp"
                                 app:lottie_colorFilter="?textcolor"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"
@@ -228,14 +225,14 @@
                                 android:layout_gravity="start|top"/>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
+                                android:autoSizeTextType="uniform"
                                 android:text="RESTART INTRO"
-                                android:fontFamily="@font/sequel_sans_heavy"
                                 android:textAlignment="textStart"
-                                app:fontFamily="@font/cocogoose_regular"
+                                android:textAppearance="@style/TextAppearance.Cocogoose"
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
@@ -274,14 +271,14 @@
                                 android:src="@drawable/ic_4" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
+                                android:autoSizeTextType="uniform"
                                 android:text="WALLPAPERS"
                                 android:textAlignment="textStart"
-                                android:fontFamily="@font/sequel_sans_heavy"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textAppearance="@style/TextAppearance.Cocogoose"
                                 android:textColor="?textcolorsecondary" />
 
                         </LinearLayout>
@@ -306,7 +303,7 @@
                     android:fontFamily="@font/sequel_sans_heavy"
                     android:text="Supported Android Systems:"
                     android:textColor="?attr/textcolorsecondary"
-                    android:textSize="15sp" />
+                    android:textSize="18dp" />
 
             </LinearLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -357,7 +354,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/cocogoose_regular"
                                 android:text="AOSP"
-                                android:textColor="#B3ffffff"
+                                android:textColor="#BFFFFFFF"
                                 android:gravity="bottom|start"
                                 android:textAlignment="gravity"
                                 android:autoSizeTextType="uniform"
@@ -410,7 +407,7 @@
                                 android:textAlignment="gravity"
                                 android:autoSizeTextType="uniform"
                                 android:autoSizeMaxTextSize="20sp"
-                                android:textColor="#B3ffffff" />
+                                android:textColor="#BFFFFFFF" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -456,7 +453,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/cocogoose_regular"
                                 android:text="SAMSUNG"
-                                android:textColor="#B3ffffff"
+                                android:textColor="#BFFFFFFF"
                                 android:gravity="bottom|start"
                                 android:textAlignment="gravity"
                                 android:autoSizeTextType="uniform"

@@ -10,7 +10,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="vertical"
-      android:padding="15dp"
+      android:paddingTop="10dp"
+      android:paddingLeft="12dp"
+      android:paddingRight="12dp"
       android:layout_marginTop="2dp"
       >
     <com.jaredrummler.android.colorpicker.NestedGridView
@@ -20,12 +22,11 @@
         android:cacheColorHint="@android:color/transparent"
         android:clickable="false"
         android:columnWidth="56dp"
-        android:horizontalSpacing="3dp"
+        android:horizontalSpacing="2dp"
         android:listSelector="@android:color/transparent"
-        android:numColumns="auto_fit"
+        android:numColumns="6"
         android:stretchMode="spacingWidthUniform"
-        android:verticalSpacing="6dp"
-        style="@style/cpv_ColorPickerViewStyle"
+        android:verticalSpacing="10dp"
         />
 
     <View
@@ -33,14 +34,15 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="14dp"
         android:backgroundTint="#00B3D1E3"
         android:background="@drawable/bgbtn"
         />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:autoSizeTextType="uniform"
         android:text="Shades:"
         android:textColor="@color/secondary_text_light"
         />
@@ -72,7 +74,7 @@
         android:id="@+id/transparency_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_margin="10dp"
         android:text="@string/cpv_transparency"
         />
 

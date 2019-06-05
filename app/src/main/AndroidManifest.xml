@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:node="replace"
-        tools:ignore="GoogleAppIndexingWarning"
+        tools:ignore="GoogleAppIndexingWarning,MissingPrefix"
         android:extractNativeLibs="false">
         <!-- Activity for Splashscreen -Intro and Firebase notification -->
         <activity

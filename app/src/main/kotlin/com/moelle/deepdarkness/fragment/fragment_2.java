@@ -71,7 +71,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
-        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.colorAccent));
+        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.accent14));
         LinearLayout anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
         LinearLayout card4 = v.findViewById(R.id.accent4);
         LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
@@ -168,7 +168,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void launchPicker1(View view) {
-        final int Default = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(view.getContext(), R.color.accent1));
+        final int Default = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(view.getContext(), R.color.accent0));
         ColorPickerDialog.newBuilder()
                 .setDialogTitle(R.string.pickerTitle)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
@@ -183,7 +183,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void launchPicker2(View view) {
-        final int Default2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(view.getContext(), R.color.background));
+        final int Default2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(view.getContext(), R.color.accent14));
         ColorPickerDialog.newBuilder()
                 .setDialogTitle(R.string.pickerTitle2)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)

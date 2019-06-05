@@ -132,8 +132,8 @@
                     android:text="how-to\n use this theme"
                     android:textAlignment="center"
                     android:textColor="?attr/textcolor"
+                    android:fontFamily="@font/sequel_sans_heavy"
                     android:textSize="30sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/tutorial_btn" />
 
                 <TextView

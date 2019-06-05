@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -64,6 +65,12 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.calligraphy3.FontMapper;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
+
 //implement the interface OnNavigationItemSelectedListener in your activity class
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, ColorPickerDialogListener {
 
@@ -80,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
     public static final int[] DD_Colors = {
+            0xFF1835FC,  //  Ultramarine
             0xFFff385f,  //  Acorn
             0xFF00b7cd,  //  Cyan
             0xFFc7a861,  //  Gold
@@ -95,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             0xFFE27C7C,  //  Pastel Red
             0xFFff2c63,  //  Pink
             0xFF9085ff,  //  Purple
-            0xFFff4b79,  //  Raspberry
+            //0xFFff4b79,  //  Raspberry
             0xFFFF232D,  //  Red
             0xFF7049f5,  //  Violet
             0xFFced8de,  //  White
@@ -112,7 +120,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
-
+        //Custom Fonts Ini
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/Khula-ExtraBold.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .setFontMapper(new FontMapper() {
+                                    @Override
+                                    public String map(String font) {
+                                        return font;
+                                    }
+                                })
+                                .build()))
+                .build());
         // Get duration scale from the global settings.
         durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
         // If global duration scale is not 1 (default), try to override it
@@ -243,7 +264,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             Toast.makeText(this, R.string.no_permission, Toast.LENGTH_LONG).show();
         }
     }
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
     // Settings that should be changed when toggling animations
     private boolean loadFragment(Fragment fragment) {
         //switching fragment

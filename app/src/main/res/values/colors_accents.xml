@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="accent0">#1835FC</color>
+	<string name="accent0">Acorn</string><!--Ultramarine-->
 	<color name="accent1">#ff385f</color>
 	<string name="accent1">Acorn</string><!--Acorn-->
 	<color name="accent2">#00b7cd</color>
@@ -41,11 +43,11 @@
 	<color name="accent20">#ffc107</color>
 	<string name="accent20">Yellow</string><!--Yellow-->	
 	
-	<color name="background1">#16171d</color>
+	<color name="background1">#343952</color>
 	<string name="background1">Dark Material</string><!--Dark Material-->
-	<color name="background2">#191522</color>
+	<color name="background2">#332850</color>
 	<string name="background2">Acorn</string><!--Acorn-->
-	<color name="background3">#08131c</color>
+	<color name="background3">#163755</color>
 	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
 	<color name="background4">#000000</color>
 	<string name="background4">Pitch Black</string><!--Pitchblack-->

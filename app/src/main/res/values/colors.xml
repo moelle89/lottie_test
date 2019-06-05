@@ -21,7 +21,7 @@
     <color name="colorAccent_light">#2E62FF</color>
     <color name="background">#FFFFFF</color><!-- #ff16171d -->
     <!-- #ff16171d -->
-    <color name="inactive">#1FCBD3ED</color>
+    <color name="inactive">#33909CC2</color>
     <color name="textColor">#2C2F3D</color>
     <color name="buttonFocused">#AE5D6A88</color>
     <color name="transparent">#00000000</color>
@@ -43,5 +43,5 @@
 
     <color name="tab_checked">@color/colorAccent_light</color>
     <color name="tab_unchecked">#495A7A</color>
-    <color name="selectableItemBackgroundBorderless">#2E9FB0EC</color>
+    <color name="selectableItemBackgroundBorderless">#26B1BEEC</color>
 </resources>

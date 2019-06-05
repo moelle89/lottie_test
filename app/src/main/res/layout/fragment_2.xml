@@ -9,10 +9,9 @@
     android:theme="@style/AppTheme">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_marginTop="-10dp"
         android:alpha="1.0"
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="280dp"
         android:scaleType="centerCrop"
         android:id="@+id/dashboard_head"
         app:lottie_rawRes="@raw/keyboard2"
@@ -26,8 +25,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="170dp"
-            android:padding="@dimen/spacing_middle"
-            app:layout_constraintTop_toTopOf="parent">
+            android:padding="@dimen/spacing_middle">
 
 
         <LinearLayout
@@ -42,11 +40,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/cocogoose_regular"
-                android:lineHeight="28dp"
+                android:autoSizeTextType="uniform"
+                android:lineSpacingExtra="4dp"
                 android:text="IMAGE\nCREATOR"
+                android:textAppearance="@style/TextAppearance.Cocogoose"
                 android:textColor="@color/textColor"
-                android:textSize="28sp"
+                android:textSize="27sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -56,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_large"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -81,7 +80,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/accent1"
                 android:layout_width="0dp"
-                android:layout_height="125dip"
+                android:layout_height="130dp"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
@@ -106,7 +105,8 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="12dp"
                         android:alpha="0.9"
-                        android:fontFamily="@font/cocogoose_regular"
+                        android:textAppearance="@style/TextAppearance.Cocogoose"
+                        android:lineSpacingExtra="4dp"
                         android:gravity="bottom"
                         android:maxLines="2"
                         android:text="SOLID FILL"
@@ -119,7 +119,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="125dip"
+                android:layout_height="130dp"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
@@ -146,9 +146,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="12dp"
                     android:alpha="0.9"
-                    android:fontFamily="@font/cocogoose_regular"
+                    android:textAppearance="@style/TextAppearance.Cocogoose"
+                    android:lineSpacingExtra="4dp"
                     android:gravity="bottom"
-                    android:lineHeight="21dp"
                     android:maxLines="2"
                     android:tag="@+id/text3"
                     android:text="LINEAR\nGRADIENT"
@@ -171,7 +171,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/accent7"
                 android:layout_width="0dp"
-                android:layout_height="125dip"
+                android:layout_height="130dp"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
@@ -202,11 +202,11 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="12dp"
                         android:alpha="0.9"
-                        android:fontFamily="@font/cocogoose_regular"
+                        android:textAppearance="@style/TextAppearance.Cocogoose"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp"
                         android:gravity="bottom"
-                        android:lineHeight="21dp"
                         android:maxLines="2"
                         android:text="RADIAL\nGRADIENT"
                         android:textAlignment="gravity"
@@ -219,7 +219,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/accent11"
                 android:layout_width="0dp"
-                android:layout_height="125dip"
+                android:layout_height="130dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 android:layout_weight="1"
                 android:alpha="1.0"
                 app:cardBackgroundColor="@color/background"
@@ -255,25 +258,25 @@
             android:id="@+id/cat_bottom2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_large"
-            android:layout_marginTop="@dimen/spacing_large"
-            android:layout_marginBottom="@dimen/spacing_middle"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="@font/sequel_sans_heavy"
                 android:text="Background Colors"
-                android:textColor="@color/secondary_text_light"
-                android:textSize="16sp" />
+                android:textSize="18dp"
+                android:textColor="@color/secondary_text_light" />
 
         </LinearLayout>
 
             <com.moelle.deepdarkness.HorizontalOverScrollView
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
+                android:layout_height="115dp"
                 android:overScrollMode="ifContentScrolls"
                 android:scrollbars="none" >
 
@@ -290,15 +293,27 @@
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
                         app:cardUseCompatPadding="true"
-                        app:cardBackgroundColor="@color/background1"
-                        app:layout_constraintDimensionRatio="1.35"
+                        app:cardBackgroundColor="#73000000"
+                        app:layout_constraintDimensionRatio="1.25"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/background2"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="1.0"
+                            android:scaleType="centerCrop"
+                            app:lottie_colorFilter="@color/background1"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/radial_gradient" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -312,15 +327,14 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginEnd="16dp"
-                                android:layout_marginBottom="14dp"
+                                android:layout_marginBottom="12dp"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="20sp"
-                                android:fontFamily="@font/sequel_sans_heavy"
+                                android:autoSizeMaxTextSize="17sp"
                                 android:maxLines="2"
                                 android:text="@string/background1"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
-                                android:textColor="@color/lighter_gray"
+                                android:textColor="#CCFFFFFF"
                                 android:textSize="@dimen/background_name" />
                         </LinearLayout>
 
@@ -333,15 +347,25 @@
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/background2"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#73000000"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true"
                         app:layout_constraintBottom_toBottomOf="@+id/background1"
                         app:layout_constraintEnd_toStartOf="@id/background3"
-                        app:layout_constraintDimensionRatio="1.35"
+                        app:layout_constraintDimensionRatio="1.25"
                         app:layout_constraintStart_toEndOf="@id/background1"
                         app:layout_constraintTop_toTopOf="@id/background1">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="1.0"
+                            android:scaleType="centerCrop"
+                            app:lottie_colorFilter="@color/background2"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/radial_gradient" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -353,15 +377,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginEnd="16dp"
-                                android:layout_marginBottom="14dp"
+                                android:layout_marginBottom="12dp"
                                 android:fontFamily="@font/sequel_sans_heavy"
                                 android:maxLines="2"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="20sp"
+                                android:autoSizeMaxTextSize="17sp"
                                 android:text="@string/background2"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
-                                android:textColor="@color/lighter_gray"
+                                android:textColor="#CCFFFFFF"
                                 android:textSize="@dimen/background_name" />
                         </LinearLayout>
 
@@ -374,15 +398,25 @@
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/background3"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#73000000"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true"
                         app:layout_constraintBottom_toBottomOf="@+id/background2"
-                        app:layout_constraintDimensionRatio="1.35"
+                        app:layout_constraintDimensionRatio="1.25"
                         app:layout_constraintEnd_toStartOf="@id/background4"
                         app:layout_constraintStart_toEndOf="@+id/background2"
                         app:layout_constraintTop_toTopOf="@id/background1">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="1.0"
+                            android:scaleType="centerCrop"
+                            app:lottie_colorFilter="@color/background3"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/radial_gradient" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -394,15 +428,14 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="16dp"
                                 android:layout_marginEnd="16dp"
-                                android:layout_marginBottom="14dp"
-                                android:fontFamily="@font/sequel_sans_heavy"
+                                android:layout_marginBottom="12dp"
                                 android:maxLines="2"
                                 android:text="@string/background3"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMaxTextSize="20sp"
+                                android:autoSizeMaxTextSize="17sp"
                                 android:gravity="bottom"
                                 android:textAlignment="gravity"
-                                android:textColor="@color/lighter_gray"
+                                android:textColor="#CCFFFFFF"
                                 android:textSize="@dimen/background_name" />
                         </LinearLayout>
 
@@ -414,15 +447,25 @@
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/background4"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#73000000"
                         app:cardCornerRadius="@dimen/cardCornerRadius_small"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="true"
                         app:layout_constraintBottom_toBottomOf="@+id/background3"
-                        app:layout_constraintDimensionRatio="1.35"
+                        app:layout_constraintDimensionRatio="1.25"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/background3"
                         app:layout_constraintTop_toTopOf="@id/background1">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="1.0"
+                            android:scaleType="centerCrop"
+                            app:lottie_colorFilter="@color/background4"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/radial_gradient" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -443,15 +486,15 @@
                                     android:layout_height="match_parent"
                                     android:layout_marginStart="16dp"
                                     android:layout_marginEnd="16dp"
-                                    android:layout_marginBottom="14dp"
+                                    android:layout_marginBottom="12dp"
                                     android:fontFamily="@font/sequel_sans_heavy"
                                     android:maxLines="2"
                                     android:text="@string/background4"
                                     android:autoSizeTextType="uniform"
-                                    android:autoSizeMaxTextSize="20sp"
+                                    android:autoSizeMaxTextSize="17sp"
                                     android:gravity="bottom"
                                     android:textAlignment="gravity"
-                                    android:textColor="@color/lighter_gray"
+                                    android:textColor="#CCFFFFFF"
                                     android:textSize="@dimen/background_name" />
                             </LinearLayout></LinearLayout>
 

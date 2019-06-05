@@ -9,7 +9,7 @@ import android.widget.HorizontalScrollView;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 public class HorizontalOverScrollView extends HorizontalScrollView {
-    private static final int WIDTH_DEVIDER_OVERSCROLL_DISTANCE = 5;
+    private static final int WIDTH_DEVIDER_OVERSCROLL_DISTANCE = 7;
 
     private TimeInterpolator mInterpolator;
     private int mMaxOverscrollDistance;
@@ -43,7 +43,7 @@ public class HorizontalOverScrollView extends HorizontalScrollView {
     private void init() {
         final int widthPixels = getContext().getResources().getDisplayMetrics().widthPixels;
         mMaxOverscrollDistance = widthPixels / WIDTH_DEVIDER_OVERSCROLL_DISTANCE;
-        mAnimTime = 500;
+        mAnimTime = 400;
         mInterpolator = new FastOutSlowInInterpolator();
     }
 
