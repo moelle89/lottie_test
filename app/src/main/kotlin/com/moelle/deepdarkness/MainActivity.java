@@ -384,6 +384,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(tintfilter);
                     radial_gradient.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
                     radial_gradient.playAnimation();
+
+                    LottieAnimationView dashboard_head = previewCardview.findViewById(R.id.dashboard_head);
+                    SimpleColorFilter tintfilter2 = new SimpleColorFilter(color);
+                    KeyPath keyfg2 = new KeyPath("BG1", "**");
+                    LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
+                    dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
+                    dashboard_head.playAnimation();
+
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
                     Toast toast = new Toast(this);

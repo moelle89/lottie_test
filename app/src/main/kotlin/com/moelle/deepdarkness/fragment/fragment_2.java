@@ -103,6 +103,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieAnimationView keyboard = v.findViewById(R.id.dashboard_head);
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
+
+        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
+        SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
+        KeyPath keyfg3 = new KeyPath("BG1","**");
+        LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
+        keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
         KeyPath keyboardKey = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
@@ -112,7 +118,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
         keyboard.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
         keyboard.playAnimation();
-
+        //
         // ini Animations
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
