@@ -387,7 +387,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
                     LottieAnimationView dashboard_head = previewCardview.findViewById(R.id.dashboard_head);
                     SimpleColorFilter tintfilter2 = new SimpleColorFilter(color);
-                    KeyPath keyfg2 = new KeyPath("BG1", "**");
+                    KeyPath keyfg2 = new KeyPath("BG2", "**");
                     LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
                     dashboard_head.playAnimation();
@@ -420,6 +420,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
                     LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
                     accent4.setForegroundTintList(ColorStateList.valueOf(color));
+
+                    LottieAnimationView dashboard_head = previewCardview.findViewById(R.id.dashboard_head);
+                    SimpleColorFilter tintfilter2 = new SimpleColorFilter(color);
+                    KeyPath keyfg2 = new KeyPath("BG1", "**");
+                    LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
+                    dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
+                    dashboard_head.playAnimation();
+
                     pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
                     Fragment fragment = new fragment_2();

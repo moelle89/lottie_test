@@ -107,9 +107,16 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
-        KeyPath keyfg3 = new KeyPath("BG1","**");
+        KeyPath keyfg3 = new KeyPath("BG2","**");
         LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
         keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
+
+        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
+        SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
+        KeyPath keyfg4 = new KeyPath("BG1","**");
+        LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(keyboardtint2);
+        keyboard.addValueCallback(keyfg4, LottieProperty.COLOR_FILTER, callback4);
+
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
         KeyPath keyboardKey = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
