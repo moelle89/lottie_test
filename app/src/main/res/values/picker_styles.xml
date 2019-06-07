@@ -31,14 +31,12 @@
     <item name="android:minHeight">48.0dip</item>
   </style>
   <style name="DialogWindowTitle" parent="@*android:style/DialogWindowTitle.Material">
-    <item name="android:textAppearance">@style/TextStyleDialogWindowTitle</item>
+    <item name="android:textColor">@color/colorAccent_light</item>
     <item name="android:maxLines">1</item>
-    <item name="android:scrollHorizontally">true</item>
-  </style>
-  <style name="TextStyleDialogWindowTitle" >
-    <item name="fontPath">fonts/cocogoose_regular.ttf</item>
-    <item name="android:textSize">28.0sp</item>
-    <item name="android:textColor">@color/textColor</item>
+    <item name="android:autoSizeTextType">uniform</item>
+    <item name="android:autoSizeMaxTextSize">28sp</item>
+    <item name="android:autoSizeMinTextSize">20sp</item>
+    <item name="android:minHeight">36.0dip</item>
   </style>
   <style name="cpv_ColorPickerViewStyle">
     <item name="android:layout_width">match_parent</item>

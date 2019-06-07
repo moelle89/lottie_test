@@ -9,12 +9,14 @@
     android:theme="@style/AppTheme">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/dashboard_head"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.35"
         android:alpha="1.0"
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
@@ -25,13 +27,13 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autoSizeTextType="uniform"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:lineSpacingExtra="4dp"
-        android:text="IMAGE\nCREATOR"
+        android:text="@string/creator_title"
         android:textAppearance="@style/TextAppearance.Cocogoose"
         android:textColor="@color/textColor"
         android:textSize="26sp"
@@ -40,26 +42,28 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
-        android:fontFamily="@font/sequel_sans_heavy"
-        android:text="For Gboard Custom Themes"
+        android:textAppearance="@style/TextAppearance.Khula"
+        android:text="@string/creator_subTitle"
         android:textColor="@color/secondary_text_light"
+        android:textAlignment="gravity"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/accent1"
+        android:id="@+id/CardView1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:alpha="1"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -69,9 +73,9 @@
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintDimensionRatio="1.55"
-        app:layout_constraintEnd_toStartOf="@id/card5"
+        app:layout_constraintEnd_toStartOf="@id/CardView2"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
 
 
         <LinearLayout
@@ -93,7 +97,7 @@
                 android:lineSpacingExtra="4dp"
                 android:gravity="bottom"
                 android:maxLines="2"
-                android:text="SOLID FILL"
+                android:text="@string/solid_fill"
                 android:textAlignment="gravity"
                 android:textColor="@color/md_white"
                 android:textSize="@dimen/gradient_name" />
@@ -102,10 +106,11 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card5"
+        android:id="@+id/CardView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:alpha="1"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -113,11 +118,11 @@
         app:cardCornerRadius="@dimen/cardCornerRadius_small"
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
-        app:layout_constraintBottom_toBottomOf="@+id/accent1"
+        app:layout_constraintBottom_toBottomOf="@+id/CardView1"
         app:layout_constraintDimensionRatio="1.55"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toEndOf="@+id/accent1"
-        app:layout_constraintTop_toTopOf="@+id/accent1">
+        app:layout_constraintStart_toEndOf="@+id/CardView1"
+        app:layout_constraintTop_toTopOf="@+id/CardView1">
 
         <LinearLayout
             android:id="@+id/accent4"
@@ -140,7 +145,7 @@
             android:lineSpacingExtra="4dp"
             android:maxLines="2"
             android:tag="@+id/text3"
-            android:text="LINEAR\nGRADIENT"
+            android:text="@string/linear_gradient"
             android:textAlignment="gravity"
             android:textAppearance="@style/TextAppearance.Cocogoose"
             android:textColor="@color/md_white"
@@ -149,7 +154,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/accent7"
+        android:id="@+id/CardView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -161,9 +166,9 @@
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintDimensionRatio="1.55"
-        app:layout_constraintEnd_toStartOf="@id/card7"
+        app:layout_constraintEnd_toStartOf="@id/CardView4"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/accent1">
+        app:layout_constraintTop_toBottomOf="@+id/CardView1">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/radial_gradient"
@@ -192,7 +197,7 @@
                 android:layout_marginBottom="12dp"
                 android:gravity="bottom"
                 android:maxLines="2"
-                android:text="RADIAL\nGRADIENT"
+                android:text="@string/radial_gradient"
                 android:textAlignment="gravity"
                 android:textColor="@color/md_white"
                 android:textSize="@dimen/gradient_name" />
@@ -200,7 +205,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card7"
+        android:id="@+id/CardView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -213,8 +218,8 @@
         app:cardUseCompatPadding="true"
         app:layout_constraintDimensionRatio="1.55"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toEndOf="@+id/accent7"
-        app:layout_constraintTop_toBottomOf="@+id/accent1">
+        app:layout_constraintStart_toEndOf="@+id/CardView3"
+        app:layout_constraintTop_toBottomOf="@+id/CardView1">
 
         <LinearLayout
             android:id="@+id/colorPreview"
@@ -260,18 +265,19 @@
         app:layout_constraintGuide_percent="0.97" />
 
     <TextView
-        android:id="@+id/text4"
+        android:id="@+id/textViewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sequel_sans_heavy"
-        android:text="Background Colors"
+        android:textAppearance="@style/TextAppearance.Khula"
+        android:text="@string/background_colors"
         android:textColor="@color/secondary_text_light"
-        android:textSize="18dp"
-        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:textAlignment="gravity"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/accent7" />
+        app:layout_constraintTop_toBottomOf="@+id/CardView3" />
 
     <com.moelle.deepdarkness.HorizontalOverScrollView
         android:scrollbars="none"
@@ -280,18 +286,17 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.15"
         android:layout_marginBottom="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@color/background"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBottom"
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-
+            
             <androidx.cardview.widget.CardView
                 android:id="@+id/background1"
                 android:layout_width="0dp"
@@ -330,9 +335,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:autoSizeTextType="uniform"
-                        android:autoSizeMaxTextSize="18sp"
+                        android:autoSizeMaxTextSize="17sp"
                         android:maxLines="2"
                         android:text="@string/background1"
                         android:gravity="bottom"
@@ -379,10 +384,10 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:maxLines="2"
                         android:autoSizeTextType="uniform"
-                        android:autoSizeMaxTextSize="18sp"
+                        android:autoSizeMaxTextSize="17sp"
                         android:text="@string/background2"
                         android:gravity="bottom"
                         android:textAlignment="gravity"
@@ -427,11 +432,11 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="12dp"
+                        android:layout_marginBottom="10dp"
                         android:maxLines="2"
                         android:text="@string/background3"
                         android:autoSizeTextType="uniform"
-                        android:autoSizeMaxTextSize="18sp"
+                        android:autoSizeMaxTextSize="17sp"
                         android:gravity="bottom"
                         android:textAlignment="gravity"
                         android:textColor="#CCFFFFFF"
@@ -469,31 +474,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingStart="1dp"
-                    android:paddingBottom="2dp"
+                    android:paddingEnd="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_gravity="bottom|start"
+                    android:gravity="bottom|start"
                     android:foreground="@drawable/card_stroke">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="bottom|start"
-                        android:gravity="bottom|start"
-                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginStart="16dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="12dp"
+                            android:layout_marginBottom="10dp"
                             android:maxLines="2"
                             android:text="@string/background4"
                             android:autoSizeTextType="uniform"
-                            android:autoSizeMaxTextSize="18sp"
+                            android:autoSizeMaxTextSize="17sp"
                             android:gravity="bottom"
                             android:textAlignment="gravity"
                             android:textColor="#CCFFFFFF"
                             android:textAppearance="@style/TextAppearance.KhulaBold" />
-                    </LinearLayout></LinearLayout>
+                    </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

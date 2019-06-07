@@ -16,5 +16,13 @@
     <string name="search">how-to</string>
     <string name="favorite">misc.</string>
     <string name="success">DOWNLOAD SUCCESSFUL</string>
+    <string name="background_colors">Background Colors:</string>
+    <string name="creator_subTitle">For Gboard Custom Themes</string>
+    <string name="creator_title">IMAGE\nCREATOR</string>
+    <string name="solid_fill">SOLID FILL</string>
+    <string name="linear_gradient">LINEAR\nGRADIENT</string>
+    <string name="radial_gradient">RADIAL\nGRADIENT</string>
+
+
     <string name="no_permission">No permission to access storage. Certain functions will not function properly.</string>
 </resources>

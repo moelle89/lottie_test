@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -45,7 +46,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
 
-    private LinearLayout cat_top1, cat_top2, cat_bottom;
+    private TextView cat_top1, cat_top2, cat_bottom;
     // image url to download
     private static final String accent6 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/6.png";
 
@@ -72,8 +73,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.accent14));
-        LinearLayout anchor_cardleft = v.findViewById(R.id.anchor_cardleft);
-        LinearLayout card4 = v.findViewById(R.id.accent4);
+        LinearLayout card2 = v.findViewById(R.id.accent4);
         LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
         radial_gradient.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         SimpleColorFilter tintfilter = new SimpleColorFilter(pickedColor1);
@@ -81,24 +81,25 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(tintfilter);
         radial_gradient.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
         radial_gradient.playAnimation();
-        card4.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
-        card4.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
-        CardView card1 = v.findViewById(R.id.accent1);
+        card2.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
+        card2.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
+        CardView card1 = v.findViewById(R.id.CardView1);
         card1.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
 
-        CardView accent7 = v.findViewById(R.id.accent7);
-        CardView accent11 = v.findViewById(R.id.accent11);
+        CardView CardView2 = v.findViewById(R.id.CardView2);
+        CardView CardView3 = v.findViewById(R.id.CardView3);
+        CardView CardView4 = v.findViewById(R.id.CardView4);
         CardView background1 = v.findViewById(R.id.background1);
         CardView background2 = v.findViewById(R.id.background2);
         CardView background3 = v.findViewById(R.id.background3);
         CardView background4 = v.findViewById(R.id.background4);
 
-        /*cat_top1 = v.findViewById(R.id.cat_top1);
-        cat_top2 = v.findViewById(R.id.cat_top2);
-        cat_bottom = v.findViewById(R.id.cat_bottom2);
+        cat_top1 = v.findViewById(R.id.textViewTitle);
+        cat_top2 = v.findViewById(R.id.textViewSubtitle);
+        cat_bottom = v.findViewById(R.id.textViewBottom);
         cat_top1.setAlpha(0f);
         cat_top2.setAlpha(0f);
-        cat_bottom.setAlpha(0f);*/
+        cat_bottom.setAlpha(0f);
 
         LottieAnimationView keyboard = v.findViewById(R.id.dashboard_head);
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
@@ -120,8 +121,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         keyboard.playAnimation();
         //
         // ini Animations
-
-        /*
+        
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
@@ -147,23 +147,24 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         cat_bottom.animate().alpha(1f).setDuration(1000).setStartDelay(400);
 
         card1.setOnClickListener(this);
-        card4.setOnClickListener(this);
-        anchor_cardleft.setAnimation(vonOben);
-        accent7.setAnimation(vonUnten);
-        accent11.setAnimation(vonUnten2);
-
-
+        card2.setOnClickListener(this);
+        card2.setAlpha(0);
+        card2.animate().alpha(1f).setDuration(600).setStartDelay(70);
+        card1.setAnimation(vonOben);
+        CardView2.setAnimation(vonOben2);
+        CardView3.setAnimation(vonUnten);
+        CardView4.setAnimation(vonUnten2);
         background1.setAnimation(vonUnten);
         background2.setAnimation(vonUnten2);
         background3.setAnimation(vonUnten3);
         background4.setAnimation(vonUnten4);
-        */
+        
         return v;
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.accent1: {
+            case R.id.CardView1: {
                 //getActivity().startService(DownloadService.getDownloadService(getContext(), accent1, DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/")));
                 launchPicker1(getView());
                 break;

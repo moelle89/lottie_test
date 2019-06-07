@@ -21,10 +21,10 @@
         android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent"
         android:clickable="false"
-        android:columnWidth="56dp"
+        android:columnWidth="58dp"
         android:horizontalSpacing="2dp"
         android:listSelector="@android:color/transparent"
-        android:numColumns="6"
+        android:numColumns="5"
         android:stretchMode="spacingWidthUniform"
         android:verticalSpacing="10dp"
         />
