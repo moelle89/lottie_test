@@ -24,259 +24,261 @@
         android:layout_height="wrap_content"
         android:scrollbars="none"
         android:overScrollMode="ifContentScrolls">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lyt_form"
-        android:orientation="vertical">
-
         <LinearLayout
-            android:id="@+id/cat_top1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="170dp"
-            android:layout_marginBottom="@dimen/spacing_small"
-            android:orientation="horizontal">
+            android:id="@+id/lyt_form"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/cat_top1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoSizeTextType="uniform"
-                android:lineSpacingExtra="4dp"
-                android:text="IMAGE\nCREATOR"
-                android:textAppearance="@style/TextAppearance.Cocogoose"
-                android:textColor="@color/textColor"
-                android:textSize="26sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/cat_top2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/sequel_sans_heavy"
-                android:text="For Gboard Custom Themes"
-                android:textColor="@color/secondary_text_light"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/anchor_cardleft"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginEnd="14dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/accent1"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom|start"
-                    android:background="@color/transparent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_small">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="12dp"
-                        android:alpha="0.9"
-                        android:textAppearance="@style/TextAppearance.Cocogoose"
-                        android:lineSpacingExtra="4dp"
-                        android:gravity="bottom"
-                        android:maxLines="2"
-                        android:text="SOLID FILL"
-                        android:textAlignment="gravity"
-                        android:textColor="@color/md_white"
-                        android:textSize="@dimen/gradient_name" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="#245D6A88"
-                app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:id="@+id/accent4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom|start"
-                    android:background="@color/accent1"
-                    android:foreground="@drawable/gradient_linear"
-                    android:orientation="vertical"
-                    android:padding="0dp" />
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="12dp"
-                    android:alpha="0.9"
-                    android:textAppearance="@style/TextAppearance.Cocogoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
                     android:lineSpacingExtra="4dp"
-                    android:gravity="bottom"
-                    android:maxLines="2"
-                    android:tag="@+id/text3"
-                    android:text="LINEAR\nGRADIENT"
-                    android:textAlignment="gravity"
-                    android:textColor="@color/md_white"
-                    android:textSize="@dimen/gradient_name" />
+                    android:text="IMAGE\nCREATOR"
+                    android:textAppearance="@style/TextAppearance.Cocogoose"
+                    android:textColor="@color/textColor"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cat_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/cat_middle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginEnd="14dp"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/accent7"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="#245D6A88"
-                app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
-
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/radial_gradient"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:alpha="1.0"
-                    android:scaleType="centerCrop"
-                    app:lottie_autoPlay="true"
-                    app:lottie_rawRes="@raw/radial_gradient" />
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sequel_sans_heavy"
+                    android:text="For Gboard Custom Themes"
+                    android:textColor="@color/secondary_text_light"
+                    android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom|start"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_small">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anchor_cardleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent1"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom|start"
+                        android:background="@color/transparent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_small">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="12dp"
+                            android:alpha="0.9"
+                            android:textAppearance="@style/TextAppearance.Cocogoose"
+                            android:lineSpacingExtra="4dp"
+                            android:gravity="bottom"
+                            android:maxLines="2"
+                            android:text="SOLID FILL"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/md_white"
+                            android:textSize="@dimen/gradient_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#245D6A88"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/accent4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom|start"
+                        android:background="@color/accent1"
+                        android:foreground="@drawable/gradient_linear"
+                        android:orientation="vertical"
+                        android:padding="0dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="12dp"
+                        android:layout_marginStart="14dp"
                         android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="12dp"
                         android:alpha="0.9"
                         android:textAppearance="@style/TextAppearance.Cocogoose"
                         android:lineSpacingExtra="4dp"
-                        android:layout_marginBottom="12dp"
                         android:gravity="bottom"
                         android:maxLines="2"
-                        android:text="RADIAL\nGRADIENT"
+                        android:tag="@+id/text3"
+                        android:text="LINEAR\nGRADIENT"
                         android:textAlignment="gravity"
                         android:textColor="@color/md_white"
                         android:textSize="@dimen/gradient_name" />
-                </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/accent11"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:layout_weight="1"
-                android:alpha="1.0"
-                app:cardBackgroundColor="@color/background"
-                app:cardCornerRadius="@dimen/cardCornerRadius_small"
-                app:cardElevation="?cardelevation_small"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:id="@+id/colorPreview"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:foreground="@drawable/card_stroke"
-                    android:gravity="end|start"
-                    android:orientation="vertical"
-                    android:padding="0dp">
-
-                    <ImageView
-                        android:id="@+id/dl"
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        android:layout_gravity="end"
-                        android:alpha="0.20"
-                        android:src="@drawable/ic_4"
-                        android:tint="@color/tab_unchecked"
-                        android:transitionName="feature_img1" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/cat_bottom2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/cat_middle"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="@font/sequel_sans_heavy"
-                android:text="Background Colors"
-                android:textSize="18dp"
-                android:textColor="@color/secondary_text_light" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="14dp"
+                android:orientation="horizontal">
 
-        </LinearLayout>
-            <include layout="@layout/fragment_22"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent7"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#245D6A88"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/radial_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="1.0"
+                        android:scaleType="centerCrop"
+                        app:lottie_autoPlay="true"
+                        app:lottie_rawRes="@raw/radial_gradient" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom|start"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_small">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="10dp"
+                            android:alpha="0.9"
+                            android:textAppearance="@style/TextAppearance.Cocogoose"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="bottom"
+                            android:maxLines="2"
+                            android:text="RADIAL\nGRADIENT"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/md_white"
+                            android:textSize="@dimen/gradient_name" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/accent11"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:alpha="1.0"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="@dimen/cardCornerRadius_small"
+                    app:cardElevation="?cardelevation_small"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/colorPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_stroke"
+                        android:gravity="end|start"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <ImageView
+                            android:id="@+id/dl"
+                            android:layout_width="135dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="end"
+                            android:alpha="0.20"
+                            android:src="@drawable/ic_4"
+                            android:tint="@color/tab_unchecked"
+                            android:transitionName="feature_img1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cat_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sequel_sans_heavy"
+                    android:text="Background Colors"
+                    android:textSize="18dp"
+                    android:textColor="@color/secondary_text_light" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fragment_22" />
+
             <com.moelle.deepdarkness.HorizontalOverScrollView
                 android:layout_width="match_parent"
                 android:layout_height="115dp"

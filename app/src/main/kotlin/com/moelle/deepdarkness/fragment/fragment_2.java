@@ -67,7 +67,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.transparent));
-        View v = inflater.inflate(R.layout.fragment_2, null);
+        View v = inflater.inflate(R.layout.fragment_2test, null);
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
@@ -93,12 +93,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         CardView background3 = v.findViewById(R.id.background3);
         CardView background4 = v.findViewById(R.id.background4);
 
-        cat_top1 = v.findViewById(R.id.cat_top1);
+        /*cat_top1 = v.findViewById(R.id.cat_top1);
         cat_top2 = v.findViewById(R.id.cat_top2);
         cat_bottom = v.findViewById(R.id.cat_bottom2);
         cat_top1.setAlpha(0f);
         cat_top2.setAlpha(0f);
-        cat_bottom.setAlpha(0f);
+        cat_bottom.setAlpha(0f);*/
 
         LottieAnimationView keyboard = v.findViewById(R.id.dashboard_head);
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
@@ -120,6 +120,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         keyboard.playAnimation();
         //
         // ini Animations
+
+        /*
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
@@ -155,7 +157,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         background2.setAnimation(vonUnten2);
         background3.setAnimation(vonUnten3);
         background4.setAnimation(vonUnten4);
-
+        */
         return v;
     }
     @Override
