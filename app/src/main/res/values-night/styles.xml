@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextAppearance.Khula" parent="android:TextAppearance">
+   <!-- <style name="TextAppearance.Khula" parent="android:TextAppearance">
         <item name="fontPath">fonts/Khula-Bold.ttf</item>
         <item name="android:lineSpacingMultiplier">0.6</item>
     </style>
@@ -14,5 +14,5 @@
     </style>
     <style name="TextAppearance.Cocogoose" parent="android:TextAppearance">
         <item name="fontPath">fonts/cocogoose_regular.ttf</item>
-    </style>
+    </style>-->
 </resources>

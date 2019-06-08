@@ -32,6 +32,7 @@
     <!-- #ff16171d -->
     <color name="cardbackgroundlight">@color/dim_foreground_light</color><!-- F5F9FF -->
     <color name="dialog_contact">@color/dim_foreground_light</color><!-- navbar -->
+    <color name="dialog_contact2">#101319</color><!-- navbar -->
     <color name="inactive">#0FCBD3ED</color>
     <color name="textColor">#fff7fbff</color>
     <color name="secondary_text_light">#AAB9CA</color><!-- app background_alpha -->

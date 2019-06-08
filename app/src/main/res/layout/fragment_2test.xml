@@ -343,8 +343,8 @@
                         android:text="@string/background1"
                         android:gravity="bottom"
                         android:textAlignment="gravity"
-                        android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
+                        android:textColor="#BFFFFFFF"
+                        android:textAppearance="@style/TextAppearance.KhulaBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -392,8 +392,8 @@
                         android:text="@string/background2"
                         android:gravity="bottom"
                         android:textAlignment="gravity"
-                        android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
+                        android:textColor="#BFFFFFFF"
+                        android:textAppearance="@style/TextAppearance.KhulaBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -440,8 +440,8 @@
                         android:autoSizeMaxTextSize="17sp"
                         android:gravity="bottom"
                         android:textAlignment="gravity"
-                        android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
+                        android:textColor="#BFFFFFFF"
+                        android:textAppearance="@style/TextAppearance.KhulaBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -494,8 +494,8 @@
                             android:autoSizeMaxTextSize="17sp"
                             android:gravity="bottom"
                             android:textAlignment="gravity"
-                            android:textColor="#CCFFFFFF"
-                            android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
+                            android:textColor="#BFFFFFFF"
+                            android:textAppearance="@style/TextAppearance.KhulaBold" />
                     </LinearLayout>
 
             </androidx.cardview.widget.CardView>
