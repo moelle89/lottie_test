@@ -26,8 +26,9 @@
                     />
                 <TextView
                     android:id="@+id/text"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.KhulaBold"
+                    android:layout_gravity="bottom"
+                    android:textAlignment="gravity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"

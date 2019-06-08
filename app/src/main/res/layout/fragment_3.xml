@@ -6,153 +6,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
     tools:context=".fragment.fragment_3"
-    android:theme="@style/ApptThemeWall">
+    android:theme="@style/AppTheme">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_marginBottom="50dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="1.0"
-        android:layout_gravity="top"
-        android:src="@drawable/gradient_bg" />
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_marginBottom="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="1.0"
-        android:layout_gravity="bottom"
-        android:src="@drawable/gradient_cover" />
+        android:layout_height="match_parent">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/intro_img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:alpha="0.7"
-        android:layout_gravity="top|center_horizontal"
-        android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
-        app:lottie_autoPlay="true"
-        app:lottie_colorFilter="@color/secondary_text_light"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/tut_bg"
-        app:lottie_speed="0.6" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginBottom="50dp"
+            android:alpha="1.0"
+            android:src="@drawable/gradient_bg" />
 
-    <Button
-        android:id="@+id/tutorial_btn"
-        android:layout_width="200dp"
-        android:layout_marginBottom="70dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/bgbtn"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="You tell me!"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_anchor="@+id/imageView2"
-        app:layout_anchorGravity="bottom|center"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:alpha="1.0"
+            android:src="@drawable/gradient_cover" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/ripplehowto"
-        android:layout_width="390dp"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:alpha="0"
-        android:scaleType="centerCrop"
-        app:layout_anchor="@+id/tutorial_btn"
-        app:layout_anchorGravity="bottom|center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_colorFilter="@color/colorAccent_light"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/ripple_button" />
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tutorial_btn">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="wrap_content"
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/intro_img"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:layout_gravity="top|center_horizontal"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/secondary_text_light"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/tut_bg"
+            app:lottie_speed="0.6" />
+
+        <Button
+            android:id="@+id/tutorial_btn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginStart="@dimen/spacing_middle"
-            android:layout_marginEnd="@dimen/spacing_middle"
-            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@drawable/bgbtn"
             android:clickable="true"
             android:focusable="true"
-            app:cardUseCompatPadding="true"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="?attr/cardelevation">
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="You tell me!"
+            android:textAppearance="@style/TextAppearance.KhulaBold"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_anchor="@+id/imageView2"
+            app:layout_anchorGravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ripplehowto"
+            app:layout_constraintStart_toStartOf="@+id/ripplehowto"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ripplehowto"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0"
+            android:scaleType="centerCrop"
+            app:layout_anchor="@+id/tutorial_btn"
+            app:layout_anchorGravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/colorAccent_light"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ripple_button" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.88">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="@dimen/spacing_middle"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="?attr/cardelevation"
+                app:cardUseCompatPadding="true">
 
 
-            <LinearLayout
-                android:layout_width="340dp"
-                android:layout_height="380dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:background="@drawable/dialog_background_material_no_inset"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/iconhowto"
-                    android:layout_width="275dp"
-                    android:layout_height="0dp"
-                    android:layout_marginLeft="@dimen/spacing_xlarge"
-                    android:layout_marginTop="@dimen/spacing_xlarge"
-                    android:layout_marginRight="@dimen/spacing_xlarge"
-                    android:layout_weight="1"
-                    app:lottie_colorFilter="?textcolorsecondary"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/tut_icon_test" />
-
-                <TextView
-                    android:id="@+id/titlehowto"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    android:text="how-to\n use this theme"
-                    android:textAlignment="center"
-                    android:textColor="?attr/textcolor"
-                    android:fontFamily="@font/sequel_sans_heavy"
-                    android:textSize="30sp"
-                    app:layout_constraintBottom_toTopOf="@+id/tutorial_btn" />
-
-                <TextView
-                    android:id="@+id/description"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_mxlarge"
-                    android:layout_marginTop="@dimen/spacing_large"
-                    android:layout_marginRight="@dimen/spacing_mxlarge"
-                    android:layout_marginBottom="@dimen/spacing_xlarge"
-                    android:fontFamily="@font/sequel_sans_heavy"
-                    android:text="@string/short_lorem_ipsum"
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:textColor="?textcolorsecondary" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/dialog_background_material_no_inset"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/iconhowto"
+                        android:layout_width="275dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_xlarge"
+                        android:layout_marginRight="@dimen/spacing_xlarge"
+                        android:layout_weight="1"
+                        app:lottie_autoPlay="true"
+                        app:lottie_colorFilter="?textcolorsecondary"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/tut_icon_test" />
 
-        </androidx.cardview.widget.CardView>
-    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/titlehowto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:textAppearance="@style/TextAppearance.KhulaBold"
+                        android:text="how-to\n use this theme"
+                        android:textAlignment="center"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tutorial_btn" />
 
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:layout_marginRight="@dimen/spacing_xlarge"
+                        android:layout_marginBottom="@dimen/spacing_xlarge"
+                        android:text="@string/short_lorem_ipsum"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Khula"
+                        android:textColor="?textcolorsecondary" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

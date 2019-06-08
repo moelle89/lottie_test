@@ -93,6 +93,10 @@
         <item name="fontPath">fonts/Khula-ExtraBold.ttf</item>
         <item name="android:lineSpacingMultiplier">0.6</item>
     </style>
+    <style name="TextAppearance.KhulaSemiBold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Khula-Bold.ttf</item>
+        <item name="android:lineSpacingMultiplier">0.6</item>
+    </style>
     <style name="TextAppearance.Cocogoose" parent="android:TextAppearance">
         <item name="fontPath">fonts/cocogoose_regular.ttf</item>
     </style>

@@ -16,7 +16,7 @@
         android:id="@+id/dashboard_head"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHeight_percent="0.38"
         android:alpha="1.0"
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
@@ -49,7 +49,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
-        android:textAppearance="@style/TextAppearance.Khula"
+        android:textAppearance="@style/TextAppearance.KhulaSemiBold"
         android:text="@string/creator_subTitle"
         android:textColor="@color/secondary_text_light"
         android:textAlignment="gravity"
@@ -72,7 +72,7 @@
         android:layout_marginTop="5dp"
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
-        app:layout_constraintDimensionRatio="1.55"
+        app:layout_constraintDimensionRatio="1.6"
         app:layout_constraintEnd_toStartOf="@id/CardView2"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
@@ -119,7 +119,7 @@
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="@+id/CardView1"
-        app:layout_constraintDimensionRatio="1.55"
+        app:layout_constraintDimensionRatio="1.6"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toEndOf="@+id/CardView1"
         app:layout_constraintTop_toTopOf="@+id/CardView1">
@@ -165,7 +165,7 @@
         app:cardCornerRadius="@dimen/cardCornerRadius_small"
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
-        app:layout_constraintDimensionRatio="1.55"
+        app:layout_constraintDimensionRatio="1.6"
         app:layout_constraintEnd_toStartOf="@id/CardView4"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/CardView1">
@@ -216,7 +216,7 @@
         app:cardCornerRadius="@dimen/cardCornerRadius_small"
         app:cardElevation="?cardelevation_small"
         app:cardUseCompatPadding="true"
-        app:layout_constraintDimensionRatio="1.55"
+        app:layout_constraintDimensionRatio="1.6"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toEndOf="@+id/CardView3"
         app:layout_constraintTop_toBottomOf="@+id/CardView1">
@@ -226,15 +226,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:foreground="@drawable/card_stroke"
-            android:gravity="end|start"
+            android:gravity="top|start"
             android:orientation="vertical"
             android:padding="0dp">
 
             <ImageView
                 android:id="@+id/dl"
-                android:layout_width="135dp"
-                android:layout_height="135dp"
-                android:layout_gravity="end"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom|end"
                 android:alpha="0.20"
                 android:src="@drawable/ic_4"
                 android:tint="@color/tab_unchecked"
@@ -268,12 +269,12 @@
         android:id="@+id/textViewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.Khula"
+        android:textAppearance="@style/TextAppearance.KhulaSemiBold"
         android:text="@string/background_colors"
         android:textColor="@color/secondary_text_light"
         android:textSize="18sp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:textAlignment="gravity"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -343,7 +344,7 @@
                         android:gravity="bottom"
                         android:textAlignment="gravity"
                         android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -392,7 +393,7 @@
                         android:gravity="bottom"
                         android:textAlignment="gravity"
                         android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -440,7 +441,7 @@
                         android:gravity="bottom"
                         android:textAlignment="gravity"
                         android:textColor="#CCFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -494,7 +495,7 @@
                             android:gravity="bottom"
                             android:textAlignment="gravity"
                             android:textColor="#CCFFFFFF"
-                            android:textAppearance="@style/TextAppearance.KhulaBold" />
+                            android:textAppearance="@style/TextAppearance.KhulaSemiBold" />
                     </LinearLayout>
 
             </androidx.cardview.widget.CardView>

@@ -104,6 +104,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieAnimationView keyboard = v.findViewById(R.id.dashboard_head);
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
+        final int black = ContextCompat.getColor(v.getContext(), R.color.md_black);
 
         keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
@@ -125,10 +126,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         KeyPath keybg = new KeyPath("bg", "**");
         LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
         keyboard.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
-        keyboard.playAnimation();
-        //
         // ini Animations
-        
+        keyboard.setAlpha(0f);
+        keyboard.animate().alpha(1f).setDuration(600).setStartDelay(100);
         Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
@@ -144,19 +144,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         vonUnten3.setStartOffset(250);
         Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten4.setStartOffset(280);
-        keyboard.setAlpha(0f);
-        keyboard.setScaleX(1.3f);
-        keyboard.setScaleY(1.3f);
-        keyboard.setTranslationY(-100);
-        keyboard.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
         cat_top1.animate().alpha(1f).setDuration(1000).setStartDelay(200);
         cat_top2.animate().alpha(1f).setDuration(1000).setStartDelay(300);
         cat_bottom.animate().alpha(1f).setDuration(1000).setStartDelay(400);
 
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
-        card2.setAlpha(0);
-        card2.animate().alpha(1f).setDuration(600).setStartDelay(70);
+        card2.setAlpha(0f);
+        card2.animate().alpha(1f).setDuration(600).setStartDelay(100);
         card1.setAnimation(vonOben);
         CardView2.setAnimation(vonOben2);
         CardView3.setAnimation(vonUnten);

@@ -390,7 +390,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     KeyPath keyfg2 = new KeyPath("BG2", "**");
                     LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
-                    dashboard_head.playAnimation();
 
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
@@ -401,16 +400,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     TextView textView = view.findViewById(R.id.text);
                     textView.setText(R.string.success);
                     toast.setView(view);
-                    toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.CENTER);
+                    toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.BOTTOM);
                     toast.setDuration(Toast.LENGTH_LONG);
-                    overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
                     toast.show();
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 
-
                 } catch (Throwable t) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG );
                     toast.show();
                 }
                 break;
@@ -426,8 +423,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     KeyPath keyfg2 = new KeyPath("BG1", "**");
                     LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
-                    dashboard_head.playAnimation();
-
                     pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
                     Fragment fragment = new fragment_2();

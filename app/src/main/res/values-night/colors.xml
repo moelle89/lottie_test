@@ -45,7 +45,7 @@
     <color name="colorAccent_dark">#F01B1D1F</color>
     <color name="orange_background_dark">#091668</color>
 
-    <color name="tab_checked">@color/colorAccent_light</color>
+    <color name="tab_checked">@color/md_white</color>
     <color name="tab_unchecked">#8596BE</color>
     <color name="selectableItemBackgroundBorderless">#14B3D7FD</color>
 </resources>
