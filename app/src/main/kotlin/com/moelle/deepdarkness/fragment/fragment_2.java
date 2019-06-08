@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -231,6 +234,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private void showContact() {
         final View dialogView = View.inflate(getActivity(), R.layout.dialog_gboard, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogContact);
+        dialog.getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        dialog.getWindow().setStatusBarColor(Color.TRANSPARENT);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
 
         keyboard2 = dialog.findViewById(R.id.dashboard_head2);
