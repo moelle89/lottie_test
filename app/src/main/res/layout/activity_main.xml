@@ -16,26 +16,27 @@
             app:cardBackgroundColor="?cardbackground"
             app:cardElevation="3dp"
             app:cardCornerRadius="25dp"
-            android:layout_width="96dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="15dp"
+            android:padding="1dp"
             android:layout_alignParentEnd="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:paddingStart="12dp"
+                android:paddingStart="6dp"
                 android:paddingTop="2dp"
-                android:paddingEnd="10dp"
+                android:paddingEnd="9dp"
                 android:paddingBottom="2dp">
 
                 <ImageView
                     android:id="@+id/img1"
                     android:layout_width="25dp"
-                    android:paddingEnd="5dp"
-                    android:paddingStart="0dp"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="5dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
                     android:src="@drawable/ic_darkmode"
@@ -44,6 +45,7 @@
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/myswitch"
                     style="@style/mySwitchStyle"
+                    android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>

@@ -305,7 +305,7 @@
                     android:layout_weight="1"
                     android:textAppearance="@style/TextAppearance.KhulaSemiBold"
                     android:textColor="@color/secondary_text_light"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:text="Supported Android Systems:" />
 
             </LinearLayout>
