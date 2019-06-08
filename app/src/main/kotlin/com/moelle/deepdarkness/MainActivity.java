@@ -393,16 +393,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
-                    Toast toast = new Toast(this);
-                    View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
-                    CardView card = view.findViewById(R.id.card_toast);
-                    card.setCardBackgroundColor(pickedColor1);
-                    TextView textView = view.findViewById(R.id.text);
-                    textView.setText(R.string.success);
-                    toast.setView(view);
-                    toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.BOTTOM);
-                    toast.setDuration(Toast.LENGTH_LONG);
-                    toast.show();
+                    //Toast toast = new Toast(this);
+                    //View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
+                    //CardView card = view.findViewById(R.id.card_toast);
+                    //card.setCardBackgroundColor(pickedColor1);
+                    //TextView textView = view.findViewById(R.id.text);
+                    //textView.setText(R.string.success);
+                    //toast.setView(view);
+                    //toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.BOTTOM);
+                    //toast.setDuration(Toast.LENGTH_LONG);
+                    //toast.show();
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 
