@@ -20,6 +20,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -244,7 +246,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         KeyPath keyboardKey = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
         keyboard2.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
-
+        SimpleColorFilter filterbg = new SimpleColorFilter(fg);
+        KeyPath keybg = new KeyPath("bg", "**");
+        LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
+        keyboard2.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
 
         keyboard2.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
         SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
@@ -295,9 +300,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         iconMAIL.setScaleY(0.8f);
         iconMAIL.setTranslationY(250);
         iconMAIL.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(750).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
-        keyboard2.setAlpha(0.0f);
-        keyboard2.setTranslationX(200);
-        keyboard2.animate().translationX(0).alpha(1f).setStartDelay(0).setDuration(750).setInterpolator(new AccelerateInterpolator()).start();
+        keyboard2.setAlpha(0f);
+        keyboard2.setTranslationX(550);
+        keyboard2.animate().translationX(0).alpha(1f).setStartDelay(150).setDuration(700).setInterpolator(new FastOutLinearInInterpolator()).start();
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
@@ -339,7 +344,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             });
             mail.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             iconMAIL.animate().translationY(200).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(180).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
-            keyboard2.animate().translationX(200).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new AccelerateInterpolator()).start();
+            keyboard2.animate().translationX(550).alpha(0f).setStartDelay(0).setDuration(550).setInterpolator(new FastOutSlowInInterpolator()).start();
             imageView.animate().rotation(120).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             anim.setDuration(750);
             anim.setStartDelay(100);
