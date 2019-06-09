@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
+    android:tag="fragment2"
     tools:context=".fragment.fragment_2"
     android:theme="@style/AppTheme">
 <androidx.constraintlayout.widget.ConstraintLayout

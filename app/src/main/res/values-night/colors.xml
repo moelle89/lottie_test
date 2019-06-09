@@ -24,6 +24,16 @@
     <color name="overlay_accent_80">#CC1835FC</color>
     <color name="overlay_accent_90">#E61835FC</color>
 
+    <color name="overlay_background_10">#1A000000</color>
+    <color name="overlay_background_20">#33000000</color>
+    <color name="overlay_background_30">#4D000000</color>
+    <color name="overlay_background_40">#66000000</color>
+    <color name="overlay_background_50">#80000000</color>
+    <color name="overlay_background_60">#99000000</color>
+    <color name="overlay_background_70">#B3000000</color>
+    <color name="overlay_background_80">#CC000000</color>
+    <color name="overlay_background_90">#E6000000</color>
+
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>

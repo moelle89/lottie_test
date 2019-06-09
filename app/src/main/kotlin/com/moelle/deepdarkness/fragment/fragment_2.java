@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -19,11 +20,8 @@ import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -41,6 +39,7 @@ import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
@@ -54,8 +53,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private SharedPreferences preferences;
     private int pickedColor1;
     private int pickedColor2;
+    private int pickedColor3;
     private final String PICKED_COLOR_KEY1 = "picker-key1";
     private final String PICKED_COLOR_KEY2 = "picker-key2";
+    private final String PICKED_COLOR_KEY3 = "picker-key3";
     public static final String TAG = fragment_2.class.getSimpleName();
 
     private static final int DIALOG_ID1 = 0;
@@ -91,6 +92,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.accent14));
+        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(getContext(), R.color.transparent));
         LinearLayout card2 = v.findViewById(R.id.accent4);
         LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
         radial_gradient.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
@@ -123,6 +125,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         final int black = ContextCompat.getColor(v.getContext(), R.color.md_black);
+
+        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor3));
+        SimpleColorFilter keyboardtint3 = new SimpleColorFilter(pickedColor3);
+        KeyPath keyfg5 = new KeyPath("BG3","**");
+        LottieValueCallback<ColorFilter> callback5 = new LottieValueCallback<ColorFilter>(keyboardtint3);
+        keyboard.addValueCallback(keyfg5, LottieProperty.COLOR_FILTER, callback5);
 
         keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
@@ -176,6 +184,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         CardView3.setAnimation(vonUnten);
         CardView4.setAnimation(vonUnten2);
         background1.setAnimation(vonUnten);
+        background1.setOnClickListener(this);
         background2.setAnimation(vonUnten2);
         background3.setAnimation(vonUnten3);
         background4.setAnimation(vonUnten4);
@@ -198,7 +207,22 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 showContact();
                 break;
             }
+            case R.id.background1: {
+                setBackground1();
+                break;
+            }
         }
+    }
+
+    public void setBackground1() {
+
+        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background1 );
+        preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+
+        fragment_2 fragment_2 = new fragment_2(); getFragmentManager().beginTransaction().remove(fragment_2).commit();
+        Intent b = new Intent(getActivity().getApplicationContext(), MainActivity.class);
+        getActivity().finish();
+        startActivity(b);
     }
 
     public void launchPicker1(View view) {
@@ -250,7 +274,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
         keyboard2.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
 
-        final int fg = ContextCompat.getColor(dialog.getContext(), R.color.textColor);
+        final int fg = ContextCompat.getColor(dialog.getContext(), R.color.secondary_text_light);
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
         KeyPath keyboardKey = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);

@@ -23,7 +23,6 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -36,7 +35,6 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.ColorInt;
@@ -81,9 +79,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private int pickedColor1;
     private int pickedColor2;
+    private int pickedColor3;
     SharedPreferences preferences;
     private final String PICKED_COLOR_KEY1 = "picker-key1";
     private final String PICKED_COLOR_KEY2 = "picker-key2";
+    private final String PICKED_COLOR_KEY3 = "picker-key3";
 
 
     public static final int[] DD_Colors = {
@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(this, R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(this, R.color.background));
+        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(this, R.color.background1));
         fab = findViewById(R.id.fab);
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
 
@@ -393,6 +394,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
+
+                    pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
+                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
                     //Toast toast = new Toast(this);
                     //View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     //CardView card = view.findViewById(R.id.card_toast);
@@ -425,6 +429,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
                     pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
+
+                    pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
+                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 
