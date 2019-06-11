@@ -15,6 +15,8 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
@@ -374,7 +376,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     //createColorBitmapAndSave(1366, 768, color);
 
                     //fab.setBackgroundTintList(ColorStateList.valueOf(color));
-                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
+                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2test, null);
                     CardView accent1 = previewCardview.findViewById(R.id.accent1);
                     accent1.setBackgroundTintList(ColorStateList.valueOf(color));
                     LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
@@ -387,16 +389,22 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     radial_gradient.playAnimation();
 
                     LottieAnimationView dashboard_head = previewCardview.findViewById(R.id.dashboard_head);
+                    dashboard_head.setAnimation(R.raw.keyboard);
+                    dashboard_head.playAnimation();
+                    final Integer alpha0 = 0;
                     SimpleColorFilter tintfilter2 = new SimpleColorFilter(color);
                     KeyPath keyfg2 = new KeyPath("BG2", "**");
                     LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
+                    KeyPath keyfg5 = new KeyPath("BG3", "**");
+                    LottieValueCallback<Integer> callback6 = new LottieValueCallback<>(alpha0);
+                    dashboard_head.addValueCallback(keyfg5, LottieProperty.TRANSFORM_OPACITY, callback6);
 
                     pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
 
-                    pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
-                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+                    //pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
+                    //preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
                     //Toast toast = new Toast(this);
                     //View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     //CardView card = view.findViewById(R.id.card_toast);
@@ -418,20 +426,24 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case DIALOG_ID2:
                 try {
                     //fab.setBackgroundTintList(ColorStateList.valueOf(color));
-                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2, null);
+                    View previewCardview = LayoutInflater.from(this).inflate(R.layout.fragment_2test, null);
                     LinearLayout accent4 = previewCardview.findViewById(R.id.accent4);
                     accent4.setForegroundTintList(ColorStateList.valueOf(color));
 
                     LottieAnimationView dashboard_head = previewCardview.findViewById(R.id.dashboard_head);
+                    dashboard_head.setAnimation(R.raw.keyboard);
+                    dashboard_head.playAnimation();
                     SimpleColorFilter tintfilter2 = new SimpleColorFilter(color);
                     KeyPath keyfg2 = new KeyPath("BG1", "**");
                     LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(tintfilter2);
                     dashboard_head.addValueCallback(keyfg2, LottieProperty.COLOR_FILTER, callback2);
+
                     pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
 
-                    pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
-                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+                    //pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
+                    //preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 

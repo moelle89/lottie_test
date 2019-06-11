@@ -5,4 +5,5 @@
     <dimen name="cardelevation_small">0dp</dimen>
     <dimen name="cardelevation_tiny">0dp</dimen>
     <dimen name="backgroundDimAmount">0.75</dimen>
+    <dimen name="alpha0">0.0</dimen>
 </resources>

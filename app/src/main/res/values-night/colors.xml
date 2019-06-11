@@ -4,15 +4,14 @@
     <color name="stroke">#E61B212B</color>
     <color name="pickerStroke">#6195AEF8</color>
 
-    <color name="background1">#282A35</color>
-    <string name="background1">Dark Material</string><!--Dark Material-->
-    <color name="background2">#302841</color>
-    <string name="background2">Acorn</string><!--Acorn-->
+    <!--<color name="background1">#282A35</color>
+    <string name="background1">Dark Material</string>
+    <color name="background2">#302644</color>
+    <string name="background2">Acorn</string>
     <color name="background3">#11273A</color>
-    <string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
+    <string name="background3">Deep\nDarkness</string>
     <color name="background4">#000000</color>
-    <string name="background4">Pitch Black</string><!--Pitchblack-->
-
+    <string name="background4">Pitch Black</string>-->
 
     <color name="overlay_accent_10">#1A1835FC</color>
     <color name="overlay_accent_20">#331835FC</color>
@@ -34,11 +33,23 @@
     <color name="overlay_background_80">#CC000000</color>
     <color name="overlay_background_90">#E6000000</color>
 
+    <color name="overlay_fg_10">#1Af7fbff</color>
+    <color name="overlay_fg_20">#33f7fbff</color>
+    <color name="overlay_fg_30">#4Df7fbff</color>
+    <color name="overlay_fg_40">#66f7fbff</color>
+    <color name="overlay_fg_50">#80f7fbff</color>
+    <color name="overlay_fg_60">#99f7fbff</color>
+    <color name="overlay_fg_70">#B3f7fbff</color>
+    <color name="overlay_fg_80">#CCf7fbff</color>
+    <color name="overlay_fg_90">#E6f7fbff</color>
+
+
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
     <color name="colorAccent_light">#2E62FF</color>
     <color name="background">#000000</color><!-- #ff16171d -->
+    <color name="backgroundSB">#1A000000</color>
     <!-- #ff16171d -->
     <color name="cardbackgroundlight">@color/dim_foreground_light</color><!-- F5F9FF -->
     <color name="dialog_contact">@color/dim_foreground_light</color><!-- navbar -->

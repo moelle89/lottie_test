@@ -43,11 +43,11 @@
 	<color name="accent20">#ffc107</color>
 	<string name="accent20">Yellow</string><!--Yellow-->	
 	
-	<color name="background1">#343952</color>
+	<color name="background1">#3E4461</color>
 	<string name="background1">Dark Material</string><!--Dark Material-->
-	<color name="background2">#332850</color>
+	<color name="background2">#45366F</color>
 	<string name="background2">Acorn</string><!--Acorn-->
-	<color name="background3">#163755</color>
+	<color name="background3">#1C4366</color>
 	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
 	<color name="background4">#000000</color>
 	<string name="background4">Pitch Black</string><!--Pitchblack-->

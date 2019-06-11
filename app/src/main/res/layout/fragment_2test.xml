@@ -23,7 +23,6 @@
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/keyboard2"
         app:lottie_speed="1.0" />
 
 

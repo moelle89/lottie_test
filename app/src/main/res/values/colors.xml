@@ -24,12 +24,23 @@
     <color name="overlay_background_80">#CCffffff</color>
     <color name="overlay_background_90">#E6ffffff</color>
 
+    <color name="overlay_fg_10">#1A2C2F3D</color>
+    <color name="overlay_fg_20">#332C2F3D</color>
+    <color name="overlay_fg_30">#4D2C2F3D</color>
+    <color name="overlay_fg_40">#662C2F3D</color>
+    <color name="overlay_fg_50">#802C2F3D</color>
+    <color name="overlay_fg_60">#992C2F3D</color>
+    <color name="overlay_fg_70">#B32C2F3D</color>
+    <color name="overlay_fg_80">#CC2C2F3D</color>
+    <color name="overlay_fg_90">#E62C2F3D</color>
+
     <color name="colorPrimary">@color/orange_background_dark</color>
     <color name="colorPrimaryDark">@color/orange_background_dark</color>
     <color name="colorAccent">#1835FC</color>
     <color name="colorAccent_dark">#B3C4EE</color>
     <color name="colorAccent_light">#2E62FF</color>
     <color name="background">#FFFFFF</color><!-- #ff16171d -->
+    <color name="backgroundSB">#4DFFFFFF</color>
     <!-- #ff16171d -->
     <color name="inactive">#33909CC2</color>
     <color name="textColor">#2C2F3D</color>
@@ -37,7 +48,7 @@
     <color name="transparent">#00000000</color>
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
-    <color name="dialog_contact">#EBE2EDF3</color><!-- navbar -->
+    <color name="dialog_contact">#EBF2F8FA</color><!-- navbar -->
     <color name="dialog_contact2">#E2EDF3</color><!-- navbar -->
     <color name="dialog_donation">#E6162ED3</color>
     <color name="donation_sb">#E6BF009F</color>
