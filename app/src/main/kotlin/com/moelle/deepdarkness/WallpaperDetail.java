@@ -55,7 +55,7 @@ public class WallpaperDetail extends AppCompatActivity {
         anim_fab.setStartOffset(180);
         anim_fab.setInterpolator(new OvershootInterpolator(3.0f));
         anim_cover.setInterpolator(new FastOutSlowInInterpolator());
-        anim_cover.setStartOffset(180);
+        anim_cover.setStartOffset(150);
         MovieCoverImg.setAnimation(anim_cover);
         play_fab.setAnimation(anim_fab);
         //MovieThumbnailImg.setAnimation(anim_thumb);

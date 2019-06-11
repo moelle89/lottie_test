@@ -1,6 +1,7 @@
 package com.moelle.deepdarkness;
 
 import android.app.ActivityOptions;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,6 +19,12 @@ import com.moelle.deepdarkness.models.Wall;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.calligraphy3.FontMapper;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
+
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 
     private RecyclerView WallsRV;
@@ -28,6 +35,22 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
+
+        //Custom Fonts Ini
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/Khula-ExtraBold.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .setFontMapper(new FontMapper() {
+                                    @Override
+                                    public String map(String font) {
+                                        return font;
+                                    }
+                                })
+                                .build()))
+                .build());
+
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
 
@@ -51,11 +74,6 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         listWalls.add(new Wall("W13", R.drawable.w13));
         listWalls.add(new Wall("W14", R.drawable.w14));
         listWalls.add(new Wall("W15", R.drawable.w15));
-        listWalls.add(new Wall("W16", R.drawable.w16));
-        listWalls.add(new Wall("W17", R.drawable.w17));
-        listWalls.add(new Wall("W18", R.drawable.w18));
-        listWalls.add(new Wall("W19", R.drawable.w19));
-        listWalls.add(new Wall("W20", R.drawable.w20));
 
         WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls, this);
         WallsRV.setAdapter(wallpaperAdapter);
@@ -86,8 +104,10 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         //Toast.makeText(this,"item clicked : " + wall.getTitle(),Toast.LENGTH_LONG).show();
         // it works great
 
-
     }
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
 
 }

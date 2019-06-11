@@ -70,16 +70,19 @@
                     android:textAppearance="@style/TextAppearance.Cocogoose"
                     android:lineSpacingExtra="4dp"
                     android:textColor="@color/textColor"
-                    android:textSize="26dp" />
+                    android:textSize="26sp" />
                 <TextView
                     android:layout_marginStart="25dp"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:text="welcome to\nthe dark side."
                     android:textAppearance="@style/TextAppearance.Khula"
                     android:textColor="@color/secondary_text_light"
-                    android:textSize="24dp" />
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMaxTextSize="25sp"
+                    android:autoSizeMinTextSize="20sp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -330,7 +333,7 @@
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="1.15"
+                    app:layout_constraintDimensionRatio="1.10"
                     app:layout_constraintEnd_toStartOf="@id/card5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/card6">
@@ -380,7 +383,7 @@
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true"
                     app:layout_constraintBottom_toBottomOf="@+id/card4"
-                    app:layout_constraintDimensionRatio="1.15"
+                    app:layout_constraintDimensionRatio="1.10"
                     app:layout_constraintEnd_toStartOf="@+id/card6"
                     app:layout_constraintStart_toEndOf="@+id/card4"
                     app:layout_constraintTop_toTopOf="@+id/card4">
@@ -429,7 +432,7 @@
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true"
                     app:layout_constraintBottom_toBottomOf="@+id/card4"
-                    app:layout_constraintDimensionRatio="1.15"
+                    app:layout_constraintDimensionRatio="1.10"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/card5"
                     app:layout_constraintTop_toTopOf="@id/card5">
