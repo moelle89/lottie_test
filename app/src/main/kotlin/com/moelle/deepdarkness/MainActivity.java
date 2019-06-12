@@ -74,10 +74,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private int pickedColor1;
     private int pickedColor2;
     private int pickedColor3;
+    private int pickedColor4;
     SharedPreferences preferences;
     private final String PICKED_COLOR_KEY1 = "picker-key1";
     private final String PICKED_COLOR_KEY2 = "picker-key2";
     private final String PICKED_COLOR_KEY3 = "picker-key3";
+    private final String PICKED_COLOR_KEY4 = "picker-key4";
 
 
     public static final int[] DD_Colors = {
@@ -155,6 +157,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(this, R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(this, R.color.background));
         pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(this, R.color.background1));
+        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(this, R.color.background));
+
         fab = findViewById(R.id.fab);
 
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));

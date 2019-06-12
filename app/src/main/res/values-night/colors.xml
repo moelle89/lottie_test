@@ -23,6 +23,7 @@
     <color name="overlay_accent_80">#CC1835FC</color>
     <color name="overlay_accent_90">#E61835FC</color>
 
+    <color name="overlay_background_01">#01000000</color>
     <color name="overlay_background_10">#1A000000</color>
     <color name="overlay_background_20">#33000000</color>
     <color name="overlay_background_30">#4D000000</color>

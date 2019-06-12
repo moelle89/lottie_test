@@ -23,6 +23,8 @@
     <string name="linear_gradient">LINEAR\nGRADIENT</string>
     <string name="radial_gradient">RADIAL\nGRADIENT</string>
 
+    <string name="keyboard">R.raw.keyboard</string>
+
 
     <string name="no_permission">No permission to access storage. Certain functions will not function properly.</string>
 </resources>

@@ -25,7 +25,7 @@ public class LottieTutorial extends AppIntro {
         if (isFirstRun3) {
             //show start activity
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                    .putBoolean("isFirstRun3", false).commit();
+                    .putBoolean("isFirstRun3", false).apply();
             Intent i = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(i);
         }

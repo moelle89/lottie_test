@@ -12,7 +12,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
-import androidx.core.widget.TextViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
@@ -27,14 +26,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
-
-import static android.graphics.Color.TRANSPARENT;
-import static androidx.core.widget.TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM;
 
 /**
  * A simple {@link Fragment} subclass.

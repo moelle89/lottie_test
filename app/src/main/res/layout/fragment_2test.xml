@@ -8,10 +8,20 @@
     android:tag="fragment2"
     tools:context=".fragment.fragment_2"
     android:theme="@style/AppTheme">
+
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true" >
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/dashboard_head"
@@ -502,6 +512,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.moelle.deepdarkness.HorizontalOverScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
