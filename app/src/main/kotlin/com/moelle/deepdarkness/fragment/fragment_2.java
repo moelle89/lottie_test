@@ -70,7 +70,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
 
-    private LottieAnimationView keyboard2, dashboard_head, keyboard, dialogbg;
+    private LottieAnimationView keyboard2, dashboard_head, keyboard, dialogbg, dialogbg0;
     private ImageView iconMAIL, imageView;
     private View center;
     private CardView mail, card1, CardView2, CardView3, CardView4;
@@ -137,37 +137,30 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         keyboard = v.findViewById(R.id.dashboard_head);
         keyboard.setAnimation(R.raw.keyboard);
 
-
-
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
 
-        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
         KeyPath keyfg3 = new KeyPath("BG2","**");
         LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
         keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
 
-        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
         SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
-
         KeyPath keyfg4 = new KeyPath("BG1","**");
         LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(keyboardtint2);
         keyboard.addValueCallback(keyfg4, LottieProperty.COLOR_FILTER, callback4);
 
-        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor3));
-        SimpleColorFilter keyboardtint3 = new SimpleColorFilter(pickedColor3);
+        com.moelle.deepdarkness.SimpleColorFilter keyboardtint3 = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor3, PorterDuff.Mode.SRC_IN);
         KeyPath keyfg5 = new KeyPath("BG1FG","**");
         LottieValueCallback<ColorFilter> callback5 = new LottieValueCallback<ColorFilter>(keyboardtint3);
         keyboard.addValueCallback(keyfg5, LottieProperty.COLOR_FILTER, callback5);
 
-        keyboard.setBackgroundTintList(ColorStateList.valueOf(pickedColor4));
         SimpleColorFilter keyboardtint4 = new SimpleColorFilter(pickedColor4);
         KeyPath keyfg6 = new KeyPath("BG1STROKE","**");
         LottieValueCallback<ColorFilter> callback6 = new LottieValueCallback<ColorFilter>(keyboardtint4);
         keyboard.addValueCallback(keyfg6, LottieProperty.COLOR_FILTER, callback6);
 
-        SimpleColorFilter filterfg = new SimpleColorFilter(fg);
+        com.moelle.deepdarkness.SimpleColorFilter filterfg = new com.moelle.deepdarkness.SimpleColorFilter(fg, PorterDuff.Mode.SRC_IN);
         KeyPath keyboardKey = new KeyPath("fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
         keyboard.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
@@ -340,6 +333,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
 
+        dialogbg0 = dialog.findViewById(R.id.dialogbg0);
+        final int dialogcolor = ContextCompat.getColor(dialog.getContext(), R.color.dialog_contact);
+        com.moelle.deepdarkness.SimpleColorFilter dialogbgtint = new com.moelle.deepdarkness.SimpleColorFilter(dialogcolor, PorterDuff.Mode.SRC_IN);
+        KeyPath dialogbgkey = new KeyPath("**");
+        LottieValueCallback<ColorFilter> dialogbgcall = new LottieValueCallback<ColorFilter>(dialogbgtint);
+        dialogbg0.addValueCallback(dialogbgkey, LottieProperty.COLOR_FILTER, dialogbgcall);
+
+
         keyboard2 = dialog.findViewById(R.id.dashboard_head2);
 
         keyboard2.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
@@ -428,6 +429,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, 80, endRadius);
 
             view.setVisibility(View.VISIBLE);
+
             revealAnimator.setDuration(750);
             revealAnimator.start();
 
