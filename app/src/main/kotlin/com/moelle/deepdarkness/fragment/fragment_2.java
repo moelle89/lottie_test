@@ -17,6 +17,7 @@ import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -69,6 +71,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
+    private static final int DIALOG_ID3 = 2;
 
     private LottieAnimationView keyboard2, dashboard_head, keyboard, dialogbg, dialogbg0;
     private ImageView iconMAIL, imageView;
@@ -133,7 +136,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         cat_top1.setAlpha(0f);
         cat_top2.setAlpha(0f);
         cat_bottom.setAlpha(0f);
-
         keyboard = v.findViewById(R.id.dashboard_head);
         keyboard.setAnimation(R.raw.keyboard);
 
@@ -250,7 +252,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             }
         }
     }
-
     public void setBackground1() {
         final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
         final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background1 );
@@ -259,8 +260,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
 
-        Fragment fragment = new fragment_2();
-        getActivity().getSupportFragmentManager().getPrimaryNavigationFragment();
+        //Fragment fragment = new fragment_2();
+        //getActivity().getSupportFragmentManager().getPrimaryNavigationFragment();
     }
     public void setBackground2() {
         final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
@@ -326,7 +327,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 .show(getActivity());
     }
 
-
     private void showContact() {
         final View dialogView = View.inflate(getActivity(), R.layout.dialog_gboard, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogContact);
@@ -337,43 +337,24 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.getWindow().setStatusBarColor(Color.TRANSPARENT);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
-
         dialogbg0 = dialog.findViewById(R.id.dialogbg0);
-        final int dialogcolor = ContextCompat.getColor(dialog.getContext(), R.color.dialog_contact);
-        com.moelle.deepdarkness.SimpleColorFilter dialogbgtint = new com.moelle.deepdarkness.SimpleColorFilter(dialogcolor, PorterDuff.Mode.SRC_IN);
+        com.moelle.deepdarkness.SimpleColorFilter dialogbgtint = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.dialog_contact), PorterDuff.Mode.SRC_IN);
         KeyPath dialogbgkey = new KeyPath("**");
         LottieValueCallback<ColorFilter> dialogbgcall = new LottieValueCallback<ColorFilter>(dialogbgtint);
         dialogbg0.addValueCallback(dialogbgkey, LottieProperty.COLOR_FILTER, dialogbgcall);
 
-
         keyboard2 = dialog.findViewById(R.id.dashboard_head2);
-
-        keyboard2.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
-
-
-
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
         KeyPath keyfg3 = new KeyPath("BG2","**");
         LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
         keyboard2.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
-
-        keyboard2.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
-
-
         SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
-
         KeyPath keyfg4 = new KeyPath("BG1","**");
         LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(keyboardtint2);
         keyboard2.addValueCallback(keyfg4, LottieProperty.COLOR_FILTER, callback4);
-
-
-
         final int fg = ContextCompat.getColor(dialog.getContext(), R.color.secondary_text_light);
         SimpleColorFilter filterfg = new SimpleColorFilter(fg);
         KeyPath keyboardKey = new KeyPath("fg", "**");
-
-
-
 
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
         keyboard2.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);

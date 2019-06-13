@@ -32,9 +32,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintHeight_percent="0.42"
         app:layout_constraintTop_toTopOf="parent"
+        app:lottie_renderMode="hardware"
         app:lottie_autoPlay="true"
-        app:lottie_speed="1.1" />
-
+        app:lottie_speed="1.0" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -290,36 +290,35 @@
         app:layout_constraintTop_toBottomOf="@+id/CardView3" />
 
     <com.moelle.deepdarkness.HorizontalOverScrollView
-        android:scrollbars="none"
-        android:overScrollMode="ifContentScrolls"
+        android:id="@+id/horizontalOverScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.15"
-        android:layout_marginBottom="0dp"
         android:layout_marginTop="5dp"
         android:background="@color/background"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBottom"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBottom">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/background1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="1.25"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground"
-                app:cardUseCompatPadding="true"
                 app:cardBackgroundColor="#73000000"
                 app:cardCornerRadius="@dimen/cardCornerRadius_small"
                 app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1.25"
                 app:layout_constraintEnd_toStartOf="@id/background2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -329,8 +328,8 @@
                     android:layout_height="match_parent"
                     android:alpha="1.0"
                     android:scaleType="centerCrop"
-                    app:lottie_colorFilter="@color/background1"
                     app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/background1"
                     app:lottie_rawRes="@raw/radial_gradient" />
 
                 <LinearLayout
@@ -346,31 +345,32 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="10dp"
-                        android:autoSizeTextType="uniform"
                         android:autoSizeMaxTextSize="17sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="bottom"
                         android:maxLines="2"
                         android:text="@string/background1"
-                        android:gravity="bottom"
                         android:textAlignment="gravity"
-                        android:textColor="#BFFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaBold"
+                        android:textColor="#BFFFFFFF" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/background2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="1.25"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="#73000000"
                 app:cardCornerRadius="@dimen/cardCornerRadius_small"
-
                 app:cardElevation="0dp"
+
                 app:cardUseCompatPadding="true"
                 app:layout_constraintBottom_toBottomOf="@+id/background1"
+                app:layout_constraintDimensionRatio="1.25"
                 app:layout_constraintEnd_toStartOf="@id/background3"
                 app:layout_constraintStart_toEndOf="@id/background1"
                 app:layout_constraintTop_toTopOf="@id/background1">
@@ -380,8 +380,8 @@
                     android:layout_height="match_parent"
                     android:alpha="1.0"
                     android:scaleType="centerCrop"
-                    app:lottie_colorFilter="@color/background2"
                     app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/background2"
                     app:lottie_rawRes="@raw/radial_gradient" />
 
                 <LinearLayout
@@ -395,22 +395,22 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="10dp"
-                        android:maxLines="2"
-                        android:autoSizeTextType="uniform"
                         android:autoSizeMaxTextSize="17sp"
-                        android:text="@string/background2"
+                        android:autoSizeTextType="uniform"
                         android:gravity="bottom"
+                        android:maxLines="2"
+                        android:text="@string/background2"
                         android:textAlignment="gravity"
-                        android:textColor="#BFFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaBold"
+                        android:textColor="#BFFFFFFF" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/background3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="1.25"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -419,6 +419,7 @@
                 app:cardElevation="0dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintBottom_toBottomOf="@+id/background2"
+                app:layout_constraintDimensionRatio="1.25"
                 app:layout_constraintEnd_toStartOf="@id/background4"
                 app:layout_constraintStart_toEndOf="@+id/background2"
                 app:layout_constraintTop_toTopOf="@id/background1">
@@ -428,8 +429,8 @@
                     android:layout_height="match_parent"
                     android:alpha="1.0"
                     android:scaleType="centerCrop"
-                    app:lottie_colorFilter="@color/background3"
                     app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/background3"
                     app:lottie_rawRes="@raw/radial_gradient" />
 
                 <LinearLayout
@@ -443,22 +444,22 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="10dp"
+                        android:autoSizeMaxTextSize="17sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="bottom"
                         android:maxLines="2"
                         android:text="@string/background3"
-                        android:autoSizeTextType="uniform"
-                        android:autoSizeMaxTextSize="17sp"
-                        android:gravity="bottom"
                         android:textAlignment="gravity"
-                        android:textColor="#BFFFFFFF"
-                        android:textAppearance="@style/TextAppearance.KhulaBold" />
+                        android:textAppearance="@style/TextAppearance.KhulaBold"
+                        android:textColor="#BFFFFFFF" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/background4"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="1.25"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -467,6 +468,7 @@
                 app:cardElevation="0dp"
                 app:cardUseCompatPadding="true"
                 app:layout_constraintBottom_toBottomOf="@+id/background3"
+                app:layout_constraintDimensionRatio="1.25"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/background3"
                 app:layout_constraintTop_toTopOf="@id/background1">
@@ -476,36 +478,36 @@
                     android:layout_height="match_parent"
                     android:alpha="1.0"
                     android:scaleType="centerCrop"
-                    app:lottie_colorFilter="@color/background4"
                     app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/background4"
                     app:lottie_rawRes="@raw/radial_gradient" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingStart="1dp"
-                    android:paddingEnd="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingBottom="1dp"
                     android:layout_gravity="bottom|start"
+                    android:foreground="@drawable/card_stroke"
                     android:gravity="bottom|start"
-                    android:foreground="@drawable/card_stroke">
+                    android:paddingStart="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="10dp"
-                            android:maxLines="2"
-                            android:text="@string/background4"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMaxTextSize="17sp"
-                            android:gravity="bottom"
-                            android:textAlignment="gravity"
-                            android:textColor="#BFFFFFFF"
-                            android:textAppearance="@style/TextAppearance.KhulaBold" />
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:autoSizeMaxTextSize="17sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="bottom"
+                        android:maxLines="2"
+                        android:text="@string/background4"
+                        android:textAlignment="gravity"
+                        android:textAppearance="@style/TextAppearance.KhulaBold"
+                        android:textColor="#BFFFFFFF" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

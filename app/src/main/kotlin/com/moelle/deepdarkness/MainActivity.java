@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     // Give your color picker dialog unique IDs if you have multiple dialogs.
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
+    private static final int DIALOG_ID3 = 2;
 
     private int pickedColor1;
     private int pickedColor2;
@@ -80,7 +81,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private final String PICKED_COLOR_KEY2 = "picker-key2";
     private final String PICKED_COLOR_KEY3 = "picker-key3";
     private final String PICKED_COLOR_KEY4 = "picker-key4";
-
 
     public static final int[] DD_Colors = {
             0xFF1835FC,  //  Ultramarine
@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     CardView switchcard;
     PrefManager sharedpref;
     FloatingActionButton fab;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,7 +159,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(this, R.color.background));
 
         fab = findViewById(R.id.fab);
-
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
 
         //loading the default fragment
@@ -229,7 +227,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     private int previousSelectedId = 0;
-
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -411,13 +408,28 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     toast.show();
                 }
                 break;
+            case DIALOG_ID3:
+                try {
+                    final int pickedColor3 = ContextCompat.getColor(getApplicationContext(), R.color.background );
+                    final int pickedColor2 = ContextCompat.getColor(getApplicationContext(), R.color.background1 );
+                    final int pickedColor1 = ContextCompat.getColor(getApplicationContext(), R.color.background1 );
+                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+                    preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
+                    preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
+                    Fragment fragment = new fragment_2();
+                    loadFragment(fragment);
+
+                } catch (Throwable t) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Error on ID3", Toast.LENGTH_LONG);
+                    toast.show();
+                }
+                break;
         }
     }
 
     @Override
     public void onDialogDismissed(int dialogId) {
     }
-
 
     public void restartApp() {
         Intent b = new Intent(getApplicationContext(), MainActivity.class);
@@ -455,5 +467,4 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
         }
     }
-
 }

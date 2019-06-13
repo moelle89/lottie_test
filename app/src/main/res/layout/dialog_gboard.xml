@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_rawRes="@raw/radial_bg2"
         app:lottie_autoPlay="true"
-        app:lottie_speed="1.2" />
+        app:lottie_speed="1.15" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/dashboard_head2"
@@ -34,8 +34,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.85"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/keyboard3"
         app:lottie_renderMode="hardware"
+        app:lottie_rawRes="@raw/keyboard3"
         app:lottie_speed="1.3" />
 
     <ImageView
