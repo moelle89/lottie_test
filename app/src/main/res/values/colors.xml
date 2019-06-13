@@ -50,7 +50,7 @@
     <color name="fab">#1832E6</color>
     <color name="appintro_icon_tint">#91B8FF</color>
     <color name="dialog_contact">#EBF2F8FA</color><!-- navbar -->
-    <color name="dialog_contact2">#E2EDF3</color><!-- navbar -->
+    <color name="dialog_contact2">#E0EBF3F8</color><!-- navbar -->
     <color name="dialog_donation">#E6162ED3</color>
     <color name="donation_sb">#E6BF009F</color>
     <color name="donation_nav">#F7DB70</color>

@@ -17,7 +17,6 @@ import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
@@ -71,7 +70,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
-    private static final int DIALOG_ID3 = 2;
 
     private LottieAnimationView keyboard2, dashboard_head, keyboard, dialogbg, dialogbg0;
     private ImageView iconMAIL, imageView;
@@ -105,7 +103,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.accent14));
         pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(getContext(), R.color.accent14));
-
+        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getContext(), R.color.overlay_fg_30));
 
 
         LinearLayout card2 = v.findViewById(R.id.accent4);
@@ -141,13 +139,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
+        final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_30);
 
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
         KeyPath keyfg3 = new KeyPath("BG2","**");
         LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
         keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
 
-        com.moelle.deepdarkness.SimpleColorFilter BG2STROKE = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.overlay_fg_40), PorterDuff.Mode.SRC_IN);
+        com.moelle.deepdarkness.SimpleColorFilter BG2STROKE = new com.moelle.deepdarkness.SimpleColorFilter(stroke, PorterDuff.Mode.SRC_IN);
         KeyPath KEYBG2STROKE = new KeyPath("BG2","STROKE");
         LottieValueCallback<ColorFilter> callback7 = new LottieValueCallback<ColorFilter>(BG2STROKE);
         keyboard.addValueCallback(KEYBG2STROKE, LottieProperty.COLOR_FILTER, callback7);
@@ -162,17 +161,22 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         LottieValueCallback<ColorFilter> callback5 = new LottieValueCallback<ColorFilter>(keyboardtint3);
         keyboard.addValueCallback(keyfg5, LottieProperty.COLOR_FILTER, callback5);
 
-        SimpleColorFilter keyboardtint4 = new SimpleColorFilter(pickedColor4);
-        KeyPath keyfg6 = new KeyPath("BG1STROKE","**");
+        com.moelle.deepdarkness.SimpleColorFilter keyboardtint5 = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor4, PorterDuff.Mode.SRC_IN);
+        KeyPath keyfg7 = new KeyPath("BG1FG","BG1FG","STROKE");
+        LottieValueCallback<ColorFilter> callback8 = new LottieValueCallback<ColorFilter>(keyboardtint5);
+        keyboard.addValueCallback(keyfg7, LottieProperty.COLOR_FILTER, callback8);
+
+        com.moelle.deepdarkness.SimpleColorFilter keyboardtint4 = new com.moelle.deepdarkness.SimpleColorFilter(stroke, PorterDuff.Mode.SRC_IN);
+        KeyPath keyfg6 = new KeyPath("BG2","BG2","BG2","STROKE","**");
         LottieValueCallback<ColorFilter> callback6 = new LottieValueCallback<ColorFilter>(keyboardtint4);
         keyboard.addValueCallback(keyfg6, LottieProperty.COLOR_FILTER, callback6);
 
         com.moelle.deepdarkness.SimpleColorFilter filterfg = new com.moelle.deepdarkness.SimpleColorFilter(fg, PorterDuff.Mode.SRC_IN);
-        KeyPath keyboardKey = new KeyPath("fg", "**");
+        KeyPath keyboardKey = new KeyPath("GBOARD", "fg", "**");
         LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
         keyboard.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
         SimpleColorFilter filterbg = new SimpleColorFilter(bg);
-        KeyPath keybg = new KeyPath("bg", "**");
+        KeyPath keybg = new KeyPath("GBOARD", "bg", "**");
         LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
         keyboard.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
         // ini Animations
@@ -252,49 +256,62 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             }
         }
     }
+
+    private void loadFragment(Fragment fragment) {
+        getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .commit();
+    }
+
     public void setBackground1() {
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
-        final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background1 );
-        final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background1 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
+        final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background1 );
+        final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background1 );
+        preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
-
-        //Fragment fragment = new fragment_2();
-        //getActivity().getSupportFragmentManager().getPrimaryNavigationFragment();
+        Fragment fragment = new fragment_2();
+        loadFragment(fragment);
     }
     public void setBackground2() {
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
-        final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background2 );
-        final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background2 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
+        final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background2 );
+        final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background2 );
+        preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
-
+        Fragment fragment = new fragment_2();
+        loadFragment(fragment);
     }
     public void setBackground3() {
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
+        final int pickedColor4 = ContextCompat.getColor(getView().getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background3 );
         final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background3 );
+        preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
-
-        Intent b = new Intent(getActivity().getApplicationContext(), MainActivity.class);
-        getActivity().finish();
-        startActivity(b);
+        Fragment fragment = new fragment_2();
+        loadFragment(fragment);
     }
+
     public void setBackground4() {
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.background );
+        final int pickedColor4 = ContextCompat.getColor(getView().getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background4 );
         final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background4 );
+        preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
-
-        Intent b = new Intent(getActivity().getApplicationContext(), MainActivity.class);
-        getActivity().finish();
-        startActivity(b);
+        Fragment fragment = new fragment_2();
+        loadFragment(fragment);
     }
 
     public void launchPicker1(View view) {
@@ -338,10 +355,15 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
         dialogbg0 = dialog.findViewById(R.id.dialogbg0);
-        com.moelle.deepdarkness.SimpleColorFilter dialogbgtint = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.dialog_contact), PorterDuff.Mode.SRC_IN);
-        KeyPath dialogbgkey = new KeyPath("**");
-        LottieValueCallback<ColorFilter> dialogbgcall = new LottieValueCallback<ColorFilter>(dialogbgtint);
-        dialogbg0.addValueCallback(dialogbgkey, LottieProperty.COLOR_FILTER, dialogbgcall);
+        com.moelle.deepdarkness.SimpleColorFilter circEndTint = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.dialog_contact2), PorterDuff.Mode.SRC_IN);
+        KeyPath circEND = new KeyPath("circEND","**");
+        LottieValueCallback<ColorFilter> circENDcall = new LottieValueCallback<ColorFilter>(circEndTint);
+        dialogbg0.addValueCallback(circEND, LottieProperty.COLOR_FILTER, circENDcall);
+
+        com.moelle.deepdarkness.SimpleColorFilter circStartTint = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
+        KeyPath circStart = new KeyPath("circSTART","**");
+        LottieValueCallback<ColorFilter> circStartCall = new LottieValueCallback<ColorFilter>(circStartTint);
+        dialogbg0.addValueCallback(circStart, LottieProperty.COLOR_FILTER, circStartCall);
 
         keyboard2 = dialog.findViewById(R.id.dashboard_head2);
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
@@ -424,7 +446,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
 
         if (b) {
-            Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, 80, endRadius);
+            Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, endRadius, endRadius);
 
             view.setVisibility(View.VISIBLE);
 

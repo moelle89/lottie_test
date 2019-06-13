@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_rawRes="@raw/radial_bg2"
         app:lottie_autoPlay="true"
-        app:lottie_speed="1.15" />
+        app:lottie_speed="1.1" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/dashboard_head2"

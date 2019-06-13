@@ -155,8 +155,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(this, R.color.colorAccent));
         pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(this, R.color.background));
-        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(this, R.color.background1));
-        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(this, R.color.background));
+        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(this, R.color.transparent));
+        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(this, R.color.overlay_fg_30));
 
         fab = findViewById(R.id.fab);
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
@@ -395,8 +395,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     //fab.setBackgroundTintList(ColorStateList.valueOf(color));
                     pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
-                    pickedColor3 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY3, color).apply();
+                    preferences.edit().putInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getBaseContext(), R.color.transparent)).apply();
                     //pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
                     //preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
                     Fragment fragment = new fragment_2();
@@ -405,22 +405,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
                 } catch (Throwable t) {
                     Toast toast = Toast.makeText(getApplicationContext(), "Error on ID2", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-                break;
-            case DIALOG_ID3:
-                try {
-                    final int pickedColor3 = ContextCompat.getColor(getApplicationContext(), R.color.background );
-                    final int pickedColor2 = ContextCompat.getColor(getApplicationContext(), R.color.background1 );
-                    final int pickedColor1 = ContextCompat.getColor(getApplicationContext(), R.color.background1 );
-                    preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
-                    preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
-                    preferences.edit().putInt(PICKED_COLOR_KEY1, pickedColor1).apply();
-                    Fragment fragment = new fragment_2();
-                    loadFragment(fragment);
-
-                } catch (Throwable t) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Error on ID3", Toast.LENGTH_LONG);
                     toast.show();
                 }
                 break;
