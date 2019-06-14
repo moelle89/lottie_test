@@ -49,7 +49,7 @@
 	<string name="background2">Acorn</string><!--Acorn-->
 	<color name="background3">#1C4366</color>
 	<string name="background3">Deep\nDarkness</string><!--Deep Darkness-->
-	<color name="background4">#000000</color>
+	<color name="background4">#ff090A0C</color>
 	<string name="background4">Pitch Black</string><!--Pitchblack-->
 	
 </resources>

@@ -134,7 +134,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
-        final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_30);
+        final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_20);
 
         SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
         KeyPath keyfg3 = new KeyPath("BG2","**");
@@ -142,9 +142,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
 
         com.moelle.deepdarkness.SimpleColorFilter BG2STROKE = new com.moelle.deepdarkness.SimpleColorFilter(stroke, PorterDuff.Mode.SRC_IN);
-        KeyPath KEYBG2STROKE = new KeyPath("BG2","STROKE");
+        KeyPath KEYBG2STROKE = new KeyPath("BG2","STROKE","**");
         LottieValueCallback<ColorFilter> callback7 = new LottieValueCallback<ColorFilter>(BG2STROKE);
         keyboard.addValueCallback(KEYBG2STROKE, LottieProperty.COLOR_FILTER, callback7);
+
+        KeyPath KEYBG3STROKE = new KeyPath("STROKE","**");
+        keyboard.addValueCallback(KEYBG3STROKE, LottieProperty.COLOR_FILTER, callback7);
 
         SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
         KeyPath keyfg4 = new KeyPath("BG1","**");
@@ -260,7 +263,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void setBackground1() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background1 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background1 );
@@ -272,7 +275,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         loadFragment(fragment);
     }
     public void setBackground2() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background2 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background2 );
@@ -284,7 +287,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         loadFragment(fragment);
     }
     public void setBackground3() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background3 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background3 );
@@ -297,7 +300,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void setBackground4() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background4 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background4 );
