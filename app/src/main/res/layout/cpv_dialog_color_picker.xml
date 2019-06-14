@@ -34,8 +34,8 @@
 
       <com.jaredrummler.android.colorpicker.ColorPanelView
           android:id="@id/cpv_color_panel_old"
-          android:layout_width="@dimen/cpv_dialog_preview_width"
-          android:layout_height="@dimen/cpv_dialog_preview_height"
+          android:layout_width="90dp"
+          android:layout_height="62dp"
           app:cpv_colorShape="square"
           android:foreground="@drawable/item_fg"
           />
@@ -54,8 +54,8 @@
 
       <com.jaredrummler.android.colorpicker.ColorPanelView
           android:id="@id/cpv_color_panel_new"
-          android:layout_width="@dimen/cpv_dialog_preview_width"
-          android:layout_height="@dimen/cpv_dialog_preview_height"
+          android:layout_width="90dp"
+          android:layout_height="62dp"
           app:cpv_colorShape="square"
           android:foreground="@drawable/item_fg"
           />

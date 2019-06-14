@@ -10,12 +10,12 @@
             android:pathData="M0,0v152h152V0H0z M146.5,119.3c0,15-12.3,27.2-27.2,27.2H32.7c-15,0-27.2-12.3-27.2-27.2V32.7c0-15,12.3-27.2,27.2-27.2 h86.5c15,0,27.2,12.3,27.2,27.2V119.3z" />
     </vector>-->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:top="-8dp" android:left="-8dp" android:right="-8dp" android:bottom="-8dp">
+    <item android:top="-10dp" android:left="-10dp" android:right="-10dp" android:bottom="-10dp">
         <shape android:shape="rectangle">
             <padding android:top="5dp" android:bottom="5dp" android:right="5dp" android:left="5dp" />
             <corners android:radius="20.0dip" />
             <solid android:color="@color/transparent" />
-            <stroke android:width="15dip" android:color="@color/background" />
+            <stroke android:width="18dip" android:color="@color/background" />
         </shape>
     </item>
 </layer-list>

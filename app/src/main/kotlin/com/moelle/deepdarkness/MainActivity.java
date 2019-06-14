@@ -8,11 +8,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.ColorFilter;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
@@ -160,7 +158,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         fab = findViewById(R.id.fab);
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
-
         //loading the default fragment
         loadFragment(new fragment_1());
 

@@ -5,7 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -27,8 +26,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -42,11 +39,9 @@ import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -289,10 +284,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         loadFragment(fragment);
     }
     public void setBackground3() {
-        final int pickedColor4 = ContextCompat.getColor(getView().getContext(), R.color.overlay_fg_30 );
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.transparent );
-        final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background3 );
-        final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background3 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
+        final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background3 );
+        final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background3 );
         preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();
@@ -302,10 +297,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void setBackground4() {
-        final int pickedColor4 = ContextCompat.getColor(getView().getContext(), R.color.overlay_fg_30 );
-        final int pickedColor3 = ContextCompat.getColor(getView().getContext(), R.color.transparent );
-        final int pickedColor2 = ContextCompat.getColor(getView().getContext(), R.color.background4 );
-        final int pickedColor1 = ContextCompat.getColor(getView().getContext(), R.color.background4 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_30 );
+        final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
+        final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background4 );
+        final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background4 );
         preferences.edit().putInt(PICKED_COLOR_KEY4, pickedColor4).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
         preferences.edit().putInt(PICKED_COLOR_KEY2, pickedColor2).apply();

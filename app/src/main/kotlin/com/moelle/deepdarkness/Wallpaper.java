@@ -1,12 +1,15 @@
 package com.moelle.deepdarkness;
 
+import android.animation.ValueAnimator;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +30,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 
+    float durationScale;
     private RecyclerView WallsRV;
 
     @Override
@@ -50,6 +54,18 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
                                 })
                                 .build()))
                 .build());
+        // Get duration scale from the global settings.
+        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
+        // If global duration scale is not 1 (default), try to override it
+        if ((durationScale != 1) && (durationScale == 0) || (durationScale != 2)) {
+            try {
+                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.9f);
+                durationScale = 0.9f;
+            } catch (Throwable t) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+                toast.show();
+            }
+        }
 
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
