@@ -2,9 +2,18 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieFrameInfo;
+import com.airbnb.lottie.value.LottieValueCallback;
+import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
 
@@ -61,6 +70,29 @@ public class LottieTutorial extends AppIntro {
 
         if ((oldFragment == null) && (newFragment == slide_5) || (oldFragment == slide_6) && (newFragment == slide_5)) {
             LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
+            com.moelle.deepdarkness.SimpleColorFilter TEXT1 = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.textColor), PorterDuff.Mode.CLEAR);
+            KeyPath TEXT1KEY = new KeyPath("TEXT1","**");
+            LottieValueCallback<ColorFilter> TEXT1CALL = new LottieValueCallback<ColorFilter>(TEXT1);
+            animationView5.addValueCallback(TEXT1KEY, LottieProperty.COLOR_FILTER, TEXT1CALL);
+
+            com.moelle.deepdarkness.SimpleColorFilter TEXT2 = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.secondary_text_light), PorterDuff.Mode.SRC_IN);
+            KeyPath TEXT2KEY = new KeyPath("TEXT2","**");
+            LottieValueCallback<ColorFilter> TEXT2CALL = new LottieValueCallback<ColorFilter>(TEXT2);
+            animationView5.addValueCallback(TEXT2KEY, LottieProperty.COLOR_FILTER, TEXT2CALL);
+
+            animationView5.addValueCallback(
+                    new KeyPath("ACCENT","**"),
+                    LottieProperty.COLOR_FILTER,
+                    new SimpleLottieValueCallback<ColorFilter>() {
+                        @Override
+                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                            return new PorterDuffColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_OVER);
+                        }
+                    }
+
+
+                    );
+
             //animationView5.playAnimation();
             animationView5.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override

@@ -10,6 +10,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -37,7 +38,9 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.LottieValueCallback;
+import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
@@ -353,31 +356,48 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
         dialogbg0 = dialog.findViewById(R.id.dialogbg0);
-        com.moelle.deepdarkness.SimpleColorFilter circEndTint = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.dialog_contact2), PorterDuff.Mode.SRC_IN);
-        KeyPath circEND = new KeyPath("circEND","**");
-        LottieValueCallback<ColorFilter> circENDcall = new LottieValueCallback<ColorFilter>(circEndTint);
-        dialogbg0.addValueCallback(circEND, LottieProperty.COLOR_FILTER, circENDcall);
-
-        com.moelle.deepdarkness.SimpleColorFilter circStartTint = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
-        KeyPath circStart = new KeyPath("circSTART","**");
-        LottieValueCallback<ColorFilter> circStartCall = new LottieValueCallback<ColorFilter>(circStartTint);
-        dialogbg0.addValueCallback(circStart, LottieProperty.COLOR_FILTER, circStartCall);
+        dialogbg0.addValueCallback(
+                new KeyPath("circEND","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(getResources().getColor(R.color.dialog_contact2), PorterDuff.Mode.SRC_IN);
+                    }});
+        dialogbg0.addValueCallback(
+                new KeyPath("circSTART","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
+                    }});
 
         keyboard2 = dialog.findViewById(R.id.dashboard_head2);
-        SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
-        KeyPath keyfg3 = new KeyPath("BG2","**");
-        LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
-        keyboard2.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
-        SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
-        KeyPath keyfg4 = new KeyPath("BG1","**");
-        LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(keyboardtint2);
-        keyboard2.addValueCallback(keyfg4, LottieProperty.COLOR_FILTER, callback4);
-        final int fg = ContextCompat.getColor(dialog.getContext(), R.color.secondary_text_light);
-        SimpleColorFilter filterfg = new SimpleColorFilter(fg);
-        KeyPath keyboardKey = new KeyPath("fg", "**");
-
-        LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
-        keyboard2.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
+        keyboard2.addValueCallback(
+                new KeyPath("BG2","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor1, PorterDuff.Mode.SRC_IN);
+                    }});
+        keyboard2.addValueCallback(
+                new KeyPath("BG1","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
+                    }});
+        keyboard2.addValueCallback(
+                new KeyPath("fg","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(getResources().getColor(R.color.secondary_text_light), PorterDuff.Mode.SRC_IN);
+                    }});
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
         iconMAIL = dialog.findViewById(R.id.iconMAIL);
