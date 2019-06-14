@@ -163,7 +163,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         keyboard.addValueCallback(keyfg5, LottieProperty.COLOR_FILTER, callback5);
 
         com.moelle.deepdarkness.SimpleColorFilter keyboardtint5 = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor4, PorterDuff.Mode.SRC_IN);
-        KeyPath keyfg7 = new KeyPath("BG1FG","BG1FG","STROKE");
+        KeyPath keyfg7 = new KeyPath("BG1STROKE","**");
         LottieValueCallback<ColorFilter> callback8 = new LottieValueCallback<ColorFilter>(keyboardtint5);
         keyboard.addValueCallback(keyfg7, LottieProperty.COLOR_FILTER, callback8);
 
