@@ -44,6 +44,9 @@ import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
+import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
+import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 /**
@@ -328,11 +331,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 .setAllowCustom(true)
                 .setShowAlphaSlider(false)
                 .show(getActivity());
+
     }
 
     public void launchPicker2(View view) {
         final int Default2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(view.getContext(), R.color.accent14));
-        ColorPickerDialog.newBuilder()
+        newBuilder()
                 .setDialogTitle(R.string.pickerTitle2)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
                 .setColor(Default2)

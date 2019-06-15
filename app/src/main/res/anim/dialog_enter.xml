@@ -5,6 +5,6 @@
     <scale android:fromXScale="1.15" android:toXScale="1"
         android:fromYScale="1.15" android:toYScale="1"
         android:pivotX="50%p" android:pivotY="50%p"
-        android:duration="430" />
-    <alpha android:duration="430" android:fromAlpha="0" android:toAlpha="1" />
+        android:duration="@android:integer/config_mediumAnimTime" />
+    <alpha android:duration="@android:integer/config_mediumAnimTime" android:fromAlpha="0" android:toAlpha="1" />
 </set>

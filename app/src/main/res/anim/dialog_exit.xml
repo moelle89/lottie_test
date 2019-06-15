@@ -2,9 +2,9 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:interpolator/decelerate_quad"
     android:detachWallpaper="true">
-    <scale android:fromXScale="1" android:toXScale="1.15"
-        android:fromYScale="1" android:toYScale="1.15"
+    <scale android:fromXScale="1" android:toXScale="1.1"
+        android:fromYScale="1" android:toYScale="1.1"
         android:pivotX="50%p" android:pivotY="50%p"
-        android:duration="430" />
-    <alpha android:duration="430" android:fromAlpha="1" android:toAlpha="0" />
+        android:duration="@android:integer/config_mediumAnimTime" />
+    <alpha android:duration="@android:integer/config_mediumAnimTime" android:fromAlpha="1" android:toAlpha="0" />
 </set>

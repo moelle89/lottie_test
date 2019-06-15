@@ -26,12 +26,15 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.moelle.deepdarkness.AnimationPack;
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
+import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
+import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
-import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,7 +46,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
 
     private LinearLayout cat_top, cat_middle;
-    private ImageView closeBG, iconTG, iconMAIL, imageView;
+    private ImageView closeBG, iconTG, iconMAIL,animation_view2 ,imageView;
     private CardView cardRight, cardLeft, cardRight2, cardLeft2, card4, card5, card6, tg, mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
@@ -78,6 +81,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         // content ini
         cardTop = v.findViewById(R.id.flmiddle);
+        animation_view2 = v.findViewById(R.id.animation_view2);
+
         cardRight = v.findViewById(R.id.cardRight);
         cardRight2 = v.findViewById(R.id.cardRight2);
         cardLeft = v.findViewById(R.id.cardLeft);
@@ -108,8 +113,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         vonUnten4.setStartOffset(280);
 
         // setup Animation :
-        cat_top.setAlpha(0f);
-        scaleOut(cardTop);
+        scaleIn(animation_view2);
         cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
         cat_middle.setAlpha(0f);
         cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
@@ -119,14 +123,14 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cardTop.setTranslationY(-50);
         cardTop.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         */
-        cardLeft.setAnimation(vonOben);
-        cardRight.setAnimation(vonOben2);
-        cardLeft2.setAnimation(vonUnten);
-        cardRight2.setAnimation(vonUnten2);
-        card4.setAnimation(vonUnten2);
-        card5.setAnimation(vonUnten3);
-        card6.setAnimation(vonUnten4);
+        moveToBottom(cardLeft, 0);
+        moveToBottom(cardRight, 80);
+        moveToTop(cardLeft2,180);
+        moveToTop(cardRight2,230);
 
+        moveToTop(card4,230);
+        moveToTop(card5,280);
+        moveToTop(card6,330);
 
         // Inflate the layout for this fragment
         return v;
