@@ -30,6 +30,9 @@ import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
+import static com.moelle.deepdarkness.AnimationPack.scaleOut;
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -106,14 +109,16 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         // setup Animation :
         cat_top.setAlpha(0f);
+        scaleOut(cardTop);
         cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
         cat_middle.setAlpha(0f);
         cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
-        cardTop.setAlpha(0f);
+        /*cardTop.setAlpha(0f);
         cardTop.setScaleX(1.35f);
         cardTop.setScaleY(1.35f);
         cardTop.setTranslationY(-50);
         cardTop.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
+        */
         cardLeft.setAnimation(vonOben);
         cardRight.setAnimation(vonOben2);
         cardLeft2.setAnimation(vonUnten);
