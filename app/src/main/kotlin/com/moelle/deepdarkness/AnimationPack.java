@@ -15,6 +15,10 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 public class AnimationPack {
     /* */
+    public static void fadeIn(View view, long delay) {
+        view.setAlpha(0f);
+        view.animate().alpha(1f).setDuration(600).setStartDelay(delay).start();}
+    /* */
     public static void scale(View view, float x, float y, long duration) {
         view.animate().scaleX(x).scaleY(y).setDuration(duration);}
     /* */
@@ -28,19 +32,19 @@ public class AnimationPack {
         view.setTranslationY(50);
         view.setRotation(-25);
         view.animate().alpha(1f).setDuration(1800);
-        view.animate().translationY(0).scaleX(1).scaleY(1).setStartDelay(200).setDuration(800).setInterpolator(new DecelerateInterpolator(2));
-        view.animate().rotation(0).setStartDelay(200).setDuration(800).setInterpolator(new OvershootInterpolator(2)).start();
+        view.animate().translationY(0).scaleX(1).scaleY(1).setStartDelay(200).setDuration(700).setInterpolator(new DecelerateInterpolator(2));
+        view.animate().rotation(0).setStartDelay(200).setDuration(700).setInterpolator(new OvershootInterpolator(2)).start();
         }
    /* */
    public static void moveToTop(View view, float y, long delay, float tension) {
        view.setAlpha(0f);
        view.setTranslationY(y);
-       view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(550).setInterpolator(new OvershootInterpolator(tension)).start();}
+       view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(500).setInterpolator(new OvershootInterpolator(tension)).start();}
     /* */
     public static void moveToBottom(View view, float y, long delay, float tension) {
         view.setAlpha(0f);
         view.setTranslationY(-y);
-        view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(550).setInterpolator(new OvershootInterpolator(tension)).start();}
+        view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(500).setInterpolator(new OvershootInterpolator(tension)).start();}
     /* */
 
 

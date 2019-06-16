@@ -55,16 +55,11 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
                                 .build()))
                 .build());
         // Get duration scale from the global settings.
-        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
-        // If global duration scale is not 1 (default), try to override it
-        if ((durationScale != 1) && (durationScale == 0) || (durationScale != 2)) {
-            try {
-                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.9f);
-                durationScale = 0.9f;
-            } catch (Throwable t) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
-                toast.show();
-            }
+        try {
+            ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
+        } catch (Throwable t) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+            toast.show();
         }
 
         setContentView(R.layout.activity_wallpaper);
@@ -94,7 +89,6 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls, this);
         WallsRV.setAdapter(wallpaperAdapter);
         WallsRV.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-
 
     }
 

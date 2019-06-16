@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg_oos">
     <!--xmlstools:showIn="@layout/fragment_1"-->
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/dashboard_head2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.38"
-        android:alpha="1.0"
-        android:fitsSystemWindows="true"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/keyboard3"
-        app:lottie_speed="1.0" />
     <ImageView
         android:id="@+id/closeDialogImg"
         android:layout_width="38dp"

@@ -6,6 +6,11 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
@@ -15,11 +20,14 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
+import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
@@ -27,10 +35,17 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieProperty;
+import com.airbnb.lottie.model.KeyPath;
+import com.airbnb.lottie.value.LottieFrameInfo;
+import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
 
+import static androidx.core.content.ContextCompat.getColor;
+import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
@@ -43,9 +58,9 @@ import static com.moelle.deepdarkness.AnimationPack.scaleIn;
  */
 public class fragment_1 extends Fragment implements View.OnClickListener {
 
-
     private LinearLayout cat_top, cat_middle;
     private ImageView closeBG, iconTG, iconMAIL,animation_view2 ,imageView;
+    private LottieAnimationView dialogbg0;
     private CardView cardRight, cardLeft, cardRight2, cardLeft2, card4, card5, card6, tg, mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
@@ -71,12 +86,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.transparent));
+        getActivity().getWindow().setStatusBarColor(getColor(getContext(),R.color.transparent));
         View v = inflater.inflate(R.layout.fragment_1, null);
-
-        /*Uri DASHBOARD_HEAD = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.dashboardhero);
-        videoView = v.findViewById(R.id.dashboard_head);
-        videoView.start(DASHBOARD_HEAD);*/
 
         // content ini
         cardTop = v.findViewById(R.id.flmiddle);
@@ -99,7 +110,6 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         card5.setOnClickListener(this);
 
         // ini Animations
-        Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
         Animation vonUnten = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
@@ -113,15 +123,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         // setup Animation :
         scaleIn(animation_view2);
-        cat_top.animate().alpha(1f).setDuration(1000).setStartDelay(200);
-        cat_middle.setAlpha(0f);
-        cat_middle.animate().alpha(1f).setDuration(1000).setStartDelay(400);
-        /*cardTop.setAlpha(0f);
-        cardTop.setScaleX(1.35f);
-        cardTop.setScaleY(1.35f);
-        cardTop.setTranslationY(-50);
-        cardTop.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
-        */
+        fadeIn(cat_top,200);
+        fadeIn(cat_middle,400);
 
         moveToBottom(cardLeft,80,0,1);
         moveToBottom(cardRight,80,180,1);
@@ -168,7 +171,30 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     private void showContact() {
         final View dialogView = View.inflate(getActivity(), R.layout.dialog_contact, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogContact);
+        dialog.getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        dialog.getWindow().setStatusBarColor(Color.TRANSPARENT);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
+        dialogbg0 = dialog.findViewById(R.id.dialogbg0);
+        dialogbg0.addValueCallback(
+                new KeyPath("circEND","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(getColor(getContext(), R.color.dialog_contact2), PorterDuff.Mode.SRC_IN);
+                    }});
+        dialogbg0.addValueCallback(
+                new KeyPath("circSTART","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter( getColor(getContext(), R.color.colorAccent), PorterDuff.Mode.SRC_IN);
+                    }});
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
         iconTG = dialog.findViewById(R.id.iconTG);
@@ -427,5 +453,4 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         }
     }
-
 }

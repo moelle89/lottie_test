@@ -11,8 +11,8 @@
   <com.jaredrummler.android.colorpicker.ColorPanelView
       app:cpv_borderColor="@color/inactive"
       android:id="@+id/cpv_color_panel_view"
-      android:layout_width="45dp"
-      android:layout_height="45dp"
+      android:layout_width="47dp"
+      android:layout_height="47dp"
       android:layout_gravity="center"
       android:clickable="true"
       app:cpv_colorShape="circle"

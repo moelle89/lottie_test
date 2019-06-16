@@ -127,18 +127,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                                 })
                                 .build()))
                 .build());
-        /*/ Get duration scale from the global settings.
-        durationScale = Settings.Global.getFloat(getApplicationContext().getContentResolver(), Settings.Global.ANIMATOR_DURATION_SCALE, 1);
-        // If global duration scale is not 1 (default), try to override it
-        if (durationScale != 0.7f) {
-            try {
-                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
-                durationScale = 0.7f;
-            } catch (Throwable t) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
-                toast.show();
-        }}
-        */
 
         // Get duration scale from the global settings.
             try {
@@ -147,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
                 toast.show();
             }
-
 
         // dark/light mode switch
         sharedpref = new PrefManager(this);

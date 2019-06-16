@@ -36,19 +36,16 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
-import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
-import com.airbnb.lottie.value.LottieValueCallback;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
+import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
-import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 /**
@@ -111,11 +108,16 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         LinearLayout card2 = v.findViewById(R.id.accent4);
         LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
-        radial_gradient.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
-        SimpleColorFilter tintfilter = new SimpleColorFilter(pickedColor1);
-        KeyPath keyfg = new KeyPath("**");
-        LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(tintfilter);
-        radial_gradient.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+
+        radial_gradient.addValueCallback(
+                new KeyPath("**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor1, PorterDuff.Mode.SRC_IN);
+                    }});
+
         radial_gradient.playAnimation();
         card2.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         card2.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
@@ -134,9 +136,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         cat_top1 = v.findViewById(R.id.textViewTitle);
         cat_top2 = v.findViewById(R.id.textViewSubtitle);
         cat_bottom = v.findViewById(R.id.textViewBottom);
-        cat_top1.setAlpha(0f);
-        cat_top2.setAlpha(0f);
-        cat_bottom.setAlpha(0f);
+        card1.setAlpha(0f);
         keyboard = v.findViewById(R.id.dashboard_head);
         keyboard.setAnimation(R.raw.keyboard);
 
@@ -144,51 +144,88 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_20);
 
-        SimpleColorFilter keyboardtint = new SimpleColorFilter(pickedColor1);
-        KeyPath keyfg3 = new KeyPath("BG2","**");
-        LottieValueCallback<ColorFilter> callback3 = new LottieValueCallback<ColorFilter>(keyboardtint);
-        keyboard.addValueCallback(keyfg3, LottieProperty.COLOR_FILTER, callback3);
+        keyboard.addValueCallback(
+                new KeyPath("BG2","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor1, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        com.moelle.deepdarkness.SimpleColorFilter BG2STROKE = new com.moelle.deepdarkness.SimpleColorFilter(stroke, PorterDuff.Mode.SRC_IN);
-        KeyPath KEYBG2STROKE = new KeyPath("BG2","STROKE","**");
-        LottieValueCallback<ColorFilter> callback7 = new LottieValueCallback<ColorFilter>(BG2STROKE);
-        keyboard.addValueCallback(KEYBG2STROKE, LottieProperty.COLOR_FILTER, callback7);
+        keyboard.addValueCallback(
+                new KeyPath("BG2","STROKE","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(stroke, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        KeyPath KEYBG3STROKE = new KeyPath("STROKE","**");
-        keyboard.addValueCallback(KEYBG3STROKE, LottieProperty.COLOR_FILTER, callback7);
+        keyboard.addValueCallback(
+                new KeyPath("STROKE","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(stroke, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        SimpleColorFilter keyboardtint2 = new SimpleColorFilter(pickedColor2);
-        KeyPath keyfg4 = new KeyPath("BG1","**");
-        LottieValueCallback<ColorFilter> callback4 = new LottieValueCallback<ColorFilter>(keyboardtint2);
-        keyboard.addValueCallback(keyfg4, LottieProperty.COLOR_FILTER, callback4);
+        keyboard.addValueCallback(
+                new KeyPath("BG1","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        com.moelle.deepdarkness.SimpleColorFilter keyboardtint3 = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor3, PorterDuff.Mode.SRC_IN);
-        KeyPath keyfg5 = new KeyPath("BG1FG","**");
-        LottieValueCallback<ColorFilter> callback5 = new LottieValueCallback<ColorFilter>(keyboardtint3);
-        keyboard.addValueCallback(keyfg5, LottieProperty.COLOR_FILTER, callback5);
+        keyboard.addValueCallback(
+                new KeyPath("BG1FG","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor3, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        com.moelle.deepdarkness.SimpleColorFilter keyboardtint5 = new com.moelle.deepdarkness.SimpleColorFilter(pickedColor4, PorterDuff.Mode.SRC_IN);
-        KeyPath keyfg7 = new KeyPath("BG1STROKE","**");
-        LottieValueCallback<ColorFilter> callback8 = new LottieValueCallback<ColorFilter>(keyboardtint5);
-        keyboard.addValueCallback(keyfg7, LottieProperty.COLOR_FILTER, callback8);
+        keyboard.addValueCallback(
+                new KeyPath("BG1STROKE","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor4, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        com.moelle.deepdarkness.SimpleColorFilter keyboardtint4 = new com.moelle.deepdarkness.SimpleColorFilter(stroke, PorterDuff.Mode.SRC_IN);
-        KeyPath keyfg6 = new KeyPath("BG2","BG2","BG2","STROKE","**");
-        LottieValueCallback<ColorFilter> callback6 = new LottieValueCallback<ColorFilter>(keyboardtint4);
-        keyboard.addValueCallback(keyfg6, LottieProperty.COLOR_FILTER, callback6);
+        keyboard.addValueCallback(
+                new KeyPath("BG2","BG2","BG2","STROKE","**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(stroke, PorterDuff.Mode.SRC_IN);
+                    }});
 
-        com.moelle.deepdarkness.SimpleColorFilter filterfg = new com.moelle.deepdarkness.SimpleColorFilter(fg, PorterDuff.Mode.SRC_IN);
-        KeyPath keyboardKey = new KeyPath("GBOARD", "fg", "**");
-        LottieValueCallback<ColorFilter> keyboardCall = new LottieValueCallback<ColorFilter>(filterfg);
-        keyboard.addValueCallback(keyboardKey, LottieProperty.COLOR_FILTER, keyboardCall);
-        SimpleColorFilter filterbg = new SimpleColorFilter(bg);
-        KeyPath keybg = new KeyPath("GBOARD", "bg", "**");
-        LottieValueCallback<ColorFilter> callback2 = new LottieValueCallback<ColorFilter>(filterbg);
-        keyboard.addValueCallback(keybg, LottieProperty.COLOR_FILTER, callback2);
+        keyboard.addValueCallback(
+                new KeyPath("GBOARD", "fg", "**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(fg, PorterDuff.Mode.SRC_IN);
+                    }});
+
+        keyboard.addValueCallback(
+                new KeyPath("GBOARD", "bg", "**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(bg, PorterDuff.Mode.SRC_IN);
+                    }});
+
         // ini Animations
-        keyboard.setAlpha(0f);
-        keyboard.animate().alpha(1f).setDuration(600).setStartDelay(100);
-        Animation vonOben = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         Animation vonOben2 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
         vonOben2.setStartOffset(70);
         Animation vonOben3 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_top_to_bottom);
@@ -203,16 +240,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         vonUnten3.setStartOffset(250);
         Animation vonUnten4 = AnimationUtils.loadAnimation(getActivity(), R.anim.anime_bottom_to_top);
         vonUnten4.setStartOffset(280);
-        cat_top1.animate().alpha(1f).setDuration(1000).setStartDelay(200);
-        cat_top2.animate().alpha(1f).setDuration(1000).setStartDelay(300);
-        cat_bottom.animate().alpha(1f).setDuration(1000).setStartDelay(400);
 
-        card1.setOnClickListener(this);
-        card2.setOnClickListener(this);
-        CardView3.setOnClickListener(this);
-        CardView4.setOnClickListener(this);
-        card2.setAlpha(0f);
-        card2.animate().alpha(1f).setDuration(600).setStartDelay(100);
+        fadeIn(keyboard, 100);
+        fadeIn(cat_top1, 200);
+        fadeIn(cat_top2, 300);
+        fadeIn(cat_bottom, 400);
+        fadeIn(card2, 100);
 
         moveToBottom(card1,80,0,1);
         moveToBottom(CardView2,80,180,1);
@@ -220,25 +253,18 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         moveToTop(CardView4,80,350,2);
 
         moveToTop(background1,80,250,1);
-        background1.setOnClickListener(this);
         moveToTop(background2,70,350,1);
-        background2.setOnClickListener(this);
         moveToTop(background3,70,450, 2);
-        background3.setOnClickListener(this);
         moveToTop(background4,60,550,3);
-        background4.setOnClickListener(this);
 
-        card1.setAnimation(vonOben);
-        CardView2.setAnimation(vonOben2);
-        CardView3.setAnimation(vonUnten);
-        CardView4.setAnimation(vonUnten2);
-        background1.setAnimation(vonUnten);
 
-        background2.setAnimation(vonUnten2);
-
-        background3.setAnimation(vonUnten3);
-
-        background4.setAnimation(vonUnten4);
+        card1.setOnClickListener(this);
+        card2.setOnClickListener(this);
+        CardView3.setOnClickListener(this);
+        CardView4.setOnClickListener(this);
+        background1.setOnClickListener(this);
+        background2.setOnClickListener(this);
+        background3.setOnClickListener(this);
         background4.setOnClickListener(this);
 
         return v;
