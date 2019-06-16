@@ -34,6 +34,7 @@ import com.moelle.deepdarkness.Wallpaper;
 
 import static android.graphics.Color.TRANSPARENT;
 import static android.graphics.Color.alpha;
+import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 
 /**
  * A simple {@link Fragment} subclass.

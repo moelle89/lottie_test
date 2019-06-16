@@ -46,6 +46,7 @@ import com.moelle.deepdarkness.Wallpaper;
 
 import static androidx.core.content.ContextCompat.getColor;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
+import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
@@ -123,17 +124,17 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         // setup Animation :
         scaleIn(animation_view2);
-        fadeIn(cat_top,200);
-        fadeIn(cat_middle,400);
+        fadeIn(cat_top,150);
+        fadeIn(cat_middle,300);
 
         moveToBottom(cardLeft,80,0,1);
-        moveToBottom(cardRight,80,180,1);
+        moveToBottom(cardRight,80,150,1);
         moveToTop(cardLeft2,80,250,2);
         moveToTop(cardRight2,80,350,2);
 
         moveToTop(card4,80,250,1);
         moveToTop(card5,70,350,2);
-        moveToTop(card6,60,450, 3);
+        moveToTop(card6,60,400, 3);
 
         // Inflate the layout for this fragment
         return v;

@@ -44,8 +44,10 @@ import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
+import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 /**
@@ -242,20 +244,20 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         vonUnten4.setStartOffset(280);
 
         fadeIn(keyboard, 100);
-        fadeIn(cat_top1, 200);
-        fadeIn(cat_top2, 300);
-        fadeIn(cat_bottom, 400);
+        fadeIn(cat_top1, 100);
+        fadeIn(cat_top2, 200);
+        fadeIn(cat_bottom, 300);
         fadeIn(card2, 100);
 
         moveToBottom(card1,80,0,1);
-        moveToBottom(CardView2,80,180,1);
+        moveToBottom(CardView2,80,150,1);
         moveToTop(CardView3,80,250,2);
         moveToTop(CardView4,80,350,2);
 
         moveToTop(background1,80,250,1);
         moveToTop(background2,70,350,1);
-        moveToTop(background3,70,450, 2);
-        moveToTop(background4,60,550,3);
+        moveToTop(background3,70,400, 2);
+        moveToTop(background4,60,500,3);
 
 
         card1.setOnClickListener(this);
@@ -266,7 +268,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         background2.setOnClickListener(this);
         background3.setOnClickListener(this);
         background4.setOnClickListener(this);
-
         return v;
     }
     @Override
@@ -516,7 +517,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
             view.setVisibility(View.VISIBLE);
 
-            revealAnimator.setDuration(750);
+            revealAnimator.setDuration(800);
             revealAnimator.start();
 
 
