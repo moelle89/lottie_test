@@ -45,6 +45,8 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
+import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
+import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
@@ -211,16 +213,31 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         CardView4.setOnClickListener(this);
         card2.setAlpha(0f);
         card2.animate().alpha(1f).setDuration(600).setStartDelay(100);
+
+        moveToBottom(card1,80,0,1);
+        moveToBottom(CardView2,80,180,1);
+        moveToTop(CardView3,80,250,2);
+        moveToTop(CardView4,80,350,2);
+
+        moveToTop(background1,80,250,1);
+        background1.setOnClickListener(this);
+        moveToTop(background2,70,350,1);
+        background2.setOnClickListener(this);
+        moveToTop(background3,70,450, 2);
+        background3.setOnClickListener(this);
+        moveToTop(background4,60,550,3);
+        background4.setOnClickListener(this);
+
         card1.setAnimation(vonOben);
         CardView2.setAnimation(vonOben2);
         CardView3.setAnimation(vonUnten);
         CardView4.setAnimation(vonUnten2);
         background1.setAnimation(vonUnten);
-        background1.setOnClickListener(this);
+
         background2.setAnimation(vonUnten2);
-        background2.setOnClickListener(this);
+
         background3.setAnimation(vonUnten3);
-        background3.setOnClickListener(this);
+
         background4.setAnimation(vonUnten4);
         background4.setOnClickListener(this);
 
@@ -320,7 +337,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
     public void launchPicker1(View view) {
         final int Default = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(view.getContext(), R.color.accent0));
-        ColorPickerDialog.newBuilder()
+        ColorPickerDialog pickerDialog1 = new ColorPickerDialog();
+        pickerDialog1.newBuilder()
                 .setDialogTitle(R.string.pickerTitle)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
                 .setColor(Default)

@@ -27,7 +27,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.moelle.deepdarkness.AnimationPack;
 import com.moelle.deepdarkness.LottieIntro;
 import com.moelle.deepdarkness.R;
 import com.moelle.deepdarkness.Wallpaper;
@@ -123,14 +122,15 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         cardTop.setTranslationY(-50);
         cardTop.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(800).setInterpolator(new FastOutSlowInInterpolator()).start();
         */
-        moveToBottom(cardLeft, 0);
-        moveToBottom(cardRight, 80);
-        moveToTop(cardLeft2,180);
-        moveToTop(cardRight2,230);
 
-        moveToTop(card4,230);
-        moveToTop(card5,280);
-        moveToTop(card6,330);
+        moveToBottom(cardLeft,80,0,1);
+        moveToBottom(cardRight,80,180,1);
+        moveToTop(cardLeft2,80,250,2);
+        moveToTop(cardRight2,80,350,2);
+
+        moveToTop(card4,80,250,1);
+        moveToTop(card5,70,350,2);
+        moveToTop(card6,60,450, 3);
 
         // Inflate the layout for this fragment
         return v;
