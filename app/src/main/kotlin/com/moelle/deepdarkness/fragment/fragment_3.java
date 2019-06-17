@@ -14,6 +14,8 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+import androidx.transition.Explode;
+
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.SimpleColorFilter;
@@ -23,6 +25,7 @@ import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,10 +46,12 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(),R.color.overlay_head));
+
         View v = inflater.inflate(R.layout.fragment_3,null);
         //ini animations
         CardView card = v.findViewById(R.id.cardView);
@@ -85,7 +90,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         description = v.findViewById(R.id.description);
         fadeIn(description,850);
         Button tutorial_btn = v.findViewById(R.id.tutorial_btn);
-        moveToTop(tutorial_btn,60,200,5);
+        moveToTop(tutorial_btn,50,400,4);
         tutorial_btn.setOnClickListener(this);
         LottieAnimationView btn_ripple = v.findViewById(R.id.ripplehowto);
         fadeIn(btn_ripple,1800);

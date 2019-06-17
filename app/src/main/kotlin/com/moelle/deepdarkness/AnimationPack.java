@@ -14,6 +14,10 @@ public class AnimationPack {
         view.setAlpha(0f);
         view.animate().alpha(1f).setDuration(600).setStartDelay(delay).start();}
     /* */
+    /* */
+    public static void fadeOut(View view, long delay) {
+        view.animate().alpha(0f).setDuration(600).setStartDelay(delay).start();}
+    /* */
     public static void fadeInCustom(View view, long duration, long delay) {
         view.setAlpha(0f);
         view.animate().alpha(1f).setDuration(duration).setStartDelay(delay).start();}

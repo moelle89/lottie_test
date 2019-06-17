@@ -24,6 +24,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
+import static com.moelle.deepdarkness.AnimationPack.fadeOut;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
@@ -72,6 +74,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private ImageView iconMAIL, imageView;
     private View center;
     private CardView mail, card1, CardView2, CardView3, CardView4;
+    private Button dl_btn;
     private TextView cat_top1, cat_top2, cat_bottom;
 
     public fragment_2() {
@@ -341,6 +344,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     public void launchPicker1(View view) {
         final int Default = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(view.getContext(), R.color.accent0));
         ColorPickerDialog pickerDialog1 = new ColorPickerDialog();
+
         pickerDialog1.newBuilder()
                 .setDialogTitle(R.string.pickerTitle)
                 .setDialogType(ColorPickerDialog.TYPE_PRESETS)
@@ -427,6 +431,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         imageView = dialog.findViewById(R.id.closeDialogImg);
         iconMAIL = dialog.findViewById(R.id.iconMAIL);
         mail = dialog.findViewById(R.id.mail);
+        dl_btn = dialog.findViewById(R.id.dl_btn);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -456,7 +461,12 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
         revealShowDelayed();
-
+        dl_btn.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
+        dl_btn.setAlpha(0.0f);
+        dl_btn.setScaleX(0.7f);
+        dl_btn.setScaleY(0.7f);
+        dl_btn.setTranslationY(350);
+        dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(500).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
         mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
@@ -508,10 +518,11 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                     dialog.dismiss();
                 }
             });
-            mail.animate().translationY(200).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            mail.animate().translationY(100).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(550).setInterpolator(new FastOutSlowInInterpolator()).start();
             iconMAIL.animate().translationY(50).scaleX(0.7f).scaleY(0.7f).alpha(0f).setStartDelay(180).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             keyboard2.animate().translationX(550).alpha(0f).setStartDelay(0).setDuration(550).setInterpolator(new FastOutSlowInInterpolator()).start();
             imageView.animate().rotation(120).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+            dl_btn.animate().translationY(100).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             anim.setDuration(750);
             anim.setStartDelay(100);
             anim.start();

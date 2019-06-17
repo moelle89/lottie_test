@@ -17,6 +17,9 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+import androidx.transition.Explode;
+import androidx.transition.Transition;
+
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,6 +63,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     private CardView cardRight, cardLeft, cardRight2, cardLeft2, card4, card5, card6, tg, mail;
     private FrameLayout cardTop, flmiddle;
     private LinearLayout anchor_cardleft;
+    private Transition explode;
 
     public static final String TAG = fragment_1.class.getSimpleName();
     // Give your color picker dialog unique IDs if you have multiple dialogs.
