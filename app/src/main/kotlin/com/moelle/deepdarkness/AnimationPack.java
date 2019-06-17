@@ -25,8 +25,8 @@ public class AnimationPack {
     public static void scale(View view, float x, float y, long duration) {
         view.animate().scaleX(x).scaleY(y).setDuration(duration);}
     /* */
-    public static void scaleOut(View view) {
-        view.animate().scaleX(1.1f).scaleY(1.1f).setDuration(2000);}
+    public static void scaleOut(View view, long delay){
+        view.animate().setStartDelay(delay).scaleX(1.3f).scaleY(1.3f).setDuration(550).start();}
     /* */
     public static void scaleIn(View view) {
         view.setAlpha(0f);

@@ -7,7 +7,7 @@
     android:gravity="center"
     app:cardBackgroundColor="@color/accent6"
     app:cardCornerRadius="200dp"
-    app:cardElevation="3dp"
+    app:cardElevation="5dp"
     >
 
             <LinearLayout android:id="@+id/custom_toast_container"
@@ -15,10 +15,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="@drawable/toast"
-                android:padding="6dp"
+                android:padding="9dp"
                 >
                 <ImageView android:src="@drawable/ic_4"
-                    android:tint="@color/md_white"
+                    android:tint="@color/background"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -32,6 +32,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:textColor="@color/md_white" />
+                    android:textColor="@color/background" />
             </LinearLayout>
 </androidx.cardview.widget.CardView>

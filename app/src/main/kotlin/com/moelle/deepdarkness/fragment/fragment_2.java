@@ -5,16 +5,25 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.RectF;
+import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +37,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -41,14 +53,24 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.moelle.deepdarkness.DirectoryHelper;
+import com.moelle.deepdarkness.LottieTutorial;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.fadeOut;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
+import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
+import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -439,7 +461,29 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 revealShow(dialogView, false, dialog);
             }
         });
-
+        dl_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    createColorBitmapAndSave(1366, 768, pickedColor1);
+                    Toast toast = new Toast(getContext());
+                    View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast, null);
+                    CardView card = view.findViewById(R.id.card_toast);
+                    card.setCardBackgroundColor(pickedColor1);
+                    TextView textView = view.findViewById(R.id.text);
+                    textView.setText(R.string.success);
+                    toast.setView(view);
+                    toast.setGravity(Gravity.BOTTOM, 0, 255| Gravity.BOTTOM);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.show();
+                    moveToTop(view,80,350,3);
+                    revealShow(dialogView, false, dialog);
+                } catch (Throwable t) {
+                    Toast toast = Toast.makeText(getContext(), "Something went wrong.", Toast.LENGTH_LONG );
+                    toast.show();
+                }
+            }
+        });
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
             @Override
             public void onShow(DialogInterface dialogInterface) {
@@ -543,4 +587,5 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 keyboard2.playAnimation();
             }
         }.start(); }
+
 }

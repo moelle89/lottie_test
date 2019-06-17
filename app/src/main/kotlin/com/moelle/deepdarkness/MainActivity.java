@@ -322,14 +322,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         int cx = (int) (fab.getX() + (fab.getWidth() / 2));
         int cy = (int) (fab.getY()) + fab.getHeight();
 
-
         if (b) {
             Animator revealAnimator = ViewAnimationUtils.createCircularReveal(view, cx, cy, 0, endRadius);
 
             view.setVisibility(View.VISIBLE);
             revealAnimator.setDuration(750);
             revealAnimator.start();
-
 
         } else {
 
@@ -405,7 +403,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(b);
     }
 
-    private void createColorBitmapAndSave(int width, int height, @ColorInt int color)
+    public static void createColorBitmapAndSave(int width, int height, @ColorInt int color)
             throws IOException {
         //Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         //bitmap.eraseColor(color);
