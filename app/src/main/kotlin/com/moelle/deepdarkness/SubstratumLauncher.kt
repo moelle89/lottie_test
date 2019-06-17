@@ -61,7 +61,9 @@ class SubstratumLauncher : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val window = getWindow()
-        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.setStatusBarColor(Color.TRANSPARENT)
         super.onCreate(savedInstanceState)
@@ -221,11 +223,13 @@ class SubstratumLauncher : Activity() {
 
     @SuppressLint("InflateParams")
     private fun showDialog() {
-
         val alertDialog = AlertDialog.Builder(this, R.style.DialogStyle)
                 .setCancelable(false)
 
         val view = LayoutInflater.from(this).inflate(R.layout.fullscreen_dialog, null)
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         val title = view.findViewById(R.id.title) as TextView
         title.text = getString(R.string.launch_dialog_title)
 

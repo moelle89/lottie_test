@@ -47,7 +47,6 @@ import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 
 /**
@@ -64,9 +63,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private final String PICKED_COLOR_KEY2 = "picker-key2";
     private final String PICKED_COLOR_KEY3 = "picker-key3";
     private final String PICKED_COLOR_KEY4 = "picker-key4";
-
-    private int pickedAnimation;
-    private final String PICKED_ANIMATION_KEY = "picker-key4";
 
     public static final String TAG = fragment_2.class.getSimpleName();
 
@@ -102,15 +98,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         View v = inflater.inflate(R.layout.fragment_2test, null);
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getContext(), R.color.colorAccent));
-        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getContext(), R.color.accent14));
-        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(getContext(), R.color.accent14));
-        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getContext(), R.color.overlay_fg_30));
+        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(v.getContext(), R.color.colorAccent));
+        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(v.getContext(), R.color.accent14));
+        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(v.getContext(), R.color.accent14));
+        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(v.getContext(), R.color.transparent));
 
 
         LinearLayout card2 = v.findViewById(R.id.accent4);
         LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
-
         radial_gradient.addValueCallback(
                 new KeyPath("**"),
                 LottieProperty.COLOR_FILTER,
@@ -138,13 +133,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         cat_top1 = v.findViewById(R.id.textViewTitle);
         cat_top2 = v.findViewById(R.id.textViewSubtitle);
         cat_bottom = v.findViewById(R.id.textViewBottom);
-        card1.setAlpha(0f);
         keyboard = v.findViewById(R.id.dashboard_head);
         keyboard.setAnimation(R.raw.keyboard);
 
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
-        final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_20);
+        final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_15);
+        final int accent = ContextCompat.getColor(v.getContext(), R.color.colorAccent);
+        final int stroke2 = pickedColor4;
 
         keyboard.addValueCallback(
                 new KeyPath("BG2","**"),
@@ -157,15 +153,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         keyboard.addValueCallback(
                 new KeyPath("BG2","STROKE","**"),
-                LottieProperty.COLOR_FILTER,
-                new SimpleLottieValueCallback<ColorFilter>() {
-                    @Override
-                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                        return new PorterDuffColorFilter(stroke, PorterDuff.Mode.SRC_IN);
-                    }});
-
-        keyboard.addValueCallback(
-                new KeyPath("STROKE","**"),
                 LottieProperty.COLOR_FILTER,
                 new SimpleLottieValueCallback<ColorFilter>() {
                     @Override
@@ -197,17 +184,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 new SimpleLottieValueCallback<ColorFilter>() {
                     @Override
                     public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                        return new PorterDuffColorFilter(pickedColor4, PorterDuff.Mode.SRC_IN);
+                        return new PorterDuffColorFilter(stroke2, PorterDuff.Mode.SRC_IN);
                     }});
 
-        keyboard.addValueCallback(
-                new KeyPath("BG2","BG2","BG2","STROKE","**"),
-                LottieProperty.COLOR_FILTER,
-                new SimpleLottieValueCallback<ColorFilter>() {
-                    @Override
-                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                        return new PorterDuffColorFilter(stroke, PorterDuff.Mode.SRC_IN);
-                    }});
 
         keyboard.addValueCallback(
                 new KeyPath("GBOARD", "fg", "**"),
@@ -251,13 +230,13 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
         moveToBottom(card1,80,0,1);
         moveToBottom(CardView2,80,150,1);
-        moveToTop(CardView3,80,250,2);
-        moveToTop(CardView4,80,350,2);
+        moveToTop(CardView3,80,200,1);
+        moveToTop(CardView4,80,250,1);
 
-        moveToTop(background1,80,250,1);
-        moveToTop(background2,70,350,1);
-        moveToTop(background3,70,400, 2);
-        moveToTop(background4,60,500,3);
+        moveToTop(background1,80,200,1);
+        moveToTop(background2,70,250,2);
+        moveToTop(background3,70,300, 2);
+        moveToTop(background4,60,350,3);
 
 
         card1.setOnClickListener(this);
@@ -313,7 +292,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void setBackground1() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.circle_selected );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background1 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background1 );
@@ -325,7 +304,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         loadFragment(fragment);
     }
     public void setBackground2() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.circle_selected );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background2 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background2 );
@@ -337,7 +316,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         loadFragment(fragment);
     }
     public void setBackground3() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.circle_selected );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background3 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background3 );
@@ -350,7 +329,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     public void setBackground4() {
-        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.overlay_fg_20 );
+        final int pickedColor4 = ContextCompat.getColor(getContext(), R.color.circle_selected );
         final int pickedColor3 = ContextCompat.getColor(getContext(), R.color.transparent );
         final int pickedColor2 = ContextCompat.getColor(getContext(), R.color.background4 );
         final int pickedColor1 = ContextCompat.getColor(getContext(), R.color.background4 );

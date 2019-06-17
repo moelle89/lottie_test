@@ -19,7 +19,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -68,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     // Give your color picker dialog unique IDs if you have multiple dialogs.
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
-    private static final int DIALOG_ID3 = 2;
 
     private int pickedColor1;
     private int pickedColor2;
@@ -104,7 +102,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             0xFFffc107,  //  Yellow
     };
 
-    float durationScale;
     SwitchCompat myswitch;
     CardView switchcard;
     PrefManager sharedpref;
@@ -130,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         // Get duration scale from the global settings.
             try {
-                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
+                ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.75f);
             } catch (Throwable t) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
                 toast.show();
@@ -147,10 +144,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(this, R.color.colorAccent));
-        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(this, R.color.background));
-        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(this, R.color.transparent));
-        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(this, R.color.overlay_fg_30));
+        pickedColor1 = preferences.getInt(PICKED_COLOR_KEY1, ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
+        pickedColor2 = preferences.getInt(PICKED_COLOR_KEY2, ContextCompat.getColor(getApplicationContext(), R.color.background));
+        pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(getApplicationContext(), R.color.transparent));
+        pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getApplicationContext(), R.color.overlay_fg_20));
 
         fab = findViewById(R.id.fab);
         //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
@@ -361,10 +358,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case DIALOG_ID1:
                 try {
                     //createColorBitmapAndSave(1366, 768, color);
-                    pickedColor1 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
-                    //pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
-                    //preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
                     //Toast toast = new Toast(this);
                     //View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
                     //CardView card = view.findViewById(R.id.card_toast);
@@ -386,12 +380,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case DIALOG_ID2:
                 try {
                     //fab.setBackgroundTintList(ColorStateList.valueOf(color));
-                    pickedColor2 = color;
                     preferences.edit().putInt(PICKED_COLOR_KEY2, color).apply();
                     preferences.edit().putInt(PICKED_COLOR_KEY3, color).apply();
-                    preferences.edit().putInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getBaseContext(), R.color.transparent)).apply();
-                    //pickedColor3 = ContextCompat.getColor(previewCardview.getContext(), R.color.transparent);
-                    //preferences.edit().putInt(PICKED_COLOR_KEY3, pickedColor3).apply();
+                    preferences.edit().putInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getApplicationContext(), R.color.transparent)).apply();
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 

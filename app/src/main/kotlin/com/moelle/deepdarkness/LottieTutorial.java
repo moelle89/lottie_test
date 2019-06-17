@@ -56,7 +56,7 @@ public class LottieTutorial extends AppIntro {
 
         setImmersiveMode(false);
         setSwipeLock(false);
-        setNavBarColor(R.color.colorAccentPromptBackground);
+        setNavBarColor(R.color.md_black);
         showStatusBar(false);
         showSkipButton(false);
         setBackButtonVisibilityWithDone(true);
@@ -70,47 +70,7 @@ public class LottieTutorial extends AppIntro {
 
         if ((oldFragment == null) && (newFragment == slide_5) || (oldFragment == slide_6) && (newFragment == slide_5)) {
             LottieAnimationView animationView5 = findViewById(R.id.animation_view5);
-            com.moelle.deepdarkness.SimpleColorFilter TEXT1 = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.textColor), PorterDuff.Mode.CLEAR);
-            KeyPath TEXT1KEY = new KeyPath("TEXT1","**");
-            LottieValueCallback<ColorFilter> TEXT1CALL = new LottieValueCallback<ColorFilter>(TEXT1);
-            animationView5.addValueCallback(TEXT1KEY, LottieProperty.COLOR_FILTER, TEXT1CALL);
-
-            com.moelle.deepdarkness.SimpleColorFilter TEXT2 = new com.moelle.deepdarkness.SimpleColorFilter(getResources().getColor(R.color.secondary_text_light), PorterDuff.Mode.SRC_IN);
-            KeyPath TEXT2KEY = new KeyPath("TEXT2","**");
-            LottieValueCallback<ColorFilter> TEXT2CALL = new LottieValueCallback<ColorFilter>(TEXT2);
-            animationView5.addValueCallback(TEXT2KEY, LottieProperty.COLOR_FILTER, TEXT2CALL);
-
-            animationView5.addValueCallback(
-                    new KeyPath("ACCENT","**"),
-                    LottieProperty.COLOR_FILTER,
-                    new SimpleLottieValueCallback<ColorFilter>() {
-                        @Override
-                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                            return new PorterDuffColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_OVER);
-                        }
-                    }
-
-
-                    );
-
-            //animationView5.playAnimation();
-            animationView5.addAnimatorListener(new Animator.AnimatorListener() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationCancel(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationRepeat(Animator animation) {
-                }
-            });
+            animationView5.playAnimation();
         }
 
         if ((oldFragment == slide_5) && (newFragment == slide_6) || (oldFragment == slide_7) && (newFragment == slide_6)) {

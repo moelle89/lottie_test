@@ -26,6 +26,7 @@
     <color name="overlay_background_90">#E6ffffff</color>
 
     <color name="overlay_fg_10">#1A2C2F3D</color>
+    <color name="overlay_fg_15">#262C2F3D</color>
     <color name="overlay_fg_20">#332C2F3D</color>
     <color name="overlay_fg_30">#4D2C2F3D</color>
     <color name="overlay_fg_40">#662C2F3D</color>
@@ -66,5 +67,6 @@
 
     <color name="tab_checked">@color/colorAccent_light</color>
     <color name="tab_unchecked">#495A7A</color>
+    <color name="circle_selected">#4D697797</color>
     <color name="selectableItemBackgroundBorderless">#26B1BEEC</color>
 </resources>

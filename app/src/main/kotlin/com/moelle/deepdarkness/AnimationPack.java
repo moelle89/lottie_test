@@ -43,12 +43,12 @@ public class AnimationPack {
    public static void moveToTop(View view, float y, long delay, float tension) {
        view.setAlpha(0f);
        view.setTranslationY(y);
-       view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(500).setInterpolator(new OvershootInterpolator(tension)).start();}
+       view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(550).setInterpolator(new OvershootInterpolator(tension)).start();}
     /* */
     public static void moveToBottom(View view, float y, long delay, float tension) {
         view.setAlpha(0f);
         view.setTranslationY(-y);
-        view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(500).setInterpolator(new OvershootInterpolator(tension)).start();}
+        view.animate().setStartDelay(delay).alpha(1f).translationY(0f).setDuration(550).setInterpolator(new OvershootInterpolator(tension)).start();}
     /* */
 
 

@@ -6,7 +6,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
@@ -16,11 +15,8 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-
-import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,7 +42,6 @@ import com.moelle.deepdarkness.Wallpaper;
 
 import static androidx.core.content.ContextCompat.getColor;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
-import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
@@ -129,12 +124,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
 
         moveToBottom(cardLeft,80,0,1);
         moveToBottom(cardRight,80,150,1);
-        moveToTop(cardLeft2,80,250,2);
-        moveToTop(cardRight2,80,350,2);
+        moveToTop(cardLeft2,80,200,1);
+        moveToTop(cardRight2,80,250,1);
 
-        moveToTop(card4,80,250,1);
-        moveToTop(card5,70,350,2);
-        moveToTop(card6,60,400, 3);
+        moveToTop(card4,80,200,1);
+        moveToTop(card5,70,250,2);
+        moveToTop(card6,60,300, 3);
 
         // Inflate the layout for this fragment
         return v;
@@ -151,6 +146,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
             case R.id.cardRight2: {
                 Intent wallpaper = new Intent(getActivity(), Wallpaper.class);
                 startActivity(wallpaper);
+                getActivity().overridePendingTransition(R.anim.goup, R.anim.godown);
                 break;
             }
             case R.id.cardLeft2: {
@@ -268,6 +264,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     private void showDonation() {
         final View dialogView = View.inflate(getActivity(), R.layout.dialog_donation, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogDonation);
+        dialog.getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        dialog.getWindow().setStatusBarColor(Color.TRANSPARENT);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
@@ -340,6 +342,12 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
     private void showOOS() {
         final View dialogView = View.inflate(getActivity(), R.layout.dialog_oos, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogOOS);
+        dialog.getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
+        dialog.getWindow().setStatusBarColor(Color.TRANSPARENT);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(dialogView);
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
