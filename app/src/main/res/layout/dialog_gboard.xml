@@ -61,7 +61,6 @@
         app:lottie_autoPlay="false"
         app:lottie_renderMode="hardware"/>
 
-
     <Button
         android:id="@+id/dl_btn"
         android:layout_width="190dp"
@@ -71,7 +70,6 @@
         android:layout_marginTop="45dp"
         android:layout_marginStart="35dp"
         android:background="@drawable/bgbtn"
-        android:onClick="createColorBitmapAndSave"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
@@ -84,6 +82,7 @@
         app:layout_anchorGravity="bottom|center"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2"
         app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"

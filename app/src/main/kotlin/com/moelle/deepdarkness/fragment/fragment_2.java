@@ -5,23 +5,15 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
-import android.graphics.LinearGradient;
-import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
-import android.graphics.RectF;
-import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -39,7 +31,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
@@ -53,22 +44,13 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
-import com.moelle.deepdarkness.DirectoryHelper;
-import com.moelle.deepdarkness.LottieTutorial;
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.fadeOut;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
-import static com.moelle.deepdarkness.AnimationPack.scaleOut;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
 
@@ -96,7 +78,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private ImageView iconMAIL, imageView;
     private View center;
     private CardView mail, card1, CardView2, CardView3, CardView4;
-    private Button dl_btn;
+    private Button  dl_btn, dl_btn2;
     private TextView cat_top1, cat_top2, cat_bottom;
 
     public fragment_2() {
@@ -465,7 +447,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 try {
-                    createColorBitmapAndSave(1366, 768, pickedColor1);
+                    createColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
                     Toast toast = new Toast(getContext());
                     View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast, null);
                     CardView card = view.findViewById(R.id.card_toast);
@@ -474,12 +456,14 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                     textView.setText(R.string.success);
                     toast.setView(view);
                     toast.setGravity(Gravity.BOTTOM, 0, 255| Gravity.BOTTOM);
-                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.setDuration(Toast.LENGTH_SHORT);
                     toast.show();
+                    dl_btn.animate().translationY(0).scaleX(1f).scaleY(1f).alpha(0f).setStartDelay(500).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
+                    //dl_btn2.animate().scaleX(1f).scaleY(1f).alpha(1f).setStartDelay(400).setDuration(630).setInterpolator(new FastOutSlowInInterpolator()).start();
                     moveToTop(view,80,350,3);
                     revealShow(dialogView, false, dialog);
                 } catch (Throwable t) {
-                    Toast toast = Toast.makeText(getContext(), "Something went wrong.", Toast.LENGTH_LONG );
+                    Toast toast = Toast.makeText(getContext(), "Something went wrong.", Toast.LENGTH_SHORT );
                     toast.show();
                 }
             }
@@ -510,7 +494,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dl_btn.setScaleX(0.7f);
         dl_btn.setScaleY(0.7f);
         dl_btn.setTranslationY(350);
-        dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(500).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(450).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
         mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);

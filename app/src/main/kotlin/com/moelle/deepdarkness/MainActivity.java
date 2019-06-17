@@ -403,16 +403,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         startActivity(b);
     }
 
-    public static void createColorBitmapAndSave(int width, int height, @ColorInt int color)
+    public static void createColorBitmapAndSave(int width, int height, @ColorInt int pickedColor1, @ColorInt int pickedColor2)
             throws IOException {
         //Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         //bitmap.eraseColor(color);
-
+;
         int colors[] = new int[2];
         colors[0] = Color.parseColor("#000000");
         colors[1] = Color.parseColor("#123456");
 
-        LinearGradient gradient = new LinearGradient(0, 0, 0, 768, color, Color.TRANSPARENT, Shader.TileMode.CLAMP);
+        LinearGradient gradient = new LinearGradient(0, 0, 0, 768, pickedColor1,pickedColor2, Shader.TileMode.CLAMP);
         Paint p = new Paint();
         p.setDither(true);
         p.setShader(gradient);
@@ -427,7 +427,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             throw new IOException("failed to create path " + parent);
         }
 
-        File file = new File(parent, Integer.toHexString(color) + ".png");
+        File file = new File(parent, Integer.toHexString(pickedColor1) + "_DD.png");
         try (FileOutputStream fos = new FileOutputStream(file)) {
             // Use Bitmap.CompressFormat.JPEG if you want JPEG
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
