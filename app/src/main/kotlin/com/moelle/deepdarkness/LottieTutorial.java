@@ -2,18 +2,9 @@ package com.moelle.deepdarkness;
 
 import android.animation.Animator;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.ColorFilter;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieProperty;
-import com.airbnb.lottie.model.KeyPath;
-import com.airbnb.lottie.value.LottieFrameInfo;
-import com.airbnb.lottie.value.LottieValueCallback;
-import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
 
@@ -37,8 +28,10 @@ public class LottieTutorial extends AppIntro {
                     .putBoolean("isFirstRun3", false).apply();
             Intent i = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(i);
+            overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
         }
         finish();
+        overridePendingTransition(R.anim.dialog_enter, R.anim.dialog_exit);
     }
 
     @Override

@@ -44,7 +44,6 @@ import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
-import static com.moelle.deepdarkness.AnimationPack.fadeInCustom;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
@@ -74,8 +73,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private View center;
     private CardView mail, card1, CardView2, CardView3, CardView4;
     private TextView cat_top1, cat_top2, cat_bottom;
-    // image url to download
-    private static final String accent6 = "https://raw.githubusercontent.com/moelle89/deepdarkness/master/Accents/6.png";
 
     public fragment_2() {
         // Required empty public constructor
