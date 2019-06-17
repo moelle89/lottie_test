@@ -531,7 +531,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
     private void revealShowDelayed() {
 
-        new CountDownTimer(250, 1000) {
+        new CountDownTimer(125, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 // do something after 1s
