@@ -53,7 +53,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setScaleX(0.5f);
         card.setScaleY(0.5f);
         card.setAlpha(0f);
-        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).withLayer().start();
+        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(550).setInterpolator(new FastOutSlowInInterpolator()).withLayer().start();
 
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);
@@ -81,14 +81,14 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
 
         fadeIn(iconhowto,200);
         title = v.findViewById(R.id.titlehowto);
-        fadeIn(title,700);
+        fadeIn(title,600);
         description = v.findViewById(R.id.description);
         fadeIn(description,850);
         Button tutorial_btn = v.findViewById(R.id.tutorial_btn);
-        moveToTop(tutorial_btn,60,1000,5);
+        moveToTop(tutorial_btn,60,200,5);
         tutorial_btn.setOnClickListener(this);
         LottieAnimationView btn_ripple = v.findViewById(R.id.ripplehowto);
-        fadeIn(btn_ripple,2000);
+        fadeIn(btn_ripple,1800);
         return v;
     }
 
