@@ -137,6 +137,7 @@
                         app:lottie_autoPlay="true"
                         app:lottie_colorFilter="?textcolorsecondary"
                         app:lottie_loop="true"
+                        app:lottie_renderMode="hardware"
                         app:lottie_rawRes="@raw/tut_icon_test" />
 
                     <TextView

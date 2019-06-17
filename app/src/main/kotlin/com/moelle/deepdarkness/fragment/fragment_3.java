@@ -53,7 +53,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         card.setScaleX(0.5f);
         card.setScaleY(0.5f);
         card.setAlpha(0f);
-        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).start();
+        card.animate().scaleX(1).scaleY(1).alpha(1f).setStartDelay(200).setDuration(650).setInterpolator(new FastOutSlowInInterpolator()).withLayer().start();
 
         LottieAnimationView iconhowto = v.findViewById(R.id.iconhowto);
         final int gear = ContextCompat.getColor(v.getContext(), R.color.colorAccent_light);

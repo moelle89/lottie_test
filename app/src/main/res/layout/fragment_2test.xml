@@ -33,6 +33,7 @@
         app:layout_constraintHeight_percent="0.42"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
+        app:lottie_renderMode="hardware"
         app:lottie_speed="1.1" />
 
     <TextView
