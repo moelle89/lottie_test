@@ -126,8 +126,8 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         fadeIn(cat_top,150);
         fadeIn(cat_middle,300);
 
-        moveToBottom(cardLeft,80,0,1);
-        moveToBottom(cardRight,80,150,1);
+        moveToBottom(cardLeft,1f,80,0,1);
+        moveToBottom(cardRight,1f,80,150,1);
         moveToTop(cardLeft2,80,200,1);
         moveToTop(cardRight2,80,250,1);
 

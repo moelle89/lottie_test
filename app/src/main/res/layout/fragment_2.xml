@@ -230,7 +230,7 @@
         app:layout_constraintStart_toEndOf="@+id/CardView3"
         app:layout_constraintTop_toBottomOf="@+id/CardView1">
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/colorPreview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -238,19 +238,38 @@
             android:gravity="top|start"
             android:orientation="vertical"
             android:padding="0dp">
+            <TextView
+                android:id="@+id/dlText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="10dp"
+                android:alpha="0.9"
+                android:textAppearance="@style/TextAppearance.Cocogoose"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="DOWNLOAD"
+                android:textAlignment="gravity"
+                android:textColor="@color/secondary_text_light"
+                android:textSize="@dimen/gradient_name" />
 
             <ImageView
-                android:id="@+id/dl"
+                android:id="@+id/dlIcon"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-                android:layout_marginTop="5dp"
+                android:layout_alignEnd="@+id/dlText"
                 android:layout_gravity="bottom|end"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-45dp"
                 android:alpha="0.20"
                 android:src="@drawable/ic_4"
                 android:tint="@color/tab_unchecked"
                 android:transitionName="feature_img1" />
 
-        </LinearLayout>
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 
