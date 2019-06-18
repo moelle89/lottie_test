@@ -21,7 +21,7 @@
         android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent"
         android:clickable="false"
-        android:columnWidth="54dp"
+        android:columnWidth="52dp"
         android:horizontalSpacing="4dp"
         android:listSelector="@android:color/transparent"
         android:numColumns="6"

@@ -25,6 +25,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -451,7 +452,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 try {
                     createColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
                     Toast toast = new Toast(getContext());
-                    View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast, null);
+                    View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast,null);
                     CardView card = view.findViewById(R.id.card_toast);
                     card.setCardBackgroundColor(pickedColor1);
                     TextView textView = view.findViewById(R.id.text);
