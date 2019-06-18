@@ -53,6 +53,7 @@ import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
+import static com.moelle.deepdarkness.MainActivity.createRoundColorBitmapAndSave;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -451,6 +452,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 try {
                     createColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
+                    createRoundColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
+
                     Toast toast = new Toast(getContext());
                     View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast,null);
                     CardView card = view.findViewById(R.id.card_toast);
