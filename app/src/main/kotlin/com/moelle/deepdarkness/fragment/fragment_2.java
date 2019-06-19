@@ -473,7 +473,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                     final int width = mDrawable.getBounds().width();
                     final int height = mDrawable.getBounds().height();
 
-                    createLottieBitmapAndSave(width, height,mDrawable);
+                    createLottieBitmapAndSave(width,height,mDrawable, pickedColor1, pickedColor2);
 
                     Toast toast = new Toast(getContext());
                     View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast,null);

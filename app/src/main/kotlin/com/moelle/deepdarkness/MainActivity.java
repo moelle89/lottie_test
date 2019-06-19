@@ -435,7 +435,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
         }
     }
-    public static void createLottieBitmapAndSave(int width, int height, Drawable drawable)
+    public static void createLottieBitmapAndSave(int width, int height, Drawable drawable, @ColorInt int pickedColor1, @ColorInt int pickedColor2)
             throws IOException {
 
         Paint p = new Paint();
@@ -454,7 +454,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             throw new IOException("failed to create path " + parent);
         }
 
-        File file = new File(parent, "LINEAR_#" + ".png");
+        File file = new File(parent, "RADIAL_#" + Integer.toHexString(pickedColor1) + "_" + "#" + Integer.toHexString(pickedColor2) + ".png");
         try (FileOutputStream fos = new FileOutputStream(file)) {
             // Use Bitmap.CompressFormat.JPEG if you want JPEG
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
