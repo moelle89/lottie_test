@@ -2,6 +2,7 @@ package com.moelle.deepdarkness.fragment;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -48,10 +49,12 @@ import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
+import static androidx.core.content.ContextCompat.getColor;
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
 import static com.moelle.deepdarkness.MainActivity.createLottieBitmapAndSave;
@@ -78,7 +81,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
     private LottieAnimationView keyboard2, radial_gradient, dashboard_head, keyboard, dialogbg, dialogbg0;
     private ImageView iconMAIL, imageView, dlIcon;
-    private View center;
+    private View center, dialogView;
     private CardView mail, card1, CardView2, CardView3, CardView4;
     private Button  dl_btn;
     private TextView cat_top1, cat_top2, cat_bottom, dlText;
@@ -400,7 +403,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
 
     private void showContact() {
-        final View dialogView = View.inflate(getActivity(), R.layout.dialog_gboard, null);
+        dialogView = View.inflate(getActivity(), R.layout.dialog_gboard, null);
         final Dialog dialog = new Dialog(getActivity(), R.style.ApptThemeDialogContact);
         dialog.getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
@@ -544,7 +547,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
 
-        final View view = dialogView.findViewById(R.id.dialog_gboard);
+        final View view = dialogView;
 
         int w = view.getWidth();
         int h = view.getHeight();
@@ -602,5 +605,4 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 keyboard2.playAnimation();
             }
         }.start(); }
-
 }

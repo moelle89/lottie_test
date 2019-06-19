@@ -177,7 +177,7 @@
                                 android:layout_marginEnd="4dp"
                                 android:layout_marginBottom="2dp"
                                 android:autoSizeTextType="uniform"
-                                android:text="MAKE A DONATION"
+                                android:text="SHOW LOVE"
                                 android:maxLines="1"
                                 android:textAppearance="@style/TextAppearance.Cocogoose"
                                 android:textColor="?textcolorsecondary" />

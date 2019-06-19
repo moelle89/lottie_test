@@ -31,7 +31,7 @@ public class WallpaperDetail extends AppCompatActivity {
         );
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_movie_detail);
+        setContentView(R.layout.activity_wallpaper_detail);
         // ini views
         iniViews();
 

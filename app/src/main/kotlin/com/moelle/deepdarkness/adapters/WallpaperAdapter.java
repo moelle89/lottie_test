@@ -33,7 +33,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.MyVi
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
 
-        View view = LayoutInflater.from(context).inflate(R.layout.item_movie, viewGroup, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_wallpaper, viewGroup, false);
         return new MyViewHolder(view);
 
 

@@ -32,7 +32,7 @@
         android:layout_margin="0dp"
         android:src="@drawable/ic_2"
         android:alpha="0.2"
-        android:tint="@color/donation_sb"/>
+        android:tint="@color/donation_nav"/>
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -76,7 +76,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/gradient_bg_donation"
+                android:background="@color/donation_nav"
                 android:gravity="top|end"
                 android:orientation="vertical">
 
@@ -86,9 +86,9 @@
                     android:layout_height="150dp"
                     android:layout_gravity="top|end"
                     android:layout_marginTop="-35dp"
-                    android:alpha="0.15"
+                    android:alpha="0.12"
                     android:src="@drawable/ic_2"
-                    android:tint="@color/donation_nav"
+                    android:tint="@color/donation_sb"
                     android:transitionName="feature_img1" />
 
                 <LinearLayout
@@ -103,10 +103,11 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/launch_telegramgroup"
+                        android:textAppearance="@style/TextAppearance.Khula"
+                        android:text="Do you want to\nshow some love?"
                         android:textAlignment="textStart"
-                        android:textColor="#D9FFFFFF"
-                        android:textSize="20sp" />
+                        android:textColor="#F2FFFFFF"
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -129,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:background="@drawable/gradient_bg3"
-                android:backgroundTint="@color/donation_sb"
+                android:backgroundTint="@color/cardbackgroundlight"
                 android:gravity="top|end"
                 android:orientation="vertical">
 
@@ -140,7 +141,7 @@
                     android:layout_gravity="top|end"
                     android:layout_marginTop="-35dp"
                     android:alpha="0.08"
-                    android:src="@drawable/ic_1"
+                    android:src="@drawable/paypal"
                     android:tint="#D9000000"
                     android:transitionName="feature_img1" />
 
@@ -156,9 +157,10 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/launch_email"
+                        android:text="MAKE A\nDONATION"
                         android:textAlignment="textStart"
-                        android:textColor="#D9FFFFFF"
+                        android:textAppearance="@style/TextAppearance.Cocogoose"
+                        android:textColor="@color/secondary_text_light"
                         android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -174,7 +176,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="130dp"
         android:src="@drawable/ic_2"
-        android:tint="@color/donation_nav"
+        android:tint="@color/md_white"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2" />
 
@@ -186,8 +188,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="130dp"
-        android:src="@drawable/ic_1"
-        android:tint="#FFFFFF"
+        android:src="@drawable/paypal"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toEndOf="@+id/iconTG" />
