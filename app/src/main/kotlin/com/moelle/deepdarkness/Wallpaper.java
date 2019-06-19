@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -30,7 +29,6 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 
-    float durationScale;
     private RecyclerView WallsRV;
 
     @Override
@@ -64,11 +62,8 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
 
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
-
-
         // Recyclerview Setup
         // ini data
-
         List<Wall> listWalls = new ArrayList<>();
         listWalls.add(new Wall("W1", R.drawable.w1));
         listWalls.add(new Wall("W2", R.drawable.w2));
