@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ import android.graphics.RadialGradient;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -412,7 +414,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         colors[0] = Color.parseColor("#000000");
         colors[1] = Color.parseColor("#123456");
 
-        LinearGradient gradient = new LinearGradient(0, 0, 0, height, pickedColor2,pickedColor1, Shader.TileMode.CLAMP);
+        LinearGradient gradient = new LinearGradient(0, 0, 0, height, pickedColor1,pickedColor2, Shader.TileMode.REPEAT);
         Paint p = new Paint();
         p.setDither(true);
         p.setShader(gradient);
@@ -433,24 +435,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
         }
     }
-    public static void createRoundColorBitmapAndSave(int width, int height, @ColorInt int pickedColor1, @ColorInt int pickedColor2)
+    public static void createLottieBitmapAndSave(int width, int height, Drawable drawable)
             throws IOException {
-        //Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        //bitmap.eraseColor(color);
-        int colors[] = new int[2];
-        colors[0] = Color.parseColor("#000000");
-        colors[1] = Color.parseColor("#123456");
 
-        RadialGradient gradient = new RadialGradient(width / 2, width,
-                width / 2, pickedColor1,pickedColor2, Shader.TileMode.REPEAT);
         Paint p = new Paint();
         p.setDither(true);
         p.setAntiAlias(true);
-        p.setShader(gradient);
 
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         canvas.drawRect(new RectF(0, 0, width, height), p);
+        drawable.setBounds(0, 0, width, height);
+        drawable.draw(canvas);
 
         File parent = new File(Environment.getExternalStorageDirectory() + "/"
                 + DirectoryHelper.ROOT_DIRECTORY_NAME.concat("/"));
@@ -458,7 +454,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             throw new IOException("failed to create path " + parent);
         }
 
-        File file = new File(parent, "RADIAL_#" + Integer.toHexString(pickedColor1) + "_" + "#" + Integer.toHexString(pickedColor2) + ".png");
+        File file = new File(parent, "LINEAR_#" + ".png");
         try (FileOutputStream fos = new FileOutputStream(file)) {
             // Use Bitmap.CompressFormat.JPEG if you want JPEG
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);

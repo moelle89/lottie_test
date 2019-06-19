@@ -187,7 +187,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="0dp"
         android:alpha="1.0"
-        android:src="@drawable/move"
+        android:src="@null"
         app:layout_constraintBottom_toBottomOf="@+id/closeBG"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toEndOf="@+id/iconTG"

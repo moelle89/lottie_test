@@ -12,6 +12,7 @@ import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
@@ -25,7 +26,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -45,6 +45,7 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
+import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
@@ -53,7 +54,7 @@ import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
-import static com.moelle.deepdarkness.MainActivity.createRoundColorBitmapAndSave;
+import static com.moelle.deepdarkness.MainActivity.createLottieBitmapAndSave;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -75,11 +76,11 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
 
-    private LottieAnimationView keyboard2, dashboard_head, keyboard, dialogbg, dialogbg0;
+    private LottieAnimationView keyboard2, radial_gradient, dashboard_head, keyboard, dialogbg, dialogbg0;
     private ImageView iconMAIL, imageView, dlIcon;
     private View center;
     private CardView mail, card1, CardView2, CardView3, CardView4;
-    private Button  dl_btn, dl_btn2;
+    private Button  dl_btn;
     private TextView cat_top1, cat_top2, cat_bottom, dlText;
 
     public fragment_2() {
@@ -110,14 +111,30 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
 
 
         LinearLayout card2 = v.findViewById(R.id.accent4);
-        LottieAnimationView radial_gradient = v.findViewById(R.id.radial_gradient);
+        radial_gradient = v.findViewById(R.id.radial_gradient);
         radial_gradient.addValueCallback(
-                new KeyPath("**"),
+                new KeyPath("FG", "FG", "**"),
                 LottieProperty.COLOR_FILTER,
                 new SimpleLottieValueCallback<ColorFilter>() {
                     @Override
                     public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
                         return new PorterDuffColorFilter(pickedColor1, PorterDuff.Mode.SRC_IN);
+                    }});
+        radial_gradient.addValueCallback(
+                new KeyPath("FG", "BG", "**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
+                    }});
+        radial_gradient.addValueCallback(
+                new KeyPath("BG", "**"),
+                LottieProperty.COLOR_FILTER,
+                new SimpleLottieValueCallback<ColorFilter>() {
+                    @Override
+                    public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                        return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
                     }});
 
         radial_gradient.playAnimation();
@@ -452,7 +469,11 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 try {
                     createColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
-                    createRoundColorBitmapAndSave(1680, 1050, pickedColor1, pickedColor2);
+                    Drawable mDrawable = radial_gradient.getDrawable();
+                    final int width = mDrawable.getBounds().width();
+                    final int height = mDrawable.getBounds().height();
+
+                    createLottieBitmapAndSave(width, height,mDrawable);
 
                     Toast toast = new Toast(getContext());
                     View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_toast,null);
@@ -464,9 +485,8 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                     toast.setGravity(Gravity.BOTTOM, 0, 255| Gravity.BOTTOM);
                     toast.setDuration(Toast.LENGTH_SHORT);
                     toast.show();
-                    dl_btn.animate().translationY(0).scaleX(1f).scaleY(1f).alpha(0f).setStartDelay(500).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
-                    //dl_btn2.animate().scaleX(1f).scaleY(1f).alpha(1f).setStartDelay(400).setDuration(630).setInterpolator(new FastOutSlowInInterpolator()).start();
-                    moveToTop(view,80,350,3);
+
+                    moveToTop(view,80,450,3);
                     revealShow(dialogView, false, dialog);
                 } catch (Throwable t) {
                     Toast toast = Toast.makeText(getContext(), "Something went wrong.", Toast.LENGTH_SHORT );
@@ -474,6 +494,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                 }
             }
         });
+
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
             @Override
             public void onShow(DialogInterface dialogInterface) {
@@ -495,15 +516,15 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialog.show();
         revealShowDelayed();
-        dlIcon.animate().alpha(0f).setDuration(550).setStartDelay(250).start();
-        dlText.animate().alpha(0f).setDuration(550).setStartDelay(250).start();
+        dlIcon.animate().translationY(200).alpha(0f).setStartDelay(200).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
+        dlText.animate().translationY(50).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
         dl_btn.setBackgroundTintList(ColorStateList.valueOf(pickedColor2));
         dl_btn.setAlpha(0.0f);
         dl_btn.setScaleX(0.7f);
         dl_btn.setScaleY(0.7f);
         dl_btn.setTranslationY(350);
         dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(450).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
-        mail.setAlpha(0.0f);
+       mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
         mail.setTranslationY(200);
