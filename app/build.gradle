@@ -87,7 +87,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
     implementation 'com.google.android.material:material:1.1.0-alpha07'
     implementation 'com.klinkerapps:simple_videoview:1.2.4'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.airbnb.android:lottie:3.0.6'
     implementation 'com.github.AppIntro:AppIntro:5.1.0'
@@ -98,8 +98,6 @@ dependencies {
     //customFonts
     implementation 'io.github.inflationx:calligraphy3:3.1.1'
     implementation 'io.github.inflationx:viewpump:2.0.2'
-
-    implementation 'com.koushikdutta.urlimageviewhelper:urlimageviewhelper:1.0.4'
 }
 
 // Themers: DO NOT MODIFY ANYTHING BELOW

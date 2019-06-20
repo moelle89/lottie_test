@@ -65,12 +65,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:clickable="true"
             android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
             android:alpha="1.0"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"
-            app:cardElevation="0dp"
+            app:cardElevation="@dimen/cardelevation_small"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -124,7 +122,7 @@
             android:onClick="launchPaypal"
             android:foreground="?attr/selectableItemBackground"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"
-            app:cardElevation="0dp"
+            app:cardElevation="@dimen/cardelevation_small"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -161,7 +159,7 @@
                         android:text="MAKE A\nDONATION"
                         android:textAlignment="textStart"
                         android:textAppearance="@style/TextAppearance.Cocogoose"
-                        android:textColor="@color/secondary_text_light"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>

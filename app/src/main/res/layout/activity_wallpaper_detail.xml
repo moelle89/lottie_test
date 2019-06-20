@@ -71,6 +71,7 @@
         app:borderWidth="0dp"
         app:elevation="0dp"
         app:fabCustomSize="90dp"
+        android:onClick="setWALL"
         app:layout_constraintBottom_toBottomOf="@+id/detail_wall_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/detail_wall_img"

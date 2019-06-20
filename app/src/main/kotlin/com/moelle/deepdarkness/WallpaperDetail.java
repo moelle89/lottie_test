@@ -1,7 +1,12 @@
 package com.moelle.deepdarkness;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -9,7 +14,9 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.bumptech.glide.Glide;
@@ -17,7 +24,9 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class WallpaperDetail extends AppCompatActivity {
+import java.io.File;
+
+public class WallpaperDetail extends AppCompatActivity{
 
     private ImageView MovieThumbnailImg, MovieCoverImg;
     private FloatingActionButton play_fab;
@@ -30,7 +39,6 @@ public class WallpaperDetail extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
         getWindow().setStatusBarColor(Color.TRANSPARENT);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_wallpaper_detail);
         // ini views
         iniViews();
@@ -59,6 +67,7 @@ public class WallpaperDetail extends AppCompatActivity {
         MovieCoverImg.setAnimation(anim_cover);
         play_fab.setAnimation(anim_fab);
         //MovieThumbnailImg.setAnimation(anim_thumb);
+
 
     }
 }

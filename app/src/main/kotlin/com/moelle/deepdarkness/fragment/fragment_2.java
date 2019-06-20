@@ -46,15 +46,12 @@ import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
-import com.moelle.deepdarkness.MainActivity;
 import com.moelle.deepdarkness.R;
 
-import static androidx.core.content.ContextCompat.getColor;
 import static com.jaredrummler.android.colorpicker.ColorPickerDialog.newBuilder;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToBottom;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 import static com.moelle.deepdarkness.MainActivity.DD_Colors;
 import static com.moelle.deepdarkness.MainActivity.createColorBitmapAndSave;
 import static com.moelle.deepdarkness.MainActivity.createLottieBitmapAndSave;
