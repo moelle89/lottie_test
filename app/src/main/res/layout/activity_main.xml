@@ -98,9 +98,8 @@
             app:layout_constraintTop_toBottomOf="@+id/switchcard"
             app:tint="#D9FFFFFF"
             app:srcCompat="@drawable/ic_overlays" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
@@ -112,9 +111,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_rawRes="@raw/intro"
         app:lottie_colorFilter="?backgroundcolor"
+        app:lottie_renderMode="hardware"
         app:lottie_speed="1.1"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

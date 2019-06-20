@@ -19,6 +19,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -27,10 +28,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.OvershootInterpolator;
 import android.widget.CompoundButton;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -40,6 +39,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -62,6 +62,8 @@ import io.github.inflationx.calligraphy3.FontMapper;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
+import static com.moelle.deepdarkness.AnimationPack.moveToTop;
+
 //implement the interface OnNavigationItemSelectedListener in your activity class
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, ColorPickerDialogListener {
 
@@ -69,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     // Give your color picker dialog unique IDs if you have multiple dialogs.
     private static final int DIALOG_ID1 = 0;
     private static final int DIALOG_ID2 = 1;
+    private BottomNavigationView navigation;
+    private FrameLayout fragment_container;
+    private ConstraintLayout curtain;
 
     private int pickedColor1;
     private int pickedColor2;
@@ -151,14 +156,37 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         pickedColor3 = preferences.getInt(PICKED_COLOR_KEY3, ContextCompat.getColor(getApplicationContext(), R.color.transparent));
         pickedColor4 = preferences.getInt(PICKED_COLOR_KEY4, ContextCompat.getColor(getApplicationContext(), R.color.overlay_fg_20));
 
+        curtain = findViewById(R.id.constraintLayout);
+        curtain.setAlpha(0f);
         fab = findViewById(R.id.fab);
-        //fab.setBackgroundTintList(ColorStateList.valueOf(fabColor));
+        fab.setAlpha(0f);
+        switchcard = findViewById(R.id.switchcard);
+        switchcard.setAlpha(0f);
+        myswitch = findViewById(R.id.myswitch);
+        myswitch.setAlpha(0f);
+        navigation = findViewById(R.id.bottom_navigation);
+        navigation.setAlpha(0f);
+
+        new CountDownTimer(900, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {  }
+            @Override
+            public void onFinish() {
+
+                // you cannot touch the UI from another thread. This thread now calls a function on the main thread
+                loadFragment(new fragment_1());
+                curtain.animate().alpha(1f).setDuration(100).setStartDelay(0).start();
+                // ini & setup Animations
+                myswitch.animate().alpha(1f).setDuration(600).setStartDelay(300);
+                switchcard.animate().alpha(1f).setDuration(500).setStartDelay(300);
+                moveToTop(navigation,50,200,3.0f);
+                moveToTop(fab,100,400,2.0f);
+            }
+        }.start();
         //loading the default fragment
-        loadFragment(new fragment_1());
+
 
         // dark/light mode switch
-        switchcard = findViewById(R.id.switchcard);
-        myswitch = findViewById(R.id.myswitch);
         if (sharedpref.loadNightModeState()) {
             myswitch.setChecked(true);
         }
@@ -177,7 +205,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         // end of dark/light mode switch
 
         //getting bottom navigation view and attaching the listener
-        BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(this);
 
         LottieAnimationView intro = findViewById(R.id.intro);
@@ -189,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             @Override
             public void onAnimationEnd(Animator animation) {
                 LottieAnimationView intro = findViewById(R.id.intro);
-                intro.setVisibility(View.INVISIBLE);
+                intro.animate().alpha(0f).setDuration(100).setStartDelay(0).start();
 
                 PermissionHelper.checkPermissions(MainActivity.this);
             }
@@ -202,20 +229,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             public void onAnimationRepeat(Animator animation) {
             }
         });
-
-        // ini & setup Animations
-        Animation anim_nav = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        myswitch.setAlpha(0f);
-        switchcard.setAlpha(0f);
-        myswitch.animate().alpha(1f).setDuration(600).setStartDelay(500);
-        switchcard.animate().alpha(1f).setDuration(500).setStartDelay(500);
-        anim_nav.setStartOffset(600);
-        anim_nav.setInterpolator(new OvershootInterpolator(2.8f));
-        navigation.setAnimation(anim_nav);
-        anim_fab.setStartOffset(680);
-        anim_fab.setInterpolator(new OvershootInterpolator(2.0f));
-        fab.setAnimation(anim_fab);
     }
 
     private int previousSelectedId = 0;
@@ -390,9 +403,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     public void restartApp() {
-        Intent b = new Intent(getApplicationContext(), MainActivity.class);
-        finish();
-        startActivity(b);
+        //Intent b = new Intent(getApplicationContext(), MainActivity.class);
+        //finish();
+        //startActivity(b);
+        this.recreate();
+        curtain.setAlpha(0f);
     }
 
     public static void createColorBitmapAndSave(int width, int height, @ColorInt int pickedColor1, @ColorInt int pickedColor2)

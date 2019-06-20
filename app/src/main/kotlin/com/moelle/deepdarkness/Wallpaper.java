@@ -5,6 +5,7 @@ import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.ImageView;
@@ -17,7 +18,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import com.moelle.deepdarkness.adapters.WallItemClickListener;
 import com.moelle.deepdarkness.adapters.WallpaperAdapter;
 import com.moelle.deepdarkness.models.Wall;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +30,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 
     private RecyclerView WallsRV;
+    private Drawable drawable1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +64,10 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
         // Recyclerview Setup
+
+
         // ini data
         List<Wall> listWalls = new ArrayList<>();
-        listWalls.add(new Wall("W1", R.drawable.w1));
         listWalls.add(new Wall("W2", R.drawable.w2));
         listWalls.add(new Wall("W3", R.drawable.w3));
         listWalls.add(new Wall("W4", R.drawable.w4));
