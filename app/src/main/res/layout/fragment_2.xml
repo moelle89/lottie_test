@@ -197,7 +197,6 @@
             android:layout_height="match_parent"
             android:alpha="1.0"
             android:scaleType="centerCrop"
-            app:lottie_autoPlay="true"
             app:lottie_rawRes="@raw/radial_gradient_test" />
 
         <LinearLayout

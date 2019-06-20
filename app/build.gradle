@@ -98,6 +98,8 @@ dependencies {
     //customFonts
     implementation 'io.github.inflationx:calligraphy3:3.1.1'
     implementation 'io.github.inflationx:viewpump:2.0.2'
+
+    implementation 'com.koushikdutta.urlimageviewhelper:urlimageviewhelper:1.0.4'
 }
 
 // Themers: DO NOT MODIFY ANYTHING BELOW

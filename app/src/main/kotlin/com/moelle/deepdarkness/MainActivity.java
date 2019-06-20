@@ -8,17 +8,16 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
-import android.graphics.RadialGradient;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -215,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         anim_nav.setInterpolator(new OvershootInterpolator(2.8f));
         navigation.setAnimation(anim_nav);
         anim_fab.setStartOffset(680);
-        anim_fab.setInterpolator(new OvershootInterpolator(3.5f));
+        anim_fab.setInterpolator(new OvershootInterpolator(2.0f));
         fab.setAnimation(anim_fab);
     }
 
@@ -360,16 +359,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 try {
                     //createColorBitmapAndSave(1366, 768, color);
                     preferences.edit().putInt(PICKED_COLOR_KEY1, color).apply();
-                    //Toast toast = new Toast(this);
-                    //View view = LayoutInflater.from(this).inflate(R.layout.custom_toast, null);
-                    //CardView card = view.findViewById(R.id.card_toast);
-                    //card.setCardBackgroundColor(pickedColor1);
-                    //TextView textView = view.findViewById(R.id.text);
-                    //textView.setText(R.string.success);
-                    //toast.setView(view);
-                    //toast.setGravity(Gravity.BOTTOM, 0, 90| Gravity.BOTTOM);
-                    //toast.setDuration(Toast.LENGTH_LONG);
-                    //toast.show();
                     Fragment fragment = new fragment_2();
                     loadFragment(fragment);
 
@@ -459,5 +448,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             // Use Bitmap.CompressFormat.JPEG if you want JPEG
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
         }
+    }
+    public void substratum(View view) { ////button to launch theme on substratum app
+        {
+            Intent intent = new Intent();
+            intent = intent.setClassName("projekt.substratum",
+                    "projekt.substratum.MainActivity");
+            startActivity(intent);
+        }
+
+    }
+    public void launchTelegramLink(View view) {   ////button to launch a telegram group
+        Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/moelle1")); ////Insert your link
+        startActivity(telegramLink);
+    }
+
+    public void launchPaypal(View view) { ////button to launch paypal.me donationslink
+        Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/moelle89")); ////Insert your link
+        startActivity(telegramLink);
     }
 }

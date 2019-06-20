@@ -121,6 +121,7 @@
             android:alpha="1.0"
             android:clickable="true"
             android:focusable="true"
+            android:onClick="launchPaypal"
             android:foreground="?attr/selectableItemBackground"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"
             app:cardElevation="0dp"

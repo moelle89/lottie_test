@@ -140,7 +140,16 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                         return new PorterDuffColorFilter(pickedColor2, PorterDuff.Mode.SRC_IN);
                     }});
 
-        radial_gradient.playAnimation();
+        new CountDownTimer(250, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                // do something after 1s
+            }
+            @Override
+            public void onFinish() {
+                radial_gradient.playAnimation();
+            }
+        }.start();
         card2.setBackgroundTintList(ColorStateList.valueOf(pickedColor1));
         card2.setForegroundTintList(ColorStateList.valueOf(pickedColor2));
         card1 = v.findViewById(R.id.CardView1);
@@ -166,7 +175,6 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         final int fg = ContextCompat.getColor(v.getContext(), R.color.textColor);
         final int bg = ContextCompat.getColor(v.getContext(), R.color.background);
         final int stroke = ContextCompat.getColor(v.getContext(), R.color.overlay_fg_15);
-        final int accent = ContextCompat.getColor(v.getContext(), R.color.colorAccent);
         final int stroke2 = pickedColor4;
 
         keyboard.addValueCallback(
@@ -592,7 +600,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         }
     }
     private void revealShowDelayed() {
-
+{
         new CountDownTimer(125, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -600,9 +608,10 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             }
             @Override
             public void onFinish() {
+
                 // you cannot touch the UI from another thread. This thread now calls a function on the main thread
                 keyboard2.animate().translationX(0).alpha(1f).setStartDelay(200).setDuration(650).setInterpolator(new FastOutLinearInInterpolator()).start();
                 keyboard2.playAnimation();
             }
         }.start(); }
-}
+}}
