@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 // ini & setup Animations
                 myswitch.animate().alpha(1f).setDuration(600).setStartDelay(300);
                 switchcard.animate().alpha(1f).setDuration(500).setStartDelay(300);
-                moveToTop(navigation,50,200,3.0f);
+                moveToTop(navigation,70,200,3.0f);
                 moveToTop(fab,100,400,2.0f);
             }
         }.start();
