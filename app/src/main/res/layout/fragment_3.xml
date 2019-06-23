@@ -160,7 +160,7 @@
                         android:layout_marginTop="@dimen/spacing_large"
                         android:layout_marginRight="@dimen/spacing_xlarge"
                         android:layout_marginBottom="@dimen/spacing_xlarge"
-                        android:text="@string/short_lorem_ipsum"
+                        android:text="You dont know how to use substratum?"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.Khula"
                         android:textColor="@color/secondary_text_light" />
