@@ -476,7 +476,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/moelle1")); ////Insert your link
         startActivity(telegramLink);
     }
-
+    public void launchEmail(View view) { ////button to launch paypal.me donationslink
+        Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:manuel.moellmann@gmail.com")); ////Insert your link
+        startActivity(telegramLink);
+    }
     public void launchPaypal(View view) { ////button to launch paypal.me donationslink
         Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/moelle89")); ////Insert your link
         startActivity(telegramLink);

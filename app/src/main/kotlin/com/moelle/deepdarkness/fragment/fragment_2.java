@@ -534,7 +534,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(450).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
         infoText.setAlpha(0.0f);
         infoText.setTranslationY(50);
-        infoText.animate().translationY(0).alpha(0.8f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        infoText.animate().translationY(0).alpha(0.9f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
        mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);

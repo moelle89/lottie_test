@@ -40,14 +40,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstActivity"
-            android:theme="@style/Circular.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".LottieIntro"
             android:theme="@style/LottieIntro">
             <intent-filter>
@@ -119,10 +111,10 @@
         <meta-data
             android:name="Substratum_Encryption"
             android:value="@string/encryption_status"/>
-        <service
+        <!--<service
             android:name=".DownloadService"
             android:enabled="true"
-            android:exported="false" />
+            android:exported="false" />-->
     </application>
 
 </manifest>

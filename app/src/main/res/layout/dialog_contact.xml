@@ -133,6 +133,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:focusable="true"
+            android:onClick="launchEmail"
             android:foreground="?attr/selectableItemBackground"
             android:alpha="1.0"
             app:cardCornerRadius="@dimen/cardCornerRadius_small"

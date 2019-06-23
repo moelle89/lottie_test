@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Downloads are saved on your device\nin a folder called DEEP DARKNESS"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="67dp"
         android:layout_marginStart="20dp"
         android:textAppearance="@style/TextAppearance.Khula"
         android:textColor="@color/secondary_text_light"
