@@ -81,7 +81,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
     private View center, dialogView;
     private CardView mail, card1, CardView2, CardView3, CardView4;
     private Button  dl_btn;
-    private TextView cat_top1, cat_top2, cat_bottom, dlText;
+    private TextView cat_top1, cat_top2, cat_bottom, dlText, infoText;
 
     public fragment_2() {
         // Required empty public constructor
@@ -462,6 +462,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
                     }});
 
         imageView = dialog.findViewById(R.id.closeDialogImg);
+        infoText = dialog.findViewById(R.id.infoText);
         iconMAIL = dialog.findViewById(R.id.iconMAIL);
         mail = dialog.findViewById(R.id.mail);
         dl_btn = dialog.findViewById(R.id.dl_btn);
@@ -532,6 +533,9 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         dl_btn.setScaleY(0.7f);
         dl_btn.setTranslationY(350);
         dl_btn.animate().translationY(0).scaleX(1).scaleY(1).alpha(1f).setStartDelay(450).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
+        infoText.setAlpha(0.0f);
+        infoText.setTranslationY(50);
+        infoText.animate().translationY(0).alpha(0.8f).setStartDelay(600).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
        mail.setAlpha(0.0f);
         mail.setScaleX(0.7f);
         mail.setScaleY(0.7f);
@@ -548,7 +552,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);
         imageView.setRotation(120);
-        imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(0.8f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        imageView.animate().rotation(0).scaleX(1).scaleY(1).alpha(1.0f).setStartDelay(550).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
     }
     private void revealShow(View dialogView, boolean b, final Dialog dialog) {
 
@@ -588,6 +592,7 @@ public class fragment_2 extends Fragment implements View.OnClickListener {
             keyboard2.animate().translationX(550).alpha(0f).setStartDelay(0).setDuration(550).setInterpolator(new FastOutSlowInInterpolator()).start();
             imageView.animate().rotation(120).scaleX(0.5f).scaleY(0.5f).alpha(0f).setStartDelay(0).setDuration(600).setInterpolator(new FastOutSlowInInterpolator()).start();
             dl_btn.animate().translationY(100).scaleX(0.8f).scaleY(0.8f).alpha(0f).setStartDelay(80).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
+            infoText.animate().translationY(100).alpha(0f).setStartDelay(80).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();
             moveToBottom(dlIcon,0.2f,-80,800,3);
             moveToBottom(dlText,1f,-80,550,1);
             anim.setDuration(750);
