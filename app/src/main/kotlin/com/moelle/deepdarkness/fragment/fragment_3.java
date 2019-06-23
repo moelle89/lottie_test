@@ -14,7 +14,6 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-import androidx.transition.Explode;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
@@ -25,7 +24,6 @@ import com.moelle.deepdarkness.LottieTutorial;
 import com.moelle.deepdarkness.R;
 import static com.moelle.deepdarkness.AnimationPack.fadeIn;
 import static com.moelle.deepdarkness.AnimationPack.moveToTop;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 
 /**
  * A simple {@link Fragment} subclass.

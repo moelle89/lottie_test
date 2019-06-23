@@ -17,7 +17,6 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
-import androidx.transition.Explode;
 import androidx.transition.Transition;
 
 import android.view.KeyEvent;
