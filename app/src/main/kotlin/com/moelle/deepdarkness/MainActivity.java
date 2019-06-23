@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        //getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         //Custom Fonts Ini
         ViewPump.init(ViewPump.builder()
                 .addInterceptor(new CalligraphyInterceptor(
@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 switchcard.animate().alpha(1f).setDuration(500).setStartDelay(300);
                 moveToTop(navigation,70,200,3.0f);
                 moveToTop(fab,100,400,2.0f);
+                PermissionHelper.checkPermissions(MainActivity.this);
             }
         }.start();
         //loading the default fragment
@@ -217,8 +218,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             public void onAnimationEnd(Animator animation) {
                 LottieAnimationView intro = findViewById(R.id.intro);
                 intro.animate().alpha(0f).setDuration(100).setStartDelay(0).start();
-
-                PermissionHelper.checkPermissions(MainActivity.this);
             }
 
             @Override

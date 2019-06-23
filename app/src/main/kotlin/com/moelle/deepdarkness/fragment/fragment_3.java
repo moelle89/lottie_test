@@ -90,7 +90,7 @@ public class fragment_3 extends Fragment implements View.OnClickListener {
         description = v.findViewById(R.id.description);
         fadeIn(description,850);
         Button tutorial_btn = v.findViewById(R.id.tutorial_btn);
-        moveToTop(tutorial_btn,50,400,4);
+        moveToTop(tutorial_btn,150,400,2);
         tutorial_btn.setOnClickListener(this);
         LottieAnimationView btn_ripple = v.findViewById(R.id.ripplehowto);
         fadeIn(btn_ripple,1800);

@@ -110,9 +110,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_rawRes="@raw/intro"
-        app:lottie_colorFilter="?backgroundcolor"
+        app:lottie_colorFilter="@color/background"
         app:lottie_renderMode="hardware"
-        app:lottie_speed="1.1"
+        app:lottie_speed="1.2"
         app:lottie_loop="false"
         app:lottie_autoPlay="true" />
 

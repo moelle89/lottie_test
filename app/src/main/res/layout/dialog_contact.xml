@@ -118,6 +118,7 @@
                         android:layout_marginBottom="10dp"
                         android:text="@string/launch_telegramgroup"
                         android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.Khula"
                         android:textColor="#D9FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -170,6 +171,7 @@
                         android:layout_marginBottom="10dp"
                         android:text="@string/launch_email"
                         android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.Khula"
                         android:textColor="#D9FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>

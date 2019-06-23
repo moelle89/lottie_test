@@ -148,7 +148,7 @@
                         android:textAppearance="@style/TextAppearance.KhulaBold"
                         android:text="how-to\n use this theme"
                         android:textAlignment="center"
-                        android:textColor="?attr/textcolor"
+                        android:textColor="@color/textColor"
                         android:textSize="30sp"
                         app:layout_constraintBottom_toTopOf="@+id/tutorial_btn" />
 
@@ -163,7 +163,7 @@
                         android:text="@string/short_lorem_ipsum"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.Khula"
-                        android:textColor="?textcolorsecondary" />
+                        android:textColor="@color/secondary_text_light" />
 
                 </LinearLayout>
 
