@@ -64,13 +64,9 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         setContentView(R.layout.activity_wallpaper);
         WallsRV = findViewById(R.id.Rv_walls);
         // Recyclerview Setup
-
-
+        
         // ini data
         List<Wall> listWalls = new ArrayList<>();
-        listWalls.add(new Wall("W2", R.drawable.w2));
-        listWalls.add(new Wall("W3", R.drawable.w3));
-        listWalls.add(new Wall("W4", R.drawable.w4));
         listWalls.add(new Wall("W5", R.drawable.w5));
         listWalls.add(new Wall("W6", R.drawable.w6));
         listWalls.add(new Wall("W7", R.drawable.w7));
