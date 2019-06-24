@@ -26,7 +26,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;
 
-public class WallpaperDetail extends AppCompatActivity{
+public class WallpaperDetail extends AppCompatActivity {
 
     private ImageView MovieThumbnailImg, MovieCoverImg;
     private FloatingActionButton play_fab;
@@ -47,16 +47,15 @@ public class WallpaperDetail extends AppCompatActivity{
 
     void iniViews() {
         play_fab = findViewById(R.id.play_fab);
-        int imageResourceId = getIntent().getExtras().getInt("imgURL");
-        int imagecover = getIntent().getExtras().getInt("imgCover");
+        String imgURL = getIntent().getExtras().getString("imgURL");
+        String imgCover = getIntent().getExtras().getString("imgCover");
         MovieThumbnailImg = findViewById(R.id.detail_wall_img);
         //Glide.with(this).load(imageResourceId).into(MovieThumbnailImg);
-        MovieThumbnailImg.setImageResource(imageResourceId);
-        Glide.with(this).load(imageResourceId)
+        Glide.with(this).load(imgURL)
                 .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
                 .into(MovieThumbnailImg);
         MovieCoverImg = findViewById(R.id.detail_wall_cover);
-        Glide.with(this).load(imagecover).into(MovieCoverImg);
+        Glide.with(this).load(imgCover).into(MovieCoverImg);
         // setup animation
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         Animation anim_cover = AnimationUtils.loadAnimation(this, R.anim.cover_anim);
@@ -67,7 +66,5 @@ public class WallpaperDetail extends AppCompatActivity{
         MovieCoverImg.setAnimation(anim_cover);
         play_fab.setAnimation(anim_fab);
         //MovieThumbnailImg.setAnimation(anim_thumb);
-
-
     }
 }

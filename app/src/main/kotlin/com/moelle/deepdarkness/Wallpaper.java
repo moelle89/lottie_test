@@ -67,17 +67,17 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
 
         // ini data
         List<Wall> listWalls = new ArrayList<>();
-        listWalls.add(new Wall("W5", R.drawable.w5));
-        listWalls.add(new Wall("W6", R.drawable.w6));
-        listWalls.add(new Wall("W7", R.drawable.w7));
-        listWalls.add(new Wall("W8", R.drawable.w8));
-        listWalls.add(new Wall("W9", R.drawable.w9));
-        listWalls.add(new Wall("W10", R.drawable.w10));
-        listWalls.add(new Wall("W11", R.drawable.w11));
-        listWalls.add(new Wall("W12", R.drawable.w12));
-        listWalls.add(new Wall("W13", R.drawable.w13));
-        listWalls.add(new Wall("W14", R.drawable.w14));
-        listWalls.add(new Wall("W15", R.drawable.w15));
+        listWalls.add(new Wall("W5", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W6", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W7", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W8", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W9", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W10", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W11", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W12", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W13", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W14", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W15", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
 
         WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls, this);
         WallsRV.setAdapter(wallpaperAdapter);
@@ -93,8 +93,8 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         Intent intent = new Intent(this, WallpaperDetail.class);
         // send wall information to deatilActivity
         intent.putExtra("title", wall.getTitle());
-        intent.putExtra("imgURL", wall.getThumbnail());
-        intent.putExtra("imgCover", wall.getCoverPhoto());
+        intent.putExtra("imgURL", wall.getThumbnailUrl());
+        intent.putExtra("imgCover", wall.getCoverPhotoUrl());
         // lets crezte the animation
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Wallpaper.this,
                 movieImageView, "sharedName");

@@ -3,24 +3,22 @@ package com.moelle.deepdarkness.models;
 public class Wall {
 
     private String title;
-    private int thumbnail;
-    private int coverPhoto;
+    private String thumbnailUrl;
 
-    public Wall(String title, int thumbnail) {
+    public Wall(String title, String thumbnailUrl) {
         this.title = title;
-        this.thumbnail = thumbnail;
-        this.coverPhoto = thumbnail;
+        this.thumbnailUrl = thumbnailUrl;
     }
 
-    public int getCoverPhoto() {
-        return coverPhoto;
+    public String getCoverPhotoUrl() {
+        return thumbnailUrl;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getThumbnail() {
-        return thumbnail;
+    public String getThumbnailUrl() {
+        return thumbnailUrl;
     }
 }
