@@ -26,6 +26,7 @@
         <!-- Activity for Splashscreen -Intro and Firebase notification -->
         <activity
             android:name=".SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +34,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +43,7 @@
         </activity>
         <activity
             android:name=".LottieIntro"
+            android:screenOrientation="portrait"
             android:theme="@style/LottieIntro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +52,7 @@
         </activity>
         <activity
             android:name=".Wallpaper"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,6 +62,7 @@
         <activity android:name=".WallpaperDetail" android:theme="@style/ApptThemeWall"/>
         <activity
             android:name=".LottieTutorial"
+            android:screenOrientation="portrait"
             android:theme="@style/LottieTutorial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
