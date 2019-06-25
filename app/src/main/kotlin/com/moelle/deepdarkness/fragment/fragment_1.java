@@ -149,6 +149,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
             case R.id.cardRight2: {
                 Intent wallpaper = new Intent(getActivity(), Wallpaper.class);
                 startActivity(wallpaper);
+                getActivity().overridePendingTransition(0, 0);
                 break;
             }
             case R.id.cardLeft2: {

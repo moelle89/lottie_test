@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -26,6 +27,8 @@ import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
 import io.github.inflationx.calligraphy3.FontMapper;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
+
+import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 
@@ -62,6 +65,8 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
         }
 
         setContentView(R.layout.activity_wallpaper);
+        View view = findViewById(R.id.wallpaper);
+        scaleIn(view);
         WallsRV = findViewById(R.id.Rv_walls);
         // Recyclerview Setup
 
