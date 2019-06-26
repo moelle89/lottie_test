@@ -223,7 +223,7 @@
                                 android:layout_marginTop="8dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="12dp"
-                                app:lottie_colorFilter="?textcolor"
+                                app:lottie_colorFilter="@color/textColor"
                                 app:lottie_autoPlay="true"
                                 app:lottie_loop="true"
                                 app:lottie_rawRes="@raw/restart"
@@ -273,7 +273,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="14dp"
-                                android:src="@drawable/ic_4" />
+                                android:src="@drawable/ic_5" />
 
                             <TextView
                                 android:layout_width="match_parent"

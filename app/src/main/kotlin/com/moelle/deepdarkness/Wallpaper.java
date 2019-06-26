@@ -72,17 +72,24 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
 
         // ini data
         List<Wall> listWalls = new ArrayList<>();
-        listWalls.add(new Wall("W5", "https://i.imgur.com/WvIzFU5.jpg"));
-        listWalls.add(new Wall("W6", "https://i.imgur.com/TASE91O.jpg"));
-        listWalls.add(new Wall("W7", "http://i.imgur.com/PJFIpKR.jpg"));
-        listWalls.add(new Wall("W8", "https://i.imgur.com/ZR8mNrb.jpg"));
-        listWalls.add(new Wall("W9", "http://i.imgur.com/H4zz9XB.png"));
-        listWalls.add(new Wall("W10", "http://i.imgur.com/ItOnzwz.png"));
-        listWalls.add(new Wall("W11", "http://i.imgur.com/XYEeO06.png"));
-        listWalls.add(new Wall("W12", "http://i.imgur.com/LuT2bEv.png"));
-        listWalls.add(new Wall("W13", "http://i.imgur.com/dDXZXmA.png"));
-        listWalls.add(new Wall("W14", "http://i.imgur.com/QkwwAFe.jpg"));
-        listWalls.add(new Wall("W15", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W5", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/5a8b1c78652deaeaab261c60/1534271521472/273WEb.jpg"));
+        listWalls.add(new Wall("W6", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/5a34055f53450a1651a4662d/1534271523191/265WEB.jpg"));
+        listWalls.add(new Wall("W7", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/5a223b10e2c483bcf3a1f02f/1534271521656/Web_262.jpg"));
+        listWalls.add(new Wall("W8", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/5a223b2ee4966bbfda19cae6/1534271521513/WEB-263.jpg"));
+        listWalls.add(new Wall("W9", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/59dd8e34e9bfdf3c309b887f/1534271522123/260_2.jpg"));
+        listWalls.add(new Wall("W10", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/598184aaf9a61e29dd5a1581/1534271523516/248.jpg"));
+        listWalls.add(new Wall("W11", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/596470ecff7c5099c12deb48/1534271524263/243.jpg"));
+        listWalls.add(new Wall("W12", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/596470df3a04119a4095ee87/1534271524286/WEB_242.jpg"));
+        listWalls.add(new Wall("W13", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/5964727bbe659459b41a5310/1534271523737/240.jpg"));
+        listWalls.add(new Wall("W14", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/59489a9515d5db5628ceeb93/1534271522013/236.jpg"));
+        listWalls.add(new Wall("W15", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/593b66a33a04116ac557d17a/1534271522362/226_2.jpg"));
+        listWalls.add(new Wall("W16", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/591270721e5b6cb37472ef9b/1534271522993/208_3.jpg"));
+        listWalls.add(new Wall("W17", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/590d5815f5e23141032aa6fe/1534271523143/205.jpg"));
+        listWalls.add(new Wall("W18", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/590d57f829687fab6af689b5/1534271524128/203.jpg"));
+        listWalls.add(new Wall("W19", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/590d5687440243109d128bb8/1534271523063/200.jpg"));
+        listWalls.add(new Wall("W20", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/58ff848bb3db2bff3b236af1/58ff84a959cc68ed099948ed/1534271523159/198.jpg"));
+        listWalls.add(new Wall("W21", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/5813773debbd1a7bb4a43558/587eebc3725e255a02e9b9b3/1493051330473/106.jpg"));
+        listWalls.add(new Wall("W22", "https://static1.squarespace.com/static/57fa538f414fb528b4122d54/5813773debbd1a7bb4a43558/588988f359cc685fe451cadc/1493051331092/113.jpg"));
 
         WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls, this);
         WallsRV.setAdapter(wallpaperAdapter);

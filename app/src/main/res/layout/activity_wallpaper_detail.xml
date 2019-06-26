@@ -39,33 +39,45 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintGuide_percent="0.85" />
 
-
-    <ImageView
-        android:id="@+id/detail_wall_img"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWP"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="center"
-        android:transitionName="sharedName"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintWidth_percent="0.65"
-        app:srcCompat="@drawable/gradient_bg1" />
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        android:layout_weight="1"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="?cardelevation_small">
+            <ImageView
+                android:id="@+id/detail_wall_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:transitionName="sharedName"
+                app:srcCompat="@drawable/gradient_bg1" />
+    </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/play_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/ic_play_arrow_black_24dp"
+        android:src="@drawable/fab_wp"
         app:borderWidth="0dp"
         app:elevation="0dp"
-        app:fabCustomSize="90dp"
-        app:layout_constraintBottom_toBottomOf="@+id/detail_wall_img"
+        app:fabCustomSize="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardWP"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/detail_wall_img"
-        app:layout_constraintTop_toTopOf="@+id/detail_wall_img"
-        app:maxImageSize="74dp" />
+        app:layout_constraintStart_toEndOf="@+id/cardWP"
+        app:layout_constraintTop_toTopOf="@+id/cardWP"
+        app:maxImageSize="64dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
