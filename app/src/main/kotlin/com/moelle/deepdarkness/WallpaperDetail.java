@@ -58,15 +58,13 @@ public class WallpaperDetail extends AppCompatActivity {
                 .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
                 .into(MovieThumbnailImg);
         MovieCoverImg = findViewById(R.id.detail_wall_cover);
+        MovieCoverImg.setAlpha(0f);
         Glide.with(this).load(imgCover).into(MovieCoverImg);
         // setup animation
         Animation anim_fab = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        Animation anim_cover = AnimationUtils.loadAnimation(this, R.anim.cover_anim);
+        AnimationPack.coverAnim(MovieCoverImg,1f,2.6f,2.6f,30,180);
         anim_fab.setStartOffset(180);
         anim_fab.setInterpolator(new OvershootInterpolator(3.0f));
-        anim_cover.setInterpolator(new FastOutSlowInInterpolator());
-        anim_cover.setStartOffset(120);
-        MovieCoverImg.setAnimation(anim_cover);
         play_fab.setAnimation(anim_fab);
         //MovieThumbnailImg.setAnimation(anim_thumb);
 

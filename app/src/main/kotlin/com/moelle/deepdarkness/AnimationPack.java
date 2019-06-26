@@ -3,6 +3,9 @@ package com.moelle.deepdarkness;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
+
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+
 /**
  * Created by Marwa on 7/8/2018.
  */
@@ -39,14 +42,12 @@ public class AnimationPack {
         view.animate().rotation(0).setStartDelay(200).setDuration(700).setInterpolator(new OvershootInterpolator(2)).start();
         }
    /* */
-   /* */
    public static void dialogEnter(View view, float scaleX, float scaleY, long duration, long delay, float tension) {
        view.setAlpha(0f);
        view.setScaleX(scaleX);
        view.setScaleY(scaleY);
        view.animate().alpha(1f).scaleX(1).scaleY(1).setStartDelay(delay).setDuration(duration).setInterpolator(new DecelerateInterpolator(tension));
    }
-    /* */
     /* */
     public static void textInOut(View view, float scaleX, float scaleY, long duration, long delay,long delay2, float tension) {
         view.setAlpha(0f);
@@ -67,7 +68,13 @@ public class AnimationPack {
         view.setTranslationY(-y);
         view.animate().setStartDelay(delay).alpha(alpha).translationY(0f).setDuration(550).setInterpolator(new OvershootInterpolator(tension)).start();}
     /* */
-
+    public static void coverAnim(View view, float alpha, float scaleX, float scaleY, float y, long delay) {
+        view.setAlpha(0f);
+        view.setScaleX(scaleX);
+        view.setScaleY(scaleY);
+        view.setTranslationY(y);
+        view.animate().scaleX(1).scaleY(1).setStartDelay(delay).alpha(alpha).translationY(0f).setDuration(500).setInterpolator(new FastOutSlowInInterpolator()).start();}
+    /* */
 
     /* */
    public static void rotateRightOrLeft(View view, float value, long duration) {
