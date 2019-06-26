@@ -72,16 +72,16 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
 
         // ini data
         List<Wall> listWalls = new ArrayList<>();
-        listWalls.add(new Wall("W5", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W6", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W7", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W8", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W9", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W10", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W11", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W12", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W13", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
-        listWalls.add(new Wall("W14", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
+        listWalls.add(new Wall("W5", "https://i.imgur.com/WvIzFU5.jpg"));
+        listWalls.add(new Wall("W6", "https://i.imgur.com/TASE91O.jpg"));
+        listWalls.add(new Wall("W7", "http://i.imgur.com/PJFIpKR.jpg"));
+        listWalls.add(new Wall("W8", "https://i.imgur.com/ZR8mNrb.jpg"));
+        listWalls.add(new Wall("W9", "http://i.imgur.com/H4zz9XB.png"));
+        listWalls.add(new Wall("W10", "http://i.imgur.com/ItOnzwz.png"));
+        listWalls.add(new Wall("W11", "http://i.imgur.com/XYEeO06.png"));
+        listWalls.add(new Wall("W12", "http://i.imgur.com/LuT2bEv.png"));
+        listWalls.add(new Wall("W13", "http://i.imgur.com/dDXZXmA.png"));
+        listWalls.add(new Wall("W14", "http://i.imgur.com/QkwwAFe.jpg"));
         listWalls.add(new Wall("W15", "https://github.com/LukeSmithxyz/wallpapers/raw/master/Landscapes/1390920427025.jpg"));
 
         WallpaperAdapter wallpaperAdapter = new WallpaperAdapter(this, listWalls, this);

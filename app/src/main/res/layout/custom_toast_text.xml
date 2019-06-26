@@ -15,25 +15,17 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="@drawable/toast"
-                android:padding="11dp"
-                >
-                <ImageView
-                    android:id="@+id/icon"
-                    android:src="@drawable/ic_4"
-                    android:tint="@color/md_white"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    />
+                android:padding="12dp">
                 <TextView
                     android:id="@+id/text"
                     android:textAppearance="@style/TextAppearance.KhulaBold"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center_vertical"
                     android:textAlignment="gravity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="8dp"
                     android:textColor="@color/md_white" />
             </LinearLayout>
 </androidx.cardview.widget.CardView>

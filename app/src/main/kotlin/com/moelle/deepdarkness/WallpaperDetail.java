@@ -9,15 +9,18 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
@@ -27,6 +30,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutionException;
+
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.calligraphy3.FontMapper;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 public class WallpaperDetail extends AppCompatActivity {
 
@@ -40,6 +49,20 @@ public class WallpaperDetail extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
+        //Custom Fonts Ini
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/Khula-ExtraBold.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .setFontMapper(new FontMapper() {
+                                    @Override
+                                    public String map(String font) {
+                                        return font;
+                                    }
+                                })
+                                .build()))
+                .build());
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         setContentView(R.layout.activity_wallpaper_detail);
         // ini views
@@ -72,6 +95,14 @@ public class WallpaperDetail extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 new LoadBitmapTask(getApplicationContext(), imgURL).execute();
+                Toast toast = new Toast(getBaseContext());
+                View view = LayoutInflater.from(getBaseContext()).inflate(R.layout.custom_toast_text,null);
+                TextView textView = view.findViewById(R.id.text);
+                textView.setText(R.string.wallpaper_set);
+                toast.setView(view);
+                toast.setGravity(Gravity.BOTTOM, 0, 255| Gravity.BOTTOM);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.show();
             }
         });
     }
@@ -138,5 +169,9 @@ public class WallpaperDetail extends AppCompatActivity {
                 }
             }
         }
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }
 }
