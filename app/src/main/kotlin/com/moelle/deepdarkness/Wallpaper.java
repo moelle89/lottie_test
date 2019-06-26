@@ -29,7 +29,6 @@ import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 import static com.moelle.deepdarkness.AnimationPack.dialogEnter;
-import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
 

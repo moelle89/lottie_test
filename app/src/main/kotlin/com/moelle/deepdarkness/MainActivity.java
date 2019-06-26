@@ -483,12 +483,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public void launchPaypal(View view) { ////button to launch paypal.me donationslink
         Intent telegramLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/moelle89")); ////Insert your link
         startActivity(telegramLink);
-    }   
-    public void setWALL(View view) { ////button to launch paypal.me donationslink
-        Intent intent = new Intent(Intent.ACTION_ATTACH_DATA);
-        intent.addCategory(Intent.CATEGORY_DEFAULT);
-        intent.setDataAndType(Uri.fromFile(new File("android.resource://your.package.here/drawable/w1")),"image/*");
-        intent.putExtra("mimeType", "image/jpeg");
-        this.startActivity(Intent.createChooser(intent, "Set as:"));
     }
 }
