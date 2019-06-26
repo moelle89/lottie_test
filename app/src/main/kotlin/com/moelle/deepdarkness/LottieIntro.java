@@ -135,7 +135,7 @@ public class LottieIntro extends AppIntro {
                     new SimpleLottieValueCallback<ColorFilter>() {
                         @Override
                         public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                            return new PorterDuffColorFilter(getResources().getColor(R.color.textColor), PorterDuff.Mode.SRC_IN);
+                            return new PorterDuffColorFilter(getResources().getColor(R.color.overlay_fg_90), PorterDuff.Mode.SRC_IN);
                         }});
             animationView1.playAnimation();
             textView1 = findViewById(R.id.textView1);
