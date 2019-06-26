@@ -28,6 +28,7 @@ import io.github.inflationx.calligraphy3.FontMapper;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
+import static com.moelle.deepdarkness.AnimationPack.dialogEnter;
 import static com.moelle.deepdarkness.AnimationPack.scaleIn;
 
 public class Wallpaper extends AppCompatActivity implements WallItemClickListener {
@@ -58,7 +59,7 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
                 .build());
         // Get duration scale from the global settings.
         try {
-            ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.7f);
+            ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.75f);
         } catch (Throwable t) {
             Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
             toast.show();
@@ -66,7 +67,7 @@ public class Wallpaper extends AppCompatActivity implements WallItemClickListene
 
         setContentView(R.layout.activity_wallpaper);
         View view = findViewById(R.id.wallpaper);
-        scaleIn(view);
+        dialogEnter(view,1.2f,1.2f,600,0,2);
         WallsRV = findViewById(R.id.Rv_walls);
         // Recyclerview Setup
 

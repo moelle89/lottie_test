@@ -1,9 +1,12 @@
 package com.moelle.deepdarkness;
 
 import android.animation.Animator;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,19 +14,31 @@ import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
-import com.airbnb.lottie.SimpleColorFilter;
 import com.airbnb.lottie.model.KeyPath;
-import com.airbnb.lottie.value.LottieValueCallback;
+import com.airbnb.lottie.value.LottieFrameInfo;
+import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
 
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.calligraphy3.FontMapper;
+import io.github.inflationx.viewpump.ViewPump;
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
+
+import static com.moelle.deepdarkness.AnimationPack.dialogEnter;
+import static com.moelle.deepdarkness.AnimationPack.fadeOut;
 
 public class LottieIntro extends AppIntro {
 
     private boolean nextButtonReplaced = false;
+
+    private TextView textView1,textView2,textView3,textView4;
+    private ConstraintLayout slide1;
 
     private SampleSlide slide_1;
     private SampleSlide slide_2;
@@ -32,16 +47,32 @@ public class LottieIntro extends AppIntro {
     private SampleSlide slide_5;
     private SampleSlide slide_null;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Custom Fonts Ini
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/Khula-ExtraBold.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .setFontMapper(new FontMapper() {
+                                    @Override
+                                    public String map(String font) {
+                                        return font;
+                                    }
+                                })
+                                .build()))
+                .build());
 
         slide_1 = SampleSlide.newInstance(R.layout.slide_01);
         slide_2 = SampleSlide.newInstance(R.layout.slide_02);
         slide_3 = SampleSlide.newInstance(R.layout.slide_03);
         slide_4 = SampleSlide.newInstance(R.layout.slide_04);
         slide_5 = SampleSlide.newInstance(R.layout.slide_05);
-        slide_null = SampleSlide.newInstance(R.layout.dialog_contact);
+        slide_null = SampleSlide.newInstance(R.layout.slide_null);
 
         addSlide(slide_1);
         addSlide(slide_2);
@@ -98,12 +129,26 @@ public class LottieIntro extends AppIntro {
 
         if ((oldFragment == null) && (newFragment == slide_1) || (oldFragment == slide_2) && (newFragment == slide_1)) {
             LottieAnimationView animationView1 = findViewById(R.id.animation_view1);
-            final int fg = ContextCompat.getColor(this, (R.color.textColor));
-            SimpleColorFilter filterfg = new SimpleColorFilter(fg);
-            KeyPath keyfg = new KeyPath("fg", "**");
-            LottieValueCallback<ColorFilter> callback = new LottieValueCallback<ColorFilter>(filterfg);
-            animationView1.addValueCallback(keyfg, LottieProperty.COLOR_FILTER, callback);
+            animationView1.addValueCallback(
+                    new KeyPath("fg","**"),
+                    LottieProperty.COLOR_FILTER,
+                    new SimpleLottieValueCallback<ColorFilter>() {
+                        @Override
+                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                            return new PorterDuffColorFilter(getResources().getColor(R.color.textColor), PorterDuff.Mode.SRC_IN);
+                        }});
             animationView1.playAnimation();
+            textView1 = findViewById(R.id.textView1);
+            dialogEnter(textView1,2.5f,2.5f,400,2000,2);
+            textView2 = findViewById(R.id.textView2);
+            dialogEnter(textView2,2.5f,2.5f,400,2100,2);
+            textView3 = findViewById(R.id.textView3);
+            dialogEnter(textView3,2.5f,2.5f,400,3400,2);
+            textView4 = findViewById(R.id.textView4);
+            dialogEnter(textView4,2.5f,2.5f,400,4600,2);
+            slide1 = findViewById(R.id.slide1);
+            slide1.animate().alpha(0f).setDuration(400).setStartDelay(6400).start();
+
             animationView1.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -254,5 +299,8 @@ public class LottieIntro extends AppIntro {
             setButtonState(newNextButton, !isLastSlide);
         }
     }
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
 }

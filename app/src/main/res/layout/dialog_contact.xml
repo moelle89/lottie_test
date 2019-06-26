@@ -46,18 +46,6 @@
         android:alpha="1.0"
         android:tint="@color/background"/>
 
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:id="@+id/animation_viewNull"
-        app:lottie_colorFilter="@color/colorAccentPromptBackground"
-        app:lottie_rawRes="@raw/slidenull"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="false"
-        app:lottie_renderMode="hardware"/>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"

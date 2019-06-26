@@ -39,6 +39,24 @@ public class AnimationPack {
         view.animate().rotation(0).setStartDelay(200).setDuration(700).setInterpolator(new OvershootInterpolator(2)).start();
         }
    /* */
+   /* */
+   public static void dialogEnter(View view, float scaleX, float scaleY, long duration, long delay, float tension) {
+       view.setAlpha(0f);
+       view.setScaleX(scaleX);
+       view.setScaleY(scaleY);
+       view.animate().alpha(1f).scaleX(1).scaleY(1).setStartDelay(delay).setDuration(duration).setInterpolator(new DecelerateInterpolator(tension));
+   }
+    /* */
+    /* */
+    public static void textInOut(View view, float scaleX, float scaleY, long duration, long delay,long delay2, float tension) {
+        view.setAlpha(0f);
+        view.setScaleX(scaleX);
+        view.setScaleY(scaleY);
+        view.animate().alpha(1f).scaleX(1).scaleY(1).setStartDelay(delay).setDuration(duration).setInterpolator(new DecelerateInterpolator(tension));
+        view.animate().alpha(0f).setDuration(300).setStartDelay(delay2).start();
+    }
+    /* */
+
    public static void moveToTop(View view, float y, long delay, float tension) {
        view.setAlpha(0f);
        view.setTranslationY(y);

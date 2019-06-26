@@ -37,6 +37,6 @@ public class SimpleFragmentB extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.feature_subpage, container, false);
+        return inflater.inflate(R.layout.slide_null, container, false);
     }
 }

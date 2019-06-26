@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Button xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/next"
+    android:id="@+id/next"
     style="@style/ButtonNull"
     android:background="#000000"
     android:backgroundTint="@android:color/black"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="0dp"
     android:layout_gravity="end"
     android:layout_marginStart="8dp"
     android:layout_marginLeft="8dp"
