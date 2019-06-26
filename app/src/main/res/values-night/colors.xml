@@ -73,4 +73,7 @@
     <color name="tab_unchecked">#8596BE</color>
     <color name="circle_selected">#4D697797</color>
     <color name="selectableItemBackgroundBorderless">#14B3D7FD</color>
+
+    <color name="lottieFG1">#272F42</color>
+    <color name="lottieFG2">#141822</color>
 </resources>

@@ -1,6 +1,7 @@
 package com.moelle.deepdarkness;
 
 import android.animation.Animator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
@@ -31,14 +33,13 @@ import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 import static com.moelle.deepdarkness.AnimationPack.dialogEnter;
-import static com.moelle.deepdarkness.AnimationPack.fadeOut;
 
 public class LottieIntro extends AppIntro {
 
     private boolean nextButtonReplaced = false;
 
-    private TextView textView1,textView2,textView3,textView4;
-    private ConstraintLayout slide1;
+    private TextView textView1,textView2,textView11,textView22,textView3,textView4;
+    private ConstraintLayout slide1,slide2;
 
     private SampleSlide slide_1;
     private SampleSlide slide_2;
@@ -66,6 +67,13 @@ public class LottieIntro extends AppIntro {
                                 })
                                 .build()))
                 .build());
+        // Get duration scale from the global settings.
+        try {
+            ValueAnimator.class.getMethod("setDurationScale", float.class).invoke(null, 0.75f);
+        } catch (Throwable t) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Let's get the hell outta here.", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
         slide_1 = SampleSlide.newInstance(R.layout.slide_01);
         slide_2 = SampleSlide.newInstance(R.layout.slide_02);
@@ -84,8 +92,8 @@ public class LottieIntro extends AppIntro {
         setImmersiveMode(true);
         setSwipeLock(true);
         //setGoBackLock(true);
-        setColorDoneText(getResources().getColor(R.color.lighter_gray));
-        setColorSkipButton(getResources().getColor(R.color.lighter_gray));
+        setColorDoneText(getResources().getColor(R.color.textColor));
+        setColorSkipButton(getResources().getColor(R.color.secondary_text_light));
         setNavBarColor(R.color.background);
         showStatusBar(true);
         showSkipButton(true);
@@ -135,7 +143,7 @@ public class LottieIntro extends AppIntro {
                     new SimpleLottieValueCallback<ColorFilter>() {
                         @Override
                         public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                            return new PorterDuffColorFilter(getResources().getColor(R.color.overlay_fg_90), PorterDuff.Mode.SRC_IN);
+                            return new PorterDuffColorFilter(getResources().getColor(R.color.lottieFG1), PorterDuff.Mode.SRC_IN);
                         }});
             animationView1.playAnimation();
             textView1 = findViewById(R.id.textView1);
@@ -170,10 +178,24 @@ public class LottieIntro extends AppIntro {
         }
 
         if ((oldFragment == slide_1) && (newFragment == slide_2) || (oldFragment == slide_3) && (newFragment == slide_2)) {
-            LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
-            animationView2.playAnimation();
+            LottieAnimationView animation_view2 = findViewById(R.id.animation_view2);
+            animation_view2.addValueCallback(
+                    new KeyPath("fg","**"),
+                    LottieProperty.COLOR_FILTER,
+                    new SimpleLottieValueCallback<ColorFilter>() {
+                        @Override
+                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
+                            return new PorterDuffColorFilter(getResources().getColor(R.color.lottieFG2), PorterDuff.Mode.SRC_IN);
+                        }});
+            animation_view2.playAnimation();
+            textView11 = findViewById(R.id.textViewAB);
+            dialogEnter(textView11,2.5f,2.5f,400,1800,2);
+            textView22 = findViewById(R.id.textViewABC);
+            dialogEnter(textView22,2.5f,2.5f,400,2000,2);
+            slide2 = findViewById(R.id.slide2);
+            slide2.animate().alpha(0f).setDuration(400).setStartDelay(6600).start();
 
-            animationView2.addAnimatorListener(new Animator.AnimatorListener() {
+            animation_view2.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
                 }
@@ -188,8 +210,8 @@ public class LottieIntro extends AppIntro {
 
                 @Override
                 public void onAnimationRepeat(Animator animation) {
-                    LottieAnimationView animationView2 = findViewById(R.id.animation_view2);
-                    animationView2.setVisibility(View.INVISIBLE);
+                    LottieAnimationView animation_view2 = findViewById(R.id.animation_view2);
+                    animation_view2.setVisibility(View.INVISIBLE);
                 }
             });
         }
