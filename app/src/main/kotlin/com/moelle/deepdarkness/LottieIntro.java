@@ -18,6 +18,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieFrameInfo;
+import com.airbnb.lottie.value.LottieValueCallback;
 import com.airbnb.lottie.value.SimpleLottieValueCallback;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.moelle.deepdarkness.util.SampleSlide;
@@ -145,15 +146,18 @@ public class LottieIntro extends AppIntro {
                         public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
                             return new PorterDuffColorFilter(getResources().getColor(R.color.lottieFG1), PorterDuff.Mode.SRC_IN);
                         }});
+            animationView1.addValueCallback(
+                    new KeyPath("fg2","**"),
+                    LottieProperty.COLOR,
+                    new SimpleLottieValueCallback() {
+                        @Override
+                        public ColorFilter getValue(LottieFrameInfo frameInfo) {
+                            return new PorterDuffColorFilter(Color.CYAN, PorterDuff.Mode.SRC_ATOP);
+                        }
+                    }
+            );
             animationView1.playAnimation();
-            textView1 = findViewById(R.id.textView1);
-            dialogEnter(textView1,2.5f,2.5f,400,2000,2);
-            textView2 = findViewById(R.id.textView2);
-            dialogEnter(textView2,2.5f,2.5f,400,2100,2);
-            textView3 = findViewById(R.id.textView3);
-            dialogEnter(textView3,2.5f,2.5f,400,3400,2);
-            textView4 = findViewById(R.id.textView4);
-            dialogEnter(textView4,2.5f,2.5f,400,4600,2);
+
             slide1 = findViewById(R.id.slide1);
             slide1.animate().alpha(0f).setDuration(400).setStartDelay(6400).start();
 
