@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/slide3"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fitsSystemWindows="true">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
         android:id="@+id/animation_view3"
-        app:lottie_rawRes="@raw/slide03"
-        app:lottie_loop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="false"
-        app:lottie_renderMode="hardware"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/slide03test"
+        app:lottie_renderMode="hardware" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textViewABC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="25sp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:text="ACCENTS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Cocogoose"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.22"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textViewAB"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="25sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:text="BEAUTIFUL"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.KhulaBold"
+        android:textColor="@color/secondary_text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
