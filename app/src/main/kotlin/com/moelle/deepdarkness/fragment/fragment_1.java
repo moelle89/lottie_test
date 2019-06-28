@@ -330,7 +330,7 @@ public class fragment_1 extends Fragment implements View.OnClickListener {
         closeBG.setScaleX(0.8f);
         closeBG.setScaleY(0.8f);
         closeBG.setTranslationY(300);
-        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.25f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
+        closeBG.animate().translationY(0).scaleX(1).scaleY(1).alpha(0.0f).setStartDelay(400).setDuration(750).setInterpolator(new FastOutSlowInInterpolator()).start();
         imageView.setAlpha(0.0f);
         imageView.setScaleX(0.5f);
         imageView.setScaleY(0.5f);

@@ -100,7 +100,7 @@ public class WallpaperDetail extends AppCompatActivity {
                 TextView textView = view.findViewById(R.id.text);
                 textView.setText(R.string.wallpaper_set);
                 toast.setView(view);
-                toast.setGravity(Gravity.BOTTOM, 0, 255| Gravity.BOTTOM);
+                toast.setGravity(Gravity.BOTTOM, 0, 125 | Gravity.BOTTOM);
                 toast.setDuration(Toast.LENGTH_LONG);
                 toast.show();
             }

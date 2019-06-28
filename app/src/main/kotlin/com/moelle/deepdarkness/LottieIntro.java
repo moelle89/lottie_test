@@ -33,13 +33,10 @@ import io.github.inflationx.calligraphy3.FontMapper;
 import io.github.inflationx.viewpump.ViewPump;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
-import static com.moelle.deepdarkness.AnimationPack.dialogEnter;
-
 public class LottieIntro extends AppIntro {
 
     private boolean nextButtonReplaced = false;
 
-    private TextView textView1,textView2,textView11,textView22,textView3,textView4;
     private ConstraintLayout slide1,slide2;
 
     private SampleSlide slide_1;
@@ -92,10 +89,10 @@ public class LottieIntro extends AppIntro {
         setProgressIndicator();
         setImmersiveMode(true);
         setSwipeLock(true);
-        //setGoBackLock(true);
-        setColorDoneText(getResources().getColor(R.color.textColor));
-        setColorSkipButton(getResources().getColor(R.color.secondary_text_light));
-        setNavBarColor(R.color.background);
+        setGoBackLock(true);
+        setColorDoneText(getResources().getColor(R.color.md_white));
+        setColorSkipButton(getResources().getColor(R.color.lighter_gray));
+        setNavBarColor(R.color.md_black);
         showStatusBar(true);
         showSkipButton(true);
         setBackButtonVisibilityWithDone(false);
@@ -138,28 +135,10 @@ public class LottieIntro extends AppIntro {
 
         if ((oldFragment == null) && (newFragment == slide_1) || (oldFragment == slide_2) && (newFragment == slide_1)) {
             LottieAnimationView animationView1 = findViewById(R.id.animation_view1);
-            animationView1.addValueCallback(
-                    new KeyPath("fg","**"),
-                    LottieProperty.COLOR_FILTER,
-                    new SimpleLottieValueCallback<ColorFilter>() {
-                        @Override
-                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                            return new PorterDuffColorFilter(getResources().getColor(R.color.lottieFG1), PorterDuff.Mode.SRC_IN);
-                        }});
-            animationView1.addValueCallback(
-                    new KeyPath("fg2","**"),
-                    LottieProperty.COLOR,
-                    new SimpleLottieValueCallback() {
-                        @Override
-                        public ColorFilter getValue(LottieFrameInfo frameInfo) {
-                            return new PorterDuffColorFilter(Color.CYAN, PorterDuff.Mode.SRC_ATOP);
-                        }
-                    }
-            );
             animationView1.playAnimation();
 
             slide1 = findViewById(R.id.slide1);
-            slide1.animate().alpha(0f).setDuration(400).setStartDelay(6400).start();
+            slide1.animate().alpha(0f).setDuration(400).setStartDelay(7900).start();
 
             animationView1.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
@@ -183,21 +162,9 @@ public class LottieIntro extends AppIntro {
 
         if ((oldFragment == slide_1) && (newFragment == slide_2) || (oldFragment == slide_3) && (newFragment == slide_2)) {
             LottieAnimationView animation_view2 = findViewById(R.id.animation_view2);
-            animation_view2.addValueCallback(
-                    new KeyPath("fg","**"),
-                    LottieProperty.COLOR_FILTER,
-                    new SimpleLottieValueCallback<ColorFilter>() {
-                        @Override
-                        public ColorFilter getValue(LottieFrameInfo<ColorFilter> frameInfo) {
-                            return new PorterDuffColorFilter(getResources().getColor(R.color.lottieFG2), PorterDuff.Mode.SRC_IN);
-                        }});
             animation_view2.playAnimation();
-            textView11 = findViewById(R.id.textViewAB);
-            dialogEnter(textView11,2.5f,2.5f,400,1800,2);
-            textView22 = findViewById(R.id.textViewABC);
-            dialogEnter(textView22,2.5f,2.5f,400,2000,2);
             slide2 = findViewById(R.id.slide2);
-            slide2.animate().alpha(0f).setDuration(400).setStartDelay(6600).start();
+            slide2.animate().alpha(0f).setDuration(400).setStartDelay(7800).start();
 
             animation_view2.addAnimatorListener(new Animator.AnimatorListener() {
                 @Override
@@ -271,9 +238,10 @@ public class LottieIntro extends AppIntro {
                         animationView4.setVisibility(View.INVISIBLE);
                         pager.goToNextSlide();
                     }
+                    else {
                     LottieAnimationView animationView4 = findViewById(R.id.animation_view4);
                     animationView4.setVisibility(View.INVISIBLE);
-                    finish();
+                    finish();}
                 }
             });
         }
@@ -281,26 +249,7 @@ public class LottieIntro extends AppIntro {
             // Checking for first time launch - before calling setContentView()
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                     .putBoolean("isFirstRun2", false).apply();
-            LottieAnimationView animationViewNull = findViewById(R.id.animation_viewNull);
-            animationViewNull.playAnimation();
-            animationViewNull.addAnimatorListener(new Animator.AnimatorListener() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationCancel(Animator animation) {
-                }
-
-                @Override
-                public void onAnimationRepeat(Animator animation) {
-                    launchTutorial();
-                }
-            });
+            launchTutorial();
         }
         boolean isLastSlide = pager.getCurrentItem() == (slidesNumber - 1);
         // replace image for next-button with text

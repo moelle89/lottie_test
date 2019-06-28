@@ -13,13 +13,14 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <style name="LottieIntro" parent="@style/AppTheme" >
+    <style name="LottieIntro" parent="Theme.AppCompat.NoActionBar" >
         <item name="android:windowAnimationStyle">@style/Animation</item>
         <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:fitsSystemWindows">true</item>
-        <item name="android:backgroundTint">@color/background</item>
+        <item name="android:backgroundTint">@color/md_black</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="LottieTutorial" parent="@style/Theme.AppCompat.NoActionBar" >

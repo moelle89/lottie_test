@@ -31,8 +31,7 @@
         android:layout_height="0dp"
         android:layout_margin="0dp"
         android:src="@drawable/ic_2"
-        android:alpha="0.2"
-        android:tint="@color/donation_nav"/>
+        android:alpha="0.0" />
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -40,10 +39,11 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:id="@+id/animation_viewNull"
-        app:lottie_colorFilter="@color/colorAccentPromptBackground"
-        app:lottie_rawRes="@raw/slidenull"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="false"
+        android:alpha="0.3"
+        app:lottie_colorFilter="@color/accent12"
+        app:lottie_rawRes="@raw/donation_bg"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="true"
         app:lottie_renderMode="hardware"/>
 
     <LinearLayout
@@ -86,7 +86,7 @@
                     android:layout_marginTop="-35dp"
                     android:alpha="0.12"
                     android:src="@drawable/ic_2"
-                    android:tint="@color/donation_sb"
+                    android:tint="@color/donation_nav"
                     android:transitionName="feature_img1" />
 
                 <LinearLayout
