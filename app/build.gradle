@@ -86,7 +86,6 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.31'
     implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
     implementation 'com.google.android.material:material:1.1.0-alpha07'
-    implementation 'com.klinkerapps:simple_videoview:1.2.4'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.airbnb.android:lottie:3.0.6'

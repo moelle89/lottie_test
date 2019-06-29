@@ -235,6 +235,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="2dp"
                                 android:autoSizeTextType="uniform"
+                                android:maxLines="1"
                                 android:text="RESTART INTRO"
                                 android:textAlignment="textStart"
                                 android:textAppearance="@style/TextAppearance.Cocogoose"
