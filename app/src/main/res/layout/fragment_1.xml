@@ -133,7 +133,7 @@
                             android:text="CONTACT ME"
                             android:textAlignment="textStart"
                             android:textAppearance="@style/TextAppearance.Cocogoose"
-                            android:textColor="?textcolorsecondary"
+                            android:textColor="@color/secondary_text_light"
                             android:transitionName="feature_text1" />
 
                     </LinearLayout>
@@ -180,7 +180,7 @@
                                 android:text="SHOW LOVE"
                                 android:maxLines="1"
                                 android:textAppearance="@style/TextAppearance.Cocogoose"
-                                android:textColor="?textcolorsecondary" />
+                                android:textColor="@color/secondary_text_light" />
 
                         </LinearLayout>
 
@@ -239,7 +239,7 @@
                                 android:text="RESTART INTRO"
                                 android:textAlignment="textStart"
                                 android:textAppearance="@style/TextAppearance.Cocogoose"
-                                android:textColor="?textcolorsecondary" />
+                                android:textColor="@color/secondary_text_light" />
 
                         </LinearLayout>
 
@@ -286,7 +286,7 @@
                                 android:text="WALLPAPERS"
                                 android:textAlignment="textStart"
                                 android:textAppearance="@style/TextAppearance.Cocogoose"
-                                android:textColor="?textcolorsecondary" />
+                                android:textColor="@color/secondary_text_light" />
 
                         </LinearLayout>
 
