@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AppTheme" parent="@*com.pittvandewitt.viperfx:style/BaseAppTheme">
-		<item name="android:windowShowWallpaper">@*android:bool/target_honeycomb_needs_options_menu</item>
-        <item name="android:colorEdgeEffect">@*com.pittvandewitt.viperfx:color/secondaryColor</item>
-    </style>
-</resources>

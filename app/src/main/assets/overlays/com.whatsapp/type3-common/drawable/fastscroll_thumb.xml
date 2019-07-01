@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:tint="@*android:color/holo_control_activated" android:state_pressed="true" android:drawable="@*com.whatsapp:drawable/fastscroll_thumb_pressed" />
-    <item android:tint="@*android:color/white" android:drawable="@*com.whatsapp:drawable/fastscroll_thumb_default" />
-</selector>

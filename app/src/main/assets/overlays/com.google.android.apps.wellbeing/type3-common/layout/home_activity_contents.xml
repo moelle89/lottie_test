@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout android:background="@*android:color/transparent" android:backgroundTint="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.design.appbar.AppBarLayout android:id="@*com.google.android.apps.wellbeing:id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <android.support.v7.widget.Toolbar android:id="@*com.google.android.apps.wellbeing:id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:navigationIcon="?android:homeAsUpIndicator" />
-    </android.support.design.appbar.AppBarLayout>
-    <FrameLayout android:id="@*com.google.android.apps.wellbeing:id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?android:actionBarSize" />
-</android.support.design.widget.CoordinatorLayout>

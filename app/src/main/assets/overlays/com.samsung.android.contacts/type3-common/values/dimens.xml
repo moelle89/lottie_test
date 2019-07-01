@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="actionbar_divider_height">0.0px</dimen>
-    <dimen name="searchview_vertical_divider_height">0.0px</dimen>
-    <dimen name="searchview_vertical_divider_width">0.0px</dimen>
-</resources>

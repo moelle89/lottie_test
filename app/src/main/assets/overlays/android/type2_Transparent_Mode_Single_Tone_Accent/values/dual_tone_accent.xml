@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<color name="placeholder2">@*android:color/background_dark</color><!-- common_color -->
-	<color name="holo_green_light">@*android:color/accent_material_dark</color><!-- Accent Material Dark 2 -->
-	<color name="holo_green_dark">@*android:color/suggestion_highlight_text</color><!-- suggestion_highlight_text / theme_color_dark 2 -->
-</resources> 

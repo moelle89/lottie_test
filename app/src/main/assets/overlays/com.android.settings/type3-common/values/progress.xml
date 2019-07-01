@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Widget.AppCompat.ProgressBar" parent="@*android:style/Widget.ProgressBar.Large" >
-        <item name="android:indeterminateDrawable">@*com.android.settings:drawable/ring_progress</item>        
-		<item name="android:indeterminateTint">@*android:color/accent_material_dark</item>
-		<item name="android:scaleType">fitCenter</item>
-    </style>
-</resources>

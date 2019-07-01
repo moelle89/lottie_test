@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@*android:color/background_dark" />   
-	<item android:bottom="100.0dip" android:gravity="center" android:drawable="@*flar2.exkernelmanager:drawable/exkm" />
-</layer-list>

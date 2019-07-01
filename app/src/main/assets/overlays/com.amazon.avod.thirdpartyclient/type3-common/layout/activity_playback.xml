@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@*com.amazon.avod.thirdpartyclient:id/ContentView" android:background="@*android:color/black" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-  	<View android:background="@*android:color/black" android:backgroundTint="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <include layout="@*com.amazon.avod.thirdpartyclient:layout/activity_playback_main" />
-</FrameLayout>

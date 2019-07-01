@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing PushBullet's Attributes-->
-
-<resources>
-	<attr name="colorControlNormal" format="color" />
-    <attr name="colorControlHighlight" format="color" />
-    <attr name="overlapAnchor" format="boolean" />
-</resources>

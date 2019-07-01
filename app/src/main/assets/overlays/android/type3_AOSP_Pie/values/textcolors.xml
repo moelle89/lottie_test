@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="secondary_text_leanback_dark">@*android:color/secondary_text_default_material_dark</color>    
-    <color name="darker_gray">@*android:color/secondary_text_default_material_dark</color>
-    <color name="notification_info_color">@*android:color/secondary_text_default_material_dark</color>    
-    <color name="notification_text_color">@*android:color/secondary_text_default_material_dark</color>
-	<color name="foreground_material_dark">@*android:color/white</color>	
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle" android:tint="@*android:color/lighter_gray" xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient android:startColor="#10000000" android:endColor="#02000000" android:angle="90.0" />
-    <size android:height="@*com.chrome.beta:dimen/modern_toolbar_background_size" android:width="@*com.chrome.beta:dimen/modern_toolbar_background_size" />
-    <corners android:radius="@*com.chrome.beta:dimen/modern_toolbar_background_corner_radius" />
-</shape>

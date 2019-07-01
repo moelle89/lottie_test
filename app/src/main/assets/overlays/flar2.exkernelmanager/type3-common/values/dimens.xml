@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="cardview_default_elevation">0.8dip</dimen>
-    <dimen name="cardview_default_radius">8.0dip</dimen>
-    <dimen name="design_navigation_elevation">0.8dip</dimen>
-    <dimen name="design_appbar_elevation">0.8dip</dimen>
-    <dimen name="abc_action_bar_elevation_material">0.8dip</dimen>
-</resources>

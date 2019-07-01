@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<color name="placeholder">#f3f7f9</color>
-    <color name="abc_search_url_text_selected">@*android:color/white</color>
-</resources>

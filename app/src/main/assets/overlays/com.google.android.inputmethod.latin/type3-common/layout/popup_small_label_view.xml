@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:tag=".popup-item.for-keytop-popup" android:background="@*com.google.android.inputmethod.latin:drawable/bg_popup_label_material_dark_theme_selector" android:backgroundTint="@null" android:layout_width="wrap_content" android:layout_height="@*com.google.android.inputmethod.latin:dimen/popup_small_label_height" android:minWidth="@*com.google.android.inputmethod.latin:dimen/popup_small_label_width"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.apps.inputmethod.libs.framework.keyboard.widget.AutoCenteredLabelView android:id="@*com.google.android.inputmethod.latin:id/popup_label" android:backgroundTint="@null" style="@*com.google.android.inputmethod.latin:style/SmallPopupLabel" />
-</FrameLayout>

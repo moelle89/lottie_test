@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape
-  xmlns:android="http://schemas.android.com/apk/res/android">
-	 <padding android:left="5.0dip" android:right="5.0dip" android:top="2.0dip" android:bottom="2.0dip" />
-    <solid android:color="@*com.spotify.music:color/cat_medium_green" />
-    <corners android:radius="12.0dip" />
-</shape>

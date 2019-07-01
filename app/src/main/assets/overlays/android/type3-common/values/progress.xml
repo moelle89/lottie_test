@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Widget.Material.ProgressBar.Horizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
-        <item name="android:maxHeight">5.0dip</item>
-        <item name="android:indeterminateDrawable">@*android:drawable/progress_indeterminate_horizontal_material</item>	
-        <item name="android:progressDrawable">@*android:drawable/progress_horizontal_material</item>        
-        <item name="android:minHeight">5.0dip</item>
-    </style>
-</resources>

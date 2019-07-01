@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="op_nav_bar_key_light">@*com.android.systemui:color/navigation_bar_icon_color</color>
-    <color name="op_nav_bar_key_dark">@*com.android.systemui:color/fake_shadow_start_color</color>
-    <color name="op_nav_bar_key_transparent">@*com.android.systemui:color/navigation_bar_icon_color</color>
-    <color name="navbar_icon_color_dark">@*com.android.systemui:color/fake_shadow_start_color</color>
-    <color name="navbar_icon_color_light">@*com.android.systemui:color/navigation_bar_icon_color</color>
-</resources>

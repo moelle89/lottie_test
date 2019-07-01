@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetTop="12.0dip" android:insetBottom="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape>
-        <gradient android:startColor="@*android:color/suggestion_highlight_text" android:endColor="@*android:color/holo_blue_bright" android:angle="315.0" />
-        <corners android:radius="4.0dip" />
-    </shape>
-</inset>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@*com.android.systemui:drawable/assist_orb_navbar_scrim" android:adjustViewBounds="true" android:fitsSystemWindows="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-	<com.android.systemui.widget.SystemUIImageView android:id="@*com.android.systemui:id/keyguard_sim" android:layout_gravity="center" android:layout_marginBottom="82dp" android:fitsSystemWindows="true" android:paddingBottom="30dp" android:layout_width="fill_parent" android:scaleType="fitCenter" android:layout_height="wrap_content" android:src="@*com.android.systemui:drawable/lock_ic_pin_attempt_sim_whitebg" />
-    <include android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.android.systemui:style/BouncerSecurityContainer" layout="@*com.android.systemui:layout/keyguard_host_view" />
-</FrameLayout>

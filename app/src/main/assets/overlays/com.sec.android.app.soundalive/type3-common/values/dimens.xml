@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="main_text_size">15.0sp</dimen>
-    <dimen name="preset_radio_button_font_size">15.0sp</dimen>
-    <dimen name="shape_big_oval_size">0.0dip</dimen>
-    <dimen name="shape_small_oval_size">7.0dip</dimen>
-</resources>

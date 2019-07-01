@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><!-- seekbar_thumb_unpressed_to_pressed_animation -->
-<animated-vector android:drawable="@*com.android.systemui:drawable/mm_mouth2" xmlns:android="http://schemas.android.com/apk/res/android"><!-- @*android:drawable/seekbar_thumb_unpressed_to_pressed -->
-    <target android:name="outer" android:animation="@*android:anim/seekbar_thumb_unpressed_to_pressed_thumb_0_animation" />
-</animated-vector>

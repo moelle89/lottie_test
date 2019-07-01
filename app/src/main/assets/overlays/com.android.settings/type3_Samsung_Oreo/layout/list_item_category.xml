@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@*com.android.settings:id/divider" android:background="@*android:color/accent_material_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@*com.android.settings:dimen/list_divider_height" android:layout_marginTop="@*com.android.settings:dimen/category_seperator_divider_top_margin" />
-    <LinearLayout android:background="@*com.android.settings:color/dashboard_category_text_view_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.android.settings:dimen/category_seperator_top_margin" style="?android:attr/listSeparatorTextViewStyle">
-        <com.samsung.android.settings.widget.CategoryTextView android:textStyle="bold" android:textColor="@*com.android.settings:color/dashboard_category_text_view_text_color" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </LinearLayout>
-    <View android:id="@*com.android.settings:id/divider_bottom" android:background="@*android:color/accent_material_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@*com.android.settings:dimen/list_divider_height" />
-</LinearLayout>

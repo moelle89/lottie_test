@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimaryDark">@*android:color/background_dark</color>
-    <color name="splash_background">@*android:color/background_dark</color>
-    <color name="material_grey_900">@*android:color/background_dark</color>
-    <color name="material_grey_850">@*android:color/background_dark</color>
-    <color name="colorPrimary">@*android:color/dim_foreground_light</color>
-    <color name="cardview_dark_background">@*android:color/dim_foreground_light</color>
-</resources>

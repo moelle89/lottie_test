@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AllAppsNavBarProtection">
-        <item name="android:background">@*ch.deletescape.lawnchair.plah:drawable/notification_bg_low_normal</item>
-		<item name="android:backgroundTint">@null</item>
-    </style>
-</resources>

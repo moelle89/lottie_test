@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="emoji_tab_page_indicator_background_holo">@*android:color/background_dark</color>
-    <color name="input_board_background_color">@*android:color/background_dark</color>
-</resources>

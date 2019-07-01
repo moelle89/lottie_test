@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="toast_bottom_padding">4.0dip</dimen>
-    <dimen name="toast_side_padding">2.0dip</dimen>
-    <dimen name="toast_text_margin">3.0dip</dimen>
-	<dimen name="global_edge_quick_action_popup_width">246.0dip</dimen>
-</resources>

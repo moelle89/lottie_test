@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<dimen name="task_view_rounded_corners_radius">8.0dip</dimen>
-    <dimen name="task_view_icon_elevation">6.0dip</dimen>
-    <dimen name="task_view_elevation">1.0dip</dimen>
-</resources>

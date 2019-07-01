@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
- <gradient
-                android:startColor="@*android:color/transparent"
-                android:centerColor="@*android:color/accessibility_focus_highlight"                
-				android:endColor="@*android:color/facelock_spotlight_mask"
-                android:angle="90" />
-</shape>

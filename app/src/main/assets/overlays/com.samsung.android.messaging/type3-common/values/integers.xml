@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="theme_circle_bg_alpha">0</integer>
-    <integer name="theme_attach_icon_scale_size">100</integer>
-</resources>

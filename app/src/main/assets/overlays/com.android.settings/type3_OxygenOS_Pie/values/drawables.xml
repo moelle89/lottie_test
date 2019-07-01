@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="drawable" name="fp_enrollment_header_landscape">@*android:color/transparent</item>
-    <item type="drawable" name="oneplus_divider_color">@*android:color/transparent</item>
-    <item type="drawable" name="expanded_item_bg_activated">@*android:color/ripple_material_dark</item>
-    <item type="drawable" name="expanded_item_bg">@*android:color/legacy_light_button_normal</item>
-	<item type="drawable" name="oneplus_starting_window_blank_background">@*android:color/accent_material_dark</item>
-</resources>

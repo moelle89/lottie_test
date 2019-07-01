@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient android:startColor="@*android:color/accessibility_focus_highlight" android:endColor="#00000000" android:angle="-90.0" android:type="linear" />
-	<size android:height="294.0dip" android:width="1080.0dip" />
-</shape>

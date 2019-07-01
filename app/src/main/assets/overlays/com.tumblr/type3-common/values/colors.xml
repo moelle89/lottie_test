@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>  
-    <color name="tumblr_100">@*android:color/background_floating_material_dark</color>
-    <color name="tumblr_dark">@*android:color/background_dark</color>
-    <color name="rainy_gray">#ff898989</color>
-    <!--<color name="tumblr_accent">#ff3F51B5</color>
-    <color name="chat_post_color">#ff3F51B5</color>
-    <color name="optica_default_accent_color">#ff3F51B5</color>-->
-</resources>

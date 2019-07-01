@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="lb_rounded_rect_corner_radius">10.0dip</dimen>
-    <dimen name="lb_action_button_corner_radius">10.0dip</dimen>
-    <dimen name="abc_control_corner_material">10.0dip</dimen>
-</resources>

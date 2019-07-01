@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:drawable="@*android:color/secondary_text_default_material_light" android:insetTop="4.0dip" android:insetBottom="4.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

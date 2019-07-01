@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="dialer_light_theme_navigation_bar_color">@*android:color/background_dark</color>
-	<color name="google_default_color_surface">@*android:color/accent_material_dark</color>
-</resources>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:backgroundTint="@null" android:orientation="vertical" android:paddingBottom="@*com.android.systemui:dimen/volume_row_padding_bottom" android:paddingTop="@*com.android.systemui:dimen/volume_row_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@*com.android.systemui:dimen/volume_row_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@*com.android.systemui:style/TextAppearance.Volume.Header" android:ellipsize="end" android:id="@*com.android.systemui:id/volume_row_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@*com.android.systemui:dimen/volume_row_header_padding_start" />
-    <LinearLayout android:backgroundTint="@null" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@*com.android.systemui:dimen/volume_row_slider_height" android:paddingStart="@*com.android.systemui:dimen/volume_row_padding_start">
-        <com.android.keyguard.AlphaOptimizedImageButton android:backgroundTint="@null" android:id="@*com.android.systemui:id/volume_row_icon" android:layout_width="@*com.android.systemui:dimen/volume_button_size" android:layout_height="@*com.android.systemui:dimen/volume_button_size" android:soundEffectsEnabled="false" style="@*com.android.systemui:style/VolumeButtons" />
-        <SeekBar android:backgroundTint="@null" android:id="@*com.android.systemui:id/volume_row_slider" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignWithParentIfMissing="true" android:paddingStart="@*com.android.systemui:dimen/volume_row_slider_padding_start" />
-    </LinearLayout>
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Platform.V21.AppCompat" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
-		<item name="android:colorBackground">@*android:color/dim_foreground_light</item>
-		<item name="android:listDivider">@*android:color/transparent</item>
-    </style>
-</resources>

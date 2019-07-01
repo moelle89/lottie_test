@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape>
-        <size android:height="1dp" android:width="0dp" />
-        <solid android:color="@*android:color/user_icon_default_white" />
-    </shape>
-</inset>
